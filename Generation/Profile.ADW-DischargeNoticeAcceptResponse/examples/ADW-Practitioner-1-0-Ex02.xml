@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--A hospital Discharge Co-ordinator-->
+<Practitioner xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/practitioner.xsd">
+<id value="49edc68d-cb09-49c9-8edf-285e931042ce"/>
+				<meta>
+					<!--Identifies the profile being used-->
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0"/>
+				</meta>
+				<name>
+					<family value="Gulliver"/>
+					<given value="Leticia"/>
+				</name>
+				<telecom>
+					<system value="email"/>
+					<value value="leticia.gulliver@nhs.net"/>
+				</telecom>
+				<telecom>
+					<system value="phone"/>
+					<value value="0191223344"/>
+				</telecom>
+				<practitionerRole>
+					<managingOrganization>
+						<reference value="Organization/148eaefb-6dd0-4848-b13d-317bee9f308f"/>
+					</managingOrganization>
+					<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
+					<role>
+						<coding>
+							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+							<code value="NR2060"/>
+							<display value="Discharge coordinator"/>
+						</coding>
+						<text value="Hospital Liaison"/>
+					</role>
+				</practitionerRole>
+</Practitioner>

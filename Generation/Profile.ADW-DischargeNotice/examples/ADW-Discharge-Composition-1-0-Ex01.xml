@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--A Composition xml example-->
+<Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Composition.xsd">
+	<id value="a32d9540-9fdb-47dc-9566-8268c884de6c"/>
+	<meta>
+		<!--Identifies the profile being used-->
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-composition-1-0"/>
+	</meta>
+	<identifier>
+		<value value="78fa1f70-e972-4f4d-a7a3-a1f7232b134f"/>
+	</identifier>
+	<!--Discharge Notice Issued Date-->
+	<date value="2016-07-25T13:00:00+00:00"/>
+	<!--Discharge Notification-->
+	<type>
+		<coding>
+			<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1-0"/>
+			<code value="975731000000100"/>
+			<display value="Discharge Notice under the Care Act 2014 Schedule 3"/>
+		</coding>
+	</type>
+	<!--Human Readable name/title-->
+	<title value="Discharge Notification"/>
+	<status value="final"/>
+	<subject>
+		<reference value="Patient/4e093fbf-be82-4114-b6dc-6341eac0498c"/>
+	</subject>
+	<author>
+		<!-- Hospital Liaison -->
+		<reference value="Practitioner/a0a3e6de-091a-45a4-9bec-e8ace4e837f8">
+		</reference>
+	</author>
+	<encounter>
+		<reference value="Encounter/5eb90c3b-f04b-44e5-a839-027993c839b5"/>
+	</encounter>
+	<section>
+		<title value="Key Dates Section"/>
+		<text>
+			<status value="generated"/>
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<table>
+					<tbody>
+						<tr>
+							<th>Expected Date of Discharge</th>
+							<td>2016-07-18</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</text>
+	</section>
+	<section>
+		<title value="Hospital Liaison"/>
+		<text>
+			<status value="generated"/>
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<b>Ward Contact Details</b>
+				<table width="100%">
+					<tbody>
+						<tr>
+							<td>Contact the Discharge Coordinator between 09:00 and 17:30</td>
+						</tr>
+						<tr>
+							<td>Hospital Liaison (Discharge Coordinator): Leticia Gulliver</td>
+							<td>Email: Leticia.gulliver45@nhs.net</td>
+							<td>Tel:0191 223344</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</text>
+	</section>
+</Composition>

@@ -1,0 +1,1 @@
+This Organization Profile is a constrained version of the Organization Resource which provides a standard for an ADW hospital or Local Authority organisation.

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Sample male patient. Tis includes optional elements in addition to the minimum dataset for the patient.-->
+<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Patient.xsd">
+	<id value="08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
+	<!--Identifies the profile being used-->
+	<meta>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0"/>
+	</meta>
+	<!--Primary patient identifier-->
+	<identifier>
+		<system value="http://fhir.nhs.net/Id/nhs-number"/>
+		<value value="9413946000"/>
+	</identifier>
+	<identifier>
+		<system value="http://fhir.nhs.net/Id/hospital-patient-identifier"/>
+		<value value="A1234521"/>
+		<assigner>
+			<!-- This can be a reference to the profile elsewhere in the message or just text -->
+			<reference value="Organization/148eaefb-6dd0-4848-b13d-317bee9f308f"/>
+		</assigner>
+	</identifier>
+	<name>
+		<family value="Jones"/>
+		<given value="Barry"/>
+	</name>
+	<gender value="male"/>
+	<birthDate value="1941-01-01"/>
+</Patient>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--A Local Authority Social Worker-->
+<Practitioner xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/practitioner.xsd">
+	<id value="b36b91cc-e7b4-4148-bd4f-51e404d595c4"/>
+				<meta>
+					<!--Identifies the profile being used-->
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0"/>
+				</meta>
+				<name>
+					<family value="Jones"/>
+					<given value="Lee"/>
+				</name>
+				<telecom>
+					<system value="email"/>
+					<value value="lee.jones@nhs.net"/>
+				</telecom>
+				<telecom>
+					<system value="phone"/>
+					<value value="0191223888"/>
+				</telecom>
+				<practitionerRole>
+					<managingOrganization>
+						<reference value="Organization/7236046e-488a-4a1e-adaf-2fa9299da940"/>
+					</managingOrganization>
+					<!-- Indicates the practitioners role(s) i.e. Discharge co-ordinator-->
+					<role>
+						<coding>
+							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+							<code value="NR1340"/>
+							<display value="Approved Social Worker"/>
+						</coding>
+						<text value="Local Authority Contact (Social Worker)"/>
+					</role>
+				</practitionerRole>
+</Practitioner>

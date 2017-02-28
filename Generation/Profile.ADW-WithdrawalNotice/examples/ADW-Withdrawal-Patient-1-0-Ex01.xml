@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Sample male patient-->
+<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Patient.xsd">
+	<id value="038f2a2b-72b7-4be3-b0b2-3f68c5f05037"/>
+	<!--Identifies the profile being used-->
+	<meta>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0"/>
+	</meta>
+	<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
+	<identifier>
+		<use value="official"/>
+		<type>
+			<coding>
+				<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+				<code value="01"/>
+				<display value="Number present and verified"/>
+			</coding>
+		</type>
+		<system value="http://fhir.nhs.net/Id/nhs-number"/>
+		<value value="9413946000"/>
+	</identifier>
+	<identifier>
+		<system value="http://fhir.nhs.net/Id/hospital-patient-identifier"/>
+		<value value="A1234521"/>
+		<assigner>
+			<!-- This can be a reference to the profile elsewhere in the message or just text -->
+			<reference value="Organization/adcda4f8-6df6-443f-be07-11c2006af7d0"/>
+			<display value="Hebburn Hospital"/>
+		</assigner>
+	</identifier>
+	<name>
+		<family value="Jones"/>
+		<given value="Barry"/>
+	</name>
+	<gender value="male"/>
+	<birthDate value="1941-01-01"/>
+	<address>
+		<use value="home"/>
+		<!-- Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes) Most addresses are both.-->
+		<type value="both"/>
+		<!-- Structured address-->
+		<line value="1 Little Street"/>
+		<line value="Chapeltown"/>
+		<city value="Leeds"/>
+		<district value="West Yorkshire"/>
+		<postalCode value="LS6 1UR"/>
+	</address>
+	<managingOrganization>
+		<reference value="Organization/adcda4f8-6df6-443f-be07-11c2006af7d0"/>
+		<display value="Hebburn Hospital"/>
+	</managingOrganization>
+</Patient>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ It has had no clinical validation. 
+<!--Sample male patient-->
+<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Patient.xsd">
+	<id value="a1e2525a-08ee-4ece-8a76-426c245a119a"/>
+	<!--Identifies the profile being used-->
+	<meta>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0"/>
+	</meta>
+	<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
+	<identifier>
+		<use value="official"/>
+		<type>
+			<coding>
+				<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+				<code value="01"/>
+				<display value="Number present and verified"/>
+			</coding>
+		</type>
+		<system value="http://fhir.nhs.net/Id/nhs-number"/>
+		<value value="9413946000"/>
+	</identifier>
+	<identifier>
+		<system value="http://fhir.nhs.net/Id/hospital-patient-identifier"/>
+		<value value="A1234521"/>
+		<assigner>
+			<!-- This can be a reference to the profile elsewhere in the message or just text -->
+			<reference value="Organization/e3453363-1887-4b98-a12b-60f5852e0a2b"/>
+			<display value="Hebburn Hospital"/>
+		</assigner>
+	</identifier>
+	<name>
+		<family value="Jones"/>
+		<given value="Barry"/>
+	</name>
+	<gender value="male"/>
+	<birthDate value="1941-01-01"/>
+	</Patient>

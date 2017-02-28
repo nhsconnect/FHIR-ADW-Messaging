@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This example shows a sample NHS hospital.-->
+<Organization xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/organization.xsd">
+	<id value="f20a9596-f8b5-441a-acda-9c923253f3f3"/>
+	<meta>
+		<!--Identifies the profile being used-->
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0"/>
+	</meta>
+	<!--Organisation identifier -->
+	<identifier>
+		<system value="http://fhir.nhs.net/Id/ods-organization-code"/>
+		<value value="RFM8C2"/>
+	</identifier>
+	<!-- Type of organisation. -->
+	<type>
+		<coding>
+			<system value="http://hl7.org/fhir/ValueSet/organization-type"/>
+			<code value="prov"/>
+			<display value="Healthcare Provider"/>
+		</coding>
+		<text value="Hospital"/>
+	</type>
+	<name value="Hebburn Hospital"/>
+</Organization>

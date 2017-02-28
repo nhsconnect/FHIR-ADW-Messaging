@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Sample male patient. Tis includes optional elements in addition to the minimum dataset for the patient.-->
+<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Patient.xsd">
+	<id value="bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
+				<!--Identifies the profile being used-->
+				<meta>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0"/>
+				</meta>
+				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
+				<identifier>
+					<type>
+						<coding>
+							<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+							<code value="01"/>
+							<display value="Number present and verified"/>
+						</coding>
+					</type>
+					<system value="http://fhir.nhs.net/Id/nhs-number"/>
+					<value value="9413946000"/>
+				</identifier>
+				<identifier>
+					<system value="http://fhir.nhs.net/Id/hospital-patient-identifier"/>
+					<value value="A1234521"/>
+					<assigner>
+						<!-- This can be a reference to the profile elsewhere in the message or just text -->
+						<reference value="Organization/1ebc76fd-9612-4c72-81dd-de294a0e7287"/>
+					</assigner>
+				</identifier>
+				<name>
+					<family value="Jones"/>
+					<given value="Barry"/>
+				</name>
+				<telecom>
+					<system value="email"/>
+					<value value="barryJ@googlemail.com"/>
+				</telecom>
+				<telecom>
+					<system value="phone"/>
+					<value value="0113554466"/>
+				</telecom>
+				<gender value="male"/>
+				<birthDate value="1941-01-01"/>
+				<address>
+					<!-- Structured address-->
+					<line value="The Old Lodge"/>
+					<line value="1 Little Street"/>
+					<line value="Chapeltown"/>
+					<city value="Leeds"/>
+					<district value="West Yorkshire"/>
+					<postalCode value="LS6 1UR"/>
+				</address>
+				<!-- Patient's Carer contact -->
+				<contact>
+					<relationship>
+						<coding>
+							<system value="http://hl7.org/fhir/ValueSet/patient-contact-relationship"/>
+							<code value="caregiver"/>
+							<display value="Caregiver"/>
+						</coding>
+					</relationship>
+					<name>
+						<family value="Bloom"/>
+						<given value="Sandra"/>
+					</name>
+					<telecom>
+						<system value="email"/>
+						<value value="Sbloom123@yahoo.com"/>
+					</telecom>
+					<telecom>
+						<system value="phone"/>
+						<value value="0113237656"/>
+					</telecom>
+				</contact>
+				<communication>
+					<extension url="http://fhir.nhs.net/StructureDefinition/extension-interpreter-required-1-0">
+						<valueBoolean value="false"/>
+					</extension>
+					<!--The patient's preferred language-->
+					<language>
+						<coding>
+							<system value="http://fhir.nhs.net/ValueSet/human-language-1-0"/>
+							<code value="ga"/>
+							<display value="Irish"/>
+						</coding>
+					</language>
+					<preferred value="true"/>
+				</communication>
+</Patient>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--A Hospital Practitioner xml example-->
+<Practitioner xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Practitioner.xsd">
+	<id value="62f20483-3d47-4e57-80e1-6c0e20fe272f"/>
+	<meta>
+		<!--Identifies the profile being used-->
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-lead-clinician-practitioner-1-0"/>
+	</meta>
+	<name>
+		<family value="Stibbs"/>
+		<given value="Nigel"/>
+	</name>
+	<practitionerRole>
+		<managingOrganization>
+			<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+		</managingOrganization>
+		<!-- Indicates the practitioners role(s)-->
+		<role>
+			<coding>
+				<system value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+				<code value="NR0050"/>
+				<display value="Consultant"/>
+			</coding>
+			<text value="Lead Clinician"/>
+		</role>
+	</practitionerRole>
+</Practitioner>

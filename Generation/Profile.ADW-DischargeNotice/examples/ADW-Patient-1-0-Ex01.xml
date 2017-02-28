@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Sample male patient.-->
+<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Patient.xsd">
+	<id value="42840151-1fe1-4967-88c1-bcbd2a191243"/>
+	<!--Identifies the profile being used-->
+	<meta>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0"/>
+	</meta>
+	<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
+	<identifier>
+		<type>
+			<coding>
+				<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+				<code value="01"/>
+				<display value="Number present and verified"/>
+			</coding>
+		</type>
+		<system value="http://fhir.nhs.net/Id/nhs-number"/>
+		<value value="9413946000"/>
+	</identifier>
+	<identifier>
+		<system value="http://fhir.nhs.net/Id/hospital-patient-identifier"/>
+		<value value="A1234521"/>
+		<assigner>
+			<!-- This can be a reference to the profile elsewhere in the message or just text -->
+			<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+		</assigner>
+	</identifier>
+	<name>
+		<family value="Jones"/>
+		<given value="Barry"/>
+	</name>
+	<gender value="male"/>
+	<birthDate value="1941-01-01"/>
+	<address>
+		<!-- Structured address-->
+		<line value="The Old Lodge"/>
+		<line value="1 Little Street"/>
+		<line value="Chapeltown"/>
+		<city value="Leeds"/>
+		<district value="West Yorkshire"/>
+		<postalCode value="LS6 1UR"/>
+	</address>
+	<!-- Patients NOK contact -->
+	<contact>
+		<relationship>
+			<coding>
+				<system value="http://hl7.org/fhir/ValueSet/patient-contact-relationship"/>
+				<code value="caregiver"/>
+				<display value="Caregiver"/>
+			</coding>
+		</relationship>
+		<name>
+			<family value="Bloom"/>
+			<given value="Sandra"/>
+		</name>
+		<telecom>
+			<system value="email"/>
+			<value value="Sbloom123@yahoo.com"/>
+		</telecom>
+		<telecom>
+			<system value="phone"/>
+			<value value="0113237656"/>
+		</telecom>
+	</contact>
+</Patient>

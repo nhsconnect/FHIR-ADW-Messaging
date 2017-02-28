@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This example shows a sample Local Authority Social Services team.-->
+<Organization xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/organization.xsd">
+	<id value="41e0fd49-d1e5-422a-b9ba-643e00a541a4"/>
+				<meta>
+					<!--Identifies the profile being used-->
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1-0"/>
+				</meta>
+				<!-- Type of organisation. -->
+				<type>
+					<coding>
+						<system value="http://hl7.org/fhir/ValueSet/organization-type"/>
+						<code value="team"/>
+						<display value="Organizational team"/>
+					</coding>
+					<text value="Local Authority Social Services' Team"/>
+				</type>
+				<name value="Hebburn Social Services' Community Team"/>
+				<partOf>
+					<reference value="Organization/dafc0a1e-e120-4ba7-b638-0ce50a018146"/>
+				</partOf>
+</Organization>

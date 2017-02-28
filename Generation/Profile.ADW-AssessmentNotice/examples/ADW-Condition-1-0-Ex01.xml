@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This example shows a sample NHS hospital ward.-->
+<Condition xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/condition.xsd">
+	<id value="af7ba23c-8ad3-11e6-ae22-56b6b6499611"/>
+	<meta>
+		<!--Identifies the profile being used-->
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-condition-1-0"/>
+	</meta>
+	<!--Reference to patient-->
+	<patient>
+		<reference value="Patient/bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
+	</patient>
+	<!-- Identification of the condition, problem or diagnosis which was the reason for admission -->
+	<code>
+		<text value="Chest pain, shortness of breath, nausea"/>
+	</code>
+	<verificationStatus value="confirmed"/>
+</Condition>

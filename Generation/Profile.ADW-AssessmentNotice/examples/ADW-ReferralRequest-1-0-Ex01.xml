@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ADW Assessment Notice Referral Request xml example-->
+<ReferralRequest xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/ReferralRequest.xsd">
+	<id value="37c1099d-638c-4970-bcc6-539403f6ca8e"/>
+	<meta>
+		<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1-0 found in the profile-->
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-1-0"/>
+	</meta>
+	<status value="requested"/>
+	<identifier>
+		<value value="311fcae7-32a7-4a8e-a15c-eebae3a246b9"/>
+		<!--The value of this identifier will be the same across all referrals to tie all these together-->
+	</identifier>
+	<patient>
+		<reference value="Patient/bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
+	</patient>
+	<!-- Hospital Liaison, a hospital Discharge Co-ordinator -->
+	<requester>
+		<reference value="Practitioner/5b5d3bab-c1bb-434a-ab0d-82c4860bb098"/>
+	</requester>
+	<!-- Local Authority Social Services' team -->
+	<recipient>
+		<reference value="Organization/ac831651-0ed4-4b25-97d9-2f204a51c182"/>
+	</recipient>
+	<encounter>
+		<reference value="Encounter/fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
+	</encounter>
+	<supportingInformation>
+		<reference value="QuestionnaireResponse/9c7eb664-d257-4250-aee2-20ad202919e8"/>
+	</supportingInformation>
+</ReferralRequest>

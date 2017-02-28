@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This example shows a sample NHS hospital ward.-->
+<Location xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/location.xsd">
+	<id value="3c195314-2f4c-4c16-ad62-076a8349e7ab"/>
+	<meta>
+		<!--Identifies the profile being used-->
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-location-1-0"/>
+	</meta>
+	<name value="Collier Ward"/>
+	<managingOrganization>
+		<reference value="Organization/cb3aa670-4265-407a-beba-05f4ab78fca4"/>
+	</managingOrganization>
+</Location>
