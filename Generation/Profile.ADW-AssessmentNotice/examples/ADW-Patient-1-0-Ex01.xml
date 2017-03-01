@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Sample male patient. Tis includes optional elements in addition to the minimum dataset for the patient.-->
+<!--Sample male patient. This includes optional elements in addition to the minimum dataset for the patient.-->
 <Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Patient.xsd">
 	<id value="bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
 				<!--Identifies the profile being used-->
@@ -10,7 +10,7 @@
 				<identifier>
 					<type>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+							<system value="http://fhir.nhs.net/nhs-number-status-indicator-1-0"/>
 							<code value="01"/>
 							<display value="Number present and verified"/>
 						</coding>
