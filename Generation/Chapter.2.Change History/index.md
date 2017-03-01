@@ -1,4 +1,14 @@
 # Change History #
+### Version: 1.0: Status: RC5 ###
+ - Inserted CareConnect standard profiles as replacements for ADW Patient, Condition, Encounter, Location, Organization and Practitioner. The impact on instances is as follows:-
+ - **ADW-Patient-1-0**
+ - Patient.identifier slice NHS number renamed to Identifier # 1 [nhsNumber]
+ - Identifier slice Identifier # 1 [nhsNumber].type removed. 
+ - NHS Number Status indicator changed to extension nhsNumberVerificationStatus in Identifier slice Identifier # 1 [nhsNumber].
+ - Patient.identifier slice Hospital Patient Identifier renamed to Identifier slice identifier#2 [other] and fixed value in its system element removed.
+ - Patient.name element is sliced into two slices, name # 1 [usual] and name # 2 [other].
+ - Patient name slice name # 1 [usual] has mandatory element name.use 1..1 with fixed value "usual" and fixed valueset NameUse.
+ 
 ### Version: 1.0: Status: RC4 ###
  - Changed values in adw-person-stated-gender-1-0 name and description elements to reflect those in the FHIR valueset at http://hl7.org/fhir/valueset-administrative-gender.html (AdministrativeGender).
  - Changed valueset reference in ADW-Message-AssessmentNotice-1-0-Ex01.xml group.question (Patient Consent) from http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0 to 	http://fhir.nhs.net/ValueSet/adw-patient-consent-status-1-0.
