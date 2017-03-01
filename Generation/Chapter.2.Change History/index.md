@@ -1,6 +1,6 @@
 # Change History #
 ### Version: 1.0: Status: RC5 ###
- - All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk 
+ - All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk. 
  - All system urls for valuesets containing the string http://fhir.nhs.net/Valueset have this string replaced by https://fhir.nhs.uk when the url appears as data in the coding.system element.
  - All system urls for valuesets containing the string http://hl7.org/fhir/ValueSet have this string replaced by http://hl7.org/fhir when the url appears as data in the coding.system element.
  - Inserted CareConnect standard profiles as replacements for ADW Patient, Condition, Encounter, Location, Organization and Practitioner. The impact on instances is as follows:-
