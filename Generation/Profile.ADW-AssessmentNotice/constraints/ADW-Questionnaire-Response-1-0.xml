@@ -551,7 +551,7 @@
       <path value="QuestionnaireResponse.identifier.assigner.reference" />
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
-      <comments value="None." />
+      <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -620,7 +620,7 @@
       <path value="QuestionnaireResponse.questionnaire.reference" />
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
-      <comments value="None." />
+      <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -673,8 +673,8 @@
         <max value="1" />
       </base>
       <type>
-        <code value="CodeableConcept" />
-         </type>
+        <code value="code" />
+      </type>
       <fixedCode value="completed" />
       <mustSupport value="true" />
       <isModifier value="true" />
@@ -790,7 +790,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -900,7 +900,7 @@
       <path value="QuestionnaireResponse.encounter.reference" />
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
-      <comments value="None." />
+      <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -1082,7 +1082,7 @@
       <path value="QuestionnaireResponse.group.subject.reference" />
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
-      <comments value="None." />
+      <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -1146,10 +1146,11 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <slicing>
+        <discriminator value="text" />
         <ordered value="true" />
         <rules value="openAtEnd" />
       </slicing>
-      <short value="1..* Questions in this group" />
+      <short value="Questions in this group" />
       <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
@@ -1165,6 +1166,7 @@
         <code value="BackboneElement" />
       </type>
       <condition value="qrs-1" />
+      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
@@ -1214,9 +1216,8 @@
         <map value=".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN]" />
       </mapping>
     </element>
-   <!-- <element>
+    <element>
       <path value="QuestionnaireResponse.group.question.text" />
-      <name value="Reason For Admission" />
       <short value="Text of the question as it is shown to the user" />
       <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
@@ -1230,18 +1231,17 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Reason For Admission" />
-      <mustSupport value="true" />
+      <fixedString value="Patient Consultation" />
       <mapping>
         <identity value="rim" />
         <map value=".code.display" />
       </mapping>
-    </element>-->
-<!--    <element>
+    </element>
+    <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="None" />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -1256,7 +1256,7 @@
         <identity value="rim" />
         <map value=".value[type=LIST_ANY]" />
       </mapping>
-    </element>-->
+    </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.modifierExtension" />
       <short value="Extensions that cannot be ignored" />
@@ -1285,7 +1285,7 @@
       <path value="QuestionnaireResponse.group.question.answer.value[x]" />
       <short value="Single-valued answer to the question" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="None" />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="0" />
       <max value="1" />
@@ -1295,50 +1295,13 @@
         <max value="1" />
       </base>
       <type>
-        <code value="boolean" />
-      </type>
-      <type>
-        <code value="decimal" />
-      </type>
-      <type>
-        <code value="integer" />
-      </type>
-      <type>
-        <code value="date" />
-      </type>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <type>
-        <code value="instant" />
-      </type>
-      <type>
-        <code value="time" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="uri" />
-      </type>
-      <type>
-        <code value="Attachment" />
-      </type>
-      <type>
         <code value="Coding" />
       </type>
-      <type>
-        <code value="Quantity" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-      </type>
       <binding>
-        <strength value="example" />
+        <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-                <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/questionnaire-answers-status" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -1352,197 +1315,6 @@
       <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
       <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
       <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.group" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <nameReference value="group" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=DOCSECT, moodCode=EVN]" />
-      </mapping>
-    </element>
-   <!-- <element>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Question" />
-      </extension>
-      <path value="QuestionnaireResponse.group.question" />
-      <name value="Reason For Admission" />
-      <label value="Reason For Admission" />
-      <short value="Reason For Admission" />
-      <definition value="The reason(s) why the patient has been admitted to hospital" />
-      <requirements value="Must register answers to questions." />
-      <alias value="Responses" />
-      <alias value="Contents" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="qrs-1" />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
-      </mapping>
-    </element>-->
-    <element>
-      <path value="QuestionnaireResponse.group.question.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <isModifier value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.linkId" />
-      <short value="Corresponding question within Questionnaire" />
-      <definition value="Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireResponse resource." />
-      <requirements value="Groups can repeat in the answers, so a direct 1..1 correspondence may not exist - requiring correspondence by id." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.linkId" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN]" />
-      </mapping>
-    </element>
-   <!-- <element>
-      <path value="QuestionnaireResponse.group.question.text" />
-      <name value="Reason for Admission" />
-      <label value="Reason for Admission" />
-      <short value="Reason for Admission" />
-      <definition value="Reason for Admission" />
-      <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.text" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <fixedString value="Reason for Admission?" />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".code.display" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer" />
-      <name value="Reason For Admission" />
-      <label value="Reason For Admission" />
-      <short value="The response(s) to the question" />
-      <definition value="The respondent's answer(s) to the question." />
-      <comments value="Free text which indicates why the patient was admitted." />
-      <requirements value="To allow free text description of reason for admission. " />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <meaningWhenMissing value="Reason for admission not known." />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".value[type=LIST_ANY]" />
-      </mapping>
-    </element>-->
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <isModifier value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-<!--    <element>
-      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <name value="Reason For Admission" />
-      <label value="Reason For Admission" />
-      <short value="Reason For Admission" />
-       <definition value="The reason for admission." />
-      <comments value="None" />
-      <requirements value="To allow description of the reason for admission." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <patternString value="an..500" />
-      <maxLength value="500" />
-      <mustSupport value="true" />
-
-      <mapping>
-        <identity value="rim" />
-        <map value=".item" />
-      </mapping>
-    </element>-->
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.group" />
-      <short value="Nested questionnaire group" />
-      <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
-      <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
-      <min value="0" />
       <max value="0" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer.group" />
@@ -1561,9 +1333,8 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
       <short value="Patient Consultation" />
-      <definition value="A statement that the NHS body that has given the Assessment Notice has consulted with the patient." />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -1631,9 +1402,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
-      <short value="Has the patient been consulted regarding this Assessment Notice" />
-      <definition value="Has the patient been consulted regarding this Assessment Notice" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -1655,10 +1425,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="Whether the patient has been consulted regarding the assessment." />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -1703,8 +1472,8 @@
       <path value="QuestionnaireResponse.group.question.answer.value[x]" />
       <name value="Patient Consultation" />
       <short value="Single-valued answer to the question" />
-      <definition value="The answer provided by the respondent to the question." />
-      <comments value="None" />
+      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -1720,7 +1489,9 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1751,9 +1522,8 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
       <short value="Carer Consultation" />
-      <definition value="A statement as to whether the carer has been consulted about the Assessment Notice" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -1821,9 +1591,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
-      <short value="Has the patient's carer (if applicable) been consulted regarding the Assessment Notice?" />
-      <definition value="Whether the patient's carer (if applicable) been consulted regarding the Assessment Notice?" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -1835,8 +1604,7 @@
       <type>
         <code value="string" />
       </type>
-            <fixedString value="Has the patient's carer (if applicable) been consulted regarding the Assessment Notice?" />
-      
+      <fixedString value="Has the patient's carer (if applicable) been consulted regarding the Assessment Notice?" />
       <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
@@ -1846,10 +1614,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="Whether the patient's carer (if applicable) been consulted regarding the Assessment Notice." />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -1895,7 +1662,7 @@
       <name value="Carer Consultation" />
       <short value="Single-valued answer to the question" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="None" />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -1911,7 +1678,9 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1941,10 +1710,9 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="Safe Guarding Issues" />
-      <label value="Safe Guarding Issues" />
-      <short value="Safe Guarding Issues" />
-      <definition value="Indicates whether or not the hospital considers that there are safeguarding issues associated with the patient." />
+      <name value="Safeguarding Issues" />
+      <short value="Safeguarding Issues" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -2011,10 +1779,9 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
-      <name value="Safe Guarding Issues" />
-      <label value="Safe Guarding Issues" />
-      <short value="Are there any safeguarding issues associated with the patient?" />
-      <definition value="Are there any safeguarding issues associated with the patient?" />
+      <name value="Safeguarding Issues" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -2035,11 +1802,10 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
-      <name value="Safe Guarding Issues" />
-      <label value="Safe Guarding Issues" />
-      <short value="Safe Guarding Issues" />
+      <name value="Safeguarding Issues" />
+      <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="None" />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -2082,10 +1848,10 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <name value="Safe Guarding Issues" />
+      <name value="Safeguarding Issues" />
       <short value="Single-valued answer to the question" />
-      <definition value="The answer provided by the respondent to the question." />
-      <comments value="true = yes false = no" />
+      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -2134,15 +1900,14 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Patient Consent" />
-      <label value="Patient Consent" />
       <short value="Patient Consent" />
-      <definition value="Whether the patient has consented to this assessment notice." />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
       <min value="1" />
       <max value="1" />
-	<base>
+      <base>
         <path value="QuestionnaireResponse.group.question" />
         <min value="0" />
         <max value="*" />
@@ -2151,6 +1916,7 @@
         <code value="BackboneElement" />
       </type>
       <condition value="qrs-1" />
+      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
@@ -2203,9 +1969,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="Patient Consent" />
-      <label value="Patient Consent" />
-      <short value="Has the patient consented to this Assessment Notice?" />
-      <definition value="Has the patient consented to this Assessment Notice?" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -2217,7 +1982,7 @@
       <type>
         <code value="string" />
       </type>
-            <fixedString value="Has the patient consented to this Assessment Notice?" />
+      <fixedString value="Has the patient consented to this Assessment Notice?" />
       <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
@@ -2227,10 +1992,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="Patient Consent" />
-      <label value="Patient Consent" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="None" />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -2276,7 +2040,7 @@
       <name value="Patient Consent" />
       <short value="Single-valued answer to the question" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="None" />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -2292,11 +2056,31 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-patient-consent-status-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-patient-consent-status-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
         <map value=".item" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.answer.group" />
+      <short value="Nested questionnaire group" />
+      <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
+      <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.answer.group" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="group" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP].target[classCode=DOCSECT, moodCode=EVN]" />
       </mapping>
     </element>
     <element>
@@ -2305,9 +2089,8 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Third Party Consent Source" />
-      <label value="Third Party Consent Source" />
       <short value="Third Party Consent Source for this assessment notice" />
-      <definition value="The source of the third party consent for this assessment notice" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -2375,9 +2158,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="Third Party Consent Source" />
-      <label value="Third Party Consent Source" />
-      <short value="What is the source of the third party consent for this assessment notice?" />
-      <definition value="What is the source of the third party consent for this assessment notice?" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -2389,7 +2171,7 @@
       <type>
         <code value="string" />
       </type>
-      	<fixedString value="What is the source of the third party consent for this assessment notice?"/>
+      <fixedString value="What is the source of the third party consent for this assessment notice?" />
       <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
@@ -2399,10 +2181,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="Third Party Consent Source" />
-      <label value="Third Party Consent Source for assessment notice" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="None" />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -2445,11 +2226,10 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <name value="Third Party Consent" />
-      <label value="Third Party Consent" />
+      <name value="Third Party Consent Source" />
       <short value="Single-valued answer to the question" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="None" />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -2465,7 +2245,9 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-third-party-consent-source-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-third-party-consent-source-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2496,202 +2278,12 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="NHS CHC Assessment Considered Indicator" />
-      <short value="NHS CHC Assessment Considered Indicator" />
-      <definition value="Whether or not the NHS body has considered providing the patient with NHS Continuing Health Care.&#xD;&#xA;" />
-      <requirements value="Must register answers to questions." />
-      <alias value="Responses" />
-      <alias value="Contents" />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="qrs-1" />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <isModifier value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.linkId" />
-      <short value="Corresponding question within Questionnaire" />
-      <definition value="Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireResponse resource." />
-      <requirements value="Groups can repeat in the answers, so a direct 1..1 correspondence may not exist - requiring correspondence by id." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.linkId" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.text" />
-      <name value="NHS CHC Assessment Considered Indicator" />
-      <label value="NHS CHC Assessment Considered Indicator" />
-      <short value="Has the provision of NHS Continuing Health Care been considered?" />
-      <definition value="Has the provision of NHS Continuing Health Care been considered?" />
-      <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.text" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <fixedString value="Has the provision of NHS Continuing Health Care been considered?"/>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".code.display" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer" />
-      <name value="NHS CHC Assessment Considered Indicator" />
-      <label value="NHS CHC Assessment Considered Indicator" />
-      <short value="The response(s) to the question" />
-      <definition value="The respondent's answer(s) to the question." />
-      <comments value="None" />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".value[type=LIST_ANY]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <isModifier value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <name value="NHS CHC Assessment Considered Indicator" />
-      <short value="Single-valued answer to the question" />
-      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="None" />
-      <requirements value="Ability to retain a single-valued answer to a question." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="Coding" />
-      </type>
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
-      </binding>
-      <mapping>
-        <identity value="rim" />
-        <map value=".item" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.group" />
-      <short value="Nested questionnaire group" />
-      <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
-      <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.group" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <nameReference value="group" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=DOCSECT, moodCode=EVN]" />
-      </mapping>
-    </element>
-    <element>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Question" />
-      </extension>
-      <path value="QuestionnaireResponse.group.question" />
-      <name value="NHS CHC Considered Result" />
-      <label value="NHS CHC Considered Result" />
       <short value="Questions in this group" />
-      <definition value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?." />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="QuestionnaireResponse.group.question" />
@@ -2703,6 +2295,195 @@
       </type>
       <condition value="qrs-1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.modifierExtension" />
+      <short value="Extensions that cannot be ignored" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <alias value="modifiers" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="BackboneElement.modifierExtension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <isModifier value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.linkId" />
+      <name value="NHS CHC Assessment Considered Indicator" />
+      <short value="Corresponding question within Questionnaire" />
+      <definition value="Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireResponse resource." />
+      <requirements value="Groups can repeat in the answers, so a direct 1..1 correspondence may not exist - requiring correspondence by id." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.linkId" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN]" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.text" />
+      <name value="NHS CHC Assessment Considered Indicator" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
+      <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.text" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <fixedString value="Has the provision of NHS Continuing Health Care been considered?" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".code.display" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.answer" />
+      <name value="NHS CHC Assessment Considered Indicator" />
+      <short value="The response(s) to the question" />
+      <definition value="The respondent's answer(s) to the question." />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.answer" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".value[type=LIST_ANY]" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.answer.modifierExtension" />
+      <short value="Extensions that cannot be ignored" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <alias value="modifiers" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="BackboneElement.modifierExtension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <isModifier value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
+      <name value="NHS CHC Assessment Considered Indicator" />
+      <short value="Single-valued answer to the question" />
+      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
+      <requirements value="Ability to retain a single-valued answer to a question." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.answer.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Coding" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="rim" />
+        <map value=".item" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.answer.group" />
+      <short value="Nested questionnaire group" />
+      <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
+      <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.answer.group" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="group" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP].target[classCode=DOCSECT, moodCode=EVN]" />
+      </mapping>
+    </element>
+    <element>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Question" />
+      </extension>
+      <path value="QuestionnaireResponse.group.question" />
+      <name value="NHS CHC Considered Result" />
+      <short value="Questions in this group" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
+      <requirements value="Must register answers to questions." />
+      <alias value="Responses" />
+      <alias value="Contents" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="QuestionnaireResponse.group.question" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <condition value="qrs-1" />
       <mapping>
         <identity value="rim" />
         <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
@@ -2755,9 +2536,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="NHS CHC Considered Result" />
-      <label value="NHS CHC Considered Result" />
-      <short value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?." />
-      <definition value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?." />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -2769,7 +2549,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?"/>
+      <fixedString value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?" />
       <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
@@ -2779,10 +2559,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="NHS CHC Considered Result" />
-      <label value="NHS CHC Considered Result" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="None" />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -2828,7 +2607,7 @@
       <name value="NHS CHC Considered Result" />
       <short value="Single-valued answer to the question" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="A free text description of the result of the CHC consideration." />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -2842,6 +2621,7 @@
       </type>
       <maxLength value="500" />
       <mustSupport value="true" />
+     
       <mapping>
         <identity value="rim" />
         <map value=".item" />
@@ -3146,8 +2926,8 @@
         <max value="1" />
       </base>
       <type>
-        <code value="CodeableConcept" />
-       </type>
+        <code value="code" />
+      </type>
       <fixedCode value="completed" />
       <mustSupport value="true" />
       <isModifier value="true" />
@@ -3263,7 +3043,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3509,10 +3289,11 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <slicing>
+        <discriminator value="text" />
         <ordered value="true" />
         <rules value="openAtEnd" />
       </slicing>
-      <short value="1..* Questions in this group" />
+      <short value="Questions in this group" />
       <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
@@ -3528,6 +3309,7 @@
         <code value="BackboneElement" />
       </type>
       <condition value="qrs-1" />
+      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
@@ -3553,9 +3335,8 @@
         <map value=".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN]" />
       </mapping>
     </element>
-  <!--  <element>
+    <element>
       <path value="QuestionnaireResponse.group.question.text" />
-      <name value="Reason For Admission" />
       <short value="Text of the question as it is shown to the user" />
       <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
@@ -3569,120 +3350,19 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Reason For Admission" />
-      <mustSupport value="true" />
+      <fixedString value="Patient Consultation" />
       <mapping>
         <identity value="rim" />
         <map value=".code.display" />
-      </mapping>
-    </element>
-    <element>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Question" />
-      </extension>
-      <path value="QuestionnaireResponse.group.question" />
-      <name value="Reason For Admission" />
-      <label value="Reason For Admission" />
-      <short value="Reason For Admission" />
-      <definition value="The reason(s) why the patient has been admitted to hospital" />
-      <requirements value="Must register answers to questions." />
-      <alias value="Responses" />
-      <alias value="Contents" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="qrs-1" />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.linkId" />
-      <short value="Corresponding question within Questionnaire" />
-      <definition value="Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireResponse resource." />
-      <requirements value="Groups can repeat in the answers, so a direct 1..1 correspondence may not exist - requiring correspondence by id." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.linkId" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.text" />
-      <name value="Reason for Admission" />
-      <label value="Reason for Admission" />
-      <short value="Reason for Admission" />
-      <definition value="Reason for Admission" />
-      <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.text" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <fixedString value="Reason for Admission?" />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".code.display" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer" />
-      <name value="Reason For Admission" />
-      <label value="Reason For Admission" />
-      <short value="The response(s) to the question" />
-      <definition value="The respondent's answer(s) to the question." />
-      <comments value="Free text which indicates why the patient was admitted." />
-      <requirements value="To allow free text description of reason for admission. " />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <meaningWhenMissing value="Reason for admission not known." />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".value[type=LIST_ANY]" />
       </mapping>
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-       <name value="The reason for admission." />
-      <label value="The reason for admission." />
-      <short value="The reason for admission." />
-      <definition value="The reason for admission." />
-      <comments value="None" />
-      <requirements value="To allow description of the reason for admission." />
-      <min value="1" />
+      <short value="Single-valued answer to the question" />
+      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
+      <requirements value="Ability to retain a single-valued answer to a question." />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer.value[x]" />
@@ -3690,16 +3370,20 @@
         <max value="1" />
       </base>
       <type>
-        <code value="string" />
+        <code value="Coding" />
       </type>
-      <patternString value="an..500" />
-      <maxLength value="500" />
-      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        </valueSetReference>
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value=".item" />
       </mapping>
-    </element>-->
+    </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.group" />
       <short value="Nested questionnaire group" />
@@ -3724,9 +3408,8 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
       <short value="Patient Consultation" />
-      <definition value="A statement that the NHS body that has given the Assessment Notice has consulted with the patient." />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -3770,9 +3453,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
-      <short value="Has the patient been consulted regarding this Assessment Notice?" />
-      <definition value="Has the patient been consulted regarding this Assessment Notice" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -3784,7 +3466,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Patient Consultation" />
+      <fixedString value="Has the patient been consulted regarding this Assessment Notice?" />
       <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
@@ -3794,10 +3476,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="Whether the patient has been consulted regarding the assessment." />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -3818,8 +3499,8 @@
       <path value="QuestionnaireResponse.group.question.answer.value[x]" />
       <name value="Patient Consultation" />
       <short value="Single-valued answer to the question" />
-      <definition value="The answer provided by the respondent to the question." />
-      <comments value="None" />
+      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -3835,7 +3516,9 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3866,13 +3549,12 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
       <short value="Carer Consultation" />
-      <definition value="A statement as to whether the carer has been consulted about the Assessment Notice" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="QuestionnaireResponse.group.question" />
@@ -3912,9 +3594,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
-      <short value="Has the patient's carer (if applicable) been consulted regarding the Assessment Notice?" />
-      <definition value="Whether the patient's carer (if applicable) been consulted regarding the Assessment Notice?" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -3926,7 +3607,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Has the patient's carer (if applicable) been consulted regarding the Assessment Notice?"/>
+      <fixedString value="Has the patient's carer (if applicable) been consulted regarding the Assessment Notice?" />
       <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
@@ -3936,10 +3617,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="Whether the patient's carer (if applicable) been consulted regarding the Assessment Notice." />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -3961,7 +3641,7 @@
       <name value="Carer Consultation" />
       <short value="Single-valued answer to the question" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="None" />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -3977,7 +3657,9 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4007,10 +3689,9 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="Safe Guarding Issues" />
-      <label value="Safe Guarding Issues" />
-      <short value="Safe Guarding Issues" />
-      <definition value="Indicates whether or not the hospital considers that there are safeguarding issues associated with the patient." />
+      <name value="Safeguarding Issues" />
+      <short value="Safeguarding Issues" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -4053,10 +3734,9 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
-      <name value="Safe Guarding Issues" />
-      <label value="Safe Guarding Issues" />
-      <short value="Are there any safeguarding issues associated with the patient?" />
-      <definition value="Are there any safeguarding issues associated with the patient?" />
+      <name value="Safeguarding Issues" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -4077,11 +3757,10 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
-      <name value="Safe Guarding Issues" />
-      <label value="Safe Guarding Issues" />
-      <short value="Safe Guarding Issues" />
+      <name value="Safeguarding Issues" />
+      <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="None" />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -4100,10 +3779,10 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <name value="Safe Guarding Issues" />
+      <name value="Safeguarding Issues" />
       <short value="Single-valued answer to the question" />
-      <definition value="The answer provided by the respondent to the question." />
-      <comments value="true = yes false = no" />
+      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -4152,9 +3831,8 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Patient Consent" />
-      <label value="Patient Consent" />
       <short value="Patient Consent" />
-      <definition value="Whether the patient has consented to this assessment notice." />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -4169,6 +3847,7 @@
         <code value="BackboneElement" />
       </type>
       <condition value="qrs-1" />
+      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
@@ -4197,9 +3876,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="Patient Consent" />
-      <label value="Patient Consent" />
-      <short value="Has the patient consented to this Assessment Notice?" />
-      <definition value="Has the patient consented to this Assessment Notice?" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -4211,6 +3889,7 @@
       <type>
         <code value="string" />
       </type>
+      <fixedString value="Has the patient consented to this Assessment Notice?" />
       <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
@@ -4220,17 +3899,16 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="Patient Consent" />
-      <label value="Patient Consent" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="None" />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
-<!--      <base>
+      <base>
         <path value="QuestionnaireResponse.group.question.answer" />
         <min value="0" />
         <max value="*" />
-      </base>-->
+      </base>
       <type>
         <code value="BackboneElement" />
       </type>
@@ -4245,7 +3923,7 @@
       <name value="Patient Consent" />
       <short value="Single-valued answer to the question" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="None" />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -4261,11 +3939,31 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-patient-consent-status-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
         <map value=".item" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.answer.group" />
+      <short value="Nested questionnaire group" />
+      <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
+      <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.answer.group" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="group" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP].target[classCode=DOCSECT, moodCode=EVN]" />
       </mapping>
     </element>
     <element>
@@ -4274,145 +3972,8 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Third Party Consent Source" />
-      <label value="Third Party Consent Source" />
       <short value="Third Party Consent Source for this assessment notice" />
-      <definition value="The source of the third party consent for this assessment notice" />
-      <requirements value="Must register answers to questions." />
-      <alias value="Responses" />
-      <alias value="Contents" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="qrs-1" />
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.linkId" />
-      <short value="Corresponding question within Questionnaire" />
-      <definition value="Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireResponse resource." />
-      <requirements value="Groups can repeat in the answers, so a direct 1..1 correspondence may not exist - requiring correspondence by id." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.linkId" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.text" />
-      <name value="Third Party Consent Source" />
-      <label value="Third Party Consent Source" />
-      <short value="What is the source of the third party consent for this assessment notice?" />
-      <definition value="What is the source of the third party consent for this assessment notice?" />
-      <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.text" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".code.display" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer" />
-      <name value="Third Party Consent Source" />
-      <label value="Third Party Consent Source for assessment notice" />
-      <short value="The response(s) to the question" />
-      <definition value="The respondent's answer(s) to the question." />
-      <comments value="None" />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".value[type=LIST_ANY]" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <name value="Third Party Consent" />
-      <label value="Third Party Consent" />
-      <short value="Single-valued answer to the question" />
-      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="None" />
-      <requirements value="Ability to retain a single-valued answer to a question." />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="Coding" />
-      </type>
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-third-party-consent-source-1-0" />
-      </binding>
-      <mapping>
-        <identity value="rim" />
-        <map value=".item" />
-      </mapping>
-    </element>
-    <element>
-      <path value="QuestionnaireResponse.group.question.answer.group" />
-      <short value="Nested questionnaire group" />
-      <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
-      <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="QuestionnaireResponse.group.question.answer.group" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <nameReference value="group" />
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=COMP].target[classCode=DOCSECT, moodCode=EVN]" />
-      </mapping>
-    </element>
-    <element>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Question" />
-      </extension>
-      <path value="QuestionnaireResponse.group.question" />
-      <name value="NHS CHC Assessment Considered Indicator" />
-      <short value="NHS CHC Assessment Considered Indicator" />
-      <definition value="Whether or not the NHS body has considered providing the patient with NHS Continuing Health Care.&#xD;&#xA;" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -4455,10 +4016,9 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
-      <name value="NHS CHC Assessment Considered Indicator" />
-      <label value="NHS CHC Assessment Considered Indicator" />
-      <short value="Has the provision of NHS Continuing Health Care been considered?" />
-      <definition value="Has the provision of NHS Continuing Health Care been considered?" />
+      <name value="Third Party Consent Source" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -4470,6 +4030,7 @@
       <type>
         <code value="string" />
       </type>
+      <fixedString value="What is the source of the third party consent for this assessment notice?" />
       <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
@@ -4478,11 +4039,10 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
-      <name value="NHS CHC Assessment Considered Indicator" />
-      <label value="NHS CHC Assessment Considered Indicator" />
+      <name value="Third Party Consent Source" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="None" />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -4501,10 +4061,10 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.value[x]" />
-      <name value="NHS CHC Assessment Considered Indicator" />
+      <name value="Third Party Consent Source" />
       <short value="Single-valued answer to the question" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="None" />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -4520,7 +4080,9 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-third-party-consent-source-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4550,10 +4112,9 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="NHS CHC Considered Result" />
-      <label value="NHS CHC Considered Result" />
+      <name value="NHS CHC Assessment Considered Indicator" />
       <short value="Questions in this group" />
-      <definition value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?." />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -4569,6 +4130,147 @@
       </type>
       <condition value="qrs-1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.linkId" />
+      <name value="NHS CHC Assessment Considered Indicator" />
+      <short value="Corresponding question within Questionnaire" />
+      <definition value="Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireResponse resource." />
+      <requirements value="Groups can repeat in the answers, so a direct 1..1 correspondence may not exist - requiring correspondence by id." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.linkId" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN]" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.text" />
+      <name value="NHS CHC Assessment Considered Indicator" />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
+      <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.text" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <fixedString value="Has the provision of NHS Continuing Health Care been considered?" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".code.display" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.answer" />
+      <name value="NHS CHC Assessment Considered Indicator" />
+      <short value="The response(s) to the question" />
+      <definition value="The respondent's answer(s) to the question." />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.answer" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".value[type=LIST_ANY]" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
+      <name value="NHS CHC Assessment Considered Indicator" />
+      <short value="Single-valued answer to the question" />
+      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
+      <requirements value="Ability to retain a single-valued answer to a question." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.answer.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Coding" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="rim" />
+        <map value=".item" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.answer.group" />
+      <short value="Nested questionnaire group" />
+      <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
+      <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.answer.group" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="group" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP].target[classCode=DOCSECT, moodCode=EVN]" />
+      </mapping>
+    </element>
+    <element>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Question" />
+      </extension>
+      <path value="QuestionnaireResponse.group.question" />
+      <name value="NHS CHC Considered Result" />
+      <short value="Questions in this group" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
+      <requirements value="Must register answers to questions." />
+      <alias value="Responses" />
+      <alias value="Contents" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="QuestionnaireResponse.group.question" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <condition value="qrs-1" />
       <mapping>
         <identity value="rim" />
         <map value=".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN or DEF]" />
@@ -4597,9 +4299,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="NHS CHC Considered Result" />
-      <label value="NHS CHC Considered Result" />
-      <short value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?." />
-      <definition value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?." />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -4611,6 +4312,7 @@
       <type>
         <code value="string" />
       </type>
+      <fixedString value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?" />
       <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
@@ -4620,10 +4322,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="NHS CHC Considered Result" />
-      <label value="NHS CHC Considered Result" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="None" />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -4645,7 +4346,7 @@
       <name value="NHS CHC Considered Result" />
       <short value="Single-valued answer to the question" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
-      <comments value="A free text description of the result of the CHC consideration." />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
       <max value="1" />
@@ -4659,6 +4360,7 @@
       </type>
       <maxLength value="500" />
       <mustSupport value="true" />
+
       <mapping>
         <identity value="rim" />
         <map value=".item" />

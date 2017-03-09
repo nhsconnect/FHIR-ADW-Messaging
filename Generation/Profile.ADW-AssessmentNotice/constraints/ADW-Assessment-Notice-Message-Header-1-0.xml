@@ -1121,7 +1121,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="bundled" />
         <aggregation value="referenced" />
       </type>
@@ -1199,7 +1199,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -1234,7 +1234,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-lead-clinician-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -2156,7 +2156,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="bundled" />
         <aggregation value="referenced" />
       </type>
@@ -2234,7 +2234,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -2269,7 +2269,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-lead-clinician-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>

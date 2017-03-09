@@ -17,7 +17,7 @@
 	<description value="A vocabulary that describes whether the patient's carer has been consulted about information carried in a  ADW notice."/>
 	<requirements value="There is a requirement to indicate whether the patient's carer has been consulted about information carried in an ADW notice."/>
 	<codeSystem>
-		<system value="http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1-0"/>
+		<system value="http://fhir.nhs.net/adw-carerconsultation-status-1-0"/>
 		<concept>
 			<code value="Y"/>
 			<display value="Yes"/>

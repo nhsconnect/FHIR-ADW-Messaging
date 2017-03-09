@@ -672,7 +672,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="CodeableConcept" />
+        <code value="code" />
       </type>
       <fixedCode value="completed" />
       <mustSupport value="true" />
@@ -789,7 +789,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -1145,6 +1145,7 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <slicing>
+        <discriminator value="text" />
         <ordered value="true" />
         <rules value="openAtEnd" />
       </slicing>
@@ -1291,48 +1292,14 @@
         <max value="1" />
       </base>
       <type>
-        <code value="boolean" />
-      </type>
-      <type>
-        <code value="decimal" />
-      </type>
-      <type>
-        <code value="integer" />
-      </type>
-      <type>
-        <code value="date" />
-      </type>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <type>
-        <code value="instant" />
-      </type>
-      <type>
-        <code value="time" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="uri" />
-      </type>
-      <type>
-        <code value="Attachment" />
-      </type>
-      <type>
         <code value="Coding" />
       </type>
-      <type>
-        <code value="Quantity" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-      </type>
       <binding>
-        <strength value="example" />
+        <strength value="required" />
         <description value="Code indicating the response provided for a question." />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1345,7 +1312,7 @@
       <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
       <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="QuestionnaireResponse.group.question.answer.group" />
         <min value="0" />
@@ -1363,9 +1330,8 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
-      <short value="Patient Consultation" />
-      <definition value="A statement that the NHS body that has consulted with the patient regarding the discharge date." />
+      <short value="Questions in this group" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -1433,9 +1399,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
-      <short value="Has the patient been consulted regarding the  proposed discharge date?" />
-      <definition value="Whether the has patient been consulted regarding the proposed discharge date." />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -1447,7 +1412,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Has the patient been consulted regarding the  proposed discharge date?" />
+      <fixedString value="Has the patient been consulted regarding the proposed discharge date?" />
       <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
@@ -1457,10 +1422,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="Whether the patient has been consulted regarding the assessment." />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -1505,7 +1469,7 @@
       <path value="QuestionnaireResponse.group.question.answer.value[x]" />
       <name value="Patient Consultation" />
       <short value="Single-valued answer to the question" />
-      <definition value="The answer provided by the respondent to the question." />
+      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
       <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
@@ -1522,7 +1486,9 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1553,9 +1519,8 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
-      <short value="Carer Consultation" />
-      <definition value="A statement that the NHS body that has has consulted with the patient's carer regarding the discharge date." />
+      <short value="Questions in this group" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -1623,9 +1588,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
-      <short value="Has the patient's carer (if applicable) been consulted regarding the proposed discharge date?" />
-      <definition value="Whether the patient's carer (if applicable) been consulted regarding the proposed discharge date." />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -1647,10 +1611,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="Whether the patient's carer (if applicable) been consulted regarding the proposed discharge date." />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -1712,7 +1675,9 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2018,7 +1983,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="CodeableConcept" />
+        <code value="code" />
       </type>
       <fixedCode value="completed" />
       <mustSupport value="true" />
@@ -2135,7 +2100,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -2381,6 +2346,7 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <slicing>
+        <discriminator value="text" />
         <ordered value="true" />
         <rules value="openAtEnd" />
       </slicing>
@@ -2426,14 +2392,59 @@
       </mapping>
     </element>
     <element>
+      <path value="QuestionnaireResponse.group.question.answer.value[x]" />
+      <short value="Single-valued answer to the question" />
+      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
+      <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
+      <requirements value="Ability to retain a single-valued answer to a question." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.answer.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Coding" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Code indicating the response provided for a question." />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="rim" />
+        <map value=".item" />
+      </mapping>
+    </element>
+    <element>
+      <path value="QuestionnaireResponse.group.question.answer.group" />
+      <short value="Nested questionnaire group" />
+      <definition value="Nested group, containing nested question for this question. The order of groups within the question is relevant." />
+      <requirements value="It is useful to have &quot;sub-questions&quot;, questions which normally appear when certain answers are given and which collect additional details." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="QuestionnaireResponse.group.question.answer.group" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="group" />
+      <mapping>
+        <identity value="rim" />
+        <map value=".outboundRelationship[typeCode=COMP].target[classCode=DOCSECT, moodCode=EVN]" />
+      </mapping>
+    </element>
+    <element>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
-      <short value="Patient Consultation" />
-      <definition value="A statement that the NHS body that has consulted with the patient regarding the discharge date." />
+      <short value="Questions in this group" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -2477,9 +2488,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
-      <short value="Has the patient been consulted regarding the  proposed discharge date?" />
-      <definition value="Whether the has patient been consulted regarding the proposed discharge date." />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -2491,7 +2501,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Has the patient been consulted regarding the  proposed discharge date?" />
+      <fixedString value="Has the patient been consulted regarding the proposed discharge date?" />
       <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
@@ -2501,10 +2511,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="Patient Consultation" />
-      <label value="Patient Consultation" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="Whether the patient has been consulted regarding the assessment." />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -2525,7 +2534,7 @@
       <path value="QuestionnaireResponse.group.question.answer.value[x]" />
       <name value="Patient Consultation" />
       <short value="Single-valued answer to the question" />
-      <definition value="The answer provided by the respondent to the question." />
+      <definition value="The answer (or one of the answers) provided by the respondent to the question." />
       <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
       <requirements value="Ability to retain a single-valued answer to a question." />
       <min value="1" />
@@ -2542,7 +2551,9 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2573,9 +2584,8 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
-      <short value="Carer Consultation" />
-      <definition value="A statement that the NHS body that has has consulted with the patient's carer regarding the discharge date." />
+      <short value="Questions in this group" />
+      <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
@@ -2619,9 +2629,8 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
-      <short value="Has the patient's carer (if applicable) been consulted regarding the proposed discharge date?" />
-      <definition value="Whether the patient's carer (if applicable) been consulted regarding the proposed discharge date." />
+      <short value="Text of the question as it is shown to the user" />
+      <definition value="The actual question as shown to the user to prompt them for an answer." />
       <requirements value="When including text for the questionnaire, each question may contain its actual question display text." />
       <min value="1" />
       <max value="1" />
@@ -2643,10 +2652,9 @@
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
       <name value="Carer Consultation" />
-      <label value="Carer Consultation" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
-      <comments value="Whether the patient's carer (if applicable) been consulted regarding the proposed discharge date." />
+      <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -2684,7 +2692,9 @@
       <binding>
         <strength value="required" />
         <description value="Code indicating the response provided for a question." />
-        <valueSetUri value="http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1-0" />
+        <valueSetReference>
+          <reference value="http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1-0" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />

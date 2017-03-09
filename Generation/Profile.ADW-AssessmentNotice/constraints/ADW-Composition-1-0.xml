@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2015-09-22T20:02:49.724+10:00" />
@@ -1231,7 +1231,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -1306,7 +1306,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -1447,10 +1447,12 @@
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -1481,7 +1483,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -1986,7 +1988,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-encounter-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3336,7 +3338,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3411,7 +3413,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3444,10 +3446,12 @@
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -3478,7 +3482,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3549,7 +3553,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-encounter-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>

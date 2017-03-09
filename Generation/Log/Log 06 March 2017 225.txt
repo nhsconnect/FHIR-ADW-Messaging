@@ -1,0 +1,2623 @@
+
+***Furnace log date run: 06 March 2017 225 ***
+Furnace: Fhir publisher tool version: 2.7.6256.31052
+***Starting generation***
+Source directory: C:\GitHubRepo\FHIR-ADW-Messaging\Generation 
+ Target Directory: C:\GitHubRepo\FHIR-ADW-Messaging\Generated
+Clear down Generated folder
+Copying files into Schemas folder ...
+Copying files into dist folder ...
+Start: creating IGResource.xml
+End: IGResource.xml created
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Create folder Profile.ADW-AssessmentNotice
+IG Creation - Adding ADW-Assessment-Notice-Message-Header-1-0 to IGResource.xml
+            - Adding Profile.ADW-AssessmentNotice package to IGResource.xml
+            - Saving ADW-AssessmentNotice-1-0-Ex01.xml in examples folder
+            - Saving ADW-Assessment-Notice-Message-Header-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Assessment-Notice-Message-Header-1-0 finished
+IG Creation - Adding ADW-Composition-1-0 to IGResource.xml
+            - Saving ADW-Composition-1-0-Ex01.xml in examples folder
+            - Saving ADW-Composition-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Composition-1-0 finished
+IG Creation - Adding ADW-Condition-1-0 to IGResource.xml
+            - Saving ADW-Condition-1-0-Ex01.xml in examples folder
+            - Saving ADW-Condition-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Condition-1-0 finished
+IG Creation - Adding ADW-Encounter-1-0 to IGResource.xml
+            - Saving ADW-Encounter-1-0-Ex01.xml in examples folder
+            - Saving ADW-Encounter-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Encounter-1-0 finished
+IG Creation - Adding ADW-Lead-Clinician-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex01.xml in examples folder
+            - Saving ADW-Lead-Clinician-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Lead-Clinician-Practitioner-1-0 finished
+IG Creation - Adding ADW-Location-1-0 to IGResource.xml
+            - Saving ADW-Location-1-0-Ex01.xml in examples folder
+            - Saving ADW-Location-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Location-1-0 finished
+IG Creation - Adding ADW-Message-Bundle-1-0 to IGResource.xml
+            - Saving ADW-Message-Bundle-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Message-Bundle-1-0 finished
+IG Creation - Adding ADW-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex01.xml in examples folder
+            - Saving ADW-Organization-1-0-Ex02.xml in examples folder
+            - Saving ADW-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Organization-1-0 finished
+IG Creation - Adding ADW-Patient-1-0 to IGResource.xml
+            - Saving ADW-Patient-1-0-Ex01.xml in examples folder
+            - Saving ADW-Patient-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Patient-1-0 finished
+IG Creation - Adding ADW-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex02.xml in examples folder
+            - Saving ADW-Practitioner-1-0-Ex03.xml in examples folder
+            - Saving ADW-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Practitioner-1-0 finished
+IG Creation - Adding ADW-Questionnaire-Response-1-0 to IGResource.xml
+            - Saving ADW-QuestionnaireResponse-1-0-Ex01.xml in examples folder
+            - Saving ADW-Questionnaire-Response-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Questionnaire-Response-1-0 finished
+IG Creation - Adding ADW-Referral-Request-1-0 to IGResource.xml
+            - Saving ADW-ReferralRequest-1-0-Ex01.xml in examples folder
+            - Saving ADW-Referral-Request-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Referral-Request-1-0 finished
+IG Creation - Adding ADW-Social-Services-Team-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex04.xml in examples folder
+            - Saving ADW-Social-Services-Team-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Social-Services-Team-Organization-1-0 finished
+IG Creation - Adding CareConnect-Condition-1 to IGResource.xml
+            - Saving CareConnect-Condition-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Condition-1 finished
+IG Creation - Adding CareConnect-Encounter-1 to IGResource.xml
+            - Saving CareConnect-Encounter-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Encounter-1 finished
+IG Creation - Adding CareConnect-Location-1 to IGResource.xml
+            - Saving CareConnect-Location-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Location-1 finished
+IG Creation - Adding CareConnect-Organization-1 to IGResource.xml
+            - Saving CareConnect-Organization-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Organization-1 finished
+IG Creation - Adding CareConnect-Patient-1 to IGResource.xml
+            - Saving CareConnect-Patient-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Patient-1 finished
+IG Creation - Adding CareConnect-Practitioner-1 to IGResource.xml
+            - Saving CareConnect-Practitioner-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Practitioner-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionEpisode-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionEpisode-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionEpisode-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionRelationship-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding Extension-CareConnect-EncounterTransport-1 to IGResource.xml
+            - Saving Extension-CareConnect-EncounterTransport-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EncounterTransport-1 finished
+IG Creation - Adding Extension-CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-EthnicCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EthnicCategory-1 finished
+IG Creation - Adding Extension-CareConnect-MainLocation-1 to IGResource.xml
+            - Saving Extension-CareConnect-MainLocation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-MainLocation-1 finished
+IG Creation - Adding Extension-CareConnect-NHSCommunication-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSCommunication-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSCommunication-1 finished
+IG Creation - Adding Extension-CareConnect-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Extension-CareConnect-RegistrationDetails-1 to IGResource.xml
+            - Saving Extension-CareConnect-RegistrationDetails-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-RegistrationDetails-1 finished
+IG Creation - Adding Extension-CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving Extension-CareConnect-ReligiousAffiliation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding Extension-CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-ResidentialStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding Extension-CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-TreatmentCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding Extension-Coding-SCTDescID to IGResource.xml
+            - Saving Extension-Coding-SCTDescID.xml in StructureDefinition folder
+IG Creation - Extension-Coding-SCTDescID finished
+IG Creation - Adding Extension-Interpreter-Required-1-0 to IGResource.xml
+            - Saving Extension-Interpreter-Required-1-0.xml in StructureDefinition folder
+IG Creation - Extension-Interpreter-Required-1-0 finished
+IG Creation - Adding organization-period to IGResource.xml
+            - Saving organization-period.xml in StructureDefinition folder
+IG Creation - organization-period finished
+IG Creation - Adding patient-birthTime to IGResource.xml
+            - Saving patient-birthTime.xml in StructureDefinition folder
+IG Creation - patient-birthTime finished
+IG Creation - Adding patient-cadavericDonor to IGResource.xml
+            - Saving patient-cadavericDonor.xml in StructureDefinition folder
+IG Creation - patient-cadavericDonor finished
+IG Creation - Adding adw-admission-type-1-0 to IGResource.xml
+            - Saving adw-admission-type-1-0.xml in ValueSet folder
+IG Creation - adw-admission-type-1-0 finished
+IG Creation - Adding adw-carerconsultation-status-1-0 to IGResource.xml
+            - Saving adw-carerconsultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-carerconsultation-status-1-0 finished
+IG Creation - Adding adw-consultation-status-1-0 to IGResource.xml
+            - Saving adw-consultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-consultation-status-1-0 finished
+IG Creation - Adding adw-message-event-1-0 to IGResource.xml
+            - Saving adw-message-event-1-0.xml in ValueSet folder
+IG Creation - adw-message-event-1-0 finished
+IG Creation - Adding adw-patient-consent-status-1-0 to IGResource.xml
+            - Saving adw-patient-consent-status-1-0.xml in ValueSet folder
+IG Creation - adw-patient-consent-status-1-0 finished
+IG Creation - Adding adw-person-stated-gender-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-1-0 finished
+IG Creation - Adding adw-person-stated-gender-ddmap-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-ddmap-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-ddmap-1-0 finished
+IG Creation - Adding adw-third-party-consent-source-1-0 to IGResource.xml
+            - Saving adw-third-party-consent-source-1-0.xml in ValueSet folder
+IG Creation - adw-third-party-consent-source-1-0 finished
+IG Creation - Adding CareConnect-AdministrativeGender-1 to IGResource.xml
+            - Saving CareConnect-AdministrativeGender-1.xml in ValueSet folder
+IG Creation - CareConnect-AdministrativeGender-1 finished
+IG Creation - Adding CareConnect-ConditionCategory-1 to IGResource.xml
+            - Saving CareConnect-ConditionCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionCategory-1 finished
+IG Creation - Adding CareConnect-ConditionClinicalStatus-1 to IGResource.xml
+            - Saving CareConnect-ConditionClinicalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionClinicalStatus-1 finished
+IG Creation - Adding CareConnect-ConditionEpisodicity-1 to IGResource.xml
+            - Saving CareConnect-ConditionEpisodicity-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionEpisodicity-1 finished
+IG Creation - Adding CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving CareConnect-ConditionRelationship-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding CareConnect-EncounterType-1 to IGResource.xml
+            - Saving CareConnect-EncounterType-1.xml in ValueSet folder
+IG Creation - CareConnect-EncounterType-1 finished
+IG Creation - Adding CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving CareConnect-EthnicCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-EthnicCategory-1 finished
+IG Creation - Adding CareConnect-HumanLanguage-1 to IGResource.xml
+            - Saving CareConnect-HumanLanguage-1.xml in ValueSet folder
+IG Creation - CareConnect-HumanLanguage-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityMode-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityMode-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityMode-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityProficiency-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityProficiency-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityProficiency-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-DDMAP-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-DDMAP-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-DDMAP-1 finished
+IG Creation - Adding CareConnect-NhsNumberVerificationStatus-1 to IGResource.xml
+            - Saving CareConnect-NhsNumberVerificationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-NhsNumberVerificationStatus-1 finished
+IG Creation - Adding CareConnect-PersonRelationshipType-1 to IGResource.xml
+            - Saving CareConnect-PersonRelationshipType-1.xml in ValueSet folder
+IG Creation - CareConnect-PersonRelationshipType-1 finished
+IG Creation - Adding CareConnect-RegistrationStatus-1 to IGResource.xml
+            - Saving CareConnect-RegistrationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationStatus-1 finished
+IG Creation - Adding CareConnect-RegistrationType-1 to IGResource.xml
+            - Saving CareConnect-RegistrationType-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationType-1 finished
+IG Creation - Adding CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving CareConnect-ReligiousAffiliation-1.xml in ValueSet folder
+IG Creation - CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving CareConnect-ResidentialStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding CareConnect-SDSJobRoleName-1 to IGResource.xml
+            - Saving CareConnect-SDSJobRoleName-1.xml in ValueSet folder
+IG Creation - CareConnect-SDSJobRoleName-1 finished
+IG Creation - Adding CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving CareConnect-TreatmentCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding human-language-1-0 to IGResource.xml
+            - Saving human-language-1-0.xml in ValueSet folder
+IG Creation - human-language-1-0 finished
+IG Creation - Adding job-role-name-1-0 to IGResource.xml
+            - Saving job-role-name-1-0.xml in ValueSet folder
+IG Creation - job-role-name-1-0 finished
+IG Creation - Adding nhs-number-status-indicator-1-0 to IGResource.xml
+            - Saving nhs-number-status-indicator-1-0.xml in ValueSet folder
+IG Creation - nhs-number-status-indicator-1-0 finished
+Create folder Profile.ADW-AssessmentNoticeAcceptResponse
+IG Creation - Adding ADW-Assessment-Notice-Accept-Response-Message-Header-1-0 to IGResource.xml
+            - Adding Profile.ADW-AssessmentNoticeAcceptResponse package to IGResource.xml
+            - Saving ADW-AssessmentNoticeAcceptResponse-1-0-Ex01.xml in examples folder
+            - Saving ADW-Assessment-Notice-Accept-Response-Message-Header-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Assessment-Notice-Accept-Response-Message-Header-1-0 finished
+IG Creation - Adding ADW-Location-1-0 to IGResource.xml
+            - Saving ADW-Location-1-0-Ex01.xml in examples folder
+            - Saving ADW-Location-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Location-1-0 finished
+IG Creation - Adding ADW-Message-Bundle-1-0 to IGResource.xml
+            - Saving ADW-Message-Bundle-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Message-Bundle-1-0 finished
+IG Creation - Adding ADW-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex01.xml in examples folder
+            - Saving ADW-Organization-1-0-Ex02.xml in examples folder
+            - Saving ADW-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Organization-1-0 finished
+IG Creation - Adding ADW-Patient-1-0 to IGResource.xml
+            - Saving ADW-Patient-1-0-Ex01.xml in examples folder
+            - Saving ADW-Patient-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Patient-1-0 finished
+IG Creation - Adding ADW-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex02.xml in examples folder
+            - Saving ADW-Practitioner-1-0-Ex03.xml in examples folder
+            - Saving ADW-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Practitioner-1-0 finished
+IG Creation - Adding ADW-Referral-Request-Accepted-1-0 to IGResource.xml
+            - Saving ADW-ReferralRequest-Accepted-1-0-Ex01.xml in examples folder
+            - Saving ADW-Referral-Request-Accepted-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Referral-Request-Accepted-1-0 finished
+IG Creation - Adding ADW-Response-Encounter-1-0 to IGResource.xml
+            - Saving ADW-Response-Encounter-1-0-Ex01.xml in examples folder
+            - Saving ADW-Response-Encounter-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Response-Encounter-1-0 finished
+IG Creation - Adding ADW-Social-Services-Team-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex04.xml in examples folder
+            - Saving ADW-Social-Services-Team-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Social-Services-Team-Organization-1-0 finished
+IG Creation - Adding CareConnect-Condition-1 to IGResource.xml
+            - Saving CareConnect-Condition-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Condition-1 finished
+IG Creation - Adding CareConnect-Encounter-1 to IGResource.xml
+            - Saving CareConnect-Encounter-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Encounter-1 finished
+IG Creation - Adding CareConnect-Location-1 to IGResource.xml
+            - Saving CareConnect-Location-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Location-1 finished
+IG Creation - Adding CareConnect-Organization-1 to IGResource.xml
+            - Saving CareConnect-Organization-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Organization-1 finished
+IG Creation - Adding CareConnect-Patient-1 to IGResource.xml
+            - Saving CareConnect-Patient-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Patient-1 finished
+IG Creation - Adding CareConnect-Practitioner-1 to IGResource.xml
+            - Saving CareConnect-Practitioner-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Practitioner-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionEpisode-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionEpisode-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionEpisode-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionRelationship-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding Extension-CareConnect-EncounterTransport-1 to IGResource.xml
+            - Saving Extension-CareConnect-EncounterTransport-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EncounterTransport-1 finished
+IG Creation - Adding Extension-CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-EthnicCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EthnicCategory-1 finished
+IG Creation - Adding Extension-CareConnect-MainLocation-1 to IGResource.xml
+            - Saving Extension-CareConnect-MainLocation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-MainLocation-1 finished
+IG Creation - Adding Extension-CareConnect-NHSCommunication-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSCommunication-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSCommunication-1 finished
+IG Creation - Adding Extension-CareConnect-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Extension-CareConnect-RegistrationDetails-1 to IGResource.xml
+            - Saving Extension-CareConnect-RegistrationDetails-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-RegistrationDetails-1 finished
+IG Creation - Adding Extension-CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving Extension-CareConnect-ReligiousAffiliation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding Extension-CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-ResidentialStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding Extension-CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-TreatmentCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding Extension-Coding-SCTDescID to IGResource.xml
+            - Saving Extension-Coding-SCTDescID.xml in StructureDefinition folder
+IG Creation - Extension-Coding-SCTDescID finished
+IG Creation - Adding Extension-Interpreter-Required-1-0 to IGResource.xml
+            - Saving Extension-Interpreter-Required-1-0.xml in StructureDefinition folder
+IG Creation - Extension-Interpreter-Required-1-0 finished
+IG Creation - Adding organization-period to IGResource.xml
+            - Saving organization-period.xml in StructureDefinition folder
+IG Creation - organization-period finished
+IG Creation - Adding patient-birthTime to IGResource.xml
+            - Saving patient-birthTime.xml in StructureDefinition folder
+IG Creation - patient-birthTime finished
+IG Creation - Adding patient-cadavericDonor to IGResource.xml
+            - Saving patient-cadavericDonor.xml in StructureDefinition folder
+IG Creation - patient-cadavericDonor finished
+IG Creation - Adding adw-admission-type-1-0 to IGResource.xml
+            - Saving adw-admission-type-1-0.xml in ValueSet folder
+IG Creation - adw-admission-type-1-0 finished
+IG Creation - Adding adw-assessment-notice-accept-reason-1-0 to IGResource.xml
+            - Saving adw-assessment-notice-accept-reason-1-0.xml in ValueSet folder
+IG Creation - adw-assessment-notice-accept-reason-1-0 finished
+IG Creation - Adding adw-carerconsultation-status-1-0 to IGResource.xml
+            - Saving adw-carerconsultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-carerconsultation-status-1-0 finished
+IG Creation - Adding adw-consultation-status-1-0 to IGResource.xml
+            - Saving adw-consultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-consultation-status-1-0 finished
+IG Creation - Adding adw-message-event-1-0 to IGResource.xml
+            - Saving adw-message-event-1-0.xml in ValueSet folder
+IG Creation - adw-message-event-1-0 finished
+IG Creation - Adding adw-patient-consent-status-1-0 to IGResource.xml
+            - Saving adw-patient-consent-status-1-0.xml in ValueSet folder
+IG Creation - adw-patient-consent-status-1-0 finished
+IG Creation - Adding adw-person-stated-gender-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-1-0 finished
+IG Creation - Adding adw-person-stated-gender-ddmap-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-ddmap-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-ddmap-1-0 finished
+IG Creation - Adding adw-third-party-consent-source-1-0 to IGResource.xml
+            - Saving adw-third-party-consent-source-1-0.xml in ValueSet folder
+IG Creation - adw-third-party-consent-source-1-0 finished
+IG Creation - Adding CareConnect-AdministrativeGender-1 to IGResource.xml
+            - Saving CareConnect-AdministrativeGender-1.xml in ValueSet folder
+IG Creation - CareConnect-AdministrativeGender-1 finished
+IG Creation - Adding CareConnect-ConditionCategory-1 to IGResource.xml
+            - Saving CareConnect-ConditionCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionCategory-1 finished
+IG Creation - Adding CareConnect-ConditionClinicalStatus-1 to IGResource.xml
+            - Saving CareConnect-ConditionClinicalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionClinicalStatus-1 finished
+IG Creation - Adding CareConnect-ConditionEpisodicity-1 to IGResource.xml
+            - Saving CareConnect-ConditionEpisodicity-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionEpisodicity-1 finished
+IG Creation - Adding CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving CareConnect-ConditionRelationship-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding CareConnect-EncounterType-1 to IGResource.xml
+            - Saving CareConnect-EncounterType-1.xml in ValueSet folder
+IG Creation - CareConnect-EncounterType-1 finished
+IG Creation - Adding CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving CareConnect-EthnicCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-EthnicCategory-1 finished
+IG Creation - Adding CareConnect-HumanLanguage-1 to IGResource.xml
+            - Saving CareConnect-HumanLanguage-1.xml in ValueSet folder
+IG Creation - CareConnect-HumanLanguage-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityMode-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityMode-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityMode-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityProficiency-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityProficiency-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityProficiency-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-DDMAP-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-DDMAP-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-DDMAP-1 finished
+IG Creation - Adding CareConnect-NhsNumberVerificationStatus-1 to IGResource.xml
+            - Saving CareConnect-NhsNumberVerificationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-NhsNumberVerificationStatus-1 finished
+IG Creation - Adding CareConnect-PersonRelationshipType-1 to IGResource.xml
+            - Saving CareConnect-PersonRelationshipType-1.xml in ValueSet folder
+IG Creation - CareConnect-PersonRelationshipType-1 finished
+IG Creation - Adding CareConnect-RegistrationStatus-1 to IGResource.xml
+            - Saving CareConnect-RegistrationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationStatus-1 finished
+IG Creation - Adding CareConnect-RegistrationType-1 to IGResource.xml
+            - Saving CareConnect-RegistrationType-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationType-1 finished
+IG Creation - Adding CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving CareConnect-ReligiousAffiliation-1.xml in ValueSet folder
+IG Creation - CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving CareConnect-ResidentialStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding CareConnect-SDSJobRoleName-1 to IGResource.xml
+            - Saving CareConnect-SDSJobRoleName-1.xml in ValueSet folder
+IG Creation - CareConnect-SDSJobRoleName-1 finished
+IG Creation - Adding CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving CareConnect-TreatmentCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding human-language-1-0 to IGResource.xml
+            - Saving human-language-1-0.xml in ValueSet folder
+IG Creation - human-language-1-0 finished
+IG Creation - Adding job-role-name-1-0 to IGResource.xml
+            - Saving job-role-name-1-0.xml in ValueSet folder
+IG Creation - job-role-name-1-0 finished
+IG Creation - Adding nhs-number-status-indicator-1-0 to IGResource.xml
+            - Saving nhs-number-status-indicator-1-0.xml in ValueSet folder
+IG Creation - nhs-number-status-indicator-1-0 finished
+Create folder Profile.ADW-AssessmentNoticeRejectResponse
+IG Creation - Adding ADW-Assessment-Notice-Reject-Response-Message-Header-1-0 to IGResource.xml
+            - Adding Profile.ADW-AssessmentNoticeRejectResponse package to IGResource.xml
+            - Saving ADW-AssessmentNoticeRejectResponse-1-0-Ex01.xml in examples folder
+            - Saving ADW-Assessment-Notice-Reject-Response-Message-Header-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Assessment-Notice-Reject-Response-Message-Header-1-0 finished
+IG Creation - Adding ADW-Location-1-0 to IGResource.xml
+            - Saving ADW-Location-1-0-Ex01.xml in examples folder
+            - Saving ADW-Location-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Location-1-0 finished
+IG Creation - Adding ADW-Message-Bundle-1-0 to IGResource.xml
+            - Saving ADW-Message-Bundle-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Message-Bundle-1-0 finished
+IG Creation - Adding ADW-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex01.xml in examples folder
+            - Saving ADW-Organization-1-0-Ex02.xml in examples folder
+            - Saving ADW-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Organization-1-0 finished
+IG Creation - Adding ADW-Patient-1-0 to IGResource.xml
+            - Saving ADW-Patient-1-0-Ex01.xml in examples folder
+            - Saving ADW-Patient-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Patient-1-0 finished
+IG Creation - Adding ADW-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex02.xml in examples folder
+            - Saving ADW-Practitioner-1-0-Ex03.xml in examples folder
+            - Saving ADW-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Practitioner-1-0 finished
+IG Creation - Adding ADW-Referral-Request-Rejected-1-0 to IGResource.xml
+            - Saving ADW-ReferralRequest-Rejected-1-0-Ex01.xml in examples folder
+            - Saving ADW-Referral-Request-Rejected-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Referral-Request-Rejected-1-0 finished
+IG Creation - Adding ADW-Response-Encounter-1-0 to IGResource.xml
+            - Saving ADW-Response-Encounter-1-0-Ex01.xml in examples folder
+            - Saving ADW-Response-Encounter-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Response-Encounter-1-0 finished
+IG Creation - Adding ADW-Social-Services-Team-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex04.xml in examples folder
+            - Saving ADW-Social-Services-Team-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Social-Services-Team-Organization-1-0 finished
+IG Creation - Adding CareConnect-Condition-1 to IGResource.xml
+            - Saving CareConnect-Condition-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Condition-1 finished
+IG Creation - Adding CareConnect-Encounter-1 to IGResource.xml
+            - Saving CareConnect-Encounter-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Encounter-1 finished
+IG Creation - Adding CareConnect-Location-1 to IGResource.xml
+            - Saving CareConnect-Location-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Location-1 finished
+IG Creation - Adding CareConnect-Organization-1 to IGResource.xml
+            - Saving CareConnect-Organization-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Organization-1 finished
+IG Creation - Adding CareConnect-Patient-1 to IGResource.xml
+            - Saving CareConnect-Patient-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Patient-1 finished
+IG Creation - Adding CareConnect-Practitioner-1 to IGResource.xml
+            - Saving CareConnect-Practitioner-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Practitioner-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionEpisode-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionEpisode-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionEpisode-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionRelationship-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding Extension-CareConnect-EncounterTransport-1 to IGResource.xml
+            - Saving Extension-CareConnect-EncounterTransport-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EncounterTransport-1 finished
+IG Creation - Adding Extension-CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-EthnicCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EthnicCategory-1 finished
+IG Creation - Adding Extension-CareConnect-MainLocation-1 to IGResource.xml
+            - Saving Extension-CareConnect-MainLocation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-MainLocation-1 finished
+IG Creation - Adding Extension-CareConnect-NHSCommunication-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSCommunication-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSCommunication-1 finished
+IG Creation - Adding Extension-CareConnect-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Extension-CareConnect-RegistrationDetails-1 to IGResource.xml
+            - Saving Extension-CareConnect-RegistrationDetails-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-RegistrationDetails-1 finished
+IG Creation - Adding Extension-CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving Extension-CareConnect-ReligiousAffiliation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding Extension-CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-ResidentialStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding Extension-CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-TreatmentCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding Extension-Coding-SCTDescID to IGResource.xml
+            - Saving Extension-Coding-SCTDescID.xml in StructureDefinition folder
+IG Creation - Extension-Coding-SCTDescID finished
+IG Creation - Adding Extension-Interpreter-Required-1-0 to IGResource.xml
+            - Saving Extension-Interpreter-Required-1-0.xml in StructureDefinition folder
+IG Creation - Extension-Interpreter-Required-1-0 finished
+IG Creation - Adding organization-period to IGResource.xml
+            - Saving organization-period.xml in StructureDefinition folder
+IG Creation - organization-period finished
+IG Creation - Adding patient-birthTime to IGResource.xml
+            - Saving patient-birthTime.xml in StructureDefinition folder
+IG Creation - patient-birthTime finished
+IG Creation - Adding patient-cadavericDonor to IGResource.xml
+            - Saving patient-cadavericDonor.xml in StructureDefinition folder
+IG Creation - patient-cadavericDonor finished
+IG Creation - Adding adw-admission-type-1-0 to IGResource.xml
+            - Saving adw-admission-type-1-0.xml in ValueSet folder
+IG Creation - adw-admission-type-1-0 finished
+IG Creation - Adding adw-assessment-notice-reject-reason-1-0 to IGResource.xml
+            - Saving adw-assessment-notice-reject-reason-1-0.xml in ValueSet folder
+IG Creation - adw-assessment-notice-reject-reason-1-0 finished
+IG Creation - Adding adw-carerconsultation-status-1-0 to IGResource.xml
+            - Saving adw-carerconsultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-carerconsultation-status-1-0 finished
+IG Creation - Adding adw-consultation-status-1-0 to IGResource.xml
+            - Saving adw-consultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-consultation-status-1-0 finished
+IG Creation - Adding adw-message-event-1-0 to IGResource.xml
+            - Saving adw-message-event-1-0.xml in ValueSet folder
+IG Creation - adw-message-event-1-0 finished
+IG Creation - Adding adw-patient-consent-status-1-0 to IGResource.xml
+            - Saving adw-patient-consent-status-1-0.xml in ValueSet folder
+IG Creation - adw-patient-consent-status-1-0 finished
+IG Creation - Adding adw-person-stated-gender-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-1-0 finished
+IG Creation - Adding adw-person-stated-gender-ddmap-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-ddmap-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-ddmap-1-0 finished
+IG Creation - Adding adw-third-party-consent-source-1-0 to IGResource.xml
+            - Saving adw-third-party-consent-source-1-0.xml in ValueSet folder
+IG Creation - adw-third-party-consent-source-1-0 finished
+IG Creation - Adding CareConnect-AdministrativeGender-1 to IGResource.xml
+            - Saving CareConnect-AdministrativeGender-1.xml in ValueSet folder
+IG Creation - CareConnect-AdministrativeGender-1 finished
+IG Creation - Adding CareConnect-ConditionCategory-1 to IGResource.xml
+            - Saving CareConnect-ConditionCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionCategory-1 finished
+IG Creation - Adding CareConnect-ConditionClinicalStatus-1 to IGResource.xml
+            - Saving CareConnect-ConditionClinicalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionClinicalStatus-1 finished
+IG Creation - Adding CareConnect-ConditionEpisodicity-1 to IGResource.xml
+            - Saving CareConnect-ConditionEpisodicity-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionEpisodicity-1 finished
+IG Creation - Adding CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving CareConnect-ConditionRelationship-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding CareConnect-EncounterType-1 to IGResource.xml
+            - Saving CareConnect-EncounterType-1.xml in ValueSet folder
+IG Creation - CareConnect-EncounterType-1 finished
+IG Creation - Adding CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving CareConnect-EthnicCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-EthnicCategory-1 finished
+IG Creation - Adding CareConnect-HumanLanguage-1 to IGResource.xml
+            - Saving CareConnect-HumanLanguage-1.xml in ValueSet folder
+IG Creation - CareConnect-HumanLanguage-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityMode-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityMode-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityMode-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityProficiency-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityProficiency-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityProficiency-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-DDMAP-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-DDMAP-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-DDMAP-1 finished
+IG Creation - Adding CareConnect-NhsNumberVerificationStatus-1 to IGResource.xml
+            - Saving CareConnect-NhsNumberVerificationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-NhsNumberVerificationStatus-1 finished
+IG Creation - Adding CareConnect-PersonRelationshipType-1 to IGResource.xml
+            - Saving CareConnect-PersonRelationshipType-1.xml in ValueSet folder
+IG Creation - CareConnect-PersonRelationshipType-1 finished
+IG Creation - Adding CareConnect-RegistrationStatus-1 to IGResource.xml
+            - Saving CareConnect-RegistrationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationStatus-1 finished
+IG Creation - Adding CareConnect-RegistrationType-1 to IGResource.xml
+            - Saving CareConnect-RegistrationType-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationType-1 finished
+IG Creation - Adding CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving CareConnect-ReligiousAffiliation-1.xml in ValueSet folder
+IG Creation - CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving CareConnect-ResidentialStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding CareConnect-SDSJobRoleName-1 to IGResource.xml
+            - Saving CareConnect-SDSJobRoleName-1.xml in ValueSet folder
+IG Creation - CareConnect-SDSJobRoleName-1 finished
+IG Creation - Adding CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving CareConnect-TreatmentCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding human-language-1-0 to IGResource.xml
+            - Saving human-language-1-0.xml in ValueSet folder
+IG Creation - human-language-1-0 finished
+IG Creation - Adding job-role-name-1-0 to IGResource.xml
+            - Saving job-role-name-1-0.xml in ValueSet folder
+IG Creation - job-role-name-1-0 finished
+IG Creation - Adding nhs-number-status-indicator-1-0 to IGResource.xml
+            - Saving nhs-number-status-indicator-1-0.xml in ValueSet folder
+IG Creation - nhs-number-status-indicator-1-0 finished
+Create folder Profile.ADW-DischargeNotice
+IG Creation - Adding ADW-Discharge-Composition-1-0 to IGResource.xml
+            - Adding Profile.ADW-DischargeNotice package to IGResource.xml
+            - Saving ADW-Discharge-Composition-1-0-Ex01.xml in examples folder
+            - Saving ADW-Discharge-Composition-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Discharge-Composition-1-0 finished
+IG Creation - Adding ADW-Discharge-Encounter-1-0 to IGResource.xml
+            - Saving ADW-Discharge-Encounter-1-0-Ex01.xml in examples folder
+            - Saving ADW-Discharge-Encounter-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Discharge-Encounter-1-0 finished
+IG Creation - Adding ADW-Discharge-Notice-Message-Header-1-0 to IGResource.xml
+            - Saving ADW-DischargeNotice-1-0-Ex01.xml in examples folder
+            - Saving ADW-Discharge-Notice-Message-Header-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Discharge-Notice-Message-Header-1-0 finished
+IG Creation - Adding ADW-Discharge-Questionnaire-Response-1-0 to IGResource.xml
+            - Saving ADW-DischargeQuestionnaireResponse-1-0-Ex01.xml in examples folder
+            - Saving ADW-Discharge-Questionnaire-Response-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Discharge-Questionnaire-Response-1-0 finished
+IG Creation - Adding ADW-Discharge-Referral-Request-1-0 to IGResource.xml
+            - Saving ADW-DischargeReferralRequest-1-0-Ex01.xml in examples folder
+            - Saving ADW-Discharge-Referral-Request-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Discharge-Referral-Request-1-0 finished
+IG Creation - Adding ADW-Lead-Clinician-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex01.xml in examples folder
+            - Saving ADW-Lead-Clinician-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Lead-Clinician-Practitioner-1-0 finished
+IG Creation - Adding ADW-Location-1-0 to IGResource.xml
+            - Saving ADW-Location-1-0-Ex01.xml in examples folder
+            - Saving ADW-Location-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Location-1-0 finished
+IG Creation - Adding ADW-Message-Bundle-1-0 to IGResource.xml
+            - Saving ADW-Message-Bundle-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Message-Bundle-1-0 finished
+IG Creation - Adding ADW-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex01.xml in examples folder
+            - Saving ADW-Organization-1-0-Ex02.xml in examples folder
+            - Saving ADW-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Organization-1-0 finished
+IG Creation - Adding ADW-Patient-1-0 to IGResource.xml
+            - Saving ADW-Patient-1-0-Ex01.xml in examples folder
+            - Saving ADW-Patient-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Patient-1-0 finished
+IG Creation - Adding ADW-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex02.xml in examples folder
+            - Saving ADW-Practitioner-1-0-Ex03.xml in examples folder
+            - Saving ADW-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Practitioner-1-0 finished
+IG Creation - Adding ADW-Social-Services-Team-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex04.xml in examples folder
+            - Saving ADW-Social-Services-Team-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Social-Services-Team-Organization-1-0 finished
+IG Creation - Adding CareConnect-Condition-1 to IGResource.xml
+            - Saving CareConnect-Condition-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Condition-1 finished
+IG Creation - Adding CareConnect-Encounter-1 to IGResource.xml
+            - Saving CareConnect-Encounter-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Encounter-1 finished
+IG Creation - Adding CareConnect-Location-1 to IGResource.xml
+            - Saving CareConnect-Location-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Location-1 finished
+IG Creation - Adding CareConnect-Organization-1 to IGResource.xml
+            - Saving CareConnect-Organization-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Organization-1 finished
+IG Creation - Adding CareConnect-Patient-1 to IGResource.xml
+            - Saving CareConnect-Patient-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Patient-1 finished
+IG Creation - Adding CareConnect-Practitioner-1 to IGResource.xml
+            - Saving CareConnect-Practitioner-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Practitioner-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionEpisode-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionEpisode-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionEpisode-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionRelationship-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding Extension-CareConnect-EncounterTransport-1 to IGResource.xml
+            - Saving Extension-CareConnect-EncounterTransport-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EncounterTransport-1 finished
+IG Creation - Adding Extension-CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-EthnicCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EthnicCategory-1 finished
+IG Creation - Adding Extension-CareConnect-MainLocation-1 to IGResource.xml
+            - Saving Extension-CareConnect-MainLocation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-MainLocation-1 finished
+IG Creation - Adding Extension-CareConnect-NHSCommunication-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSCommunication-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSCommunication-1 finished
+IG Creation - Adding Extension-CareConnect-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Extension-CareConnect-RegistrationDetails-1 to IGResource.xml
+            - Saving Extension-CareConnect-RegistrationDetails-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-RegistrationDetails-1 finished
+IG Creation - Adding Extension-CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving Extension-CareConnect-ReligiousAffiliation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding Extension-CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-ResidentialStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding Extension-CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-TreatmentCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding Extension-Coding-SCTDescID to IGResource.xml
+            - Saving Extension-Coding-SCTDescID.xml in StructureDefinition folder
+IG Creation - Extension-Coding-SCTDescID finished
+IG Creation - Adding Extension-Interpreter-Required-1-0 to IGResource.xml
+            - Saving Extension-Interpreter-Required-1-0.xml in StructureDefinition folder
+IG Creation - Extension-Interpreter-Required-1-0 finished
+IG Creation - Adding organization-period to IGResource.xml
+            - Saving organization-period.xml in StructureDefinition folder
+IG Creation - organization-period finished
+IG Creation - Adding patient-birthTime to IGResource.xml
+            - Saving patient-birthTime.xml in StructureDefinition folder
+IG Creation - patient-birthTime finished
+IG Creation - Adding patient-cadavericDonor to IGResource.xml
+            - Saving patient-cadavericDonor.xml in StructureDefinition folder
+IG Creation - patient-cadavericDonor finished
+IG Creation - Adding adw-admission-type-1-0 to IGResource.xml
+            - Saving adw-admission-type-1-0.xml in ValueSet folder
+IG Creation - adw-admission-type-1-0 finished
+IG Creation - Adding adw-carerconsultation-status-1-0 to IGResource.xml
+            - Saving adw-carerconsultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-carerconsultation-status-1-0 finished
+IG Creation - Adding adw-consultation-status-1-0 to IGResource.xml
+            - Saving adw-consultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-consultation-status-1-0 finished
+IG Creation - Adding adw-message-event-1-0 to IGResource.xml
+            - Saving adw-message-event-1-0.xml in ValueSet folder
+IG Creation - adw-message-event-1-0 finished
+IG Creation - Adding adw-patient-consent-status-1-0 to IGResource.xml
+            - Saving adw-patient-consent-status-1-0.xml in ValueSet folder
+IG Creation - adw-patient-consent-status-1-0 finished
+IG Creation - Adding adw-person-stated-gender-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-1-0 finished
+IG Creation - Adding adw-person-stated-gender-ddmap-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-ddmap-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-ddmap-1-0 finished
+IG Creation - Adding adw-third-party-consent-source-1-0 to IGResource.xml
+            - Saving adw-third-party-consent-source-1-0.xml in ValueSet folder
+IG Creation - adw-third-party-consent-source-1-0 finished
+IG Creation - Adding CareConnect-AdministrativeGender-1 to IGResource.xml
+            - Saving CareConnect-AdministrativeGender-1.xml in ValueSet folder
+IG Creation - CareConnect-AdministrativeGender-1 finished
+IG Creation - Adding CareConnect-ConditionCategory-1 to IGResource.xml
+            - Saving CareConnect-ConditionCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionCategory-1 finished
+IG Creation - Adding CareConnect-ConditionClinicalStatus-1 to IGResource.xml
+            - Saving CareConnect-ConditionClinicalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionClinicalStatus-1 finished
+IG Creation - Adding CareConnect-ConditionEpisodicity-1 to IGResource.xml
+            - Saving CareConnect-ConditionEpisodicity-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionEpisodicity-1 finished
+IG Creation - Adding CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving CareConnect-ConditionRelationship-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding CareConnect-EncounterType-1 to IGResource.xml
+            - Saving CareConnect-EncounterType-1.xml in ValueSet folder
+IG Creation - CareConnect-EncounterType-1 finished
+IG Creation - Adding CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving CareConnect-EthnicCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-EthnicCategory-1 finished
+IG Creation - Adding CareConnect-HumanLanguage-1 to IGResource.xml
+            - Saving CareConnect-HumanLanguage-1.xml in ValueSet folder
+IG Creation - CareConnect-HumanLanguage-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityMode-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityMode-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityMode-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityProficiency-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityProficiency-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityProficiency-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-DDMAP-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-DDMAP-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-DDMAP-1 finished
+IG Creation - Adding CareConnect-NhsNumberVerificationStatus-1 to IGResource.xml
+            - Saving CareConnect-NhsNumberVerificationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-NhsNumberVerificationStatus-1 finished
+IG Creation - Adding CareConnect-PersonRelationshipType-1 to IGResource.xml
+            - Saving CareConnect-PersonRelationshipType-1.xml in ValueSet folder
+IG Creation - CareConnect-PersonRelationshipType-1 finished
+IG Creation - Adding CareConnect-RegistrationStatus-1 to IGResource.xml
+            - Saving CareConnect-RegistrationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationStatus-1 finished
+IG Creation - Adding CareConnect-RegistrationType-1 to IGResource.xml
+            - Saving CareConnect-RegistrationType-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationType-1 finished
+IG Creation - Adding CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving CareConnect-ReligiousAffiliation-1.xml in ValueSet folder
+IG Creation - CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving CareConnect-ResidentialStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding CareConnect-SDSJobRoleName-1 to IGResource.xml
+            - Saving CareConnect-SDSJobRoleName-1.xml in ValueSet folder
+IG Creation - CareConnect-SDSJobRoleName-1 finished
+IG Creation - Adding CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving CareConnect-TreatmentCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding human-language-1-0 to IGResource.xml
+            - Saving human-language-1-0.xml in ValueSet folder
+IG Creation - human-language-1-0 finished
+IG Creation - Adding job-role-name-1-0 to IGResource.xml
+            - Saving job-role-name-1-0.xml in ValueSet folder
+IG Creation - job-role-name-1-0 finished
+IG Creation - Adding nhs-number-status-indicator-1-0 to IGResource.xml
+            - Saving nhs-number-status-indicator-1-0.xml in ValueSet folder
+IG Creation - nhs-number-status-indicator-1-0 finished
+Create folder Profile.ADW-DischargeNoticeAcceptResponse
+IG Creation - Adding ADW-Discharge-Notice-Accept-Response-Message-Header-1-0 to IGResource.xml
+            - Adding Profile.ADW-DischargeNoticeAcceptResponse package to IGResource.xml
+            - Saving ADW-DischargeNoticeAcceptResponse-1-0-Ex01.xml in examples folder
+            - Saving ADW-Discharge-Notice-Accept-Response-Message-Header-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Discharge-Notice-Accept-Response-Message-Header-1-0 finished
+IG Creation - Adding ADW-Location-1-0 to IGResource.xml
+            - Saving ADW-Location-1-0-Ex01.xml in examples folder
+            - Saving ADW-Location-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Location-1-0 finished
+IG Creation - Adding ADW-Message-Bundle-1-0 to IGResource.xml
+            - Saving ADW-Message-Bundle-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Message-Bundle-1-0 finished
+IG Creation - Adding ADW-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex01.xml in examples folder
+            - Saving ADW-Organization-1-0-Ex02.xml in examples folder
+            - Saving ADW-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Organization-1-0 finished
+IG Creation - Adding ADW-Patient-1-0 to IGResource.xml
+            - Saving ADW-Patient-1-0-Ex01.xml in examples folder
+            - Saving ADW-Patient-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Patient-1-0 finished
+IG Creation - Adding ADW-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex02.xml in examples folder
+            - Saving ADW-Practitioner-1-0-Ex03.xml in examples folder
+            - Saving ADW-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Practitioner-1-0 finished
+IG Creation - Adding ADW-Referral-Request-Accepted-1-0 to IGResource.xml
+            - Saving ADW-ReferralRequest-Accepted-1-0-Ex01.xml in examples folder
+            - Saving ADW-Referral-Request-Accepted-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Referral-Request-Accepted-1-0 finished
+IG Creation - Adding ADW-Response-Encounter-1-0 to IGResource.xml
+            - Saving ADW-Response-Encounter-1-0-Ex01.xml in examples folder
+            - Saving ADW-Response-Encounter-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Response-Encounter-1-0 finished
+IG Creation - Adding ADW-Social-Services-Team-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex04.xml in examples folder
+            - Saving ADW-Social-Services-Team-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Social-Services-Team-Organization-1-0 finished
+IG Creation - Adding CareConnect-Condition-1 to IGResource.xml
+            - Saving CareConnect-Condition-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Condition-1 finished
+IG Creation - Adding CareConnect-Encounter-1 to IGResource.xml
+            - Saving CareConnect-Encounter-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Encounter-1 finished
+IG Creation - Adding CareConnect-Location-1 to IGResource.xml
+            - Saving CareConnect-Location-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Location-1 finished
+IG Creation - Adding CareConnect-Organization-1 to IGResource.xml
+            - Saving CareConnect-Organization-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Organization-1 finished
+IG Creation - Adding CareConnect-Patient-1 to IGResource.xml
+            - Saving CareConnect-Patient-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Patient-1 finished
+IG Creation - Adding CareConnect-Practitioner-1 to IGResource.xml
+            - Saving CareConnect-Practitioner-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Practitioner-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionEpisode-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionEpisode-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionEpisode-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionRelationship-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding Extension-CareConnect-EncounterTransport-1 to IGResource.xml
+            - Saving Extension-CareConnect-EncounterTransport-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EncounterTransport-1 finished
+IG Creation - Adding Extension-CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-EthnicCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EthnicCategory-1 finished
+IG Creation - Adding Extension-CareConnect-MainLocation-1 to IGResource.xml
+            - Saving Extension-CareConnect-MainLocation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-MainLocation-1 finished
+IG Creation - Adding Extension-CareConnect-NHSCommunication-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSCommunication-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSCommunication-1 finished
+IG Creation - Adding Extension-CareConnect-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Extension-CareConnect-RegistrationDetails-1 to IGResource.xml
+            - Saving Extension-CareConnect-RegistrationDetails-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-RegistrationDetails-1 finished
+IG Creation - Adding Extension-CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving Extension-CareConnect-ReligiousAffiliation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding Extension-CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-ResidentialStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding Extension-CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-TreatmentCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding Extension-Coding-SCTDescID to IGResource.xml
+            - Saving Extension-Coding-SCTDescID.xml in StructureDefinition folder
+IG Creation - Extension-Coding-SCTDescID finished
+IG Creation - Adding Extension-Interpreter-Required-1-0 to IGResource.xml
+            - Saving Extension-Interpreter-Required-1-0.xml in StructureDefinition folder
+IG Creation - Extension-Interpreter-Required-1-0 finished
+IG Creation - Adding organization-period to IGResource.xml
+            - Saving organization-period.xml in StructureDefinition folder
+IG Creation - organization-period finished
+IG Creation - Adding patient-birthTime to IGResource.xml
+            - Saving patient-birthTime.xml in StructureDefinition folder
+IG Creation - patient-birthTime finished
+IG Creation - Adding patient-cadavericDonor to IGResource.xml
+            - Saving patient-cadavericDonor.xml in StructureDefinition folder
+IG Creation - patient-cadavericDonor finished
+IG Creation - Adding adw-admission-type-1-0 to IGResource.xml
+            - Saving adw-admission-type-1-0.xml in ValueSet folder
+IG Creation - adw-admission-type-1-0 finished
+IG Creation - Adding adw-assessment-notice-accept-reason-1-0 to IGResource.xml
+            - Saving adw-assessment-notice-accept-reason-1-0.xml in ValueSet folder
+IG Creation - adw-assessment-notice-accept-reason-1-0 finished
+IG Creation - Adding adw-carerconsultation-status-1-0 to IGResource.xml
+            - Saving adw-carerconsultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-carerconsultation-status-1-0 finished
+IG Creation - Adding adw-consultation-status-1-0 to IGResource.xml
+            - Saving adw-consultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-consultation-status-1-0 finished
+IG Creation - Adding adw-message-event-1-0 to IGResource.xml
+            - Saving adw-message-event-1-0.xml in ValueSet folder
+IG Creation - adw-message-event-1-0 finished
+IG Creation - Adding adw-patient-consent-status-1-0 to IGResource.xml
+            - Saving adw-patient-consent-status-1-0.xml in ValueSet folder
+IG Creation - adw-patient-consent-status-1-0 finished
+IG Creation - Adding adw-person-stated-gender-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-1-0 finished
+IG Creation - Adding adw-person-stated-gender-ddmap-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-ddmap-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-ddmap-1-0 finished
+IG Creation - Adding adw-third-party-consent-source-1-0 to IGResource.xml
+            - Saving adw-third-party-consent-source-1-0.xml in ValueSet folder
+IG Creation - adw-third-party-consent-source-1-0 finished
+IG Creation - Adding CareConnect-AdministrativeGender-1 to IGResource.xml
+            - Saving CareConnect-AdministrativeGender-1.xml in ValueSet folder
+IG Creation - CareConnect-AdministrativeGender-1 finished
+IG Creation - Adding CareConnect-ConditionCategory-1 to IGResource.xml
+            - Saving CareConnect-ConditionCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionCategory-1 finished
+IG Creation - Adding CareConnect-ConditionClinicalStatus-1 to IGResource.xml
+            - Saving CareConnect-ConditionClinicalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionClinicalStatus-1 finished
+IG Creation - Adding CareConnect-ConditionEpisodicity-1 to IGResource.xml
+            - Saving CareConnect-ConditionEpisodicity-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionEpisodicity-1 finished
+IG Creation - Adding CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving CareConnect-ConditionRelationship-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding CareConnect-EncounterType-1 to IGResource.xml
+            - Saving CareConnect-EncounterType-1.xml in ValueSet folder
+IG Creation - CareConnect-EncounterType-1 finished
+IG Creation - Adding CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving CareConnect-EthnicCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-EthnicCategory-1 finished
+IG Creation - Adding CareConnect-HumanLanguage-1 to IGResource.xml
+            - Saving CareConnect-HumanLanguage-1.xml in ValueSet folder
+IG Creation - CareConnect-HumanLanguage-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityMode-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityMode-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityMode-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityProficiency-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityProficiency-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityProficiency-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-DDMAP-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-DDMAP-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-DDMAP-1 finished
+IG Creation - Adding CareConnect-NhsNumberVerificationStatus-1 to IGResource.xml
+            - Saving CareConnect-NhsNumberVerificationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-NhsNumberVerificationStatus-1 finished
+IG Creation - Adding CareConnect-PersonRelationshipType-1 to IGResource.xml
+            - Saving CareConnect-PersonRelationshipType-1.xml in ValueSet folder
+IG Creation - CareConnect-PersonRelationshipType-1 finished
+IG Creation - Adding CareConnect-RegistrationStatus-1 to IGResource.xml
+            - Saving CareConnect-RegistrationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationStatus-1 finished
+IG Creation - Adding CareConnect-RegistrationType-1 to IGResource.xml
+            - Saving CareConnect-RegistrationType-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationType-1 finished
+IG Creation - Adding CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving CareConnect-ReligiousAffiliation-1.xml in ValueSet folder
+IG Creation - CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving CareConnect-ResidentialStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding CareConnect-SDSJobRoleName-1 to IGResource.xml
+            - Saving CareConnect-SDSJobRoleName-1.xml in ValueSet folder
+IG Creation - CareConnect-SDSJobRoleName-1 finished
+IG Creation - Adding CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving CareConnect-TreatmentCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding human-language-1-0 to IGResource.xml
+            - Saving human-language-1-0.xml in ValueSet folder
+IG Creation - human-language-1-0 finished
+IG Creation - Adding job-role-name-1-0 to IGResource.xml
+            - Saving job-role-name-1-0.xml in ValueSet folder
+IG Creation - job-role-name-1-0 finished
+IG Creation - Adding nhs-number-status-indicator-1-0 to IGResource.xml
+            - Saving nhs-number-status-indicator-1-0.xml in ValueSet folder
+IG Creation - nhs-number-status-indicator-1-0 finished
+Create folder Profile.ADW-DischargeNoticeRejectResponse
+IG Creation - Adding ADW-Discharge-Notice-Reject-Response-Message-Header-1-0 to IGResource.xml
+            - Adding Profile.ADW-DischargeNoticeRejectResponse package to IGResource.xml
+            - Saving ADW-DischargeNoticeRejectResponse-1-0-Ex01.xml in examples folder
+            - Saving ADW-Discharge-Notice-Reject-Response-Message-Header-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Discharge-Notice-Reject-Response-Message-Header-1-0 finished
+IG Creation - Adding ADW-Location-1-0 to IGResource.xml
+            - Saving ADW-Location-1-0-Ex01.xml in examples folder
+            - Saving ADW-Location-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Location-1-0 finished
+IG Creation - Adding ADW-Message-Bundle-1-0 to IGResource.xml
+            - Saving ADW-Message-Bundle-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Message-Bundle-1-0 finished
+IG Creation - Adding ADW-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex01.xml in examples folder
+            - Saving ADW-Organization-1-0-Ex02.xml in examples folder
+            - Saving ADW-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Organization-1-0 finished
+IG Creation - Adding ADW-Patient-1-0 to IGResource.xml
+            - Saving ADW-Patient-1-0-Ex01.xml in examples folder
+            - Saving ADW-Patient-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Patient-1-0 finished
+IG Creation - Adding ADW-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex02.xml in examples folder
+            - Saving ADW-Practitioner-1-0-Ex03.xml in examples folder
+            - Saving ADW-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Practitioner-1-0 finished
+IG Creation - Adding ADW-Referral-Request-Rejected-1-0 to IGResource.xml
+            - Saving ADW-ReferralRequest-Rejected-1-0-Ex01.xml in examples folder
+            - Saving ADW-Referral-Request-Rejected-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Referral-Request-Rejected-1-0 finished
+IG Creation - Adding ADW-Response-Encounter-1-0 to IGResource.xml
+            - Saving ADW-Response-Encounter-1-0-Ex01.xml in examples folder
+            - Saving ADW-Response-Encounter-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Response-Encounter-1-0 finished
+IG Creation - Adding ADW-Social-Services-Team-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex04.xml in examples folder
+            - Saving ADW-Social-Services-Team-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Social-Services-Team-Organization-1-0 finished
+IG Creation - Adding CareConnect-Condition-1 to IGResource.xml
+            - Saving CareConnect-Condition-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Condition-1 finished
+IG Creation - Adding CareConnect-Encounter-1 to IGResource.xml
+            - Saving CareConnect-Encounter-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Encounter-1 finished
+IG Creation - Adding CareConnect-Location-1 to IGResource.xml
+            - Saving CareConnect-Location-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Location-1 finished
+IG Creation - Adding CareConnect-Organization-1 to IGResource.xml
+            - Saving CareConnect-Organization-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Organization-1 finished
+IG Creation - Adding CareConnect-Patient-1 to IGResource.xml
+            - Saving CareConnect-Patient-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Patient-1 finished
+IG Creation - Adding CareConnect-Practitioner-1 to IGResource.xml
+            - Saving CareConnect-Practitioner-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Practitioner-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionEpisode-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionEpisode-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionEpisode-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionRelationship-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding Extension-CareConnect-EncounterTransport-1 to IGResource.xml
+            - Saving Extension-CareConnect-EncounterTransport-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EncounterTransport-1 finished
+IG Creation - Adding Extension-CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-EthnicCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EthnicCategory-1 finished
+IG Creation - Adding Extension-CareConnect-MainLocation-1 to IGResource.xml
+            - Saving Extension-CareConnect-MainLocation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-MainLocation-1 finished
+IG Creation - Adding Extension-CareConnect-NHSCommunication-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSCommunication-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSCommunication-1 finished
+IG Creation - Adding Extension-CareConnect-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Extension-CareConnect-RegistrationDetails-1 to IGResource.xml
+            - Saving Extension-CareConnect-RegistrationDetails-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-RegistrationDetails-1 finished
+IG Creation - Adding Extension-CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving Extension-CareConnect-ReligiousAffiliation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding Extension-CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-ResidentialStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding Extension-CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-TreatmentCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding Extension-Coding-SCTDescID to IGResource.xml
+            - Saving Extension-Coding-SCTDescID.xml in StructureDefinition folder
+IG Creation - Extension-Coding-SCTDescID finished
+IG Creation - Adding Extension-Interpreter-Required-1-0 to IGResource.xml
+            - Saving Extension-Interpreter-Required-1-0.xml in StructureDefinition folder
+IG Creation - Extension-Interpreter-Required-1-0 finished
+IG Creation - Adding organization-period to IGResource.xml
+            - Saving organization-period.xml in StructureDefinition folder
+IG Creation - organization-period finished
+IG Creation - Adding patient-birthTime to IGResource.xml
+            - Saving patient-birthTime.xml in StructureDefinition folder
+IG Creation - patient-birthTime finished
+IG Creation - Adding patient-cadavericDonor to IGResource.xml
+            - Saving patient-cadavericDonor.xml in StructureDefinition folder
+IG Creation - patient-cadavericDonor finished
+IG Creation - Adding adw-admission-type-1-0 to IGResource.xml
+            - Saving adw-admission-type-1-0.xml in ValueSet folder
+IG Creation - adw-admission-type-1-0 finished
+IG Creation - Adding adw-assessment-notice-reject-reason-1-0 to IGResource.xml
+            - Saving adw-assessment-notice-reject-reason-1-0.xml in ValueSet folder
+IG Creation - adw-assessment-notice-reject-reason-1-0 finished
+IG Creation - Adding adw-carerconsultation-status-1-0 to IGResource.xml
+            - Saving adw-carerconsultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-carerconsultation-status-1-0 finished
+IG Creation - Adding adw-consultation-status-1-0 to IGResource.xml
+            - Saving adw-consultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-consultation-status-1-0 finished
+IG Creation - Adding adw-discharge-notice-reject-reason-1-0 to IGResource.xml
+            - Saving adw-discharge-notice-reject-reason-1-0.xml in ValueSet folder
+IG Creation - adw-discharge-notice-reject-reason-1-0 finished
+IG Creation - Adding adw-message-event-1-0 to IGResource.xml
+            - Saving adw-message-event-1-0.xml in ValueSet folder
+IG Creation - adw-message-event-1-0 finished
+IG Creation - Adding adw-patient-consent-status-1-0 to IGResource.xml
+            - Saving adw-patient-consent-status-1-0.xml in ValueSet folder
+IG Creation - adw-patient-consent-status-1-0 finished
+IG Creation - Adding adw-person-stated-gender-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-1-0 finished
+IG Creation - Adding adw-person-stated-gender-ddmap-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-ddmap-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-ddmap-1-0 finished
+IG Creation - Adding adw-third-party-consent-source-1-0 to IGResource.xml
+            - Saving adw-third-party-consent-source-1-0.xml in ValueSet folder
+IG Creation - adw-third-party-consent-source-1-0 finished
+IG Creation - Adding CareConnect-AdministrativeGender-1 to IGResource.xml
+            - Saving CareConnect-AdministrativeGender-1.xml in ValueSet folder
+IG Creation - CareConnect-AdministrativeGender-1 finished
+IG Creation - Adding CareConnect-ConditionCategory-1 to IGResource.xml
+            - Saving CareConnect-ConditionCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionCategory-1 finished
+IG Creation - Adding CareConnect-ConditionClinicalStatus-1 to IGResource.xml
+            - Saving CareConnect-ConditionClinicalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionClinicalStatus-1 finished
+IG Creation - Adding CareConnect-ConditionEpisodicity-1 to IGResource.xml
+            - Saving CareConnect-ConditionEpisodicity-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionEpisodicity-1 finished
+IG Creation - Adding CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving CareConnect-ConditionRelationship-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding CareConnect-EncounterType-1 to IGResource.xml
+            - Saving CareConnect-EncounterType-1.xml in ValueSet folder
+IG Creation - CareConnect-EncounterType-1 finished
+IG Creation - Adding CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving CareConnect-EthnicCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-EthnicCategory-1 finished
+IG Creation - Adding CareConnect-HumanLanguage-1 to IGResource.xml
+            - Saving CareConnect-HumanLanguage-1.xml in ValueSet folder
+IG Creation - CareConnect-HumanLanguage-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityMode-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityMode-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityMode-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityProficiency-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityProficiency-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityProficiency-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-DDMAP-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-DDMAP-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-DDMAP-1 finished
+IG Creation - Adding CareConnect-NhsNumberVerificationStatus-1 to IGResource.xml
+            - Saving CareConnect-NhsNumberVerificationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-NhsNumberVerificationStatus-1 finished
+IG Creation - Adding CareConnect-PersonRelationshipType-1 to IGResource.xml
+            - Saving CareConnect-PersonRelationshipType-1.xml in ValueSet folder
+IG Creation - CareConnect-PersonRelationshipType-1 finished
+IG Creation - Adding CareConnect-RegistrationStatus-1 to IGResource.xml
+            - Saving CareConnect-RegistrationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationStatus-1 finished
+IG Creation - Adding CareConnect-RegistrationType-1 to IGResource.xml
+            - Saving CareConnect-RegistrationType-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationType-1 finished
+IG Creation - Adding CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving CareConnect-ReligiousAffiliation-1.xml in ValueSet folder
+IG Creation - CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving CareConnect-ResidentialStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding CareConnect-SDSJobRoleName-1 to IGResource.xml
+            - Saving CareConnect-SDSJobRoleName-1.xml in ValueSet folder
+IG Creation - CareConnect-SDSJobRoleName-1 finished
+IG Creation - Adding CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving CareConnect-TreatmentCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding human-language-1-0 to IGResource.xml
+            - Saving human-language-1-0.xml in ValueSet folder
+IG Creation - human-language-1-0 finished
+IG Creation - Adding job-role-name-1-0 to IGResource.xml
+            - Saving job-role-name-1-0.xml in ValueSet folder
+IG Creation - job-role-name-1-0 finished
+IG Creation - Adding nhs-number-status-indicator-1-0 to IGResource.xml
+            - Saving nhs-number-status-indicator-1-0.xml in ValueSet folder
+IG Creation - nhs-number-status-indicator-1-0 finished
+Create folder Profile.ADW-WithdrawalNotice
+IG Creation - Adding ADW-Lead-Clinician-Practitioner-1-0 to IGResource.xml
+            - Adding Profile.ADW-WithdrawalNotice package to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex01.xml in examples folder
+            - Saving ADW-Lead-Clinician-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Lead-Clinician-Practitioner-1-0 finished
+IG Creation - Adding ADW-Location-1-0 to IGResource.xml
+            - Saving ADW-Location-1-0-Ex01.xml in examples folder
+            - Saving ADW-Location-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Location-1-0 finished
+IG Creation - Adding ADW-Message-Bundle-1-0 to IGResource.xml
+            - Saving ADW-Message-Bundle-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Message-Bundle-1-0 finished
+IG Creation - Adding ADW-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex01.xml in examples folder
+            - Saving ADW-Organization-1-0-Ex02.xml in examples folder
+            - Saving ADW-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Organization-1-0 finished
+IG Creation - Adding ADW-Patient-1-0 to IGResource.xml
+            - Saving ADW-Patient-1-0-Ex01.xml in examples folder
+            - Saving ADW-Patient-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Patient-1-0 finished
+IG Creation - Adding ADW-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex02.xml in examples folder
+            - Saving ADW-Practitioner-1-0-Ex03.xml in examples folder
+            - Saving ADW-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Practitioner-1-0 finished
+IG Creation - Adding ADW-Referral-Request-Cancelled-1-0 to IGResource.xml
+            - Saving ADW-ReferralRequest-Cancelled-1-0-Ex01.xml in examples folder
+            - Saving ADW-Referral-Request-Cancelled-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Referral-Request-Cancelled-1-0 finished
+IG Creation - Adding ADW-Social-Services-Team-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex04.xml in examples folder
+            - Saving ADW-Social-Services-Team-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Social-Services-Team-Organization-1-0 finished
+IG Creation - Adding ADW-Withdrawal-Encounter-1-0 to IGResource.xml
+            - Saving ADW-Withdrawal-Encounter-1-0-Ex01.xml in examples folder
+            - Saving ADW-Withdrawal-Encounter-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Withdrawal-Encounter-1-0 finished
+IG Creation - Adding ADW-Withdrawal-Notice-Message-Header-1-0 to IGResource.xml
+            - Saving ADW-WithdrawalNotice-1-0-Ex01.xml in examples folder
+            - Saving ADW-Withdrawal-Notice-Message-Header-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Withdrawal-Notice-Message-Header-1-0 finished
+IG Creation - Adding CareConnect-Condition-1 to IGResource.xml
+            - Saving CareConnect-Condition-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Condition-1 finished
+IG Creation - Adding CareConnect-Encounter-1 to IGResource.xml
+            - Saving CareConnect-Encounter-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Encounter-1 finished
+IG Creation - Adding CareConnect-Location-1 to IGResource.xml
+            - Saving CareConnect-Location-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Location-1 finished
+IG Creation - Adding CareConnect-Organization-1 to IGResource.xml
+            - Saving CareConnect-Organization-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Organization-1 finished
+IG Creation - Adding CareConnect-Patient-1 to IGResource.xml
+            - Saving CareConnect-Patient-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Patient-1 finished
+IG Creation - Adding CareConnect-Practitioner-1 to IGResource.xml
+            - Saving CareConnect-Practitioner-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Practitioner-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionEpisode-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionEpisode-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionEpisode-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionRelationship-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding Extension-CareConnect-EncounterTransport-1 to IGResource.xml
+            - Saving Extension-CareConnect-EncounterTransport-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EncounterTransport-1 finished
+IG Creation - Adding Extension-CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-EthnicCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EthnicCategory-1 finished
+IG Creation - Adding Extension-CareConnect-MainLocation-1 to IGResource.xml
+            - Saving Extension-CareConnect-MainLocation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-MainLocation-1 finished
+IG Creation - Adding Extension-CareConnect-NHSCommunication-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSCommunication-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSCommunication-1 finished
+IG Creation - Adding Extension-CareConnect-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Extension-CareConnect-RegistrationDetails-1 to IGResource.xml
+            - Saving Extension-CareConnect-RegistrationDetails-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-RegistrationDetails-1 finished
+IG Creation - Adding Extension-CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving Extension-CareConnect-ReligiousAffiliation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding Extension-CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-ResidentialStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding Extension-CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-TreatmentCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding Extension-Coding-SCTDescID to IGResource.xml
+            - Saving Extension-Coding-SCTDescID.xml in StructureDefinition folder
+IG Creation - Extension-Coding-SCTDescID finished
+IG Creation - Adding Extension-Interpreter-Required-1-0 to IGResource.xml
+            - Saving Extension-Interpreter-Required-1-0.xml in StructureDefinition folder
+IG Creation - Extension-Interpreter-Required-1-0 finished
+IG Creation - Adding organization-period to IGResource.xml
+            - Saving organization-period.xml in StructureDefinition folder
+IG Creation - organization-period finished
+IG Creation - Adding patient-birthTime to IGResource.xml
+            - Saving patient-birthTime.xml in StructureDefinition folder
+IG Creation - patient-birthTime finished
+IG Creation - Adding patient-cadavericDonor to IGResource.xml
+            - Saving patient-cadavericDonor.xml in StructureDefinition folder
+IG Creation - patient-cadavericDonor finished
+IG Creation - Adding adw-admission-type-1-0 to IGResource.xml
+            - Saving adw-admission-type-1-0.xml in ValueSet folder
+IG Creation - adw-admission-type-1-0 finished
+IG Creation - Adding adw-carerconsultation-status-1-0 to IGResource.xml
+            - Saving adw-carerconsultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-carerconsultation-status-1-0 finished
+IG Creation - Adding adw-consultation-status-1-0 to IGResource.xml
+            - Saving adw-consultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-consultation-status-1-0 finished
+IG Creation - Adding adw-message-event-1-0 to IGResource.xml
+            - Saving adw-message-event-1-0.xml in ValueSet folder
+IG Creation - adw-message-event-1-0 finished
+IG Creation - Adding adw-patient-consent-status-1-0 to IGResource.xml
+            - Saving adw-patient-consent-status-1-0.xml in ValueSet folder
+IG Creation - adw-patient-consent-status-1-0 finished
+IG Creation - Adding adw-person-stated-gender-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-1-0 finished
+IG Creation - Adding adw-person-stated-gender-ddmap-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-ddmap-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-ddmap-1-0 finished
+IG Creation - Adding adw-third-party-consent-source-1-0 to IGResource.xml
+            - Saving adw-third-party-consent-source-1-0.xml in ValueSet folder
+IG Creation - adw-third-party-consent-source-1-0 finished
+IG Creation - Adding adw-withdrawal-reason-1-0 to IGResource.xml
+            - Saving adw-withdrawal-reason-1-0.xml in ValueSet folder
+IG Creation - adw-withdrawal-reason-1-0 finished
+IG Creation - Adding CareConnect-AdministrativeGender-1 to IGResource.xml
+            - Saving CareConnect-AdministrativeGender-1.xml in ValueSet folder
+IG Creation - CareConnect-AdministrativeGender-1 finished
+IG Creation - Adding CareConnect-ConditionCategory-1 to IGResource.xml
+            - Saving CareConnect-ConditionCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionCategory-1 finished
+IG Creation - Adding CareConnect-ConditionClinicalStatus-1 to IGResource.xml
+            - Saving CareConnect-ConditionClinicalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionClinicalStatus-1 finished
+IG Creation - Adding CareConnect-ConditionEpisodicity-1 to IGResource.xml
+            - Saving CareConnect-ConditionEpisodicity-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionEpisodicity-1 finished
+IG Creation - Adding CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving CareConnect-ConditionRelationship-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding CareConnect-EncounterType-1 to IGResource.xml
+            - Saving CareConnect-EncounterType-1.xml in ValueSet folder
+IG Creation - CareConnect-EncounterType-1 finished
+IG Creation - Adding CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving CareConnect-EthnicCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-EthnicCategory-1 finished
+IG Creation - Adding CareConnect-HumanLanguage-1 to IGResource.xml
+            - Saving CareConnect-HumanLanguage-1.xml in ValueSet folder
+IG Creation - CareConnect-HumanLanguage-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityMode-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityMode-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityMode-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityProficiency-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityProficiency-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityProficiency-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-DDMAP-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-DDMAP-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-DDMAP-1 finished
+IG Creation - Adding CareConnect-NhsNumberVerificationStatus-1 to IGResource.xml
+            - Saving CareConnect-NhsNumberVerificationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-NhsNumberVerificationStatus-1 finished
+IG Creation - Adding CareConnect-PersonRelationshipType-1 to IGResource.xml
+            - Saving CareConnect-PersonRelationshipType-1.xml in ValueSet folder
+IG Creation - CareConnect-PersonRelationshipType-1 finished
+IG Creation - Adding CareConnect-RegistrationStatus-1 to IGResource.xml
+            - Saving CareConnect-RegistrationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationStatus-1 finished
+IG Creation - Adding CareConnect-RegistrationType-1 to IGResource.xml
+            - Saving CareConnect-RegistrationType-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationType-1 finished
+IG Creation - Adding CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving CareConnect-ReligiousAffiliation-1.xml in ValueSet folder
+IG Creation - CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving CareConnect-ResidentialStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding CareConnect-SDSJobRoleName-1 to IGResource.xml
+            - Saving CareConnect-SDSJobRoleName-1.xml in ValueSet folder
+IG Creation - CareConnect-SDSJobRoleName-1 finished
+IG Creation - Adding CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving CareConnect-TreatmentCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding human-language-1-0 to IGResource.xml
+            - Saving human-language-1-0.xml in ValueSet folder
+IG Creation - human-language-1-0 finished
+IG Creation - Adding job-role-name-1-0 to IGResource.xml
+            - Saving job-role-name-1-0.xml in ValueSet folder
+IG Creation - job-role-name-1-0 finished
+IG Creation - Adding nhs-number-status-indicator-1-0 to IGResource.xml
+            - Saving nhs-number-status-indicator-1-0.xml in ValueSet folder
+IG Creation - nhs-number-status-indicator-1-0 finished
+Create folder Profile.ADW-WithdrawalNoticeAcceptResponse
+IG Creation - Adding ADW-Location-1-0 to IGResource.xml
+            - Adding Profile.ADW-WithdrawalNoticeAcceptResponse package to IGResource.xml
+            - Saving ADW-Location-1-0-Ex01.xml in examples folder
+            - Saving ADW-Location-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Location-1-0 finished
+IG Creation - Adding ADW-Message-Bundle-1-0 to IGResource.xml
+            - Saving ADW-Message-Bundle-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Message-Bundle-1-0 finished
+IG Creation - Adding ADW-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex01.xml in examples folder
+            - Saving ADW-Organization-1-0-Ex02.xml in examples folder
+            - Saving ADW-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Organization-1-0 finished
+IG Creation - Adding ADW-Patient-1-0 to IGResource.xml
+            - Saving ADW-Patient-1-0-Ex01.xml in examples folder
+            - Saving ADW-Patient-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Patient-1-0 finished
+IG Creation - Adding ADW-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex02.xml in examples folder
+            - Saving ADW-Practitioner-1-0-Ex03.xml in examples folder
+            - Saving ADW-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Practitioner-1-0 finished
+IG Creation - Adding ADW-Referral-Request-Cancelled-1-0 to IGResource.xml
+            - Saving ADW-ReferralRequest-Cancelled-1-0-Ex01.xml in examples folder
+            - Saving ADW-Referral-Request-Cancelled-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Referral-Request-Cancelled-1-0 finished
+IG Creation - Adding ADW-Response-Encounter-1-0 to IGResource.xml
+            - Saving ADW-Response-Encounter-1-0-Ex01.xml in examples folder
+            - Saving ADW-Response-Encounter-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Response-Encounter-1-0 finished
+IG Creation - Adding ADW-Social-Services-Team-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex04.xml in examples folder
+            - Saving ADW-Social-Services-Team-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Social-Services-Team-Organization-1-0 finished
+IG Creation - Adding ADW-Withdrawal-Notice-Accept-Response-Message-Header-1-0 to IGResource.xml
+            - Saving ADW-WithdrawalNoticeAcceptResponse-1-0-Ex01.xml in examples folder
+            - Saving ADW-Withdrawal-Notice-Accept-Response-Message-Header-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Withdrawal-Notice-Accept-Response-Message-Header-1-0 finished
+IG Creation - Adding CareConnect-Condition-1 to IGResource.xml
+            - Saving CareConnect-Condition-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Condition-1 finished
+IG Creation - Adding CareConnect-Encounter-1 to IGResource.xml
+            - Saving CareConnect-Encounter-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Encounter-1 finished
+IG Creation - Adding CareConnect-Location-1 to IGResource.xml
+            - Saving CareConnect-Location-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Location-1 finished
+IG Creation - Adding CareConnect-Organization-1 to IGResource.xml
+            - Saving CareConnect-Organization-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Organization-1 finished
+IG Creation - Adding CareConnect-Patient-1 to IGResource.xml
+            - Saving CareConnect-Patient-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Patient-1 finished
+IG Creation - Adding CareConnect-Practitioner-1 to IGResource.xml
+            - Saving CareConnect-Practitioner-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Practitioner-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionEpisode-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionEpisode-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionEpisode-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionRelationship-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding Extension-CareConnect-EncounterTransport-1 to IGResource.xml
+            - Saving Extension-CareConnect-EncounterTransport-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EncounterTransport-1 finished
+IG Creation - Adding Extension-CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-EthnicCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EthnicCategory-1 finished
+IG Creation - Adding Extension-CareConnect-MainLocation-1 to IGResource.xml
+            - Saving Extension-CareConnect-MainLocation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-MainLocation-1 finished
+IG Creation - Adding Extension-CareConnect-NHSCommunication-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSCommunication-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSCommunication-1 finished
+IG Creation - Adding Extension-CareConnect-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Extension-CareConnect-RegistrationDetails-1 to IGResource.xml
+            - Saving Extension-CareConnect-RegistrationDetails-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-RegistrationDetails-1 finished
+IG Creation - Adding Extension-CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving Extension-CareConnect-ReligiousAffiliation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding Extension-CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-ResidentialStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding Extension-CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-TreatmentCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding Extension-Coding-SCTDescID to IGResource.xml
+            - Saving Extension-Coding-SCTDescID.xml in StructureDefinition folder
+IG Creation - Extension-Coding-SCTDescID finished
+IG Creation - Adding Extension-Interpreter-Required-1-0 to IGResource.xml
+            - Saving Extension-Interpreter-Required-1-0.xml in StructureDefinition folder
+IG Creation - Extension-Interpreter-Required-1-0 finished
+IG Creation - Adding organization-period to IGResource.xml
+            - Saving organization-period.xml in StructureDefinition folder
+IG Creation - organization-period finished
+IG Creation - Adding patient-birthTime to IGResource.xml
+            - Saving patient-birthTime.xml in StructureDefinition folder
+IG Creation - patient-birthTime finished
+IG Creation - Adding patient-cadavericDonor to IGResource.xml
+            - Saving patient-cadavericDonor.xml in StructureDefinition folder
+IG Creation - patient-cadavericDonor finished
+IG Creation - Adding adw-admission-type-1-0 to IGResource.xml
+            - Saving adw-admission-type-1-0.xml in ValueSet folder
+IG Creation - adw-admission-type-1-0 finished
+IG Creation - Adding adw-assessment-notice-accept-reason-1-0 to IGResource.xml
+            - Saving adw-assessment-notice-accept-reason-1-0.xml in ValueSet folder
+IG Creation - adw-assessment-notice-accept-reason-1-0 finished
+IG Creation - Adding adw-carerconsultation-status-1-0 to IGResource.xml
+            - Saving adw-carerconsultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-carerconsultation-status-1-0 finished
+IG Creation - Adding adw-consultation-status-1-0 to IGResource.xml
+            - Saving adw-consultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-consultation-status-1-0 finished
+IG Creation - Adding adw-message-event-1-0 to IGResource.xml
+            - Saving adw-message-event-1-0.xml in ValueSet folder
+IG Creation - adw-message-event-1-0 finished
+IG Creation - Adding adw-patient-consent-status-1-0 to IGResource.xml
+            - Saving adw-patient-consent-status-1-0.xml in ValueSet folder
+IG Creation - adw-patient-consent-status-1-0 finished
+IG Creation - Adding adw-person-stated-gender-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-1-0 finished
+IG Creation - Adding adw-person-stated-gender-ddmap-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-ddmap-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-ddmap-1-0 finished
+IG Creation - Adding adw-third-party-consent-source-1-0 to IGResource.xml
+            - Saving adw-third-party-consent-source-1-0.xml in ValueSet folder
+IG Creation - adw-third-party-consent-source-1-0 finished
+IG Creation - Adding CareConnect-AdministrativeGender-1 to IGResource.xml
+            - Saving CareConnect-AdministrativeGender-1.xml in ValueSet folder
+IG Creation - CareConnect-AdministrativeGender-1 finished
+IG Creation - Adding CareConnect-ConditionCategory-1 to IGResource.xml
+            - Saving CareConnect-ConditionCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionCategory-1 finished
+IG Creation - Adding CareConnect-ConditionClinicalStatus-1 to IGResource.xml
+            - Saving CareConnect-ConditionClinicalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionClinicalStatus-1 finished
+IG Creation - Adding CareConnect-ConditionEpisodicity-1 to IGResource.xml
+            - Saving CareConnect-ConditionEpisodicity-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionEpisodicity-1 finished
+IG Creation - Adding CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving CareConnect-ConditionRelationship-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding CareConnect-EncounterType-1 to IGResource.xml
+            - Saving CareConnect-EncounterType-1.xml in ValueSet folder
+IG Creation - CareConnect-EncounterType-1 finished
+IG Creation - Adding CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving CareConnect-EthnicCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-EthnicCategory-1 finished
+IG Creation - Adding CareConnect-HumanLanguage-1 to IGResource.xml
+            - Saving CareConnect-HumanLanguage-1.xml in ValueSet folder
+IG Creation - CareConnect-HumanLanguage-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityMode-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityMode-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityMode-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityProficiency-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityProficiency-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityProficiency-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-DDMAP-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-DDMAP-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-DDMAP-1 finished
+IG Creation - Adding CareConnect-NhsNumberVerificationStatus-1 to IGResource.xml
+            - Saving CareConnect-NhsNumberVerificationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-NhsNumberVerificationStatus-1 finished
+IG Creation - Adding CareConnect-PersonRelationshipType-1 to IGResource.xml
+            - Saving CareConnect-PersonRelationshipType-1.xml in ValueSet folder
+IG Creation - CareConnect-PersonRelationshipType-1 finished
+IG Creation - Adding CareConnect-RegistrationStatus-1 to IGResource.xml
+            - Saving CareConnect-RegistrationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationStatus-1 finished
+IG Creation - Adding CareConnect-RegistrationType-1 to IGResource.xml
+            - Saving CareConnect-RegistrationType-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationType-1 finished
+IG Creation - Adding CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving CareConnect-ReligiousAffiliation-1.xml in ValueSet folder
+IG Creation - CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving CareConnect-ResidentialStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding CareConnect-SDSJobRoleName-1 to IGResource.xml
+            - Saving CareConnect-SDSJobRoleName-1.xml in ValueSet folder
+IG Creation - CareConnect-SDSJobRoleName-1 finished
+IG Creation - Adding CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving CareConnect-TreatmentCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding human-language-1-0 to IGResource.xml
+            - Saving human-language-1-0.xml in ValueSet folder
+IG Creation - human-language-1-0 finished
+IG Creation - Adding job-role-name-1-0 to IGResource.xml
+            - Saving job-role-name-1-0.xml in ValueSet folder
+IG Creation - job-role-name-1-0 finished
+IG Creation - Adding nhs-number-status-indicator-1-0 to IGResource.xml
+            - Saving nhs-number-status-indicator-1-0.xml in ValueSet folder
+IG Creation - nhs-number-status-indicator-1-0 finished
+Create folder Profile.ADW-WithdrawalNoticeRejectResponse
+IG Creation - Adding ADW-Location-1-0 to IGResource.xml
+            - Adding Profile.ADW-WithdrawalNoticeRejectResponse package to IGResource.xml
+            - Saving ADW-Location-1-0-Ex01.xml in examples folder
+            - Saving ADW-Location-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Location-1-0 finished
+IG Creation - Adding ADW-Message-Bundle-1-0 to IGResource.xml
+            - Saving ADW-Message-Bundle-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Message-Bundle-1-0 finished
+IG Creation - Adding ADW-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex01.xml in examples folder
+            - Saving ADW-Organization-1-0-Ex02.xml in examples folder
+            - Saving ADW-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Organization-1-0 finished
+IG Creation - Adding ADW-Patient-1-0 to IGResource.xml
+            - Saving ADW-Patient-1-0-Ex01.xml in examples folder
+            - Saving ADW-Patient-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Patient-1-0 finished
+IG Creation - Adding ADW-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex02.xml in examples folder
+            - Saving ADW-Practitioner-1-0-Ex03.xml in examples folder
+            - Saving ADW-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Practitioner-1-0 finished
+IG Creation - Adding ADW-Referral-Request-Cancelled-1-0 to IGResource.xml
+            - Saving ADW-ReferralRequest-Cancelled-1-0-Ex01.xml in examples folder
+            - Saving ADW-Referral-Request-Cancelled-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Referral-Request-Cancelled-1-0 finished
+IG Creation - Adding ADW-Response-Encounter-1-0 to IGResource.xml
+            - Saving ADW-Response-Encounter-1-0-Ex01.xml in examples folder
+            - Saving ADW-Response-Encounter-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Response-Encounter-1-0 finished
+IG Creation - Adding ADW-Social-Services-Team-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex04.xml in examples folder
+            - Saving ADW-Social-Services-Team-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Social-Services-Team-Organization-1-0 finished
+IG Creation - Adding ADW-Withdrawal-Notice-Reject-Response-Message-Header-1-0 to IGResource.xml
+            - Saving ADW-WithdrawalNoticeRejectResponse-1-0-Ex01.xml in examples folder
+            - Saving ADW-Withdrawal-Notice-Reject-Response-Message-Header-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Withdrawal-Notice-Reject-Response-Message-Header-1-0 finished
+IG Creation - Adding CareConnect-Condition-1 to IGResource.xml
+            - Saving CareConnect-Condition-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Condition-1 finished
+IG Creation - Adding CareConnect-Encounter-1 to IGResource.xml
+            - Saving CareConnect-Encounter-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Encounter-1 finished
+IG Creation - Adding CareConnect-Location-1 to IGResource.xml
+            - Saving CareConnect-Location-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Location-1 finished
+IG Creation - Adding CareConnect-Organization-1 to IGResource.xml
+            - Saving CareConnect-Organization-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Organization-1 finished
+IG Creation - Adding CareConnect-Patient-1 to IGResource.xml
+            - Saving CareConnect-Patient-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Patient-1 finished
+IG Creation - Adding CareConnect-Practitioner-1 to IGResource.xml
+            - Saving CareConnect-Practitioner-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Practitioner-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionEpisode-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionEpisode-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionEpisode-1 finished
+IG Creation - Adding Extension-CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving Extension-CareConnect-ConditionRelationship-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding Extension-CareConnect-EncounterTransport-1 to IGResource.xml
+            - Saving Extension-CareConnect-EncounterTransport-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EncounterTransport-1 finished
+IG Creation - Adding Extension-CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-EthnicCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-EthnicCategory-1 finished
+IG Creation - Adding Extension-CareConnect-MainLocation-1 to IGResource.xml
+            - Saving Extension-CareConnect-MainLocation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-MainLocation-1 finished
+IG Creation - Adding Extension-CareConnect-NHSCommunication-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSCommunication-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSCommunication-1 finished
+IG Creation - Adding Extension-CareConnect-NHSNumberVerificationStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-NHSNumberVerificationStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-NHSNumberVerificationStatus-1 finished
+IG Creation - Adding Extension-CareConnect-RegistrationDetails-1 to IGResource.xml
+            - Saving Extension-CareConnect-RegistrationDetails-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-RegistrationDetails-1 finished
+IG Creation - Adding Extension-CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving Extension-CareConnect-ReligiousAffiliation-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding Extension-CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving Extension-CareConnect-ResidentialStatus-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding Extension-CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving Extension-CareConnect-TreatmentCategory-1.xml in StructureDefinition folder
+IG Creation - Extension-CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding Extension-Coding-SCTDescID to IGResource.xml
+            - Saving Extension-Coding-SCTDescID.xml in StructureDefinition folder
+IG Creation - Extension-Coding-SCTDescID finished
+IG Creation - Adding Extension-Interpreter-Required-1-0 to IGResource.xml
+            - Saving Extension-Interpreter-Required-1-0.xml in StructureDefinition folder
+IG Creation - Extension-Interpreter-Required-1-0 finished
+IG Creation - Adding organization-period to IGResource.xml
+            - Saving organization-period.xml in StructureDefinition folder
+IG Creation - organization-period finished
+IG Creation - Adding patient-birthTime to IGResource.xml
+            - Saving patient-birthTime.xml in StructureDefinition folder
+IG Creation - patient-birthTime finished
+IG Creation - Adding patient-cadavericDonor to IGResource.xml
+            - Saving patient-cadavericDonor.xml in StructureDefinition folder
+IG Creation - patient-cadavericDonor finished
+IG Creation - Adding adw-admission-type-1-0 to IGResource.xml
+            - Saving adw-admission-type-1-0.xml in ValueSet folder
+IG Creation - adw-admission-type-1-0 finished
+IG Creation - Adding adw-carerconsultation-status-1-0 to IGResource.xml
+            - Saving adw-carerconsultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-carerconsultation-status-1-0 finished
+IG Creation - Adding adw-consultation-status-1-0 to IGResource.xml
+            - Saving adw-consultation-status-1-0.xml in ValueSet folder
+IG Creation - adw-consultation-status-1-0 finished
+IG Creation - Adding adw-message-event-1-0 to IGResource.xml
+            - Saving adw-message-event-1-0.xml in ValueSet folder
+IG Creation - adw-message-event-1-0 finished
+IG Creation - Adding adw-patient-consent-status-1-0 to IGResource.xml
+            - Saving adw-patient-consent-status-1-0.xml in ValueSet folder
+IG Creation - adw-patient-consent-status-1-0 finished
+IG Creation - Adding adw-person-stated-gender-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-1-0 finished
+IG Creation - Adding adw-person-stated-gender-ddmap-1-0 to IGResource.xml
+            - Saving adw-person-stated-gender-ddmap-1-0.xml in ValueSet folder
+IG Creation - adw-person-stated-gender-ddmap-1-0 finished
+IG Creation - Adding adw-third-party-consent-source-1-0 to IGResource.xml
+            - Saving adw-third-party-consent-source-1-0.xml in ValueSet folder
+IG Creation - adw-third-party-consent-source-1-0 finished
+IG Creation - Adding adw-withdrawal-notice-reject-reason-1-0 to IGResource.xml
+            - Saving adw-withdrawal-notice-reject-reason-1-0.xml in ValueSet folder
+IG Creation - adw-withdrawal-notice-reject-reason-1-0 finished
+IG Creation - Adding adw-withdrawal-reason-1-0 to IGResource.xml
+            - Saving adw-withdrawal-reason-1-0.xml in ValueSet folder
+IG Creation - adw-withdrawal-reason-1-0 finished
+IG Creation - Adding CareConnect-AdministrativeGender-1 to IGResource.xml
+            - Saving CareConnect-AdministrativeGender-1.xml in ValueSet folder
+IG Creation - CareConnect-AdministrativeGender-1 finished
+IG Creation - Adding CareConnect-ConditionCategory-1 to IGResource.xml
+            - Saving CareConnect-ConditionCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionCategory-1 finished
+IG Creation - Adding CareConnect-ConditionClinicalStatus-1 to IGResource.xml
+            - Saving CareConnect-ConditionClinicalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionClinicalStatus-1 finished
+IG Creation - Adding CareConnect-ConditionEpisodicity-1 to IGResource.xml
+            - Saving CareConnect-ConditionEpisodicity-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionEpisodicity-1 finished
+IG Creation - Adding CareConnect-ConditionRelationship-1 to IGResource.xml
+            - Saving CareConnect-ConditionRelationship-1.xml in ValueSet folder
+IG Creation - CareConnect-ConditionRelationship-1 finished
+IG Creation - Adding CareConnect-EncounterType-1 to IGResource.xml
+            - Saving CareConnect-EncounterType-1.xml in ValueSet folder
+IG Creation - CareConnect-EncounterType-1 finished
+IG Creation - Adding CareConnect-EthnicCategory-1 to IGResource.xml
+            - Saving CareConnect-EthnicCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-EthnicCategory-1 finished
+IG Creation - Adding CareConnect-HumanLanguage-1 to IGResource.xml
+            - Saving CareConnect-HumanLanguage-1.xml in ValueSet folder
+IG Creation - CareConnect-HumanLanguage-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityMode-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityMode-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityMode-1 finished
+IG Creation - Adding CareConnect-LanguageAbilityProficiency-1 to IGResource.xml
+            - Saving CareConnect-LanguageAbilityProficiency-1.xml in ValueSet folder
+IG Creation - CareConnect-LanguageAbilityProficiency-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-1 finished
+IG Creation - Adding CareConnect-MaritalStatus-DDMAP-1 to IGResource.xml
+            - Saving CareConnect-MaritalStatus-DDMAP-1.xml in ValueSet folder
+IG Creation - CareConnect-MaritalStatus-DDMAP-1 finished
+IG Creation - Adding CareConnect-NhsNumberVerificationStatus-1 to IGResource.xml
+            - Saving CareConnect-NhsNumberVerificationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-NhsNumberVerificationStatus-1 finished
+IG Creation - Adding CareConnect-PersonRelationshipType-1 to IGResource.xml
+            - Saving CareConnect-PersonRelationshipType-1.xml in ValueSet folder
+IG Creation - CareConnect-PersonRelationshipType-1 finished
+IG Creation - Adding CareConnect-RegistrationStatus-1 to IGResource.xml
+            - Saving CareConnect-RegistrationStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationStatus-1 finished
+IG Creation - Adding CareConnect-RegistrationType-1 to IGResource.xml
+            - Saving CareConnect-RegistrationType-1.xml in ValueSet folder
+IG Creation - CareConnect-RegistrationType-1 finished
+IG Creation - Adding CareConnect-ReligiousAffiliation-1 to IGResource.xml
+            - Saving CareConnect-ReligiousAffiliation-1.xml in ValueSet folder
+IG Creation - CareConnect-ReligiousAffiliation-1 finished
+IG Creation - Adding CareConnect-ResidentialStatus-1 to IGResource.xml
+            - Saving CareConnect-ResidentialStatus-1.xml in ValueSet folder
+IG Creation - CareConnect-ResidentialStatus-1 finished
+IG Creation - Adding CareConnect-SDSJobRoleName-1 to IGResource.xml
+            - Saving CareConnect-SDSJobRoleName-1.xml in ValueSet folder
+IG Creation - CareConnect-SDSJobRoleName-1 finished
+IG Creation - Adding CareConnect-TreatmentCategory-1 to IGResource.xml
+            - Saving CareConnect-TreatmentCategory-1.xml in ValueSet folder
+IG Creation - CareConnect-TreatmentCategory-1 finished
+IG Creation - Adding human-language-1-0 to IGResource.xml
+            - Saving human-language-1-0.xml in ValueSet folder
+IG Creation - human-language-1-0 finished
+IG Creation - Adding job-role-name-1-0 to IGResource.xml
+            - Saving job-role-name-1-0.xml in ValueSet folder
+IG Creation - job-role-name-1-0 finished
+IG Creation - Adding nhs-number-status-indicator-1-0 to IGResource.xml
+            - Saving nhs-number-status-indicator-1-0.xml in ValueSet folder
+IG Creation - nhs-number-status-indicator-1-0 finished
+Profile Table: IGResource.
+Loading resources into resource store
+Create directory C:\GitHubRepo\FHIR-ADW-Messaging\Generated\Profile.ADW-AssessmentNotice
+Render profile table Profile.ADW-AssessmentNotice
+Loading resources into resource store
+Create directory C:\GitHubRepo\FHIR-ADW-Messaging\Generated\Profile.ADW-AssessmentNoticeAcceptResponse
+Render profile table Profile.ADW-AssessmentNoticeAcceptResponse
+Loading resources into resource store
+Create directory C:\GitHubRepo\FHIR-ADW-Messaging\Generated\Profile.ADW-AssessmentNoticeRejectResponse
+Render profile table Profile.ADW-AssessmentNoticeRejectResponse
+Loading resources into resource store
+Create directory C:\GitHubRepo\FHIR-ADW-Messaging\Generated\Profile.ADW-DischargeNotice
+Render profile table Profile.ADW-DischargeNotice
+Loading resources into resource store
+Create directory C:\GitHubRepo\FHIR-ADW-Messaging\Generated\Profile.ADW-DischargeNoticeAcceptResponse
+Render profile table Profile.ADW-DischargeNoticeAcceptResponse
+Loading resources into resource store
+Create directory C:\GitHubRepo\FHIR-ADW-Messaging\Generated\Profile.ADW-DischargeNoticeRejectResponse
+Render profile table Profile.ADW-DischargeNoticeRejectResponse
+Loading resources into resource store
+Create directory C:\GitHubRepo\FHIR-ADW-Messaging\Generated\Profile.ADW-WithdrawalNotice
+Render profile table Profile.ADW-WithdrawalNotice
+Loading resources into resource store
+Create directory C:\GitHubRepo\FHIR-ADW-Messaging\Generated\Profile.ADW-WithdrawalNoticeAcceptResponse
+Render profile table Profile.ADW-WithdrawalNoticeAcceptResponse
+Loading resources into resource store
+Create directory C:\GitHubRepo\FHIR-ADW-Messaging\Generated\Profile.ADW-WithdrawalNoticeRejectResponse
+Render profile table Profile.ADW-WithdrawalNoticeRejectResponse
+Profile Table: Finish - IGResource
+Loading resources into resource store
+Structure Page: Start - Profile.ADW-AssessmentNotice : ADW-Assessment-Notice-Message-Header-1-0
+Creating structure for ADW-Assessment-Notice-Message-Header-1-0
+CreateRow MessageHeader( MessageHeader )
+CreateRow MessageHeader.timestamp( MessageHeader )
+CreateRow MessageHeader.event( MessageHeader )
+CreateRow MessageHeader.event.system( MessageHeader )
+CreateRow MessageHeader.event.code( MessageHeader )
+CreateRow MessageHeader.source( MessageHeader )
+CreateRow MessageHeader.source.modifierExtension( MessageHeader )
+CreateRow MessageHeader.source.name( MessageHeader )
+CreateRow MessageHeader.source.endpoint( MessageHeader )
+CreateRow MessageHeader.destination( MessageHeader )
+CreateRow MessageHeader.destination.modifierExtension( MessageHeader )
+CreateRow MessageHeader.destination.name( MessageHeader )
+CreateRow MessageHeader.destination.endpoint( MessageHeader )
+CreateRow MessageHeader.author( MessageHeader )
+CreateRow MessageHeader.author.reference( MessageHeader )
+CreateRow MessageHeader.receiver( MessageHeader )
+CreateRow MessageHeader.responsible( MessageHeader )
+CreateRow MessageHeader.data( MessageHeader )
+CreateRow MessageHeader.data.reference( MessageHeader )
+ create Bindings table
+ format binding for MessageHeader.event
+ format binding for MessageHeader.response.code
+ format binding for MessageHeader.source.contact.system
+ format binding for MessageHeader.source.contact.use
+Render page ADW-Assessment-Notice-Message-Header-1-0
+Structure Page: Finish - adw-assessment-notice-message-header-1-0
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ADW-AssessmentNotice : ADW-Composition-1-0
+Creating structure for ADW-Composition-1-0
+CreateRow Composition( Composition )
+CreateRow Composition.identifier( Composition )
+CreateRow Composition.identifier.use( Composition )
+CreateRow Composition.identifier.type( Composition )
+CreateRow Composition.identifier.type.coding( Composition )
+CreateRow Composition.identifier.type.coding.system( Composition )
+CreateRow Composition.identifier.type.coding.version( Composition )
+CreateRow Composition.identifier.type.coding.code( Composition )
+CreateRow Composition.identifier.type.coding.display( Composition )
+CreateRow Composition.identifier.type.coding.userSelected( Composition )
+CreateRow Composition.identifier.type.text( Composition )
+CreateRow Composition.identifier.system( Composition )
+CreateRow Composition.identifier.value( Composition )
+CreateRow Composition.identifier.period( Composition )
+CreateRow Composition.identifier.period.start( Composition )
+CreateRow Composition.identifier.period.end( Composition )
+CreateRow Composition.identifier.assigner( Composition )
+CreateRow Composition.identifier.assigner.reference( Composition )
+CreateRow Composition.identifier.assigner.display( Composition )
+CreateRow Composition.date( Composition )
+CreateRow Composition.type( Composition )
+CreateRow Composition.type.coding( Composition )
+CreateRow Composition.type.coding.system( Composition )
+CreateRow Composition.type.coding.version( Composition )
+CreateRow Composition.type.coding.code( Composition )
+CreateRow Composition.type.coding.display( Composition )
+CreateRow Composition.type.coding.userSelected( Composition )
+CreateRow Composition.type.text( Composition )
+CreateRow Composition.class( Composition )
+CreateRow Composition.class.coding( Composition )
+CreateRow Composition.class.coding.system( Composition )
+CreateRow Composition.class.coding.version( Composition )
+CreateRow Composition.class.coding.code( Composition )
+CreateRow Composition.class.coding.display( Composition )
+CreateRow Composition.class.coding.userSelected( Composition )
+CreateRow Composition.class.text( Composition )
+CreateRow Composition.title( Composition )
+CreateRow Composition.status( Composition )
+CreateRow Composition.confidentiality( Composition )
+CreateRow Composition.subject( Composition )
+CreateRow Composition.subject.reference( Composition )
+CreateRow Composition.author( Composition )
+CreateRow Composition.attester( Composition )
+CreateRow Composition.attester.modifierExtension( Composition )
+CreateRow Composition.attester.mode( Composition )
+CreateRow Composition.attester.time( Composition )
+CreateRow Composition.attester.party( Composition )
+CreateRow Composition.custodian( Composition )
+CreateRow Composition.custodian.reference( Composition )
+CreateRow Composition.event( Composition )
+CreateRow Composition.event.modifierExtension( Composition )
+CreateRow Composition.event.code( Composition )
+CreateRow Composition.event.code.coding( Composition )
+CreateRow Composition.event.code.coding.system( Composition )
+CreateRow Composition.event.code.coding.version( Composition )
+CreateRow Composition.event.code.coding.code( Composition )
+CreateRow Composition.event.code.coding.display( Composition )
+CreateRow Composition.event.code.coding.userSelected( Composition )
+CreateRow Composition.event.code.text( Composition )
+CreateRow Composition.event.period( Composition )
+CreateRow Composition.event.period.start( Composition )
+CreateRow Composition.event.period.end( Composition )
+CreateRow Composition.event.detail( Composition )
+CreateRow Composition.event.detail.reference( Composition )
+CreateRow Composition.event.detail.display( Composition )
+CreateRow Composition.encounter( Composition )
+CreateRow Composition.encounter.reference( Composition )
+CreateRow Composition.encounter.display( Composition )
+CreateRow Composition.section( Composition )
+CreateRow Composition.section.modifierExtension( Composition )
+CreateRow Composition.section.title( Composition )
+CreateRow Composition.section.code( Composition )
+CreateRow Composition.section.code.coding( Composition )
+CreateRow Composition.section.code.coding.system( Composition )
+CreateRow Composition.section.code.coding.version( Composition )
+CreateRow Composition.section.code.coding.code( Composition )
+CreateRow Composition.section.code.coding.display( Composition )
+CreateRow Composition.section.code.coding.userSelected( Composition )
+CreateRow Composition.section.code.text( Composition )
+CreateRow Composition.section.text( Composition )
+CreateRow Composition.section.text.status( Composition )
+CreateRow Composition.section.text.div( Composition )
+CreateRow Composition.section.mode( Composition )
+CreateRow Composition.section.orderedBy( Composition )
+CreateRow Composition.section.orderedBy.coding( Composition )
+CreateRow Composition.section.orderedBy.coding.system( Composition )
+CreateRow Composition.section.orderedBy.coding.version( Composition )
+CreateRow Composition.section.orderedBy.coding.code( Composition )
+CreateRow Composition.section.orderedBy.coding.display( Composition )
+CreateRow Composition.section.orderedBy.coding.userSelected( Composition )
+CreateRow Composition.section.orderedBy.text( Composition )
+CreateRow Composition.section.entry( Composition )
+CreateRow Composition.section.entry.reference( Composition )
+CreateRow Composition.section.entry.display( Composition )
+CreateRow Composition.section.emptyReason( Composition )
+CreateRow Composition.section.emptyReason.coding( Composition )
+CreateRow Composition.section.emptyReason.coding.system( Composition )
+CreateRow Composition.section.emptyReason.coding.version( Composition )
+CreateRow Composition.section.emptyReason.coding.code( Composition )
+CreateRow Composition.section.emptyReason.coding.display( Composition )
+CreateRow Composition.section.emptyReason.coding.userSelected( Composition )
+CreateRow Composition.section.emptyReason.text( Composition )
+CreateRow Composition.section.section( Composition )
+ create Bindings table
+ format binding for Composition.identifier.use
+ format binding for Composition.identifier.type
+ format binding for Composition.type
+ format binding for Composition.class
+ format binding for Composition.status
+ format binding for Composition.confidentiality
+ format binding for Composition.attester.mode
+ format binding for Composition.event.code
+ format binding for Composition.section.code
+ format binding for Composition.section.text.status
+ format binding for Composition.section.mode
+ format binding for Composition.section.orderedBy
+ format binding for Composition.section.emptyReason
+Render page ADW-Composition-1-0
+Structure Page: Finish - adw-composition-1-0
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ADW-AssessmentNotice : ADW-Condition-1-0
+Creating structure for ADW-Condition-1-0
+CreateRow Condition( Condition )
+CreateRow Condition.patient( Condition )
+CreateRow Condition.patient.reference( Condition )
+CreateRow Condition.patient.display( Condition )
+CreateRow Condition.code( Condition )
+CreateRow Condition.code.coding( Condition )
+CreateRow Condition.code.coding.system( Condition )
+CreateRow Condition.code.coding.version( Condition )
+CreateRow Condition.code.coding.code( Condition )
+CreateRow Condition.code.coding.display( Condition )
+CreateRow Condition.code.coding.userSelected( Condition )
+CreateRow Condition.code.text( Condition )
+CreateRow Condition.verificationStatus( Condition )
+ create Bindings table
+ format binding for Condition.identifier.use
+ format binding for Condition.identifier.type
+ format binding for Condition.code
+ format binding for Condition.verificationStatus
+ format binding for Condition.stage.summary
+ format binding for Condition.evidence.code
+Render page ADW-Condition-1-0
+Structure Page: Finish - adw-condition-1-0
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ADW-AssessmentNotice : ADW-Encounter-1-0
+Creating structure for ADW-Encounter-1-0
+CreateRow Encounter( Encounter )
+CreateRow Encounter.identifier( Encounter )
+CreateRow Encounter.identifier.value( Encounter )
+CreateRow Encounter.status( Encounter )
+CreateRow Encounter.class( Encounter )
+CreateRow Encounter.priority( Encounter )
+CreateRow Encounter.priority.coding( Encounter )
+CreateRow Encounter.priority.coding.system( Encounter )
+CreateRow Encounter.priority.coding.code( Encounter )
+CreateRow Encounter.priority.coding.display( Encounter )
+CreateRow Encounter.patient( Encounter )
+CreateRow Encounter.patient.reference( Encounter )
+CreateRow Encounter.period( Encounter )
+CreateRow Encounter.period.start( Encounter )
+CreateRow Encounter.period.end( Encounter )
+CreateRow Encounter.hospitalization( Encounter )
+CreateRow Encounter.hospitalization.modifierExtension( Encounter )
+CreateRow Encounter.hospitalization.admittingDiagnosis( Encounter )
+CreateRow Encounter.hospitalization.admittingDiagnosis.reference( Encounter )
+CreateRow Encounter.location( Encounter )
+CreateRow Encounter.location.modifierExtension( Encounter )
+CreateRow Encounter.location.location( Encounter )
+CreateRow Encounter.location.location.reference( Encounter )
+CreateRow Encounter.location.location.display( Encounter )
+CreateRow Encounter.serviceProvider( Encounter )
+CreateRow Encounter.serviceProvider.reference( Encounter )
+ create Bindings table
+ format binding for Encounter.status
+ format binding for Encounter.statusHistory.status
+ format binding for Encounter.class
+ format binding for Encounter.priority
+ format binding for Encounter.priority.coding.code
+ format binding for Encounter.length.comparator
+ format binding for Encounter.hospitalization.preAdmissionIdentifier.use
+ format binding for Encounter.hospitalization.preAdmissionIdentifier.type
+Render page ADW-Encounter-1-0
+Structure Page: Finish - adw-encounter-1-0
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ADW-AssessmentNotice : ADW-Lead-Clinician-Practitioner-1-0
+Creating structure for ADW-Lead-Clinician-Practitioner-1-0
+CreateRow Practitioner( Practitioner )
+CreateRow Practitioner.identifier( Practitioner )
+CreateRow Practitioner.identifier( Practitioner )
+CreateRow Practitioner.identifier.use( Practitioner )
+CreateRow Practitioner.identifier.system( Practitioner )
+CreateRow Practitioner.identifier.value( Practitioner )
+CreateRow Practitioner.identifier.period( Practitioner )
+CreateRow Practitioner.identifier.period.start( Practitioner )
+CreateRow Practitioner.identifier.period.end( Practitioner )
+CreateRow Practitioner.identifier( Practitioner )
+CreateRow Practitioner.identifier.use( Practitioner )
+CreateRow Practitioner.identifier.type( Practitioner )
+CreateRow Practitioner.identifier.type.coding( Practitioner )
+CreateRow Practitioner.identifier.type.coding.system( Practitioner )
+CreateRow Practitioner.identifier.type.coding.version( Practitioner )
+CreateRow Practitioner.identifier.type.coding.code( Practitioner )
+CreateRow Practitioner.identifier.type.coding.display( Practitioner )
+CreateRow Practitioner.identifier.type.coding.userSelected( Practitioner )
+CreateRow Practitioner.identifier.type.text( Practitioner )
+CreateRow Practitioner.identifier.system( Practitioner )
+CreateRow Practitioner.identifier.value( Practitioner )
+CreateRow Practitioner.identifier.period( Practitioner )
+CreateRow Practitioner.identifier.period.start( Practitioner )
+CreateRow Practitioner.identifier.period.end( Practitioner )
+CreateRow Practitioner.identifier.assigner( Practitioner )
+CreateRow Practitioner.identifier.assigner.reference( Practitioner )
+CreateRow Practitioner.identifier.assigner.display( Practitioner )
+CreateRow Practitioner.active( Practitioner )
+CreateRow Practitioner.name( Practitioner )
+CreateRow Practitioner.name.use( Practitioner )
+CreateRow Practitioner.name.family( Practitioner )
+CreateRow Practitioner.name.given( Practitioner )
+CreateRow Practitioner.name.prefix( Practitioner )
+CreateRow Practitioner.name.suffix( Practitioner )
+CreateRow Practitioner.practitionerRole( Practitioner )
+CreateRow Practitioner.practitionerRole.modifierExtension( Practitioner )
+CreateRow Practitioner.practitionerRole.managingOrganization( Practitioner )
+CreateRow Practitioner.practitionerRole.managingOrganization.reference( Practitioner )
+CreateRow Practitioner.practitionerRole.managingOrganization.display( Practitioner )
+CreateRow Practitioner.practitionerRole.role( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding.system( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding.version( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding.code( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding.display( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding.userSelected( Practitioner )
+CreateRow Practitioner.practitionerRole.role.text( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding.system( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding.version( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding.code( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding.display( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding.userSelected( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.text( Practitioner )
+ create Bindings table
+ format binding for Practitioner.identifier.use
+ format binding for Practitioner.identifier.type
+ format binding for Practitioner.name.use
+ format binding for Practitioner.telecom.system
+ format binding for Practitioner.telecom.use
+ format binding for Practitioner.address.use
+ format binding for Practitioner.address.type
+ format binding for Practitioner.photo.contentType
+ format binding for Practitioner.photo.language
+ format binding for Practitioner.practitionerRole.role
+ format binding for Practitioner.practitionerRole.specialty
+ format binding for Practitioner.qualification.code
+Render page ADW-Lead-Clinician-Practitioner-1-0
+Structure Page: Finish - adw-lead-clinician-practitioner-1-0
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ADW-AssessmentNotice : ADW-Location-1-0
+Creating structure for ADW-Location-1-0
+CreateRow Location( Location )
+CreateRow Location.identifier( Location )
+CreateRow Location.identifier.use( Location )
+CreateRow Location.identifier.system( Location )
+CreateRow Location.identifier.value( Location )
+CreateRow Location.identifier.assigner( Location )
+CreateRow Location.identifier.assigner.reference( Location )
+CreateRow Location.identifier.assigner.display( Location )
+CreateRow Location.name( Location )
+CreateRow Location.managingOrganization( Location )
+CreateRow Location.managingOrganization.reference( Location )
+CreateRow Location.managingOrganization.display( Location )
+ create Bindings table
+ format binding for Location.identifier.use
+ format binding for Location.telecom.system
+ format binding for Location.telecom.use
+ format binding for Location.address.use
+ format binding for Location.address.type
+Render page ADW-Location-1-0
+Structure Page: Finish - adw-location-1-0
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ADW-AssessmentNotice : ADW-Message-Bundle-1-0
+Creating structure for ADW-Message-Bundle-1-0
+CreateRow Bundle( Bundle )
+CreateRow Bundle.type( Bundle )
+CreateRow Bundle.entry( Bundle )
+ create Bindings table
+ format binding for Bundle.type
+ format binding for Bundle.entry.search.mode
+ format binding for Bundle.entry.request.method
+ format binding for Bundle.signature.type
+ format binding for Bundle.signature.contentType
+Render page ADW-Message-Bundle-1-0
+Structure Page: Finish - adw-message-bundle-1-0
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ADW-AssessmentNotice : ADW-Organization-1-0
+Creating structure for ADW-Organization-1-0
+CreateRow Organization( Organization )
+CreateRow Organization.identifier( Organization )
+CreateRow Organization.identifier( Organization )
+CreateRow Organization.identifier.use( Organization )
+CreateRow Organization.identifier.system( Organization )
+CreateRow Organization.identifier.value( Organization )
+CreateRow Organization.identifier.period( Organization )
+CreateRow Organization.identifier.period.start( Organization )
+CreateRow Organization.identifier.period.end( Organization )
+CreateRow Organization.identifier( Organization )
+CreateRow Organization.identifier.use( Organization )
+CreateRow Organization.identifier.type( Organization )
+CreateRow Organization.identifier.type.coding( Organization )
+CreateRow Organization.identifier.type.coding.system( Organization )
+CreateRow Organization.identifier.type.coding.version( Organization )
+CreateRow Organization.identifier.type.coding.code( Organization )
+CreateRow Organization.identifier.type.coding.display( Organization )
+CreateRow Organization.identifier.type.coding.userSelected( Organization )
+CreateRow Organization.identifier.type.text( Organization )
+CreateRow Organization.identifier.system( Organization )
+CreateRow Organization.identifier.value( Organization )
+CreateRow Organization.identifier.period( Organization )
+CreateRow Organization.identifier.period.start( Organization )
+CreateRow Organization.identifier.period.end( Organization )
+CreateRow Organization.identifier.assigner( Organization )
+CreateRow Organization.identifier.assigner.reference( Organization )
+CreateRow Organization.identifier.assigner.display( Organization )
+CreateRow Organization.active( Organization )
+CreateRow Organization.type( Organization )
+CreateRow Organization.type.coding( Organization )
+CreateRow Organization.type.coding.system( Organization )
+CreateRow Organization.type.coding.version( Organization )
+CreateRow Organization.type.coding.code( Organization )
+CreateRow Organization.type.coding.display( Organization )
+CreateRow Organization.type.coding.userSelected( Organization )
+CreateRow Organization.type.text( Organization )
+CreateRow Organization.name( Organization )
+CreateRow Organization.telecom( Organization )
+CreateRow Organization.telecom.system( Organization )
+CreateRow Organization.telecom.value( Organization )
+CreateRow Organization.telecom.use( Organization )
+CreateRow Organization.telecom.rank( Organization )
+CreateRow Organization.telecom.period( Organization )
+CreateRow Organization.telecom.period.start( Organization )
+CreateRow Organization.telecom.period.end( Organization )
+CreateRow Organization.address( Organization )
+CreateRow Organization.address.use( Organization )
+CreateRow Organization.address.type( Organization )
+CreateRow Organization.address.text( Organization )
+CreateRow Organization.address.line( Organization )
+CreateRow Organization.address.city( Organization )
+CreateRow Organization.address.district( Organization )
+CreateRow Organization.address.postalCode( Organization )
+CreateRow Organization.address.country( Organization )
+CreateRow Organization.address.period( Organization )
+CreateRow Organization.address.period.start( Organization )
+CreateRow Organization.address.period.end( Organization )
+CreateRow Organization.partOf( Organization )
+CreateRow Organization.partOf.reference( Organization )
+CreateRow Organization.partOf.display( Organization )
+ create Bindings table
+ format binding for Organization.identifier.use
+ format binding for Organization.identifier.type
+ format binding for Organization.type
+ format binding for Organization.telecom.system
+ format binding for Organization.telecom.use
+ format binding for Organization.address.use
+ format binding for Organization.address.type
+ format binding for Organization.contact.purpose
+ format binding for Organization.contact.name.use
+Render page ADW-Organization-1-0
+Structure Page: Finish - adw-organization-1-0
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ADW-AssessmentNotice : ADW-Patient-1-0
+Creating structure for ADW-Patient-1-0
+CreateRow Patient( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.use( Patient )
+CreateRow Patient.identifier.type( Patient )
+CreateRow Patient.identifier.type.coding( Patient )
+CreateRow Patient.identifier.type.coding.system( Patient )
+CreateRow Patient.identifier.type.coding.version( Patient )
+CreateRow Patient.identifier.type.coding.code( Patient )
+CreateRow Patient.identifier.type.coding.display( Patient )
+CreateRow Patient.identifier.type.coding.userSelected( Patient )
+CreateRow Patient.identifier.type.text( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.use( Patient )
+CreateRow Patient.identifier.type( Patient )
+CreateRow Patient.identifier.type.coding( Patient )
+CreateRow Patient.identifier.type.coding.system( Patient )
+CreateRow Patient.identifier.type.coding.version( Patient )
+CreateRow Patient.identifier.type.coding.code( Patient )
+CreateRow Patient.identifier.type.coding.display( Patient )
+CreateRow Patient.identifier.type.coding.userSelected( Patient )
+CreateRow Patient.identifier.type.text( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+CreateRow Patient.identifier.period( Patient )
+CreateRow Patient.identifier.period.start( Patient )
+CreateRow Patient.identifier.period.end( Patient )
+CreateRow Patient.identifier.assigner( Patient )
+CreateRow Patient.identifier.assigner.reference( Patient )
+CreateRow Patient.identifier.assigner.display( Patient )
+CreateRow Patient.active( Patient )
+CreateRow Patient.name( Patient )
+CreateRow Patient.name.use( Patient )
+CreateRow Patient.name.family( Patient )
+CreateRow Patient.name.given( Patient )
+CreateRow Patient.name.prefix( Patient )
+CreateRow Patient.name.suffix( Patient )
+CreateRow Patient.telecom( Patient )
+CreateRow Patient.telecom( Patient )
+CreateRow Patient.telecom.system( Patient )
+CreateRow Patient.telecom.value( Patient )
+CreateRow Patient.telecom.use( Patient )
+CreateRow Patient.telecom.rank( Patient )
+CreateRow Patient.telecom.period( Patient )
+CreateRow Patient.telecom.period.start( Patient )
+CreateRow Patient.telecom.period.end( Patient )
+CreateRow Patient.telecom( Patient )
+CreateRow Patient.telecom.system( Patient )
+CreateRow Patient.telecom.value( Patient )
+CreateRow Patient.telecom.use( Patient )
+CreateRow Patient.telecom.rank( Patient )
+CreateRow Patient.telecom.period( Patient )
+CreateRow Patient.telecom.period.start( Patient )
+CreateRow Patient.telecom.period.end( Patient )
+CreateRow Patient.gender( Patient )
+CreateRow Patient.birthDate( Patient )
+CreateRow Patient.address( Patient )
+CreateRow Patient.address.use( Patient )
+CreateRow Patient.address.type( Patient )
+CreateRow Patient.address.line( Patient )
+CreateRow Patient.address.city( Patient )
+CreateRow Patient.address.district( Patient )
+CreateRow Patient.address.postalCode( Patient )
+CreateRow Patient.address.country( Patient )
+CreateRow Patient.address.period( Patient )
+CreateRow Patient.address.period.start( Patient )
+CreateRow Patient.address.period.end( Patient )
+CreateRow Patient.contact( Patient )
+CreateRow Patient.contact.modifierExtension( Patient )
+CreateRow Patient.contact.relationship( Patient )
+CreateRow Patient.contact.relationship.coding( Patient )
+CreateRow Patient.contact.relationship.coding.system( Patient )
+CreateRow Patient.contact.relationship.coding.version( Patient )
+CreateRow Patient.contact.relationship.coding.code( Patient )
+CreateRow Patient.contact.relationship.coding.display( Patient )
+CreateRow Patient.contact.relationship.coding.userSelected( Patient )
+CreateRow Patient.contact.relationship.text( Patient )
+CreateRow Patient.contact.name( Patient )
+CreateRow Patient.contact.name.use( Patient )
+CreateRow Patient.contact.name.family( Patient )
+CreateRow Patient.contact.name.given( Patient )
+CreateRow Patient.contact.name.prefix( Patient )
+CreateRow Patient.contact.name.suffix( Patient )
+CreateRow Patient.contact.name.period( Patient )
+CreateRow Patient.contact.name.period.start( Patient )
+CreateRow Patient.contact.name.period.end( Patient )
+CreateRow Patient.contact.telecom( Patient )
+CreateRow Patient.contact.telecom( Patient )
+CreateRow Patient.contact.telecom.system( Patient )
+CreateRow Patient.contact.telecom.value( Patient )
+CreateRow Patient.contact.telecom.use( Patient )
+CreateRow Patient.contact.telecom.rank( Patient )
+CreateRow Patient.contact.telecom.period( Patient )
+CreateRow Patient.contact.telecom.period.start( Patient )
+CreateRow Patient.contact.telecom.period.end( Patient )
+CreateRow Patient.contact.telecom( Patient )
+CreateRow Patient.contact.telecom.system( Patient )
+CreateRow Patient.contact.telecom.value( Patient )
+CreateRow Patient.contact.telecom.use( Patient )
+CreateRow Patient.contact.telecom.rank( Patient )
+CreateRow Patient.contact.telecom.period( Patient )
+CreateRow Patient.contact.telecom.period.start( Patient )
+CreateRow Patient.contact.telecom.period.end( Patient )
+CreateRow Patient.communication( Patient )
+CreateRow Patient.communication.extension( Patient )
+CreateRow Patient.communication.extension( Patient )
+CreateRow Patient.communication.modifierExtension( Patient )
+CreateRow Patient.communication.language( Patient )
+CreateRow Patient.communication.language.coding( Patient )
+CreateRow Patient.communication.language.coding.system( Patient )
+CreateRow Patient.communication.language.coding.version( Patient )
+CreateRow Patient.communication.language.coding.code( Patient )
+CreateRow Patient.communication.language.coding.display( Patient )
+CreateRow Patient.communication.language.coding.userSelected( Patient )
+CreateRow Patient.communication.preferred( Patient )
+CreateRow Patient.careProvider( Patient )
+CreateRow Patient.managingOrganization( Patient )
+CreateRow Patient.managingOrganization.reference( Patient )
+CreateRow Patient.managingOrganization.display( Patient )
+CreateRow Patient.link( Patient )
+CreateRow Patient.link.modifierExtension( Patient )
+CreateRow Patient.link.other( Patient )
+CreateRow Patient.link.other.reference( Patient )
+CreateRow Patient.link.other.display( Patient )
+CreateRow Patient.link.type( Patient )
+ create Bindings table
+ format binding for Patient.identifier.use
+ format binding for Patient.identifier.type
+ format binding for Patient.identifier.type
+ format binding for Patient.name.use
+ format binding for Patient.telecom.system
+ format binding for Patient.telecom.use
+ format binding for Patient.gender
+ format binding for Patient.address.use
+ format binding for Patient.address.type
+ format binding for Patient.photo.contentType
+ format binding for Patient.photo.language
+ format binding for Patient.contact.relationship
+ format binding for Patient.animal.species
+ format binding for Patient.animal.breed
+ format binding for Patient.animal.genderStatus
+ format binding for Patient.communication.language
+ format binding for Patient.link.type
+Render page ADW-Patient-1-0
+Structure Page: Finish - adw-patient-1-0
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ADW-AssessmentNotice : ADW-Practitioner-1-0
+Creating structure for ADW-Practitioner-1-0
+CreateRow Practitioner( Practitioner )
+CreateRow Practitioner.identifier( Practitioner )
+CreateRow Practitioner.identifier( Practitioner )
+CreateRow Practitioner.identifier.use( Practitioner )
+CreateRow Practitioner.identifier.system( Practitioner )
+CreateRow Practitioner.identifier.value( Practitioner )
+CreateRow Practitioner.identifier.period( Practitioner )
+CreateRow Practitioner.identifier.period.start( Practitioner )
+CreateRow Practitioner.identifier.period.end( Practitioner )
+CreateRow Practitioner.identifier( Practitioner )
+CreateRow Practitioner.identifier.use( Practitioner )
+CreateRow Practitioner.identifier.type( Practitioner )
+CreateRow Practitioner.identifier.type.coding( Practitioner )
+CreateRow Practitioner.identifier.type.coding.system( Practitioner )
+CreateRow Practitioner.identifier.type.coding.version( Practitioner )
+CreateRow Practitioner.identifier.type.coding.code( Practitioner )
+CreateRow Practitioner.identifier.type.coding.display( Practitioner )
+CreateRow Practitioner.identifier.type.coding.userSelected( Practitioner )
+CreateRow Practitioner.identifier.type.text( Practitioner )
+CreateRow Practitioner.identifier.system( Practitioner )
+CreateRow Practitioner.identifier.value( Practitioner )
+CreateRow Practitioner.identifier.period( Practitioner )
+CreateRow Practitioner.identifier.period.start( Practitioner )
+CreateRow Practitioner.identifier.period.end( Practitioner )
+CreateRow Practitioner.identifier.assigner( Practitioner )
+CreateRow Practitioner.identifier.assigner.reference( Practitioner )
+CreateRow Practitioner.identifier.assigner.display( Practitioner )
+CreateRow Practitioner.active( Practitioner )
+CreateRow Practitioner.name( Practitioner )
+CreateRow Practitioner.name.use( Practitioner )
+CreateRow Practitioner.name.family( Practitioner )
+CreateRow Practitioner.name.given( Practitioner )
+CreateRow Practitioner.name.prefix( Practitioner )
+CreateRow Practitioner.name.suffix( Practitioner )
+CreateRow Practitioner.telecom( Practitioner )
+CreateRow Practitioner.telecom( Practitioner )
+CreateRow Practitioner.telecom.system( Practitioner )
+CreateRow Practitioner.telecom.value( Practitioner )
+CreateRow Practitioner.telecom.use( Practitioner )
+CreateRow Practitioner.telecom.rank( Practitioner )
+CreateRow Practitioner.telecom.period( Practitioner )
+CreateRow Practitioner.telecom.period.start( Practitioner )
+CreateRow Practitioner.telecom.period.end( Practitioner )
+CreateRow Practitioner.telecom( Practitioner )
+CreateRow Practitioner.telecom.system( Practitioner )
+CreateRow Practitioner.telecom.value( Practitioner )
+CreateRow Practitioner.telecom.use( Practitioner )
+CreateRow Practitioner.telecom.rank( Practitioner )
+CreateRow Practitioner.telecom.period( Practitioner )
+CreateRow Practitioner.telecom.period.start( Practitioner )
+CreateRow Practitioner.telecom.period.end( Practitioner )
+CreateRow Practitioner.practitionerRole( Practitioner )
+CreateRow Practitioner.practitionerRole.modifierExtension( Practitioner )
+CreateRow Practitioner.practitionerRole.managingOrganization( Practitioner )
+CreateRow Practitioner.practitionerRole.managingOrganization.reference( Practitioner )
+CreateRow Practitioner.practitionerRole.managingOrganization.display( Practitioner )
+CreateRow Practitioner.practitionerRole.role( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding.system( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding.version( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding.code( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding.display( Practitioner )
+CreateRow Practitioner.practitionerRole.role.coding.userSelected( Practitioner )
+CreateRow Practitioner.practitionerRole.role.text( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding.system( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding.version( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding.code( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding.display( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.coding.userSelected( Practitioner )
+CreateRow Practitioner.practitionerRole.specialty.text( Practitioner )
+CreateRow Practitioner.practitionerRole.period( Practitioner )
+CreateRow Practitioner.practitionerRole.period.start( Practitioner )
+CreateRow Practitioner.practitionerRole.period.end( Practitioner )
+ create Bindings table
+ format binding for Practitioner.identifier.use
+ format binding for Practitioner.identifier.type
+ format binding for Practitioner.name.use
+ format binding for Practitioner.telecom.system
+ format binding for Practitioner.telecom.use
+ format binding for Practitioner.address.use
+ format binding for Practitioner.address.type
+ format binding for Practitioner.photo.contentType
+ format binding for Practitioner.photo.language
+ format binding for Practitioner.practitionerRole.role
+ format binding for Practitioner.practitionerRole.specialty
+ format binding for Practitioner.qualification.code
+Render page ADW-Practitioner-1-0
+Structure Page: Finish - adw-practitioner-1-0
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ADW-AssessmentNotice : ADW-Questionnaire-Response-1-0
+Creating structure for ADW-Questionnaire-Response-1-0
+CreateRow QuestionnaireResponse( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.identifier( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.identifier.value( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.status( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.author( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.group( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.text( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.modifierExtension( QuestionnaireResponse )
+CreateRow QuestionnaireResponse.group.question.answer.value[x]( QuestionnaireResponse )
+ create Bindings table
+ Binding Issue for QuestionnaireResponse.group.question.answer.value[x] valueset is missing.
+ format binding for QuestionnaireResponse.status
+**Error** 
+ Message:   ValueSet has not been bound! 
+Parameter name: valueSet 
+ Stacktrace:    at Hl7.Fhir.Publication.Specification.Profile.BindingFormatter..ctor(Object valueSet) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Specification\Profile\BindingFormatter.cs:line 12
+   at Hl7.Fhir.Publication.Specification.Profile.BindingUrl..ctor(ElementDefinition elementDefinition) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Specification\Profile\BindingUrl.cs:line 8
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Bindings.ElementDefinitionComparer.GetHashCode(ElementDefinition obj) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Specification\Profile\Structure\Bindings\ElementDefinitionComparer.cs:line 27
+   at System.Linq.Set`1.InternalGetHashCode(TElement value)
+   at System.Linq.Set`1.Find(TElement value, Boolean add)
+   at System.Linq.Enumerable.<DistinctIterator>d__63`1.MoveNext()
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Bindings.Table.GetTable(IEnumerable`1 elementBindings, ResourceStore resourceStore) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Specification\Profile\Structure\Bindings\Table.cs:line 67
+   at Hl7.Fhir.Publication.Specification.Profile.Structure.Bindings.Table.ToHtml(StructureDefinition structureDefinition, ResourceStore resourceStore, Log log, String package) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Specification\Profile\Structure\Bindings\Table.cs:line 42
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.CreateStructureDefinitionPage(ResourceComponent resource) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 136
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.CreatePagesInPackage() in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 91
+   at Hl7.Fhir.Publication.Processors.Profile.StructureProcessor.Process(Document input, Stage output, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Processors\Profile\StructureProcessor.cs:line 63
+   at Hl7.Fhir.Publication.Framework.Processor.Process(IProcessor processor, Stage input, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Processor.cs:line 16
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, Stage input, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Processor.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, ISelector filter, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Processor.cs:line 38
+   at Hl7.Fhir.Publication.Framework.Statement.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Statement.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Make.Bulk.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Make\Bulk.cs:line 25
+   at Hl7.Fhir.Publication.Framework.Publisher.Publish() in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Publisher.cs:line 80 
+ InnerException: 

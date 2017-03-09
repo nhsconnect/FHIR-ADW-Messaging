@@ -1382,7 +1382,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -1457,7 +1457,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -1491,7 +1491,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -1521,7 +1521,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-encounter-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -2742,7 +2742,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -2817,7 +2817,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -2851,7 +2851,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -2881,7 +2881,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-encounter-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>

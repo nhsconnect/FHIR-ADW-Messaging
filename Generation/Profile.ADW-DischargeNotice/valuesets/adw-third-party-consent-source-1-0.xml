@@ -18,7 +18,7 @@
 	<description value="A vocabulary that describes the source of the third party consent."/>
 	<requirements value="There is a requirement to indicate the source of the third party consent"/>
 	<codeSystem>
-		<system value="http://fhir.nhs.net/ValueSet/adw-third-party-consent-source-1-0"/>
+		<system value="http://fhir.nhs.net/adw-third-party-consent-source-1-0"/>
 		<concept>
 			<code value="C"/>
 			<display value="Legal Representative (Carer)"/>

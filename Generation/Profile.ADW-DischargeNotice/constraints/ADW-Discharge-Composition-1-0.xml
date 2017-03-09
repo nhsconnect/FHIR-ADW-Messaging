@@ -1225,7 +1225,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -1300,7 +1300,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -1441,14 +1441,17 @@
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <aggregation value="referenced" />
       </type>
       <isSummary value="true" />
       <mapping>
@@ -1479,7 +1482,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -1984,7 +1987,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-encounter-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3147,7 +3150,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3222,7 +3225,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3241,6 +3244,47 @@
       </mapping>
     </element>
     <element>
+      <path value="Composition.attester.party" />
+      <short value="Who attested the composition" />
+      <definition value="Who attested the composition in the specified way." />
+      <requirements value="Identifies who has taken on the responsibility for accuracy of the composition content." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Composition.attester.party" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <aggregation value="referenced" />
+      </type>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="./role[classCode=&quot;ASSIGNED&quot; and isNormalRole]/player[determinerCode=&quot;INST&quot; and classCode=(&quot;DEV&quot;, &quot;PSN&quot;) and isNormalEntity()] or ./role[classCode=&quot;ASSIGNED&quot; and isNormalRole and not(player)]/scoper[determinerCode=&quot;INST&quot; and classCode=&quot;ORG&quot; and isNormalEntity()]" />
+      </mapping>
+      <mapping>
+        <identity value="cda" />
+        <map value=".authenticator.assignedEnttty" />
+      </mapping>
+      <mapping>
+        <identity value="w5" />
+        <map value="who.witness" />
+      </mapping>
+    </element>
+    <element>
       <path value="Composition.custodian" />
       <short value="Organization which maintains the composition" />
       <definition value="Identifies the organization or group who is responsible for ongoing maintenance of and access to the composition/document information." />
@@ -3255,7 +3299,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3326,7 +3370,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-encounter-1-0" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>

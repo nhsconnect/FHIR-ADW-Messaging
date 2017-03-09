@@ -57,7 +57,7 @@
 	<name value="Administrative Gender"/>
 	<status value="active"/>
 	<description value="The gender of a person used for administrative purposes."/>
-		<requirements value="There is a requirement to send the FHIR valueset on the wire, but the requirements for the ADW message mean that relevant values for this message have been mapped to the FHIR values for FHIR valueset System URL http://hl7.org/fhir/ValueSet/administrative-gender."/>
+		<requirements value="There is a requirement to send the FHIR valueset on the wire, but the requirements for the ADW message mean that relevant values for this message have been mapped to the FHIR values for FHIR valueset with URL http://hl7.org/fhir/ValueSet/administrative-gender."/>
 	 <codeSystem>
     <system value="http://hl7.org/fhir/administrative-gender"/>
     <concept>

@@ -1,0 +1,111 @@
+
+***Furnace log date run: 06 March 2017 1310 ***
+Furnace: Fhir publisher tool version: 2.7.6256.31052
+***Starting generation***
+Source directory: C:\GitHubRepo\FHIR-ADW-Messaging\Generation 
+ Target Directory: C:\GitHubRepo\FHIR-ADW-Messaging\Generated
+Clear down Generated folder
+Copying files into Schemas folder ...
+Copying files into dist folder ...
+Start: creating IGResource.xml
+End: IGResource.xml created
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Create folder Profile.ADW-AssessmentNotice
+IG Creation - Adding ADW-Assessment-Notice-Message-Header-1-0 to IGResource.xml
+            - Adding Profile.ADW-AssessmentNotice package to IGResource.xml
+            - Saving ADW-AssessmentNotice-1-0-Ex01.xml in examples folder
+            - Saving ADW-Assessment-Notice-Message-Header-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Assessment-Notice-Message-Header-1-0 finished
+IG Creation - Adding ADW-Composition-1-0 to IGResource.xml
+            - Saving ADW-Composition-1-0-Ex01.xml in examples folder
+            - Saving ADW-Composition-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Composition-1-0 finished
+IG Creation - Adding ADW-Condition-1-0 to IGResource.xml
+            - Saving ADW-Condition-1-0-Ex01.xml in examples folder
+            - Saving ADW-Condition-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Condition-1-0 finished
+IG Creation - Adding ADW-Encounter-1-0 to IGResource.xml
+            - Saving ADW-Encounter-1-0-Ex01.xml in examples folder
+            - Saving ADW-Encounter-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Encounter-1-0 finished
+IG Creation - Adding ADW-Lead-Clinician-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex01.xml in examples folder
+            - Saving ADW-Lead-Clinician-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Lead-Clinician-Practitioner-1-0 finished
+IG Creation - Adding ADW-Location-1-0 to IGResource.xml
+            - Saving ADW-Location-1-0-Ex01.xml in examples folder
+            - Saving ADW-Location-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Location-1-0 finished
+IG Creation - Adding ADW-Message-Bundle-1-0 to IGResource.xml
+            - Saving ADW-Message-Bundle-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Message-Bundle-1-0 finished
+IG Creation - Adding ADW-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex01.xml in examples folder
+            - Saving ADW-Organization-1-0-Ex02.xml in examples folder
+            - Saving ADW-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Organization-1-0 finished
+IG Creation - Adding ADW-Patient-1-0 to IGResource.xml
+            - Saving ADW-Patient-1-0-Ex01.xml in examples folder
+            - Saving ADW-Patient-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Patient-1-0 finished
+IG Creation - Adding ADW-Practitioner-1-0 to IGResource.xml
+            - Saving ADW-Practitioner-1-0-Ex02.xml in examples folder
+            - Saving ADW-Practitioner-1-0-Ex03.xml in examples folder
+            - Saving ADW-Practitioner-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Practitioner-1-0 finished
+IG Creation - Adding ADW-Questionnaire-Response-1-0 to IGResource.xml
+            - Saving ADW-QuestionnaireResponse-1-0-Ex01.xml in examples folder
+            - Saving ADW-Questionnaire-Response-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Questionnaire-Response-1-0 finished
+IG Creation - Adding ADW-Referral-Request-1-0 to IGResource.xml
+            - Saving ADW-ReferralRequest-1-0-Ex01.xml in examples folder
+            - Saving ADW-Referral-Request-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Referral-Request-1-0 finished
+IG Creation - Adding ADW-Social-Services-Team-Organization-1-0 to IGResource.xml
+            - Saving ADW-Organization-1-0-Ex04.xml in examples folder
+            - Saving ADW-Social-Services-Team-Organization-1-0.xml in StructureDefinition folder
+IG Creation - ADW-Social-Services-Team-Organization-1-0 finished
+IG Creation - Adding CareConnect-Condition-1 to IGResource.xml
+            - Saving CareConnect-Condition-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Condition-1 finished
+IG Creation - Adding CareConnect-Encounter-1 to IGResource.xml
+            - Saving CareConnect-Encounter-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Encounter-1 finished
+IG Creation - Adding CareConnect-Location-1 to IGResource.xml
+            - Saving CareConnect-Location-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Location-1 finished
+IG Creation - Adding CareConnect-Organization-1 to IGResource.xml
+            - Saving CareConnect-Organization-1.xml in StructureDefinition folder
+IG Creation - CareConnect-Organization-1 finished
+IG Creation - Adding CareConnect-Patient-1 to IGResource.xml
+**Error** 
+ Message:  Could not find .md file for CareConnect-Patient-1! 
+ C:\GitHubRepo\FHIR-ADW-Messaging\Generation\Profile.ADW-AssessmentNotice\careconnect-patient-1.md is required 
+ Stacktrace:    at Hl7.Fhir.Publication.ImplementationGuide.ResourceFactory.CreateResource(ResourceComponent resource, String mdFilePath) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\ImplementationGuide\ResourceFactory.cs:line 66
+   at Hl7.Fhir.Publication.ImplementationGuide.ResourceFactory.CreateProfileResource(String mdFileName) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\ImplementationGuide\ResourceFactory.cs:line 41
+   at Hl7.Fhir.Publication.ImplementationGuide.Factory.AddResourceAsProfile(ResourceFactory resourceFactory) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\ImplementationGuide\Factory.cs:line 136
+   at Hl7.Fhir.Publication.Processors.ImplementationGuide.PackageBuilder.AddStructureDefinition() in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Processors\ImplementationGuide\PackageBuilder.cs:line 46
+   at Hl7.Fhir.Publication.Processors.ImplementationGuide.IgPackageProcessor.AddResourceToImplementationGuide() in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Processors\ImplementationGuide\PackageProcessor.cs:line 122
+   at Hl7.Fhir.Publication.Processors.ImplementationGuide.IgPackageProcessor.Process(Document input, Stage output, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Processors\ImplementationGuide\PackageProcessor.cs:line 95
+   at Hl7.Fhir.Publication.Framework.Processor.Process(IProcessor processor, Stage input, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Processor.cs:line 16
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, Stage input, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Processor.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, ISelector filter, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Processor.cs:line 38
+   at Hl7.Fhir.Publication.Framework.Statement.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Statement.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Make.Bulk.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Make\Bulk.cs:line 25
+   at Hl7.Fhir.Publication.Processors.MakeForAllProcessor.Process(Document input, Stage output, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Processors\MakeForAllProcessor.cs:line 42
+   at Hl7.Fhir.Publication.Framework.Processor.Process(IProcessor processor, Stage input, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Processor.cs:line 16
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, Stage input, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Processor.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, ISelector filter, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Processor.cs:line 38
+   at Hl7.Fhir.Publication.Framework.Statement.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Statement.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Make.Bulk.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Make\Bulk.cs:line 25
+   at Hl7.Fhir.Publication.Framework.Publisher.Publish() in C:\Users\rmk\Source\Repos\FHIRGEN-DSTU2\Fhir.Publication\Framework\Publisher.cs:line 80 
+ InnerException: 
