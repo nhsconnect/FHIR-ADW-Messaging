@@ -228,10 +228,6 @@
     </element>
     <element>
       <path value="Bundle.entry" />
-      <slicing>
-        <ordered value="true" />
-        <rules value="open" />
-      </slicing>
       <short value="Entry in the bundle - will have a resource, or information" />
       <definition value="An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only)." />
       <min value="1" />
@@ -287,7 +283,7 @@
       <short value="Links related to this entry" />
       <definition value="A series of links that provide context to this entry." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Bundle.entry.link" />
         <min value="0" />
@@ -317,7 +313,7 @@
       <path value="Bundle.entry.resource" />
       <short value="A resource in the bundle" />
       <definition value="The Resources for the entry." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Bundle.entry.resource" />
@@ -334,7 +330,7 @@
       <short value="Search related information" />
       <definition value="Information about the search process that lead to the creation of this entry." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Bundle.entry.search" />
         <min value="0" />
@@ -416,7 +412,7 @@
       <short value="Transaction Related Information" />
       <definition value="Additional information about how this entry should be processed as part of a transaction." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Bundle.entry.request" />
         <min value="0" />
@@ -561,7 +557,7 @@
       <short value="Transaction Related Information" />
       <definition value="Additional information about how this entry should be processed as part of a transaction." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Bundle.entry.response" />
         <min value="0" />
@@ -1060,10 +1056,6 @@
     </element>
     <element>
       <path value="Bundle.entry" />
-      <slicing>
-        <ordered value="true" />
-        <rules value="open" />
-      </slicing>
       <short value="Entry in the bundle - will have a resource, or information" />
       <definition value="An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only)." />
       <min value="1" />
@@ -1088,6 +1080,87 @@
         <human value="The fullUrl element must be present when a resource is present, and not present otherwise" />
         <xpath value="(not(exists(f:fullUrl)) and not(exists(f:resource))) or (exists(f:fullUrl) and exists(f:resource))" />
       </constraint>
+      <isSummary value="true" />
+    </element>
+    <element>
+      <path value="Bundle.entry.link" />
+      <short value="Links related to this entry" />
+      <definition value="A series of links that provide context to this entry." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Bundle.entry.link" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="link" />
+      <isSummary value="true" />
+    </element>
+    <element>
+      <path value="Bundle.entry.resource" />
+      <short value="A resource in the bundle" />
+      <definition value="The Resources for the entry." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Bundle.entry.resource" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Resource" />
+      </type>
+      <isSummary value="true" />
+    </element>
+    <element>
+      <path value="Bundle.entry.search" />
+      <short value="Search related information" />
+      <definition value="Information about the search process that lead to the creation of this entry." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Bundle.entry.search" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <condition value="bdl-2" />
+      <isSummary value="true" />
+    </element>
+    <element>
+      <path value="Bundle.entry.request" />
+      <short value="Transaction Related Information" />
+      <definition value="Additional information about how this entry should be processed as part of a transaction." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Bundle.entry.request" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <condition value="bdl-3" />
+      <isSummary value="true" />
+    </element>
+    <element>
+      <path value="Bundle.entry.response" />
+      <short value="Transaction Related Information" />
+      <definition value="Additional information about how this entry should be processed as part of a transaction." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Bundle.entry.response" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <condition value="bdl-4" />
       <isSummary value="true" />
     </element>
     <element>

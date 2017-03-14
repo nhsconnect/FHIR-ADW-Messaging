@@ -1521,7 +1521,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -2881,7 +2881,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Encounter-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>

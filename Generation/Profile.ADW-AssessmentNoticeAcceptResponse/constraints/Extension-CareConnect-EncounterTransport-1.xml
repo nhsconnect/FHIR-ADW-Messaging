@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-01T09:00:02.117+00:00" />
+    <lastUpdated value="2017-03-03T08:56:37.242+00:00" />
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-EncounterTransport-1" />
   <version value="1.0.0" />
@@ -262,7 +262,7 @@
     </element>
     <element>
       <path value="Extension.extension.valueCodeableConcept" />
-      <short value="Value of extension" />
+      <short value="Transport Type" />
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
       <min value="0" />
       <max value="1" />
@@ -433,7 +433,7 @@
     </element>
     <element>
       <path value="Extension.extension.valuePeriod" />
-      <short value="Value of extension" />
+      <short value="Transport Period" />
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
       <min value="0" />
       <max value="1" />
@@ -604,7 +604,7 @@
     </element>
     <element>
       <path value="Extension.extension.valueString" />
-      <short value="Value of extension" />
+      <short value="Reason for transport" />
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
       <min value="0" />
       <max value="1" />
@@ -825,6 +825,7 @@
     </element>
     <element>
       <path value="Extension.extension.valueCodeableConcept" />
+      <short value="Transport Type" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -840,6 +841,7 @@
     </element>
     <element>
       <path value="Extension.extension.valuePeriod" />
+      <short value="Transport Period" />
       <type>
         <code value="Period" />
       </type>
@@ -855,6 +857,7 @@
     </element>
     <element>
       <path value="Extension.extension.valueString" />
+      <short value="Reason for transport" />
       <type>
         <code value="string" />
       </type>
