@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2016-07-03T09:00:00+00:00"/>
 	</meta>
-	<url value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+	<url value="https://fhir.nhs.uk/ValueSet/nhs-number-status-indicator-1"/>
 	<name value="NHS Number Status Indicator Code"/>
 	<status value="active"/>
 	<publisher value="Health and Social Care Information Centre NHS Data Model and Dictionary"/>
@@ -18,7 +18,7 @@
 	<description value="A vocabulary that identifies the verified status of a patient's NHS number."/>
 	<requirements value="A patient's NHS number is the NHS agreed way of uniquely identifying a patient. Therfore it is significant to understand whether this status has been verified. For the purposes of the ADW message, code value: '08' with display value: 'Trace postponed (baby under six weeks old)' is not required."/>
 	<codeSystem>
-		<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+		<system value="https://fhir.nhs.uk/nhs-number-status-indicator-1"/>
 		<concept>
 			<code value="01"/>
 			<display value="Number present and verified"/>

@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-02T14:09:58.597+00:00" />
+    <lastUpdated value="2017-03-07T13:02:41.85+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="5" />
@@ -5468,7 +5468,7 @@
       <definition value="The patient's other names" />
       <comments value="A patient may have multiple names with different uses or applicable periods. For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns." />
       <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name." />
-      <min value="0" />
+      <min value="1" />
       <max value="*" />
       <base>
         <path value="Patient.name" />
@@ -7891,7 +7891,7 @@
       <type>
         <code value="uri" />
       </type>
-      <exampleUri value="http://hl7.org/fhir/ValueSet/marital-status" />
+      <exampleUri value="http://hl7.org/fhir/v3/MaritalStatus" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -14692,8 +14692,6 @@
     <element>
       <path value="Patient.extension" />
       <name value="patient-cadavericDonor" />
-      <short value="Flag indicating whether the patient authorized the donation of body parts after death." />
-      <definition value="Flag indicating whether the patient authorized the donation of body parts after death." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -14848,8 +14846,6 @@
       <name value="other" />
       <short value="The patient's other names" />
       <definition value="The patient's other names" />
-      <min value="0" />
-      <max value="*" />
     </element>
     <element>
       <path value="Patient.name.use" />
@@ -14955,7 +14951,7 @@
     <element>
       <path value="Patient.maritalStatus.coding.system" />
       <min value="1" />
-      <exampleUri value="http://hl7.org/fhir/ValueSet/marital-status" />
+      <exampleUri value="http://hl7.org/fhir/v3/MaritalStatus" />
     </element>
     <element>
       <path value="Patient.maritalStatus.coding.version" />

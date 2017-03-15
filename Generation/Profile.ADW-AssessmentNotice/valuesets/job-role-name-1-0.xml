@@ -6,7 +6,7 @@
 	<extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
 		<valueUri value="urn:oid:2.16.840.1.113883.2.1.3.2.4.17.124"/>
 	</extension>
-	<url value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+	<url value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
 	<name value="Job Role Name"/>
 	<status value="active"/>
 	<publisher value="Health and Social Care Information Centre Messaging Team"/>
@@ -19,7 +19,7 @@
 	</contact>
 	<description value="Describes a person's role"/>
 	<codeSystem>
-		<system value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+		<system value="https://fhir.nhs.uk/job-role-name-1"/>
 		<concept>
 			<code value="NR0010"/>
 			<display value="Medical Director"/>

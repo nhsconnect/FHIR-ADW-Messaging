@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2017-03-03T08:58:49.062+00:00" />
   </meta>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
   <version value="1.0.0" />
   <name value="CareConnect-ADW-Encounter-1" />
   <status value="draft" />
@@ -2971,7 +2971,7 @@
         <strength value="preferred" />
         <description value="Indicates the urgency of the encounter." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/encounter-priority" />
+             <reference value="http://fhir.nhs.uk/ValueSet/adw-admission-type-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -6589,7 +6589,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -8645,7 +8645,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11948,7 +11948,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12889,7 +12889,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13226,7 +13226,7 @@
       <path value="Encounter.indication" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -13259,7 +13259,7 @@
       <path value="Encounter.hospitalization.admittingDiagnosis" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
       </type>
     </element>
     <element>
@@ -13326,7 +13326,7 @@
       <path value="Encounter.hospitalization.dischargeDiagnosis" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
       </type>
     </element>
     <element>
@@ -13347,7 +13347,7 @@
       <path value="Encounter.partOf" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
       </type>
     </element>
   </differential>

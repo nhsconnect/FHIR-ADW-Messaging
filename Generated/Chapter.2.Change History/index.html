@@ -143,10 +143,12 @@
 											<h1>Change History</h1>
 <h3>Version: 1.0: Status: RC5</h3>
 <ul>
-<li>All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk. </li>
+<li>All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk for standard CareConnect profiles. </li>
 <li>All system urls for valuesets containing the string http://fhir.nhs.net/Valueset have this string replaced by https://fhir.nhs.uk when the url appears as data in the coding.system element.</li>
 <li>All system urls for valuesets containing the string http://hl7.org/fhir/ValueSet have this string replaced by http://hl7.org/fhir when the url appears as data in the coding.system element.</li>
-<li>Inserted CareConnect standard profiles as replacements for ADW Patient, Condition, Encounter, Location, Organization and Practitioner. The impact on instances is as follows:-</li>
+<li>Changed versioning for all profiles and valuesets from 1-0 to 1.</li>
+<li>Constrained CareConnect standard profiles for Condition and Encounter to CareConnect-ADW profiles to reflect ADW business requirements.</li>
+<li>Inserted CareConnect standard profiles as replacements for ADW Patient, Location, Organization and Practitioner. The impact on instances is as follows:-</li>
 <li><strong>ADW-Patient-1-0</strong></li>
 <li>All labels for elements removed.</li>
 <li>Patient.identifier slice NHS number renamed to Identifier # 1 [nhsNumber]</li>

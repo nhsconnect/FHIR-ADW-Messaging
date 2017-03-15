@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2017-03-08T11:21:19.7+00:00" />
   </meta>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
   <version value="1.0.0" />
   <name value="CareConnect-ADW-Condition-1" />
   <status value="active" />
@@ -1947,7 +1947,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7309,7 +7309,7 @@
       <path value="Condition.encounter" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
       </type>
     </element>
     <element>
