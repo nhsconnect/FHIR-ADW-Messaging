@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-03T08:58:49.062+00:00" />
+    <lastUpdated value="2017-04-21T14:28:48.591+01:00" />
+    <tag>
+      <system value="urn:hscic:publishOrder" />
+      <code value="4" />
+    </tag>
   </meta>
   <url value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
   <version value="1.0.0" />
@@ -2971,7 +2975,7 @@
         <strength value="preferred" />
         <description value="Indicates the urgency of the encounter." />
         <valueSetReference>
-             <reference value="http://fhir.nhs.uk/ValueSet/adw-admission-type-1" />
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-priority" />
         </valueSetReference>
       </binding>
       <mapping>

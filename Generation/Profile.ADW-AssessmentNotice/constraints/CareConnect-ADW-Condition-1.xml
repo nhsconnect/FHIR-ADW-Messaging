@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-08T11:21:19.7+00:00" />
+    <lastUpdated value="2017-04-21T11:17:57.218+01:00" />
+    <tag>
+      <system value="urn:hscic:publishOrder" />
+      <code value="5" />
+    </tag>
   </meta>
   <url value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
   <version value="1.0.0" />
@@ -7487,21 +7491,6 @@
     <element>
       <path value="Condition.stage.summary.coding.display" />
       <min value="1" />
-    </element>
-    <element>
-      <path value="Condition.stage.assessment" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Observation" />
-      </type>
     </element>
     <element>
       <path value="Condition.bodySite.coding" />

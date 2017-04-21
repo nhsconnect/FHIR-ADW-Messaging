@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-02-27T11:39:41.807+00:00" />
+    <lastUpdated value="2017-04-21T14:33:13.564+01:00" />
+    <tag>
+      <system value="urn:hscic:publishOrder" />
+      <code value="7" />
+    </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />
@@ -6835,8 +6839,8 @@
         <code value="Period" />
       </type>
       <examplePeriod>
-        <start value="2010-03-23" />
-        <end value="2010-07-01" />
+        <start value="2010-03-23T00:00:00" />
+        <end value="2010-07-01T00:00:00" />
       </examplePeriod>
       <condition value="ele-1" />
       <constraint>
@@ -7059,6 +7063,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
+        <description value="The gender of a person used for administrative purposes." />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AdministrativeGender-1" />
         </valueSetReference>
@@ -9855,6 +9860,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
+        <description value="The role a person plays representing an organization" />
         <valueSetReference>
           <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-SDSJobRoleName-1" />
         </valueSetReference>
@@ -14336,6 +14342,13 @@
     <element>
       <path value="Practitioner.address.country" />
       <exampleString value="GBR" />
+    </element>
+    <element>
+      <path value="Practitioner.address.period" />
+      <examplePeriod>
+        <start value="2010-03-23T00:00:00" />
+        <end value="2010-07-01T00:00:00" />
+      </examplePeriod>
     </element>
     <element>
       <path value="Practitioner.gender" />

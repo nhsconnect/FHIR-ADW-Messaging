@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-02-28T10:59:36.734+00:00" />
+    <lastUpdated value="2017-04-21T14:33:51.801+01:00" />
+    <tag>
+      <system value="urn:hscic:publishOrder" />
+      <code value="9" />
+    </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -5607,8 +5611,8 @@
         <code value="Period" />
       </type>
       <examplePeriod>
-        <start value="2010-03-23" />
-        <end value="2010-07-01" />
+        <start value="2010-03-23T00:00:00" />
+        <end value="2010-07-01T00:00:00" />
       </examplePeriod>
       <condition value="ele-1" />
       <constraint>
@@ -7028,6 +7032,13 @@
     <element>
       <path value="Location.address.country" />
       <exampleString value="GBR" />
+    </element>
+    <element>
+      <path value="Location.address.period" />
+      <examplePeriod>
+        <start value="2010-03-23T00:00:00" />
+        <end value="2010-07-01T00:00:00" />
+      </examplePeriod>
     </element>
     <element>
       <path value="Location.managingOrganization" />

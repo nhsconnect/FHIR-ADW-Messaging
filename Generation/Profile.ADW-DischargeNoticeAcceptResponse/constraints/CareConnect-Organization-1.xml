@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-02T14:08:30.187+00:00" />
+    <lastUpdated value="2017-04-21T14:30:58.866+01:00" />
+    <tag>
+      <system value="urn:hscic:publishOrder" />
+      <code value="8" />
+    </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="4" />
@@ -6890,8 +6894,8 @@
         <code value="Period" />
       </type>
       <examplePeriod>
-        <start value="2010-03-23" />
-        <end value="2010-07-01" />
+        <start value="2010-03-23T00:00:00" />
+        <end value="2010-07-01T00:00:00" />
       </examplePeriod>
       <condition value="ele-1" />
       <constraint>
@@ -9597,8 +9601,8 @@
         <code value="Period" />
       </type>
       <examplePeriod>
-        <start value="2010-03-23" />
-        <end value="2010-07-01" />
+        <start value="2010-03-23T00:00:00" />
+        <end value="2010-07-01T00:00:00" />
       </examplePeriod>
       <condition value="ele-1" />
       <constraint>
@@ -9825,8 +9829,6 @@
     <element>
       <path value="Organization.extension" />
       <name value="organization-period" />
-      <short value="The date range that this organization should be considered available." />
-      <definition value="The date range that this organization should be considered available." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -9981,6 +9983,13 @@
       <exampleString value="GBR" />
     </element>
     <element>
+      <path value="Organization.address.period" />
+      <examplePeriod>
+        <start value="2010-03-23T00:00:00" />
+        <end value="2010-07-01T00:00:00" />
+      </examplePeriod>
+    </element>
+    <element>
       <path value="Organization.partOf" />
       <type>
         <code value="Reference" />
@@ -10043,6 +10052,13 @@
     <element>
       <path value="Organization.contact.address.country" />
       <exampleString value="GBR" />
+    </element>
+    <element>
+      <path value="Organization.contact.address.period" />
+      <examplePeriod>
+        <start value="2010-03-23T00:00:00" />
+        <end value="2010-07-01T00:00:00" />
+      </examplePeriod>
     </element>
   </differential>
 </StructureDefinition>
