@@ -21,6 +21,7 @@ select IGResource.xml >> valuesetIndex $template >> save
 select index.html >> copy
 select chapter*\*.png >> copy
 select profile*\*.png >> copy
+select chapter*\*.txt >> copy
 //select chapter*\*.pdf >> copy
 //select chapter*\*.xml >> copy
 //select chapter*\*.gif >> copy

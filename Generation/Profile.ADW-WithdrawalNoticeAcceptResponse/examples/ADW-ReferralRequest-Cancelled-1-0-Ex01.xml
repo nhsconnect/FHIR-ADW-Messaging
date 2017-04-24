@@ -1,7 +1,7 @@
 <ReferralRequest xmlns="http://hl7.org/fhir">
 	<id value="247f5ad9-e256-4d03-864b-e8a67cec8584"/>
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-cancelled-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-cancelled-1"/>
 	</meta>
 	<status value="cancelled"/>
 	<identifier>

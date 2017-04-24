@@ -3,8 +3,8 @@
 <ReferralRequest xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/ReferralRequest.xsd">
 	<id value="8a31c448-223d-42b7-9a17-3898f0c1c143"/>
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-referral-request-1-0"/>
-		<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1-0 found in the profile-->
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-referral-request-1"/>
+		<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1 found in the profile-->
 	</meta>
 	<status value="requested"/>
 	<identifier>

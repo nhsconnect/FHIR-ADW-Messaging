@@ -5,14 +5,14 @@
 	<id value="42840151-1fe1-4967-88c1-bcbd2a191243"/>
 	<!--Identifies the profile being used-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Patient-1"/>
 	</meta>
 	<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
 	<identifier>
 		<use value="official"/>
 		<type>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+				<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1"/>
 				<code value="01"/>
 				<display value="Number present and verified"/>
 			</coding>
@@ -34,7 +34,7 @@
 		<given value="Barry"/>
 	</name>
 	<gender value="male"/>
-	<birthDate value="1941-01-01"/>
+	<birthDate value="194111"/>
 	<address>
 		<use value="home"/>
 		<!-- Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes) Most addresses are both.-->

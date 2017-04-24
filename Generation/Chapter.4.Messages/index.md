@@ -12,7 +12,11 @@ The FHIR resource profiles within this DMS have been created to support the Asse
  - **[Withdrawal Notice Accept Response]** - FHIR resource profiles combined to support the Withdrawal Notice Accept Response interface.
  - **[Withdrawal Notice Reject Response]** - FHIR resource profiles combined to support the Withdrawal Notice Reject Response interface.
 
+## Document Reference ##
 
+The current version of this DMS does not include the ability to transfer documents within the message construct. Should this functionality be required, the COFE-DocumentReference-1 DMS can be utilised. This provides the facility to encode any document type within the message stream.
+
+For more information about this DMS can be found here: [COFE-DocumentReference-1](https://nhsconnect.github.io/NHS-FHIR-CDA-DOCREF/Generated/Chapter.1.About/index.html)
 
 **Further Information**
 
@@ -34,7 +38,7 @@ The various downloads (including Schema files) and reference implementations are
 [Withdrawal Notice Accept Response]: ../Profile.ADW-WithdrawalNoticeAcceptResponse/Profile.ADW-WithdrawalNoticeAcceptResponse.html
 [Withdrawal Notice Reject Response]: ../Profile.ADW-WithdrawalNoticeRejectResponse/Profile.ADW-WithdrawalNoticeRejectResponse.html
 
-[ADW-AssessmentNotice-Message-Header-1-0]: ../Profile.ADW-AssessmentNotice/adw-assessment-notice-message-header-1-0.html
+[ADW-AssessmentNotice-Message-Header-1]: ../Profile.ADW-AssessmentNotice/adw-assessment-notice-message-header-1.html
 
 
 

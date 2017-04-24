@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--This example shows a sample Local Authority Social Services team.-->
 <Organization xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/organization.xsd">
-	<id value="ac831651-0ed4-4b25-97d9-2f204a51c182"/>
+	<id value="ac831651ed4-4b25-97d9-2f204a51c182"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1"/>
 	</meta>
 	<!-- Type of organisation. -->
 	<type>

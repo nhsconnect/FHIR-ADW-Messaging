@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="4b142dfc-9966-4f88-aee7-847a730c8f50"/>
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-message-bundle-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-message-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -11,11 +11,11 @@
 			<MessageHeader>
 				<id value="2f7e7451-5be8-4918-99c8-45d94925cf1a"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-assessment-notice-reject-response-message-header-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-assessment-notice-reject-response-message-header-1"/>
 				</meta>
 				<timestamp value="2016-07-25T12:30:00+00:00"/>
 				<event>
-					<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1-0"/>
+					<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1"/>
 					<code value="975721000000102"/>
 				</event>
 				<response>
@@ -45,7 +45,7 @@
 				</responsible>
 				<reason>
 					<coding>
-						<system value="http://fhir.nhs.net/ValueSet/adw-assessment-notice-reject-reason-1-0"/>
+						<system value="http://fhir.nhs.net/ValueSet/adw-assessment-notice-reject-reason-1"/>
 						<code value="OFT"/>
 						<display value="Other - Free Text"/>
 					</coding>
@@ -63,8 +63,8 @@
 				<id value="149ce9cf-f1d2-494f-a875-34e4d9043076"/>
 				<!--This GUID for the id is unique for each type of referral request-->
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-rejected-1-0"/>
-					<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1-0 found in the profile-->
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-rejected-1"/>
+					<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1 found in the profile-->
 				</meta>
 				<status value="rejected"/>
 				<identifier>
@@ -95,7 +95,7 @@
 				<id value="97978bcf-ea82-4dba-b396-082fb591c0c9"/>
 				<!--Identifies the profile being used-->
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
 				<!--Primary patient identifier i.e. NHS number -->
 				<identifier>
@@ -116,7 +116,7 @@
 					<given value="Barry"/>
 				</name>
 				<gender value="male"/>
-				<birthDate value="1941-01-01"/>
+				<birthDate value="194111"/>
 			</Patient>
 		</resource>
 	</entry>
@@ -126,7 +126,7 @@
 				<id value="da9d9446-a712-42d5-af0e-5bcc6eacd601"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>
@@ -154,7 +154,7 @@
 					<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 					<role>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
 							<code value="NR2060"/>
 							<display value="Discharge coordinator"/>
 						</coding>
@@ -170,7 +170,7 @@
 				<id value="22284107-3c19-4c31-bf1f-19c97c888667"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>
@@ -207,7 +207,7 @@
 					<!-- Indicates the practitioners role(s) i.e. Discharge co-ordinator-->
 					<role>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
 							<code value="NR1340"/>
 							<display value="Approved Social Worker"/>
 							<userSelected value="true"/>
@@ -224,7 +224,7 @@
 				<id value="4c69eb58-8059-4a1a-ac37-1e83bd65f3b8"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!--Organisation identifier - this example has a locally defined organisation code.-->
 				<identifier>
@@ -251,7 +251,7 @@
 				<id value="a4405d48-89e5-477c-a45e-e60944d4ea32"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
@@ -278,7 +278,7 @@
 				<id value="3ac37fd1-e307-46b4-a853-4cbf081c094e"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1"/>
 				</meta>
 				<!-- Type of organisation. -->
 				<type>
@@ -301,7 +301,7 @@
 			<Encounter>
 				<id value="f906fd41-5397-460c-8b00-ea850c5b7cf4"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-response-encounter-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-response-encounter-1"/>
 				</meta>
 				<identifier>
 					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
@@ -329,7 +329,7 @@
 				<id value="e1957748-873a-49ab-9c29-a8e2adcba372"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-location-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Location-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>

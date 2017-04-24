@@ -3,7 +3,7 @@
 	<id value="076a300f-5234-4309-95eb-9a64714bbb06"/>
 	<!--This GUID for the id is unique for each type of referral request-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-accepted-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-accepted-1"/>
 	</meta>
 	<status value="accepted"/>
 	<identifier>

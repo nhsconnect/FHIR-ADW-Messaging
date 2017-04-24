@@ -3,8 +3,8 @@
 <ReferralRequest xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/ReferralRequest.xsd">
 	<id value="37c1099d-638c-4970-bcc6-539403f6ca8e"/>
 	<meta>
-		<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1-0 found in the profile-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-1-0"/>
+		<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1 found in the profile-->
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-1"/>
 	</meta>
 	<status value="requested"/>
 	<identifier>
@@ -20,7 +20,7 @@
 	</requester>
 	<!-- Local Authority Social Services' team -->
 	<recipient>
-		<reference value="Organization/ac831651-0ed4-4b25-97d9-2f204a51c182"/>
+		<reference value="Organization/ac831651ed4-4b25-97d9-2f204a51c182"/>
 	</recipient>
 	<encounter>
 		<reference value="Encounter/fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>

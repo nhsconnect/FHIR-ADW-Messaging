@@ -4,7 +4,7 @@
 	<id value="b5f24590-473b-4228-bfc7-f37ed063a844"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-composition-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-composition-1"/>
 	</meta>
 	<identifier id="8aa052bd-eb17-4a42-89ed-cc51987da190"/>
 	<!--Discharge Notice Issued Date-->

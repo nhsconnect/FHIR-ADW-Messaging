@@ -1,30 +1,23 @@
 
-The ADW-Message-Bundle-1-0 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles in the following combined order: 
+The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles in the following combined order: 
 
-- ADW-AssessmentNoticeAcceptResponse-Message-Header-1-0 [ADW-AssessmentNoticeAcceptResponse-Message-Header-1-0]
-- ADW-ReferralRequest-Accepted-1-0 [ADW-ReferralRequest-Accepted-1-0]
-- ADW-Patient-1-0 [ADW-Patient-1-0]
-- ADW-Practitioner-1-0 [ADW-Practitioner-1-0]
-- ADW-Organization-1-0 [ADW-Organization-1-0]
-- ADW-Social-Services-Team-Organization-1-0 [ADW-Social-Services-Team-Organization-1-0]
-- ADW-Response-Encounter-1-0 [ADW-Response-Encounter-1-0]
-- ADW-Location-1-0 [ADW-Location-1-0]
+- ADW-AssessmentNoticeAcceptResponse-Message-Header-1 [ADW-AssessmentNoticeAcceptResponse-Message-Header-1]
+- ADW-ReferralRequest-Accepted-1 [ADW-ReferralRequest-Accepted-1]
+- CareConnect-ADW-Encounter-1 [CareConnect-ADW-Encounter-1]
+- Careconnect-Patient-1 [CareConnect-Patient-1]
+- Careconnect-Practitioner-1 [CareConnect-Practitioner-1]
+- CareConnect-Organization-1 [CareConnect-Organization-1]
+- CareConnect-Location-1 [CareConnect-Location-1]
+
+
+----------
+**Note:** Only the ADW data set fields are supported by the National Adapter and therefore optional data will not be retained within transformed messages. Optional data in FHIR messages that are "passed through" the adapter will not be removed.
 
 ----------
 
-Example of the Assessment Notice Accept Response Bundle with ADW Data set fields populated [ADW-Message-AssessmentNoticeAcceptResponse-1-0-Ex01] 
+[ADW-Message-AssessmentNoticeAcceptResponse-1-Ex01]: ../Examples/Profile.ADW-AssessmentNoticeAcceptResponse/ADW-Message-AssessmentNoticeAcceptResponse-1-Ex01.xml
 
-Example of the Assessment Notice Accept Response Bundle with ADW Data set fields + optional FHIR elements populated [ADW-Message-AssessmentNoticeAcceptResponse-1-0-Ex02] 
-
-Note: Only the ADW data set fields are supported by the National Adapter and therefore optional data will not be retained within transformed messages. Optional data in FHIR messages that are "passed through" the adapter will not be removed.
-
-----------
-
-[ADW-Message-AssessmentNoticeAcceptResponse-1-0-Ex01]: ../Examples/Profile.ADW-AssessmentNoticeAcceptResponse/ADW-Message-AssessmentNoticeAcceptResponse-1-0-Ex01.xml
-
-[ADW-Message-AssessmentNoticeAcceptResponse-1-0-Ex02]: ../Examples/Profile.ADW-AssessmentNoticeAcceptResponse/ADW-Message-AssessmentNoticeAcceptResponse-1-0-Ex02.xml
-
-
+[ADW-Message-AssessmentNoticeAcceptResponse-1-Ex02]: ../Examples/Profile.ADW-AssessmentNoticeAcceptResponse/ADW-Message-AssessmentNoticeAcceptResponse-1-Ex02.xml
 
 
 ###  ADW Data set Mapping for ADW Assessment Notice Accept Response message bundle. ###
@@ -73,47 +66,47 @@ Note: Only the ADW data set fields are supported by the National Adapter and the
 | Local Authority Contact Telephone Number | [Practitioner.telecom.value (Local Authority Contact Telephone no.)]                    |
 
 
+[ADW-AssessmentNoticeAcceptResponse-Message-Header-1]: adw-assessment-notice-accept-response-message-header-1.html
+[ADW-ReferralRequest-Accepted-1]: adw-referral-request-accepted-1.html
+[CareConnect-Patient-1]: careconnect-patient-1.html
+[CareConnect-Practitioner-1]: careconnect-practitioner-1.html
+[CareConnect-Organization-1]: CareConnect-Organization-1.html
+[CareConnect-ADW-Encounter-1]: CareConnect-ADW-Encounter-1.html
+[ADW-QuestionnaireResponse-1]: adw-questionnaire-response-1.html
+[ADW-Composition-1]: adw-composition-1.html
+[CareConnect-Location-1]: careconnect-location-1.html
+[CareConnect-ADW-Condition-1]: CareConnect-ADW-Condition-1.html
 
-[ADW-AssessmentNoticeAcceptResponse-Message-Header-1-0]: adw-assessment-notice-accept-response-message-header-1-0.html
-[ADW-ReferralRequest-Accepted-1-0]: adw-referral-request-accepted-1-0.html
-[ADW-Patient-1-0]: adw-patient-1-0.html
-[ADW-Practitioner-1-0]: adw-practitioner-1-0.html
-[ADW-Organization-1-0]: adw-organization-1-0.html
-[ADW-Response-Encounter-1-0]: adw-response-encounter-1-0.html
-[ADW-Social-Services-Team-Organization-1-0]: adw-social-services-team-organization-1-0.html
-[ADW-Location-1-0]: adw-location-1-0.html
 
-
-
-[MessageHeader.timestamp (ADW Accept Response Message Sent Time)]: adw-assessment-notice-accept-response-message-header-1-0-dict.html#MessageHeader.ADW%20Accept%20Response%20Message%20Sent%20Time
-[MessageHeader.event.code (Accept Response Type)]: adw-assessment-notice-accept-response-message-header-1-0-dict.html#MessageHeader.event.Accept%20Response%20Type
-[MessageHeader.response.code]: adw-assessment-notice-accept-response-message-header-1-0-dict.html#MessageHeader.response.Response%20Type
-[MessageHeader.reason.coding.code]: adw-assessment-notice-accept-response-message-header-1-0-dict.html#MessageHeader.reason.coding.code
-[MessageHeader.reason.text (Accept Reason)]: adw-assessment-notice-accept-response-message-header-1-0-dict.html#MessageHeader.reason.Accept%20Reason
-[Patient.identifier (NHS Number)]: adw-patient-1-0-dict.html#Patient.NHS%20Number
-[Patient.identifier.type (NHS Number Status Indicator)]: adw-patient-1-0-dict.html#Patient.identifier.NHS%20Number%20Status%20Indicator  
-[Patient.identifier (Hospital Patient Identifier)]: adw-patient-1-0-dict.html#Patient.Hospital%20Patient%20Identifier 
-[Patient.name.family (Family Name)]: adw-patient-1-0-dict.html#Patient.name.Family%20name
-[Patient.name.given (First Given Name)]: adw-patient-1-0-dict.html#Patient.name.First%20given%20name
-[Patient.birthDate (Patient Birth Date)]: adw-patient-1-0-dict.html#Patient.Patient%20Birth%20Date
-[Patient.gender (Patient stated gender)]: adw-patient-1-0-dict.html#Patient.Patient%20stated%20gender
-[Organization.identifier (Organization Site Code)]: adw-organization-1-0-dict.html#Organization.Organization%20Site%20Code
-[Organization.name (Hospital/Local Authority)]: adw-organization-1-0-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
-[Location.name (Ward)]: adw-location-1-0-dict.html#Location.Ward%20name
-[identifier (Hospital - ODS Organisation Code)]: adw-organization-1-0-dict.html#Organization.ODS%20Organisation%20Code
-[name (Hospital)]: adw-organization-1-0-dict.html#Organization.name
-[name (Ward)]: adw-organization-1-0-dict.html#Organization.name
-[Practitioner.name.family (Family Name - Hospital Liaison)]: adw-practitioner-1-0-dict.html#Practitioner.name.Family%20name
-[Practitioner.name.given (First Given Name - Hospital Liaison)]: adw-practitioner-1-0-dict.html#Practitioner.name.First%20given%20name
-[Practitioner.telecom.value (Hospital Liaison Email)]: adw-practitioner-1-0-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string
-[Practitioner.telecom.value (Hospital Liaison Telephone no.)]: adw-practitioner-1-0-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string
-[identifier (Local Authority - ODS Organisation Code)]: adw-organization-1-0-dict.html#Organization.ODS%20Organisation%20Code
-[Organization.name (Hospital/Local Authority)]: adw-organization-1-0-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
-[Organization.name (Social Services' team)]: adw-social-services-team-organization-1-0-dict.html#Organization.Social%20Services%20team
-[Practitioner.name.family (Local Authority Contact)]: adw-practitioner-1-0-dict.html#Practitioner.name.Family%20name
-[Practitioner.name.given (Local Authority Contact)]: adw-practitioner-1-0-dict.html#Practitioner.name.First%20given%20name
-[Practitioner.telecom.value (Local Authority Contact Email)]: adw-practitioner-1-0-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string
-[Practitioner.telecom.value (Local Authority Contact Telephone no.)]: adw-practitioner-1-0-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string
+[MessageHeader.timestamp (ADW Accept Response Message Sent Time)]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.ADW%20Accept%20Response%20Message%20Sent%20Time
+[MessageHeader.event.code (Accept Response Type)]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.event.Accept%20Response%20Type
+[MessageHeader.response.code]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.response.Response%20Type
+[MessageHeader.reason.coding.code]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.reason.coding.code
+[MessageHeader.reason.text (Accept Reason)]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.reason.Accept%20Reason
+[Patient.identifier (NHS Number)]: careconnect-patient-1-dict.html#Patient.NHS%20Number
+[Patient.identifier.type (NHS Number Status Indicator)]: careconnect-patient-1-dict.html#Patient.identifier.NHS%20Number%20Status%20Indicator  
+[Patient.identifier (Hospital Patient Identifier)]: careconnect-patient-1-dict.html#Patient.Hospital%20Patient%20Identifier 
+[Patient.name.family (Family Name)]: careconnect-patient-1-dict.html#Patient.name.Family%20name
+[Patient.name.given (First Given Name)]: careconnect-patient-1-dict.html#Patient.name.First%20given%20name
+[Patient.birthDate (Patient Birth Date)]: careconnect-patient-1-dict.html#Patient.Patient%20Birth%20Date
+[Patient.gender (Patient stated gender)]: careconnect-patient-1-dict.html#Patient.Patient%20stated%20gender
+[Organization.identifier (Organization Site Code)]: CareConnect-Organization-1-dict.html#Organization.Organization%20Site%20Code
+[Organization.name (Hospital/Local Authority)]: CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
+[Location.name (Ward)]: careconnect-location-1-dict.html#Location.Ward%20name
+[identifier (Hospital - ODS Organisation Code)]: CareConnect-Organization-1-dict.html#Organization.ODS%20Organisation%20Code
+[name (Hospital)]: CareConnect-Organization-1-dict.html#Organization.name
+[name (Ward)]: CareConnect-Organization-1-dict.html#Organization.name
+[Practitioner.name.family (Family Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name
+[Practitioner.name.given (First Given Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
+[Practitioner.telecom.value (Hospital Liaison Email)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string
+[Practitioner.telecom.value (Hospital Liaison Telephone no.)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string
+[identifier (Local Authority - ODS Organisation Code)]: CareConnect-Organization-1-dict.html#Organization.ODS%20Organisation%20Code
+[Organization.name (Hospital/Local Authority)]: CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
+[Organization.name (Social Services' team)]: CareConnect-Organization-1-dict.html#Organization.Social%20Services%20team
+[Practitioner.name.family (Local Authority Contact)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name
+[Practitioner.name.given (Local Authority Contact)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
+[Practitioner.telecom.value (Local Authority Contact Email)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string
+[Practitioner.telecom.value (Local Authority Contact Telephone no.)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string
 
 ----------
 
@@ -125,6 +118,8 @@ The diagram shows the referencing for a typical Assessment Notice Accept Respons
 
 <div style="display: block;"><img  src="MessageReferencing4.png" alt="MessageReferencing4"></div>  
 <br>
+
+
 
 **Further Information**
 

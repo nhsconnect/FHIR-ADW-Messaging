@@ -4,13 +4,13 @@
 	<id value="b24d1bed-2877-406a-844d-713eb51dba80"/>
 				<!--Identifies the profile being used-->
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
 				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
 				<identifier>
 					<type>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+							<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1"/>
 							<code value="01"/>
 							<display value="Number present and verified"/>
 						</coding>
@@ -39,7 +39,7 @@
 					<value value="0113554466"/>
 				</telecom>
 				<gender value="male"/>
-				<birthDate value="1941-01-01"/>
+				<birthDate value="194111"/>
 				<address>
 					<!-- Structured address-->
 					<line value="The Old Lodge"/>
@@ -72,13 +72,13 @@
 					</telecom>
 				</contact>
 				<communication>
-					<extension url="http://fhir.nhs.net/StructureDefinition/extension-interpreter-required-1-0">
+					<extension url="http://fhir.nhs.net/StructureDefinition/extension-interpreter-required-1">
 						<valueBoolean value="false"/>
 					</extension>
 					<!--The patient's preferred language-->
 					<language>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/human-language-1-0"/>
+							<system value="http://fhir.nhs.net/ValueSet/human-language-1"/>
 							<code value="ga"/>
 							<display value="Irish"/>
 						</coding>

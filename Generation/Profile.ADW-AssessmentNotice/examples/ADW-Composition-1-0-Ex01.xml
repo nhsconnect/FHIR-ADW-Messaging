@@ -4,17 +4,17 @@
 	<id value="ddeac0d1-5ecc-4e4e-b7ef-fd68ac52a43c"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-composition-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-composition-1"/>
 	</meta>
 	<identifier>
 		<value value="d8e85b2a-0998-40e9-9380-c93467e98844"/>
 	</identifier>
 	<!--Assessment Notice Issued Date-->
-	<date value="2016-11-02T12:00:00+00:00"/>
+	<date value="2016-112T12:00:00+00:00"/>
 	<!--Assessment Notification-->
 	<type>
 		<coding>
-			<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1-0"/>
+			<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1"/>
 			<code value="975701000000106"/>
 			<display value="Assessment Notice under the Care Act 2014 schedule 3"/>
 		</coding>

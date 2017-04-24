@@ -4,8 +4,8 @@
 	<id value="ae745610-e3c4-4a8c-b321-830b9d624f51"/>
 	<!--This GUID for the id is unique for each type of referral request-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-accepted-1-0"/>
-		<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1-0 found in the profile-->
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-accepted-1"/>
+		<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1 found in the profile-->
 	</meta>
 	<status value="accepted"/>
 	<identifier>

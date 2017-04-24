@@ -4,7 +4,7 @@
 	<id value="dafc0a1e-e120-4ba7-b638-0ce50a018146"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
 	</meta>
 	<!--Organisation identifier - this example has a locally defined organisation code.-->
 	<identifier>

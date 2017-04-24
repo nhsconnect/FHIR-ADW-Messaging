@@ -4,7 +4,7 @@
 	<id value="c2c0e1aa-4fcb-47e4-a2d2-0ba8630178df"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-location-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Location-1"/>
 	</meta>
 	<identifier>
 		<use value="official"/>

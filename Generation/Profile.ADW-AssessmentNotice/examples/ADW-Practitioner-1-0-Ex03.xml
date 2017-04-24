@@ -4,7 +4,7 @@
 	<id value="64e5b82e-773d-4c67-b583-8cb075e63620"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Practitioner-1"/>
 	</meta>
 	<name>
 		<family value="Jones"/>
@@ -22,12 +22,12 @@
 	</telecom>
 	<practitionerRole>
 		<managingOrganization>
-			<reference value="Organization/ac831651-0ed4-4b25-97d9-2f204a51c182"/>
+			<reference value="Organization/ac831651ed4-4b25-97d9-2f204a51c182"/>
 			<display value="Local Authority Social Services' department Community Team"/>
 		</managingOrganization>
 			<role>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+				<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
 				<code value="NR1340"/>
 				<display value="Approved Social Worker"/>
 			</coding>

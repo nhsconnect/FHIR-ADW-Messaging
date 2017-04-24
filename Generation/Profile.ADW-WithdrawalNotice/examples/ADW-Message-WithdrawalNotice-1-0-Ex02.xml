@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="ea768d1e-cf8b-45ec-b94a-550c9f1ebd7d"/>
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-message-bundle-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-message-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -11,11 +11,11 @@
 			<MessageHeader>
 				<id value="3e0c4730-82f9-4dd3-9534-84b9a11ce30c"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-withdrawal-notice-message-header-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-withdrawal-notice-message-header-1"/>
 				</meta>
 				<timestamp value="2016-07-26T12:00:00+00:00"/>
 				<event>
-					<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1-0"/>
+					<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1"/>
 					<code value="975841000000102"/>
 				</event>
 				<source>
@@ -41,7 +41,7 @@
 				</responsible>
 				<reason>
 					<coding>
-						<system value="http://fhir.nhs.net/ValueSet/adw-withdrawal-reason-1-0"/>
+						<system value="http://fhir.nhs.net/ValueSet/adw-withdrawal-reason-1"/>
 						<code value="13"/>
 						<display value="Other"/>
 					</coding>
@@ -58,7 +58,7 @@
 			<ReferralRequest>
 				<id value="2bf5f46e-f690-4196-822d-86937ff4f410"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-cancelled-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-cancelled-1"/>
 				</meta>
 				<status value="cancelled"/>
 				<identifier>
@@ -89,14 +89,14 @@
 				<id value="701c59ba-df6c-4f2c-b17a-ef55319a1989"/>
 				<!--Identifies the profile being used-->
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
 				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
 				<identifier>
 					<use value="official"/>
 					<type>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+							<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1"/>
 							<code value="01"/>
 							<display value="Number present and verified"/>
 						</coding>
@@ -119,7 +119,7 @@
 					<given value="Barry"/>
 				</name>
 				<gender value="male"/>
-				<birthDate value="1941-01-01"/>
+				<birthDate value="194111"/>
 				<address>
 					<use value="home"/>
 					<!--Is address postal, physical or both?-->
@@ -141,7 +141,7 @@
 				<id value="f9ca604c-a34a-4ac6-9e02-e7a118fceb49"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>
@@ -170,7 +170,7 @@
 					<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 					<role>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
 							<code value="NR2060"/>
 							<display value="Discharge coordinator"/>
 						</coding>
@@ -186,7 +186,7 @@
 				<id value="d2275977-5597-497b-9677-b48e81e18c39"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-lead-clinician-practitioner-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-lead-clinician-practitioner-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>
@@ -215,7 +215,7 @@
 					<!-- Indicates the practitioners role(s)-->
 					<role>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
 							<code value="NR0050"/>
 							<display value="Consultant"/>
 						</coding>
@@ -231,7 +231,7 @@
 				<id value="622af5df-82cd-4a45-9af0-2c953169493b"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
@@ -258,7 +258,7 @@
 				<id value="ea1aee53-430d-49cc-8250-501b9ce270df"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
@@ -289,7 +289,7 @@
 				<id value="154c948f-e1d0-45c1-bcca-80d60f3fce0d"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1"/>
 				</meta>
 				<!-- Type of organisation. -->
 				<type>
@@ -312,7 +312,7 @@
 			<Encounter>
 				<id value="f592da3d-fa41-4852-867d-7f6b3c03696b"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-withdrawal-encounter-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-withdrawal-encounter-1"/>
 				</meta>
 				<identifier>
 					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
@@ -339,7 +339,7 @@
 				<id value="40636a92-34a5-473d-a297-4dab0c517d97"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-location-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Location-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>

@@ -11,13 +11,13 @@ In addition to the standard acknowledgements and responses provided by MESH, a n
 
 ----------
 
-**NOT-ADW-AssessmentNotice-1-0 Interaction** 
+**NOT-ADW-AssessmentNotice-1 Interaction** 
 
 The sending hospital system will construct an Assessment Notice and send it to the receiving local authority system.
 
 - *Sender:* Hospital sending system
 - *Receiver:* Local authority receiving system
-- *Message: Wire Format:* [ADW-AssessmentNotice-1-0]
+- *Message: Wire Format:* [ADW-AssessmentNotice-1]
 
 
 **Acknowledgements**
@@ -28,21 +28,21 @@ Standard MESH acknowledgements are utilised.
 
 The receiving local authority system **must** send one of the following responses:
 
-*Assessment Notice Accept Response* - [RSP-ADW-AssessmentNoticeAcceptResponse-1-0](#RSP-ADW-AssessmentNoticeAcceptResponse-1-0)
+*Assessment Notice Accept Response* - [RSP-ADW-AssessmentNoticeAcceptResponse-1](#RSP-ADW-AssessmentNoticeAcceptResponse-1)
 
 **OR**
 
-*Assessment Notice Reject Response* - [RSP-ADW-AssessmentNoticeRejectResponse-1-0](#RSP-ADW-AssessmentNoticeRejectResponse-1-0)
+*Assessment Notice Reject Response* - [RSP-ADW-AssessmentNoticeRejectResponse-1](#RSP-ADW-AssessmentNoticeRejectResponse-1)
 
 ----------
 
-**<a name="RSP-ADW-AssessmentNoticeAcceptResponse-1-0"></a> RSP-ADW-AssessmentNoticeAcceptResponse-1-0 Interaction** 
+**<a name="RSP-ADW-AssessmentNoticeAcceptResponse-1"></a> RSP-ADW-AssessmentNoticeAcceptResponse-1 Interaction** 
 
 If accepting the Assessment Notice the local authority system will construct an Assessment Notice Accept Response and send it to the hospital system.
 
 - *Sender:* Local authority sending system
 - *Receiver:* Hospital receiving system
-- *Message:* *Wire Format:* [ADW-AssessmentNoticeAcceptResponse-1-0]
+- *Message:* *Wire Format:* [ADW-AssessmentNoticeAcceptResponse-1]
 
 
 **Acknowledgements**
@@ -51,13 +51,13 @@ Standard MESH acknowledgements are utilised.
 
 ----------
 
-**<a name="RSP-ADW-AssessmentNoticeRejectResponse-1-0"></a> RSP-ADW-AssessmentNoticeRejectResponse-1-0 Interaction** 
+**<a name="RSP-ADW-AssessmentNoticeRejectResponse-1"></a> RSP-ADW-AssessmentNoticeRejectResponse-1 Interaction** 
 
 If rejecting the Assessment Notice the local authority system will construct an Assessment Notice Reject Response and send it to the hospital system.
 
 - *Sender:* Local authority sending system
 - *Receiver:* Hospital receiving system
-- *Message:* *Wire Format:* [ADW-AssessmentNoticeRejectResponse-1-0]
+- *Message:* *Wire Format:* [ADW-AssessmentNoticeRejectResponse-1]
 
 
 **Acknowledgements**
@@ -66,13 +66,13 @@ Standard MESH acknowledgements are utilised.
 
 ----------
 
-**NOT-ADW-DischargeNotice-1-0 Interaction** 
+**NOT-ADW-DischargeNotice-1 Interaction** 
 
 The sending hospital system will construct a Discharge Notice and send it to the receiving local authority system.
 
 - *Sender:* Hospital sending system
 - *Receiver:* Local authority receiving system
-- *Message:*  *Wire Format:* [ADW-DischargeNotice-1-0]
+- *Message:*  *Wire Format:* [ADW-DischargeNotice-1]
 
 
 **Acknowledgements**
@@ -83,21 +83,21 @@ Standard MESH acknowledgements are utilised.
 
 The receiving local authority system **must** send one of the following responses:
 
-*Discharge Notice Accept Response* - [RSP-ADW-DischargeNoticeAcceptResponse-1-0](#RSP-ADW-DischargeNoticeAcceptResponse-1-0)
+*Discharge Notice Accept Response* - [RSP-ADW-DischargeNoticeAcceptResponse-1](#RSP-ADW-DischargeNoticeAcceptResponse-1)
 
 **OR**
 
-*Discharge Notice Reject Response* - [RSP-ADW-DischargeNoticeRejectResponse-1-0](#RSP-ADW-DischargeNoticeRejectResponse-1-0)
+*Discharge Notice Reject Response* - [RSP-ADW-DischargeNoticeRejectResponse-1](#RSP-ADW-DischargeNoticeRejectResponse-1)
 
 ----------
 
-**<a name="RSP-ADW-DischargeNoticeAcceptResponse-1-0"></a> RSP-ADW-DischargeNoticeAcceptResponse-1-0 Interaction** 
+**<a name="RSP-ADW-DischargeNoticeAcceptResponse-1"></a> RSP-ADW-DischargeNoticeAcceptResponse-1 Interaction** 
 
 If accepting the Discharge Notice the local authority system will construct a Discharge Notice Accept Response and send it to the hospital system.
 
 - *Sender:* Local authority sending system
 - *Receiver:* Hospital receiving system
-- *Message:* *Wire Format:* [ADW-DischargeNoticeAcceptResponse-1-0]
+- *Message:* *Wire Format:* [ADW-DischargeNoticeAcceptResponse-1]
 
 
 **Acknowledgements**
@@ -106,13 +106,13 @@ Standard MESH acknowledgements are utilised.
 
 ----------
 
-**<a name="RSP-ADW-DischargeNoticeRejectResponse-1-0"></a> RSP-ADW-DischargeNoticeRejectResponse-1-0 Interaction** 
+**<a name="RSP-ADW-DischargeNoticeRejectResponse-1"></a> RSP-ADW-DischargeNoticeRejectResponse-1 Interaction** 
 
 If rejecting the Discharge Notice the local authority system will construct a Discharge Notice Reject Response and send it to the hospital system.
 
 - *Sender:* Local authority sending system
 - *Receiver:* Hospital receiving system
-- *Message:* *Wire Format:* [ADW-DischargeNoticeRejectResponse-1-0]
+- *Message:* *Wire Format:* [ADW-DischargeNoticeRejectResponse-1]
 
 
 **Acknowledgements**
@@ -121,13 +121,13 @@ Standard MESH acknowledgements are utilised.
 
 ----------
 
-**NOT-ADW-WithdrawalNotice-1-0 Interaction** 
+**NOT-ADW-WithdrawalNotice-1 Interaction** 
 
 The sending hospital system will construct a Withdrawal Notice and send it to the receiving local authority system.
 
 - *Sender:* Hospital sending system
 - *Receiver:* Local authority receiving system
-- *Message: Wire Format:* [ADW-WithdrawalNotice-1-0]
+- *Message: Wire Format:* [ADW-WithdrawalNotice-1]
 
 
 **Acknowledgements**
@@ -138,21 +138,21 @@ Standard MESH acknowledgements are utilised.
 
 The receiving local authority system **should** send one of the following responses:
 
-*Withdrawal Notice Accept Response* - [RSP-ADW-WithdrawalNoticeAcceptResponse-1-0](#RSP-ADW-WithdrawalNoticeAcceptResponse-1-0)
+*Withdrawal Notice Accept Response* - [RSP-ADW-WithdrawalNoticeAcceptResponse-1](#RSP-ADW-WithdrawalNoticeAcceptResponse-1)
 
 **OR**
 
-*Withdrawal Notice Reject Response* - [RSP-ADW-WithdrawalNoticeRejectResponse-1-0](#RSP-ADW-WithdrawalNoticeRejectResponse-1-0)
+*Withdrawal Notice Reject Response* - [RSP-ADW-WithdrawalNoticeRejectResponse-1](#RSP-ADW-WithdrawalNoticeRejectResponse-1)
 
 ----------
 
-**<a name="RSP-ADW-WithdrawalNoticeAcceptResponse-1-0"></a> RSP-ADW-WithdrawalNoticeAcceptResponse-1-0 Interaction** 
+**<a name="RSP-ADW-WithdrawalNoticeAcceptResponse-1"></a> RSP-ADW-WithdrawalNoticeAcceptResponse-1 Interaction** 
 
 If accepting the Withdrawal Notice the local authority system will construct a Withdrawal Notice Accept Response and send it to the hospital system.
 
 - *Sender:* Local authority sending system
 - *Receiver:* Hospital receiving system
-- *Message: Wire Format:* [ADW-WithdrawalNoticeAcceptResponse-1-0]
+- *Message: Wire Format:* [ADW-WithdrawalNoticeAcceptResponse-1]
 
 
 **Acknowledgements**
@@ -161,13 +161,13 @@ Standard MESH acknowledgements are utilised.
 
 ----------
 
-**<a name="RSP-ADW-WithdrawalNoticeRejectResponse-1-0"></a> RSP-ADW-WithdrawalNoticeRejectResponse-1-0 Interaction** 
+**<a name="RSP-ADW-WithdrawalNoticeRejectResponse-1"></a> RSP-ADW-WithdrawalNoticeRejectResponse-1 Interaction** 
 
 If rejecting the Withdrawal Notice the local authority system will construct a Withdrawal Notice Reject Response and send it to the hospital system.
 
 - *Sender:* Local authority sending system
 - *Receiver:* Hospital receiving system
-- *Message:* *Wire Format:* [ADW-WithdrawalNoticeRejectResponse-1-0]
+- *Message:* *Wire Format:* [ADW-WithdrawalNoticeRejectResponse-1]
 
 
 **Acknowledgements**
@@ -204,20 +204,20 @@ For more information about FHIR messaging please visit: [HL7 FHIR DSTU2 1.0.1 Me
 
 [HL7 FHIR DSTU2 1.0.1 Messaging Implementation]:http://hl7.org/fhir/messaging.html
 
-[ADW-AssessmentNotice-1-0]: ../Profile.ADW-AssessmentNotice/Profile.ADW-AssessmentNotice.html
+[ADW-AssessmentNotice-1]: ../Profile.ADW-AssessmentNotice/Profile.ADW-AssessmentNotice.html
 
-[ADW-AssessmentNoticeAcceptResponse-1-0]: ../Profile.ADW-AssessmentNoticeAcceptResponse/Profile.ADW-AssessmentNoticeAcceptResponse.html
+[ADW-AssessmentNoticeAcceptResponse-1]: ../Profile.ADW-AssessmentNoticeAcceptResponse/Profile.ADW-AssessmentNoticeAcceptResponse.html
 
-[ADW-AssessmentNoticeRejectResponse-1-0]: ../Profile.ADW-AssessmentNoticeRejectResponse/Profile.ADW-AssessmentNoticeRejectResponse.html
+[ADW-AssessmentNoticeRejectResponse-1]: ../Profile.ADW-AssessmentNoticeRejectResponse/Profile.ADW-AssessmentNoticeRejectResponse.html
 
-[ADW-DischargeNotice-1-0]: ../Profile.ADW-DischargeNotice/Profile.ADW-DischargeNotice.html
+[ADW-DischargeNotice-1]: ../Profile.ADW-DischargeNotice/Profile.ADW-DischargeNotice.html
 
-[ADW-DischargeNoticeAcceptResponse-1-0]: ../Profile.ADW-DischargeNoticeAcceptResponse/Profile.ADW-DischargeNoticeAcceptResponse.html
+[ADW-DischargeNoticeAcceptResponse-1]: ../Profile.ADW-DischargeNoticeAcceptResponse/Profile.ADW-DischargeNoticeAcceptResponse.html
 
-[ADW-DischargeNoticeRejectResponse-1-0]: ../Profile.ADW-DischargeNoticeRejectResponse/Profile.ADW-DischargeNoticeRejectResponse.html
+[ADW-DischargeNoticeRejectResponse-1]: ../Profile.ADW-DischargeNoticeRejectResponse/Profile.ADW-DischargeNoticeRejectResponse.html
 
-[ADW-WithdrawalNotice-1-0]: ../Profile.ADW-WithdrawalNotice/Profile.ADW-WithdrawalNotice.html
+[ADW-WithdrawalNotice-1]: ../Profile.ADW-WithdrawalNotice/Profile.ADW-WithdrawalNotice.html
 
-[ADW-WithdrawalNoticeAcceptResponse-1-0]: ../Profile.ADW-WithdrawalNoticeAcceptResponse/Profile.ADW-WithdrawalNoticeAcceptResponse.html
+[ADW-WithdrawalNoticeAcceptResponse-1]: ../Profile.ADW-WithdrawalNoticeAcceptResponse/Profile.ADW-WithdrawalNoticeAcceptResponse.html
 
-[ADW-WithdrawalNoticeRejectResponse-1-0]: ../Profile.ADW-WithdrawalNoticeRejectResponse/Profile.ADW-WithdrawalNoticeRejectResponse.html
+[ADW-WithdrawalNoticeRejectResponse-1]: ../Profile.ADW-WithdrawalNoticeRejectResponse/Profile.ADW-WithdrawalNoticeRejectResponse.html

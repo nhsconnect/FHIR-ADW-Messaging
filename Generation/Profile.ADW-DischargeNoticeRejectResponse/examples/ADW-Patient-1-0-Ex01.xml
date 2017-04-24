@@ -4,7 +4,7 @@
 	<id value="a1e2525a-08ee-4ece-8a76-426c245a119a"/>
 	<!--Identifies the profile being used-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Patient-1"/>
 	</meta>
 	<!--Primary patient identifier i.e. NHS number-->
 	<identifier>
@@ -24,5 +24,5 @@
 		<given value="Barry"/>
 	</name>
 	<gender value="male"/>
-	<birthDate value="1941-01-01"/>
+	<birthDate value="194111"/>
 </Patient>

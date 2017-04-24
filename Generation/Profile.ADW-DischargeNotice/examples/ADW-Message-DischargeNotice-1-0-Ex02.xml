@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="697217f0-718d-427a-b39a-d03562fd42cd"/>
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-message-bundle-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/adw-message-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -11,11 +11,11 @@
 			<MessageHeader>
 				<id value="7de62d4d-76bd-4ddc-b0cb-7b87dbfb009a"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-notice-message-header-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-notice-message-header-1"/>
 				</meta>
 				<timestamp value="2016-07-25T13:00:00+00:00"/>
 				<event>
-					<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1-0"/>
+					<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1"/>
 					<code value="975731000000100"/>
 				</event>
 				<source>
@@ -50,8 +50,8 @@
 			<ReferralRequest>
 				<id value="91a83075-3cd8-4452-a736-fb05e8064f09"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-referral-request-1-0"/>
-					<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1-0 found in the profile-->
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-referral-request-1"/>
+					<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1 found in the profile-->
 				</meta>
 				<status value="requested"/>
 				<identifier>
@@ -85,14 +85,14 @@
 				<id value="4e093fbf-be82-4114-b6dc-6341eac0498c"/>
 				<!--Identifies the profile being used-->
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-patient-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
 				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
 				<identifier>
 					<use value="official"/>
 					<type>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1-0"/>
+							<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1"/>
 							<code value="01"/>
 							<display value="Number present and verified"/>
 						</coding>
@@ -125,7 +125,7 @@
 					<rank value="1"/>
 				</telecom>
 				<gender value="male"/>
-				<birthDate value="1941-01-01"/>
+				<birthDate value="194111"/>
 				<address>
 					<use value="home"/>
 					<!--Is address postal, physical or both?-->
@@ -177,7 +177,7 @@
 				<id value="a0a3e6de-091a-45a4-9bec-e8ace4e837f8"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-practitioner-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>
@@ -208,7 +208,7 @@
 					<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 					<role>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
 							<code value="NR2060"/>
 							<display value="Discharge coordinator"/>
 						</coding>
@@ -224,7 +224,7 @@
 				<id value="027cec25-0530-4849-859f-11e6f68da0d1"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-lead-clinician-practitioner-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-lead-clinician-practitioner-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>
@@ -253,7 +253,7 @@
 					<!-- Indicates the practitioner's role(s)-->
 					<role>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1-0"/>
+							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
 							<code value="NR0050"/>
 							<display value="Consultant"/>
 						</coding>
@@ -270,7 +270,7 @@
 				<id value="e4bd25cb-8489-4258-aef2-4ef70fe177d6"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
@@ -310,7 +310,7 @@
 				<id value="8cfa20b5-bac0-4b8e-8107-8fb19af0beed"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-organization-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!--Organisation identifier-->
 				<identifier>
@@ -352,7 +352,7 @@
 				<id value="bd4146a2-72ef-44d4-98c5-13e4c84ce27a"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1"/>
 				</meta>
 				<!-- Type of organisation. -->
 				<type>
@@ -376,7 +376,7 @@
 				<id value="58c01c26-8c9e-474b-add0-04ef7f755b7a"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-questionnaire-response-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-questionnaire-response-1"/>
 				</meta>
 				<identifier>
 					<value value="fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
@@ -391,7 +391,7 @@
 						<text value="Has the patient been consulted regarding the proposed discharge date?"/>
 						<answer>
 							<valueCoding>
-								<system value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0"/>
+								<system value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1"/>
 								<code value="Y"/>
 								<display value="Yes"/>
 							</valueCoding>
@@ -401,7 +401,7 @@
 						<text value="Has the patient's carer (if applicable) been consulted regarding the proposed discharge date?"/>
 						<answer>
 							<valueCoding>
-								<system value="http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1-0"/>
+								<system value="http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1"/>
 								<code value="Y"/>
 								<display value="Yes"/>
 							</valueCoding>
@@ -416,7 +416,7 @@
 			<Encounter>
 				<id value="5eb90c3b-f04b-44e5-a839-027993c839b5"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-encounter-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-encounter-1"/>
 				</meta>
 				<identifier>
 					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
@@ -427,7 +427,7 @@
 					<reference value="Patient/4e093fbf-be82-4114-b6dc-6341eac0498c"/>
 				</patient>
 				<period>
-					<end value="2016-11-02"/>
+					<end value="2016-112"/>
 				</period>
 				<location>
 					<location>
@@ -447,7 +447,7 @@
 				<id value="e40b4306-eaa9-4f4f-8e91-a611b634fdaf"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-location-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Location-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>
@@ -467,7 +467,7 @@
 				<id value="a32d9540-9fdb-47dc-9566-8268c884de6c"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-composition-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-composition-1"/>
 				</meta>
 				<identifier>
 					<value value="78fa1f70-e972-4f4d-a7a3-a1f7232b134f"/>
@@ -477,7 +477,7 @@
 				<!--Discharge Notification-->
 				<type>
 					<coding>
-						<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1-0"/>
+						<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1"/>
 						<code value="975731000000100"/>
 						<display value="Discharge Notice under the Care Act 2014 Schedule 3"/>
 					</coding>

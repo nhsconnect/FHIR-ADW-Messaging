@@ -4,7 +4,7 @@
 	<id value="fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-encounter-1-0"/>
+		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 	</meta>
 	<identifier>
 		<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
@@ -13,7 +13,7 @@
 	<class value="inpatient"/>
 	<priority>
 		<coding>
-			<system value="http://fhir.nhs.net/ValueSet/adw-admission-type-1-0"/>
+			<system value="http://fhir.nhs.net/ValueSet/adw-admission-type-1"/>
 			<code value="P"/>
 			<display value="Elective"/>
 		</coding>

@@ -3,11 +3,11 @@
 <MessageHeader xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/MessageHeader.xsd">
 	<id value="34e29318-9558-4536-b03f-5241b616b699"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-withdrawal-notice-reject-response-message-header-1-0"/>
+					<profile value="http://fhir.nhs.net/StructureDefinition/adw-withdrawal-notice-reject-response-message-header-1"/>
 				</meta>
 				<timestamp value="2016-07-25T13:30:00+00:00"/>
 				<event>
-					<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1-0"/>
+					<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1"/>
 					<code value="1025641000000106"/>
 				</event>
 				<response>
@@ -37,7 +37,7 @@
 				</responsible>
 				<reason>
 					<coding>
-						<system value="http://fhir.nhs.net/ValueSet/adw-withdrawal-notice-reject-reason-1-0"/>
+						<system value="http://fhir.nhs.net/ValueSet/adw-withdrawal-notice-reject-reason-1"/>
 						<code value="OFT"/>
 						<display value="Other - Free Text"/>
 					</coding>
