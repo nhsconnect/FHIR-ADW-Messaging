@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2016-07-03T09:00:00+00:00"/>
 	</meta>
-	<url value="https://fhir.nhs.uk/ValueSet/nhs-number-status-indicator-1"/>
+	<url value="https://fhir.hl7.org.uk/ValueSet/CareConnect-NHSNumberVerificationStatus-1"/>
 	<name value="NHS Number Status Indicator Code"/>
 	<status value="active"/>
 	<publisher value="Health and Social Care Information Centre NHS Data Model and Dictionary"/>

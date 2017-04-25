@@ -4,22 +4,22 @@
 	<id value="bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
 				<!--Identifies the profile being used-->
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Patient-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
 				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
 				<identifier>
 					<type>
 						<coding>
-							<system value="http://fhir.nhs.net/nhs-number-status-indicator-1"/>
+							<system value="https://fhir.nhs.uk/nhs-number-status-indicator-1"/>
 							<code value="01"/>
 							<display value="Number present and verified"/>
 						</coding>
 					</type>
-					<system value="http://fhir.nhs.net/Id/nhs-number"/>
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 					<value value="9413946000"/>
 				</identifier>
 				<identifier>
-					<system value="http://fhir.nhs.net/Id/hospital-patient-identifier"/>
+					<system value="https://fhir.nhs.uk/Id/local-patient-identifier"/>
 					<value value="A1234521"/>
 					<assigner>
 						<!-- This can be a reference to the profile elsewhere in the message or just text -->
@@ -39,7 +39,7 @@
 					<value value="0113554466"/>
 				</telecom>
 				<gender value="male"/>
-				<birthDate value="194111"/>
+				<birthDate value="1941-11-01"/>
 				<address>
 					<!-- Structured address-->
 					<line value="The Old Lodge"/>
@@ -53,9 +53,9 @@
 				<contact>
 					<relationship>
 						<coding>
-							<system value="http://hl7.org/fhir/ValueSet/patient-contact-relationship"/>
-							<code value="caregiver"/>
-							<display value="Caregiver"/>
+							<system value="https://fhir.hl7.org.uk/CareConnect-PersonRelationshipType-1"/>
+							<code value="20"/>
+							<display value="Carer"/>
 						</coding>
 					</relationship>
 					<name>
@@ -72,13 +72,13 @@
 					</telecom>
 				</contact>
 				<communication>
-					<extension url="http://fhir.nhs.net/StructureDefinition/extension-interpreter-required-1">
+					<extension url="https://fhir.nhs.uk/StructureDefinition/extension-interpreter-required-1">
 						<valueBoolean value="false"/>
 					</extension>
 					<!--The patient's preferred language-->
 					<language>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/human-language-1"/>
+							<system value="https://fhir.nhs.uk/ValueSet/human-language-1"/>
 							<code value="ga"/>
 							<display value="Irish"/>
 						</coding>

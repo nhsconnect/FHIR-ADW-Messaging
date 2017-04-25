@@ -4,7 +4,7 @@
 	<id value="a32d9540-9fdb-47dc-9566-8268c884de6c"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-composition-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-composition-1"/>
 	</meta>
 	<identifier>
 		<value value="78fa1f70-e972-4f4d-a7a3-a1f7232b134f"/>
@@ -14,7 +14,7 @@
 	<!--Discharge Notification-->
 	<type>
 		<coding>
-			<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1"/>
+			<system value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
 			<code value="975731000000100"/>
 			<display value="Discharge Notice under the Care Act 2014 Schedule 3"/>
 		</coding>

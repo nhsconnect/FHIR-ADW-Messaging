@@ -4,11 +4,11 @@
 	<id value="c2c0e1aa-4fcb-47e4-a2d2-0ba8630178df"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Location-1"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
 	</meta>
 	<identifier>
 		<use value="official"/>
-		<system value="http://fhir.nhs.net/Id/ods-organization-code"/>
+		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 		<value value="RFM7C7"/>
 	</identifier>
 	<name value="Collier Ward"/>

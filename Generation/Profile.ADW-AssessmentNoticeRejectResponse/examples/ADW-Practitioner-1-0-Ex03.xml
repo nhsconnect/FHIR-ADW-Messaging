@@ -4,7 +4,7 @@
 		<id value="d5228f4a-357c-4fc3-b7da-a41315c7c768"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Jones"/>
@@ -25,7 +25,7 @@
 					<!-- Indicates the practitioners role(s) i.e. Discharge co-ordinator-->
 					<role>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
+							<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
 							<code value="NR1340"/>
 							<display value="Approved Social Worker"/>
 						</coding>

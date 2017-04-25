@@ -4,7 +4,7 @@
 	<id value="75a7388d-abbf-4bd2-8008-a602435aa2b3"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Practitioner-1"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 	</meta>
 	<name>
 		<family value="Gulliver"/>
@@ -25,7 +25,7 @@
 		<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 		<role>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
+				<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
 				<code value="NR2060"/>
 				<display value="Discharge coordinator"/>
 			</coding>

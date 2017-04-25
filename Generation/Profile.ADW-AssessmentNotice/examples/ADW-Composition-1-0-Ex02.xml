@@ -4,7 +4,7 @@
 	<id value="b5f24590-473b-4228-bfc7-f37ed063a844"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-composition-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-composition-1"/>
 	</meta>
 	<identifier id="8aa052bd-eb17-4a42-89ed-cc51987da190"/>
 	<!--Discharge Notice Issued Date-->
@@ -12,7 +12,7 @@
 	<!--Discharge Notice-->
 	<type>
 		<coding>
-			<system value="http://fhir.nhs.net/Id/snomed.info/sct"/>
+			<system value="https://fhir.nhs.uk/Id/snomed.info/sct"/>
 			<code value="975731000000100 "/>
 			<display value="Discharge Notice under the Care Act 2014 Schedule 3"/>
 		</coding>
@@ -77,7 +77,7 @@
 		<code>
 			<coding>
 				<!--AoMRC Heading, Reason for admission-->
-				<system value="http://fhir.nhs.net/Id/snomed.info/sct"/>
+				<system value="https://fhir.nhs.uk/Id/snomed.info/sct"/>
 				<code value="886811000000106 "/>
 				<display value="Discharge details"/>
 			</coding>

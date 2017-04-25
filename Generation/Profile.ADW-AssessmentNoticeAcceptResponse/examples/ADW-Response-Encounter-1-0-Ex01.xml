@@ -3,7 +3,7 @@
 <Encounter xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Encounter.xsd">
 	<id value="1dc3c1fc-9b5a-433e-849a-fc2a78640caf"/>
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-response-encounter-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 	</meta>
 	<identifier>
 		<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>

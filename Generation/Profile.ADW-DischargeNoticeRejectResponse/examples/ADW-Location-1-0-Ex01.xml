@@ -4,7 +4,7 @@
 	<id value="48a8cd66-66b5-4022-b067-fb7410313b81"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Location-1"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
 	</meta>
 	<name value="Collier Ward"/>
 	<managingOrganization>

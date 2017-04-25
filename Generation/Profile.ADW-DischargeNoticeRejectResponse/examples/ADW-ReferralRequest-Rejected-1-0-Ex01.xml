@@ -3,8 +3,8 @@
 	<id value="f150da96-9250-4ba2-9474-807a497974a9"/>
 	<!--This GUID for the id is unique for each type of referral request-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-rejected-1"/>
-		<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1 found in the profile-->
+		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-referral-request-rejected-1"/>
+		<!--This is taken from the url value of https://fhir.nhs.uk/StructureDefinition/adw-referral-request-1 found in the profile-->
 	</meta>
 	<status value="rejected"/>
 	<identifier>

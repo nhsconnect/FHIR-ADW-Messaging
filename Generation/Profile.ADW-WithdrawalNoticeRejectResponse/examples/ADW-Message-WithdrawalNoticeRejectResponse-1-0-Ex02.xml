@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="a75dc032-8585-4452-ba1c-1cb917751862"/>
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-message-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -10,11 +10,11 @@
 			<MessageHeader>
 				<id value="2a7af32c-d014-42df-902d-230b7c1eed7d"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-withdrawal-notice-reject-response-message-header-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-withdrawal-notice-reject-response-message-header-1"/>
 				</meta>
 				<timestamp value="2016-07-25T13:30:00+00:00"/>
 				<event>
-					<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1"/>
+					<system value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
 					<code value="1025641000000106"/>
 				</event>
 				<response>
@@ -44,7 +44,7 @@
 				</responsible>
 				<reason>
 					<coding>
-						<system value="http://fhir.nhs.net/ValueSet/adw-withdrawal-notice-reject-reason-1"/>
+						<system value="https://fhir.nhs.uk/ValueSet/adw-withdrawal-notice-reject-reason-1"/>
 						<code value="OFT"/>
 						<display value="Other - Free Text"/>
 					</coding>
@@ -61,7 +61,7 @@
 			<ReferralRequest>
 				<id value="f6929d98-7229-40f3-9b15-9ca07e22b4db"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-cancelled-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-referral-request-cancelled-1"/>
 				</meta>
 				<status value="cancelled"/>
 				<identifier>
@@ -88,16 +88,16 @@
 				<id value="1724ef6f-2c96-4ca1-9fa0-593540714f14"/>
 				<!--Identifies the profile being used-->
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Patient-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
 				<!--Primary patient identifier i.e. NHS number -->
 				<identifier>
 				<use value="official"/>
-					<system value="http://fhir.nhs.net/Id/nhs-number"/>
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 					<value value="9413946000"/>
 				</identifier>
 				<identifier>
-					<system value="http://fhir.nhs.net/Id/hospital-patient-identifier"/>
+					<system value="https://fhir.nhs.uk/Id/local-patient-identifier"/>
 					<value value="A1234521"/>
 					<assigner>
 						<!-- This can be a reference to the profile elsewhere in the message or just text -->
@@ -109,7 +109,7 @@
 					<given value="Barry"/>
 				</name>
 				<gender value="male"/>
-				<birthDate value="194111"/>
+				<birthDate value="1941-11-01"/>
 			</Patient>
 		</resource>
 	</entry>
@@ -119,11 +119,11 @@
 				<id value="64c38c32-ee5c-466a-98c4-8de2baca6cff"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 					<identifier>
 					<use value="official"/>
-					<system value="http://fhir.nhs.net/Id/sds-user-identifier"/>
+					<system value="https://fhir.nhs.uk/Id/sds-user-identifier"/>
 					<value value="055555750555"/>
 				</identifier>
 				<name>
@@ -147,7 +147,7 @@
 					<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 					<role>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
+							<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
 							<code value="NR2060"/>
 							<display value="Discharge coordinator"/>
 						</coding>
@@ -163,7 +163,7 @@
 				<id value="1b3e2b9e-a5a3-4fe5-bc90-0cb1c93b84e2"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>
@@ -200,7 +200,7 @@
 					<!-- Indicates the practitioners role(s) i.e. Discharge co-ordinator-->
 					<role>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
+							<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
 							<code value="NR1340"/>
 							<display value="Approved Social Worker"/>
 							<userSelected value="true"/>
@@ -217,12 +217,12 @@
 				<id value="09355b97-c9fc-45df-a80c-e4d369c24bf0"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
 					<use value="official"/>
-					<system value="http://fhir.nhs.net/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 					<value value="RFM8C2"/>
 				</identifier>
 				<!-- Type of organisation. -->
@@ -244,12 +244,12 @@
 				<id value="b1e72245-5166-44ef-b523-419c5bd4211e"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
 				<use value="official"/>
-					<system value="http://fhir.nhs.net/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 					<value value="V396BB"/>
 				</identifier>
 				<!-- Type of organisation. -->
@@ -271,7 +271,7 @@
 				<id value="7be023fb-0f1b-4450-9a9b-98b4e19a2392"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!-- Type of organisation. -->
 				<type>
@@ -294,7 +294,7 @@
 			<Encounter>
 				<id value="07e7c480-4ea8-45d5-933a-11a2008e54d7"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-response-encounter-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 				</meta>
 				<identifier>
 					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
@@ -322,11 +322,11 @@
 				<id value="cf5cb48e-895d-412f-8489-ddaeb67c9d3e"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Location-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>
-					<system value="http://fhir.nhs.net/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 					<value value="RFM7C7"/>
 				</identifier>
 				<name value="Collier Ward"/>

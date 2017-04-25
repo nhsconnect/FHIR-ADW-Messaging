@@ -2,11 +2,11 @@
 <MessageHeader xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/MessageHeader.xsd">
 	<id value="5bfa2a2e-923b-440d-82d6-38e24b666be6"/>
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-assessment-notice-message-header-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-assessment-notice-message-header-1"/>
 	</meta>
 	<timestamp value="2016-07-25T12:00:00+00:00"/>
 	<event>
-		<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1"/>
+		<system value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
 		<code value="975701000000106"/>
 	</event>
 	<source>

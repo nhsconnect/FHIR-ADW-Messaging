@@ -4,7 +4,7 @@
 	<id value="7236046e-488a-4a1e-adaf-2fa9299da940"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 	</meta>
 	<!-- Type of organisation. -->
 	<type>

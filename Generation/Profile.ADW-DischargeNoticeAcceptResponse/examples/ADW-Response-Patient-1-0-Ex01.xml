@@ -5,23 +5,23 @@
 	<id value="08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
 	<!--Identifies the profile being used-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Patient-1"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 	</meta>
 	<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
 	<identifier>
 		<use value="official"/>
 		<type>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1"/>
+				<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-NHSNumberVerificationStatus-1"/>
 				<code value="01"/>
 				<display value="Number present and verified"/>
 			</coding>
 		</type>
-		<system value="http://fhir.nhs.net/Id/nhs-number"/>
+		<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 		<value value="9413946000"/>
 	</identifier>
 	<identifier>
-		<system value="http://fhir.nhs.net/Id/hospital-patient-identifier"/>
+		<system value="https://fhir.nhs.uk/Id/local-patient-identifier"/>
 		<value value="A1234521"/>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
@@ -34,5 +34,5 @@
 		<given value="Barry"/>
 	</name>
 	<gender value="male"/>
-	<birthDate value="194111"/>
+	<birthDate value="1941-11-01"/>
 	</Patient>

@@ -5,23 +5,23 @@
 	<id value="42840151-1fe1-4967-88c1-bcbd2a191243"/>
 	<!--Identifies the profile being used-->
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Patient-1"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 	</meta>
 	<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
 	<identifier>
 		<use value="official"/>
 		<type>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1"/>
+				<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-NHSNumberVerificationStatus-1"/>
 				<code value="01"/>
 				<display value="Number present and verified"/>
 			</coding>
 		</type>
-		<system value="http://fhir.nhs.net/Id/nhs-number"/>
+		<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 		<value value="9413946000"/>
 	</identifier>
 	<identifier>
-		<system value="http://fhir.nhs.net/Id/hospital-patient-identifier"/>
+		<system value="https://fhir.nhs.uk/Id/local-patient-identifier"/>
 		<value value="A1234521"/>
 		<assigner>
 			<!-- This can be a reference to the profile elsewhere in the message or just text -->
@@ -34,7 +34,7 @@
 		<given value="Barry"/>
 	</name>
 	<gender value="male"/>
-	<birthDate value="194111"/>
+	<birthDate value="1941-11-01"/>
 	<address>
 		<use value="home"/>
 		<!-- Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes) Most addresses are both.-->
@@ -50,9 +50,9 @@
 	<contact>
 		<relationship>
 			<coding>
-				<system value="http://hl7.org/fhir/ValueSet/patient-contact-relationship"/>
-				<code value="caregiver"/>
-				<display value="Caregiver"/>
+				<system value="https://fhir.hl7.org.uk/CareConnect-PersonRelationshipType-1"/>
+				<code value="20"/>
+				<display value="Carer"/>
 			</coding>
 		</relationship>
 		<name>

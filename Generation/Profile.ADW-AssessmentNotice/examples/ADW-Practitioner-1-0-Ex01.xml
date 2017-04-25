@@ -4,7 +4,7 @@
 	<id value="88563c7f-b040-486a-9018-296bf9b94f32"/>
 	<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-lead-clinician-practitioner-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-lead-clinician-practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Stibbs"/>
@@ -17,7 +17,7 @@
 					<!-- Indicates the practitioners role(s)-->
 					<role>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/job-role-name-1"/>
+							<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
 							<code value="NR0050"/>
 							<display value="Consultant"/>
 						</coding>

@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="79aec4c6-e7d3-44ef-96ed-bda1b94f9d00"/>
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-message-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -10,11 +10,11 @@
 			<MessageHeader>
 				<id value="5bfa2a2e-923b-440d-82d6-38e24b666be6"/>
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-assessment-notice-message-header-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-assessment-notice-message-header-1"/>
 				</meta>
 				<timestamp value="2016-07-25T12:00:00+00:00"/>
 				<event>
-					<system value="http://fhir.nhs.net/ValueSet/adw-message-event-1"/>
+					<system value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
 					<code value="975701000000106"/>
 				</event>
 				<source>
@@ -49,8 +49,8 @@
 			<ReferralRequest>
 				<id value="37c1099d-638c-4970-bcc6-539403f6ca8e"/>
 				<meta>
-					<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1 found in the profile-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-referral-request-1"/>
+					<!--This is taken from the url value of https://fhir.nhs.uk/StructureDefinition/adw-referral-request-1 found in the profile-->
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-referral-request-1"/>
 				</meta>
 				<status value="requested"/>
 				<identifier>
@@ -83,22 +83,41 @@
 				<id value="bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
 				<!--Identifies the profile being used-->
 				<meta>
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Patient-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
+				<!--nhsCommunication complex extension start-->
+<extension url="Extension-CareConnect-NHSCommunication-1" >
+	<extension url="language" >
+		<valueCodeableConcept>
+						<coding>
+				<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-HumanLanguage-1"/>
+				<code value="ga"/>
+				<display value="Irish"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="preferred">
+		<valueBoolean value="true"/>
+	</extension>
+	<extension url="interpreterRequired">
+		<valueBoolean value="false"/>
+	</extension>
+</extension>
 				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
+				
 				<identifier>
 					<type>
 						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/nhs-number-status-indicator-1"/>
+							<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-NHSNumberVerificationStatus-1"/>
 							<code value="01"/>
 							<display value="Number present and verified"/>
 						</coding>
 					</type>
-					<system value="http://fhir.nhs.net/Id/nhs-number"/>
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 					<value value="9413946000"/>
 				</identifier>
 				<identifier>
-					<system value="http://fhir.nhs.net/Id/hospital-patient-identifier"/>
+					<system value="https://fhir.nhs.uk/Id/local-patient-identifier"/>
 					<value value="A1234521"/>
 					<assigner>
 						<!-- This can be a reference to the profile elsewhere in the message or just text -->
@@ -132,9 +151,9 @@
 				<contact>
 					<relationship>
 						<coding>
-							<system value="http://hl7.org/fhir/ValueSet/patient-contact-relationship"/>
-							<code value="caregiver"/>
-							<display value="Caregiver"/>
+							<system value="https://fhir.hl7.org.uk/CareConnect-PersonRelationshipType-1"/>
+							<code value="20"/>
+							<display value="Carer"/>
 						</coding>
 					</relationship>
 					<name>
@@ -150,20 +169,7 @@
 						<value value="0113237656"/>
 					</telecom>
 				</contact>
-				<communication>
-					<extension url="http://fhir.nhs.net/StructureDefinition/extension-interpreter-required-1">
-						<valueBoolean value="false"/>
-					</extension>
-					<!--The patient's preferred language-->
-					<language>
-						<coding>
-							<system value="http://fhir.nhs.net/ValueSet/human-language-1"/>
-							<code value="ga"/>
-							<display value="Irish"/>
-						</coding>
-					</language>
-					<preferred value="true"/>
-				</communication>
+			<!--Remoced communication from here and replaced with a new version prior to <identifier>-->
 			</Patient>
 		</resource>
 	</entry>
@@ -173,7 +179,7 @@
 				<id value="5b5d3bab-c1bb-434a-ab0d-82c4860bb098"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Gulliver"/>
@@ -210,7 +216,7 @@
 				<id value="88563c7f-b040-486a-9018-296bf9b94f32"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Stibbs"/>
@@ -239,11 +245,11 @@
 				<id value="1ebc76fd-9612-4c72-81dd-de294a0e7287"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
-					<system value="http://fhir.nhs.net/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 					<value value="RFM8C2"/>
 				</identifier>
 				<!-- Type of organisation. -->
@@ -265,11 +271,11 @@
 				<id value="dab4b872-e000-42ec-bd4e-0d804fc3b92e"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
-					<system value="http://fhir.nhs.net/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 					<value value="V396BB"/>
 				</identifier>
 				<!-- Type of organisation. -->
@@ -291,7 +297,7 @@
 				<id value="ac831651ed4-4b25-97d9-2f204a51c182"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
 				<!-- Type of organisation. -->
 				<type>
@@ -315,7 +321,7 @@
 				<id value="9c7eb664-d257-4250-aee2-20ad202919e8"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/adw-questionnaire-response-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-questionnaire-response-1"/>
 				</meta>
 				<identifier>
 					<value value="fd60ffd5-3e41-4b68-aa62-37f5407d8c04"/>
@@ -330,7 +336,7 @@
 						<text value="Has the patient been consulted regarding this Assessment Notice?"/>
 						<answer>
 							<valueCoding>
-								<system value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1"/>
+								<system value="https://fhir.nhs.uk/ValueSet/adw-consultation-status-1"/>
 								<code value="Y"/>
 								<display value="Yes"/>
 							</valueCoding>
@@ -340,7 +346,7 @@
 						<text value="Has the patient's carer (if applicable) been consulted regarding the Assessment Notice?"/>
 						<answer>
 							<valueCoding>
-								<system value="http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1"/>
+								<system value="https://fhir.nhs.uk/ValueSet/adw-carerconsultation-status-1"/>
 								<code value="Y"/>
 								<display value="Yes"/>
 							</valueCoding>
@@ -350,7 +356,7 @@
 						<text value="Are there any safeguarding issues associated with the patient?"/>
 						<answer>
 							<valueCoding>
-								<system value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1"/>
+								<system value="https://fhir.nhs.uk/ValueSet/adw-consultation-status-1"/>
 								<code value="N"/>
 								<display value="No"/>
 							</valueCoding>
@@ -360,7 +366,7 @@
 						<text value="Has the patient consented to this Assessment Notice?"/>
 						<answer>
 							<valueCoding>
-								<system value="http://fhir.nhs.net/ValueSet/adw-patient-consent-status-1"/>
+								<system value="https://fhir.nhs.uk/ValueSet/adw-patient-consent-status-1"/>
 								<code value="Y"/>
 								<display value="Yes"/>
 							</valueCoding>
@@ -370,7 +376,7 @@
 						<text value="What is the source of the third party consent for this assessment notice?"/>
 						<answer>
 							<valueCoding>
-								<system value="http://fhir.nhs.net/ValueSet/adw-third-party-consent-source-1"/>
+								<system value="https://fhir.nhs.uk/ValueSet/adw-third-party-consent-source-1"/>
 								<code value="B"/>
 								<display value="Best Interest Decision"/>
 							</valueCoding>
@@ -380,7 +386,7 @@
 						<text value="Has the provision of NHS Continuing Health Care been considered?"/>
 						<answer>
 							<valueCoding>
-								<system value="http://fhir.nhs.net/ValueSet/adw-consultation-status-1"/>
+								<system value="https://fhir.nhs.uk/ValueSet/adw-consultation-status-1"/>
 								<code value="Y"/>
 								<display value="Yes"/>
 							</valueCoding>
@@ -402,7 +408,7 @@
 				<id value="fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 				</meta>
 				<identifier>
 					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
@@ -445,7 +451,7 @@
 				<id value="ce114cdd-cfeb-4533-b3c4-3c0dd450b25c"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Location-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
 				</meta>
 				<name value="Collier Ward"/>
 				<managingOrganization>
@@ -460,7 +466,7 @@
 				<id value="af7ba23c-8ad3-11e6-ae22-56b6b6499611"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-ADW-Condition-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1"/>
 				</meta>
 				<!--Reference to patient-->
 				<patient>

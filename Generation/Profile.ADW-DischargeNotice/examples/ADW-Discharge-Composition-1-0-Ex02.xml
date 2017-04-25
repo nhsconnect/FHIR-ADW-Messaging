@@ -3,8 +3,8 @@
 <Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Composition.xsd">
 	<id value="40d8d66d-e931-4f59-a51f-9365f81239af"/>
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/adw-discharge-composition-1"/>
-		<!--This is taken from the url value of http://fhir.nhs.net/StructureDefinition/adw-referral-request-1 found in the profile-->
+		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-composition-1"/>
+		<!--This is taken from the url value of https://fhir.nhs.uk/StructureDefinition/adw-referral-request-1 found in the profile-->
 	</meta>
 	<identifier>
 		<value value="8aa052bd-eb17-4a42-89ed-cc51987da190"/>
@@ -83,7 +83,7 @@
 		<code>
 			<coding>
 				<!--AoMRC Heading, Reason for admission-->
-				<system value="http://fhir.nhs.net/Id/snomed.info/sct"/>
+				<system value="https://fhir.nhs.uk/Id/snomed.info/sct"/>
 				<code value="886811000000106 "/>
 				<display value="Discharge details"/>
 			</coding>

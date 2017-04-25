@@ -4,11 +4,11 @@
 	<id value="71583f7a-6572-49fc-be7f-3bb83bdbaab1"/>
 	<meta>
 		<!--Identifies the profile being used-->
-		<profile value="http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1"/>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 	</meta>
 	<!--Organisation identifier -->
 	<identifier>
-		<system value="http://fhir.nhs.net/Id/ods-organization-code"/>
+		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 		<value value="V396BB"/>
 	</identifier>
 	<!-- Type of organisation. -->
