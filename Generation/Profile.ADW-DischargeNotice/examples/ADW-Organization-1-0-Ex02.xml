@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--This example shows a sample Local Authority.-->
 <Organization xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/organization.xsd">
-	<id value="37f35527-5169-4467-b6ad-ab147928714c"/>
+	<id value="dab4b872-e000-42ec-bd4e-0d804fc3b92e"/>
 	<meta>
 		<!--Identifies the profile being used-->
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 	</meta>
-	<!--Organisation identifier-->
+	<!--Organisation identifier -->
 	<identifier>
 		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 		<value value="V396BB"/>

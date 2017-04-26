@@ -6,9 +6,8 @@
 		<!--Identifies the profile being used-->
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 	</meta>
-	<!--Organisation identifier - this example has a locally defined organisation code.-->
+	<!--Organisation identifier -->
 	<identifier>
-		<use value="official"/>
 		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 		<value value="RFM8C2"/>
 	</identifier>
@@ -22,12 +21,4 @@
 		<text value="Hospital"/>
 	</type>
 	<name value="Hebburn Hospital"/>
-	<address>
-		<type value="both"/>
-		<line value="Hebburn Hospital"/>
-		<line value="East View"/>
-		<city value="Newcastle Upon Tyne"/>
-		<district value="Tyne and Wear"/>
-		<postalCode value="NE31 1DR"/>
-	</address>
 </Organization>

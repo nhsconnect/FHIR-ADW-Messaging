@@ -6,7 +6,7 @@
 		<!--Identifies the profile being used-->
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 	</meta>
-	<!--Organisation identifier - this example has a locally defined organisation code.-->
+	<!--Organisation identifier -->
 	<identifier>
 		<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 		<value value="RFM8C2"/>

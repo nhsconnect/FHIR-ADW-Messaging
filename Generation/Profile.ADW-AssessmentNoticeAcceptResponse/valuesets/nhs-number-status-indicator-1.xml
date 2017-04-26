@@ -18,7 +18,7 @@
 	<description value="A vocabulary that identifies the verified status of a patient's NHS number."/>
 	<requirements value="A patient's NHS number is the NHS agreed way of uniquely identifying a patient. Therfore it is significant to understand whether this status has been verified. For the purposes of the ADW message, code value: '08' with display value: 'Trace postponed (baby under six weeks old)' is not required."/>
 	<codeSystem>
-		<system value="https://fhir.nhs.uk/nhs-number-status-indicator-1"/>
+		<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-NHSNumberVerificationStatus-1"/>
 		<concept>
 			<code value="01"/>
 			<display value="Number present and verified"/>

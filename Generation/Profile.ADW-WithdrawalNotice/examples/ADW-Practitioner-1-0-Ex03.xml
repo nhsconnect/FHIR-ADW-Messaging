@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--A Local Authority Social Worker-->
 <Practitioner xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/practitioner.xsd">
-	<id value="9570c7cb-def9-454d-a192-3d368a84730f"/>
+	<id value="64e5b82e-773d-4c67-b583-8cb075e63620"/>
 	<meta>
 		<!--Identifies the profile being used-->
 		<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
@@ -22,11 +22,10 @@
 	</telecom>
 	<practitionerRole>
 		<managingOrganization>
-			<reference value="Organization/95870e3e-80fe-4c06-8166-88d7985a5b40"/>
-			<display value="Hebburn Social Services Community Team"/>
+			<reference value="Organization/ac831651ed4-4b25-97d9-2f204a51c182"/>
+			<display value="Local Authority Social Services' department Community Team"/>
 		</managingOrganization>
-		<!-- Indicates the practitioners role(s) i.e. Discharge co-ordinator-->
-		<role>
+			<role>
 			<coding>
 				<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
 				<code value="NR1340"/>

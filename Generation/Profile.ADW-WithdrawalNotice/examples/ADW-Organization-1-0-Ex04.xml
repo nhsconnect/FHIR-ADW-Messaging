@@ -10,14 +10,13 @@
 	<type>
 		<coding>
 			<system value="http://hl7.org/fhir/ValueSet/organization-type"/>
-			<code value="other"/>
-			<display value="Other"/>
+			<code value="team"/>
+			<display value="Organizational team"/>
 		</coding>
-		<text value="Local Authority Social Services' department Community Team"/>
+		<text value="Local Authority Social Services' Team"/>
 	</type>
-	<name value="Social Services' Community Team"/>
+	<name value="Hebburn Social Services' Community Team"/>
 	<partOf>
-		<reference value="Organization/4ef37b35-3367-44a2-8328-dcd71a10b9fb"/>
-		<display value="Hebburn Social Services"/>
+		<reference value="Organization/dab4b872-e000-42ec-bd4e-0d804fc3b92e"/>
 	</partOf>
 </Organization>

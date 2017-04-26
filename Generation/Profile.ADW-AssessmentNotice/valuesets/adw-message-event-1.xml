@@ -18,7 +18,7 @@
 	<copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
 	<requirements value="This vocabulary contains values to be selected to set the notice type for a patient's referral."/>
 	<codeSystem>
-		<system value="https://fhir.nhs.uk/adw-message-event-1"/>
+		<system value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
 		<concept>
 			<code value="975701000000106"/>
 			<display value="Assessment Notice under the Care Act 2014 schedule 3"/>

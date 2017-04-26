@@ -7,14 +7,15 @@
 		<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 	</meta>
 	<identifier>
+	<system value="http://www.acme.com/identifiers/patient"/>
 		<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
 	</identifier>
 	<status value="in-progress"/>
 	<class value="inpatient"/>
 	<priority>
 		<coding>
-			<system value="https://fhir.nhs.uk/ValueSet/adw-admission-type-1"/>
-			<code value="P"/>
+			<system value="http://hl7.org/fhir/v3/ActPriority"/>
+			<code value="EL"/>
 			<display value="Elective"/>
 		</coding>
 	</priority>

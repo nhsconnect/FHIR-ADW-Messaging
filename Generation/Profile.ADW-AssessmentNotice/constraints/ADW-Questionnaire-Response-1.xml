@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ADW-Questionnaire-Response-1" />
   <meta>
-    <lastUpdated value="2017-04-21T10:29:11.91+01:00" />
+    <lastUpdated value="2017-04-26T12:05:49.958+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="10" />
@@ -6124,7 +6124,6 @@
       <type>
         <code value="string" />
       </type>
-      <maxLength value="500" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -6668,7 +6667,6 @@
       <type>
         <code value="string" />
       </type>
-      <maxLength value="500" />
       <mustSupport value="true" />
     </element>
     <element>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-21T11:17:58.242+01:00" />
+    <lastUpdated value="2017-04-26T11:07:20.65+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="6" />
@@ -2079,9 +2079,7 @@
       <binding>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
-        </valueSetReference>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/identifier-type" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -14765,6 +14763,10 @@
     <element>
       <path value="Patient.identifier.type" />
       <max value="0" />
+      <binding>
+        <strength value="extensible" />
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/identifier-type" />
+      </binding>
     </element>
     <element>
       <path value="Patient.identifier.system" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-21T13:51:43.704+01:00" />
+    <lastUpdated value="2017-04-26T10:15:40.914+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -2975,7 +2975,7 @@
         <strength value="preferred" />
         <description value="Indicates the urgency of the encounter." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/encounter-priority" />
+          <reference value="http://hl7.org/fhir/v3/ActPriority" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -13160,6 +13160,9 @@
       <path value="Encounter.priority" />
       <binding>
         <strength value="preferred" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/v3/ActPriority" />
+        </valueSetReference>
       </binding>
     </element>
     <element>

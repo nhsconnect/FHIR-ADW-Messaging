@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <!--A Local Authority Social Worker-->
+<!--A Local Authority Social Worker-->
 <Practitioner xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/practitioner.xsd">
 	<id value="9255f4e3-d65d-4b96-8b8e-586e9f8e9828"/>
 	<meta>
@@ -11,24 +11,27 @@
 		<given value="Lee"/>
 	</name>
 	<telecom>
-		<system value="email"/>
-		<value value="lee.jones@nhs.net"/>
-	</telecom>
-	<telecom>
 		<system value="phone"/>
 		<value value="0191223888"/>
+		<use value="work"/>
+	</telecom>
+	<telecom>
+		<system value="email"/>
+		<value value="lee.jones@nhs.net"/>
+		<use value="work"/>
 	</telecom>
 	<practitionerRole>
 		<managingOrganization>
-			<reference value="Organization/bb8d8c2b-30f8-4567-83aa-e127a16c5122"/>
+			<reference value="Organization/ac831651ed4-4b25-97d9-2f204a51c182"/>
+			<display value="Local Authority Social Services' department Community Team"/>
 		</managingOrganization>
-		<role>
+			<role>
 			<coding>
 				<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
 				<code value="NR1340"/>
 				<display value="Approved Social Worker"/>
 			</coding>
-			<text value="Local Authority Contact"/>
+			<text value="Local Authority Contact (Social Worker)"/>
 		</role>
 	</practitionerRole>
 </Practitioner>

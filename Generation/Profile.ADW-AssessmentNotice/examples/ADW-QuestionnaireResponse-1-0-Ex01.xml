@@ -78,7 +78,7 @@
 		<question>
 			<text value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?"/>
 			<answer>
-				<valueString value="Ongoing care/support requires timely assessment by NHS"/>
+				<valueString value="Ongoing care support requires timely assessment by NHS"/>
 			</answer>
 		</question>
 	</group>

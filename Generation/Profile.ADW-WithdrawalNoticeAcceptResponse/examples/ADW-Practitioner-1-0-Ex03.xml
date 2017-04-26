@@ -11,19 +11,21 @@
 		<given value="Lee"/>
 	</name>
 	<telecom>
-		<system value="email"/>
-		<value value="lee.jones@nhs.net"/>
-	</telecom>
-	<telecom>
 		<system value="phone"/>
 		<value value="0191223888"/>
+		<use value="work"/>
+	</telecom>
+	<telecom>
+		<system value="email"/>
+		<value value="lee.jones@nhs.net"/>
+		<use value="work"/>
 	</telecom>
 	<practitionerRole>
 		<managingOrganization>
-			<reference value="Organization/6cd9fafa-96ac-43fd-bda2-c4da68b19bf7"/>
+			<reference value="Organization/ac831651ed4-4b25-97d9-2f204a51c182"/>
+			<display value="Local Authority Social Services' department Community Team"/>
 		</managingOrganization>
-		<!-- Indicates the practitioners role(s) i.e. Discharge co-ordinator-->
-		<role>
+			<role>
 			<coding>
 				<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
 				<code value="NR1340"/>

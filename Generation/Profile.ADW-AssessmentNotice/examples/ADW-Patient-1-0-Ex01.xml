@@ -8,13 +8,15 @@
 				</meta>
 				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
 				<identifier>
-					<type>
-						<coding>
-							<system value="https://fhir.nhs.uk/nhs-number-status-indicator-1"/>
-							<code value="01"/>
-							<display value="Number present and verified"/>
-						</coding>
-					</type>
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-NHSNumberVerificationStatus-1"/>
+								<code value="01"/>
+								<display value="Number present and verified"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
 					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 					<value value="9413946000"/>
 				</identifier>
@@ -27,6 +29,7 @@
 					</assigner>
 				</identifier>
 				<name>
+					<use value="usual"/>
 					<family value="Jones"/>
 					<given value="Barry"/>
 				</name>
@@ -59,6 +62,7 @@
 						</coding>
 					</relationship>
 					<name>
+						<use value="usual"/>
 						<family value="Bloom"/>
 						<given value="Sandra"/>
 					</name>
@@ -71,18 +75,4 @@
 						<value value="0113237656"/>
 					</telecom>
 				</contact>
-				<communication>
-					<extension url="https://fhir.nhs.uk/StructureDefinition/extension-interpreter-required-1">
-						<valueBoolean value="false"/>
-					</extension>
-					<!--The patient's preferred language-->
-					<language>
-						<coding>
-							<system value="https://fhir.nhs.uk/ValueSet/human-language-1"/>
-							<code value="ga"/>
-							<display value="Irish"/>
-						</coding>
-					</language>
-					<preferred value="true"/>
-				</communication>
 </Patient>

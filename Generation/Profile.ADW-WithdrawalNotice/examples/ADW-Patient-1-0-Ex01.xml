@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Sample male patient. Tis includes optional elements in addition to the minimum dataset for the patient.-->
+<!--Sample male patient. This includes optional elements in addition to the minimum dataset for the patient.-->
 <Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Patient.xsd">
-	<id value="b24d1bed-2877-406a-844d-713eb51dba80"/>
+	<id value="038f2a2b-72b7-4be3-b0b2-3f68c5f05037"/>
 				<!--Identifies the profile being used-->
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
 				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
 				<identifier>
-					<type>
-						<coding>
-							<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-NHSNumberVerificationStatus-1"/>
-							<code value="01"/>
-							<display value="Number present and verified"/>
-						</coding>
-					</type>
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-NHSNumberVerificationStatus-1"/>
+								<code value="01"/>
+								<display value="Number present and verified"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
 					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 					<value value="9413946000"/>
 				</identifier>
@@ -27,6 +29,7 @@
 					</assigner>
 				</identifier>
 				<name>
+					<use value="usual"/>
 					<family value="Jones"/>
 					<given value="Barry"/>
 				</name>
@@ -59,6 +62,7 @@
 						</coding>
 					</relationship>
 					<name>
+						<use value="usual"/>
 						<family value="Bloom"/>
 						<given value="Sandra"/>
 					</name>
@@ -71,18 +75,4 @@
 						<value value="0113237656"/>
 					</telecom>
 				</contact>
-				<communication>
-					<extension url="https://fhir.nhs.uk/StructureDefinition/extension-interpreter-required-1">
-						<valueBoolean value="false"/>
-					</extension>
-					<!--The patient's preferred language-->
-					<language>
-						<coding>
-							<system value="https://fhir.nhs.uk/ValueSet/human-language-1"/>
-							<code value="ga"/>
-							<display value="Irish"/>
-						</coding>
-					</language>
-					<preferred value="true"/>
-				</communication>
 </Patient>

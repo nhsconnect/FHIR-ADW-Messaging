@@ -20,7 +20,7 @@
 	</telecom>
 	<practitionerRole>
 		<managingOrganization>
-			<reference value="Organization/86ca79fd-0e26-4ac1-b74f-c071902bee41"/>
+			<reference value="Organization/1ebc76fd-9612-4c72-81dd-de294a0e7287"/>
 		</managingOrganization>
 		<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 		<role>
