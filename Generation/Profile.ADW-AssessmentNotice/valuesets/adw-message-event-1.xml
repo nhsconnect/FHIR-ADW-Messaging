@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
+<id value="42495d3a-cb28-44d8-b2e9-e6c055bf2129"/>
 	<meta>
-		<lastUpdated value="2016-07-13T09:00:00+00:00"/>
+		<lastUpdated value="2016-07-03T09:00:00+00:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
 	<name value="ADW Message Event"/>
 	<status value="active"/>
-	<publisher value="Health and Social Care Information Centre"/>
+	<publisher value="Health and Social Care Information Centre NHS Data Model and Dictionary"/>
 	<contact>
 		<telecom>
 			<system value="email"/>
@@ -15,10 +16,9 @@
 		</telecom>
 	</contact>
 	<description value="A vocabulary that identifies the assessment, discharge and withdrawal notice type."/>
-	<copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
 	<requirements value="This vocabulary contains values to be selected to set the notice type for a patient's referral."/>
 	<codeSystem>
-		<system value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
+		<system value="https://fhir.nhs.uk/adw-message-event-1"/>
 		<concept>
 			<code value="975701000000106"/>
 			<display value="Assessment Notice under the Care Act 2014 schedule 3"/>

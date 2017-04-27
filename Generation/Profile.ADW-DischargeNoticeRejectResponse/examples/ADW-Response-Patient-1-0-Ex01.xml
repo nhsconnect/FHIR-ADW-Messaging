@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
- It has had no clinical validation. 
 <!--Sample male patient-->
 <Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/Patient.xsd">
 	<id value="a1e2525a-08ee-4ece-8a76-426c245a119a"/>
@@ -30,6 +29,7 @@
 		</assigner>
 	</identifier>
 	<name>
+		<use value="usual"/>
 		<family value="Jones"/>
 		<given value="Barry"/>
 	</name>

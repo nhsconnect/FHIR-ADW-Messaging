@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-26T10:49:27.902+01:00" />
+    <lastUpdated value="2017-04-27T15:05:19.612+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -453,7 +453,7 @@
         <strength value="required" />
         <description value="The type of ADW message" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk//ValueSet/adw-message-event-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/adw-message-event-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3694,7 +3694,7 @@
         <strength value="required" />
         <description value="The type of ADW message" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk//ValueSet/adw-message-event-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/adw-message-event-1" />
         </valueSetReference>
       </binding>
     </element>

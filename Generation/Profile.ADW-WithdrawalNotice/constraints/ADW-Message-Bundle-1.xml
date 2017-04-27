@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-21T15:14:55.486+01:00" />
+    <lastUpdated value="2017-04-27T10:57:10.521+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
@@ -9,17 +9,17 @@
     <tag>
       <system value="urn:hscic:examples" />
       <code value="ADW-Withdrawal-Notice-Bundle-1" />
-      <display value="ADW withdrawl notice (maximum example)" />
+      <display value="ADW assessment notice (maximum example)" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />
   </extension>
-  <url value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1" />
+  <url value="http://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1" />
   <version value="1.0" />
   <name value="ADW-Message-Bundle-1" />
   <status value="draft" />
-  <publisher value="HSCIC" />
+  <publisher value="NHS Digital" />
   <contact>
     <name value="InteroperabilityTeam" />
     <telecom>
@@ -547,10 +547,6 @@
     </element>
     <element>
       <path value="Bundle.entry" />
-      <slicing>
-        <ordered value="true" />
-        <rules value="open" />
-      </slicing>
       <short value="Entry in the bundle - will have a resource, or information" />
       <definition value="An entry in a bundle resource - will either contain a resource, or information about a resource (transactions and history only)." />
       <min value="1" />
@@ -586,6 +582,18 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
           <valueString value="fullUrl.empty() xor resource" />
         </extension>
+        <key value="bdl-6" />
+        <severity value="error" />
+        <human value="The fullUrl element must be present when a resource is present, and not present otherwise" />
+        <xpath value="(not(exists(f:fullUrl)) and not(exists(f:resource))) or (exists(f:fullUrl) and exists(f:resource))" />
+      </constraint>
+      <constraint>
+        <key value="bdl-5" />
+        <severity value="error" />
+        <human value="must be a resource unless there's a transaction or transaction response" />
+        <xpath value="f:resource or f:request or f:response" />
+      </constraint>
+      <constraint>
         <key value="bdl-6" />
         <severity value="error" />
         <human value="The fullUrl element must be present when a resource is present, and not present otherwise" />
@@ -706,7 +714,7 @@
       <short value="Links related to this entry" />
       <definition value="A series of links that provide context to this entry." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Bundle.entry.link" />
         <min value="0" />
@@ -750,7 +758,7 @@
       <path value="Bundle.entry.resource" />
       <short value="A resource in the bundle" />
       <definition value="The Resources for the entry." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Bundle.entry.resource" />
@@ -899,7 +907,7 @@
       <short value="Search related information" />
       <definition value="Information about the search process that lead to the creation of this entry." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Bundle.entry.search" />
         <min value="0" />
@@ -1103,7 +1111,7 @@
       <short value="Transaction Related Information" />
       <definition value="Additional information about how this entry should be processed as part of a transaction." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Bundle.entry.request" />
         <min value="0" />
@@ -1431,7 +1439,7 @@
       <short value="Transaction Related Information" />
       <definition value="Additional information about how this entry should be processed as part of a transaction." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Bundle.entry.response" />
         <min value="0" />
@@ -2315,11 +2323,39 @@
     </element>
     <element>
       <path value="Bundle.entry" />
-      <slicing>
-        <ordered value="true" />
-        <rules value="open" />
-      </slicing>
       <min value="1" />
+      <constraint>
+        <key value="bdl-5" />
+        <severity value="error" />
+        <human value="must be a resource unless there's a transaction or transaction response" />
+        <xpath value="f:resource or f:request or f:response" />
+      </constraint>
+      <constraint>
+        <key value="bdl-6" />
+        <severity value="error" />
+        <human value="The fullUrl element must be present when a resource is present, and not present otherwise" />
+        <xpath value="(not(exists(f:fullUrl)) and not(exists(f:resource))) or (exists(f:fullUrl) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Bundle.entry.link" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="Bundle.entry.search" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Bundle.entry.request" />
+      <max value="0" />
+    </element>
+    <element>
+      <path value="Bundle.entry.response" />
+      <max value="0" />
     </element>
     <element>
       <path value="Bundle.signature" />

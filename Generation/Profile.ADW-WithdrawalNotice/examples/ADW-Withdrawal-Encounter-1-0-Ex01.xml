@@ -6,6 +6,7 @@
 		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-withdrawal-encounter-1"/>
 	</meta>
 	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
 		<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
 	</identifier>
 	<status value="in-progress"/>

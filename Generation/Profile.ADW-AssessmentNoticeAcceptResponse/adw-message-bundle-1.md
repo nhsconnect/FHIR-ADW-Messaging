@@ -116,7 +116,7 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 
 The diagram shows the referencing for a typical Assessment Notice Accept Response message. It is intended for illustrative purposes only.
 
-<div style="display: block;"><img  src="MessageReferencing4.png" alt="MessageReferencing4"></div>  
+<div style="display: block;"><img  src="MessageReferencing.png" alt="MessageReferencing"></div>  
 <br>
 
 

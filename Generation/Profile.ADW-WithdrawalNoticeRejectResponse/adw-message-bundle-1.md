@@ -121,7 +121,7 @@ Optional data in FHIR messages that are "passed through" the adapter will not be
 
 The diagram shows the referencing for a typical Withdrawal Notice Reject Response message. It is intended for illustrative purposes only.
 
-<div style="display: block;"><img  src="MessageReferencing4.png" alt="MessageReferencing4"></div>  
+<div style="display: block;"><img  src="MessageReferencing.png" alt="MessageReferencing"></div>  
 <br>
 
 ----------

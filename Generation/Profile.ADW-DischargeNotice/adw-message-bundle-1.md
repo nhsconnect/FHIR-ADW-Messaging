@@ -100,7 +100,7 @@ The diagram below shows the referencing for a typical Discharge Notice message. 
 
 
 
-<div style="display: block;"><img  src="MessageReferencing4.png" alt="MessageReferencing4"></div>  
+<div style="display: block;"><img  src="MessageReferencing.png" alt="MessageReferencing"></div>  
 <br>
 
 
