@@ -14,8 +14,6 @@ The Discharge Notice ADW-Message-Bundle-1 bundle resource profile is used in the
 
 ----------
 
-Example of the Discharge Notice Bundle with ADW Data set fields populated [ADW-Message-DischargeNotice-1-Ex01.xml] 
-
 The following example contains a composition resource and has been a .txt extension only to allow correct viewing within a web browser, xml copies are available within the examples folder within this specification.
 
 Example of the Discharge Notice Bundle with ADW Data set fields + optional FHIR elements populated [ADW-Message-DischargeNotice-1-Ex02.txt] 
@@ -26,11 +24,10 @@ Note: Only the ADW data set fields are supported by the National Adapter and the
 
 [ADW-Message-DischargeNotice-1-Ex01.xml]: ../Examples/Profile.ADW-DischargeNotice/ADW-Message-DischargeNotice-1-Ex01.xml
 
-[ADW-Message-DischargeNotice-1-Ex02.txt]: ../Examples/Profile.ADW-DischargeNotice/ADW-Message-DischargeNotice-1-Ex02.txt
+[ADW-Message-DischargeNotice-1-Ex02.txt]: ../Examples/Profile.ADW-DischargeNotice/ADW-Message-Discharge-Notice-Bundle-1-Example-2.txt
 
 
 ###  ADW Data set Mapping for ADW Discharge Notice message bundle. ###
-
 
 ----------
 
@@ -96,12 +93,10 @@ The FHIR profiles in the message are referenced in the XML instance instead of b
 
 This means only one instance is required for each instance of the profile.
 
-The diagram below shows the referencing for a typical Discharge Notice message. It is intended for illustrative purposes only.
+The diagram shows the referencing for a typical Discharge Notice message. It is intended for illustrative purposes only. The diagram can be viewed here:
 
+[Profile Referencing Diagram for an Discharge Notice](../Profile.ADW-DischargeNotice/MessageReferencing4.png)
 
-
-<div style="display: block;"><img  src="MessageReferencing.png" alt="MessageReferencing"></div>  
-<br>
 
 
 [ADW-DischargeNotice-Message-Header-1]: adw-discharge-notice-message-header-1.html

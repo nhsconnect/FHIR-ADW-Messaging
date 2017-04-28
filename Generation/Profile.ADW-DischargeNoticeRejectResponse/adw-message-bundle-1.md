@@ -10,11 +10,6 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 - CareConnect-Location-1 [CareConnect-Location-1]
 
 ----------
-
-Example of the Discharge Notice Reject Response Bundle with ADW Data set fields populated [ADW-Message-DischargeNoticeRejectResponse-1-Ex01] 
-
-Example of the Discharge Notice Reject Response Bundle with ADW Data set fields + optional FHIR elements populated  [ADW-Message-DischargeNoticeRejectResponse-1-Ex02]
-
 Note: Only the ADW data set fields are supported by the National Adapter and therefore optional data will not be retained within transformed messages. 
 Optional data in FHIR messages that are "passed through" the adapter will not be removed. 
 
@@ -115,11 +110,9 @@ Optional data in FHIR messages that are "passed through" the adapter will not be
 
 ### Referencing of profiles for ADW Discharge Notice Reject Response message bundle.###
 
+The diagram shows the referencing for a typical Discharge Reject Response Notice message. It is intended for illustrative purposes only. The diagram can be viewed here:
 
-The diagram shows the referencing for a typical Discharge Notice Reject Response message. It is intended for illustrative purposes only.
-
-<div style="display: block;"><img  src="MessageReferencing.png" alt="MessageReferencing"></div>  
-<br>
+[Profile Referencing Diagram for an Discharge Reject Response Notice](../Profile.ADW-DischargeNoticeRejectResponse/MessageReferencing4.png)
 
 ----------
 

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-27T10:58:16.203+01:00" />
+    <lastUpdated value="2017-04-28T11:51:42.017+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
     </tag>
     <tag>
       <system value="urn:hscic:examples" />
-      <code value="ADW-Withdrawal-Notice-Reject-Response-Bundle-1" />
+      <code value="ADW-Message-Withdrawal-Notice-Reject-Response-Bundle-1-Example-1" />
       <display value="ADW assessment notice (maximum example)" />
     </tag>
   </meta>

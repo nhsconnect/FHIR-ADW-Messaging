@@ -171,10 +171,9 @@ The FHIR profiles in the message are referenced in the XML instance instead of b
 
 This means only one instance is required for each instance of the profile.
 
-The diagram below shows the referencing for a typical Assessment Notice message. It is intended for illustrative purposes only.
+The diagram shows the referencing for a typical Assessment Notice message. It is intended for illustrative purposes only. The diagram can be viewed here:
 
-<div style="display: block;"><img  src="MessageReferencing.png" alt="MessageReferencing"></div>  
-<br>
+[Profile Referencing Diagram for an Assessment Notice](../Profile.ADW-AssessmentNotice/MessageReferencing4.png)
 
 
 **Further Information**

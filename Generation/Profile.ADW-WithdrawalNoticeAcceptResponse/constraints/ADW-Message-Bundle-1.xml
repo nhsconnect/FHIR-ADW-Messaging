@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-27T10:58:59.839+01:00" />
+    <lastUpdated value="2017-04-28T11:50:28.66+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
     </tag>
     <tag>
       <system value="urn:hscic:examples" />
-      <code value="ADW-Withdrawal-Notice-Accept-Response-Bundle-1" />
-      <display value="ADW assessment notice (maximum example)" />
+      <code value="ADW-Message-Withdrawal-Notice-Accept-Response-Bundle-1-Example-1" />
+      <display value="Example of ADW Withdrawl Notice Accept Response Bundle with ADW Data set fields" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
@@ -2344,9 +2344,6 @@
     <element>
       <path value="Bundle.entry.resource" />
       <min value="1" />
-      <type>
-        <code value="Resource" />
-      </type>
     </element>
     <element>
       <path value="Bundle.entry.search" />

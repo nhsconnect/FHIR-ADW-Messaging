@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-21T15:20:36.128+01:00" />
+    <lastUpdated value="2017-04-28T11:27:40.755+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
     </tag>
     <tag>
       <system value="urn:hscic:examples" />
-      <code value="ADW-Assessment-Notice-Bundle-1" />
-      <display value="ADW assessment notice (maximum example)" />
+      <code value="ADW-Message-Assessment-Notice-Bundle-1-Example-1" />
+      <display value="Example of the ADW Assessment Notice Bundle with ADW Data set fields populated" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
