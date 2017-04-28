@@ -109,7 +109,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">Version 1.0 : RC 4</span>
+                                <span class="label label-default"  style="font-size: 95%;">Version 1.0 : BETA</span>
                             </p>
 
                         </div>
@@ -143,20 +143,17 @@
   </div>
   <div class="panel-body">
     <div xmlns="">
-      <p>The ADW-Message-Bundle-1-0 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles in the following combined order: </p>
+      <p>The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles in the following combined order: </p>
       <ul>
-        <li>ADW-AssessmentNoticeRejectResponse-Message-Header-1-0 <a href="adw-assessment-notice-reject-response-message-header-1-0.html">ADW-AssessmentNoticeRejectResponse-Message-Header-1-0</a></li>
-        <li>ADW-ReferralRequest-Rejected-1-0 <a href="adw-referral-request-rejected-1-0.html">ADW-ReferralRequest-Rejected-1-0</a></li>
-        <li>ADW-Patient-1-0 <a href="adw-patient-1-0.html">ADW-Patient-1-0</a></li>
-        <li>ADW-Practitioner-1-0 <a href="adw-practitioner-1-0.html">ADW-Practitioner-1-0</a></li>
-        <li>ADW-Organization-1-0 <a href="adw-organization-1-0.html">ADW-Organization-1-0</a></li>
-        <li>ADW-Social-Services-Team-Organization-1-0 <a href="adw-social-services-team-organization-1-0.html">ADW-Social-Services-Team-Organization-1-0</a></li>
-        <li>ADW-Response-Encounter-1-0 <a href="adw-response-encounter-1-0.html">ADW-Response-Encounter-1-0</a></li>
-        <li>ADW-Location-1-0 <a href="adw-location-1-0.html">ADW-Location-1-0</a></li>
+        <li>ADW-AssessmentNoticeRejectResponse-Message-Header-1 <a href="adw-assessment-notice-reject-response-message-header-1.html">ADW-AssessmentNoticeRejectResponse-Message-Header-1</a></li>
+        <li>ADW-ReferralRequest-Rejected-1 <a href="adw-referral-request-rejected-1.html">ADW-ReferralRequest-Rejected-1</a></li>
+        <li>CareConnect-ADW-Encounter-1 <a href="adw-response-encounter-1.html">CareConnect-ADW-Encounter-1</a></li>
+        <li>Careconnect-Patient-1 <a href="careconnect-patient-1.html">CareConnect-Patient-1</a></li>
+        <li>Careconnect-Practitioner-1 <a href="careconnect-practitioner-1.html">CareConnect-Practitioner-1</a></li>
+        <li>CareConnect-Organization-1 <a href="CareConnect-Organization-1.html">CareConnect-Organization-1</a></li>
+        <li>CareConnect-Location-1 <a href="careconnect-location-1.html">CareConnect-Location-1</a></li>
       </ul>
       <hr />
-      <p>Example of the Assessment Notice Reject Response Bundle with ADW Data set fields populated <a href="../Examples/Profile.ADW-AssessmentNoticeRejectResponse/ADW-Message-AssessmentNoticeRejectResponse-1-0-Ex01.xml">ADW-Message-AssessmentNoticeRejectResponse-1-0-Ex01</a></p>
-      <p>Example of the Assessment Notice Reject Response Bundle with ADW Data set fields + optional FHIR elements populated <a href="../Examples/Profile.ADW-AssessmentNoticeRejectResponse/ADW-Message-AssessmentNoticeRejectResponse-1-0-Ex02.xml">ADW-Message-AssessmentNoticeRejectResponse-1-0-Ex02</a></p>
       <p>Note: Only the ADW data set fields are supported by the National Adapter and therefore optional data will not be retained within transformed messages. Optional data in FHIR messages that are "passed through" the adapter will not be removed.</p>
       <hr />
       <h3>ADW Data set Mapping for ADW Assessment Notice Reject Response message bundle.</h3>
@@ -178,25 +175,25 @@
           <tr>
             <td>Notice Receipt issued date</td>
             <td>
-              <a href="adw-assessment-notice-reject-response-message-header-1-0-dict.html#MessageHeader.ADW%20Reject%20Response%20Message%20Sent%20Time">MessageHeader.timestamp (ADW Reject Response Message Sent Time)</a>
+              <a href="adw-assessment-notice-reject-response-message-header-1-dict.html#MessageHeader.ADW%20Reject%20Response%20Message%20Sent%20Time">MessageHeader.timestamp (ADW Reject Response Message Sent Time)</a>
             </td>
           </tr>
           <tr>
             <td>Notice Type</td>
             <td>
-              <a href="adw-assessment-notice-reject-response-message-header-1-0-dict.html#MessageHeader.event.Reject%20Response%20Type">MessageHeader.event.code (Reject Response Type)</a>
+              <a href="adw-assessment-notice-reject-response-message-header-1-dict.html#MessageHeader.event.Reject%20Response%20Type">MessageHeader.event.code (Reject Response Type)</a>
             </td>
           </tr>
           <tr>
             <td>Response Type</td>
             <td>
-              <a href="adw-assessment-notice-reject-response-message-header-1-0-dict.html#MessageHeader.response.Response%20Type">MessageHeader.response.code</a>
+              <a href="adw-assessment-notice-reject-response-message-header-1-dict.html#MessageHeader.response.Response%20Type">MessageHeader.response.code</a>
             </td>
           </tr>
           <tr>
             <td>Response Details</td>
             <td>
-              <a href="adw-assessment-notice-reject-response-message-header-1-0-dict.html#MessageHeader.reason.Reject%20Reason%20Details">MessageHeader.reason.text (Reject Reason)</a>
+              <a href="adw-assessment-notice-reject-response-message-header-1-dict.html#MessageHeader.reason.Reject%20Reason%20Details">MessageHeader.reason.text (Reject Reason)</a>
             </td>
           </tr>
           <tr>
@@ -208,13 +205,13 @@
           <tr>
             <td>Patient NHS Number</td>
             <td>
-              <a href="adw-patient-1-0-dict.html#Patient.NHS%20Number">Patient.identifier (NHS Number)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.NHS%20Number">Patient.identifier (NHS Number)</a>
             </td>
           </tr>
           <tr>
             <td>Hospital Patient Identifier</td>
             <td>
-              <a href="adw-patient-1-0-dict.html#Patient.Hospital%20Patient%20Identifier">Patient.identifier (Hospital Patient Identifier)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.Hospital%20Patient%20Identifier">Patient.identifier (Hospital Patient Identifier)</a>
             </td>
           </tr>
           <tr>
@@ -226,13 +223,13 @@
           <tr>
             <td>Family Name</td>
             <td>
-              <a href="adw-patient-1-0-dict.html#Patient.name.Family%20name">Patient.name.family (Family Name)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.name.Family%20name">Patient.name.family (Family Name)</a>
             </td>
           </tr>
           <tr>
             <td>First Given Name</td>
             <td>
-              <a href="adw-patient-1-0-dict.html#Patient.name.First%20given%20name">Patient.name.given (First Given Name)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.name.First%20given%20name">Patient.name.given (First Given Name)</a>
             </td>
           </tr>
           <tr>
@@ -244,7 +241,7 @@
           <tr>
             <td>Patient Birth Date</td>
             <td>
-              <a href="adw-patient-1-0-dict.html#Patient.Patient%20Birth%20Date">Patient.birthDate (Patient Birth Date)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.Patient%20Birth%20Date">Patient.birthDate (Patient Birth Date)</a>
             </td>
           </tr>
           <tr>
@@ -256,7 +253,7 @@
           <tr>
             <td>Patient Stated Gender</td>
             <td>
-              <a href="adw-patient-1-0-dict.html#Patient.Patient%20stated%20gender">Patient.gender (Patient stated gender)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.Patient%20stated%20gender">Patient.gender (Patient stated gender)</a>
             </td>
           </tr>
           <tr>
@@ -268,19 +265,19 @@
           <tr>
             <td>Organization Site Code</td>
             <td>
-              <a href="adw-organization-1-0-dict.html#Organization.Organization%20Site%20Code">Organization.identifier (Organization Site Code)</a>
+              <a href="CareConnect-Organization-1-dict.html#Organization.Organization%20Site%20Code">Organization.identifier (Organization Site Code)</a>
             </td>
           </tr>
           <tr>
             <td>Hospital Name</td>
             <td>
-              <a href="adw-organization-1-0-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name">Organization.name (Hospital/Local Authority)</a>
+              <a href="CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name">Organization.name (Hospital/Local Authority)</a>
             </td>
           </tr>
           <tr>
             <td>Ward Name</td>
             <td>
-              <a href="adw-location-1-0-dict.html#Location.Ward%20name">Location.name (Ward)</a>
+              <a href="careconnect-location-1-dict.html#Location.Ward%20name">Location.name (Ward)</a>
             </td>
           </tr>
           <tr>
@@ -292,13 +289,13 @@
           <tr>
             <td>Family Name</td>
             <td>
-              <a href="adw-practitioner-1-0-dict.html#Practitioner.name.Family%20name">Practitioner.name.family (Family Name - Hospital Liaison)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name">Practitioner.name.family (Family Name - Hospital Liaison)</a>
             </td>
           </tr>
           <tr>
             <td>First Given Name</td>
             <td>
-              <a href="adw-practitioner-1-0-dict.html#Practitioner.name.First%20given%20name">Practitioner.name.given (First Given Name - Hospital Liaison)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name">Practitioner.name.given (First Given Name - Hospital Liaison)</a>
             </td>
           </tr>
           <tr>
@@ -310,13 +307,13 @@
           <tr>
             <td>Hospital Liaison Email Address</td>
             <td>
-              <a href="adw-practitioner-1-0-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string">Practitioner.telecom.value (Hospital Liaison Email)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string">Practitioner.telecom.value (Hospital Liaison Email)</a>
             </td>
           </tr>
           <tr>
             <td>Hospital Liaison Telephone Number</td>
             <td>
-              <a href="adw-practitioner-1-0-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string">Practitioner.telecom.value (Hospital Liaison Telephone no.)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string">Practitioner.telecom.value (Hospital Liaison Telephone no.)</a>
             </td>
           </tr>
           <tr>
@@ -328,19 +325,19 @@
           <tr>
             <td>Organization Site Code</td>
             <td>
-              <a href="adw-organization-1-0-dict.html#Organization.Organization%20Site%20Code">Organization.identifier (Organization Site Code)</a>
+              <a href="CareConnect-Organization-1-dict.html#Organization.Organization%20Site%20Code">Organization.identifier (Organization Site Code)</a>
             </td>
           </tr>
           <tr>
             <td>Local Authority Name</td>
             <td>
-              <a href="adw-organization-1-0-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name">Organization.name (Hospital/Local Authority)</a>
+              <a href="CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name">Organization.name (Hospital/Local Authority)</a>
             </td>
           </tr>
           <tr>
             <td>Social Services Team</td>
             <td>
-              <a href="adw-social-services-team-organization-1-0-dict.html#Organization.Social%20Services%20team">Organization.name (Social Services' team)</a>
+              <a href="CareConnect-Organization-1-dict.html#Organization.Social%20Services%20team">Organization.name (Social Services' team)</a>
             </td>
           </tr>
           <tr>
@@ -352,13 +349,13 @@
           <tr>
             <td>Family Name</td>
             <td>
-              <a href="adw-practitioner-1-0-dict.html#Practitioner.name.Family%20name">Practitioner.name.family (Local Authority Contact)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name">Practitioner.name.family (Local Authority Contact)</a>
             </td>
           </tr>
           <tr>
             <td>First Given Name</td>
             <td>
-              <a href="adw-practitioner-1-0-dict.html#Practitioner.name.First%20given%20name">Practitioner.name.given (Local Authority Contact)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name">Practitioner.name.given (Local Authority Contact)</a>
             </td>
           </tr>
           <tr>
@@ -370,22 +367,30 @@
           <tr>
             <td>Local Authority Contact Email Address</td>
             <td>
-              <a href="adw-practitioner-1-0-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string">Practitioner.telecom.value (Local Authority Contact Email)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string">Practitioner.telecom.value (Local Authority Contact Email)</a>
             </td>
           </tr>
           <tr>
             <td>Local Authority Contact Telephone Number</td>
             <td>
-              <a href="adw-practitioner-1-0-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string">Practitioner.telecom.value (Local Authority Contact Telephone no.)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string">Practitioner.telecom.value (Local Authority Contact Telephone no.)</a>
             </td>
           </tr>
         </tbody>
       </table>
       <hr />
       <h3>Referencing of profiles for ADW Assessment Notice Reject Response message bundle.</h3>
-      <p>The diagram shows the referencing for a typical Assessment Notice Reject Response message. It is intended for illustrative purposes only.</p>
-&lt;div style="display: block;"&gt;&lt;img  src="MessageReferencing4.png" alt="MessageReferencing4"&gt;&lt;/div&gt;  
-<p>&lt;br&gt;</p><hr /><p><strong>Further Information</strong></p><p>For more information about message profiles visit the <a href="http://hl7.org/fhir/profiling.html">Profiling FHIR</a> and for resource Metadata visit <a href="http://hl7.org/fhir/resource.html">Base Resource Definitions</a>.</p><p>The various downloads (including Schema files) and reference implementations are available on <a href="http://hl7.org/fhir/index.html">FHIR website</a>.</p></div>
+      <p>The diagram shows the referencing for a typical Assessment Notice Reject Response message. It is intended for illustrative purposes only. The diagram can be viewed here:</p>
+      <p>
+        <a href="../Profile.ADW-AssessmentNoticeRejectResponse/MessageReferencing4.png">Profile Referencing Diagram for an Assessment Notice Reject Response</a>
+      </p>
+      <hr />
+      <p>
+        <strong>Further Information</strong>
+      </p>
+      <p>For more information about message profiles visit the <a href="http://hl7.org/fhir/profiling.html">Profiling FHIR</a> and for resource Metadata visit <a href="http://hl7.org/fhir/resource.html">Base Resource Definitions</a>.</p>
+      <p>The various downloads (including Schema files) and reference implementations are available on <a href="http://hl7.org/fhir/index.html">FHIR website</a>.</p>
+    </div>
   </div>
 </div>
 							
@@ -399,8 +404,8 @@
 											<li><a href="#bindingsTab" data-toggle="tab">Bindings</a></li>
 										
 																				
+											<li><a href="#examplesTab" data-toggle="tab">Examples</a></li>
 										
-											<li class ="disabled"><a>Examples</a></li>
 										
 									</ul>
 								
@@ -410,7 +415,7 @@
 									 <div class="well tab-pane active" id="profileTab">
 										
 										<div class="panel panel - default">
-											<table xmlns="http://www.w3.org/1999/xhtml"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><span title="The logical name of the element">Name</span></th><th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><span title="Minimum and maximum # of times the element can appear in the instance">Card.</span></th><th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; width:100px"><span title="Reference to the type of the element">Type</span></th><th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Description &amp; Constraints</th></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck1.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/icon_datatype.gif" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle" title="Contains a collection of ADW message resources">Bundle</a><a name="Bundle" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#resource">Resource</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Contains a collection of ADW message resources<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck1.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin.png" class="hierarchy" alt="." /><img src="../dist/images/icon_primitive.png" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.type" title="Bundle identified by bundle type 'message'.">type</a><a name="Bundle.type" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">1..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code">Code</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Bundle identified by bundle type 'message'.<br /><span class="label label-pub-grey label-big">Binding</span> Bundle identified by bundle type 'message'.<a href="http://hl7.org/fhir/ValueSet/bundle-type"> (http://hl7.org/fhir/ValueSet/bundle-type)</a><br /><span class="label label-pub-grey label-big">Binding Strength</span> Required<br /><span class="label label-pub-grey label-big">Fixed Value</span> message<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin_end.png" class="hierarchy" alt="." /><img src="../dist/images/icon_slice.png" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.entry" title="Entry in the bundle - will have a resource, or information">entry</a><a name="Bundle.entry" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px" /><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px" /><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Entry in the bundle - will have a resource, or information<br /><span style="font-weight:bold">Slice: </span><span style="font-style: italic">Ordering: Ordered, Rules: Open</span><br /><br /></td></tr></table>
+											<table xmlns="http://www.w3.org/1999/xhtml"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><span title="The logical name of the element">Name</span></th><th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><span title="Minimum and maximum # of times the element can appear in the instance">Card.</span></th><th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; width:100px"><span title="Reference to the type of the element">Type</span></th><th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Description &amp; Constraints</th></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck1.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/icon_datatype.gif" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle" title="Contains a collection of ADW message resources">Bundle</a><a name="Bundle" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#resource">Resource</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Contains a collection of ADW message resources<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck1.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin.png" class="hierarchy" alt="." /><img src="../dist/images/icon_primitive.png" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.id" title="Logical id of this artifact">id</a><a name="Bundle.id" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">0..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id">Id</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Logical id of this artifact<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck1.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin.png" class="hierarchy" alt="." /><img src="../dist/images/icon_datatype.gif" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.meta" title="Metadata about the resource">meta</a><a name="Bundle.meta" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">0..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#meta">Meta</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Metadata about the resource<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck1.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin.png" class="hierarchy" alt="." /><img src="../dist/images/icon_primitive.png" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.implicitRules" title="A set of rules under which this content was created">implicitRules</a><a name="Bundle.implicitRules" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">0..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri">Uri</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">A set of rules under which this content was created<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck1.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin.png" class="hierarchy" alt="." /><img src="../dist/images/icon_primitive.png" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.language" title="Language of the resource content">language</a><a name="Bundle.language" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">0..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code">Code</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Language of the resource content<br /><span class="label label-pub-grey label-big">Binding</span> A human language.<a href="http://tools.ietf.org/html/bcp47"> (http://tools.ietf.org/html/bcp47)</a><br /><span class="label label-pub-grey label-big">Binding Strength</span> Required<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck1.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin.png" class="hierarchy" alt="." /><img src="../dist/images/icon_primitive.png" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.type" title="Bundle identified by bundle type 'message'.">type</a><a name="Bundle.type" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">1..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code">Code</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Bundle identified by bundle type 'message'.<br /><span class="label label-pub-grey label-big">Binding</span> Bundle identified by bundle type 'message'.<a href="http://hl7.org/fhir/ValueSet/bundle-type"> (http://hl7.org/fhir/ValueSet/bundle-type)</a><br /><span class="label label-pub-grey label-big">Binding Strength</span> Required<br /><span class="label label-pub-grey label-big">Fixed Value</span> message<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck01.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin_end.png" class="hierarchy" alt="." /><img src="../dist/images/icon_datatype.gif" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.entry" title="Entry in the bundle - will have a resource, or information">entry</a><a name="Bundle.entry" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">1..*</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/backboneelement.html">BackboneElement</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Entry in the bundle - will have a resource, or information<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck01.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_blank.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin.png" class="hierarchy" alt="." /><img src="../dist/images/icon_primitive.png" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.entry.id" title="xml:id (or equivalent in JSON)">id</a><a name="Bundle.entry.id" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">0..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id">Id</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">xml:id (or equivalent in JSON)<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck01.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_blank.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin.png" class="hierarchy" alt="." /><img src="../dist/images/icon_primitive.png" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.entry.fullUrl" title="Absolute URL for resource (server address, or UUID/OID)">fullUrl</a><a name="Bundle.entry.fullUrl" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">0..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri">Uri</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Absolute URL for resource (server address, or UUID/OID)<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck001.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_blank.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin_end.png" class="hierarchy" alt="." /><img src="../dist/images/icon_datatype.gif" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.entry.resource" title="A resource in the bundle">resource</a><a name="Bundle.entry.resource" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">1..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#resource">Resource</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">A resource in the bundle<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck001.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_blank.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_blank.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin.png" class="hierarchy" alt="." /><img src="../dist/images/icon_primitive.png" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.entry.resource.id" title="Logical id of this artifact">id</a><a name="Bundle.entry.resource.id" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">0..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id">Id</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Logical id of this artifact<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck001.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_blank.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_blank.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin.png" class="hierarchy" alt="." /><img src="../dist/images/icon_datatype.gif" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.entry.resource.meta" title="Metadata about the resource">meta</a><a name="Bundle.entry.resource.meta" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">0..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#meta">Meta</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Metadata about the resource<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck001.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_blank.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_blank.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin.png" class="hierarchy" alt="." /><img src="../dist/images/icon_primitive.png" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.entry.resource.implicitRules" title="A set of rules under which this content was created">implicitRules</a><a name="Bundle.entry.resource.implicitRules" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">0..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#uri">Uri</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">A set of rules under which this content was created<br /><br /></td></tr><tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;"><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(../dist/images/tbl_bck.png); background-repeat: repeat-y; "><img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_blank.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_blank.png" class="hierarchy" alt="." /><img src="../dist/images/tbl_vjoin_end.png" class="hierarchy" alt="." /><img src="../dist/images/icon_primitive.png" class="hierarchy" style="background-color: white; padding-right: 4px;" alt="." /><a href="adw-message-bundle-1-dict.html#Bundle.entry.resource.language" title="Language of the resource content">language</a><a name="Bundle.entry.resource.language" /></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">0..1</td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px"><a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#code">Code</a></td><td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">Language of the resource content<br /><span class="label label-pub-grey label-big">Binding</span> A human language.<a href="http://tools.ietf.org/html/bcp47"> (http://tools.ietf.org/html/bcp47)</a><br /><span class="label label-pub-grey label-big">Binding Strength</span> Required<br /><br /></td></tr></table>
 										</div>
 									 
 									 </div>
@@ -435,6 +440,17 @@
     <th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; width:100px">
       <span title="A value set specifies a set of codes drawn from one or more code systems.">ValueSet</span>
     </th>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />Bundle.language</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">language</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#required">Required</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://tools.ietf.org/html/bcp47">http://tools.ietf.org/html/bcp47</a>
+    </td>
   </tr>
   <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
     <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
@@ -497,6 +513,30 @@
 										</div>
 
 									
+											<div class='well tab-pane' id="examplesTab">
+									
+												<div class="panel panel - default">
+													<div class="example-table">
+  <p>
+    <b>ADW-Message-Bundle-1</b>
+  </p>
+  <table>
+    <tr xmlns="http://www.w3.org/1999/xhtml">
+      <th class="col-name">Examples</th>
+      <th class="col-description">Description</th>
+      <th class="col-xml-file">XML File</th>
+    </tr>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <tr />
+      <tr>
+        <td>ADW-Message-Assessment-Notice-Reject-Response-Bundle-1-Example-1</td>
+        <td />Example of ADW Assessment Notice Reject Response Bundle with ADW Data set fields<td><a target="_blank" href="..\Examples\Profile.ADW-AssessmentNoticeRejectResponse\ADW-Message-Assessment-Notice-Reject-Response-Bundle-1-Example-1.xml" /><img src="../dist/images/file-xml-xs.png" xmlns="" /></td></tr>
+    </div>
+  </table>
+</div>
+												</div>
+												
+											</div>
 																										
 								</div>                       
 							

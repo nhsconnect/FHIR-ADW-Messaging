@@ -109,7 +109,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">Version 1.0 : RC 4</span>
+                                <span class="label label-default"  style="font-size: 95%;">Version 1.0 : BETA</span>
                             </p>
 
                         </div>
@@ -142,7 +142,7 @@
 							
 <div class="panel panel - default" xmlns="http://www.w3.org/1999/xhtml">
   <div class="panel-heading">
-    <h3 class="panel-title">Care Connect NHS Number Verification Status</h3>
+    <h3 class="panel-title">NHS Number Status Indicator Code</h3>
   </div>
   <div class="panel-body">
     <div class="valueset-content">
@@ -159,11 +159,11 @@
             <td>https://fhir.hl7.org.uk/ValueSet/CareConnect-NHSNumberVerificationStatus-1</td>
             <tr>
               <td>Name:</td>
-              <td>Care Connect NHS Number Verification Status</td>
+              <td>NHS Number Status Indicator Code</td>
             </tr>
             <tr>
               <td>Definition:</td>
-              <td>NHS number verification status.  This valueset is comprised of codes from NHS Data Dictionary: NHS Number Status Indicator Code.</td>
+              <td>A vocabulary that identifies the verified status of a patient's NHS number.</td>
             </tr>
             <tr>
               <td>Status:</td>
@@ -171,7 +171,7 @@
             </tr>
             <tr>
               <td>Last Updated:</td>
-              <td>27/10/2015 00:00:00 +00:00</td>
+              <td>03/07/2016 09:00:00 +00:00</td>
             </tr>
             <tr>
               <td>Source Resource:</td>
@@ -183,12 +183,12 @@
             </tr>
           </tr>
         </table>
-        <p />
+        <p>A patient's NHS number is the NHS agreed way of uniquely identifying a patient. Therfore it is significant to understand whether this status has been verified. For the purposes of the ADW message, code value: '08' with display value: 'Trace postponed (baby under six weeks old)' is not required.</p>
       </div>
       <div class="in-line-valueset" xmlns="">
         <div xmlns="http://www.w3.org/1999/xhtml">
           <br />
-          <p>This valueset includes all the codes for Care Connect NHS Number Verification Status ( https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1 ) <br /></p>
+          <p>This valueset includes all the codes for NHS Number Status Indicator Code ( https://fhir.nhs.uk/nhs-number-status-indicator-1 ) <br /></p>
         </div>
         <div class="codeSystem-table" xmlns="http://www.w3.org/1999/xhtml">
           <table>
@@ -228,8 +228,8 @@
               <tr>
                 <td>05</td>
                 <td>
-                  <p>Trace needs to be resolved - (NHS number or patient detail conflict)</p>
-                  <a name="Trace needs to be resolved - (NHS number or patient detail conflict)" />
+                  <p>Trace needs to be resolved - (NHS Number or PATIENT detail conflict)</p>
+                  <a name="Trace needs to be resolved - (NHS Number or PATIENT detail conflict)" />
                 </td>
               </tr>
               <tr>
