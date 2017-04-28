@@ -110,6 +110,7 @@
 					</assigner>
 				</identifier>
 				<name>
+					<use value="usual"/>
 					<family value="Jones"/>
 					<given value="Barry"/>
 				</name>
