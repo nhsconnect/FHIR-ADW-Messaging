@@ -88,16 +88,16 @@ Note: Only the ADW data set fields are supported by the National Adapter and the
 | Carer Email Address                              | [Patient.contact.telecom.value (Carer Email)]                                  |
 | Carer Telephone Number                           | [Patient.contact.telecom.value (Carer Telephone no.)]                                              |
 | **Assessment Notice Consultation Status**        |                                                                     |
-| Assessment Notice Patient Consultation Indicator | [QuestionnaireResponse.group.question.answer.value (Patient Consultation)]                |
-| Assessment Notice Carer Consultation Indicator   | [QuestionnaireResponse.group.question.answer.value (Carer Consultation)]                  |
+| Assessment Notice Patient Consultation Indicator | [QuestionnaireResponse.group.question.answer.valueCoding (Patient Consultation)]                |
+| Assessment Notice Carer Consultation Indicator   | [QuestionnaireResponse.group.question.answer.valueCoding (Carer Consultation)]                  |
 | **Assessment Notice Consent Status**             |                                                                     |
-| Assessment Notice Patient Consent Indicator      | [QuestionnaireResponse.group.question.answer.value (Patient Consent Result)]              |
-| Assessment Notice Third Party Consent Response   | [QuestionnaireResponse.group.question.answer.value (Third Party Consent Result)]          |
-| **NHS CHC Assessment**                               |                                                                     |
-| NHS CHC Assessment Considered Indicator              | [QuestionnaireResponse.group.question.answer.value (NHS CHC Assessment Considered Indicator)] |
-| CHC Assessment Considered Result                 | [QuestionnaireResponse.group.question.answer.value (NHS CHC Considered Result)]            |
+| Assessment Notice Patient Consent Indicator      | [QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent Result)]              |
+| Assessment Notice Third Party Consent Response   | [QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Result)]          |
+| **NHS CHC Assessment**                           |                                                                     |
+| NHS CHC Assessment Considered Indicator          | [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Assessment Considered Indicator)] |
+| CHC Assessment Considered Result                 | [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Considered Result)]            |
 | **Safeguarding Indicator**                       |                                                                     |
-| Safeguarding Indicator                           | [QuestionnaireResponse.group.question.answer.value (Safeguarding Issues)]                 |
+| Safeguarding Indicator                           | [QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Issues)]                 |
 | **Local Authority**                              |                                                                     |
 | Organization Site Code                           | [Organization.identifier (Organization Site Code)]                                        |
 | Local Authority Name                             | [Organization.name (Hospital/Local Authority)]                                        |
@@ -147,13 +147,13 @@ Note: Only the ADW data set fields are supported by the National Adapter and the
 [Practitioner.name.given (First Given Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
 [Practitioner.telecom.value (Hospital Liaison Email)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string
 [Practitioner.telecom.value (Hospital Liaison Telephone no.)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string
-[QuestionnaireResponse.group.question.answer.value (Carer Consultation)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Carer%20Consultation
-[QuestionnaireResponse.group.question.answer.value (Patient Consultation)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consultation
-[QuestionnaireResponse.group.question.answer.value (Patient Consent Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consent
-[QuestionnaireResponse.group.question.answer.value (Third Party Consent Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Third%20Party%20Consent
-[QuestionnaireResponse.group.question.answer.value (NHS CHC Assessment Considered Indicator)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Assessment%20Considered%20Indicator
-[QuestionnaireResponse.group.question.answer.value (NHS CHC Considered Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Considered%20Result
-[QuestionnaireResponse.group.question.answer.value (Safeguarding Issues)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Safe%20Guarding%20Issues
+[QuestionnaireResponse.group.question.answer.valueCoding (Carer Consultation)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Carer%20Consultation
+[QuestionnaireResponse.group.question.answer.valueCoding (Patient Consultation)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consultation
+[QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consent
+[QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Third%20Party%20Consent
+[QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Assessment Considered Indicator)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Assessment%20Considered%20Indicator
+[QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Considered Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Considered%20Result
+[QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Issues)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Safe%20Guarding%20Issues
 [identifier (Local Authority - ODS Organisation Code)]: CareConnect-Organization-1-dict.html#Organization.ODS%20Organisation%20Code
 [Organization.name (Hospital/Local Authority)]: CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
 [Organization.name (Social Services' team)]: CareConnect-Organization-1-dict.html#Organization.Social%20Services%20team

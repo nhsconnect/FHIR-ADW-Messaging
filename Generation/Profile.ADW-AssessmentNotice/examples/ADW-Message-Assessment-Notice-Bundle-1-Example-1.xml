@@ -90,7 +90,7 @@
 	<extension url="language" >
 		<valueCodeableConcept>
 						<coding>
-				<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-HumanLanguage-1"/>
+				<system value="https://fhir.hl7.org.uk/CareConnect-HumanLanguage-1"/>
 				<code value="ga"/>
 				<display value="Irish"/>
 			</coding>
