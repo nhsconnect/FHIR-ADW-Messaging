@@ -109,7 +109,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">Version 1.0 : BETA</span>
+                                <span class="label label-default"  style="font-size: 95%;">Version 1.0 : Beta</span>
                             </p>
 
                         </div>
@@ -141,6 +141,15 @@
 							
 									<div class="panel panel - default">
 											<h1>Change History</h1>
+<h3>Version 1.0: Status: BETA 1</h3>
+<ul>
+<li>ADW-Social-Services-Team-Organization-1-0 profile replaced with CareConnect-Organization-1 across the DMS.</li>
+<li>ADW-Lead-Clinician-Practitioner-1-0 with CareConnect-Practitioner-1 across the DMS.</li>
+<li>CareConnect-ADW-Encounter-1 <code>encounter.priority</code> system updated with http://hl7.org/fhir/v3/ActPriority. Previous system of http://hl7.org/fhir/ValueSet/encounter-priority does not exist. </li>
+<li>ADW-Message-Bundle updated. <code>Bundle.entry</code> uses a generic standard used within NHS Digital DMS bundles.</li>
+<li>Bundle examples modified to reflect changes identified in RC5 and BETA 1 releases. </li>
+<li>Re-ordered profiles.</li>
+</ul>
 <h3>Version: 1.0: Status: RC5</h3>
 <ul>
 <li>All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk for standard CareConnect profiles. </li>
@@ -149,7 +158,7 @@
 <li>Changed versioning for all profiles and valuesets from 1 to 1.</li>
 <li>Constrained CareConnect standard profiles for Condition and Encounter to CareConnect-ADW profiles to reflect ADW business requirements.</li>
 <li>Inserted CareConnect standard profiles as replacements for ADW Patient, Location, Organization and Practitioner. The impact on instances is as follows:-</li>
-<li><strong>careconnect-patient-1</strong></li>
+<li><strong>CareConnect-Patient-1</strong></li>
 <li>All labels for elements removed.</li>
 <li>Patient.identifier slice NHS number renamed to Identifier # 1 [nhsNumber]</li>
 <li>Identifier slice Identifier # 1 [nhsNumber].use element removed. </li>
