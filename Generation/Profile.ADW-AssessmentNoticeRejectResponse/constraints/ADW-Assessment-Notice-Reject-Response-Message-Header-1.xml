@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-20T16:10:28.802+01:00" />
+    <lastUpdated value="2017-05-09T11:51:16.992+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -567,7 +567,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/ValueSet/adw-message-event-1" />
+      <fixedUri value="https://fhir.nhs.uk/adw-message-event-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3238,7 +3238,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/ValueSet/adw-assessment-notice-reject-reason-1" />
+      <fixedUri value="https://fhir.nhs.uk/adw-assessment-notice-reject-reason-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3718,7 +3718,7 @@
       <path value="MessageHeader.event.system" />
       <comments value="The identification of the code system that defines the meaning of the symbol in the code." />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/ValueSet/adw-message-event-1" />
+      <fixedUri value="https://fhir.nhs.uk/adw-message-event-1" />
       <mustSupport value="true" />
     </element>
     <element>
@@ -3893,7 +3893,7 @@
     <element>
       <path value="MessageHeader.reason.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/ValueSet/adw-assessment-notice-reject-reason-1" />
+      <fixedUri value="https://fhir.nhs.uk/adw-assessment-notice-reject-reason-1" />
       <mustSupport value="true" />
     </element>
     <element>
