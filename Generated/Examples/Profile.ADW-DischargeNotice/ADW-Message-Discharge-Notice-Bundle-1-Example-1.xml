@@ -1,0 +1,366 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="a63ec43d-887f-477d-b461-80dbbb139fc6"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1"/>
+	</meta>
+	<type value="message"/>
+	<entry>
+		<resource>
+			<MessageHeader>
+				<id value="19db5f65-1bad-4ce1-be05-92ff79ab1c8f"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-notice-message-header-1"/>
+				</meta>
+				<timestamp value="2016-07-25T13:00:00+00:00"/>
+				<event>
+					<system value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
+					<code value="975731000000100"/>
+				</event>
+				<source>
+					<name value="Hospital Sending System"/>
+					<endpoint value="urn:nhs-uk:addressing:ods:RFM8C2"/>
+				</source>
+				<destination>
+					<name value="Local Authority Receiving System"/>
+					<endpoint value="urn:nhs-uk:addressing:ods:V396BB"/>
+				</destination>
+				<author>
+					<reference value="Practitioner/51742f1b-c5ee-435e-8dc7-9bc5a578cd1d"/>
+				</author>
+				<receiver>
+					<reference value="Organization/5d4c7a93-73f1-460e-93d3-da616b569228"/>
+				</receiver>
+				<responsible>
+					<reference value="Practitioner/62f20483-3d47-4e57-80e1-6c0e20fe272f"/>
+				</responsible>
+				<data>
+					<reference value="ReferralRequest/8a31c448-223d-42b7-9a17-3898f0c1c143"/>
+				</data>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<ReferralRequest>
+				<id value="8a31c448-223d-42b7-9a17-3898f0c1c143"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-referral-request-1"/>
+				</meta>
+				<status value="requested"/>
+				<identifier>
+					<value value="311fcae7-32a7-4a8e-a15c-eebae3a246b9"/>
+				</identifier>
+				<patient>
+					<reference value="Patient/42840151-1fe1-4967-88c1-bcbd2a191243"/>
+				</patient>
+				<requester>
+					<reference value="Practitioner/51742f1b-c5ee-435e-8dc7-9bc5a578cd1d"/>
+				</requester>
+				<recipient>
+					<reference value="Organization/5d4c7a93-73f1-460e-93d3-da616b569228"/>
+				</recipient>
+				<encounter>
+					<reference value="Encounter/9abe04e9-c508-492c-94fc-349d34b85bd5"/>
+				</encounter>
+				<supportingInformation>
+					<reference value="QuestionnaireResponse/59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
+				</supportingInformation>
+			</ReferralRequest>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Patient>
+				<id value="42840151-1fe1-4967-88c1-bcbd2a191243"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
+				</meta>
+				<extension url="Extension-CareConnect-NHSCommunication-1">
+					<extension url="language">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-HumanLanguage-1"/>
+								<code value="ga"/>
+								<display value="Irish"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<extension url="preferred">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="interpreterRequired">
+						<valueBoolean value="false"/>
+					</extension>
+				</extension>
+				<identifier>
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-NHSNumberVerificationStatus-1"/>
+								<code value="01"/>
+								<display value="Number present and verified"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="9413946000"/>
+				</identifier>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/local-patient-identifier"/>
+					<value value="A1234521"/>
+					<assigner>
+						<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+					</assigner>
+				</identifier>
+				<name>
+					<family value="Jones"/>
+					<given value="Barry"/>
+				</name>
+				<gender value="male"/>
+				<birthDate value="1941-11-01"/>
+				<address>
+					<line value="The Old Lodge"/>
+					<line value="1 Little Street"/>
+					<line value="Chapeltown"/>
+					<city value="Leeds"/>
+					<district value="West Yorkshire"/>
+					<postalCode value="LS6 1UR"/>
+				</address>
+				<contact>
+					<relationship>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/CareConnect-PersonRelationshipType-1"/>
+							<code value="20"/>
+							<display value="Carer"/>
+						</coding>
+					</relationship>
+					<name>
+						<family value="Bloom"/>
+						<given value="Sandra"/>
+					</name>
+					<telecom>
+						<system value="email"/>
+						<value value="Sbloom123@yahoo.com"/>
+					</telecom>
+					<telecom>
+						<system value="phone"/>
+						<value value="0113237656"/>
+					</telecom>
+				</contact>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Practitioner>
+				<id value="51742f1b-c5ee-435e-8dc7-9bc5a578cd1d"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+				</meta>
+				<name>
+					<family value="Gulliver"/>
+					<given value="Leticia"/>
+				</name>
+				<telecom>
+					<system value="email"/>
+					<value value="leticia.gulliver@nhs.net"/>
+				</telecom>
+				<telecom>
+					<system value="phone"/>
+					<value value="0191223344"/>
+				</telecom>
+				<practitionerRole>
+					<managingOrganization>
+						<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+					</managingOrganization>
+					<role>
+						<coding>
+							<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
+							<code value="NR2060"/>
+							<display value="Discharge coordinator"/>
+						</coding>
+						<text value="Hospital Liaison"/>
+					</role>
+				</practitionerRole>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Practitioner>
+				<id value="62f20483-3d47-4e57-80e1-6c0e20fe272f"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-lead-clinician-practitioner-1"/>
+				</meta>
+				<name>
+					<family value="Stibbs"/>
+					<given value="Nigel"/>
+				</name>
+				<practitionerRole>
+					<managingOrganization>
+						<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+					</managingOrganization>
+					<role>
+						<coding>
+							<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
+							<code value="NR0050"/>
+							<display value="Consultant"/>
+						</coding>
+						<text value="Lead Clinician"/>
+					</role>
+				</practitionerRole>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Organization>
+				<id value="c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<value value="RFM8C2"/>
+				</identifier>
+				<type>
+					<coding>
+						<system value="http://hl7.org/fhir/ValueSet/organization-type"/>
+						<code value="prov"/>
+						<display value="Healthcare Provider"/>
+					</coding>
+					<text value="Hospital"/>
+				</type>
+				<name value="Hebburn Hospital"/>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Organization>
+				<id value="37f35527-5169-4467-b6ad-ab147928714c"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<value value="V396BB"/>
+				</identifier>
+				<type>
+					<coding>
+						<system value="http://hl7.org/fhir/ValueSet/organization-type"/>
+						<code value="govt"/>
+						<display value="Government"/>
+					</coding>
+					<text value="Local Authority"/>
+				</type>
+				<name value="Hebburn Council"/>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Organization>
+				<id value="5d4c7a93-73f1-460e-93d3-da616b569228"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+				</meta>
+				<type>
+					<coding>
+						<system value="http://hl7.org/fhir/ValueSet/organization-type"/>
+						<code value="team"/>
+						<display value="Organizational team"/>
+					</coding>
+					<text value="Local Authority Social Services' Team"/>
+				</type>
+				<name value="Hebburn Social Services' Community Team"/>
+				<partOf>
+					<reference value="Organization/37f35527-5169-4467-b6ad-ab147928714c"/>
+				</partOf>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<QuestionnaireResponse>
+				<id value="59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-questionnaire-response-1"/>
+				</meta>
+				<identifier>
+					<value value="fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
+				</identifier>
+				<status value="completed"/>
+				<author>
+					<reference value="Practitioner/51742f1b-c5ee-435e-8dc7-9bc5a578cd1d"/>
+				</author>
+				<group>
+					<question>
+						<text value="Has the patient been consulted regarding the proposed discharge date?"/>
+						<answer>
+							<valueCoding>
+								<system value="https://fhir.nhs.uk/ValueSet/adw-consultation-status-1"/>
+								<code value="Y"/>
+								<display value="Yes"/>
+							</valueCoding>
+						</answer>
+					</question>
+					<question>
+						<text value="Has the patient's carer (if applicable) been consulted regarding the proposed discharge date?"/>
+						<answer>
+							<valueCoding>
+								<system value="https://fhir.nhs.uk/ValueSet/adw-carerconsultation-status-1"/>
+								<code value="Y"/>
+								<display value="Yes"/>
+							</valueCoding>
+						</answer>
+					</question>
+				</group>
+			</QuestionnaireResponse>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Encounter>
+				<id value="9abe04e9-c508-492c-94fc-349d34b85bd5"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="urn:ietf:rfc:3986"/>
+					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
+				</identifier>
+				<status value="in-progress"/>
+				<class value="inpatient"/>
+				<patient>
+					<reference value="Patient/42840151-1fe1-4967-88c1-bcbd2a191243"/>
+				</patient>
+				<period>
+					<end value="2016-07-17"/>
+				</period>
+				<location>
+					<location>
+						<reference value="Location/64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+				</serviceProvider>
+			</Encounter>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Location>
+				<id value="64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
+				</meta>
+				<name value="Collier Ward"/>
+				<managingOrganization>
+					<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+				</managingOrganization>
+			</Location>
+		</resource>
+	</entry>
+</Bundle>
