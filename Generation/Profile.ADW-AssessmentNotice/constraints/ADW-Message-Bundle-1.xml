@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-28T11:27:40.755+01:00" />
+    <lastUpdated value="2017-05-08T22:01:07.633+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="1" />
@@ -15,7 +15,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />
   </extension>
-  <url value="http://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1" />
   <version value="1.0" />
   <name value="ADW-Message-Bundle-1" />
   <status value="draft" />
