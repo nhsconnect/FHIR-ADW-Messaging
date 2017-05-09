@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-21T14:26:52.924+01:00" />
+    <lastUpdated value="2017-05-08T23:06:06.022+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -568,7 +568,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/ValueSet/adw-message-event-1" />
+      <fixedUri value="https://fhir.nhs.uk/adw-message-event-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3702,7 +3702,7 @@
       <name value="Discharge Notice system" />
       <comments value="The identification of the code system that defines the meaning of the symbol in the code." />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/ValueSet/adw-message-event-1" />
+      <fixedUri value="https://fhir.nhs.uk/adw-message-event-1" />
       <mustSupport value="true" />
     </element>
     <element>
