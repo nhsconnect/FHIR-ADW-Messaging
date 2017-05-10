@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-01T08:59:13.798+00:00" />
+    <lastUpdated value="2017-05-10T15:01:30.292+01:00" />
   </meta>
   <url value="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-ADW-ConditionRelationship-1" />
   <version value="1.0.0" />
@@ -449,7 +449,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -681,7 +681,7 @@
       <path value="Extension.extension.valueReference" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
     </element>
     <element>

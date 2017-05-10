@@ -6594,7 +6594,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -8650,7 +8650,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11953,7 +11953,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13238,7 +13238,7 @@
       <path value="Encounter.indication" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -13271,7 +13271,7 @@
       <path value="Encounter.hospitalization.admittingDiagnosis" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
     </element>
     <element>
@@ -13338,7 +13338,7 @@
       <path value="Encounter.hospitalization.dischargeDiagnosis" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
     </element>
     <element>

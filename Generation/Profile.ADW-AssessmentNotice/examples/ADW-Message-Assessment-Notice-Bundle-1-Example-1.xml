@@ -469,7 +469,7 @@
 				<id value="af7ba23c-8ad3-11e6-ae22-56b6b6499611"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1"/>
 				</meta>
 				<!--Reference to patient-->
 				<patient>

@@ -449,7 +449,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -681,7 +681,7 @@
       <path value="Extension.extension.valueReference" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
     </element>
     <element>

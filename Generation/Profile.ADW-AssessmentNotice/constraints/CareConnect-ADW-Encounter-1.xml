@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-10T13:11:44.555+01:00" />
+    <lastUpdated value="2017-05-10T14:57:27.617+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -6594,7 +6594,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -8650,7 +8650,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11953,7 +11953,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13265,7 +13265,7 @@
       <path value="Encounter.indication" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
       <type>
         <code value="Reference" />
@@ -13298,7 +13298,7 @@
       <path value="Encounter.hospitalization.admittingDiagnosis" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
     </element>
     <element>
@@ -13365,7 +13365,7 @@
       <path value="Encounter.hospitalization.dischargeDiagnosis" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
       </type>
     </element>
     <element>

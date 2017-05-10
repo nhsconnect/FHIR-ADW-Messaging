@@ -535,7 +535,7 @@
 				<id value="83d0c06f-84ad-49d4-b415-a70ce708d3ba"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Condition-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1"/>
 				</meta>
 				<!--Reference to patient-->
 				<patient>
