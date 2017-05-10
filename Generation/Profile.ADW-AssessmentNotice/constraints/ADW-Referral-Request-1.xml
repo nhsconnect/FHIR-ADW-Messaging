@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-21T11:18:01.94+01:00" />
+    <lastUpdated value="2017-05-10T13:07:23.27+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -398,7 +398,7 @@
         <strength value="required" />
         <description value="The status of the referral." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/referralstatus" />
+          <reference value="http://hl7.org/fhir/DSTU2/valueset-referralstatus.html" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -5160,6 +5160,12 @@
       <definition value="The workflow status of the referral request notice." />
       <fixedCode value="requested" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/DSTU2/valueset-referralstatus.html" />
+        </valueSetReference>
+      </binding>
     </element>
     <element>
       <path value="ReferralRequest.identifier" />

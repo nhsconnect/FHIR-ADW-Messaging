@@ -47,7 +47,7 @@ NHS Digital has developed an Information Standard [SCCI2075] that defines the mi
 
 This FHIR Messaging specification is based on and intended to be used alongside the published [FHIR DSTU2 1.0.2] (October 2015) specification. 
 
-[FHIR DSTU2 1.0.2]: http://hl7.org/fhir/index.html
+[FHIR DSTU2 1.0.2]: http://hl7.org/fhir/DSTU2/index.html
 
 [Work_Stream_2.1_Final.pdf]: https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/465064/Work_Stream_2.1_Final.pdf
 

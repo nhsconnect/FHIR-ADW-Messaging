@@ -10,6 +10,6 @@
   "OPERATIONS_XML"   : "TRUE",
   "OPERATIONS_JSON" : "FALSE",
   "DMS_TITLE"		:   "Social Care",
-  "DMS_VERSION"		:	"Version 1.0 : Beta",
+  "DMS_VERSION"		:	"1.0.0-beta.1",
   "SCHEMAS"         :   "TRUE"
 }
