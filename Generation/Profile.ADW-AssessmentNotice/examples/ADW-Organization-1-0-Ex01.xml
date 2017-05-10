@@ -14,7 +14,7 @@
 	<!-- Type of organisation. -->
 	<type>
 		<coding>
-			<system value="http://hl7.org/fhir/ValueSet/organization-type"/>
+			<system value="http://hl7.org/fhir/organization-type"/>
 			<code value="prov"/>
 			<display value="Healthcare Provider"/>
 		</coding>

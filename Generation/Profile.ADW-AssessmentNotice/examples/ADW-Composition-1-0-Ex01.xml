@@ -14,7 +14,7 @@
 	<!--Assessment Notification-->
 	<type>
 		<coding>
-			<system value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
+			<system value="https://fhir.nhs.uk/adw-message-event-1"/>
 			<code value="975701000000106"/>
 			<display value="Assessment Notice under the Care Act 2014 schedule 3"/>
 		</coding>

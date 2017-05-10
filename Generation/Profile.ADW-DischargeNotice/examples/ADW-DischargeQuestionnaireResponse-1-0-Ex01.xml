@@ -19,7 +19,7 @@
 			<text value="Has the patient been consulted regarding the proposed discharge date?"/>
 			<answer>
 				<valueCoding>
-					<system value="https://fhir.nhs.uk/ValueSet/adw-consultation-status-1"/>
+					<system value="https://fhir.nhs.uk/adw-consultation-status-1"/>
 					<code value="Y"/>
 					<display value="Yes"/>
 				</valueCoding>
@@ -29,7 +29,7 @@
 			<text value="Has the patient's carer (if applicable) been consulted regarding the proposed discharge date?"/>
 			<answer>
 				<valueCoding>
-					<system value="https://fhir.nhs.uk/ValueSet/adw-carerconsultation-status-1"/>
+					<system value="https://fhir.nhs.uk/adw-carerconsultation-status-1"/>
 					<code value="Y"/>
 					<display value="Yes"/>
 				</valueCoding>

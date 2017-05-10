@@ -14,7 +14,7 @@
 	<!--Discharge Notification-->
 	<type>
 		<coding>
-			<system value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
+			<system value="https://fhir.nhs.uk/adw-message-event-1"/>
 			<code value="975731000000100"/>
 			<display value="Discharge Notice under the Care Act 2014 Schedule 3"/>
 		</coding>

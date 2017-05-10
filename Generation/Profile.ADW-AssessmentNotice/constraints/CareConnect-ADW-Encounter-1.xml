@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-26T10:14:03.069+01:00" />
+    <lastUpdated value="2017-05-09T22:35:06.983+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -2975,7 +2975,7 @@
         <strength value="preferred" />
         <description value="Indicates the urgency of the encounter." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/v3/ActPriority" />
+          <reference value="https://fhir.nhs.uk/ValueSet/adw-admission-type-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -13161,7 +13161,7 @@
       <binding>
         <strength value="preferred" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/v3/ActPriority" />
+          <reference value="https://fhir.nhs.uk/ValueSet/adw-admission-type-1" />
         </valueSetReference>
       </binding>
     </element>
