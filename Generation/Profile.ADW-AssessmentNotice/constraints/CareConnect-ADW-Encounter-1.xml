@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-10T14:57:27.617+01:00" />
+    <lastUpdated value="2017-05-10T15:52:06.946+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -1601,7 +1601,7 @@
         <strength value="required" />
         <description value="Current state of the encounter" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/DSTU2/valueset-encounter-state.html" />
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-state" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -1784,7 +1784,7 @@
         <strength value="required" />
         <description value="Current state of the encounter" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/DSTU2/valueset-encounter-state.html" />
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-state" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -2017,7 +2017,7 @@
         <strength value="required" />
         <description value="Classification of the encounter" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/DSTU2/valueset-encounter-class.html" />
+          <reference value="http://hl7.org/fhir/ValueSet/encounter-class" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -13104,33 +13104,6 @@
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
       </type>
-    </element>
-    <element>
-      <path value="Encounter.status" />
-      <binding>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/DSTU2/valueset-encounter-state.html" />
-        </valueSetReference>
-      </binding>
-    </element>
-    <element>
-      <path value="Encounter.statusHistory.status" />
-      <binding>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/DSTU2/valueset-encounter-state.html" />
-        </valueSetReference>
-      </binding>
-    </element>
-    <element>
-      <path value="Encounter.class" />
-      <binding>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/DSTU2/valueset-encounter-class.html" />
-        </valueSetReference>
-      </binding>
     </element>
     <element>
       <path value="Encounter.type.coding" />
