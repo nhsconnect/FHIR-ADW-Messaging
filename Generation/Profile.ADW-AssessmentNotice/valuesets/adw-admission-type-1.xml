@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2016-07-03T09:00:00+00:00"/>
 	</meta>
-	<url value="https://fhir.nhs.uk/ValueSet/adw-mesage-event-1"/>
+	<url value="https://fhir.nhs.uk/ValueSet/adw-admission-type-1"/>
 	<name value="ADW Admission Type"/>
 	<status value="active"/>
 	<publisher value="Health and Social Care Information Centre NHS Data Model and Dictionary"/>
@@ -18,7 +18,7 @@
 	<description value="A vocabulary that describes the type of admission in relation to ADW messaging."/>
 	<requirements value="There is a requirement to indicate whether the admission was a planned or emergency admission."/>
 	<codeSystem>
-		<system value="https://fhir.nhs.uk/adw-message-event-1"/>
+		<system value="https://fhir.nhs.uk/adw-admission-type-1"/>
 		<concept>
 			<code value="P"/>
 			<display value="Elective"/>

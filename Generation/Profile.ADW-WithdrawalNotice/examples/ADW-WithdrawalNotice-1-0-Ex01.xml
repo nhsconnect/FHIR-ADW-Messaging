@@ -7,7 +7,7 @@
 	</meta>
 	<timestamp value="2016-07-26T12:00:00+00:00"/>
 	<event>
-		<system value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
+		<system value="https://fhir.nhs.uk/adw-message-event-1"/>
 		<code value="975841000000102"/>
 	</event>
 	<source>
@@ -33,7 +33,7 @@
 	</responsible>
 	<reason>
 		<coding>
-			<system value="https://fhir.nhs.uk/ValueSet/adw-withdrawal-reason-1"/>
+			<system value="https://fhir.nhs.uk/adw-withdrawal-reason-1"/>
 			<code value="06"/>
 			<display value="Patient is resident in another local authority."/>
 		</coding>

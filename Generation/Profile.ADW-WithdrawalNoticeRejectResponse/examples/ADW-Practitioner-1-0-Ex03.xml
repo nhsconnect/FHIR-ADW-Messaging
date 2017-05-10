@@ -27,7 +27,7 @@
 		</managingOrganization>
 			<role>
 			<coding>
-				<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
+				<system value="https://fhir.nhs.uk/job-role-name-1"/>
 				<code value="NR1340"/>
 				<display value="Approved Social Worker"/>
 			</coding>

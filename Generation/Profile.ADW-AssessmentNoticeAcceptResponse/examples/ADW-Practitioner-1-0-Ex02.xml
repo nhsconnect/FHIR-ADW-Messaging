@@ -25,7 +25,7 @@
 		<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 		<role>
 			<coding>
-				<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
+				<system value="https://fhir.nhs.uk/job-role-name-1"/>
 				<code value="NR2060"/>
 				<display value="Discharge coordinator"/>
 			</coding>

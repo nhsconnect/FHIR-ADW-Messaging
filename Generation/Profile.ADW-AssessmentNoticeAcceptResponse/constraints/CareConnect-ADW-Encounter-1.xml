@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-26T10:15:40.914+01:00" />
+    <lastUpdated value="2017-05-10T09:43:00.106+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -2972,10 +2972,10 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <description value="Indicates the urgency of the encounter." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/v3/ActPriority" />
+          <reference value="https://fhir.nhs.uk/ValueSet/adw-admission-type-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3211,6 +3211,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/adw-admission-type-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -13159,11 +13160,15 @@
     <element>
       <path value="Encounter.priority" />
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/v3/ActPriority" />
+          <reference value="https://fhir.nhs.uk/ValueSet/adw-admission-type-1" />
         </valueSetReference>
       </binding>
+    </element>
+    <element>
+      <path value="Encounter.priority.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/adw-admission-type-1" />
     </element>
     <element>
       <path value="Encounter.patient" />

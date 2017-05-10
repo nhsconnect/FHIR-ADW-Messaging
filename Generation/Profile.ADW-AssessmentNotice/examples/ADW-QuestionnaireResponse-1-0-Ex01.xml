@@ -19,7 +19,7 @@
 			<text value="Has the patient been consulted regarding this Assessment Notice?"/>
 			<answer>
 				<valueCoding>
-					<system value="https://fhir.nhs.uk/ValueSet/adw-consultation-status-1"/>
+					<system value="https://fhir.nhs.uk/adw-consultation-status-1"/>
 					<code value="Y"/>
 					<display value="Yes"/>
 				</valueCoding>
@@ -29,7 +29,7 @@
 			<text value="Has the patient's carer (if applicable) been consulted regarding the Assessment Notice?"/>
 			<answer>
 				<valueCoding>
-					<system value="https://fhir.nhs.uk/ValueSet/adw-carerconsultation-status-1"/>
+					<system value="https://fhir.nhs.uk/adw-carerconsultation-status-1"/>
 					<code value="Y"/>
 					<display value="Yes"/>
 				</valueCoding>
@@ -39,7 +39,7 @@
 			<text value="Are there any safeguarding issues associated with the patient?"/>
 			<answer>
 				<valueCoding>
-					<system value="https://fhir.nhs.uk/ValueSet/adw-consultation-status-1"/>
+					<system value="https://fhir.nhs.uk/adw-consultation-status-1"/>
 					<code value="N"/>
 					<display value="No"/>
 				</valueCoding>
@@ -49,7 +49,7 @@
 			<text value="Has the patient consented to this Assessment Notice?"/>
 			<answer>
 				<valueCoding>
-					<system value="https://fhir.nhs.uk/ValueSet/adw-patient-consent-status-1"/>
+					<system value="https://fhir.nhs.uk/adw-patient-consent-status-1"/>
 					<code value="Y"/>
 					<display value="Yes"/>
 				</valueCoding>
@@ -59,7 +59,7 @@
 			<text value="What is the source of the third party consent for this assessment notice?"/>
 			<answer>
 				<valueCoding>
-					<system value="https://fhir.nhs.uk/ValueSet/adw-third-party-consent-source-1"/>
+					<system value="https://fhir.nhs.uk/adw-third-party-consent-source-1"/>
 					<code value="B"/>
 					<display value="Best Interest Decision"/>
 				</valueCoding>
@@ -69,7 +69,7 @@
 			<text value="Has the provision of NHS Continuing Health Care been considered?"/>
 			<answer>
 				<valueCoding>
-					<system value="https://fhir.nhs.uk/ValueSet/adw-consultation-status-1"/>
+					<system value="https://fhir.nhs.uk/adw-consultation-status-1"/>
 					<code value="Y"/>
 					<display value="Yes"/>
 				</valueCoding>

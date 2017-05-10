@@ -17,7 +17,7 @@
 					<!-- Indicates the practitioners role(s)-->
 					<role>
 						<coding>
-							<system value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
+							<system value="https://fhir.nhs.uk/job-role-name-1"/>
 							<code value="NR0050"/>
 							<display value="Consultant"/>
 						</coding>

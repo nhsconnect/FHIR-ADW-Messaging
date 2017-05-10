@@ -6,7 +6,7 @@
 	</meta>
 	<timestamp value="2016-07-25T12:00:00+00:00"/>
 	<event>
-		<system value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
+		<system value="https://fhir.nhs.uk/adw-message-event-1"/>
 		<code value="975701000000106"/>
 	</event>
 	<source>
