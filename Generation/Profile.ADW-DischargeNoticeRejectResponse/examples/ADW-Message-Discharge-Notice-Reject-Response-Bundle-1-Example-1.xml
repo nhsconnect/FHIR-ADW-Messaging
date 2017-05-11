@@ -35,7 +35,6 @@
 				<author>
 					<!-- The local authority social worker -->
 					<reference value="urn:uuid:94e5730d-b8b9-4f78-a6c4-35137c88e6e5"/>
-				
 				</author>
 				<receiver>
 					<!-- The hospital liaison -->

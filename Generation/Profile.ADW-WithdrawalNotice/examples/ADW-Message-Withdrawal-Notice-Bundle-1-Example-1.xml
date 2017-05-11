@@ -30,7 +30,6 @@
 				<author>
 					<!-- Hospital Liaison -->
 					<reference value="urn:uuid:48d82667-0465-47b1-afad-6ea9ef49e844"/>
-				
 				</author>
 				<!-- Local Authority Social Services' community team -->
 				<receiver>
@@ -72,8 +71,7 @@
 				</patient>
 				<!-- Hospital Liaison, a hospital Discharge Co-ordinator -->
 				<requester>
-					<reference value="urn:uuid:48d82667-0465-47b1-afad-6ea9ef49e844">
-					</reference>
+					<reference value="urn:uuid:48d82667-0465-47b1-afad-6ea9ef49e844"/>
 				</requester>
 				<!-- Local Authority Social Services' team-->
 				<recipient>
@@ -94,9 +92,7 @@
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
-
 				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
-				
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
 						<valueCodeableConcept>

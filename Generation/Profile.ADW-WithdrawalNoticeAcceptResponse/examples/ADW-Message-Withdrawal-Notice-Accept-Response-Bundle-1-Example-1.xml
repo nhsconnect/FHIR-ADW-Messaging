@@ -291,7 +291,7 @@
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/encounter-id"/>
-						<!--Same encounter ID for all encounters across all messages-->
+					<!--Same encounter ID for all encounters across all messages-->
 					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
 				</identifier>
 				<status value="in-progress"/>

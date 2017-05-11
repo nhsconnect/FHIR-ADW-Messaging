@@ -35,7 +35,6 @@
 				<author>
 					<!-- The local authority Social Services' contact -->
 					<reference value="urn:uuid:9255f4e3-d65d-4b96-8b8e-586e9f8e9828"/>
-				
 				</author>
 				<receiver>
 					<!-- The hospital liaison -->
@@ -79,7 +78,6 @@
 				<!-- Hospital Liaison, a hospital Discharge Co-ordinator -->
 				<requester>
 					<reference value="urn:uuid:5295add6-6fc3-47aa-ad4a-4dc14911154d"/>
-				
 				</requester>
 				<!-- Local Authority Social Services' Team -->
 				<recipient>

@@ -35,7 +35,6 @@
 				<author>
 					<!-- The local authority social worker -->
 					<reference value="urn:uuid:6babc18b-9f20-4fb1-ba0d-d4e3ae2c7cc7"/>
-				
 				</author>
 				<receiver>
 					<!-- The hospital liaison -->
@@ -65,7 +64,7 @@
 				<id value="076a300f-5234-4309-95eb-9a64714bbb06"/>
 				<!--This GUID for the id is unique for each type of referral request-->
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-referral-request-accepted-1"/>	
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-referral-request-accepted-1"/>
 				</meta>
 				<status value="accepted"/>
 				<identifier>

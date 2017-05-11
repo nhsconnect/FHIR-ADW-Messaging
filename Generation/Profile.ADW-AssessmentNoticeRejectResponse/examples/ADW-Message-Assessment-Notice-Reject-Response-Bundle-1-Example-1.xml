@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--Assessment Notice reject response-->
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="6fd6b8f8-a626-454d-833d-e22bf402cd26"/>
@@ -41,7 +41,7 @@
 					<!-- The hospital liaison -->
 					<reference value="urn:uuid:75a7388d-abbf-4bd2-8008-a602435aa2b3"/>
 				</receiver>
-					<responsible>
+				<responsible>
 					<reference value="urn:uuid:71583f7a-6572-49fc-be7f-3bb83bdbaab1"/>
 				</responsible>
 				<reason>

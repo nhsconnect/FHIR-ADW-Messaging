@@ -47,7 +47,7 @@
 		</resource>
 	</entry>
 	<entry>
-	<fullUrl value="urn:uuid:8a31c448-223d-42b7-9a17-3898f0c1c143"/>
+		<fullUrl value="urn:uuid:8a31c448-223d-42b7-9a17-3898f0c1c143"/>
 		<resource>
 			<ReferralRequest>
 				<id value="8a31c448-223d-42b7-9a17-3898f0c1c143"/>
@@ -82,7 +82,7 @@
 		</resource>
 	</entry>
 	<entry>
-	<fullUrl value="urn:uuid:42840151-1fe1-4967-88c1-bcbd2a191243"/>
+		<fullUrl value="urn:uuid:42840151-1fe1-4967-88c1-bcbd2a191243"/>
 		<resource>
 			<Patient>
 				<id value="42840151-1fe1-4967-88c1-bcbd2a191243"/>
@@ -91,7 +91,6 @@
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
 				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
-				
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
 						<valueCodeableConcept>
@@ -114,8 +113,9 @@
 					</assigner>
 				</identifier>
 				<name>
-					<family value="Jones"/>
-					<given value="Barry"/>
+					<use value="usual"/>
+					<family value="Brown"/>
+					<given value="David"/>
 				</name>
 				<gender value="male"/>
 				<birthDate value="1941-11-01"/>
@@ -154,7 +154,7 @@
 		</resource>
 	</entry>
 	<entry>
-	<fullUrl value="urn:uuid:51742f1b-c5ee-435e-8dc7-9bc5a578cd1d"/>
+		<fullUrl value="urn:uuid:51742f1b-c5ee-435e-8dc7-9bc5a578cd1d"/>
 		<resource>
 			<!--A hospital Discharge Co-ordinator-->
 			<Practitioner>
@@ -223,7 +223,7 @@
 		</resource>
 	</entry>
 	<entry>
-	<fullUrl value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+		<fullUrl value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
 		<resource>
 			<!--This example shows a sample NHS hospital.-->
 			<Organization>
@@ -279,7 +279,7 @@
 		</resource>
 	</entry>
 	<entry>
-	<fullUrl value="urn:uuid:5d4c7a93-73f1-460e-93d3-da616b569228"/>
+		<fullUrl value="urn:uuid:5d4c7a93-73f1-460e-93d3-da616b569228"/>
 		<resource>
 			<!--This example shows a sample Local Authority Social Services team.-->
 			<Organization>
@@ -305,7 +305,7 @@
 		</resource>
 	</entry>
 	<entry>
-	<fullUrl value="urn:uuid:59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
+		<fullUrl value="urn:uuid:59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
 		<resource>
 			<QuestionnaireResponse>
 				<id value="59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
@@ -347,7 +347,7 @@
 		</resource>
 	</entry>
 	<entry>
-	<fullUrl value="urn:uuid:9abe04e9-c508-492c-94fc-349d34b85bd5"/>
+		<fullUrl value="urn:uuid:9abe04e9-c508-492c-94fc-349d34b85bd5"/>
 		<resource>
 			<Encounter>
 				<id value="9abe04e9-c508-492c-94fc-349d34b85bd5"/>
@@ -356,6 +356,7 @@
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/encounter-id"/>
+					<!--Same encounter ID for all encounters across all messages-->
 					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
 				</identifier>
 				<status value="in-progress"/>
@@ -378,7 +379,7 @@
 		</resource>
 	</entry>
 	<entry>
-	<fullUrl value="urn:uuid:64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
+		<fullUrl value="urn:uuid:64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
 		<resource>
 			<Location>
 				<id value="64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
