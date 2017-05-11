@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-21T14:50:04.878+01:00" />
+    <lastUpdated value="2017-05-11T13:18:32.45+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="7" />
@@ -10376,7 +10376,7 @@
         <strength value="example" />
         <description value="Specific specialty associated with the agency" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/practitioner-specialty" />
+          <reference value="https://fhir.nhs.uk/ValueSet/job-role-name-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -14427,6 +14427,15 @@
     <element>
       <path value="Practitioner.practitionerRole.role.coding.userSelected" />
       <max value="0" />
+    </element>
+    <element>
+      <path value="Practitioner.practitionerRole.specialty" />
+      <binding>
+        <strength value="example" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/job-role-name-1" />
+        </valueSetReference>
+      </binding>
     </element>
     <element>
       <path value="Practitioner.practitionerRole.location" />
