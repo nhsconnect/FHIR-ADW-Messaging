@@ -7,13 +7,14 @@
 	</meta>
 	<type value="message"/>
 	<entry>
+		<fullUrl value="urn:uuid:19db5f65-1bad-4ce1-be05-92ff79ab1c8f"/>
 		<resource>
 			<MessageHeader>
 				<id value="19db5f65-1bad-4ce1-be05-92ff79ab1c8f"/>
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-notice-message-header-1"/>
 				</meta>
-				<timestamp value="2016-07-25T13:00:00+00:00"/>
+				<timestamp value="2017-05-04T15:11:42+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/adw-message-event-1"/>
 					<code value="975731000000100"/>
@@ -28,24 +29,25 @@
 				</destination>
 				<author>
 					<!-- Hospital Liaison -->
-					<reference value="Practitioner/51742f1b-c5ee-435e-8dc7-9bc5a578cd1d">
+					<reference value="urn:uuid:51742f1b-c5ee-435e-8dc7-9bc5a578cd1d">
 					</reference>
 				</author>
 				<!-- Local Authority Social Services' community team -->
 				<receiver>
-					<reference value="Organization/5d4c7a93-73f1-460e-93d3-da616b569228"/>
+					<reference value="urn:uuid:5d4c7a93-73f1-460e-93d3-da616b569228"/>
 				</receiver>
 				<!-- Lead Clinician -->
 				<responsible>
-					<reference value="Practitioner/62f20483-3d47-4e57-80e1-6c0e20fe272f"/>
+					<reference value="urn:uuid:62f20483-3d47-4e57-80e1-6c0e20fe272f"/>
 				</responsible>
 				<data>
-					<reference value="ReferralRequest/8a31c448-223d-42b7-9a17-3898f0c1c143"/>
+					<reference value="urn:uuid:8a31c448-223d-42b7-9a17-3898f0c1c143"/>
 				</data>
 			</MessageHeader>
 		</resource>
 	</entry>
 	<entry>
+	<fullUrl value="urn:uuid:8a31c448-223d-42b7-9a17-3898f0c1c143"/>
 		<resource>
 			<ReferralRequest>
 				<id value="8a31c448-223d-42b7-9a17-3898f0c1c143"/>
@@ -59,27 +61,28 @@
 					<!--The value of this identifier will be the same across all referrals to tie all these together-->
 				</identifier>
 				<patient>
-					<reference value="Patient/42840151-1fe1-4967-88c1-bcbd2a191243"/>
+					<reference value="urn:uuid:42840151-1fe1-4967-88c1-bcbd2a191243"/>
 				</patient>
 				<!-- Hospital Liaison, a hospital Discharge Co-ordinator -->
 				<requester>
-					<reference value="Practitioner/51742f1b-c5ee-435e-8dc7-9bc5a578cd1d">
+					<reference value="urn:uuid:51742f1b-c5ee-435e-8dc7-9bc5a578cd1d">
 					</reference>
 				</requester>
 				<!-- Local Authority Social Services team-->
 				<recipient>
-					<reference value="Organization/5d4c7a93-73f1-460e-93d3-da616b569228"/>
+					<reference value="urn:uuid:5d4c7a93-73f1-460e-93d3-da616b569228"/>
 				</recipient>
 				<encounter>
-					<reference value="Encounter/9abe04e9-c508-492c-94fc-349d34b85bd5"/>
+					<reference value="urn:uuid:9abe04e9-c508-492c-94fc-349d34b85bd5"/>
 				</encounter>
 				<supportingInformation>
-					<reference value="QuestionnaireResponse/59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
+					<reference value="urn:uuid:59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
 				</supportingInformation>
 			</ReferralRequest>
 		</resource>
 	</entry>
 	<entry>
+	<fullUrl value="urn:uuid:42840151-1fe1-4967-88c1-bcbd2a191243"/>
 		<resource>
 			<Patient>
 				<id value="42840151-1fe1-4967-88c1-bcbd2a191243"/>
@@ -87,31 +90,13 @@
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
-				<!--nhsCommunication complex extension start-->
-<extension url="Extension-CareConnect-NHSCommunication-1" >
-	<extension url="language" >
-		<valueCodeableConcept>
-						<coding>
-				<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-HumanLanguage-1"/>
-				<code value="ga"/>
-				<display value="Irish"/>
-			</coding>
-		</valueCodeableConcept>
-	</extension>
-	<extension url="preferred">
-		<valueBoolean value="true"/>
-	</extension>
-	<extension url="interpreterRequired">
-		<valueBoolean value="false"/>
-	</extension>
-</extension>
 				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
 				
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
 						<valueCodeableConcept>
 							<coding>
-								<system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-NHSNumberVerificationStatus-1"/>
+								<system value="https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1"/>
 								<code value="01"/>
 								<display value="Number present and verified"/>
 							</coding>
@@ -125,7 +110,7 @@
 					<value value="A1234521"/>
 					<assigner>
 						<!-- This can be a reference to the profile elsewhere in the message or just text -->
-						<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+						<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
 					</assigner>
 				</identifier>
 				<name>
@@ -169,6 +154,7 @@
 		</resource>
 	</entry>
 	<entry>
+	<fullUrl value="urn:uuid:51742f1b-c5ee-435e-8dc7-9bc5a578cd1d"/>
 		<resource>
 			<!--A hospital Discharge Co-ordinator-->
 			<Practitioner>
@@ -191,28 +177,29 @@
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>
-						<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+						<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
 					</managingOrganization>
 					<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
-					<role>
+					<specialty>
 						<coding>
 							<system value="https://fhir.nhs.uk/job-role-name-1"/>
 							<code value="NR2060"/>
 							<display value="Discharge coordinator"/>
 						</coding>
 						<text value="Hospital Liaison"/>
-					</role>
+					</specialty>
 				</practitionerRole>
 			</Practitioner>
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:62f20483-3d47-4e57-80e1-6c0e20fe272f"/>
 		<resource>
 			<Practitioner>
 				<id value="62f20483-3d47-4e57-80e1-6c0e20fe272f"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-lead-clinician-practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Stibbs"/>
@@ -220,22 +207,23 @@
 				</name>
 				<practitionerRole>
 					<managingOrganization>
-						<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+						<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
 					</managingOrganization>
 					<!-- Indicates the practitioners role(s)-->
-					<role>
+					<specialty>
 						<coding>
 							<system value="https://fhir.nhs.uk/job-role-name-1"/>
 							<code value="NR0050"/>
 							<display value="Consultant"/>
 						</coding>
 						<text value="Lead Clinician"/>
-					</role>
+					</specialty>
 				</practitionerRole>
 			</Practitioner>
 		</resource>
 	</entry>
 	<entry>
+	<fullUrl value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
 		<resource>
 			<!--This example shows a sample NHS hospital.-->
 			<Organization>
@@ -263,6 +251,7 @@
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:37f35527-5169-4467-b6ad-ab147928714c"/>
 		<resource>
 			<!--This example shows a sample Local Authority-->
 			<Organization>
@@ -290,6 +279,7 @@
 		</resource>
 	</entry>
 	<entry>
+	<fullUrl value="urn:uuid:5d4c7a93-73f1-460e-93d3-da616b569228"/>
 		<resource>
 			<!--This example shows a sample Local Authority Social Services team.-->
 			<Organization>
@@ -309,12 +299,13 @@
 				</type>
 				<name value="Hebburn Social Services' Community Team"/>
 				<partOf>
-					<reference value="Organization/37f35527-5169-4467-b6ad-ab147928714c"/>
+					<reference value="urn:uuid:37f35527-5169-4467-b6ad-ab147928714c"/>
 				</partOf>
 			</Organization>
 		</resource>
 	</entry>
 	<entry>
+	<fullUrl value="urn:uuid:59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
 		<resource>
 			<QuestionnaireResponse>
 				<id value="59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
@@ -327,7 +318,7 @@
 				</identifier>
 				<status value="completed"/>
 				<author>
-					<reference value="Practitioner/51742f1b-c5ee-435e-8dc7-9bc5a578cd1d">
+					<reference value="urn:uuid:51742f1b-c5ee-435e-8dc7-9bc5a578cd1d">
 					</reference>
 				</author>
 				<group>
@@ -356,6 +347,7 @@
 		</resource>
 	</entry>
 	<entry>
+	<fullUrl value="urn:uuid:9abe04e9-c508-492c-94fc-349d34b85bd5"/>
 		<resource>
 			<Encounter>
 				<id value="9abe04e9-c508-492c-94fc-349d34b85bd5"/>
@@ -363,29 +355,30 @@
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-encounter-1"/>
 				</meta>
 				<identifier>
-					<system value="urn:ietf:rfc:3986"/>
+					<system value="https://fhir.nhs.uk/encounter-id"/>
 					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
 				</identifier>
 				<status value="in-progress"/>
 				<class value="inpatient"/>
 				<patient>
-					<reference value="Patient/42840151-1fe1-4967-88c1-bcbd2a191243"/>
+					<reference value="urn:uuid:42840151-1fe1-4967-88c1-bcbd2a191243"/>
 				</patient>
 				<period>
-					<end value="2016-07-17"/>
+					<end value="2017-05-12"/>
 				</period>
 				<location>
 					<location>
-						<reference value="Location/64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
+						<reference value="urn:uuid:64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
 					</location>
 				</location>
 				<serviceProvider>
-					<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+					<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
 				</serviceProvider>
 			</Encounter>
 		</resource>
 	</entry>
 	<entry>
+	<fullUrl value="urn:uuid:64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
 		<resource>
 			<Location>
 				<id value="64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
@@ -395,9 +388,70 @@
 				</meta>
 				<name value="Collier Ward"/>
 				<managingOrganization>
-					<reference value="Organization/c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+					<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
 				</managingOrganization>
 			</Location>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:286919ac-12ba-4469-b9fd-676ef9cdb623"/>
+		<resource>
+			<DocumentReference>
+				<id value="286919ac-12ba-4469-b9fd-676ef9cdb623"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-documentreference-1"/>
+				</meta>
+				<!-- Information Recipient 1 -->
+				<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-information-recipient-1">
+					<!--Social Services team recipient-->
+					<valueReference>
+						<reference value="urn:uuid:5d4c7a93-73f1-460e-93d3-da616b569228"/>
+					</valueReference>
+				</extension>
+				<subject>
+					<reference value="urn:uuid:42840151-1fe1-4967-88c1-bcbd2a191243"/>
+				</subject>
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="373942005"/>
+						<display value="Discharge summary"/>
+					</coding>
+				</type>
+				<!--Consultant author-->
+				<author>
+					<reference value="urn:uuid:62f20483-3d47-4e57-80e1-6c0e20fe272f"/>
+				</author>
+				<custodian>
+					<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+				</custodian>
+				<indexed value="2017-04-17T10:00:00+00:00"/>
+				<status value="current"/>
+				<docStatus>
+					<coding>
+						<system value="http://hl7.org/fhir/composition-status"/>
+						<code value="final"/>
+					</coding>
+				</docStatus>
+				<content>
+					<attachment>
+						<url value="urn:uuid:11507dfa-a3a2-4c6f-9ef7-9bc77955daae"/>
+					</attachment>
+				</content>
+			</DocumentReference>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:11507dfa-a3a2-4c6f-9ef7-9bc77955daae"/>
+		<resource>
+			<Binary>
+				<id value="11507dfa-a3a2-4c6f-9ef7-9bc77955daae"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-binary-1"/>
+				</meta>
+				<contentType value="application/pdf"/>
+				<content value="UGF0aWVudCBEZW1vZ3JhcGhpY3MNCg0KUGF0aWVudCBuYW1lCURhdGUgb2YgYmlydGgJR2VuZGVyCUV0aG5pY2l0eToJSWRlbnRpZmllcg0KSm9uZXMsIEJhcnJ5KE1yKTAxLU5vdi0xOTQxCW1hbGUJQnJpdGlzaAkJTnVtYmVyIHByZXNlbnQgYW5kIHZlcmlmaWVkDQoNCjk0MTM5NDYwMDANCg0KDQoNCkhvbWUgYWRkcmVzcw0KVGhlIE9sZCBMb2RnZQ0KMSBMaXR0bGUgU3RyZWV0DQpMZWVkcw0KTFM2IDFVUgkNCkdQIFByYWN0aWNlDQpNR1AgTWVkaWNhbCBDZW50cmUNCldvcmsgYWRkcmVzcw0KMSBNR1AgSG91c2UNCk92ZXJ0b3duDQpMZWVkcw0KTFMyMSA3UEENCldvcmsgcGhvbmU6IDAxNjM0MTExMjIzDQoNCkVtYWlsOiBBZG1pbkBNTUMuY28udWsNCg0KR1AgUHJhY3RpY2UgQ29kZQ0KR1AxMjM0NTYNCkRvY3VtZW50IENyZWF0ZWQJMTctRmViLTIwMTcgMTA6MDANCkRvY3VtZW50IE93bmVyCUxlZWRzIFRlYWNoaW5nIEhvc3BpdGFscyBOSFMgVHJ1c3QNCkF1dGhvcmVkIEJ5CVN0aWJicywgTmlnZWwgKERyKQ0KRGlzY2hhcmdlIFN1bW1hcnkNCg0KRW5jb3VudGVyIFR5cGUJTWVkaWNhbCBjb25zdWx0YXRpb24gb24gaG9zcGl0YWwgaW5wYXRpZW50DQpFbmNvdW50ZXIgVGltZQkyNC1BcHItMjAxNyAxNTowMCB0byAxMi1NYXktMjAxNyAwOTowMA0KRW5jb3VudGVyIERpc3Bvc2l0aW9uCUhvbWUNCkNhcmUgU2V0dGluZyBUeXBlCUNhcmRpb2xvZ3kgc2VydmljZQ0KQWRtaXNzaW9uIGRldGFpbHMNCg0KQWRtaXNzaW9uIG1ldGhvZAlFbWVyZ2VuY3kNCkRhdGUgb2YgYWRtaXNzaW9uCTI0LUFwci0yMDE3DQpTb3VyY2Ugb2YgYWRtaXNzaW9uCUVtZXJnZW5jeSBEZXBhcnRtZW50DQpBbGxlcmdpZXMgYW5kIGFkdmVyc2UgcmVhY3Rpb25zDQoNCkNhdXNhdGl2ZSBhZ2VudAlQZW5pY2lsbGluDQpEZXNjcmlwdGlvbiBvZiB0aGUgcmVhY3Rpb24JUmFzaC4gTm8gc3dlbGxpbmcvYW5hcGh5bGF4aXMNCkFzc2Vzc21lbnQgc2NhbGVzDQoNCkFzc2Vzc21lbnQgc2NhbGVzCVRJTUkgc2NvcmU9Mg0KQ2xpbmljYWwgc3VtbWFyeQ0KDQpDbGluaWNhbCBTdW1tYXJ5DQo3NSB5ZWFyIG9sZCBtYW4gd2l0aCBhbiBhY3V0ZSBoaXN0b3J5IG9mIGNhcmRpYWMgc291bmRpbmcgY2hlc3QgcGFpbiBsYXN0aW5nIGFyb3VuZCAyIGhvdXJzLg0KRXhhbWluYXRpb24gdW5yZW1hcmthYmxlLg0KSW5mZXJpb3IgaXNjaGFlbWljIGNoYW5nZXMgb24gRUNHcyBhbmQgcmFpc2VkIFRyb3BvbmluIFQuDQpDb3JvbmFyeSBhbmdpb2dyYW0gZGVtb25zdHJhdGVkIGRpc2Vhc2VkIFJDQSwgZHJ1ZyBlbHV0aW5nIHN0ZW50IHN1Y2Nlc3NmdWxseSBwbGFjZWQuDQpBcHByb3ByaWF0ZSBzZWNvbmRhcnkgcHJldmVudGlvbiBtZWRpY2F0aW9ucyBwcmVzY3JpYmVkIGFuZCBmb3IgZm9sbG93IHVwIHdpdGggQ2FyZGlhYyBSZWhhYmlsaXRhdGlvbiB0ZWFtLg0KRGlhZ25vc2VzDQoNCkRpYWdub3NpcwlDYXJkaWFjIGNoZXN0IHBhaW4vQUNTDQpEaXNjaGFyZ2UgZGV0YWlscw0KDQpEaXNjaGFyZ2luZyBjbGluaWNpYW4JRHIgTmlnZWwgU3RpYmJzDQpEYXRlIG9mIGRpc2NoYXJnZQkxMi1NYXktMjAxNw0KRGlzY2hhcmdlIG1ldGhvZAlQYXRpZW50IGRpc2NoYXJnZWQgb24gY2xpbmljYWwgYWR2aWNlDQpEaXNjaGFyZ2UgZGVzdGluYXRpb24JVXN1YWwgcGxhY2Ugb2YgcmVzaWRlbmNlDQpJbmZvcm1hdGlvbiBnaXZlbg0KDQpJbmZvcm1hdGlvbiBhbmQgYWR2aWNlIGdpdmVuCVBhdGllbnQgc2VlbiBieSBDYXJkaWFjIFJlaGFiIGFuZCBpbmZvcm1hdGlvbiBnaXZlbiByZWdhcmRpbmcgZGlhZ25vc2lzLCBsaWZlc3R5bGUgY2hhbmdlIGFuZCBiZW5lZml0cyBvZiByZWhhYiBwcm9ncmFtbWUuIENvbW11bml0eSBmb2xsb3cgdXAgcGxhbm5lZC4NCkludmVzdGlnYXRpb25zIGFuZCBwcm9jZWR1cmVzIHJlcXVlc3RlZA0KDQpJbnZlc3RpZ2F0aW9ucyByZXF1ZXN0ZWQNCkZvbGxvdy11cCBmdWxsIGJsb29kIGNvdW50IHRlc3RzIHNob3VsZCBiZSBjYXJyaWVkIG91dCAyIHdlZWtzIGFmdGVyIHRoZSBwYXRpZW50IGlzIGRpc2NoYXJnZWQuDQpJbnZlc3RpZ2F0aW9uIHJlc3VsdHMNCg0KSW52ZXN0aWdhdGlvbiByZXN1bHQNCkZ1bGwgQmxvb2QgQ291bnQgICAgICANCiAgICAgIA0KVGVzdAkJCQkJCVZhbHVlCQkJVW5pdHMJCQlSZWZlcmVuY2UgUmFuZ2UNCldoaXRlIENlbGwgQ291bnQJCQkJMTEuMQkJCXgxMCo5L0wJCQkzLjUgLSAxMC4wDQpSZWQgQ2VsbCBDb3VudAkJCQkJNS4wCQkJeDEwKjEyL0wJCTQuMjUgLSA1Ljc1IA0KSGFlbW9nbG9iaW4JCQkJCTE1MAkJCWcvTAkJCTEzLjAgLSAxNy4wDQpIYWVtYXRvY3JpdAkJCQkJMC4yMzAJCQkJCQkwLjQwMCAtIDAuNTAwDQpNZWFuIENlbGwgVm9sdW1lCQkJCTkwCQkJZkwJCQk4NCAtIDk4DQpNZWFuIENlbGwgSGIJCQkJCTMzLjAJCQlwZwkJCTI3LjUgLSAzMi4wDQpNZWFuIENlbGwgSGIgQ29uCQkJCTM0LjAJCQlwZwkJCTMxLjAgLSAzNS4wDQpSRFcJCQkJCQkxMi4wCQkJJQkJCTwgMTQuNQ0KUGxhdGVsZXQgQ291bnQJCQkJCTMwMAkJCXgxMCo5L0wJCQkxNTAgLSA0MDANCg0KTWFjaGluZSBEaWZmZXJlbnRpYWwgICAgICANCiAgICAgIA0KVGVzdCAgICAgICAgICAgICAgICAgIAkJCQlWYWx1ZQkJCVVuaXRzICAgICAgICAJCVJlZmVyZW5jZSBSYW5nZQ0KTmV1dHJvcGhpbHMJCQkJCTcuMAkJCXgxMCo5L0wJCQkxLjcgLSA3LjUNCkx5bXBob2N5dGVzCQkJCQkzLjUJCQl4MTAqOS9MCQkJMS4wIC0gMy41ICAgDQpNb25vY3l0ZXMJCQkJCTAuMwkJCXgxMCo5L0wJCQk8IDAuNiAgDQpFb3Npbm9waGlscwkJCQkJMC40CQkJeDEwKjkvTAkJCTwgMC40ICANCkJhc29waGlscwkJCQkJMC4xCQkJeDEwKjkvTAkJCTwgMC4xIA0KTFVDcwkJCQkJCTAuMgkJCXgxMCo5L0wJCQk8IDAuNCANCiAgICAgIA0KTGVnYWwgaW5mb3JtYXRpb24NCg0KTWVkaWNhdGlvbnMgYW5kIG1lZGljYWwgZGV2aWNlcw0KDQpNZWRpY2F0aW9uIG5hbWUJUmFtaXByaWwNCkRvc2UJMi41bWcNCk1lZGljYXRpb24gZnJlcXVlbmN5CU9EDQpSb3V0ZQlvcmFsDQpNZWRpY2F0aW9uIHJlY29tbWVuZGF0aW9ucwljb250aW51ZQ0KTWVkaWNhdGlvbiBuYW1lCU9tZXByYXpvbGUNCkRvc2UJMjBtZw0KTWVkaWNhdGlvbiBmcmVxdWVuY3kJT0QvUFJODQpSb3V0ZQlvcmFsDQpNZWRpY2F0aW9uIHJlY29tbWVuZGF0aW9ucwljb250aW51ZQ0KTWVkaWNhdGlvbiBuYW1lCUFzcGlyaW4NCkRvc2UJNzVtZw0KTWVkaWNhdGlvbiBmcmVxdWVuY3kJT0QNClJvdXRlCW9yYWwNCk1lZGljYXRpb24gcmVjb21tZW5kYXRpb25zCWNvbnRpbnVlDQpNZWRpY2F0aW9uIG5hbWUJQ2xvcGlkb2dyZWwNCkRvc2UJNzVtZw0KTWVkaWNhdGlvbiBmcmVxdWVuY3kJT0QNClJvdXRlCW9yYWwNCk1lZGljYXRpb24gcmVjb21tZW5kYXRpb25zCTEgeWVhciB0aGVuIHN0b3ANCk1lZGljYXRpb24gbmFtZQlTaW12YXN0YXRpbg0KRG9zZQk0MG1nDQpNZWRpY2F0aW9uIGZyZXF1ZW5jeQlPRA0KUm91dGUJb3JhbA0KTWVkaWNhdGlvbiByZWNvbW1lbmRhdGlvbnMJY29udGludWUNCk1lZGljYXRpb24gbmFtZQlCaXNvcHJvbG9sDQpEb3NlCTVtZw0KTWVkaWNhdGlvbiBmcmVxdWVuY3kJT0QNClJvdXRlCW9yYWwNCk1lZGljYXRpb24gcmVjb21tZW5kYXRpb25zCVVwdGl0cmF0ZSBhY2NvcmRpbmcgdG8gQlAgYW5kIEhSDQpQYXJ0aWNpcGF0aW9uIGluIHJlc2VhcmNoDQoNClBhcnRpY2lwYXRpb24gaW4gcmVzZWFyY2gJTm9uZQ0KUGF0aWVudCBhbmQgY2FyZXIgY29uY2VybnMNCg0KUGF0aWVudCBhbmQgY2FyZXIgY29uY2VybnMJVGhlIGNhcmVyIGlzIGNvbmNlcm5lZCBhYm91dCB0aGUgcG9zc2liaWxpdHkgb2YgdGhlIHBhdGllbnQgc3VmZmVyaW5nIGZyb20gYSBoZWFydCBhdHRhY2ssIGJlYXJpbmcgYSBzaW1pbGFyaXR5IHRvIHRoZSBpbGxuZXNzIG9mIHRoZSBtb3RoZXIgb2YgdGhlIHBhdGllbnQuIFRoZSBwYXRpZW50IGlzIHdvcnJpZWQgYWJvdXQgdGhlIGltcGFjdCBvZiB0aGVpciBpbGxuZXNzIG9uIHRoZWlyIGFiaWxpdHkgdG8gZHJpdmUuDQpQZXJzb24gY29tcGxldGluZyByZWNvcmQNCg0KTmFtZQlEciBOaWdlbCBTdGliYnMNCkRlc2lnbmF0aW9uIG9yIHJvbGUJT24gY2FsbCBEcg0KR3JhZGUJQ29ucw0KU3BlY2lhbHR5CU1lZGljaW5lDQpQbGFuIGFuZCByZXF1ZXN0ZWQgYWN0aW9ucw0KDQpBY3Rpb25zDQpHUCBwbGVhc2UgY29udGludWUgc2Vjb25kYXJ5IHByZXZlbnRhdGl2ZSBtZWRpY2F0aW9uLiBEb3NlcyB3aWxsIGJlIHVwdGl0cmF0ZWQgYnkgQ2FyZGlhYyBSZWhhYiB0ZWFtLg0KUHJvY2VkdXJlcw0KDQpQcm9jZWR1cmUJQ29yb25hcnkgQW5naW9ncmFtIHdpdGggc3RlbnQgdG8gcmlnaHQgY29yb25hcnkgYXJ0ZXJ5IChSQ0EpDQpSZWZlcnJhbCBkZXRhaWxzDQoNClJlZmVycmFsIGRldGFpbHMJTXIgRGF2aWQgQnJvd24gLSBTZWxmDQpTYWZldHkgYWxlcnRzDQoNClJpc2tzIHRvIHNlbGYJTm9uZQ0KUmlza3MgdG8gb3RoZXJzCU5vbmUNClNvY2lhbCBjb250ZXh0DQoNCkhvdXNlaG9sZCBjb21wb3NpdGlvbglMaXZlcyB3aXRoIHdpZmUNCkxpdmVzIGFsb25lCU5vDQpPY2N1cGF0aW9uYWwgaGlzdG9yeQlSZXRpcmVkDQpTcGVjaWFsIHJlcXVpcmVtZW50cw0KDQpTcGVjaWFsIHJlcXVpcmVtZW50cwlIb3NwaXRhbCBuZWVkcyB0byBhcnJhbmdlIGZvciB0cmFuc3BvcnRhdGlvbiB0byB0aGUgcGF0aWVudCdzIGhvbWUsIGFuZCBpbmZvcm0gc29jaWFsIHNlcnZpY2VzIHRoYXQgdGhlIHBhdGllbnQgbmVlZHMgYSBjYXJlci4NClJlY2lwaWVudChzKQ0KDQpSZWNpcGllbnQgbmFtZQkJSm9iIHJvbGUJCQlQaG9uZQ0KR3VsbGl2ZXIsIExldGljaWEgKE1zKQlTb2NpYWwgV29ya2VyCQkJMDE5MTIyMzM0NA0KTG9yZW56bywgSm9obiAoRHIpCUdlbmVyYWwgTWVkaWNhbCBQcmFjdGl0aW9uZXIJMDE2MzQxMTEyMjI="/>
+			</Binary>
 		</resource>
 	</entry>
 </Bundle>

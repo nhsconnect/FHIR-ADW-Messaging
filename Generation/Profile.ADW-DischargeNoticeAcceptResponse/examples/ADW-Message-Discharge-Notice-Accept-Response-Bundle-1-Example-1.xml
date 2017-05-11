@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Bundle xml example-->
+<!--Discharge Notice accept response-->
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="b574fc18-5af6-11e6-8b77-86f30ca893d3"/>
 	<meta>
@@ -7,13 +7,14 @@
 	</meta>
 	<type value="message"/>
 	<entry>
+		<fullUrl value="urn:uuid:19db5f65-1bad-4ce1-be05-92ff79ab1c8f"/>
 		<resource>
 			<MessageHeader>
 				<id value="19db5f65-1bad-4ce1-be05-92ff79ab1c8f"/>
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-notice-accept-response-message-header-1"/>
 				</meta>
-				<timestamp value="2016-07-25T13:30:00+00:00"/>
+				<timestamp value="2017-05-04T15:13:18+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/adw-message-event-1"/>
 					<code value="975821000000109"/>
@@ -33,15 +34,15 @@
 				</destination>
 				<author>
 					<!-- The local authority social worker -->
-					<reference value="Practitioner/6babc18b-9f20-4fb1-ba0d-d4e3ae2c7cc7">
-					</reference>
+					<reference value="urn:uuid:6babc18b-9f20-4fb1-ba0d-d4e3ae2c7cc7"/>
+				
 				</author>
 				<receiver>
 					<!-- The hospital liaison -->
-					<reference value="Practitioner/49edc68d-cb09-49c9-8edf-285e931042ce"/>
+					<reference value="urn:uuid:49edc68d-cb09-49c9-8edf-285e931042ce"/>
 				</receiver>
 				<responsible>
-					<reference value="Organization/dafc0a1e-e120-4ba7-b638-0ce50a018146"/>
+					<reference value="urn:uuid:dafc0a1e-e120-4ba7-b638-0ce50a018146"/>
 				</responsible>
 				<reason>
 					<coding>
@@ -52,12 +53,13 @@
 					<text value="Patient from Leeds."/>
 				</reason>
 				<data>
-					<reference value="ReferralRequest/076a300f-5234-4309-95eb-9a64714bbb06"/>
+					<reference value="urn:uuid:076a300f-5234-4309-95eb-9a64714bbb06"/>
 				</data>
 			</MessageHeader>
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:076a300f-5234-4309-95eb-9a64714bbb06"/>
 		<resource>
 			<ReferralRequest>
 				<id value="076a300f-5234-4309-95eb-9a64714bbb06"/>
@@ -71,24 +73,25 @@
 					<!--The value of this identifier will be the same across all referrals to tie all these together-->
 				</identifier>
 				<patient>
-					<reference value="Patient/08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
+					<reference value="urn:uuid:08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
 				</patient>
 				<!-- Hospital Liaison, a hospital Discharge Co-ordinator -->
 				<requester>
-					<reference value="Practitioner/49edc68d-cb09-49c9-8edf-285e931042ce">
+					<reference value="urn:uuid:49edc68d-cb09-49c9-8edf-285e931042ce">
 					</reference>
 				</requester>
 				<!-- Local Authority Social Services' Team -->
 				<recipient>
-					<reference value="Organization/41e0fd49-d1e5-422a-b9ba-643e00a541a4"/>
+					<reference value="urn:uuid:41e0fd49-d1e5-422a-b9ba-643e00a541a4"/>
 				</recipient>
 				<encounter>
-					<reference value="Encounter/2a1def1b-497a-4621-9397-87754a63e4e5"/>
+					<reference value="urn:uuid:2a1def1b-497a-4621-9397-87754a63e4e5"/>
 				</encounter>
 			</ReferralRequest>
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
 		<resource>
 			<Patient>
 				<id value="08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
@@ -98,6 +101,15 @@
 				</meta>
 				<!--Primary patient identifier-->
 				<identifier>
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1"/>
+								<code value="01"/>
+								<display value="Number present and verified"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
 					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
 					<value value="9413946000"/>
 				</identifier>
@@ -106,7 +118,7 @@
 					<value value="A1234521"/>
 					<assigner>
 						<!-- This can be a reference to the profile elsewhere in the message or just text -->
-						<reference value="Organization/148eaefb-6dd0-4848-b13d-317bee9f308f"/>
+						<reference value="urn:uuid:148eaefb-6dd0-4848-b13d-317bee9f308f"/>
 					</assigner>
 				</identifier>
 				<name>
@@ -120,6 +132,7 @@
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:49edc68d-cb09-49c9-8edf-285e931042ce"/>
 		<resource>
 			<Practitioner>
 				<id value="49edc68d-cb09-49c9-8edf-285e931042ce"/>
@@ -141,22 +154,23 @@
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>
-						<reference value="Organization/148eaefb-6dd0-4848-b13d-317bee9f308f"/>
+						<reference value="urn:uuid:148eaefb-6dd0-4848-b13d-317bee9f308f"/>
 					</managingOrganization>
 					<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
-					<role>
+					<specialty>
 						<coding>
 							<system value="https://fhir.nhs.uk/job-role-name-1"/>
 							<code value="NR2060"/>
 							<display value="Discharge coordinator"/>
 						</coding>
 						<text value="Hospital Liaison"/>
-					</role>
+					</specialty>
 				</practitionerRole>
 			</Practitioner>
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:6babc18b-9f20-4fb1-ba0d-d4e3ae2c7cc7"/>
 		<resource>
 			<Practitioner>
 				<id value="6babc18b-9f20-4fb1-ba0d-d4e3ae2c7cc7"/>
@@ -178,21 +192,22 @@
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>
-						<reference value="Organization/41e0fd49-d1e5-422a-b9ba-643e00a541a4"/>
+						<reference value="urn:uuid:41e0fd49-d1e5-422a-b9ba-643e00a541a4"/>
 					</managingOrganization>
-					<role>
+					<specialty>
 						<coding>
 							<system value="https://fhir.nhs.uk/job-role-name-1"/>
 							<code value="NR1340"/>
 							<display value="Approved Social Worker"/>
 						</coding>
-						<text value="Local Authority Contact (Social Worker)"/>
-					</role>
+						<text value="Local Authority Contact"/>
+					</specialty>
 				</practitionerRole>
 			</Practitioner>
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:148eaefb-6dd0-4848-b13d-317bee9f308f"/>
 		<resource>
 			<Organization>
 				<id value="148eaefb-6dd0-4848-b13d-317bee9f308f"/>
@@ -219,6 +234,7 @@
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:dafc0a1e-e120-4ba7-b638-0ce50a018146"/>
 		<resource>
 			<Organization>
 				<id value="dafc0a1e-e120-4ba7-b638-0ce50a018146"/>
@@ -245,6 +261,7 @@
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:41e0fd49-d1e5-422a-b9ba-643e00a541a4"/>
 		<resource>
 			<Organization>
 				<id value="41e0fd49-d1e5-422a-b9ba-643e00a541a4"/>
@@ -263,12 +280,13 @@
 				</type>
 				<name value="Hebburn Social Services' Community Team"/>
 				<partOf>
-					<reference value="Organization/dafc0a1e-e120-4ba7-b638-0ce50a018146"/>
+					<reference value="urn:uuid:dafc0a1e-e120-4ba7-b638-0ce50a018146"/>
 				</partOf>
 			</Organization>
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:2a1def1b-497a-4621-9397-87754a63e4e5"/>
 		<resource>
 			<Encounter>
 				<id value="2a1def1b-497a-4621-9397-87754a63e4e5"/>
@@ -276,26 +294,27 @@
 					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 				</meta>
 				<identifier>
-					<system value="urn:ietf:rfc:3986"/>
+					<system value="https://fhir.nhs.uk/encounter-id"/>
 					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
 				</identifier>
 				<status value="in-progress"/>
 				<class value="inpatient"/>
 				<patient>
-					<reference value="Patient/08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
+					<reference value="urn:uuid:08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
 				</patient>
 				<location>
 					<location>
-						<reference value="Location/a33f0b53-41a7-4cb6-9dc5-5fac6bee084c"/>
+						<reference value="urn:uuid:a33f0b53-41a7-4cb6-9dc5-5fac6bee084c"/>
 					</location>
 				</location>
 				<serviceProvider>
-					<reference value="Organization/148eaefb-6dd0-4848-b13d-317bee9f308f"/>
+					<reference value="urn:uuid:148eaefb-6dd0-4848-b13d-317bee9f308f"/>
 				</serviceProvider>
 			</Encounter>
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:a33f0b53-41a7-4cb6-9dc5-5fac6bee084c"/>
 		<resource>
 			<Location>
 				<id value="a33f0b53-41a7-4cb6-9dc5-5fac6bee084c"/>
@@ -305,7 +324,7 @@
 				</meta>
 				<name value="Collier Ward"/>
 				<managingOrganization>
-					<reference value="Organization/148eaefb-6dd0-4848-b13d-317bee9f308f"/>
+					<reference value="urn:uuid:148eaefb-6dd0-4848-b13d-317bee9f308f"/>
 				</managingOrganization>
 			</Location>
 		</resource>
