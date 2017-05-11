@@ -3,7 +3,6 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 
 - ADW-AssessmentNoticeRejectResponse-Message-Header-1 [ADW-AssessmentNoticeRejectResponse-Message-Header-1]
 - ADW-ReferralRequest-Rejected-1 [ADW-ReferralRequest-Rejected-1]
-- CareConnect-ADW-Encounter-1 [CareConnect-ADW-Encounter-1]
 - Careconnect-Patient-1 [CareConnect-Patient-1]
 - Careconnect-Practitioner-1 [CareConnect-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
@@ -67,7 +66,7 @@ Note: Only the ADW data set fields are supported by the National Adapter and the
 [careconnect-patient-1]: careconnect-patient-1.html
 [careconnect-practitioner-1]: careconnect-practitioner-1.html
 [CareConnect-Organization-1]: CareConnect-Organization-1.html
-[CareConnect-ADW-Encounter-1]: adw-response-encounter-1.html
+[CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [CareConnect-Organization-1]: CareConnect-Organization-1.html
 [careconnect-location-1]: careconnect-location-1.html
 

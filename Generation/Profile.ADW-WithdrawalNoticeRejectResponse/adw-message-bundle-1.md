@@ -74,7 +74,7 @@ Optional data in FHIR messages that are "passed through" the adapter will not be
 [careconnect-patient-1]: careconnect-patient-1.html
 [careconnect-practitioner-1]: careconnect-practitioner-1.html
 [CareConnect-Organization-1]: CareConnect-Organization-1.html
-[CareConnect-ADW-Encounter-1]: adw-response-encounter-1.html
+[CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [CareConnect-Organization-1]: CareConnect-Organization-1.html
 [careconnect-location-1]: careconnect-location-1.html
 

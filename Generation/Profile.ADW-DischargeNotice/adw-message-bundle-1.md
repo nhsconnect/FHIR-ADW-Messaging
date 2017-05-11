@@ -3,7 +3,7 @@ The Discharge Notice ADW-Message-Bundle-1 bundle resource profile is used in the
 
 - ADW-DischargeNotice-Message-Header-1 [ADW-DischargeNotice-Message-Header-1]
 - ADW-DischargeReferralRequest-1 [ADW-DischargeReferralRequest-1]
-- ADW-Discharge-Encounter-1 [ADW-Discharge-Encounter-1]
+- CareConnect-ADW-Encounter-1 [CareConnect-ADW-Encounter-1]
 - Careconnect-Patient-1 [CareConnect-Patient-1]
 - Careconnect-Practitioner-1 [CareConnect-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
@@ -22,10 +22,7 @@ Note: Only the ADW data set fields are supported by the National Adapter and the
 
 ----------
 
-[ADW-Message-DischargeNotice-1-Ex01.xml]: ../Examples/Profile.ADW-DischargeNotice/ADW-Message-DischargeNotice-1-Ex01.xml
-
-[ADW-Message-DischargeNotice-1-Ex02.txt]: ../Examples/Profile.ADW-DischargeNotice/ADW-Message-Discharge-Notice-Bundle-1-Example-2.txt
-
+[ADW-Message-DischargeNotice-1-Ex02.txt]: ../Chapter.5.Examples/ADW-Message-Discharge-Notice-Bundle-1-Example-2.txt
 
 ###  ADW Data set Mapping for ADW Discharge Notice message bundle. ###
 
@@ -103,10 +100,10 @@ The diagram shows the referencing for a typical Discharge Notice message. It is 
 [ADW-DischargeReferralRequest-1]: adw-discharge-referral-request-1.html
 [careconnect-patient-1]: careconnect-patient-1.html
 [careconnect-practitioner-1]: careconnect-practitioner-1.html
-[ADW-Lead-Clinician-Practitioner-1]: adw-lead-clinician-practitioner-1.html
+[ADW-Lead-Clinician-Practitioner-1]: careconnect-practitioner-1.html
 [CareConnect-Organization-1]: CareConnect-Organization-1.html
 [ADW-DischargeQuestionnaireResponse-1]: adw-discharge-questionnaire-response-1.html
-[ADW-Discharge-Encounter-1]: adw-discharge-encounter-1.html
+[CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [CareConnect-Organization-1]: CareConnect-Organization-1.html
 [careconnect-location-1]: careconnect-location-1.html
 [ADW-Discharge-Composition-1]: adw-discharge-composition-1.html
@@ -128,12 +125,12 @@ The diagram shows the referencing for a typical Discharge Notice message. It is 
 [Organization.identifier (Organization Site Code)]: CareConnect-Organization-1-dict.html#Organization.Organization%20Site%20Code
 [Organization.name (Hospital/Local Authority)]: CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
 [Location.name (Ward)]: careconnect-location-1-dict.html#Location.Ward%20name
-[Discharge Encounter.period.end (Inpatient Stay Period)]: adw-discharge-encounter-1-dict.html#Encounter.period.end
-[Discharge Encounter.period.end (Inpatient Stay Period]: adw-discharge-encounter-1-dict.html#Encounter.period.end
+[Discharge Encounter.period.end (Inpatient Stay Period)]: careconnect-adw-encounter-1-dict.html#Encounter.period.end
+[Discharge Encounter.period.end (Inpatient Stay Period]: careconnect-adw-encounter-1-dict.html#Encounter.period.end
 [group.question.answer.value (Patient Consulted)]: adw-discharge-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consultation
 [group.question.answer.value (Carer Consulted)]: adw-discharge-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Carer%20Consultation
-[Lead Clinician.name.family (Family Name)]: adw-lead-clinician-practitioner-1-dict.html#Practitioner.name.Family%20name 
-[Lead Clinician.name.given (First Given Name)]: adw-lead-clinician-practitioner-1-dict.html#Practitioner.name.First%20given%20name
+[Lead Clinician.name.family (Family Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name 
+[Lead Clinician.name.given (First Given Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
 [Practitioner.name.family (Family Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name
 [Practitioner.name.given (First Given Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
 [Practitioner.telecom.value (Hospital Liaison Email)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string

@@ -4,7 +4,7 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 - ADW-AssessmentNotice-Message-Header-1 [ADW-AssessmentNotice-Message-Header-1] 
 - ADW-Referral-Request-1 [ADW-Referral-Request-1]
 - CareConnect-ADW-Encounter-1 [CareConnect-ADW-Encounter-1]
-- CareConnect-ADW-Condition-1 [CareConnect-ADW-Condition-1]
+- ADW-Condition-1 [ADW-Condition-1]
 - Careconnect-Patient-1 [CareConnect-Patient-1]
 - Careconnect-Practitioner-1 [CareConnect-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
@@ -109,11 +109,11 @@ Note: Only the ADW data set fields are supported by the National Adapter and the
 [CareConnect-Patient-1]: careconnect-patient-1.html
 [CareConnect-Practitioner-1]: careconnect-practitioner-1.html
 [CareConnect-Organization-1]: CareConnect-Organization-1.html
-[CareConnect-ADW-Encounter-1]: CareConnect-ADW-Encounter-1.html
+[CareConnect-ADW-Encounter-1]: careconnect-ADW-Encounter-1.html
 [ADW-QuestionnaireResponse-1]: adw-questionnaire-response-1.html
 [ADW-Composition-1]: adw-composition-1.html
 [CareConnect-Location-1]: careconnect-location-1.html
-[CareConnect-ADW-Condition-1]: CareConnect-ADW-Condition-1.html
+[ADW-Condition-1]: ADW-Condition-1.html
 
 
 
@@ -139,7 +139,7 @@ Note: Only the ADW data set fields are supported by the National Adapter and the
 [Location.name (Ward)]: careconnect-location-1-dict.html#Location.Ward%20name
 [Encounter.period.start (Inpatient Stay Period)]: CareConnect-ADW-Encounter-1-dict.html#Encounter.period.start
 [Encounter.period.end (Inpatient Stay Period)]: CareConnect-ADW-Encounter-1-dict.html#Encounter.period.end
-[Condition.code.text]: careconnect-adw-condition-1-dict.html#Condition.code.text
+[Condition.code.text]: adw-condition-1-dict.html#Condition.code.text
 [Encounter.priority (Admission priority)]: CareConnect-ADW-Encounter-1-dict.html#Encounter.Admission%20priority
 [Lead Clinician.name.family (Family Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name 
 [Lead Clinician.name.given (First Given Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name

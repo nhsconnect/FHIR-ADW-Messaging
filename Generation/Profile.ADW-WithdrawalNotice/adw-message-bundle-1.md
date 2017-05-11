@@ -3,7 +3,7 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 
 - ADW-WithdrawalNotice-Message-Header-1 [ADW-WithdrawalNotice-Message-Header-1]
 - ADW-ReferralRequest-Cancelled-1 [ADW-ReferralRequest-Cancelled-1]
-- ADW-Withdrawal-Encounter-1 [ADW-Withdrawal-Encounter-1]
+- CareConnect-ADW-Encounter-1 [CareConnect-ADW-Encounter-1]
 - Careconnect-Patient-1 [CareConnect-Patient-1]
 - Careconnect-Practitioner-1 [CareConnect-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
@@ -15,8 +15,6 @@ Note: Only the ADW data set fields are supported by the National Adapter and the
 Optional data in FHIR messages that are "passed through" the adapter will not be removed.
 
 ----------
-
-[ADW-Message-WithdrawalNotice-1-Ex01.xml]: ../Examples/Profile.ADW-WithdrawalNotice/ADW-Message-WithdrawalNotice-1-Ex01.xml
 
 [ADW-Message-WithdrawalNotice-1-Ex02]: ../Examples/Profile.ADW-WithdrawalNotice/ADW-Message-WithdrawalNotice-1-Ex02.xml
 
@@ -77,9 +75,9 @@ Optional data in FHIR messages that are "passed through" the adapter will not be
 [ADW-ReferralRequest-Cancelled-1]: adw-referral-request-cancelled-1.html
 [careconnect-patient-1]: careconnect-patient-1.html
 [careconnect-practitioner-1]: careconnect-practitioner-1.html
-[ADW-Lead-Clinician-Practitioner-1]: adw-lead-clinician-practitioner-1.html
+[ADW-Lead-Clinician-Practitioner-1]: careconnect-practitioner-1.html
 [CareConnect-Organization-1]: CareConnect-Organization-1.html
-[ADW-Withdrawal-Encounter-1]: adw-withdrawal-encounter-1.html
+[CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [CareConnect-Organization-1]: CareConnect-Organization-1.html
 [careconnect-location-1]: careconnect-location-1.html
 
@@ -102,8 +100,8 @@ Optional data in FHIR messages that are "passed through" the adapter will not be
 [MessageHeader.event.code(Withdrawal Notice Type)]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.event.Withdrawal%20Notice%20Type
 [MessageHeader.reason.coding.display]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.reason.coding.display
 [MessageHeader.reason.text (Other Reason for Withdrawal)]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.reason.Other%20Reason%20for%20Withdrawal
-[Lead Clinician.name.family (Family Name)]: adw-lead-clinician-practitioner-1-dict.html#Practitioner.name.Family%20name 
-[Lead Clinician.name.given (First Given Name)]: adw-lead-clinician-practitioner-1-dict.html#Practitioner.name.First%20given%20name
+[Lead Clinician.name.family (Family Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name 
+[Lead Clinician.name.given (First Given Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
 [Practitioner.name.family (Family Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name
 [Practitioner.name.given (First Given Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
 [Practitioner.telecom.value (Hospital Liaison Email)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string
