@@ -14,9 +14,9 @@ The FHIR resource profiles within this DMS have been created to support the Asse
 
 ## Document Reference ##
 
-The current version of this DMS does not include the ability to transfer documents within the message construct. Should this functionality be required, the COFE-DocumentReference-1 DMS can be utilised. This provides the facility to encode any document type within the message stream.
+This specification allows the inclusion of documents which are non-FHIR based (for example .pdf) within the message bundle. Should this functionality be required, the [COFE-DocumentReference-1] specification should be consulted for guidance on how to create an embedded document in a standard format. The COFE-DocumentReference specification details the document header and binary attachment structure and provides a common approach for embedded documents for NHS Digital message flows.
 
-For more information about this DMS can be found here: [COFE-DocumentReference-1](https://nhsconnect.github.io/NHS-FHIR-CDA-DOCREF/Generated/Chapter.1.About/index.html)
+[COFE-DocumentReference-1]:(https://nhsconnect.github.io/NHS-FHIR-CDA-DOCREF/Generated/Chapter.1.About/index.html)
 
 **Further Information**
 
