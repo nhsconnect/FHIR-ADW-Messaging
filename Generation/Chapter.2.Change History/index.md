@@ -5,40 +5,17 @@
  - The following ADW profiles have been replaced by CareConnect standard profiles:-
  - ADW-Social-Services-Team-Organization-1-0 and ADW-Organization-1-0 profiles replaced by CareConnect-Organization-1 for all messages.
  - ADW-Lead-Clinician-Practitioner-1-0 and ADW-Practitioner-1-0 replaced by CareConnect-Practitioner-1 across the DMS.
- - CareConnect-ADW-Encounter-1 `encounter.priority` system updated with http://hl7.org/fhir/v3/ActPriority. Previous system of http://hl7.org/fhir/ValueSet/encounter-priority does not exist. 
- - ADW-Message-Bundle updated. `Bundle.entry` uses a generic standard used within NHS Digital DMS bundles.
- - Bundle examples modified to reflect changes identified in RC5 and BETA 1 releases. 
+ - ADW-Encounter-1-0 replaced by CareConnect-ADW-Encounter-1.
+ - Constrained CareConnect standard profile for Encounter to CareConnect-ADW profile to reflect ADW business requirements.
+ - ADW-Location-1-0 replaced by CareConnect-Location-1.
+ - ADW-Message-Bundles updated in line with above profile changes. Bundle.entry uses a generic standard used within NHS Digital bundles.
+ - Bundle examples modified to reflect changes identified in Beta-1 release.
+ - Removed individual profile xml examples as these are represented within the standard bundles.
+ - Inserted xml in bundle ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml to represent a DocumentReference resource and a binary resource suitable for use, if a .pdf attachment is sent in a message communication.  
  - Re-ordered profiles.
  - All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk for standard CareConnect profiles. 
- - ValueSet string removed for all system urls for valuesets when the url appears as data in the coding.system element.
- - All system urls for valuesets containing the string http://hl7.org/fhir/ValueSet have this string replaced by http://hl7.org/fhir when the url appears as data in the coding.system element.
- - Changed versioning for all profiles and valuesets from 1 to 1.
- - Constrained CareConnect standard profiles for Condition and Encounter to CareConnect-ADW profiles to reflect ADW business requirements.
- - Inserted CareConnect standard profiles as replacements for ADW Patient, Location, Organization and Practitioner. The impact on instances is as follows:-
- - **CareConnect-Patient-1**
- - All labels for elements removed.
- - Patient.identifier slice NHS number renamed to Identifier # 1 [nhsNumber]
- - Identifier slice Identifier # 1 [nhsNumber].use element removed. 
- - Identifier slice Identifier # 1 [nhsNumber].type element removed. 
- - Patient.type (NHS Number Status indicator) changed to extension nhsNumberVerificationStatus in Identifier slice Identifier # 1 [nhsNumber].
- - Patient.identifier slice Hospital Patient Identifier renamed to Identifier slice identifier#2 [other] and fixed value in its system element removed.
- - Patient.name element is sliced into two slices, name # 1 [usual] and name # 2 [other].
- - Patient.name slice name # 1 [usual] has mandatory element name.use 1..1 with fixed value "usual" and fixed valueset NameUse.
- - Patient.telecom element is no longer sliced.
- - Patient.gender valueset renamed from ADW-Person-Stated-Gender-1 to CareConnect-AdministrativeGender-1.
- - Patient.contact.relationship valueset changed to CareConnect-PersonRelationshipType-1.
- - Patient.contact.relationship.coding.system has fixed value removed.
- - Patient.contact.relationship.coding.userSelected element removed.
- - Patient.contact.relationship.text element removed.
- - Patient.contact.name changed to mandatory element 1..1.
- - Patient.contact.name.use changed to mandatory element 1..1 with fixed value "usual".
- - Patient.contact.name.period element removed.
- - Patient.contact.name.period.start element removed.
- - Patient.contact.name.period.end element removed.
- - Patient.contact.telecom is not sliced.
- - Patient.contact.telecom.rank element removed.
- - Patient.careProvider reference changed to CareConnect-Organization-1 or CareConnect-Organization-1.
- - Patient.communication element removed and replaced by nhsCommunication extension  
+ - ValueSet string removed for all system urls for valuesets when the url appears as data in their respective coding.system element.
+ - Changed versioning for all profiles and valuesets from 1-0 to 1.  
  
 ### Version: 1.0: Status: RC4 ###
  - Changed values in adw-person-stated-gender-1 name and description elements to reflect those in the FHIR valueset at http://hl7.org/fhir/valueset-administrative-gender.html (AdministrativeGender).
