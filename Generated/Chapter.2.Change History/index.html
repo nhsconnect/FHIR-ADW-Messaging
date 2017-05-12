@@ -141,47 +141,22 @@
 							
 									<div class="panel panel - default">
 											<h1>Change History</h1>
-<h3>Version 1.0: Status: BETA 1</h3>
+<h3>Version 1.0.0-beta.1</h3>
 <ul>
-<li>ADW-Social-Services-Team-Organization-1-0 profile replaced with CareConnect-Organization-1 across the DMS.</li>
-<li>ADW-Lead-Clinician-Practitioner-1-0 with CareConnect-Practitioner-1 across the DMS.</li>
-<li>CareConnect-ADW-Encounter-1 <code>encounter.priority</code> system updated with http://hl7.org/fhir/v3/ActPriority. Previous system of http://hl7.org/fhir/ValueSet/encounter-priority does not exist. </li>
-<li>ADW-Message-Bundle updated. <code>Bundle.entry</code> uses a generic standard used within NHS Digital DMS bundles.</li>
-<li>Bundle examples modified to reflect changes identified in RC5 and BETA 1 releases. </li>
+<li>The following ADW profiles have been replaced by CareConnect standard profiles:-</li>
+<li>ADW-Social-Services-Team-Organization-1-0 and ADW-Organization-1-0 profiles replaced by CareConnect-Organization-1 for all messages.</li>
+<li>ADW-Lead-Clinician-Practitioner-1-0 and ADW-Practitioner-1-0 replaced by CareConnect-Practitioner-1 across the DMS.</li>
+<li>ADW-Encounter-1-0 replaced by CareConnect-ADW-Encounter-1.</li>
+<li>Constrained CareConnect standard profile for Encounter to CareConnect-ADW profile to reflect ADW business requirements.</li>
+<li>ADW-Location-1-0 replaced by CareConnect-Location-1.</li>
+<li>ADW-Message-Bundles updated in line with above profile changes. Bundle.entry uses a generic standard used within NHS Digital bundles.</li>
+<li>Bundle examples modified to reflect changes identified in Beta-1 release.</li>
+<li>Removed individual profile xml examples as these are represented within the standard bundles.</li>
+<li>Inserted xml in bundle ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml to represent a DocumentReference resource and a binary resource suitable for use, if a .pdf attachment is sent in a message communication.  </li>
 <li>Re-ordered profiles.</li>
-</ul>
-<h3>Version: 1.0: Status: RC5</h3>
-<ul>
 <li>All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk for standard CareConnect profiles. </li>
-<li>All system urls for valuesets containing the string http://fhir.nhs.net/Valueset have this string replaced by https://fhir.nhs.uk when the url appears as data in the coding.system element.</li>
-<li>All system urls for valuesets containing the string http://hl7.org/fhir/ValueSet have this string replaced by http://hl7.org/fhir when the url appears as data in the coding.system element.</li>
-<li>Changed versioning for all profiles and valuesets from 1 to 1.</li>
-<li>Constrained CareConnect standard profiles for Condition and Encounter to CareConnect-ADW profiles to reflect ADW business requirements.</li>
-<li>Inserted CareConnect standard profiles as replacements for ADW Patient, Location, Organization and Practitioner. The impact on instances is as follows:-</li>
-<li><strong>CareConnect-Patient-1</strong></li>
-<li>All labels for elements removed.</li>
-<li>Patient.identifier slice NHS number renamed to Identifier # 1 [nhsNumber]</li>
-<li>Identifier slice Identifier # 1 [nhsNumber].use element removed. </li>
-<li>Identifier slice Identifier # 1 [nhsNumber].type element removed. </li>
-<li>Patient.type (NHS Number Status indicator) changed to extension nhsNumberVerificationStatus in Identifier slice Identifier # 1 [nhsNumber].</li>
-<li>Patient.identifier slice Hospital Patient Identifier renamed to Identifier slice identifier#2 [other] and fixed value in its system element removed.</li>
-<li>Patient.name element is sliced into two slices, name # 1 [usual] and name # 2 [other].</li>
-<li>Patient.name slice name # 1 [usual] has mandatory element name.use 1..1 with fixed value &quot;usual&quot; and fixed valueset NameUse.</li>
-<li>Patient.telecom element is no longer sliced.</li>
-<li>Patient.gender valueset renamed from ADW-Person-Stated-Gender-1 to CareConnect-AdministrativeGender-1.</li>
-<li>Patient.contact.relationship valueset changed to CareConnect-PersonRelationshipType-1.</li>
-<li>Patient.contact.relationship.coding.system has fixed value removed.</li>
-<li>Patient.contact.relationship.coding.userSelected element removed.</li>
-<li>Patient.contact.relationship.text element removed.</li>
-<li>Patient.contact.name changed to mandatory element 1..1.</li>
-<li>Patient.contact.name.use changed to mandatory element 1..1 with fixed value &quot;usual&quot;.</li>
-<li>Patient.contact.name.period element removed.</li>
-<li>Patient.contact.name.period.start element removed.</li>
-<li>Patient.contact.name.period.end element removed.</li>
-<li>Patient.contact.telecom is not sliced.</li>
-<li>Patient.contact.telecom.rank element removed.</li>
-<li>Patient.careProvider reference changed to CareConnect-Organization-1 or CareConnect-Organization-1.</li>
-<li>Patient.communication element removed and replaced by nhsCommunication extension  </li>
+<li>ValueSet string removed for all system urls for valuesets when the url appears as data in their respective coding.system element.</li>
+<li>Changed versioning for all profiles and valuesets from 1-0 to 1.  </li>
 </ul>
 <h3>Version: 1.0: Status: RC4</h3>
 <ul>
@@ -284,7 +259,7 @@
 <li>Removed Local Authority Social Worker (Practitioner) from all Notice bundle examples.</li>
 <li>Removed ServiceProvider element from all Encounter profiles in the minimum dataset bundle examples.</li>
 <li>Amended Local Authority Social Services department organisation in bundle xml examples to show a Local Authority rather than a Local Authority Social Services' department to reflect Information Standard requirements more accurately.</li>
-<li>Amended typo in all MessageHeaders.destination elements to adjust the label to (Local Authority Receiving System) rather than (Local Authority Receving System).</li>
+<li>Amended typo in all MessageHeaders.destination elements to adjust the label to (Local Authority Receiving System) rather than (Local Authority Receiving System).</li>
 <li>Amended slices for telecom elements in Patient and Practitioner-based profiles to Closed to reflect specification.</li>
 <li>Amended ADW-Lead-Clinician-Practitioner-1.identifier (SDS Identifier) cardinality to 0..1.</li>
 <li>Amended cardinality of careconnect-patient-1.identifier to 1..2 to reflect specification.</li>
