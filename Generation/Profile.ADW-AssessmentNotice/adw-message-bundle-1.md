@@ -15,15 +15,15 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 
 ----------
 
-The following example contains a composition resource and has been a .txt extension only to allow correct viewing within a web browser, xml copies are available within the examples folder within this specification.
+The following example has been saved as a .txt file only to allow correct viewing within a web browser; xml copies are available in the examples folder within this specification.
  
-Example of the Assessment Notice Bundle with ADW Data set fields + optional FHIR elements populated [ADW-Message-AssessmentNotice-1-Ex02.txt] 
+Example of the Assessment Notice Bundle for viewing in a web browser [ADW-Message-Assessment-Notice-Bundle-1-Example-2.txt] 
 
 Note: Only the ADW data set fields are supported by the National Adapter and therefore optional data will not be retained within transformed messages. Optional data in FHIR messages that are "passed through" the adapter will not be removed.  
 
 ----------
 
-[ADW-Message-AssessmentNotice-1-Ex02.txt]: ../Chapter.5.Examples/ADW-Message-AssessmentNotice-1-Ex02.txt
+[ADW-Message-Assessment-Notice-Bundle-1-Example-2.txt]: ../Chapter.5.Examples/ADW-Message-Assessment-Notice-Bundle-1-Example-2.txt
 
 
 ###  ADW Data set Mapping for ADW Assessment Notice message bundle. ###
