@@ -19,7 +19,7 @@ The following example has been saved as a .txt file only to allow correct viewin
  
 Example of the Assessment Notice Bundle for viewing in a web browser [ADW-Message-Assessment-Notice-Bundle-1-Example-2.txt] 
 
-Note: Only the ADW data set fields are supported by the National Adapter and therefore optional data will not be retained within transformed messages. Optional data in FHIR messages that are "passed through" the adapter will not be removed.  
+ 
 
 ----------
 

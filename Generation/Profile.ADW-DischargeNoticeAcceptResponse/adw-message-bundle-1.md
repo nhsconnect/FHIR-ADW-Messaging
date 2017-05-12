@@ -11,10 +11,6 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 
 ----------
 
-Note: Only the ADW data set fields are supported by the National Adapter and therefore optional data will not be retained within transformed messages. 
-Optional data in FHIR messages that are "passed through" the adapter will not be removed.
-
-----------
 
 [ADW-Message-DischargeNoticeAcceptResponse-1-Ex01]: ../Examples/Profile.ADW-DischargeNoticeAcceptResponse/ADW-Message-DischargeNoticeAcceptResponse-1-Ex01.xml
 
