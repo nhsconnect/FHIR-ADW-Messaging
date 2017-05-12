@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ADW-Questionnaire-Response-1" />
   <meta>
@@ -6135,11 +6135,7 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <mustSupport value="true" />
-      <binding>
-        <strength value="example" />
-        <description value="Code indicating the response provided for a question." />
-      </binding>
-      <mapping>
+       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
