@@ -1,17 +1,16 @@
 # Change History #
 
-### Version 1.0: Status: BETA 1 ###
+### Version 1.0.0-beta.1 ###
 
- - ADW-Social-Services-Team-Organization-1-0 profile replaced with CareConnect-Organization-1 across the DMS.
- - ADW-Lead-Clinician-Practitioner-1-0 with CareConnect-Practitioner-1 across the DMS.
+ - The following ADW profiles have been replaced by CareConnect standard profiles:-
+ - ADW-Social-Services-Team-Organization-1-0 and ADW-Organization-1-0 profiles replaced by CareConnect-Organization-1 for all messages.
+ - ADW-Lead-Clinician-Practitioner-1-0 and ADW-Practitioner-1-0 replaced by CareConnect-Practitioner-1 across the DMS.
  - CareConnect-ADW-Encounter-1 `encounter.priority` system updated with http://hl7.org/fhir/v3/ActPriority. Previous system of http://hl7.org/fhir/ValueSet/encounter-priority does not exist. 
  - ADW-Message-Bundle updated. `Bundle.entry` uses a generic standard used within NHS Digital DMS bundles.
  - Bundle examples modified to reflect changes identified in RC5 and BETA 1 releases. 
  - Re-ordered profiles.
-
-### Version: 1.0: Status: RC5 ###
  - All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk for standard CareConnect profiles. 
- - All system urls for valuesets containing the string http://fhir.nhs.net/Valueset have this string replaced by https://fhir.nhs.uk when the url appears as data in the coding.system element.
+ - ValueSet string removed for all system urls for valuesets when the url appears as data in the coding.system element.
  - All system urls for valuesets containing the string http://hl7.org/fhir/ValueSet have this string replaced by http://hl7.org/fhir when the url appears as data in the coding.system element.
  - Changed versioning for all profiles and valuesets from 1 to 1.
  - Constrained CareConnect standard profiles for Condition and Encounter to CareConnect-ADW profiles to reflect ADW business requirements.
