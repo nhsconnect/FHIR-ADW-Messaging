@@ -12,7 +12,7 @@ The DMS currently covers the following information flow:
 
 - Transfers of care from hospital to social services for patients with care and support needs
 
-The requirements for this information flow are defined in the Care Act 2014. The Act describes a series of notices that must be sent from hospitals to adult social services to support the discharge of hospital patients who have care and support needs. The notices are defined as follows:
+The requirements for this information flow are defined in the regulations under the Care Act 2014. The Act describes a series of notices that must be sent from hospitals to adult social services to support the discharge of hospital patients who have care and support needs. The notices are defined as follows:
 
 - Assessment Notice
 
@@ -26,7 +26,7 @@ Following the issue of an Assessment Notice, a Discharge Notice is sent by the h
 
 This is used to withdraw a previously issued Assessment Notice and/or Discharge Notice. A Withdrawal Notice may be required to be issued for a number of reasons, for example because the patient's medical condition has changed or the patient is eligible for NHS Continuing Health Care.
 
-NHS Digital has developed an Information Standard [SCCI2075] that defines the minimum data sets that must be used for Assessment, Discharge and Withdrawal Notices, based on the requirements of the Care Act 2014. The Information Standard also defines a generic Notice Receipt data set that must be used to send an acknowledgement of a received notice from social services to the originating hospital. The data sets in the Information Standard have been used as the basis for the messages defined in this DMS.
+NHS Digital has developed an Information Standard [SCCI2075] that defines the minimum data sets that must be used for Assessment, Discharge and Withdrawal Notices, based on the regulations under the Care Act 2014. The Information Standard also defines a generic Notice Receipt data set that must be used to send an acknowledgement of a received notice from social services to the originating hospital. The data sets in the Information Standard have been used as the basis for the messages defined in this DMS.
 
  
 
