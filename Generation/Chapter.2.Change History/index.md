@@ -137,7 +137,7 @@
  - Removed Local Authority Social Worker (Practitioner) from all Notice bundle examples.
  - Removed ServiceProvider element from all Encounter profiles in the minimum dataset bundle examples.
  - Amended Local Authority Social Services department organisation in bundle xml examples to show a Local Authority rather than a Local Authority Social Services' department to reflect Information Standard requirements more accurately.
- - Amended typo in all MessageHeaders.destination elements to adjust the label to (Local Authority Receiving System) rather than (Local Authority Receving System).
+ - Amended typo in all MessageHeaders.destination elements to adjust the label to (Local Authority Receiving System) rather than (Local Authority Receiving System).
  - Amended slices for telecom elements in Patient and Practitioner-based profiles to Closed to reflect specification.
  - Amended ADW-Lead-Clinician-Practitioner-1.identifier (SDS Identifier) cardinality to 0..1.
  - Amended cardinality of careconnect-patient-1.identifier to 1..2 to reflect specification.
