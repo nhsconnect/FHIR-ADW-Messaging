@@ -7,7 +7,7 @@
 	<url value="https://fhir.nhs.uk/ValueSet/adw-admission-type-1"/>
 	<name value="ADW Admission Type"/>
 	<status value="active"/>
-	<publisher value="Health and Social Care Information Centre NHS Data Model and Dictionary"/>
+	<publisher value="NHS Digital NHS Data Model and Dictionary"/>
 	<contact>
 		<telecom>
 			<system value="email"/>

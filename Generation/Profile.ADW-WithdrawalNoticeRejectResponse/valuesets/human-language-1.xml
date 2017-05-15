@@ -9,11 +9,11 @@
 	<url value="https://fhir.nhs.uk/ValueSet/human-language-1"/>
 	<name value="Human Language"/>
 	<status value="active"/>
-<publisher value="Health and Social Care Information Centre NHS Data Model and Dictionary"/>
+<publisher value="NHS Digital NHS Data Model and Dictionary"/>
 	<contact>
 		<telecom>
 			<system value="email"/>
-			<value value="information.standards@hscic.gov.uk"/>
+			<value value="information.standards@nhs.net"/>
 			<use value="work"/>
 		</telecom>
 	</contact>
