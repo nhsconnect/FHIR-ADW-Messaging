@@ -1,6 +1,6 @@
 # Change History #
 
-### Version 1.0.0-beta.1 ###
+### Version 1.0.0-alpha.1 ###
 
  - The following ADW profiles have been replaced by CareConnect standard profiles:-
  - ADW-Social-Services-Team-Organization-1-0 and ADW-Organization-1-0 profiles replaced by CareConnect-Organization-1 for all messages.
@@ -15,7 +15,8 @@
  - Re-ordered profiles.
  - All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk for standard CareConnect profiles. 
  - ValueSet string removed for all system urls for valuesets when the url appears as data in their respective coding.system element.
- - Changed versioning for all profiles and valuesets from 1-0 to 1.  
+ - Changed versioning for all profiles and valuesets from 1-0 to 1.
+ - Adopted semantic versioning for the specification from http://semver.org/.  
  
 ### Version: 1.0: Status: RC4 ###
  - Changed values in adw-person-stated-gender-1 name and description elements to reflect those in the FHIR valueset at http://hl7.org/fhir/valueset-administrative-gender.html (AdministrativeGender).
