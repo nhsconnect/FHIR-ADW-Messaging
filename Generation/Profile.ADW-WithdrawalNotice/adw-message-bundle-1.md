@@ -19,32 +19,35 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 
 ----------
 
+Note that for some sliced elements and extensions within CareConnect profiles, it is not possible to link to the exact sliced element in this mapping table.
+
+
 | REQUIRED DATA FIELD                  | FHIR PROFILE ELEMENT                             |
 |--------------------------------------|--------------------------------------------------|
 | **Withdrawal Notice**                |                                                  |
 | Withdrawal Notice Issued Date        | [MessageHeader.timestamp (ADW Message Sent Time)]              |
 | **Patient Identifiers**              |                                                  |
-| Patient NHS Number                   | [Patient.identifier (NHS Number)]                          |
-| NHS Number Status Indicator          | [Patient.identifier.type (NHS Number Status Indicator)]                            |
-| Hospital Patient Identifier          | [Patient.identifier (Hospital Patient Identifier)]            |
+| Patient NHS Number                   | [Patient.identifier.value (NHS Number)]                          |
+| NHS Number Status Indicator          | [Patient.identifier.nhsNumberVerificationStatus]                            |
+| Hospital Patient Identifier          | [Patient.identifier (Local Identifier)]            |
 | **Patient Name**                     |                                                  |
-| Family Name                          | [Patient.name.family (Family Name)]                                     |
-| First Given Name                     | [Patient.name.given (First Given Name)]                                       |
+| Family Name                          | [Patient.name.family]                                     |
+| First Given Name                     | [Patient.name.given]                                       |
 | **Patient Birth Date**               |                                                  |
-| Patient Birth Date                   | [Patient.birthDate (Patient Birth Date)]                                      |
+| Patient Birth Date                   | [Patient.birthDate]                                      |
 | **Person Stated Gender**             |                                                  |
-| Patient Stated Gender                | [Patient.gender (Patient stated gender)]                                         |
+| Patient Stated Gender                | [Patient.gender]                                         |
 | **Patient Address**                  |                                                  |
 | Address Line 1                       | [Patient.address.line]                                   |
 | Address Line 2                       | [Patient.address.line]                                   |
 | Address Line 3                       | [Patient.address.line]                                   |
 | Address Line 4                       | [Patient.address.city]                                   |
-| Address Line 5                       | [Patient.address.district (County)]                                   |
+| Address Line 5                       | [Patient.address.district]                                   |
 | Postcode                             | [Patient.address.postalCode]                             |
 | **Hospital**                         |                                                  |
-| Organization Site Code               | [Organization.identifier (Organization Site Code)]             |
-| Hospital Name                        | [Organization.name (Hospital/Local Authority)]                                |
-| Ward Name                            | [Location.name (Ward)]                                     |
+| Organization Site Code               | [Organization.identifier.value (ODS Site Code)]             |
+| Hospital Name                        | [Organization.name]                                |
+| Ward Name                            | [Location.name]                                     |
 | **Withdrawal Type**                  |                                                  |
 | Withdrawal type                      | [MessageHeader.event.code(Withdrawal Notice Type)]                  |
 | **Reason for Withdrawal**            |                                                  |
@@ -52,18 +55,18 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 | **Reason For Withdrawal - Other**    |                                                  |
 | Reason For Withdrawal - Other        | [MessageHeader.reason.text (Other Reason for Withdrawal)]                           |
 | **Lead Clinician Name**              |                                                  |
-| Family Name                          | [Lead Clinician.name.family (Family Name)]                   |
-| First Given Name                     | [Lead Clinician.name.given (First Given Name)]                    |
+| Family Name                          | [Practitioner.name.family]                   |
+| First Given Name                     | [Practitioner.name.given]                    |
 | **Hospital Liaison Name**            |                                                  |
-| Family Name                          | [Practitioner.name.family (Family Name - Hospital Liaison)]                              |
-| First Given Name                     | [Practitioner.name.given (First Given Name - Hospital Liaison)]                              |
+| Family Name                          | [Practitioner.name.family]                              |
+| First Given Name                     | [Practitioner.name.given]                              |
 | **Hospital Liaison Contact Details** |                                                  |
-| Hospital Liaison Email Address       | [Practitioner.telecom.value (Hospital Liaison Email)]               |
-| Hospital Liaison Telephone Number    | [Practitioner.telecom.value (Hospital Liaison Telephone no.)]                                  |
+| Hospital Liaison Email Address       | [Practitioner.telecom.value]               |
+| Hospital Liaison Telephone Number    | [Practitioner.telecom.value]                                  |
 | **Local Authority**                  |                                                  |
-| Organization Site Code               | [Organization.identifier (Organization Site Code)]               |
-| Local Authority Name                 | [Organization.name (Hospital/Local Authority)]                         |
-| Social Services Team                 | [Organization.name (Social Services' team)] 
+| Organization Site Code               | [Organization.identifier.value (ODS Organisation Code)]               |
+| Local Authority Name                 | [Organization.name]                         |
+| Social Services Team                 | [Organization.name] 
 
 
 [ADW-WithdrawalNotice-Message-Header-1]: adw-withdrawal-notice-message-header-1.html
@@ -78,32 +81,32 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 
 
 [MessageHeader.timestamp (ADW Message Sent Time)]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.ADW%20Message%20Sent%20Time
-[Patient.identifier (NHS Number)]: careconnect-patient-1-dict.html#Patient.NHS%20Number
-[Patient.identifier.type (NHS Number Status Indicator)]: careconnect-patient-1-dict.html#Patient.identifier.NHS%20Number%20Status%20Indicator  
-[Patient.identifier (Hospital Patient Identifier)]: careconnect-patient-1-dict.html#Patient.Hospital%20Patient%20Identifier 
-[Patient.name.family (Family Name)]: careconnect-patient-1-dict.html#Patient.name.Family%20name
-[Patient.name.given (First Given Name)]: careconnect-patient-1-dict.html#Patient.name.First%20given%20name
-[Patient.birthDate (Patient Birth Date)]: careconnect-patient-1-dict.html#Patient.Patient%20Birth%20Date
-[Patient.gender (Patient stated gender)]: careconnect-patient-1-dict.html#Patient.Patient%20stated%20gender
+[Patient.identifier.value (NHS Number)]: careconnect-patient-1-dict.html#Patient.identifier.value
+[Patient.identifier.nhsNumberVerificationStatus]: extension-careconnect-nhsnumberverificationstatus-1-dict.html#Extension.valueCodeableConcept
+[Patient.identifier (Local Identifier)]: careconnect-patient-1-dict.html#Patient.identifier.value
+[Patient.name.family]: careconnect-patient-1-dict.html#Patient.name.family
+[Patient.name.given]: careconnect-patient-1-dict.html#Patient.name.given
+[Patient.birthDate]: careconnect-patient-1-dict.html#Patient.birthDate
+[Patient.gender]: careconnect-patient-1-dict.html#Patient.gender
 [Patient.address.line]: careconnect-patient-1-dict.html#Patient.address.line
 [Patient.address.city]: careconnect-patient-1-dict.html#Patient.address.city
-[Patient.address.district (County)]: careconnect-patient-1-dict.html#Patient.address.County
+[Patient.address.district]: careconnect-patient-1-dict.html#Patient.address.district
 [Patient.address.postalCode]: careconnect-patient-1-dict.html#Patient.address.postalCode
-[Organization.identifier (Organization Site Code)]: CareConnect-Organization-1-dict.html#Organization.Organization%20Site%20Code
-[Organization.name (Hospital/Local Authority)]: CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
-[Location.name (Ward)]: careconnect-location-1-dict.html#Location.Ward%20name
+[Organization.identifier.value (ODS Site Code)]: CareConnect-Organization-1-dict.html#Organization.identifier.value
+[Organization.name]: careconnect-organization-1-dict.html#Organization.name
+[Location.name]: careconnect-location-1-dict.html#Location.name
 [MessageHeader.event.code(Withdrawal Notice Type)]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.event.Withdrawal%20Notice%20Type
 [MessageHeader.reason.coding.display]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.reason.coding.display
 [MessageHeader.reason.text (Other Reason for Withdrawal)]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.reason.Other%20Reason%20for%20Withdrawal
-[Lead Clinician.name.family (Family Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name 
-[Lead Clinician.name.given (First Given Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
-[Practitioner.name.family (Family Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name
-[Practitioner.name.given (First Given Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
-[Practitioner.telecom.value (Hospital Liaison Email)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string
-[Practitioner.telecom.value (Hospital Liaison Telephone no.)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string
-[identifier (Local Authority - ODS Organisation Code)]: CareConnect-Organization-1-dict.html#Organization.ODS%20Organisation%20Code
-[Organization.name (Hospital/Local Authority)]: CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
-[Organization.name (Social Services' team)]: CareConnect-Organization-1-dict.html#Organization.Social%20Services%20team
+[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family 
+[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family
+[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
+[Organization.identifier.value (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
+[Organization.name]: careconnect-organization-1-dict.html#Organization.name
+[Organization.name]: careconnect-organization-1-dict.html#Organization.name
 
 
 
@@ -114,9 +117,9 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 ### Referencing of profiles for an ADW Withdrawal Notice message bundle.###
 
 
-The diagram shows the referencing for a typical Withdrawl Notice message. It is intended for illustrative purposes only. The diagram can be viewed here:
+The diagram shows the referencing for a typical Withdrawal Notice message. It is intended for illustrative purposes only. The diagram can be viewed here:
 
-[Profile Referencing Diagram for an Withdrawl Notice](../Profile.ADW-WithdrawalNotice/MessageReferencing4.png)
+[Profile Referencing Diagram for an Withdrawal Notice](../Profile.ADW-WithdrawalNotice/MessageReferencing4.png)
 
 ----------
 
@@ -127,6 +130,6 @@ For more information about message profiles visit the [Profiling FHIR] and for r
 
 The various downloads (including Schema files) and reference implementations are available on [FHIR website].
 
-[Profiling FHIR]: http://hl7.org/fhir/profiling.html
-[FHIR website]: http://hl7.org/fhir/index.html
-[Base Resource Definitions]: http://hl7.org/fhir/resource.html
+[Profiling FHIR]: http://hl7.org/fhir/DSTU2/profiling.html
+[FHIR website]: http://hl7.org/fhir/DSTU2/index.html
+[Base Resource Definitions]: http://hl7.org/fhir/DSTU2/resource.html

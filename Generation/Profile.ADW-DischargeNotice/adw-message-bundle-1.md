@@ -25,57 +25,59 @@ Example of the Assessment Notice Bundle for viewing in a web browser [ADW-Messag
 
 ----------
 
+Note that for some sliced elements and extensions within CareConnect profiles, it is not possible to link to the exact sliced element in this mapping table.
+
 
 | REQUIRED DATA FIELD                          | FHIR PROFILE ELEMENT                             |
 |----------------------------------------------|--------------------------------------------------|
 | **Discharge Notice**                         |                                                  |
 | Discharge Notice Issued Date                 | [MessageHeader.timestamp (ADW Message Sent Time)]                |
 | **Patient Identifiers**                      |                                                  |
-| Patient NHS Number                           | [Patient.identifier (NHS Number)]                         |
-| NHS Number Status Indicator                  | [Patient.identifier.type (NHS Number Status Indicator)]                                    |
-| Hospital Patient Identifier                  | [Patient.identifier (Hospital Patient Identifier)]                                   |
+| Patient NHS Number                           | [Patient.identifier.value (NHS Number)]                         |
+| NHS Number Status Indicator                  |[Patient.identifier.nhsNumberVerificationStatus]                                    |
+| Hospital Patient Identifier                  | [Patient.identifier (Local Identifier)]                                   |
 | **Patient Name**                             |                                                  |
-| Family Name                                  |[Patient.name.family (Family Name)]                                       |
-| First Given Name                             |[Patient.name.given (First Given Name)]                                       |
+| Family Name                                  |[Patient.name.family]                                       |
+| First Given Name                             |[Patient.name.given]                                       |
 | **Patient Birth Date**                       |                                                  |
-| Patient Birth Date                           |[Patient.birthDate (Patient Birth Date)]                                         |
+| Patient Birth Date                           |[Patient.birthDate]                                         |
 | **Person Stated Gender**                     |                                                  |
-| Patient Stated Gender                         |[Patient.gender (Patient stated gender)]                                           |
+| Patient Stated Gender                         |[Patient.gender]                                           |
 | **Patient Address**                          |                                                  |
 | Address Line 1                               |[Patient.address.line]                                      |
 | Address Line 2                               |[Patient.address.line]                                     |
 | Address Line 3                               |[Patient.address.line]                                     |
 | Address Line 4                               |[Patient.address.city]                                     |
-| Address Line 5                               |[Patient.address.district (County)]                                     |
+| Address Line 5                               |[Patient.address.district]                                     |
 | Postcode                                     |[Patient.address.postalCode]                               
 | **Hospital**                                 |                                                  |
-| Organization Site Code                       |[Organization.identifier (Organization Site Code)]                                         |
-| Hospital Name                                |[Organization.name (Hospital/Local Authority)]                                              |
-| Ward Name                                    |[Location.name (Ward)]                                              |
+| Organization Site Code                       |[Organization.identifier.value (ODS Site Code)]                                         |
+| Hospital Name                                |[Organization.name]                                              |
+| Ward Name                                    |[Location.name]                                              |
 | **Proposed Discharge Date**                  |                                                  |
-| Proposed Discharge Date                      |[Discharge Encounter.period.end (Inpatient Stay Period)]                                       |
+| Proposed Discharge Date                      |[Encounter.period.end]                                       |
 | **Discharge Date Informed Status**           |                                                  |
-| Discharge Notice Patient Consulted Indicator | [group.question.answer.value (Patient Consulted)]                                    |
-| Discharge Notice Carer Consulted Indicator   | [group.question.answer.value (Carer Consulted)]    |
+| Discharge Notice Patient Consulted Indicator | [QuestionnaireResponse.group.question.answer.value (Patient Consulted)]                                    |
+| Discharge Notice Carer Consulted Indicator   | [QuestionnaireResponse.group.question.answer.value (Carer Consulted)]    |
 | **Lead Clinician Name**                      |                                                  |
-| Family Name                                  | [Lead Clinician.name.family (Family Name)]                                      |
-| First Given Name                             | [Lead Clinician.name.given (First Given Name)]                                      |
+| Family Name                                  | [Practitioner.name.family]                                      |
+| First Given Name                             | [Practitioner.name.given]                                      |
 | **Hospital Liaison Name**                    |                                                  |
-| Family Name                                  | [Practitioner.name.family (Family Name - Hospital Liaison)]                             |
-| First Given Name                             | [Practitioner.name.given (First Given Name - Hospital Liaison)]                             |
+| Family Name                                  | [Practitioner.name.family]                             |
+| First Given Name                             | [Practitioner.name.given]                             |
 | **Hospital Liaison Contact Details**         |                                                  |
-| Hospital Liaison Email Address               | [Practitioner.telecom.value (Hospital Liaison Email)]                                        |
-| Hospital Liaison Telephone Number            | [Practitioner.telecom.value (Hospital Liaison Telephone no.)]                                |
+| Hospital Liaison Email Address               | [Practitioner.telecom.value]                                        |
+| Hospital Liaison Telephone Number            | [Practitioner.telecom.value]                                |
 | **Carer Name**                               |                                                                   |
-| Family Name                                  | [Patient.contact.name.family (Family Name - Carer)]                                        |
-| First Given Name                             | [Patient.contact.name.given (First Given Name - Carer)]                                      |
+| Family Name                                  | [Patient.contact.name.family]                                        |
+| First Given Name                             | [Patient.contact.name.given]                                      |
 | **Carer Contact Details**                    |                                                                   |
-| Carer Email Address                          | [Patient.contact.telecom.value (Carer Email)]                                                           |
-| Carer Telephone Number                       | [Patient.contact.telecom.value (Carer Telephone no.)]                                          |
+| Carer Email Address                          | [Patient.contact.telecom.value]                                                           |
+| Carer Telephone Number                       | [Patient.contact.telecom.value]                                          |
 | **Local Authority**                          |                                                  |
-| Organization Site Code                       | [Organization.identifier (Organization Site Code)]                                         |
-| Local Authority Name                         | [Organization.name (Hospital/Local Authority)]                                             |
-| Social Services Team                         | [Organization.name (Social Services' team)]                                             |
+| Organization Code                            | [Organization.identifier.value (ODS Organisation Code)]                                         |
+| Local Authority Name                         | [Organization.name]                                             |
+| Social Services Team                         | [Organization.name]                                             |
 
 
 ----------
@@ -89,7 +91,7 @@ This means only one instance is required for each instance of the profile.
 
 The diagram shows the referencing for a typical Discharge Notice message. It is intended for illustrative purposes only. The diagram can be viewed here:
 
-[Profile Referencing Diagram for an Discharge Notice](../Profile.ADW-DischargeNotice/MessageReferencing4.png)
+[Profile Referencing Diagram for a Discharge Notice](../Profile.ADW-DischargeNotice/MessageReferencing4.png)
 
 
 
@@ -108,37 +110,37 @@ The diagram shows the referencing for a typical Discharge Notice message. It is 
 
 
 [MessageHeader.timestamp (ADW Message Sent Time)]: adw-discharge-notice-message-header-1-dict.html#MessageHeader.ADW%20Message%20Sent%20Time
-[Patient.identifier (NHS Number)]: careconnect-patient-1-dict.html#Patient.NHS%20Number
-[Patient.identifier.type (NHS Number Status Indicator)]: careconnect-patient-1-dict.html#Patient.identifier.NHS%20Number%20Status%20Indicator  
-[Patient.identifier (Hospital Patient Identifier)]: careconnect-patient-1-dict.html#Patient.Hospital%20Patient%20Identifier 
-[Patient.name.family (Family Name)]: careconnect-patient-1-dict.html#Patient.name.Family%20name
-[Patient.name.given (First Given Name)]: careconnect-patient-1-dict.html#Patient.name.First%20given%20name
-[Patient.birthDate (Patient Birth Date)]: careconnect-patient-1-dict.html#Patient.Patient%20Birth%20Date
-[Patient.gender (Patient stated gender)]: careconnect-patient-1-dict.html#Patient.Patient%20stated%20gender
+[Patient.identifier.value (NHS Number)]: careconnect-patient-1-dict.html#Patient.identifier.value
+[Patient.identifier.nhsNumberVerificationStatus]: extension-careconnect-nhsnumberverificationstatus-1-dict.html#Extension.valueCodeableConcept
+[Patient.identifier (Local Identifier)]: careconnect-patient-1-dict.html#Patient.identifier.value
+[Patient.name.family]: careconnect-patient-1-dict.html#Patient.name.family
+[Patient.name.given]: careconnect-patient-1-dict.html#Patient.name.given
+[Patient.birthDate]: careconnect-patient-1-dict.html#Patient.birthDate
+[Patient.gender]: careconnect-patient-1-dict.html#Patient.gender
 [Patient.address.line]: careconnect-patient-1-dict.html#Patient.address.line
 [Patient.address.city]: careconnect-patient-1-dict.html#Patient.address.city
-[Patient.address.district (County)]: careconnect-patient-1-dict.html#Patient.address.County
+[Patient.address.district]: careconnect-patient-1-dict.html#Patient.address.district
 [Patient.address.postalCode]: careconnect-patient-1-dict.html#Patient.address.postalCode
-[Organization.identifier (Organization Site Code)]: CareConnect-Organization-1-dict.html#Organization.Organization%20Site%20Code
-[Organization.name (Hospital/Local Authority)]: CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
-[Location.name (Ward)]: careconnect-location-1-dict.html#Location.Ward%20name
-[Discharge Encounter.period.end (Inpatient Stay Period)]: careconnect-adw-encounter-1-dict.html#Encounter.period.end
-[Discharge Encounter.period.end (Inpatient Stay Period]: careconnect-adw-encounter-1-dict.html#Encounter.period.end
-[group.question.answer.value (Patient Consulted)]: adw-discharge-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consultation
-[group.question.answer.value (Carer Consulted)]: adw-discharge-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Carer%20Consultation
-[Lead Clinician.name.family (Family Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name 
-[Lead Clinician.name.given (First Given Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
-[Practitioner.name.family (Family Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name
-[Practitioner.name.given (First Given Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
-[Practitioner.telecom.value (Hospital Liaison Email)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string
-[Practitioner.telecom.value (Hospital Liaison Telephone no.)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string
-[identifier (Local Authority - ODS Organisation Code)]: CareConnect-Organization-1-dict.html#Organization.ODS%20Organisation%20Code
-[Organization.name (Hospital/Local Authority)]: CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
-[Organization.name (Social Services' team)]: CareConnect-Organization-1-dict.html#Organization.Social%20Services%20team
-[Patient.contact.name.family (Family Name - Carer)]: careconnect-patient-1-dict.html#Patient.contact.name.Family%20name
-[Patient.contact.name.given (First Given Name - Carer)]: careconnect-patient-1-dict.html#Patient.contact.name.First%20given%20name
-[Patient.contact.telecom.value (Carer Email)]: careconnect-patient-1-dict.html#Patient.contact.telecom.Carer%20Email%20address%20string
-[Patient.contact.telecom.value (Carer Telephone no.)]: careconnect-patient-1-dict.html#Patient.contact.telecom.Carer%20Telephone%20number%20string
+[Organization.identifier.value (ODS Site Code)]: CareConnect-Organization-1-dict.html#Organization.identifier.value
+[Organization.name]: careconnect-organization-1-dict.html#Organization.name
+[Location.name]: careconnect-location-1-dict.html#Location.name
+[Encounter.period.end]: careconnect-adw-encounter-1-dict.html#Encounter.period.end
+[QuestionnaireResponse.group.question.answer.value (Patient Consulted)]: adw-discharge-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consultation
+[QuestionnaireResponse.group.question.answer.value (Carer Consulted)]: adw-discharge-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Carer%20Consultation
+[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family
+[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family
+[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
+[Organization.identifier.value (ODS Organisation Code)]: CareConnect-Organization-1-dict.html#Organization.identifier.value
+[Organization.identifier.value (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.identifier.value 
+[Organization.name]: careconnect-organization-1-dict.html#Organization.name
+[Organization.name]: careconnect-organization-1-dict.html#Organization.name
+[Patient.contact.name.family]: careconnect-patient-1-dict.html#Patient.contact.name.family
+[Patient.contact.name.given]: careconnect-patient-1-dict.html#Patient.contact.name.given
+[Patient.contact.telecom.value]: careconnect-patient-1-dict.html#Patient.contact.telecom.value
+[Patient.contact.telecom.value]: careconnect-patient-1-dict.html#Patient.contact.telecom.value
 
 ----------
 
@@ -149,6 +151,6 @@ For more information about message profiles visit the [Profiling FHIR] and for r
 
 The various downloads (including Schema files) and reference implementations are available on [FHIR website].
 
-[Profiling FHIR]: http://hl7.org/fhir/profiling.html
-[FHIR website]: http://hl7.org/fhir/index.html
-[Base Resource Definitions]: http://hl7.org/fhir/resource.html
+[Profiling FHIR]: http://hl7.org/fhir/DSTU2/profiling.html
+[FHIR website]: http://hl7.org/fhir/DSTU2/index.html
+[Base Resource Definitions]: http://hl7.org/fhir/DSTU2/resource.html

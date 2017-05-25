@@ -31,77 +31,80 @@ Example of the Assessment Notice Bundle for viewing in a web browser [ADW-Messag
 
 ----------
 
+Note that for some sliced elements and extensions within CareConnect profiles, it is not possible to link to the exact element in this mapping table.
+
+
 | REQUIRED DATA FIELD                              | FHIR PROFILE ELEMENT                                                |
 |--------------------------------------------------|---------------------------------------------------------------------|
 | **Assessment Notice**                            |                                                                     |
 | Assessment Notice Issued Date                    | [MessageHeader.timestamp (ADW Message Sent Time)]                   |
 | ****Patient Identifiers****                      |                                                                     |
-| Patient NHS Number                               | [Patient.identifier (NHS Number)]                                   |
-| NHS Number Status Indicator                      | [Patient.identifier.type (NHS Number Status Indicator)]                                 |
-| Hospital Patient Identifier                      | [Patient.identifier (Hospital Patient Identifier)]                                       |
+| Patient NHS Number                               | [Patient.identifier.value (NHS Number)]                                   |
+| NHS Number Status Indicator                      | [Patient.identifier.nhsNumberVerificationStatus]   |
+| Hospital Patient Identifier                      | [Patient.identifier.value (Local Identifier)]                                       |
 | ****Patient Name****                             |                                                                     |
-| Family Name                                      | [Patient.name.family (Family Name)]                                        |
-| First Given Name                                 | [Patient.name.given (First Given Name)]                                   |
+| Family Name                                      | [Patient.name.family]                                        |
+| First Given Name                                 | [Patient.name.given]                                   |
 | **Patient Birth Date**                           |                                                                     |
-| Patient Birth Date                               | [Patient.birthDate (Patient Birth Date)]                            |
+| Patient Birth Date                               | [Patient.birthDate]                            |
 | **Patient Stated Gender**                        |                                                                     |
-| Patient Stated Gender                            | [Patient.gender (Patient stated gender)]                            |
+| Patient Stated Gender                            | [Patient.gender]                            |
 | **Patient Address**                              |                                                                     |
 | Address Line 1                                   | [Patient.address.line]                                              |
 | Address Line 2                                   | [Patient.address.line]                                              |
 | Address Line 3                                   | [Patient.address.line]                                              |
 | Address Line 4                                   | [Patient.address.city]                                              |
-| Address Line 5                                   | [Patient.address.district (County)]                                 |
+| Address Line 5                                   | [Patient.address.district]                                 |
 | Postcode                                         | [Patient.address.postalCode]                                        |
 | **Patient Contact Details**                      |                                                                     |
-| Patient Email Address                            | [Patient.telecom.value (Patient Email Address)]                           |
-| Patient Telephone Number                         | [Patient.telecom.value (Patient Telephone no.)]                           |
+| Patient Email Address                            | [Patient.telecom.value]                           |
+| Patient Telephone Number                         | [Patient.telecom.value]                           |
 | **Patient Language Details**                     |                                                                     |
-| Patient Language                                 | [Patient.communication.language]                                    |
-| Patient Preferred Language                       | [Patient.communication.Patient Preferred language]              |
-| Interpreter Required Indicator                   | [Patient.communication.extension-interpreter-required]          |
+| Patient Language                                 | [Patient.nhsCommunication.extension (language)]                                    |
+| Patient Preferred Language                       | [Patient.nhsCommunication.extension (preferred)]              |
+| Interpreter Required Indicator                   | [Patient.nhsCommunication.extension (interpreterRequired)]          |
 | **Hospital**                                     |                                                                     |
-| Organization Site Code                           | [Organization.identifier (Organization Site Code)]                                        |
-| Hospital Name                                    | [Organization.name (Hospital/Local Authority)]                                        |
-| Ward Name                                        | [Location.name (Ward)]                                              |
+| Organisation Site Code                           | [Organization.identifier.value (Organisation Site Code)]                                        |
+| Hospital Name                                    | [Organization.name]                                        |
+| Ward Name                                        | [Location.name]                                              |
 | **Admission Date**                               |                                                                     |
-| Admission Date                                   | [Encounter.period.start (Inpatient Stay Period)]                    |
+| Admission Date                                   | [Encounter.period.start]                    |
 | **Reason for Admission**                         |                                                                     |
 | Reason for Admission                             | [Condition.code.text]     |
 | **Admission Type**                               |                                                                     |
-| Admission Type                                   | [Encounter.priority (Admission priority)]                                                          |
+| Admission Type                                   | [Encounter.priority.coding.display]                                                          |
 | **Proposed Discharge Date**                      |                                                                     |
-| Proposed Discharge Date                          | [Encounter.period.end (Inpatient Stay Period)]                                           |
+| Proposed Discharge Date                          | [Encounter.period.end]                                           |
 | **Lead Clinician Name**                          |                                                                     |
-| Family Name                                      | [Lead Clinician.name.family (Family Name)]                                      |
-| First Given Name                                 | [Lead Clinician.name.given (First Given Name)]                                             |
+| Family Name                                      | [Practitioner.name.family]                                      |
+| First Given Name                                 | [Practitioner.name.given]                                             |
 | **Hospital Liaison Name**                        |                                                                     |
-| Family Name                                      | [Practitioner.name.family (Family Name - Hospital Liaison)]                                 |
-| First Given Name                                 | [Practitioner.name.given (First Given Name - Hospital Liaison)]                               |
+| Family Name                                      | [Practitioner.name.family]                                 |
+| First Given Name                                 | [Practitioner.name.given]                               |
 | **Hospital Liaison Contact Details**             |                                                                     |
-| Hospital Liaison Email Address                   | [Practitioner.telecom.value (Hospital Liaison Email)]                                  |
-| Hospital Liaison Telephone Number                | [Practitioner.telecom.value (Hospital Liaison Telephone no.)]                          |
+| Hospital Liaison Email Address                   | [Practitioner.telecom.value]                                  |
+| Hospital Liaison Telephone Number                | [Practitioner.telecom.value]                          |
 | **Carer Name**                        |                                                                     |
-| Family Name                                      | [Patient.contact.name.family (Family Name - Carer)]                                          |
-| First Given Name                                 | [Patient.contact.name.given (First Given Name - Carer)]                                     |
+| Family Name                                      | [Patient.contact.name.family]                                          |
+| First Given Name                                 | [Patient.contact.name.given]                                     |
 | **Carer Contact Details**                        |                                                                     |
-| Carer Email Address                              | [Patient.contact.telecom.value (Carer Email)]                                  |
-| Carer Telephone Number                           | [Patient.contact.telecom.value (Carer Telephone no.)]                                              |
+| Carer Email Address                              | [Patient.contact.telecom.value]                                  |
+| Carer Telephone Number                           | [Patient.contact.telecom.value]                                              |
 | **Assessment Notice Consultation Status**        |                                                                     |
 | Assessment Notice Patient Consultation Indicator | [QuestionnaireResponse.group.question.answer.valueCoding (Patient Consultation)]                |
 | Assessment Notice Carer Consultation Indicator   | [QuestionnaireResponse.group.question.answer.valueCoding (Carer Consultation)]                  |
 | **Assessment Notice Consent Status**             |                                                                     |
-| Assessment Notice Patient Consent Indicator      | [QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent Result)]              |
-| Assessment Notice Third Party Consent Response   | [QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Result)]          |
+| Assessment Notice Patient Consent Indicator      | [QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent)]              |
+| Assessment Notice Third Party Consent Source   | [QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Source)]          |
 | **NHS CHC Assessment**                           |                                                                     |
 | NHS CHC Assessment Considered Indicator          | [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Assessment Considered Indicator)] |
 | CHC Assessment Considered Result                 | [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Considered Result)]            |
 | **Safeguarding Indicator**                       |                                                                     |
 | Safeguarding Indicator                           | [QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Issues)]                 |
 | **Local Authority**                              |                                                                     |
-| Organization Site Code                           | [Organization.identifier (Organization Site Code)]                                        |
-| Local Authority Name                             | [Organization.name (Hospital/Local Authority)]                                        |
-| Social Services Team                             | [Organization.name (Social Services' team)]                                             |
+| Organisation ODS Code                           | [Organization.identifier.value (ODS Organisation Code)]                                        |
+| Local Authority Name                             | [Organization.name]                                        |
+| Social Services Team                             | [Organization.name]                                             |
 
 
 [ADW-AssessmentNotice-Message-Header-1]: adw-assessment-notice-message-header-1.html
@@ -118,49 +121,42 @@ Example of the Assessment Notice Bundle for viewing in a web browser [ADW-Messag
 
 
 [MessageHeader.timestamp (ADW Message Sent Time)]: adw-assessment-notice-message-header-1-dict.html#MessageHeader.ADW%20Message%20Sent%20Time
-[Patient.identifier (NHS Number)]: careconnect-patient-1-dict.html#Patient.NHS%20Number
-[Patient.identifier.type (NHS Number Status Indicator)]: careconnect-patient-1-dict.html#Patient.identifier.NHS%20Number%20Status%20Indicator  
-[Patient.identifier (Hospital Patient Identifier)]: careconnect-patient-1-dict.html#Patient.Hospital%20Patient%20Identifier 
-[Patient.name.family (Family Name)]: careconnect-patient-1-dict.html#Patient.name.Family%20name
-[Patient.name.given (First Given Name)]: careconnect-patient-1-dict.html#Patient.name.First%20given%20name
-[Patient.birthDate (Patient Birth Date)]: careconnect-patient-1-dict.html#Patient.Patient%20Birth%20Date
-[Patient.gender (Patient stated gender)]: careconnect-patient-1-dict.html#Patient.Patient%20stated%20gender
+[Patient.identifier.value (NHS Number)]: careconnect-patient-1-dict.html#Patient.identifier.value
+[Patient.identifier.nhsNumberVerificationStatus]: extension-careconnect-nhsnumberverificationstatus-1-dict.html#Extension.valueCodeableConcept  
+[Patient.identifier.value (Local Identifier)]: careconnect-patient-1-dict.html#Patient.identifier.value 
+[Patient.name.family]: careconnect-patient-1-dict.html#Patient.name.family
+[Patient.name.given]: careconnect-patient-1-dict.html#Patient.name.given
+[Patient.birthDate]: careconnect-patient-1-dict.html#Patient.birthDate
+[Patient.gender]: careconnect-patient-1-dict.html#Patient.gender
 [Patient.address.line]: careconnect-patient-1-dict.html#Patient.address.line
 [Patient.address.city]: careconnect-patient-1-dict.html#Patient.address.city
-[Patient.address.district (County)]: careconnect-patient-1-dict.html#Patient.address.County
+[Patient.address.district]: careconnect-patient-1-dict.html#Patient.address.district
 [Patient.address.postalCode]: careconnect-patient-1-dict.html#Patient.address.postalCode
-[Patient.telecom.value (Patient Email Address)]: careconnect-patient-1-dict.html#Patient.telecom.Patient%20Email%20address%20string  
-[Patient.telecom.value (Patient Telephone no.)]: careconnect-patient-1-dict.html#Patient.telecom.Patient%20Telephone%20number%20string
-[Patient.communication.language]: careconnect-patient-1-dict.html#Patient.communication.language
-[Patient.communication.Patient Preferred language]:  careconnect-patient-1-dict.html#Patient.communication.Patient%20Preferred%20language
-[Patient.communication.extension-interpreter-required]: careconnect-patient-1-dict.html#Patient.communication.Interpreter%20Required%20Indicator
-[Organization.identifier (Organization Site Code)]: CareConnect-Organization-1-dict.html#Organization.Organization%20Site%20Code
-[Organization.name (Hospital/Local Authority)]: CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
-[Location.name (Ward)]: careconnect-location-1-dict.html#Location.Ward%20name
-[Encounter.period.start (Inpatient Stay Period)]: CareConnect-ADW-Encounter-1-dict.html#Encounter.period.start
-[Encounter.period.end (Inpatient Stay Period)]: CareConnect-ADW-Encounter-1-dict.html#Encounter.period.end
+[Patient.telecom.value]: careconnect-patient-1-dict.html#Patient.telecom.value  
+[Patient.nhsCommunication.extension (language)]: extension-careconnect-nhscommunication-1-dict.html#Extension.extension.valueCodeableConcept
+[Patient.nhsCommunication.extension (preferred)]: extension-careconnect-nhscommunication-1-dict.html#Extension.extension.valueBoolean
+[Patient.nhscommunication.extension (interpreterRequired)]: extension-careconnect-nhscommunication-1-dict.html#Extension.interpreterRequired
+[Organization.identifier.value (Organisation Site Code)]: CareConnect-Organization-1-dict.html#Organization.identifier.value
+[Organization.name]: CareConnect-Organization-1-dict.html#Organization.name
+[Location.name]: careconnect-location-1-dict.html#Location.name
+[Encounter.period.start]: CareConnect-ADW-Encounter-1-dict.html#Encounter.period.start
+[Encounter.period.end]: CareConnect-ADW-Encounter-1-dict.html#Encounter.period.end
 [Condition.code.text]: adw-condition-1-dict.html#Condition.code.text
-[Encounter.priority (Admission priority)]: CareConnect-ADW-Encounter-1-dict.html#Encounter.Admission%20priority
-[Lead Clinician.name.family (Family Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name 
-[Lead Clinician.name.given (First Given Name)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
-[Practitioner.name.family (Family Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name
-[Practitioner.name.given (First Given Name - Hospital Liaison)]: careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name
-[Practitioner.telecom.value (Hospital Liaison Email)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string
-[Practitioner.telecom.value (Hospital Liaison Telephone no.)]: careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string
+[Encounter.priority.coding.display]: CareConnect-ADW-Encounter-1-dict.html#Encounter.priority.coding.display
+[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family 
+[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
 [QuestionnaireResponse.group.question.answer.valueCoding (Carer Consultation)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Carer%20Consultation
 [QuestionnaireResponse.group.question.answer.valueCoding (Patient Consultation)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consultation
-[QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consent
-[QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Third%20Party%20Consent
+[QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consent
+[QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Source)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Third%20Party%20Consent%20Source
 [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Assessment Considered Indicator)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Assessment%20Considered%20Indicator
 [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Considered Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Considered%20Result
-[QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Issues)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Safe%20Guarding%20Issues
-[identifier (Local Authority - ODS Organisation Code)]: CareConnect-Organization-1-dict.html#Organization.ODS%20Organisation%20Code
-[Organization.name (Hospital/Local Authority)]: CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name
-[Organization.name (Social Services' team)]: CareConnect-Organization-1-dict.html#Organization.Social%20Services%20team
-[Patient.contact.name.family (Family Name - Carer)]: careconnect-patient-1-dict.html#Patient.contact.name.Family%20name
-[Patient.contact.name.given (First Given Name - Carer)]: careconnect-patient-1-dict.html#Patient.contact.name.First%20given%20name
-[Patient.contact.telecom.value (Carer Email)]: careconnect-patient-1-dict.html#Patient.contact.telecom.Carer%20Email%20address%20string
-[Patient.contact.telecom.value (Carer Telephone no.)]: careconnect-patient-1-dict.html#Patient.contact.telecom.Carer%20Telephone%20number%20string
+[QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Issues)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Safeguarding%20Issues
+[Organization.identifier.value (ODS Organisation Code)]: CareConnect-Organization-1-dict.html#Organization.identifier.value
+[Patient.contact.name.family]: careconnect-patient-1-dict.html#Patient.contact.name.family
+[Patient.contact.name.given]: careconnect-patient-1-dict.html#Patient.contact.name.given
+[Patient.contact.telecom.value]: careconnect-patient-1-dict.html#Patient.contact.telecom.value
 
 ----------
 
@@ -182,9 +178,9 @@ For more information about message profiles visit the [Profiling FHIR] and for r
 
 The various downloads (including Schema files) and reference implementations are available on [FHIR website].
 
-[Profiling FHIR]: http://hl7.org/fhir/profiling.html
-[FHIR website]: http://hl7.org/fhir/index.html
-[Base Resource Definitions]: http://hl7.org/fhir/resource.html
+[Profiling FHIR]: http://hl7.org/fhir/DSTU2/profiling.html
+[FHIR website]: http://hl7.org/fhir/DSTU2/index.html
+[Base Resource Definitions]: http://hl7.org/fhir/DSTU2/resource.html
 
 
 
