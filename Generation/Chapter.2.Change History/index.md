@@ -7,7 +7,7 @@
  - Amended ReferralRequest.Status values in Withdrawal Notice receipts (profiles and associated bundles) to reflect required values in the Information Standard.
  - Amended ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml supportingInformation element to include a reference to an example DocumentReference profile.
  - Corrected broken links to CareConnect profile elements on all Dataset Mapping pages.
- - Corrected xml bundle examples to include Organisation (ODS) Site code rather than Organisation (ODS) Organisation Code for a Hospital organisation. 
+ - Corrected xml bundle examples to include Organisation (ODS) Site code rather than Organisation (ODS) Code for a Hospital organisation. 
 
 ### Version 1.0.0-alpha.1 ###
 
