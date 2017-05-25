@@ -78,6 +78,9 @@
 				<supportingInformation>
 					<reference value="urn:uuid:59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
 				</supportingInformation>
+				<supportingInformation>
+					<reference value="urn:uuid:286919ac-12ba-4469-b9fd-676ef9cdb623"/>
+				</supportingInformation>
 			</ReferralRequest>
 		</resource>
 	</entry>
@@ -234,7 +237,7 @@
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
-					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 					<value value="RFM8C2"/>
 				</identifier>
 				<!-- Type of organisation. -->
@@ -262,7 +265,7 @@
 				</meta>
 				<!--Organisation identifier-->
 				<identifier>
-					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+			<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 					<value value="V396BB"/>
 				</identifier>
 				<!-- Type of organisation. -->
