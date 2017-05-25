@@ -66,7 +66,7 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-referral-request-cancelled-1"/>
 				</meta>
-				<status value="cancelled"/>
+				<status value="accepted"/>
 				<identifier>
 					<value value="311fcae7-32a7-4a8e-a15c-eebae3a246b9"/>
 				</identifier>
@@ -213,7 +213,7 @@
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
-					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 					<value value="RFM8C2"/>
 				</identifier>
 				<!-- Type of organisation. -->
@@ -240,7 +240,7 @@
 				</meta>
 				<!--Organisation identifier-->
 				<identifier>
-					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+				<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 					<value value="V396BB"/>
 				</identifier>
 				<!-- Type of organisation. -->
