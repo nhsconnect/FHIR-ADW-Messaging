@@ -219,7 +219,7 @@
 				</meta>
 				<!--Organisation identifier - this example has a locally defined organisation code.-->
 				<identifier>
-					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 					<value value="RFM8C2"/>
 				</identifier>
 				<!-- Type of organisation. -->
