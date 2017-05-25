@@ -216,7 +216,7 @@
 				</meta>
 				<!--Organisation identifier-->
 				<identifier>
-					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 					<value value="RFM8C2"/>
 				</identifier>
 				<!-- Type of organisation. -->
