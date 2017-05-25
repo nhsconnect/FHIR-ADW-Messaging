@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-10T15:45:37.557+01:00" />
+    <lastUpdated value="2017-05-25T13:07:17.493+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -4755,12 +4755,16 @@
       <short value="Additional information to support the referral request notice" />
       <definition value="Additional information to support the referral request notice." />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="ReferralRequest.supportingInformation" />
         <min value="0" />
         <max value="*" />
       </base>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+      </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/adw-questionnaire-response-1" />
@@ -4867,8 +4871,8 @@
     <element>
       <path value="ReferralRequest.supportingInformation.reference" />
       <short value="Relative, internal or absolute URL reference" />
-      <definition value="A reference to a location at which the other resource is found." />
-      <comments value="None" />
+      <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
+      <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -4890,7 +4894,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -4907,7 +4910,7 @@
       <definition value="Plain text narrative that identifies the resource in addition to the resource reference." />
       <comments value="This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Reference.display" />
         <min value="0" />
@@ -5344,7 +5347,10 @@
       <short value="Additional information to support the referral request notice" />
       <definition value="Additional information to support the referral request notice." />
       <min value="1" />
-      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+      </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/adw-questionnaire-response-1" />
@@ -5355,14 +5361,7 @@
     </element>
     <element>
       <path value="ReferralRequest.supportingInformation.reference" />
-      <definition value="A reference to a location at which the other resource is found." />
-      <comments value="None" />
       <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element>
-      <path value="ReferralRequest.supportingInformation.display" />
-      <max value="0" />
     </element>
     <element>
       <path value="ReferralRequest.fulfillmentTime" />

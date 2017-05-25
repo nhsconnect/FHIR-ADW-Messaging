@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-20T16:16:37.174+01:00" />
+    <lastUpdated value="2017-05-25T15:37:27.393+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -380,7 +380,7 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="cancelled" />
+      <fixedCode value="accepted" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4755,7 +4755,7 @@
       <short value="Additional information to support the referral request notice" />
       <definition value="Additional information to support the referral request notice." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="ReferralRequest.supportingInformation" />
         <min value="0" />
@@ -4763,7 +4763,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4867,8 +4867,8 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="None." />
-      <min value="0" />
-      <max value="0" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="Reference.reference" />
         <min value="0" />
@@ -5156,7 +5156,7 @@
       <path value="ReferralRequest.status" />
       <name value="The Transfer Status" />
       <definition value="The workflow status of the referral request notice." />
-      <fixedCode value="cancelled" />
+      <fixedCode value="accepted" />
       <mustSupport value="true" />
     </element>
     <element>
@@ -5340,13 +5340,16 @@
       <name value="Further Information " />
       <short value="Additional information to support the referral request notice" />
       <definition value="Additional information to support the referral request notice." />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+      </type>
       <mustSupport value="false" />
     </element>
     <element>
       <path value="ReferralRequest.supportingInformation.reference" />
       <comments value="None." />
-      <max value="0" />
+      <min value="1" />
       <mustSupport value="false" />
     </element>
     <element>
