@@ -236,7 +236,7 @@
 				<!--Organisation identifier -->
 				<identifier>
 					<use value="official"/>
-					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 					<value value="RFM8C2"/>
 				</identifier>
 				<!-- Type of organisation. -->
@@ -262,7 +262,7 @@
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
-					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 					<value value="V396BB"/>
 				</identifier>
 				<!-- Type of organisation. -->
@@ -343,7 +343,7 @@
 				</meta>
 				<identifier>
 					<use value="official"/>
-					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 					<value value="RFM7C7"/>
 				</identifier>
 				<name value="Collier Ward"/>
