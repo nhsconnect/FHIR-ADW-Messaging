@@ -1,5 +1,14 @@
 # Change History #
 
+### Version 1.0.0-beta.1 ###
+
+ - Changed values in valueset adw-discharge-notice-reject-reason-1 to reflect Information Standard.
+ - Amended cardinality of supportingInformation element in all ReferralRequest-based profiles across the specification to allow the addition of a reference to a DocumentReference profile, if required.
+ - Amended ReferralRequest.Status values in Withdrawal Notice receipts (profiles and associated bundles) to reflect required values in the Information Standard.
+ - Amended ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml supportingInformation element to include a reference to an example DocumentReference profile.
+ - Corrected broken links to CareConnect profile elements on all Dataset Mapping pages.
+ - Corrected xml bundle examples to include Organisation (ODS) Site code rather than Organisation (ODS) Organisation Code for a Hospital organisation. 
+
 ### Version 1.0.0-alpha.1 ###
 
  - The following ADW profiles have been replaced by CareConnect standard profiles:-
@@ -9,14 +18,14 @@
  - Constrained CareConnect standard profile for Encounter to CareConnect-ADW profile to reflect ADW business requirements.
  - ADW-Location-1-0 replaced by CareConnect-Location-1.
  - ADW-Message-Bundles updated in line with above profile changes. Bundle.entry uses a generic standard used within NHS Digital bundles.
- - Bundle examples modified to reflect changes identified in Beta-1 release.
+ - Bundle examples modified to reflect changes identified in alpha-1 release.
  - Removed individual profile xml examples as these are represented within the standard bundles.
  - Inserted xml in bundle ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml to represent a DocumentReference resource and a binary resource suitable for use, if a .pdf attachment is sent in a message communication.  
  - Re-ordered profiles.
  - All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk for standard CareConnect profiles. 
  - ValueSet string removed for all system urls for valuesets when the url appears as data in their respective coding.system element.
- - Changed versioning for all profiles and valuesets from 1-0 to 1.
- - Adopted semantic versioning for the specification from http://semver.org/.  
+ - Changed versioning for all profiles and valuesets from 1-0 to 1. 
+ - Adopted semantic versioning for the specification from http://semver.org/.   
  
 ### Version: 1.0: Status: RC4 ###
  - Changed values in adw-person-stated-gender-1 name and description elements to reflect those in the FHIR valueset at http://hl7.org/fhir/valueset-administrative-gender.html (AdministrativeGender).
