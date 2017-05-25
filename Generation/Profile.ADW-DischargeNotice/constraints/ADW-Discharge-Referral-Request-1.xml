@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-04-20T16:11:42.385+01:00" />
+    <lastUpdated value="2017-05-22T11:55:50.477+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -4758,12 +4758,16 @@
       <short value="Additional information to support the referral request notice" />
       <definition value="Additional information to support the referral request notice." />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="ReferralRequest.supportingInformation" />
         <min value="0" />
         <max value="*" />
       </base>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+      </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-questionnaire-response-1" />
@@ -5346,7 +5350,10 @@
       <short value="Additional information to support the referral request notice" />
       <definition value="Additional information to support the referral request notice." />
       <min value="1" />
-      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+      </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-questionnaire-response-1" />
