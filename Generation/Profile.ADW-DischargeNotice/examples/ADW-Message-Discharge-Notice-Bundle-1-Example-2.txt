@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Bundle xml example for a minimum dataset-->
+<!--Bundle xml example for a minimum dataset.-->
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="a63ec43d-887f-477d-b461-80dbbb139fc6"/>
 	<meta>
@@ -265,7 +265,7 @@
 				</meta>
 				<!--Organisation identifier-->
 				<identifier>
-			<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 					<value value="V396BB"/>
 				</identifier>
 				<!-- Type of organisation. -->
@@ -412,14 +412,25 @@
 						<reference value="urn:uuid:5d4c7a93-73f1-460e-93d3-da616b569228"/>
 					</valueReference>
 				</extension>
+				<!--Care setting from which the document originated from-->
+				<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-care-setting-type-1">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="893061000000109"/>
+							<display value="Cardiology service (qualifier value)"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
 				<subject>
 					<reference value="urn:uuid:42840151-1fe1-4967-88c1-bcbd2a191243"/>
 				</subject>
+				<!--Document type-->
 				<type>
 					<coding>
 						<system value="http://snomed.info/sct"/>
 						<code value="373942005"/>
-						<display value="Discharge summary"/>
+						<display value="Discharge summary (record artifact)"/>
 					</coding>
 				</type>
 				<!--Consultant author-->
