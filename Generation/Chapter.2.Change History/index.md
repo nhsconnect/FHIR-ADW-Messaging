@@ -4,7 +4,7 @@
 
  - Changed values in valueset adw-discharge-notice-reject-reason-1 to reflect Information Standard.
  - Amended cardinality of supportingInformation element in all ReferralRequest-based profiles across the specification to allow the addition of a reference to a DocumentReference profile, if required.
- - Amended ReferralRequest.Status values in Withdrawal Notice receipts (profiles and associated bundles) to reflect required values in the Information Standard.
+ - Amended all Notice Receipt MessageHeaders to include a responseType extension to reflect the Information Standard requirement to show the Notice Receipt response type. Amended associated bundle xml examples to reflect this.
  - Amended ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml supportingInformation element to include a reference to an example DocumentReference profile.
  - Corrected broken links to CareConnect profile elements on all Dataset Mapping pages.
  - Corrected xml bundle examples to include Organisation (ODS) Site code rather than Organisation (ODS) Code for a Hospital organisation. 
