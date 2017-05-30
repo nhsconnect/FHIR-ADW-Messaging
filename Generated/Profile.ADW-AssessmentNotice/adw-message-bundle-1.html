@@ -109,7 +109,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">1.0.0-alpha.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">1.0.0-beta.1</span>
                             </p>
 
                         </div>
@@ -162,6 +162,7 @@
       <hr />
       <h3>ADW Data set Mapping for ADW Assessment Notice message bundle.</h3>
       <hr />
+      <p>Note that for some sliced elements and extensions within CareConnect profiles, it is not possible to link to the exact element in this mapping table.</p>
       <table>
         <thead>
           <tr>
@@ -193,19 +194,19 @@
           <tr>
             <td>Patient NHS Number</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.NHS%20Number">Patient.identifier (NHS Number)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.identifier.value">Patient.identifier.value (NHS Number)</a>
             </td>
           </tr>
           <tr>
             <td>NHS Number Status Indicator</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.identifier.NHS%20Number%20Status%20Indicator">Patient.identifier.type (NHS Number Status Indicator)</a>
+              <a href="extension-careconnect-nhsnumberverificationstatus-1-dict.html#Extension.valueCodeableConcept">Patient.identifier.nhsNumberVerificationStatus</a>
             </td>
           </tr>
           <tr>
             <td>Hospital Patient Identifier</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.Hospital%20Patient%20Identifier">Patient.identifier (Hospital Patient Identifier)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.identifier.value">Patient.identifier.value (Local Identifier)</a>
             </td>
           </tr>
           <tr>
@@ -219,13 +220,13 @@
           <tr>
             <td>Family Name</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.name.Family%20name">Patient.name.family (Family Name)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.name.family">Patient.name.family</a>
             </td>
           </tr>
           <tr>
             <td>First Given Name</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.name.First%20given%20name">Patient.name.given (First Given Name)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.name.given">Patient.name.given</a>
             </td>
           </tr>
           <tr>
@@ -237,7 +238,7 @@
           <tr>
             <td>Patient Birth Date</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.Patient%20Birth%20Date">Patient.birthDate (Patient Birth Date)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.birthDate">Patient.birthDate</a>
             </td>
           </tr>
           <tr>
@@ -249,7 +250,7 @@
           <tr>
             <td>Patient Stated Gender</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.Patient%20stated%20gender">Patient.gender (Patient stated gender)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.gender">Patient.gender</a>
             </td>
           </tr>
           <tr>
@@ -285,7 +286,7 @@
           <tr>
             <td>Address Line 5</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.address.County">Patient.address.district (County)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.address.district">Patient.address.district</a>
             </td>
           </tr>
           <tr>
@@ -303,13 +304,13 @@
           <tr>
             <td>Patient Email Address</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.telecom.Patient%20Email%20address%20string">Patient.telecom.value (Patient Email Address)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.telecom.value">Patient.telecom.value</a>
             </td>
           </tr>
           <tr>
             <td>Patient Telephone Number</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.telecom.Patient%20Telephone%20number%20string">Patient.telecom.value (Patient Telephone no.)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.telecom.value">Patient.telecom.value</a>
             </td>
           </tr>
           <tr>
@@ -321,19 +322,19 @@
           <tr>
             <td>Patient Language</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.communication.language">Patient.communication.language</a>
+              <a href="extension-careconnect-nhscommunication-1-dict.html#Extension.extension.valueCodeableConcept">Patient.nhsCommunication.extension (language)</a>
             </td>
           </tr>
           <tr>
             <td>Patient Preferred Language</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.communication.Patient%20Preferred%20language">Patient.communication.Patient Preferred language</a>
+              <a href="extension-careconnect-nhscommunication-1-dict.html#Extension.extension.valueBoolean">Patient.nhsCommunication.extension (preferred)</a>
             </td>
           </tr>
           <tr>
             <td>Interpreter Required Indicator</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.communication.Interpreter%20Required%20Indicator">Patient.communication.extension-interpreter-required</a>
+              <a href="extension-careconnect-nhscommunication-1-dict.html#Extension.interpreterRequired">Patient.nhsCommunication.extension (interpreterRequired)</a>
             </td>
           </tr>
           <tr>
@@ -343,21 +344,21 @@
             <td></td>
           </tr>
           <tr>
-            <td>Organization Site Code</td>
+            <td>Organisation Site Code</td>
             <td>
-              <a href="CareConnect-Organization-1-dict.html#Organization.Organization%20Site%20Code">Organization.identifier (Organization Site Code)</a>
+              <a href="CareConnect-Organization-1-dict.html#Organization.identifier.value">Organization.identifier.value (Organisation Site Code)</a>
             </td>
           </tr>
           <tr>
             <td>Hospital Name</td>
             <td>
-              <a href="CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name">Organization.name (Hospital/Local Authority)</a>
+              <a href="CareConnect-Organization-1-dict.html#Organization.name">Organization.name</a>
             </td>
           </tr>
           <tr>
             <td>Ward Name</td>
             <td>
-              <a href="careconnect-location-1-dict.html#Location.Ward%20name">Location.name (Ward)</a>
+              <a href="careconnect-location-1-dict.html#Location.name">Location.name</a>
             </td>
           </tr>
           <tr>
@@ -369,7 +370,7 @@
           <tr>
             <td>Admission Date</td>
             <td>
-              <a href="CareConnect-ADW-Encounter-1-dict.html#Encounter.period.start">Encounter.period.start (Inpatient Stay Period)</a>
+              <a href="CareConnect-ADW-Encounter-1-dict.html#Encounter.period.start">Encounter.period.start</a>
             </td>
           </tr>
           <tr>
@@ -393,7 +394,7 @@
           <tr>
             <td>Admission Type</td>
             <td>
-              <a href="CareConnect-ADW-Encounter-1-dict.html#Encounter.Admission%20priority">Encounter.priority (Admission priority)</a>
+              <a href="CareConnect-ADW-Encounter-1-dict.html#Encounter.priority.coding.display">Encounter.priority.coding.display</a>
             </td>
           </tr>
           <tr>
@@ -405,7 +406,7 @@
           <tr>
             <td>Proposed Discharge Date</td>
             <td>
-              <a href="CareConnect-ADW-Encounter-1-dict.html#Encounter.period.end">Encounter.period.end (Inpatient Stay Period)</a>
+              <a href="CareConnect-ADW-Encounter-1-dict.html#Encounter.period.end">Encounter.period.end</a>
             </td>
           </tr>
           <tr>
@@ -417,13 +418,13 @@
           <tr>
             <td>Family Name</td>
             <td>
-              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name">Lead Clinician.name.family (Family Name)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.family">Practitioner.name.family</a>
             </td>
           </tr>
           <tr>
             <td>First Given Name</td>
             <td>
-              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name">Lead Clinician.name.given (First Given Name)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.given">Practitioner.name.given</a>
             </td>
           </tr>
           <tr>
@@ -435,13 +436,13 @@
           <tr>
             <td>Family Name</td>
             <td>
-              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.Family%20name">Practitioner.name.family (Family Name - Hospital Liaison)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.family">Practitioner.name.family</a>
             </td>
           </tr>
           <tr>
             <td>First Given Name</td>
             <td>
-              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.First%20given%20name">Practitioner.name.given (First Given Name - Hospital Liaison)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.name.given">Practitioner.name.given</a>
             </td>
           </tr>
           <tr>
@@ -453,13 +454,13 @@
           <tr>
             <td>Hospital Liaison Email Address</td>
             <td>
-              <a href="careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Email%20address%20string">Practitioner.telecom.value (Hospital Liaison Email)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.telecom.value">Practitioner.telecom.value</a>
             </td>
           </tr>
           <tr>
             <td>Hospital Liaison Telephone Number</td>
             <td>
-              <a href="careconnect-practitioner-1-dict.html#Practitioner.telecom.Practitioner%20Telephone%20number%20string">Practitioner.telecom.value (Hospital Liaison Telephone no.)</a>
+              <a href="careconnect-practitioner-1-dict.html#Practitioner.telecom.value">Practitioner.telecom.value</a>
             </td>
           </tr>
           <tr>
@@ -471,13 +472,13 @@
           <tr>
             <td>Family Name</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.contact.name.Family%20name">Patient.contact.name.family (Family Name - Carer)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.contact.name.family">Patient.contact.name.family</a>
             </td>
           </tr>
           <tr>
             <td>First Given Name</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.contact.name.First%20given%20name">Patient.contact.name.given (First Given Name - Carer)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.contact.name.given">Patient.contact.name.given</a>
             </td>
           </tr>
           <tr>
@@ -489,13 +490,13 @@
           <tr>
             <td>Carer Email Address</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.contact.telecom.Carer%20Email%20address%20string">Patient.contact.telecom.value (Carer Email)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.contact.telecom.value">Patient.contact.telecom.value</a>
             </td>
           </tr>
           <tr>
             <td>Carer Telephone Number</td>
             <td>
-              <a href="careconnect-patient-1-dict.html#Patient.contact.telecom.Carer%20Telephone%20number%20string">Patient.contact.telecom.value (Carer Telephone no.)</a>
+              <a href="careconnect-patient-1-dict.html#Patient.contact.telecom.value">Patient.contact.telecom.value</a>
             </td>
           </tr>
           <tr>
@@ -524,14 +525,12 @@
           </tr>
           <tr>
             <td>Assessment Notice Patient Consent Indicator</td>
-            <td>
-              <a href="adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consent">QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent Result)</a>
-            </td>
+            <td>[QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent)]</td>
           </tr>
           <tr>
-            <td>Assessment Notice Third Party Consent Response</td>
+            <td>Assessment Notice Third Party Consent Source</td>
             <td>
-              <a href="adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Third%20Party%20Consent">QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Result)</a>
+              <a href="adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Third%20Party%20Consent%20Source">QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Source)</a>
             </td>
           </tr>
           <tr>
@@ -561,7 +560,7 @@
           <tr>
             <td>Safeguarding Indicator</td>
             <td>
-              <a href="adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Safe%20Guarding%20Issues">QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Issues)</a>
+              <a href="adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Safeguarding%20Issues">QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Issues)</a>
             </td>
           </tr>
           <tr>
@@ -571,21 +570,21 @@
             <td></td>
           </tr>
           <tr>
-            <td>Organization Site Code</td>
+            <td>Organisation ODS Code</td>
             <td>
-              <a href="CareConnect-Organization-1-dict.html#Organization.Organization%20Site%20Code">Organization.identifier (Organization Site Code)</a>
+              <a href="CareConnect-Organization-1-dict.html#Organization.identifier.value">Organization.identifier.value (ODS Organisation Code)</a>
             </td>
           </tr>
           <tr>
             <td>Local Authority Name</td>
             <td>
-              <a href="CareConnect-Organization-1-dict.html#Organization.Hospital%20or%20Local%20Authority%20Name">Organization.name (Hospital/Local Authority)</a>
+              <a href="CareConnect-Organization-1-dict.html#Organization.name">Organization.name</a>
             </td>
           </tr>
           <tr>
             <td>Social Services Team</td>
             <td>
-              <a href="CareConnect-Organization-1-dict.html#Organization.Social%20Services%20team">Organization.name (Social Services' team)</a>
+              <a href="CareConnect-Organization-1-dict.html#Organization.name">Organization.name</a>
             </td>
           </tr>
         </tbody>
@@ -601,8 +600,8 @@
       <p>
         <strong>Further Information</strong>
       </p>
-      <p>For more information about message profiles visit the <a href="http://hl7.org/fhir/profiling.html">Profiling FHIR</a> and for resource Metadata visit <a href="http://hl7.org/fhir/resource.html">Base Resource Definitions</a>.</p>
-      <p>The various downloads (including Schema files) and reference implementations are available on <a href="http://hl7.org/fhir/index.html">FHIR website</a>.</p>
+      <p>For more information about message profiles visit the <a href="http://hl7.org/fhir/DSTU2/profiling.html">Profiling FHIR</a> and for resource Metadata visit <a href="http://hl7.org/fhir/DSTU2/resource.html">Base Resource Definitions</a>.</p>
+      <p>The various downloads (including Schema files) and reference implementations are available on <a href="http://hl7.org/fhir/DSTU2/index.html">FHIR website</a>.</p>
     </div>
   </div>
 </div>

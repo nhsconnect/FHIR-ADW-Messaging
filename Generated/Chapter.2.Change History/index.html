@@ -109,7 +109,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">1.0.0-alpha.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">1.0.0-beta.1</span>
                             </p>
 
                         </div>
@@ -141,6 +141,15 @@
 							
 									<div class="panel panel - default">
 											<h1>Change History</h1>
+<h3>Version 1.0.0-beta.1</h3>
+<ul>
+<li>Changed values in valueset adw-discharge-notice-reject-reason-1 to reflect Information Standard.</li>
+<li>Amended cardinality of supportingInformation element in all ReferralRequest-based profiles across the specification to allow the addition of a reference to a DocumentReference profile, if required.</li>
+<li>Amended all Notice Receipt MessageHeaders to include a responseType extension to reflect the Information Standard requirement to show the Notice Receipt response type. Amended associated bundles to reflect this.</li>
+<li>Amended ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml supportingInformation element to include a reference to an example DocumentReference profile.</li>
+<li>Corrected broken links to CareConnect profile elements on all Dataset Mapping pages.</li>
+<li>Corrected xml bundle examples to include Organisation (ODS) Site code rather than Organisation (ODS) Code for a Hospital organisation. </li>
+</ul>
 <h3>Version 1.0.0-alpha.1</h3>
 <ul>
 <li>The following ADW profiles have been replaced by CareConnect standard profiles:-</li>
@@ -150,14 +159,14 @@
 <li>Constrained CareConnect standard profile for Encounter to CareConnect-ADW profile to reflect ADW business requirements.</li>
 <li>ADW-Location-1-0 replaced by CareConnect-Location-1.</li>
 <li>ADW-Message-Bundles updated in line with above profile changes. Bundle.entry uses a generic standard used within NHS Digital bundles.</li>
-<li>Bundle examples modified to reflect changes identified in Beta-1 release.</li>
+<li>Bundle examples modified to reflect changes identified in alpha-1 release.</li>
 <li>Removed individual profile xml examples as these are represented within the standard bundles.</li>
 <li>Inserted xml in bundle ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml to represent a DocumentReference resource and a binary resource suitable for use, if a .pdf attachment is sent in a message communication.  </li>
 <li>Re-ordered profiles.</li>
 <li>All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk for standard CareConnect profiles. </li>
 <li>ValueSet string removed for all system urls for valuesets when the url appears as data in their respective coding.system element.</li>
-<li>Changed versioning for all profiles and valuesets from 1-0 to 1.</li>
-<li>Adopted semantic versioning for the specification from http://semver.org/.  </li>
+<li>Changed versioning for all profiles and valuesets from 1-0 to 1. </li>
+<li>Adopted semantic versioning for the specification from http://semver.org/.   </li>
 </ul>
 <h3>Version: 1.0: Status: RC4</h3>
 <ul>
