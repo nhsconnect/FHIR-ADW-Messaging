@@ -14,6 +14,14 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-withdrawal-notice-reject-response-message-header-1"/>
 				</meta>
+				<!-- Notice type -->
+				<extension url="https://fhir.nhs.uk/StructureDefinition/extension-adw-response-type-1">
+					<valueCoding>
+						<system value="https://fhir.nhs.uk/adw-response-type-1"/>
+								<code value="reject"/>
+								<display value="Reject"/>
+					</valueCoding>
+				</extension>
 				<timestamp value="2017-05-04T15:16:55+00:00"/>
 				<event>
 					<system value="https://fhir.nhs.uk/adw-message-event-1"/>
@@ -66,7 +74,7 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-referral-request-cancelled-1"/>
 				</meta>
-				<status value="rejected"/>
+				<status value="cancelled"/>
 				<identifier>
 					<value value="311fcae7-32a7-4a8e-a15c-eebae3a246b9"/>
 				</identifier>
