@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-25T13:07:17.493+01:00" />
+    <lastUpdated value="2017-05-29T08:35:20.062+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -4763,10 +4763,6 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
-      </type>
-      <type>
-        <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/adw-questionnaire-response-1" />
         <aggregation value="bundled" />
         <aggregation value="referenced" />
@@ -5347,10 +5343,6 @@
       <short value="Additional information to support the referral request notice" />
       <definition value="Additional information to support the referral request notice." />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
-      </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/adw-questionnaire-response-1" />
