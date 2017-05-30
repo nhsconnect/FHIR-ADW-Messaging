@@ -1,0 +1,1 @@
+This extension is constrained to represent the Response type of an ADW Notice Receipt.
