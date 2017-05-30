@@ -24,7 +24,7 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 | **Assessment Notice Accept Response**    |                                                   |
 | Notice Receipt issued date               | [MessageHeader.timestamp (ADW Accept Response Message Sent Time)]                        |
 | Notice Type                              | [MessageHeader.event.code (Accept Response Type)]                 |
-| Response Type                            | [ReferralRequest.status]                                     |
+| Response Type                            | [MessageHeader.responseType]                                     |
 | Response Details                         | [MessageHeader.reason.text (Accept Reason)]                                       |
 | **Patient Identifiers**                  |                                                  |
 | Patient NHS Number                       | [Patient.identifier.value (NHS Number)]                          |
@@ -72,7 +72,7 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 
 [MessageHeader.timestamp (ADW Accept Response Message Sent Time)]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.ADW%20Accept%20Response%20Message%20Sent%20Time
 [MessageHeader.event.code (Accept Response Type)]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.event.Accept%20Response%20Type
-[ReferralRequest.status]: adw-referral-request-accepted-1-dict.html#ReferralRequest.The%20Transfer%20Status
+[MessageHeader.responseType]: extension-adw-response-type-1-dict.html#Extension.valueCoding.display
 [MessageHeader.reason.coding.code]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.reason.coding.code
 [MessageHeader.reason.text (Accept Reason)]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.reason.Accept%20Reason
 [Patient.identifier.value (NHS Number)]: careconnect-patient-1-dict.html#Patient.identifier.value

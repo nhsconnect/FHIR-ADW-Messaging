@@ -24,7 +24,7 @@ Note that for sliced elements and extensions within CareConnect profiles, it is 
 | **Assessment Notice Reject Response**    |                                                   |
 | Notice Receipt issued date               | [MessageHeader.timestamp (ADW Reject Response Message Sent Time)]                        |
 | Notice Type                              | [MessageHeader.event.code (Reject Response Type)]                 |
-| Response Type                            | [ReferralRequest.status]                                     |
+| Response Type                            | [MessageHeader.responseType]                                    |
 | Response Details                         | [MessageHeader.reason.text (Reject Reason)]                                       |
 | **Patient Identifiers**                  |                                                   |
 | Patient NHS Number                       | [Patient.identifier.value (NHS Number)]                          |
@@ -71,7 +71,7 @@ Note that for sliced elements and extensions within CareConnect profiles, it is 
 
 [MessageHeader.timestamp (ADW Reject Response Message Sent Time)]: adw-assessment-notice-reject-response-message-header-1-dict.html#MessageHeader.ADW%20Reject%20Response%20Message%20Sent%20Time
 [MessageHeader.event.code (Reject Response Type)]: adw-assessment-notice-reject-response-message-header-1-dict.html#MessageHeader.event.Reject%20Response%20Type
-[ReferralRequest.status]: adw-referral-request-rejected-1-dict.html#ReferralRequest.The%20Transfer%20Status
+[MessageHeader.responseType]: extension-adw-response-type-1-dict.html#Extension.valueCoding.display
 [MessageHeader.reason.text (Reject Reason)]: adw-assessment-notice-reject-response-message-header-1-dict.html#MessageHeader.reason.Reject%20Reason%20Details
 [Patient.identifier.value (NHS Number)]: careconnect-patient-1-dict.html#Patient.identifier.value
 [Patient.identifier (Local Identifier)]: careconnect-patient-1-dict.html#Patient.identifier.value 
