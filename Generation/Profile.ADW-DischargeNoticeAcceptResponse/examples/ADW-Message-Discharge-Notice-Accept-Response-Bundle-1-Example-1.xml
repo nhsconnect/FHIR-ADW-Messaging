@@ -14,17 +14,9 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-notice-accept-response-message-header-1"/>
 				</meta>
-				<!-- Notice type -->
-				<extension url="https://fhir.nhs.uk/StructureDefinition/extension-adw-response-type-1">
-					<valueCoding>
-						<system value="https://fhir.nhs.uk/adw-response-type-1"/>
-								<code value="accept"/>
-								<display value="Accept"/>
-					</valueCoding>
-				</extension>
 				<timestamp value="2017-05-04T15:13:18+00:00"/>
 				<event>
-					<system value="https://fhir.nhs.uk/adw-message-event-1"/>
+					<system value="http://snomed.info/sct"/>
 					<code value="975821000000109"/>
 				</event>
 				<response>
