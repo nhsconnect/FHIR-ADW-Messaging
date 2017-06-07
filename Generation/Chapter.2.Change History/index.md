@@ -12,6 +12,7 @@
  - Fixed value for all Notice receipt MessageHeader.reason.code elements to 'OFT'.
  - Fixed broken links to profiles on adw-message-bundle-1.html pages.
  - Updated all CareConnect profiles, extensions and valuesets to latest versions available.
+ - Removed all xml examples based on individual profiles.
 
 ### Version 1.0.0-beta.1 ###
 
@@ -41,7 +42,7 @@
  - Adopted semantic versioning for the specification from http://semver.org/.   
  
 ### Version: 1.0: Status: RC4 ###
- - Changed values in adw-person-stated-gender-1 name and description elements to reflect those in the FHIR valueset at http://hl7.org/fhir/valueset-administrative-gender.html (AdministrativeGender).
+ - Changed values in adw-person-stated-gender-1 name and description elements.
  - Changed valueset reference in ADW-Message-AssessmentNotice-1-Ex01.xml group.question (Patient Consent) from http://fhir.nhs.net/ValueSet/adw-consultation-status-1 to 	http://fhir.nhs.net/ValueSet/careconnect-patient-consent-status-1.
  - Removed red warning text from About page.
  - Amended About page to show October 2015 (latest) version of FHIR.
