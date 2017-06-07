@@ -16,7 +16,7 @@
 				</meta>
 				<timestamp value="2017-05-04T15:11:42+00:00"/>
 				<event>
-					<system value="https://fhir.nhs.uk/adw-message-event-1"/>
+					<system value="http://snomed.info/sct"/>
 					<code value="975731000000100"/>
 				</event>
 				<source>
