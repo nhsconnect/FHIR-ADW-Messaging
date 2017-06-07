@@ -74,9 +74,9 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [careconnect-patient-1]: careconnect-patient-1.html
 [careconnect-practitioner-1]: careconnect-practitioner-1.html
 [ADW-Lead-Clinician-Practitioner-1]: careconnect-practitioner-1.html
-[CareConnect-Organization-1]: CareConnect-Organization-1.html
+[CareConnect-Organization-1]: careconnect-organization-1.html
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
-[CareConnect-Organization-1]: CareConnect-Organization-1.html
+[CareConnect-Organization-1]: careconnect-organization-1.html
 [careconnect-location-1]: careconnect-location-1.html
 
 
