@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-02T14:09:23.945+00:00" />
+    <lastUpdated value="2017-05-08T15:43:14.761+01:00" />
   </meta>
   <url value="http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor" />
   <version value="1.0.0" />
@@ -21,7 +21,7 @@
   <snapshot>
     <element>
       <path value="Extension" />
-      <short value="Flag indicating whether the patient authorized the donation of body parts after death." />
+      <short value="Flag indicating whether the patient authorized the donation of body parts after death" />
       <definition value="Flag indicating whether the patient authorized the donation of body parts after death." />
       <min value="0" />
       <max value="*" />
@@ -190,7 +190,7 @@
   <differential>
     <element>
       <path value="Extension" />
-      <short value="Flag indicating whether the patient authorized the donation of body parts after death." />
+      <short value="Flag indicating whether the patient authorized the donation of body parts after death" />
       <definition value="Flag indicating whether the patient authorized the donation of body parts after death." />
     </element>
     <element>
