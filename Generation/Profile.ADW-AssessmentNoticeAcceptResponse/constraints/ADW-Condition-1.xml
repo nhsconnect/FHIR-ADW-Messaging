@@ -1,13 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-12T14:15:36.213+01:00" />
-    <tag>
-      <system value="urn:hscic:examples" />
-      <version value="1.0" />
-      <code value="ADW-Condition-1-0-Ex01" />
-      <display value="The condition which is the reason for admission" />
-    </tag>
+    <lastUpdated value="2017-06-07T13:57:45.515+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <version value="1.0" />
