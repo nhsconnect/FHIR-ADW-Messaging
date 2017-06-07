@@ -30,7 +30,7 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 | **Withdrawal Notice Reject Response**    |                                                   |
 | Notice Receipt issued date               | [MessageHeader.timestamp (ADW Reject Response Message Sent Time)]                                     |
 | Notice Type                              | [MessageHeader.event.code (Reject Response Type)]                                     |
-| Response Type                            | [MessageHeader.responseType]                                    |
+| Response Type                            | [MessageHeader.event.code]                                    |
 | Response Details                         | [MessageHeader.reason.text (Reject Reason)]                                        |
 | **Patient Identifiers**                  |                                                   |
 | Patient NHS Number                       | [Patient.identifier.value (NHS Number)]                          |
@@ -69,15 +69,15 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 [ADW-ReferralRequest-Cancelled-1]: adw-referral-request-cancelled-1.html
 [careconnect-patient-1]: careconnect-patient-1.html
 [careconnect-practitioner-1]: careconnect-practitioner-1.html
-[CareConnect-Organization-1]: CareConnect-Organization-1.html
+[CareConnect-Organization-1]: careconnect-organization-1.html
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
-[CareConnect-Organization-1]: CareConnect-Organization-1.html
+[CareConnect-Organization-1]: careconnect-organization-1.html
 [careconnect-location-1]: careconnect-location-1.html
 
 
 [MessageHeader.timestamp (ADW Reject Response Message Sent Time)]: adw-withdrawal-notice-reject-response-message-header-1-dict.html#MessageHeader.ADW%20Reject%20Response%20Message%20Sent%20Time
 [MessageHeader.event.code (Reject Response Type)]: adw-withdrawal-notice-reject-response-message-header-1-dict.html#MessageHeader.event.Reject%20Response%20Type
-[MessageHeader.responseType]: extension-adw-response-type-1-dict.html#Extension.valueCoding.display
+[MessageHeader.event.code]: adw-withdrawal-notice-reject-response-message-header-1-dict.html#MessageHeader.event.Reject%20Response%20Type
 [MessageHeader.reason.text (Reject Reason)]: adw-withdrawal-notice-reject-response-message-header-1-dict.html#MessageHeader.reason.Reject%20Reason%20Details
 [Patient.identifier.value (NHS Number)]: careconnect-patient-1-dict.html#Patient.identifier.value
 [Patient.identifier (Local Identifier)]: careconnect-patient-1-dict.html#Patient.identifier.value 
