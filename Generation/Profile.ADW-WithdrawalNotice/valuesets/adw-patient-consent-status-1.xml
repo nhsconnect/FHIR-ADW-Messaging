@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<meta>
-		<lastUpdated value="2016-07-03T09:00:00+00:00"/>
+		<lastUpdated value="2017-06-05T12:50:00+00:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/adw-patient-consent-status-1"/>
 	<name value="ADW Patient Consent Status"/>
@@ -15,7 +15,7 @@
 		</telecom>
 	</contact>
 	<description value="A vocabulary that describes whether someone has been consulted about the Assessment Notice."/>
-	<requirements value="There is a requirement to indicate if someone has been consulted about the Assessment Notice."/>
+	<requirements value="There is a requirement within the Social Care ADW message to indicate if someone has been consulted about the Assessment Notice."/>
 	<codeSystem>
 		<system value="https://fhir.nhs.uk/adw-patient-consent-status-1"/>
 		<concept>

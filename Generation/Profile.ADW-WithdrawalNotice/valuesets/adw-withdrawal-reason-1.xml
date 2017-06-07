@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
+<id value="8f5be5d8-3f2b-4de7-8bf0-e326be2ea245"/>
 	<meta>
-		<lastUpdated value="2016-07-13T09:00:00+00:00"/>
+		<lastUpdated value="2017-06-05T16:50:00+00:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/adw-withdrawal-reason-1"/>
+		<version value="1.0.0"/>
 	<name value="ADW Withdrawal Reason"/>
 	<status value="active"/>
-	<publisher value="Health and Social Care Information Centre"/>
+	<publisher value="NHS Digital"/>
 	<contact>
+	<name value="Interoperability Team"/>
 		<telecom>
 			<system value="email"/>
-			<value value="information.standards@nhs.net"/>
+			<value value="interoperabilityteam@nhs.net"/>
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="A vocabulary that identifies the reason for withdrawal."/>
-	<requirements value="To allow the reason for withdrawal to be indicated to the receiver of the withdral notice."/>
+	<description value="A vocabulary that identifies the reason why the notice has been withdrawn."/>
+	<requirements value="There is a requirement within the Social Care ADW message to indicate the reason for withdrawal to the receiver of the withdrawal notice."/>
 	<codeSystem>
 		<system value="https://fhir.nhs.uk/adw-withdrawal-reason-1"/>
 		<concept>

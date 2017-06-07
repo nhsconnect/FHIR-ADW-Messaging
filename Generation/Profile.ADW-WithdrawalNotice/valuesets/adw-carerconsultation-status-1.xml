@@ -15,7 +15,7 @@
 		</telecom>
 	</contact>
 	<description value="A vocabulary that describes whether the patient's carer has been consulted about information carried in a  ADW notice."/>
-	<requirements value="There is a requirement to indicate whether the patient's carer has been consulted about information carried in an ADW notice."/>
+	<requirements value="There is a requirement within the Social Care ADW message to indicate whether the patient's carer has been consulted about information carried in an ADW notice."/>
 	<codeSystem>
 		<system value="https://fhir.nhs.uk/adw-carerconsultation-status-1"/>
 		<concept>

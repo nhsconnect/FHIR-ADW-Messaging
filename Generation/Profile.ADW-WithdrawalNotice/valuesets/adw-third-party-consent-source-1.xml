@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="42495d3a-cb28-44d8-b2e9-e6c055bf2129"/>
 	<meta>
-		<lastUpdated value="2016-07-03T09:00:00+00:00"/>
+		<lastUpdated value="2017-06-05T12:50:00+00:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/adw-third-party-consent-source-1"/>
 	<name value="ADW Third Party Consent Source"/>
@@ -16,7 +16,7 @@
 		</telecom>
 	</contact>
 	<description value="A vocabulary that describes the source of the third party consent."/>
-	<requirements value="There is a requirement to indicate the source of the third party consent"/>
+	<requirements value="There is a requirement within the Social Care ADW message to indicate the source of the third party consent"/>
 	<codeSystem>
 		<system value="https://fhir.nhs.uk/adw-third-party-consent-source-1"/>
 		<concept>
