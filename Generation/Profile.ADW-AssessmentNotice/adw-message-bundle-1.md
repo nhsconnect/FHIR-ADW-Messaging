@@ -111,12 +111,12 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [ADW-Referral-Request-1]: adw-referral-request-1.html
 [CareConnect-Patient-1]: careconnect-patient-1.html
 [CareConnect-Practitioner-1]: careconnect-practitioner-1.html
-[CareConnect-Organization-1]: CareConnect-Organization-1.html
-[CareConnect-ADW-Encounter-1]: careconnect-ADW-Encounter-1.html
+[CareConnect-Organization-1]: careconnect-organization-1.html
+[CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [ADW-QuestionnaireResponse-1]: adw-questionnaire-response-1.html
 [ADW-Composition-1]: adw-composition-1.html
 [CareConnect-Location-1]: careconnect-location-1.html
-[ADW-Condition-1]: ADW-Condition-1.html
+[ADW-Condition-1]: adw-condition-1.html
 
 
 
@@ -148,7 +148,7 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
 [QuestionnaireResponse.group.question.answer.valueCoding (Carer Consultation)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Carer%20Consultation
 [QuestionnaireResponse.group.question.answer.valueCoding (Patient Consultation)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consultation
-[QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consent
+[QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consent
 [QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Source)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Third%20Party%20Consent%20Source
 [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Assessment Considered Indicator)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Assessment%20Considered%20Indicator
 [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Considered Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Considered%20Result
