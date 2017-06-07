@@ -5,7 +5,7 @@
 
 This section provides Assessment, Discharge and Withdrawal Dataset implementers with the information required to utilise the Assessment, Discharge and Withdrawal Dataset Domain Message Specification.
 
-All the messages for the Assessment, Discharge and Withdrawal Dataset FHIR interface are based on the [HL7 FHIR DSTU2 1.0.1 Messaging Implementation] (Sept 2015) Messaging Implementation and supports multiple interactions. 
+All the messages for the Assessment, Discharge and Withdrawal Dataset FHIR interface are based on the [HL7 FHIR DSTU2 1.0.2 Messaging Implementation] (Oct 2015) Messaging Implementation and supports multiple interactions. 
 
 In addition to the standard acknowledgements and responses provided by MESH, a number of business responses are defined using the FHIR standard. The relevant MESH documentation should be consulted for further information.
 
@@ -199,10 +199,10 @@ In FHIR messaging, a "message" is sent from a source application to a destinatio
 
 **Further Information**
   
-For more information about FHIR messaging please visit: [HL7 FHIR DSTU2 1.0.1 Messaging Implementation]
+For more information about FHIR messaging please visit: [HL7 FHIR DSTU2 1.0.2 Messaging Implementation]
 
 
-[HL7 FHIR DSTU2 1.0.1 Messaging Implementation]:http://hl7.org/fhir/messaging.html
+[HL7 FHIR DSTU2 1.0.2 Messaging Implementation]:http://hl7.org/fhir/DSTU2/messaging.html
 
 [ADW-AssessmentNotice-1]: ../Profile.ADW-AssessmentNotice/Profile.ADW-AssessmentNotice.html
 
