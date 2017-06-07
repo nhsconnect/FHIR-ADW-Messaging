@@ -100,10 +100,10 @@ The diagram shows the referencing for a typical Discharge Notice message. It is 
 [careconnect-patient-1]: careconnect-patient-1.html
 [careconnect-practitioner-1]: careconnect-practitioner-1.html
 [ADW-Lead-Clinician-Practitioner-1]: careconnect-practitioner-1.html
-[CareConnect-Organization-1]: CareConnect-Organization-1.html
+[CareConnect-Organization-1]: careconnect-organization-1.html
 [ADW-DischargeQuestionnaireResponse-1]: adw-discharge-questionnaire-response-1.html
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
-[CareConnect-Organization-1]: CareConnect-Organization-1.html
+[CareConnect-Organization-1]: careconnect-organization-1.html
 [careconnect-location-1]: careconnect-location-1.html
 [ADW-Discharge-Composition-1]: adw-discharge-composition-1.html
 
