@@ -570,7 +570,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/adw-message-event-1" />
+      <fixedUri value="http://snomed.info/sct" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3354,7 +3354,7 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.display" />
@@ -3711,7 +3711,7 @@
       <name value="Withdrawal Notice system" />
       <comments value="The identification of the code system that defines the meaning of the symbol in the code." />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/adw-message-event-1" />
+      <fixedUri value="http://snomed.info/sct" />
       <mustSupport value="true" />
     </element>
     <element>
