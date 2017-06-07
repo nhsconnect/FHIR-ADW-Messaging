@@ -1,5 +1,18 @@
 # Change History #
 
+### Version 2.0.0-beta.1 ###
+
+ - Amended all non-CareConnect valuesets to reflect FHIR standard.
+ - Removed superfluous valuesets from the specification.
+ - Amended system values for MessageHeader.event.system to http://snomed.info/sct in all bundle xml examples and all MessageHeader profiles.
+ - Removed responseType extension from all MessageHeader profiles, from all Notice xml bundle examples and from the specification. Provided a Dataset map to MessageHeader.event.code to reflect this data item in the Information Standard.
+ - Standardised MessageHeader.reason element for Notice receipt profiles by amending the cardinality of reason.coding.system to 0..0 for all Notice receipts.
+ - Renamed all MessageHeader.reason valuesets for Notice receipts to a standard for acceptance and a standard for rejection. Amended MessageHeader Notice receipt profiles to reflect changes.
+ - Tightened valueset binding strength of MessageHeader.reason to Required.
+ - Fixed value for all Notice receipt MessageHeader.reason.code elements to 'OFT'.
+ - Fixed broken links to profiles on adw-message-bundle-1.html pages.
+ - Updated all CareConnect profiles, extensions and valuesets to latest versions available.
+
 ### Version 1.0.0-beta.1 ###
 
  - Changed values in valueset adw-discharge-notice-reject-reason-1 to reflect Information Standard.
