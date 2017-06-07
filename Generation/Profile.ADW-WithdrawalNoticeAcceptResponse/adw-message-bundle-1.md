@@ -29,7 +29,7 @@ Note that for sliced elements and extensions within CareConnect profiles, it is 
 | **Withdrawal Notice Accept Response**    |                                                   |
 | Notice Receipt issued date               | [MessageHeader.timestamp (ADW Accept Response Message Sent Time)]                        |
 | Notice Type                              | [MessageHeader.event.code (Accept Response Type)]                                     |
-| Response Type                            | [MessageHeader.responseType]                                    |
+| Response Type                            | [MessageHeader.event.code]                                    |
 | Response Details                         | [MessageHeader.reason.text (Accept Reason)]                                        |
 | **Patient Identifiers**                  |                                                   |
 | Patient NHS Number                       | [Patient.identifier.value (NHS Number)]                          |
@@ -67,8 +67,8 @@ Note that for sliced elements and extensions within CareConnect profiles, it is 
 [ADW-ReferralRequest-Cancelled-1]: adw-referral-request-cancelled-1.html
 [careconnect-patient-1]: careconnect-patient-1.html
 [careconnect-practitioner-1]: careconnect-practitioner-1.html
-[CareConnect-Organization-1]: CareConnect-Organization-1.html
-[CareConnect-Organization-1]: CareConnect-Organization-1.html
+[CareConnect-Organization-1]: careconnect-organization-1.html
+[CareConnect-Organization-1]: careconnect-organization-1.html
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [careconnect-location-1]: careconnect-location-1.html
 
@@ -76,7 +76,7 @@ Note that for sliced elements and extensions within CareConnect profiles, it is 
 
 [MessageHeader.timestamp (ADW Accept Response Message Sent Time)]: adw-withdrawal-notice-accept-response-message-header-1-dict.html#MessageHeader.ADW%20Accept%20Response%20Message%20Sent%20Time
 [MessageHeader.event.code (Accept Response Type)]: adw-withdrawal-notice-accept-response-message-header-1-dict.html#MessageHeader.event.Accept%20Response%20Type
-[MessageHeader.responseType]: extension-adw-response-type-1-dict.html#Extension.valueCoding.display
+[MessageHeader.event.code]: adw-withdrawal-notice-accept-response-message-header-1-dict.html#MessageHeader.event.Accept%20Response%20Type
 [MessageHeader.reason.text (Accept Reason)]: adw-withdrawal-notice-accept-response-message-header-1-dict.html#MessageHeader.reason.Accept%20Reason
 [Patient.identifier.value (NHS Number)]: careconnect-patient-1-dict.html#Patient.identifier.value
 [Patient.identifier (Local Identifier)]: careconnect-patient-1-dict.html#Patient.identifier.value 
