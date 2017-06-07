@@ -1,63 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
+	<id value="c846965b-2d79-4a4e-94a5-cb12f4210d53"/>
 	<meta>
-		<lastUpdated value="2016-07-13T09:00:00+00:00"/>
+		<lastUpdated value="2017-06-05T12:50:00+00:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/adw-message-event-1"/>
+	<version value="1.0.0"/>
 	<name value="ADW Message Event"/>
 	<status value="active"/>
-	<publisher value="Health and Social Care Information Centre"/>
+	<publisher value="NHS Digital"/>
 	<contact>
+			<name value="Interoperability Team"/>
 		<telecom>
 			<system value="email"/>
-			<value value="information.standards@nhs.net"/>
+			<value value="interoperabilityteam@nhs.net"/>
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="A vocabulary that identifies the assessment, discharge and withdrawal notice type."/>
-	<copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+	<description value="A subset of codes from the SNOMED Clinical Terminology UK coding system that describes the type of Notice under Schedule 3 of the Care Act 2014. All included codes have a SNOMED refset ID of 75691000000106 for which the fully specified name is 'Notices under Schedule 3 of the Care Act 2014 (record artifact)'. SNOMED defined synonyms have been used for the display element."/>
 	<requirements value="This vocabulary contains values to be selected to set the notice type for a patient's referral."/>
-	<codeSystem>
-		<system value="https://fhir.nhs.uk/adw-message-event-1"/>
-		<concept>
-			<code value="975701000000106"/>
-			<display value="Assessment Notice under the Care Act 2014 schedule 3"/>
-		</concept>
-		<concept>
-			<code value="975711000000108"/>
-			<display value="Assessment Notice Accept Response under the Care Act 2014 Schedule 3"/>
-		</concept>
-		<concept>
-			<code value="975721000000102"/>
-			<display value="Assessment Notice Reject Response under the Care Act 2014 Schedule 3"/>
-		</concept>
-		<concept>
-			<code value="975731000000100"/>
-			<display value="Discharge Notice under the Care Act 2014 Schedule 3"/>
-		</concept>
-		<concept>
-			<code value="975821000000109"/>
-			<display value="Discharge Notice Agreement under the Care Act 2014 Schedule 3"/>
-		</concept>
-		<concept>
-			<code value="975831000000106"/>
-			<display value="Discharge Notice Disagreement under the Care Act 2014 Schedule 3"/>
-		</concept>
-		<concept>
-			<code value="975841000000102"/>
-			<display value="Withdraw All Notices under the Care Act 2014 Schedule 3"/>
-		</concept>
-		<concept>
-			<code value="975851000000104"/>
-			<display value="Withdraw Discharge Notice Only under the Care Act 2014 Schedule 3"/>
-		</concept>
-		<concept>
-			<code value="1025651000000109"/>
-			<display value="Withdraw Notice Accept under the Care Act 2014 Schedule 3"/>
-		</concept>
-		<concept>
-			<code value="1025641000000106"/>
-			<display value="Withdraw Notice Reject under the Care Act 2014 Schedule 3"/>
-		</concept>
-	</codeSystem>
+	<copyright value="	This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="1.33.2"/>
+			<concept>
+				<code value="975701000000106"/>
+				<display value="Assessment Notice under the Care Act 2014 Schedule 3"/>
+			</concept>
+			<concept>
+				<code value="975711000000108"/>
+				<display value="Assessment Notice Accept Response under the Care Act 2014 Schedule 3"/>
+			</concept>
+			<concept>
+				<code value="975721000000102"/>
+				<display value="Assessment Notice Reject Response under the Care Act 2014 Schedule 3"/>
+			</concept>
+			<concept>
+				<code value="975731000000100"/>
+				<display value="Discharge Notice under the Care Act 2014 Schedule 3"/>
+			</concept>
+			<concept>
+				<code value="975821000000109"/>
+				<display value="Discharge Notice Agreement under the Care Act 2014 Schedule 3"/>
+			</concept>
+			<concept>
+				<code value="975831000000106"/>
+				<display value="Discharge Notice Disagreement under the Care Act 2014 Schedule 3"/>
+			</concept>
+			<concept>
+				<code value="975841000000102"/>
+				<display value="Withdraw All Notices under the Care Act 2014 Schedule 3"/>
+			</concept>
+			<concept>
+				<code value="975851000000104"/>
+				<display value="Withdraw Discharge Notice Only under the Care Act 2014 Schedule 3"/>
+			</concept>
+			<concept>
+				<code value="1025651000000109"/>
+				<display value="Withdraw Notice Accept under the Care Act 2014 Schedule 3"/>
+			</concept>
+			<concept>
+				<code value="1025641000000106"/>
+				<display value="Withdraw Notice Reject under the Care Act 2014 Schedule 3"/>
+			</concept>
+		</include>
+	</compose>
 </ValueSet>
