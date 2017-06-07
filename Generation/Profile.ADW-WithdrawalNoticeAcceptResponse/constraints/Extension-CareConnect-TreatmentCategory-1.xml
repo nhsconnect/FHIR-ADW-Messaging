@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-03-01T12:38:43.234+00:00" />
+    <lastUpdated value="2017-03-16T10:48:00.175+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
@@ -163,9 +163,10 @@
     </element>
     <element>
       <path value="Extension.valueCodeableConcept" />
+      <name value="treatmentCategory" />
       <short value="The treatment category under which patient is treated." />
       <definition value="A vocabulary that identifies the treatment category for this patient." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Extension.value[x]" />
@@ -222,9 +223,9 @@
     </element>
     <element>
       <path value="Extension.valueCodeableConcept" />
+      <name value="treatmentCategory" />
       <short value="The treatment category under which patient is treated." />
       <definition value="A vocabulary that identifies the treatment category for this patient." />
-      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
