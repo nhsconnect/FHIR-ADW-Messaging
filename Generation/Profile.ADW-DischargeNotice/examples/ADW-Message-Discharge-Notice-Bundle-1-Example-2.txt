@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Bundle xml example for a minimum dataset.-->
+<!--Bundle xml example-->
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
 	<id value="a63ec43d-887f-477d-b461-80dbbb139fc6"/>
 	<meta>
@@ -82,6 +82,38 @@
 					<reference value="urn:uuid:286919ac-12ba-4469-b9fd-676ef9cdb623"/>
 				</supportingInformation>
 			</ReferralRequest>
+		</resource>
+	</entry>
+		<entry>
+		<fullUrl value="urn:uuid:9abe04e9-c508-492c-94fc-349d34b85bd5"/>
+		<resource>
+			<Encounter>
+				<id value="9abe04e9-c508-492c-94fc-349d34b85bd5"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/encounter-id"/>
+					<!--Same encounter ID for all encounters across all messages-->
+					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
+				</identifier>
+				<status value="in-progress"/>
+				<class value="inpatient"/>
+				<patient>
+					<reference value="urn:uuid:42840151-1fe1-4967-88c1-bcbd2a191243"/>
+				</patient>
+				<period>
+					<end value="2017-05-12"/>
+				</period>
+				<location>
+					<location>
+						<reference value="urn:uuid:64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+				</serviceProvider>
+			</Encounter>
 		</resource>
 	</entry>
 	<entry>
@@ -308,6 +340,22 @@
 		</resource>
 	</entry>
 	<entry>
+		<fullUrl value="urn:uuid:64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
+		<resource>
+			<Location>
+				<id value="64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
+				<meta>
+					<!--Identifies the profile being used-->
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
+				</meta>
+				<name value="Collier Ward"/>
+				<managingOrganization>
+					<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+				</managingOrganization>
+			</Location>
+		</resource>
+	</entry>
+	<entry>
 		<fullUrl value="urn:uuid:59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
 		<resource>
 			<QuestionnaireResponse>
@@ -349,54 +397,8 @@
 			</QuestionnaireResponse>
 		</resource>
 	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:9abe04e9-c508-492c-94fc-349d34b85bd5"/>
-		<resource>
-			<Encounter>
-				<id value="9abe04e9-c508-492c-94fc-349d34b85bd5"/>
-				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-encounter-1"/>
-				</meta>
-				<identifier>
-					<system value="https://fhir.nhs.uk/encounter-id"/>
-					<!--Same encounter ID for all encounters across all messages-->
-					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
-				</identifier>
-				<status value="in-progress"/>
-				<class value="inpatient"/>
-				<patient>
-					<reference value="urn:uuid:42840151-1fe1-4967-88c1-bcbd2a191243"/>
-				</patient>
-				<period>
-					<end value="2017-05-12"/>
-				</period>
-				<location>
-					<location>
-						<reference value="urn:uuid:64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
-					</location>
-				</location>
-				<serviceProvider>
-					<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
-				</serviceProvider>
-			</Encounter>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
-		<resource>
-			<Location>
-				<id value="64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
-				<meta>
-					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
-				</meta>
-				<name value="Collier Ward"/>
-				<managingOrganization>
-					<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
-				</managingOrganization>
-			</Location>
-		</resource>
-	</entry>
+
+	
 	<entry>
 		<fullUrl value="urn:uuid:286919ac-12ba-4469-b9fd-676ef9cdb623"/>
 		<resource>
