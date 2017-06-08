@@ -12,7 +12,11 @@
  - Fixed value for all Notice receipt MessageHeader.reason.code elements to 'OFT'.
  - Fixed broken links to profiles on adw-message-bundle-1.html pages.
  - Updated all CareConnect profiles, extensions and valuesets to latest versions available.
+ - Removed Composition profile from the specification.
+ - Updated Messages page to include links to and explanatory text about COFE Composition and DocumentReference.
  - Removed all xml examples based on individual profiles.
+ - Re-ordered profiles within bundle xml examples to reflect profile ordering.
+ - Added an example instance of a Composition to ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml.
 
 ### Version 1.0.0-beta.1 ###
 
