@@ -1,5 +1,5 @@
 
-The Discharge Notice ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles in the following combined order: 
+The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles in the following combined order: 
 
 - ADW-DischargeNotice-Message-Header-1 [ADW-DischargeNotice-Message-Header-1]
 - ADW-DischargeReferralRequest-1 [ADW-DischargeReferralRequest-1]
@@ -9,14 +9,14 @@ The Discharge Notice ADW-Message-Bundle-1 bundle resource profile is used in the
 - CareConnect-Organization-1 [CareConnect-Organization-1]
 - CareConnect-Location-1 [CareConnect-Location-1]
 - ADW-DischargeQuestionnaireResponse-1 [ADW-DischargeQuestionnaireResponse-1]
-- ADW-Discharge-Composition-1 [ADW-Discharge-Composition-1] 
 
+Instances of a Composition, DocumentReference and a Binary resource have been added to the end of this Discharge bundle to illustrate how a supporting document, in this case a pdf, could be attached to the message.
 
 ----------
 
 The following example has been saved as a .txt file only to allow correct viewing within a web browser; xml copies are available in the examples folder within this specification.
 
-Example of the Assessment Notice Bundle for viewing in a web browser [ADW-Message-Discharge-Notice-Bundle-1-Example-2.txt] 
+Example of the Discharge Notice Bundle for viewing in a web browser [ADW-Message-Discharge-Notice-Bundle-1-Example-2.txt] 
 
 
 [ADW-Message-Discharge-Notice-Bundle-1-Example-2.txt]: ../Chapter.5.Examples/ADW-Message-Discharge-Notice-Bundle-1-Example-2.txt
@@ -105,7 +105,6 @@ The diagram shows the referencing for a typical Discharge Notice message. It is 
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [CareConnect-Organization-1]: careconnect-organization-1.html
 [careconnect-location-1]: careconnect-location-1.html
-[ADW-Discharge-Composition-1]: adw-discharge-composition-1.html
 
 
 
