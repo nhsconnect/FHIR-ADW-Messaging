@@ -4,13 +4,12 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 - ADW-AssessmentNotice-Message-Header-1 [ADW-AssessmentNotice-Message-Header-1] 
 - ADW-Referral-Request-1 [ADW-Referral-Request-1]
 - CareConnect-ADW-Encounter-1 [CareConnect-ADW-Encounter-1]
-- ADW-Condition-1 [ADW-Condition-1]
 - Careconnect-Patient-1 [CareConnect-Patient-1]
 - Careconnect-Practitioner-1 [CareConnect-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
 - CareConnect-Location-1 [CareConnect-Location-1]
 - ADW-QuestionnaireResponse-1 [ADW-QuestionnaireResponse-1]
-- ADW-Composition-1 [ADW-Composition-1]
+- ADW-Condition-1 [ADW-Condition-1]
 
 
 ----------
@@ -114,7 +113,6 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [CareConnect-Organization-1]: careconnect-organization-1.html
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [ADW-QuestionnaireResponse-1]: adw-questionnaire-response-1.html
-[ADW-Composition-1]: adw-composition-1.html
 [CareConnect-Location-1]: careconnect-location-1.html
 [ADW-Condition-1]: adw-condition-1.html
 
