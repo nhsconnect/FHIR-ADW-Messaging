@@ -12,11 +12,21 @@ The FHIR resource profiles within this DMS have been created to support the Asse
  - **[Withdrawal Notice Accept Response]** - FHIR resource profiles combined to support the Withdrawal Notice Accept Response interface.
  - **[Withdrawal Notice Reject Response]** - FHIR resource profiles combined to support the Withdrawal Notice Reject Response interface.
 
-## Document Reference ##
+### Document Header ###
 
-This specification allows the inclusion of documents which are non-FHIR based (for example .pdf) within the message bundle. Should this functionality be required, the [COFE-DocumentReference-1] specification should be consulted for guidance on how to create an embedded document in a standard format. The COFE-DocumentReference specification details the document header and binary attachment structure and provides a common approach for embedded documents for NHS Digital message flows.
+This specification optionally allows an implementer to include a Document Header or Composition which gives the opportunity to group together all the information contained in either an Assessment, Discharge, Withdrawal or Receipt Notice. The Composition defines the structure, but the full content of the document is contained in the Bundle, of which the Composition is the first resource.
+If this functionality is required, the [COFE-Composition-1] specification gives guidance on how to implement it.
+An example of such an implementation is given for a discharge notice in the [Discharge Notice bundle xml example].  
+
+
+### Document Reference ###
+
+This specification allows the inclusion of documents which are non-FHIR based within the message bundle. A pertinent example would be a pdf document containing supporting information relating to a patient's discharge from hospital. 
+Should this functionality be required, the [COFE-DocumentReference-1] specification should be consulted for guidance on how to create an embedded document in a standard format. The COFE-DocumentReference specification details the document header and binary attachment structure and provides a common approach for embedded documents for NHS Digital message flows.
+An example of such an implementation showing an attached pdf for a discharge notice is given in the [Discharge Notice bundle xml example]. 
 
 [COFE-DocumentReference-1]: https://nhsconnect.github.io/NHS-FHIR-CDA-DOCREF/Generated/Chapter.1.About/index.html
+[Discharge Notice bundle xml example]: ../Examples/Profile.ADW-DischargeNotice/ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml
 
 
 **Further Information**
