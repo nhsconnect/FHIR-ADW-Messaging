@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--Assessment Notice-->
-<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
+<Bundle xmlns="http://hl7.org/fhir">
 	<id value="79aec4c6-e7d3-44ef-96ed-bda1b94f9d00"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1"/>
@@ -28,14 +26,11 @@
 					<endpoint value="urn:nhs-uk:addressing:ods:V396BB"/>
 				</destination>
 				<author>
-					<!-- Hospital Liaison -->
 					<reference value="urn:uuid:5b5d3bab-c1bb-434a-ab0d-82c4860bb098"/>
 				</author>
-				<!-- Local Authority Social Services' team -->
 				<receiver>
 					<reference value="urn:uuid:ac831651ed4-4b25-97d9-2f204a51c182"/>
 				</receiver>
-				<!-- Lead Clinician -->
 				<responsible>
 					<reference value="urn:uuid:88563c7f-b040-486a-9018-296bf9b94f32"/>
 				</responsible>
@@ -51,22 +46,18 @@
 			<ReferralRequest>
 				<id value="37c1099d-638c-4970-bcc6-539403f6ca8e"/>
 				<meta>
-					<!--This is taken from the url value of https://fhir.nhs.uk/StructureDefinition/adw-referral-request-1 found in the profile-->
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-referral-request-1"/>
 				</meta>
 				<status value="requested"/>
 				<identifier>
 					<value value="311fcae7-32a7-4a8e-a15c-eebae3a246b9"/>
-					<!--The value of this identifier will be the same across all referrals to tie all these together-->
 				</identifier>
 				<patient>
 					<reference value="urn:uuid:bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
 				</patient>
-				<!-- Hospital Liaison, a hospital Discharge Co-ordinator -->
 				<requester>
 					<reference value="urn:uuid:5b5d3bab-c1bb-434a-ab0d-82c4860bb098"/>
 				</requester>
-				<!-- Local Authority Social Services' team -->
 				<recipient>
 					<reference value="urn:uuid:ac831651ed4-4b25-97d9-2f204a51c182"/>
 				</recipient>
@@ -84,7 +75,6 @@
 		<resource>
 			<Patient>
 				<id value="bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
-				<!--Identifies the profile being used-->
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
 				</meta>
@@ -105,7 +95,6 @@
 						<valueBoolean value="false"/>
 					</extension>
 				</extension>
-				<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
 				<identifier>
 					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
 						<valueCodeableConcept>
@@ -142,7 +131,6 @@
 				<gender value="male"/>
 				<birthDate value="1941-11-01"/>
 				<address>
-					<!-- Structured address-->
 					<line value="The Old Lodge"/>
 					<line value="1 Little Street"/>
 					<line value="Chapeltown"/>
@@ -150,7 +138,6 @@
 					<district value="West Yorkshire"/>
 					<postalCode value="LS6 1UR"/>
 				</address>
-				<!-- Patient's Carer contact -->
 				<contact>
 					<relationship>
 						<coding>
@@ -182,7 +169,6 @@
 			<Practitioner>
 				<id value="5b5d3bab-c1bb-434a-ab0d-82c4860bb098"/>
 				<meta>
-					<!--Identifies the profile being used-->
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<name>
@@ -219,7 +205,6 @@
 			<Practitioner>
 				<id value="88563c7f-b040-486a-9018-296bf9b94f32"/>
 				<meta>
-					<!--Identifies the profile being used-->
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<name>
@@ -248,15 +233,12 @@
 			<Organization>
 				<id value="1ebc76fd-9612-4c72-81dd-de294a0e7287"/>
 				<meta>
-					<!--Identifies the profile being used-->
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
-				<!--Organisation identifier -->
 				<identifier>
-					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 					<value value="RFM8C2"/>
 				</identifier>
-				<!-- Type of organisation. -->
 				<type>
 					<coding>
 						<system value="http://hl7.org/fhir/organization-type"/>
@@ -275,15 +257,12 @@
 			<Organization>
 				<id value="dab4b872-e000-42ec-bd4e-0d804fc3b92e"/>
 				<meta>
-					<!--Identifies the profile being used-->
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
-				<!--Organisation identifier -->
 				<identifier>
 					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 					<value value="V396BB"/>
 				</identifier>
-				<!-- Type of organisation. -->
 				<type>
 					<coding>
 						<system value="http://hl7.org/fhir/organization-type"/>
@@ -302,10 +281,8 @@
 			<Organization>
 				<id value="ac831651ed4-4b25-97d9-2f204a51c182"/>
 				<meta>
-					<!--Identifies the profile being used-->
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 				</meta>
-				<!-- Type of organisation. -->
 				<type>
 					<coding>
 						<system value="http://hl7.org/fhir/organization-type"/>
@@ -327,7 +304,6 @@
 			<QuestionnaireResponse>
 				<id value="9c7eb664-d257-4250-aee2-20ad202919e8"/>
 				<meta>
-					<!--Identifies the profile being used-->
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-questionnaire-response-1"/>
 				</meta>
 				<identifier>
@@ -414,7 +390,6 @@
 			<Encounter>
 				<id value="fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
 				<meta>
-					<!--Identifies the profile being used-->
 					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 				</meta>
 				<identifier>
@@ -459,7 +434,6 @@
 			<Location>
 				<id value="ce114cdd-cfeb-4533-b3c4-3c0dd450b25c"/>
 				<meta>
-					<!--Identifies the profile being used-->
 					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
 				</meta>
 				<name value="Collier Ward"/>
@@ -475,14 +449,11 @@
 			<Condition>
 				<id value="af7ba23c-8ad3-11e6-ae22-56b6b6499611"/>
 				<meta>
-					<!--Identifies the profile being used-->
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1"/>
 				</meta>
-				<!--Reference to patient-->
 				<patient>
 					<reference value="urn:uuid:bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
 				</patient>
-				<!-- Identification of the condition, problem or diagnosis which was the reason for admission -->
 				<code>
 					<text value="Chest pain, shortness of breath, nausea"/>
 				</code>
