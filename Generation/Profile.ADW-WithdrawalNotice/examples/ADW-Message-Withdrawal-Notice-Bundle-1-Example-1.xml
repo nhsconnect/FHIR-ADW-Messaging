@@ -83,6 +83,35 @@
 			</ReferralRequest>
 		</resource>
 	</entry>
+		<entry>
+		<fullUrl value="urn:uuid:650dd873-22b5-45c7-bec2-6762613a2d9e"/>
+		<resource>
+			<Encounter>
+				<id value="650dd873-22b5-45c7-bec2-6762613a2d9e"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/encounter-id"/>
+					<!--Same encounter ID for all encounters across all messages-->
+					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
+				</identifier>
+				<status value="in-progress"/>
+				<class value="inpatient"/>
+				<patient>
+					<reference value="urn:uuid:038f2a2b-72b7-4be3-b0b2-3f68c5f05037"/>
+				</patient>
+				<location>
+					<location>
+						<reference value="urn:uuid:c2c0e1aa-4fcb-47e4-a2d2-0ba8630178df"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="urn:uuid:adcda4f8-6df6-443f-be07-11c2006af7d0"/>
+				</serviceProvider>
+			</Encounter>
+		</resource>
+	</entry>
 	<entry>
 		<fullUrl value="urn:uuid:038f2a2b-72b7-4be3-b0b2-3f68c5f05037"/>
 		<resource>
@@ -278,35 +307,6 @@
 					<reference value="urn:uuid:4ef37b35-3367-44a2-8328-dcd71a10b9fb"/>
 				</partOf>
 			</Organization>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:650dd873-22b5-45c7-bec2-6762613a2d9e"/>
-		<resource>
-			<Encounter>
-				<id value="650dd873-22b5-45c7-bec2-6762613a2d9e"/>
-				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
-				</meta>
-				<identifier>
-					<system value="https://fhir.nhs.uk/encounter-id"/>
-					<!--Same encounter ID for all encounters across all messages-->
-					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
-				</identifier>
-				<status value="in-progress"/>
-				<class value="inpatient"/>
-				<patient>
-					<reference value="urn:uuid:038f2a2b-72b7-4be3-b0b2-3f68c5f05037"/>
-				</patient>
-				<location>
-					<location>
-						<reference value="urn:uuid:c2c0e1aa-4fcb-47e4-a2d2-0ba8630178df"/>
-					</location>
-				</location>
-				<serviceProvider>
-					<reference value="urn:uuid:adcda4f8-6df6-443f-be07-11c2006af7d0"/>
-				</serviceProvider>
-			</Encounter>
 		</resource>
 	</entry>
 	<entry>
