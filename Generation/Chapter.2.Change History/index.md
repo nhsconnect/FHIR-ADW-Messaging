@@ -17,6 +17,8 @@
  - Removed all xml examples based on individual profiles.
  - Re-ordered profiles within bundle xml examples to reflect profile ordering.
  - Added an example instance of a Composition to ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml.
+ - Constrained CareConnect-Practitioner-1 to become CareConnect-ADW-Practitioner-1 due to adding a slice to practitionerRole.
+ - Inserted a corresponding slice for Practitioner.practitionerRole to replace the Practitioner.specialty element in all bundle xml examples.  
 
 ### Version 1.0.0-beta.1 ###
 
