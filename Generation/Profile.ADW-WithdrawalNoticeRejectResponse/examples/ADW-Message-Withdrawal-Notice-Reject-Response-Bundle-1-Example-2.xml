@@ -119,7 +119,7 @@
 				<id value="64c38c32-ee5c-466a-98c4-8de2baca6cff"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 					<identifier>
 					<use value="official"/>
@@ -137,7 +137,7 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="0191223344"/>
+					<value value="01131223344"/>
 					<use value="work"/>
 				</telecom>
 				<practitionerRole>
@@ -163,7 +163,7 @@
 				<id value="1b3e2b9e-a5a3-4fe5-bc90-0cb1c93b84e2"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>
@@ -294,7 +294,7 @@
 			<Encounter>
 				<id value="07e7c480-4ea8-45d5-933a-11a2008e54d7"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 				</meta>
 				<identifier>
 					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>

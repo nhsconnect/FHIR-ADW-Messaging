@@ -86,7 +86,7 @@
 				<id value="fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/encounter-id"/>
@@ -228,7 +228,7 @@
 				<id value="5b5d3bab-c1bb-434a-ab0d-82c4860bb098"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Gulliver"/>
@@ -240,20 +240,20 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="0191223344"/>
+					<value value="01131223344"/>
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>
 						<reference value="urn:uuid:1ebc76fd-9612-4c72-81dd-de294a0e7287"/>
 					</managingOrganization>
-					<specialty>
+					<role>
 						<coding>
 							<system value="https://fhir.nhs.uk/job-role-name-1"/>
 							<code value="NR2060"/>
 							<display value="Discharge coordinator"/>
 						</coding>
 						<text value="Hospital Liaison"/>
-					</specialty>
+					</role>
 				</practitionerRole>
 			</Practitioner>
 		</resource>
@@ -265,7 +265,7 @@
 				<id value="88563c7f-b040-486a-9018-296bf9b94f32"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Stibbs"/>
@@ -275,14 +275,14 @@
 					<managingOrganization>
 						<reference value="urn:uuid:1ebc76fd-9612-4c72-81dd-de294a0e7287"/>
 					</managingOrganization>
-					<specialty>
+					<role>
 						<coding>
 							<system value="https://fhir.nhs.uk/job-role-name-1"/>
 							<code value="NR0050"/>
 							<display value="Consultant"/>
 						</coding>
 						<text value="Lead Clinician"/>
-					</specialty>
+					</role>
 				</practitionerRole>
 			</Practitioner>
 		</resource>

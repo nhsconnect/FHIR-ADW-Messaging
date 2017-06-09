@@ -137,7 +137,7 @@
 				<id value="49edc68d-cb09-49c9-8edf-285e931042ce"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Gulliver"/>
@@ -149,21 +149,21 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="0191223344"/>
+					<value value="01131223344"/>
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>
 						<reference value="urn:uuid:148eaefb-6dd0-4848-b13d-317bee9f308f"/>
 					</managingOrganization>
 					<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
-					<specialty>
+					<role>
 						<coding>
 							<system value="https://fhir.nhs.uk/job-role-name-1"/>
 							<code value="NR2060"/>
 							<display value="Discharge coordinator"/>
 						</coding>
 						<text value="Hospital Liaison"/>
-					</specialty>
+					</role>
 				</practitionerRole>
 			</Practitioner>
 		</resource>
@@ -175,7 +175,7 @@
 				<id value="6babc18b-9f20-4fb1-ba0d-d4e3ae2c7cc7"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Jones"/>
@@ -193,14 +193,14 @@
 					<managingOrganization>
 						<reference value="urn:uuid:41e0fd49-d1e5-422a-b9ba-643e00a541a4"/>
 					</managingOrganization>
-					<specialty>
+					<role>
 						<coding>
 							<system value="https://fhir.nhs.uk/job-role-name-1"/>
 							<code value="NR1340"/>
 							<display value="Approved Social Worker"/>
 						</coding>
 						<text value="Local Authority Contact"/>
-					</specialty>
+					</role>
 				</practitionerRole>
 			</Practitioner>
 		</resource>
@@ -290,7 +290,7 @@
 			<Encounter>
 				<id value="2a1def1b-497a-4621-9397-87754a63e4e5"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/encounter-id"/>

@@ -180,14 +180,14 @@
 						<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
 					</managingOrganization>
 					<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
-					<specialty>
+					<role>
 						<coding>
 							<system value="https://fhir.nhs.uk/job-role-name-1"/>
 							<code value="NR2060"/>
 							<display value="Discharge coordinator"/>
 						</coding>
 						<text value="Hospital Liaison"/>
-					</specialty>
+					</role>
 				</practitionerRole>
 			</Practitioner>
 		</resource>
@@ -210,14 +210,14 @@
 						<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
 					</managingOrganization>
 					<!-- Indicates the practitioners role(s)-->
-					<specialty>
+					<role>
 						<coding>
 							<system value="https://fhir.nhs.uk/job-role-name-1"/>
 							<code value="NR0050"/>
 							<display value="Consultant"/>
 						</coding>
 						<text value="Lead Clinician"/>
-					</specialty>
+					</role>
 				</practitionerRole>
 			</Practitioner>
 		</resource>

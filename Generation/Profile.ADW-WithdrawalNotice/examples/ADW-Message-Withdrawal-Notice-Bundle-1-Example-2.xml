@@ -141,7 +141,7 @@
 				<id value="f9ca604c-a34a-4ac6-9e02-e7a118fceb49"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<identifier>
 					<use value="official"/>
@@ -159,7 +159,7 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="0191223344"/>
+					<value value="01131223344"/>
 					<use value="work"/>
 					<rank value="1"/>
 				</telecom>
