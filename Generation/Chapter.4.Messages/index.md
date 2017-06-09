@@ -26,6 +26,7 @@ Should this functionality be required, the [COFE-DocumentReference-1] specificat
 An example of such an implementation showing an attached pdf for a discharge notice is given in the [Discharge Notice bundle xml example]. 
 
 [COFE-DocumentReference-1]: https://nhsconnect.github.io/NHS-FHIR-CDA-DOCREF/Generated/Chapter.1.About/index.html
+[COFE-Composition-1]: https://nhsconnect.github.io/NHS-FHIR-CDA/Generated/Chapter.1.About/index.html
 [Discharge Notice bundle xml example]: ../Examples/Profile.ADW-DischargeNotice/ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml
 
 
