@@ -4,8 +4,8 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 - ADW-AssessmentNoticeAcceptResponse-Message-Header-1 [ADW-AssessmentNoticeAcceptResponse-Message-Header-1]
 - ADW-ReferralRequest-Accepted-1 [ADW-ReferralRequest-Accepted-1]
 - CareConnect-ADW-Encounter-1 [CareConnect-ADW-Encounter-1]
-- Careconnect-Patient-1 [CareConnect-Patient-1]
-- Careconnect-Practitioner-1 [CareConnect-Practitioner-1]
+- CareConnect-Patient-1 [CareConnect-Patient-1]
+- CareConnect-ADW-Practitioner-1 [CareConnect-ADW-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
 - CareConnect-Location-1 [CareConnect-Location-1]
 
@@ -61,7 +61,7 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [ADW-AssessmentNoticeAcceptResponse-Message-Header-1]: adw-assessment-notice-accept-response-message-header-1.html
 [ADW-ReferralRequest-Accepted-1]: adw-referral-request-accepted-1.html
 [CareConnect-Patient-1]: careconnect-patient-1.html
-[CareConnect-Practitioner-1]: careconnect-practitioner-1.html
+[CareConnect-ADW-Practitioner-1]: careconnect-adw-practitioner-1.html
 [CareConnect-Organization-1]: careconnect-organization-1.html
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [ADW-Composition-1]: adw-composition-1.html
@@ -80,22 +80,22 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [Patient.name.given]: careconnect-patient-1-dict.html#Patient.name.given
 [Patient.birthDate]: careconnect-patient-1-dict.html#Patient.birthDate
 [Patient.gender]: careconnect-patient-1-dict.html#Patient.gender
-[Organization.identifier.value (ODS Site Code)]: CareConnect-Organization-1-dict.html#Organization.identifier.value
+[Organization.identifier.value (ODS Site Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Location.name]: careconnect-location-1-dict.html#Location.name
 [Organization.identifier.value (ODS Site Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
-[Organization.name]: CareConnect-Organization-1-dict.html#Organization.name
-[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family
-[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
-[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
-[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
+[Organization.name]: careconnect-organization-1-dict.html#Organization.name
+[Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family
+[Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
+[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
 [Organization.identifier.value (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
-[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family
-[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
-[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
-[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
+[Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family
+[Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
+[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
 
 ----------
 

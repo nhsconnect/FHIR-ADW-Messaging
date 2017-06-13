@@ -4,8 +4,8 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 - ADW-DischargeNotice-Message-Header-1 [ADW-DischargeNotice-Message-Header-1]
 - ADW-DischargeReferralRequest-1 [ADW-DischargeReferralRequest-1]
 - CareConnect-ADW-Encounter-1 [CareConnect-ADW-Encounter-1]
-- Careconnect-Patient-1 [CareConnect-Patient-1]
-- Careconnect-Practitioner-1 [CareConnect-Practitioner-1]
+- CareConnect-Patient-1 [CareConnect-Patient-1]
+- CareConnect-ADW-Practitioner-1 [CareConnect-ADW-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
 - CareConnect-Location-1 [CareConnect-Location-1]
 - ADW-DischargeQuestionnaireResponse-1 [ADW-DischargeQuestionnaireResponse-1]
@@ -97,14 +97,14 @@ The diagram shows the referencing for a typical Discharge Notice message. It is 
 
 [ADW-DischargeNotice-Message-Header-1]: adw-discharge-notice-message-header-1.html
 [ADW-DischargeReferralRequest-1]: adw-discharge-referral-request-1.html
-[careconnect-patient-1]: careconnect-patient-1.html
-[careconnect-practitioner-1]: careconnect-practitioner-1.html
-[ADW-Lead-Clinician-Practitioner-1]: careconnect-practitioner-1.html
+[CareConnect-Patient-1]: careconnect-patient-1.html
+[CareConnect-ADW-Practitioner-1]: careconnect-adw-practitioner-1.html
+[ADW-Lead-Clinician-Practitioner-1]: careconnect-adw-practitioner-1.html
 [CareConnect-Organization-1]: careconnect-organization-1.html
 [ADW-DischargeQuestionnaireResponse-1]: adw-discharge-questionnaire-response-1.html
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [CareConnect-Organization-1]: careconnect-organization-1.html
-[careconnect-location-1]: careconnect-location-1.html
+[CareConnect-Location-1]: careconnect-location-1.html
 
 
 
@@ -120,19 +120,19 @@ The diagram shows the referencing for a typical Discharge Notice message. It is 
 [Patient.address.city]: careconnect-patient-1-dict.html#Patient.address.city
 [Patient.address.district]: careconnect-patient-1-dict.html#Patient.address.district
 [Patient.address.postalCode]: careconnect-patient-1-dict.html#Patient.address.postalCode
-[Organization.identifier.value (ODS Site Code)]: CareConnect-Organization-1-dict.html#Organization.identifier.value
+[Organization.identifier.value (ODS Site Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Location.name]: careconnect-location-1-dict.html#Location.name
 [Encounter.period.end]: careconnect-adw-encounter-1-dict.html#Encounter.period.end
 [QuestionnaireResponse.group.question.answer.value (Patient Consulted)]: adw-discharge-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consultation
 [QuestionnaireResponse.group.question.answer.value (Carer Consulted)]: adw-discharge-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Carer%20Consultation
-[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family
-[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
-[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family
-[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
-[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
-[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
-[Organization.identifier.value (ODS Organisation Code)]: CareConnect-Organization-1-dict.html#Organization.identifier.value
+[Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family
+[Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family
+[Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
+[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
+[Organization.identifier.value (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
 [Organization.identifier.value (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.identifier.value 
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
