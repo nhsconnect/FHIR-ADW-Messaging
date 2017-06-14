@@ -196,12 +196,6 @@ For the purpose of this implementation guide, the FHIR resources are bundled tog
 In FHIR messaging, a "message" is sent from a source application to a destination application when an event happens. Events mostly correspond to things that happen in the real world. The message consists of a bundle identified by the tag "http://hl7.org/fhir/tag/message", with the first resource in the bundle being a MessageHeader resource.
 
 
-
-**Further Information**
-  
-For more information about FHIR messaging please visit: [HL7 FHIR DSTU2 1.0.2 Messaging Implementation]
-
-
 [HL7 FHIR DSTU2 1.0.2 Messaging Implementation]:http://hl7.org/fhir/DSTU2/messaging.html
 
 [ADW-AssessmentNotice-1]: ../Profile.ADW-AssessmentNotice/Profile.ADW-AssessmentNotice.html
