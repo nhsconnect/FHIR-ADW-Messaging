@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-29T08:39:48.243+01:00" />
+    <lastUpdated value="2017-06-14T09:57:04.669+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -23,8 +23,8 @@
     </telecom>
   </contact>
   <date value="2016-07-20T00:00:00+01:00" />
-  <description value="The ADW Referral Request Profile is a constrained version of the Referral Request resource and carries information about the referral request that &#xD;&#xA;has been accepted" />
-  <requirements value="This is required for ADW referral request notices." />
+  <description value="The ADW Referral Request Profile is a constrained version of the Referral Request resource and carries information about the Referral Request that &#xD;&#xA;has been accepted" />
+  <requirements value="This is required for ADW Referral Request notices." />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
   <constrainedType value="ReferralRequest" />
@@ -33,7 +33,7 @@
   <snapshot>
     <element>
       <path value="ReferralRequest" />
-      <short value="The referral Request is used to carry the request for transfer of the patient from hospital to the local authority." />
+      <short value="The Referral Request is used to carry the request for transfer of the patient from hospital to the local authority." />
       <definition value="Used to record and send details about a request for referral service of a patient to the care of another provider or provider organization.&#xD;&#xA;&#xD;&#xA;When the request is accepted it is return to the hospital with a status of accpeted." />
       <comments value="This was designed to be compliant with the information standard for a set of Care Act 2014 compliant Assessment, Discharge and Withdrawal (ADW) Notices" />
       <alias value="ReferralRequest TransferOfCare Request" />
@@ -368,7 +368,7 @@
       <path value="ReferralRequest.status" />
       <name value="The Transfer Status" />
       <short value="draft | requested | active | cancelled | accepted | rejected | completed" />
-      <definition value="The workflow status of the referral request notice." />
+      <definition value="The workflow status of the Referral Request notice." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="1" />
       <max value="1" />
@@ -1627,7 +1627,7 @@
     <element>
       <path value="ReferralRequest.type" />
       <short value="Referral/Transition of care request type" />
-      <definition value="An indication of the type of referral request notice." />
+      <definition value="An indication of the type of Referral Request notice." />
       <comments value="Examples of referral type: - consultation;         second opinion;          third opinion - Assume management - Request for procedure(s)  HL7 v2.8 Example - Table 0336: S = second opinion p = patient preference o = provider ordered w = work load." />
       <min value="0" />
       <max value="0" />
@@ -2135,7 +2135,7 @@
     <element>
       <path value="ReferralRequest.specialty" />
       <short value="The clinical specialty (discipline) that the referral is requested for" />
-      <definition value="Indication of the clinical domain or discipline to which the referral request notice is sent.  For example: Cardiology Gastroenterology Diabetology." />
+      <definition value="Indication of the clinical domain or discipline to which the Referral Request notice is sent.  For example: Cardiology Gastroenterology Diabetology." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
       <max value="0" />
@@ -2641,8 +2641,8 @@
     </element>
     <element>
       <path value="ReferralRequest.priority" />
-      <short value="Urgency of referral request notice" />
-      <definition value="An indication of the urgency of the referral request notice." />
+      <short value="Urgency of Referral Request notice" />
+      <definition value="An indication of the urgency of the Referral Request notice." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
       <max value="0" />
@@ -3156,8 +3156,8 @@
     </element>
     <element>
       <path value="ReferralRequest.patient" />
-      <short value="Patient referred to in the referral request notice" />
-      <definition value="The patient who is the subject of a referral request notice." />
+      <short value="Patient referred to in the Referral Request notice" />
+      <definition value="The patient who is the subject of a Referral Request notice." />
       <comments value="Referral of family, group or community is to be catered for by profiles." />
       <min value="1" />
       <max value="1" />
@@ -3354,7 +3354,7 @@
       <path value="ReferralRequest.requester" />
       <name value="Hospital Liaison" />
       <short value="Requester of the referral notice" />
-      <definition value="The healthcare provider or provider organization who/which initiated the referral request." />
+      <definition value="The healthcare provider or provider organization who/which initiated the Referral Request." />
       <min value="1" />
       <max value="1" />
       <base>
@@ -3410,8 +3410,8 @@
     <element>
       <path value="ReferralRequest.recipient" />
       <name value="Local Authority organisation" />
-      <short value="Receiver of the referral request" />
-      <definition value="The provider organization(s) who/which is to receive the referral request." />
+      <short value="Receiver of the Referral Request" />
+      <definition value="The provider organization(s) who/which is to receive the Referral Request." />
       <comments value="None" />
       <min value="1" />
       <max value="1" />
@@ -3591,7 +3591,7 @@
       <short value="Relative, internal or absolute URL reference" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comments value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Reference.reference" />
@@ -3659,8 +3659,8 @@
     </element>
     <element>
       <path value="ReferralRequest.dateSent" />
-      <short value="Date that the referral request notice is sent" />
-      <definition value="The Date/DateTime that the referral request notice sent by the author." />
+      <short value="Date that the Referral Request notice is sent" />
+      <definition value="The Date/DateTime that the Referral Request notice sent by the author." />
       <min value="0" />
       <max value="0" />
       <base>
@@ -3699,7 +3699,7 @@
     <element>
       <path value="ReferralRequest.reason" />
       <name value="Reason for referral" />
-      <short value="The reason for the referral request notice" />
+      <short value="The reason for the Referral Request notice" />
       <definition value="Description of clinical condition indicating why referral is requested.  For example:  Behavioral Management." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
@@ -4749,8 +4749,8 @@
     <element>
       <path value="ReferralRequest.supportingInformation" />
       <name value="Further Information " />
-      <short value="Additional information to support the referral request notice" />
-      <definition value="Additional information to support the referral request notice." />
+      <short value="Additional information to support the Referral Request notice" />
+      <definition value="Additional information to support the Referral Request notice." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -4933,7 +4933,7 @@
     <element>
       <path value="ReferralRequest.fulfillmentTime" />
       <short value="Requested service(s) fulfillment time" />
-      <definition value="The period of time within which the services identified in the referral request notice are specified or required to occur." />
+      <definition value="The period of time within which the services identified in the Referral Request notice are specified or required to occur." />
       <comments value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <requirements value="Use cases: (1) to indicate that the requested service is not to happen before a specified date, and saving the start date in Period.start; (2) to indicate that the requested service must happen before a specified date, and saving the end date in Period.end; (3) to indicate that the requested service must happen during the specified dates (&quot;start&quot; and &quot;end&quot; values)." />
       <alias value="EffectiveTime" />
@@ -5140,7 +5140,7 @@
   <differential>
     <element>
       <path value="ReferralRequest" />
-      <short value="The referral Request is used to carry the request for transfer of the patient from hospital to the local authority." />
+      <short value="The Referral Request is used to carry the request for transfer of the patient from hospital to the local authority." />
       <definition value="Used to record and send details about a request for referral service of a patient to the care of another provider or provider organization.&#xD;&#xA;&#xD;&#xA;When the request is accepted it is return to the hospital with a status of accpeted." />
       <comments value="This was designed to be compliant with the information standard for a set of Care Act 2014 compliant Assessment, Discharge and Withdrawal (ADW) Notices" />
       <type>
@@ -5151,7 +5151,7 @@
     <element>
       <path value="ReferralRequest.status" />
       <name value="The Transfer Status" />
-      <definition value="The workflow status of the referral request notice." />
+      <definition value="The workflow status of the Referral Request notice." />
       <fixedCode value="accepted" />
       <mustSupport value="true" />
     </element>
@@ -5200,7 +5200,7 @@
     </element>
     <element>
       <path value="ReferralRequest.type" />
-      <definition value="An indication of the type of referral request notice." />
+      <definition value="An indication of the type of Referral Request notice." />
       <max value="0" />
     </element>
     <element>
@@ -5209,7 +5209,7 @@
     </element>
     <element>
       <path value="ReferralRequest.specialty" />
-      <definition value="Indication of the clinical domain or discipline to which the referral request notice is sent.  For example: Cardiology Gastroenterology Diabetology." />
+      <definition value="Indication of the clinical domain or discipline to which the Referral Request notice is sent.  For example: Cardiology Gastroenterology Diabetology." />
       <max value="0" />
     </element>
     <element>
@@ -5218,8 +5218,8 @@
     </element>
     <element>
       <path value="ReferralRequest.priority" />
-      <short value="Urgency of referral request notice" />
-      <definition value="An indication of the urgency of the referral request notice." />
+      <short value="Urgency of Referral Request notice" />
+      <definition value="An indication of the urgency of the Referral Request notice." />
       <max value="0" />
     </element>
     <element>
@@ -5232,8 +5232,8 @@
     </element>
     <element>
       <path value="ReferralRequest.patient" />
-      <short value="Patient referred to in the referral request notice" />
-      <definition value="The patient who is the subject of a referral request notice." />
+      <short value="Patient referred to in the Referral Request notice" />
+      <definition value="The patient who is the subject of a Referral Request notice." />
       <min value="1" />
       <type>
         <code value="Reference" />
@@ -5260,7 +5260,7 @@
       <path value="ReferralRequest.requester" />
       <name value="Hospital Liaison" />
       <short value="Requester of the referral notice" />
-      <definition value="The healthcare provider or provider organization who/which initiated the referral request." />
+      <definition value="The healthcare provider or provider organization who/which initiated the Referral Request." />
       <min value="1" />
       <type>
         <code value="Reference" />
@@ -5273,8 +5273,8 @@
     <element>
       <path value="ReferralRequest.recipient" />
       <name value="Local Authority organisation" />
-      <short value="Receiver of the referral request" />
-      <definition value="The provider organization(s) who/which is to receive the referral request." />
+      <short value="Receiver of the Referral Request" />
+      <definition value="The provider organization(s) who/which is to receive the Referral Request." />
       <comments value="None" />
       <min value="1" />
       <max value="1" />
@@ -5298,15 +5298,19 @@
       <mustSupport value="true" />
     </element>
     <element>
+      <path value="ReferralRequest.encounter.reference" />
+      <min value="1" />
+    </element>
+    <element>
       <path value="ReferralRequest.dateSent" />
-      <short value="Date that the referral request notice is sent" />
-      <definition value="The Date/DateTime that the referral request notice sent by the author." />
+      <short value="Date that the Referral Request notice is sent" />
+      <definition value="The Date/DateTime that the Referral Request notice sent by the author." />
       <max value="0" />
     </element>
     <element>
       <path value="ReferralRequest.reason" />
       <name value="Reason for referral" />
-      <short value="The reason for the referral request notice" />
+      <short value="The reason for the Referral Request notice" />
       <definition value="Description of clinical condition indicating why referral is requested.  For example:  Behavioral Management." />
       <max value="0" />
     </element>
@@ -5322,8 +5326,8 @@
     <element>
       <path value="ReferralRequest.supportingInformation" />
       <name value="Further Information " />
-      <short value="Additional information to support the referral request notice" />
-      <definition value="Additional information to support the referral request notice." />
+      <short value="Additional information to support the Referral Request notice" />
+      <definition value="Additional information to support the Referral Request notice." />
       <type>
         <code value="Reference" />
         <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
@@ -5336,7 +5340,7 @@
     </element>
     <element>
       <path value="ReferralRequest.fulfillmentTime" />
-      <definition value="The period of time within which the services identified in the referral request notice are specified or required to occur." />
+      <definition value="The period of time within which the services identified in the Referral Request notice are specified or required to occur." />
       <max value="0" />
     </element>
   </differential>
