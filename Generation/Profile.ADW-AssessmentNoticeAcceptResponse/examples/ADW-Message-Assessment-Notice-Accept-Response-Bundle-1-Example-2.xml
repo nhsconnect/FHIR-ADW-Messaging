@@ -60,7 +60,7 @@
 		<resource>
 			<ReferralRequest>
 				<id value="869596bc-0e68-4fd6-a0bb-fa73c1f3bab5"/>
-				<!--This GUID for the id is unique for each type of referral request-->
+				<!--This GUID for the id is unique for each type of Referral Request-->
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-referral-request-accepted-1"/>
 					<!--This is taken from the url value of https://fhir.nhs.uk/StructureDefinition/adw-referral-request-1 found in the profile-->
