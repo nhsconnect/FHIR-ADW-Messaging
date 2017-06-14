@@ -1,5 +1,5 @@
 
-The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles in the following combined order: 
+The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles listed below:- 
 
 - ADW-DischargeNoticeAcceptResponse-Message-Header-1 [ADW-DischargeNoticeAcceptResponse-Message-Header-1]
 - ADW-ReferralRequest-Accepted-1 [ADW-ReferralRequest-Accepted-1]
