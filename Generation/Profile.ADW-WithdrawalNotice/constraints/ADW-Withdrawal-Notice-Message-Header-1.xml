@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-05-09T09:30:23.799+01:00" />
+    <lastUpdated value="2017-06-14T12:51:37.186+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -2991,7 +2991,7 @@
       <mustSupport value="true" />
       <isSummary value="true" />
       <binding>
-        <strength value="example" />
+        <strength value="required" />
         <description value="Reason for event occurrence" />
         <valueSetReference>
           <reference value="https://fhir.nhs.uk/ValueSet/adw-withdrawal-reason-1" />
@@ -3855,7 +3855,7 @@
       <min value="1" />
       <mustSupport value="true" />
       <binding>
-        <strength value="example" />
+        <strength value="required" />
         <valueSetReference>
           <reference value="https://fhir.nhs.uk/ValueSet/adw-withdrawal-reason-1" />
         </valueSetReference>
@@ -3878,7 +3878,6 @@
     </element>
     <element>
       <path value="MessageHeader.reason.coding.display" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element>
