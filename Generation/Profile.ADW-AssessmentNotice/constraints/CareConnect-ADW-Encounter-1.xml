@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-09T15:13:35.516+01:00" />
+    <lastUpdated value="2017-06-14T13:40:52.015+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="4" />
@@ -669,10 +669,7 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="example" />
-        <description value="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;" />
-      </binding>
+     
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1861,10 +1858,7 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="example" />
-        <description value="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;" />
-      </binding>
+    
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -5796,7 +5790,7 @@
     </element>
     <element>
       <path value="Encounter.incomingReferral" />
-      <short value="The ReferralRequest that initiated this encounter" />
+      <short value="The Referral Request that initiated this encounter." />
       <definition value="The referral request this encounter satisfies (incoming referral)." />
       <min value="0" />
       <max value="*" />
@@ -5807,7 +5801,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-referral-request-1" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8532,7 +8526,7 @@
     </element>
     <element>
       <path value="Encounter.indication" />
-      <short value="Reason the encounter takes place (resource)" />
+      <short value="Reason the encounter takes place (resource)." />
       <definition value="Reason the encounter takes place, as specified using information from another resource. For admissions, this is the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure." />
       <comments value="For systems that need to know which was the primary diagnosis, these will be marked with the standard extension primaryDiagnosis (which is a sequence value rather than a flag, 1 = primary diagnosis)." />
       <alias value="Admission diagnosis" />
@@ -15125,10 +15119,7 @@
     </element>
     <element>
       <path value="Encounter.incomingReferral" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-referral-request-1" />
-      </type>
+      <short value="The Referral Request that initiated this encounter." />
     </element>
     <element>
       <path value="Encounter.participant.individual" />
@@ -15188,6 +15179,7 @@
     </element>
     <element>
       <path value="Encounter.indication" />
+      <short value="Reason the encounter takes place (resource)." />
       <type>
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
