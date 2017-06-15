@@ -9,16 +9,16 @@
  - Standardised MessageHeader.reason element for Notice receipt profiles by amending the cardinality of reason.coding.system to 0..0 for all Notice receipts.
  - Renamed all MessageHeader.reason valuesets for Notice receipts to a standard for acceptance and a standard for rejection. Amended MessageHeader Notice receipt profiles to reflect changes.
  - Tightened valueset binding strength of MessageHeader.reason to Required.
- - Fixed value for all Notice receipt MessageHeader.reason.code elements to 'OFT'.
  - Fixed broken links to profiles on adw-message-bundle-1.html pages.
  - Updated all CareConnect profiles, extensions and valuesets to latest versions available.
  - Removed Composition profile from the specification.
  - Updated Messages page to include links to and explanatory text about COFE Composition and DocumentReference.
  - Removed all xml examples based on individual profiles.
  - Re-ordered profiles within bundle xml examples to reflect profile ordering.
- - Added an example instance of a Composition to ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml.
  - Constrained CareConnect-Practitioner-1 to become CareConnect-ADW-Practitioner-1 due to adding a slice to practitionerRole.
- - Inserted a corresponding slice for Practitioner.practitionerRole to replace the Practitioner.specialty element in all bundle xml examples.  
+ - Inserted a corresponding slice for Practitioner.practitionerRole to replace the Practitioner.specialty element in all bundle xml examples.
+ - Standardised cardinality of ReferralRequest.encounter.reference to 1..1 and encounter.reference.display to 0..1.
+   
 
 ### Version 1.0.0-beta.1 ###
 
