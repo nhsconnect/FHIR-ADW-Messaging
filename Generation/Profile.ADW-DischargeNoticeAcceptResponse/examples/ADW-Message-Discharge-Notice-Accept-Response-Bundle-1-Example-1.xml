@@ -25,11 +25,9 @@
 					<code value="ok"/>
 				</response>
 				<source>
-					<name value="Local Authority Sending System"/>
 					<endpoint value="urn:nhs-uk:addressing:ods:V396BB"/>
 				</source>
 				<destination>
-					<name value="Hospital Receiving System"/>
 					<endpoint value="urn:nhs-uk:addressing:ods:RFM8C2"/>
 				</destination>
 				<author>
@@ -162,7 +160,6 @@
 							<code value="NR2060"/>
 							<display value="Discharge coordinator"/>
 						</coding>
-						<text value="Hospital Liaison"/>
 					</role>
 				</practitionerRole>
 			</Practitioner>
@@ -199,8 +196,7 @@
 							<code value="NR1340"/>
 							<display value="Approved Social Worker"/>
 						</coding>
-						<text value="Local Authority Contact"/>
-					</role>
+					  </role>
 				</practitionerRole>
 			</Practitioner>
 		</resource>
@@ -226,7 +222,6 @@
 						<code value="prov"/>
 						<display value="Healthcare Provider"/>
 					</coding>
-					<text value="Hospital"/>
 				</type>
 				<name value="Hebburn Hospital"/>
 			</Organization>
@@ -253,7 +248,6 @@
 						<code value="govt"/>
 						<display value="Government"/>
 					</coding>
-					<text value="Local Authority"/>
 				</type>
 				<name value="Hebburn Council"/>
 			</Organization>
@@ -275,7 +269,6 @@
 						<code value="team"/>
 						<display value="Organizational team"/>
 					</coding>
-					<text value="Local Authority Social Services' Team"/>
 				</type>
 				<name value="Hebburn Social Services' Community Team"/>
 				<partOf>

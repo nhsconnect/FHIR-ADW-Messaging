@@ -25,11 +25,9 @@
 					<code value="ok"/>
 				</response>
 				<source>
-					<name value="Local Authority Sending System"/>
 					<endpoint value="urn:nhs-uk:addressing:ods:V396BB"/>
 				</source>
 				<destination>
-					<name value="Hospital Receiving System"/>
 					<endpoint value="urn:nhs-uk:addressing:ods:RFM8C2"/>
 				</destination>
 				<author>
@@ -88,6 +86,35 @@
 					<reference value="urn:uuid:977b5213-6597-4e0c-8c8e-2ba6140db8f6"/>
 				</encounter>
 			</ReferralRequest>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:977b5213-6597-4e0c-8c8e-2ba6140db8f6"/>
+		<resource>
+			<Encounter>
+				<id value="977b5213-6597-4e0c-8c8e-2ba6140db8f6"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/encounter-id"/>
+					<!--Same encounter ID for all encounters across all messages-->
+					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
+				</identifier>
+				<status value="in-progress"/>
+				<class value="inpatient"/>
+				<patient>
+					<reference value="urn:uuid:a1e2525a-08ee-4ece-8a76-426c245a119a"/>
+				</patient>
+				<location>
+					<location>
+						<reference value="urn:uuid:48a8cd66-66b5-4022-b067-fb7410313b81"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="urn:uuid:f20a9596-f8b5-441a-acda-9c923253f3f3"/>
+				</serviceProvider>
+			</Encounter>
 		</resource>
 	</entry>
 	<entry>
@@ -163,7 +190,6 @@
 							<code value="NR2060"/>
 							<display value="Discharge coordinator"/>
 						</coding>
-						<text value="Hospital Liaison"/>
 					</role>
 				</practitionerRole>
 			</Practitioner>
@@ -201,7 +227,6 @@
 							<code value="NR1340"/>
 							<display value="Approved Social Worker"/>
 						</coding>
-						<text value="Local Authority Contact"/>
 					</role>
 				</practitionerRole>
 			</Practitioner>
@@ -228,7 +253,6 @@
 						<code value="prov"/>
 						<display value="Healthcare Provider"/>
 					</coding>
-					<text value="Hospital"/>
 				</type>
 				<name value="Hebburn Hospital"/>
 			</Organization>
@@ -255,7 +279,6 @@
 						<code value="govt"/>
 						<display value="Government"/>
 					</coding>
-					<text value="Local Authority"/>
 				</type>
 				<name value="Hebburn Council"/>
 			</Organization>
@@ -277,42 +300,12 @@
 						<code value="team"/>
 						<display value="Organizational team"/>
 					</coding>
-					<text value="Local Authority Social Services' Team"/>
 				</type>
 				<name value="Hebburn Social Services' Community Team"/>
 				<partOf>
 					<reference value="urn:uuid:c6ee16d3-24fa-4455-96f2-0ba54508798a"/>
 				</partOf>
 			</Organization>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:977b5213-6597-4e0c-8c8e-2ba6140db8f6"/>
-		<resource>
-			<Encounter>
-				<id value="977b5213-6597-4e0c-8c8e-2ba6140db8f6"/>
-				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
-				</meta>
-				<identifier>
-					<system value="https://fhir.nhs.uk/encounter-id"/>
-					<!--Same encounter ID for all encounters across all messages-->
-					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
-				</identifier>
-				<status value="in-progress"/>
-				<class value="inpatient"/>
-				<patient>
-					<reference value="urn:uuid:a1e2525a-08ee-4ece-8a76-426c245a119a"/>
-				</patient>
-				<location>
-					<location>
-						<reference value="urn:uuid:48a8cd66-66b5-4022-b067-fb7410313b81"/>
-					</location>
-				</location>
-				<serviceProvider>
-					<reference value="urn:uuid:f20a9596-f8b5-441a-acda-9c923253f3f3"/>
-				</serviceProvider>
-			</Encounter>
 		</resource>
 	</entry>
 	<entry>

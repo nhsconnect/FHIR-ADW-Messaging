@@ -20,11 +20,9 @@
 					<code value="975701000000106"/>
 				</event>
 				<source>
-					<name value="Hospital Sending System"/>
 					<endpoint value="urn:nhs-uk:addressing:ods:RFM8C2"/>
 				</source>
 				<destination>
-					<name value="Local Authority Receiving System"/>
 					<endpoint value="urn:nhs-uk:addressing:ods:V396BB"/>
 				</destination>
 				<author>
