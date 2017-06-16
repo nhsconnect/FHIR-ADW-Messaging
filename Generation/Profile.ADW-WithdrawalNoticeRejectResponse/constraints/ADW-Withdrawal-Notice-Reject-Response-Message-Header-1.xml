@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-14T12:41:38.586+01:00" />
+    <lastUpdated value="2017-06-15T14:49:55.628+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -1359,7 +1359,7 @@
       <definition value="Human-readable name for the source system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="May be used to support audit." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="MessageHeader.source.name" />
@@ -1369,7 +1369,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Local Authority Sending System" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -2188,7 +2187,7 @@
       <definition value="Human-readable name for the target system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="May be used for routing of response and/or to support audit." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="MessageHeader.destination.name" />
@@ -2198,7 +2197,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Hospital Receiving System" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3772,8 +3770,6 @@
     <element>
       <path value="MessageHeader.source.name" />
       <name value="Local Authority Sending System" />
-      <min value="1" />
-      <fixedString value="Local Authority Sending System" />
       <mustSupport value="true" />
     </element>
     <element>
@@ -3806,8 +3802,6 @@
     <element>
       <path value="MessageHeader.destination.name" />
       <name value="Hospital Receiving System" />
-      <min value="1" />
-      <fixedString value="Hospital Receiving System" />
       <mustSupport value="true" />
     </element>
     <element>
