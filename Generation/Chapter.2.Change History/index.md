@@ -4,11 +4,11 @@
 
  - Amended all non-CareConnect valuesets to reflect FHIR standard.
  - Removed superfluous valuesets from the specification.
- - Amended system values for MessageHeader.event.system to http://snomed.info/sct in all bundle xml examples and all MessageHeader profiles.
- - Removed responseType extension from all MessageHeader profiles, from all Notice xml bundle examples and from the specification. Provided a Dataset map to MessageHeader.event.code to reflect this data item in the Information Standard.
+ - Amended system values for event.system to http://snomed.info/sct in all bundle xml examples and all MessageHeader-based profiles.
+ - Removed responseType extension from all MessageHeader-based Notice profiles, from all Notice xml bundle examples and from the specification.
  - Standardised MessageHeader.reason element for Notice receipt profiles by amending the cardinality of reason.coding.system to 0..0 for all Notice receipts.
  - Renamed all MessageHeader.reason valuesets for Notice receipts to a standard for acceptance and a standard for rejection. Amended MessageHeader Notice receipt profiles to reflect changes.
- - Tightened valueset binding strength of MessageHeader.reason to Required.
+ - Tightened valueset binding strength of reason element to Required in all MessageHeader-based profiles.
  - Fixed broken links to profiles on adw-message-bundle-1.html pages.
  - Updated all CareConnect profiles, extensions and valuesets to latest versions available.
  - Removed Composition profile from the specification.
@@ -18,7 +18,10 @@
  - Constrained CareConnect-Practitioner-1 to become CareConnect-ADW-Practitioner-1 due to adding a slice to practitionerRole.
  - Inserted a corresponding slice for Practitioner.practitionerRole to replace the Practitioner.specialty element in all bundle xml examples.
  - Standardised cardinality of ReferralRequest.encounter.reference to 1..1 and encounter.reference.display to 0..1.
-   
+ - Changed cardinality of all MessageHeader.source.name and MessageHeader.destination.name to 0..1.
+ - Removed fixed values from all source.name and destination.name elements in MessageHeader-based profiles and made corresponding changes to xml bundle examples. 
+ - Removed practitionerRole.role.text element from CareConnect-ADW-Practitioner section of all xml bundle examples.
+ - Removed type.text element from CareConnect-Organization section of all xml bundle examples.  
 
 ### Version 1.0.0-beta.1 ###
 
