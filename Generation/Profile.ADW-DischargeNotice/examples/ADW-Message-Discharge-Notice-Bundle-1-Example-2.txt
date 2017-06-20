@@ -100,11 +100,11 @@
 				<patient>
 					<reference value="urn:uuid:42840151-1fe1-4967-88c1-bcbd2a191243"/>
 				</patient>
-					<period>
+				<period>
 					<start value="2017-04-24"/>
 					<!--Proposed discharge date-->
 					<end value="2017-05-06"/>
-					</period>
+				</period>
 				<location>
 					<location>
 						<reference value="urn:uuid:64a7a96b-a259-4b39-b50a-ea36e2a0464c"/>
@@ -393,75 +393,214 @@
 		</resource>
 	</entry>
 	<entry>
-		<fullUrl value="urn:uuid:286919ac-12ba-4469-b9fd-676ef9cdb623"/>
+		<fullUrl value="urn:uuid:83ef1145-a95a-4bc3-a0bd-0ac2a09d1c1a"/>
 		<resource>
-			<DocumentReference>
-				<id value="286919ac-12ba-4469-b9fd-676ef9cdb623"/>
+			<Bundle>
+				<id value="83ef1145-a95a-4bc3-a0bd-0ac2a09d1c1a"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-documentreference-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-document-bundle-1"/>
 				</meta>
-				<!-- Information Recipient 1 -->
-				<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-information-recipient-1">
-					<!--Social Services team recipient-->
-					<valueReference>
-						<reference value="urn:uuid:5d4c7a93-73f1-460e-93d3-da616b569228"/>
-					</valueReference>
-				</extension>
-				<!--Care setting from which the document originated from-->
-				<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-care-setting-type-1">
-					<valueCodeableConcept>
-						<coding>
-							<system value="http://snomed.info/sct"/>
-							<code value="893061000000109"/>
-							<display value="Cardiology service (qualifier value)"/>
-						</coding>
-					</valueCodeableConcept>
-				</extension>
-				<subject>
-					<reference value="urn:uuid:42840151-1fe1-4967-88c1-bcbd2a191243"/>
-				</subject>
-				<!--Document type-->
-				<type>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<code value="820021000000104"/>
-						<display value="Single shared assessment record (record artifact)"/>
-					</coding>
-				</type>
-				<!--Discharge Co-ordinator author-->
-				<author>
-					<reference value="urn:uuid:51742f1b-c5ee-435e-8dc7-9bc5a578cd1d"/>
-				</author>
-				<!--Hospital-->
-				<custodian>
-					<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
-				</custodian>
-				<indexed value="2017-04-17T10:00:00+00:00"/>
-				<status value="current"/>
-				<docStatus>
-					<coding>
-						<system value="http://hl7.org/fhir/composition-status"/>
-						<code value="final"/>
-					</coding>
-				</docStatus>
-				<content>
-					<attachment>
-						<url value="urn:uuid:11507dfa-a3a2-4c6f-9ef7-9bc77955daae"/>
-					</attachment>
-				</content>
-			</DocumentReference>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:11507dfa-a3a2-4c6f-9ef7-9bc77955daae"/>
-		<resource>
-			<Binary>
-				<id value="11507dfa-a3a2-4c6f-9ef7-9bc77955daae"/>
-				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-binary-1"/>
-				</meta>
-				<contentType value="application/pdf"/>
-				<content value="JVBERi0xLjUNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMiAwIFIvTGFu
+				<type value="document"/>
+				<entry>
+					<fullUrl value="urn:uuid:286919ac-12ba-4469-b9fd-676ef9cdb623"/>
+					<resource>
+						<DocumentReference>
+							<id value="286919ac-12ba-4469-b9fd-676ef9cdb623"/>
+							<meta>
+								<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-documentreference-1"/>
+							</meta>
+							<!-- Information Recipient 1 -->
+							<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-information-recipient-1">
+								<!--Social Services team recipient-->
+								<valueReference>
+									<reference value="urn:uuid:f7ae2cda-28fe-4a65-af46-b2ef1c5593cc"/>
+								</valueReference>
+							</extension>
+							<!--Care setting from which the document originated from-->
+							<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-care-setting-type-1">
+								<valueCodeableConcept>
+									<coding>
+										<system value="http://snomed.info/sct"/>
+										<code value="893061000000109"/>
+										<display value="Cardiology service (qualifier value)"/>
+									</coding>
+								</valueCodeableConcept>
+							</extension>
+							<subject>
+								<reference value="urn:uuid:ce6d1ce3-7b26-4610-9e4a-43a0f5491a18"/>
+							</subject>
+							<!--Document type-->
+							<type>
+								<coding>
+									<system value="http://snomed.info/sct"/>
+									<code value="820021000000104"/>
+									<display value="Single shared assessment record (record artifact)"/>
+								</coding>
+							</type>
+							<!--Discharge Co-ordinator author-->
+							<author>
+								<reference value="urn:uuid:c6269f37-f98b-40e8-893e-a149a94473ba"/>
+							</author>
+							<!--Hospital-->
+							<custodian>
+								<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+							</custodian>
+							<indexed value="2017-04-17T10:00:00+00:00"/>
+							<status value="current"/>
+							<docStatus>
+								<coding>
+									<system value="http://hl7.org/fhir/composition-status"/>
+									<code value="final"/>
+								</coding>
+							</docStatus>
+							<content>
+								<attachment>
+									<url value="urn:uuid:11507dfa-a3a2-4c6f-9ef7-9bc77955daae"/>
+								</attachment>
+							</content>
+						</DocumentReference>
+					</resource>
+				</entry>
+				<entry>
+					<fullUrl value="urn:uuid:f7ae2cda-28fe-4a65-af46-b2ef1c5593cc"/>
+					<resource>
+						<!--This example shows a sample Local Authority Social Services team as a recipient of the document.-->
+						<Organization>
+							<id value="f7ae2cda-28fe-4a65-af46-b2ef1c5593cc"/>
+							<meta>
+								<!--Identifies the profile being used-->
+								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+							</meta>
+							<!-- Type of organisation. -->
+							<type>
+								<coding>
+									<system value="http://hl7.org/fhir/organization-type"/>
+									<code value="team"/>
+									<display value="Organizational team"/>
+								</coding>
+							</type>
+							<name value="Hebburn Social Services' Community Team"/>
+						</Organization>
+					</resource>
+				</entry>
+				<entry>
+					<fullUrl value="urn:uuid:ce6d1ce3-7b26-4610-9e4a-43a0f5491a18"/>
+					<resource>
+						<!--The patient as the subject of the document.-->
+						<Patient>
+							<id value="ce6d1ce3-7b26-4610-9e4a-43a0f5491a18"/>
+							<!--Identifies the profile being used-->
+							<meta>
+								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
+							</meta>
+							<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
+							<identifier>
+								<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+									<valueCodeableConcept>
+										<coding>
+											<system value="https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1"/>
+											<code value="01"/>
+											<display value="Number present and verified"/>
+										</coding>
+									</valueCodeableConcept>
+								</extension>
+								<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+								<value value="9413946000"/>
+							</identifier>
+							<identifier>
+								<system value="https://fhir.nhs.uk/Id/local-patient-identifier"/>
+								<value value="A1234521"/>
+							</identifier>
+							<name>
+								<use value="usual"/>
+								<family value="Jones"/>
+								<given value="Barry"/>
+							</name>
+							<gender value="male"/>
+							<birthDate value="1941-11-01"/>
+							<address>
+								<!-- Structured address-->
+								<line value="The Old Lodge"/>
+								<line value="1 Little Street"/>
+								<line value="Chapeltown"/>
+								<city value="Leeds"/>
+								<district value="West Yorkshire"/>
+								<postalCode value="LS6 1UR"/>
+							</address>
+						</Patient>
+					</resource>
+				</entry>
+				<entry>
+					<fullUrl value="urn:uuid:c6269f37-f98b-40e8-893e-a149a94473ba"/>
+					<resource>
+						<!--A hospital Discharge Co-ordinator as the author of the document.-->
+						<Practitioner>
+							<id value="c6269f37-f98b-40e8-893e-a149a94473ba"/>
+							<meta>
+								<!--Identifies the profile being used-->
+								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+							</meta>
+							<name>
+								<family value="Gulliver"/>
+								<given value="Leticia"/>
+							</name>
+							<telecom>
+								<system value="email"/>
+								<value value="leticia.gulliver@nhs.net"/>
+							</telecom>
+							<telecom>
+								<system value="phone"/>
+								<value value="01911223344"/>
+							</telecom>
+							<practitionerRole>
+								<managingOrganization>
+									<reference value="urn:uuid:4b708a70-ef5c-414f-bad3-9f02f19a9241"/>
+								</managingOrganization>
+								<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
+								<role>
+									<text value="Discharge co-ordinator"/>
+								</role>
+							</practitionerRole>
+						</Practitioner>
+					</resource>
+				</entry>
+				<entry>
+					<fullUrl value="urn:uuid:4b708a70-ef5c-414f-bad3-9f02f19a9241"/>
+					<resource>
+						<!--This example shows a sample NHS hospital as the custodian of the document.-->
+						<Organization>
+							<id value="4b708a70-ef5c-414f-bad3-9f02f19a9241"/>
+							<meta>
+								<!--Identifies the profile being used-->
+								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+							</meta>
+							<!--Organisation identifier -->
+							<identifier>
+								<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+								<value value="RFM8C2"/>
+							</identifier>
+							<!-- Type of organisation. -->
+							<type>
+								<coding>
+									<system value="http://hl7.org/fhir/organization-type"/>
+									<code value="prov"/>
+									<display value="Healthcare Provider"/>
+								</coding>
+							</type>
+							<name value="Hebburn Hospital"/>
+						</Organization>
+					</resource>
+				</entry>
+				<entry>
+					<fullUrl value="urn:uuid:11507dfa-a3a2-4c6f-9ef7-9bc77955daae"/>
+					<resource>
+						<Binary>
+							<id value="11507dfa-a3a2-4c6f-9ef7-9bc77955daae"/>
+							<meta>
+								<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-binary-1"/>
+							</meta>
+							<contentType value="application/pdf"/>
+							<content value="JVBERi0xLjUNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMiAwIFIvTGFu
 Zyhlbi1HQikgL1N0cnVjdFRyZWVSb290IDIxIDAgUi9NYXJrSW5mbzw8L01hcmtlZCB0cnVlPj4+
 Pg0KZW5kb2JqDQoyIDAgb2JqDQo8PC9UeXBlL1BhZ2VzL0NvdW50IDEvS2lkc1sgMyAwIFJdID4+
 DQplbmRvYmoNCjMgMCBvYmoNCjw8L1R5cGUvUGFnZS9QYXJlbnQgMiAwIFIvUmVzb3VyY2VzPDwv
@@ -1838,7 +1977,10 @@ DQowIDANCnRyYWlsZXINCjw8L1NpemUgMTMwL1Jvb3QgMSAwIFIvSW5mbyAyMCAwIFIvSURbPDY0
 RDIwRTk1QjU5OTNENDBCQjg3MDIxM0MzRTUwREZGPjw2NEQyMEU5NUI1OTkzRDQwQkI4NzAyMTND
 M0U1MERGRj5dIC9QcmV2IDc1NDk4L1hSZWZTdG0gNzQ5OTM+Pg0Kc3RhcnR4cmVmDQo3ODI1Nw0K
 JSVFT0Y="/>
-			</Binary>
+						</Binary>
+					</resource>
+				</entry>
+			</Bundle>
 		</resource>
 	</entry>
 </Bundle>
