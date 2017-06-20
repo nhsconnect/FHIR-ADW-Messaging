@@ -14,7 +14,7 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-notice-reject-response-message-header-1"/>
 				</meta>
-				<timestamp value="2017-05-04T15:13:33+00:00"/>
+				<timestamp value="2017-05-05T15:13:33+00:00"/>
 				<event>
 					<system value="http://snomed.info/sct"/>
 					<code value="975831000000106"/>
@@ -43,11 +43,11 @@
 				</responsible>
 				<reason>
 					<coding>
-						<system value="https://fhir.nhs.uk/adw-discharge-notice-reject-reason-1"/>
-						<code value="SNA"/>
-						<display value="The previously arranged services to be provided by social services are no longer available on discharge."/>
+						<system value="https://fhir.nhs.uk/adw-notice-reject-reason-1"/>
+						<code value="OFT"/>
+						<display value="Other - Free Text"/>
 					</coding>
-					<text value="Services have been discontinued by the Local Authority."/>
+					<text value="Social Services cannot confirm agreement to the discharge date as the assessment process has not been completed."/>
 				</reason>
 				<data>
 					<reference value="urn:uuid:f150da96-9250-4ba2-9474-807a497974a9"/>
@@ -177,7 +177,7 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="01131223344"/>
+					<value value="01911223344"/>
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>

@@ -14,7 +14,7 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-assessment-notice-reject-response-message-header-1"/>
 				</meta>
-				<timestamp value="2017-05-04T15:10:15+00:00"/>
+				<timestamp value="2017-05-02T15:10:15+00:00"/>
 				<event>
 					<system value="http://snomed.info/sct"/>
 					<code value="975721000000102"/>
@@ -44,11 +44,11 @@
 				</responsible>
 				<reason>
 					<coding>
-						<system value="https://fhir.nhs.uk/adw-assessment-notice-reject-reason-1"/>
+						<system value="https://fhir.nhs.uk/adw-notice-reject-reason-1"/>
 						<code value="OFT"/>
 						<display value="Other - Free Text"/>
 					</coding>
-					<text value="Other organisation or department is responsible"/>
+					<text value="Informed that patient has had further chest pain in hospital since receipt of the notice and is remaining as an inpatient until his condition improves."/>
 				</reason>
 				<data>
 					<reference value="urn:uuid:4c8afe0b-ed78-4f4b-b37f-5d930f45bc63"/>
@@ -87,6 +87,34 @@
 					<reference value="urn:uuid:c73b7b39-a5b5-4d60-9a68-fa07ef37c258"/>
 				</encounter>
 			</ReferralRequest>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:c73b7b39-a5b5-4d60-9a68-fa07ef37c258"/>
+		<resource>
+			<Encounter>
+				<id value="c73b7b39-a5b5-4d60-9a68-fa07ef37c258"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/encounter-id"/>
+					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
+				</identifier>
+				<status value="in-progress"/>
+				<class value="inpatient"/>
+				<patient>
+					<reference value="urn:uuid:79449d15-3b98-46d6-8d3a-219ac854f96c"/>
+				</patient>
+				<location>
+					<location>
+						<reference value="urn:uuid:10eb367a-78d8-4ea6-9e09-080c765bf2b6"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="urn:uuid:86ca79fd-0e26-4ac1-b74f-c071902bee41"/>
+				</serviceProvider>
+			</Encounter>
 		</resource>
 	</entry>
 	<entry>
@@ -149,7 +177,7 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="01131223344"/>
+					<value value="01911223344"/>
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>
@@ -278,34 +306,6 @@
 					<reference value="urn:uuid:71583f7a-6572-49fc-be7f-3bb83bdbaab1"/>
 				</partOf>
 			</Organization>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="urn:uuid:c73b7b39-a5b5-4d60-9a68-fa07ef37c258"/>
-		<resource>
-			<Encounter>
-				<id value="c73b7b39-a5b5-4d60-9a68-fa07ef37c258"/>
-				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
-				</meta>
-				<identifier>
-					<system value="https://fhir.nhs.uk/encounter-id"/>
-					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
-				</identifier>
-				<status value="in-progress"/>
-				<class value="inpatient"/>
-				<patient>
-					<reference value="urn:uuid:79449d15-3b98-46d6-8d3a-219ac854f96c"/>
-				</patient>
-				<location>
-					<location>
-						<reference value="urn:uuid:10eb367a-78d8-4ea6-9e09-080c765bf2b6"/>
-					</location>
-				</location>
-				<serviceProvider>
-					<reference value="urn:uuid:86ca79fd-0e26-4ac1-b74f-c071902bee41"/>
-				</serviceProvider>
-			</Encounter>
 		</resource>
 	</entry>
 	<entry>

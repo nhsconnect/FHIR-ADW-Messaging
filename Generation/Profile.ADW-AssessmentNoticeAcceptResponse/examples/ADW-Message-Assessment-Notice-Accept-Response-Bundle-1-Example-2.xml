@@ -31,7 +31,7 @@
 					<endpoint value="urn:nhs-uk:addressing:ods:RFM8C2"/>
 				</destination>
 				<author>
-					<!-- The local authority Social Services' contact -->
+					<!-- The local authority Social Services' Social worker -->
 					<reference value="Practitioner/25feb259-1109-4c37-9916-03efcdc1d375">
 					</reference>
 				</author>
@@ -143,7 +143,7 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="01131223344"/>
+					<value value="01911223344"/>
 					<use value="work"/>
 				</telecom>
 				<practitionerRole>

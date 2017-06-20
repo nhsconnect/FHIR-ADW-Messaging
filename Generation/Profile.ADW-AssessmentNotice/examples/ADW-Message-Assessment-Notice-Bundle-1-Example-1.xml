@@ -14,7 +14,7 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-assessment-notice-message-header-1"/>
 				</meta>
-				<timestamp value="2017-05-04T15:02:11+00:00"/>
+				<timestamp value="2017-05-01T15:02:11+00:00"/>
 				<event>
 					<system value="http://snomed.info/sct"/>
 					<code value="975701000000106"/>
@@ -104,8 +104,7 @@
 				</patient>
 				<period>
 					<start value="2017-04-24"/>
-					<end value="2017-05-12"/>
-				</period>
+					</period>
 				<hospitalization>
 					<admittingDiagnosis>
 						<reference value="urn:uuid:af7ba23c-8ad3-11e6-ae22-56b6b6499611"/>
@@ -238,7 +237,7 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="01131223344"/>
+					<value value="01911223344"/>
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>

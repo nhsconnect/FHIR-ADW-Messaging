@@ -14,7 +14,7 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-withdrawal-notice-accept-response-message-header-1"/>
 				</meta>
-				<timestamp value="2017-05-04T15:16:33+00:00"/>
+				<timestamp value="2017-05-09T15:16:33+00:00"/>
 				<event>
 					<system value="http://snomed.info/sct"/>
 					<code value="1025651000000109"/>
@@ -44,11 +44,11 @@
 				</responsible>
 				<reason>
 					<coding>
-						<system value="https://fhir.nhs.uk/adw-assessment-notice-accept-reason-1"/>
+						<system value="https://fhir.nhs.uk/adw-notice-accept-reason-1"/>
 						<code value="OFT"/>
 						<display value="Other - Free Text"/>
 					</coding>
-					<text value="Patient from Leeds."/>
+					<text value="Assessment currently not required as patient's condition has deteriorated and he remains in hospital."/>
 				</reason>
 				<data>
 					<reference value="urn:uuid:247f5ad9-e256-4d03-864b-e8a67cec8584"/>
@@ -172,7 +172,7 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="01131223344"/>
+					<value value="01911223344"/>
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>

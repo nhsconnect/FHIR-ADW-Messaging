@@ -14,7 +14,7 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-withdrawal-notice-reject-response-message-header-1"/>
 				</meta>
-				<timestamp value="2017-05-04T15:16:55+00:00"/>
+				<timestamp value="2017-05-09T15:16:55+00:00"/>
 				<event>
 					<system value="http://snomed.info/sct"/>
 					<code value="1025641000000106"/>
@@ -44,7 +44,7 @@
 				</responsible>
 				<reason>
 					<coding>
-						<system value="https://fhir.nhs.uk/adw-withdrawal-notice-reject-reason-1"/>
+						<system value="https://fhir.nhs.uk/adw-notice-reject-reason-1"/>
 						<code value="OFT"/>
 						<display value="Other - Free Text"/>
 					</coding>
@@ -172,7 +172,7 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="01131223344"/>
+					<value value="01911223344"/>
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>

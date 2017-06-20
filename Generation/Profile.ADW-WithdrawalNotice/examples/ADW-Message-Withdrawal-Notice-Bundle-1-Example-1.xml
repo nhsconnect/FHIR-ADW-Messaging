@@ -14,7 +14,7 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-withdrawal-notice-message-header-1"/>
 				</meta>
-				<timestamp value="2017-05-04T15:15:09+00:00"/>
+				<timestamp value="2017-05-08T15:15:09+00:00"/>
 				<event>
 					<system value="http://snomed.info/sct"/>
 					<code value="975841000000102"/>
@@ -40,10 +40,9 @@
 				<reason>
 					<coding>
 						<system value="https://fhir.nhs.uk/adw-withdrawal-reason-1"/>
-						<code value="13"/>
-						<display value="Other"/>
+						<code value="07"/>
+						<display value="Patient's condition has deteriorated."/>
 					</coding>
-					<text value="Patient is no longer staying with relatives and has moved back to another Local Authority."/>
 				</reason>
 				<data>
 					<reference value="urn:uuid:16e159cb-2549-46c5-9bb1-55620eb1ce85"/>
@@ -179,7 +178,7 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="01131223344"/>
+					<value value="01911223344"/>
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>

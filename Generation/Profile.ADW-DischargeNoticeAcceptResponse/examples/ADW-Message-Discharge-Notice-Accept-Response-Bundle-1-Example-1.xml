@@ -14,7 +14,7 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-notice-accept-response-message-header-1"/>
 				</meta>
-				<timestamp value="2017-05-04T15:13:18+00:00"/>
+				<timestamp value="2017-05-05T15:13:18+00:00"/>
 				<event>
 					<system value="http://snomed.info/sct"/>
 					<code value="975821000000109"/>
@@ -43,11 +43,11 @@
 				</responsible>
 				<reason>
 					<coding>
-						<system value="https://fhir.nhs.uk/adw-assessment-notice-accept-reason-1"/>
+						<system value="https://fhir.nhs.uk/adw-notice-accept-reason-1"/>
 						<code value="OFT"/>
 						<display value="Other - Free Text"/>
 					</coding>
-					<text value="Patient from Leeds."/>
+					<text value="Assessment in patient's new home required due to his current reduced mobility."/>
 				</reason>
 				<data>
 					<reference value="urn:uuid:076a300f-5234-4309-95eb-9a64714bbb06"/>
@@ -85,6 +85,34 @@
 					<reference value="urn:uuid:2a1def1b-497a-4621-9397-87754a63e4e5"/>
 				</encounter>
 			</ReferralRequest>
+		</resource>
+	</entry>
+		<entry>
+		<fullUrl value="urn:uuid:2a1def1b-497a-4621-9397-87754a63e4e5"/>
+		<resource>
+			<Encounter>
+				<id value="2a1def1b-497a-4621-9397-87754a63e4e5"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/encounter-id"/>
+					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
+				</identifier>
+				<status value="in-progress"/>
+				<class value="inpatient"/>
+				<patient>
+					<reference value="urn:uuid:08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
+				</patient>
+				<location>
+					<location>
+						<reference value="urn:uuid:a33f0b53-41a7-4cb6-9dc5-5fac6bee084c"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="urn:uuid:148eaefb-6dd0-4848-b13d-317bee9f308f"/>
+				</serviceProvider>
+			</Encounter>
 		</resource>
 	</entry>
 	<entry>
@@ -147,7 +175,7 @@
 				</telecom>
 				<telecom>
 					<system value="phone"/>
-					<value value="01131223344"/>
+					<value value="01911223344"/>
 				</telecom>
 				<practitionerRole>
 					<managingOrganization>
@@ -278,34 +306,6 @@
 		</resource>
 	</entry>
 	<entry>
-		<fullUrl value="urn:uuid:2a1def1b-497a-4621-9397-87754a63e4e5"/>
-		<resource>
-			<Encounter>
-				<id value="2a1def1b-497a-4621-9397-87754a63e4e5"/>
-				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
-				</meta>
-				<identifier>
-					<system value="https://fhir.nhs.uk/encounter-id"/>
-					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
-				</identifier>
-				<status value="in-progress"/>
-				<class value="inpatient"/>
-				<patient>
-					<reference value="urn:uuid:08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
-				</patient>
-				<location>
-					<location>
-						<reference value="urn:uuid:a33f0b53-41a7-4cb6-9dc5-5fac6bee084c"/>
-					</location>
-				</location>
-				<serviceProvider>
-					<reference value="urn:uuid:148eaefb-6dd0-4848-b13d-317bee9f308f"/>
-				</serviceProvider>
-			</Encounter>
-		</resource>
-	</entry>
-	<entry>
 		<fullUrl value="urn:uuid:a33f0b53-41a7-4cb6-9dc5-5fac6bee084c"/>
 		<resource>
 			<Location>
@@ -319,6 +319,69 @@
 					<reference value="urn:uuid:148eaefb-6dd0-4848-b13d-317bee9f308f"/>
 				</managingOrganization>
 			</Location>
+		</resource>
+	</entry>
+		<entry>
+		<fullUrl value="urn:uuid:01392d7c-4c29-4608-9f87-10829ad4af34"/>
+		<resource>
+			<DocumentReference>
+				<id value="01392d7c-4c29-4608-9f87-10829ad4af34"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-documentreference-1"/>
+				</meta>
+				<!-- Information Recipient 1 -->
+				<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-information-recipient-1">
+					<!--Discharge Co-ordinator recipient-->
+					<valueReference>
+						<reference value="urn:uuid:49edc68d-cb09-49c9-8edf-285e931042ce"/>
+					</valueReference>
+				</extension>
+				<subject>
+					<reference value="urn:uuid:08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
+				</subject>
+				<!--Document type-->
+				<type>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="823751000000102"/>
+						<display value="Letter (record artifact)"/>
+					</coding>
+				</type>
+				<!--Social Worker author-->
+				<author>
+					<reference value="urn:uuid:6babc18b-9f20-4fb1-ba0d-d4e3ae2c7cc7"/>
+				</author>
+				<!--Local authority custodian-->
+				<custodian>
+					<reference value="urn:uuid:dafc0a1e-e120-4ba7-b638-0ce50a018146"/>
+				</custodian>
+				<indexed value="2017-05-17T10:00:00+00:00"/>
+				<status value="current"/>
+				<docStatus>
+					<coding>
+						<system value="http://hl7.org/fhir/composition-status"/>
+						<code value="final"/>
+					</coding>
+				</docStatus>
+				<content>
+					<attachment>
+						<url value="urn:uuid:c719555e-f7e0-4ac6-b633-016450072cc5"/>
+					</attachment>
+				</content>
+			</DocumentReference>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:c719555e-f7e0-4ac6-b633-016450072cc5"/>
+		<resource>
+			<Binary>
+				<id value="c719555e-f7e0-4ac6-b633-016450072cc5"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-binary-1"/>
+				</meta>
+				<contentType value="application/pdf"/>
+				<content value=""/>
+				</Binary>
 		</resource>
 	</entry>
 </Bundle>
