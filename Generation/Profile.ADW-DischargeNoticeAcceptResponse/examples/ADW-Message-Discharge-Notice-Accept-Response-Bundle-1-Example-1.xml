@@ -87,7 +87,7 @@
 			</ReferralRequest>
 		</resource>
 	</entry>
-		<entry>
+	<entry>
 		<fullUrl value="urn:uuid:2a1def1b-497a-4621-9397-87754a63e4e5"/>
 		<resource>
 			<Encounter>
@@ -224,7 +224,7 @@
 							<code value="NR1340"/>
 							<display value="Approved Social Worker"/>
 						</coding>
-					  </role>
+					</role>
 				</practitionerRole>
 			</Practitioner>
 		</resource>
@@ -240,7 +240,7 @@
 				</meta>
 				<!--Organisation identifier -->
 				<identifier>
-						<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
 					<value value="RFM8C2"/>
 				</identifier>
 				<!-- Type of organisation. -->
@@ -321,66 +321,214 @@
 			</Location>
 		</resource>
 	</entry>
-		<entry>
-		<fullUrl value="urn:uuid:01392d7c-4c29-4608-9f87-10829ad4af34"/>
-		<resource>
-			<DocumentReference>
-				<id value="01392d7c-4c29-4608-9f87-10829ad4af34"/>
-				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-documentreference-1"/>
-				</meta>
-				<!-- Information Recipient 1 -->
-				<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-information-recipient-1">
-					<!--Discharge Co-ordinator recipient-->
-					<valueReference>
-						<reference value="urn:uuid:49edc68d-cb09-49c9-8edf-285e931042ce"/>
-					</valueReference>
-				</extension>
-				<subject>
-					<reference value="urn:uuid:08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
-				</subject>
-				<!--Document type-->
-				<type>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<code value="823751000000102"/>
-						<display value="Letter (record artifact)"/>
-					</coding>
-				</type>
-				<!--Social Worker author-->
-				<author>
-					<reference value="urn:uuid:6babc18b-9f20-4fb1-ba0d-d4e3ae2c7cc7"/>
-				</author>
-				<!--Local authority custodian-->
-				<custodian>
-					<reference value="urn:uuid:dafc0a1e-e120-4ba7-b638-0ce50a018146"/>
-				</custodian>
-				<indexed value="2017-05-17T10:00:00+00:00"/>
-				<status value="current"/>
-				<docStatus>
-					<coding>
-						<system value="http://hl7.org/fhir/composition-status"/>
-						<code value="final"/>
-					</coding>
-				</docStatus>
-				<content>
-					<attachment>
-						<url value="urn:uuid:c719555e-f7e0-4ac6-b633-016450072cc5"/>
-					</attachment>
-				</content>
-			</DocumentReference>
-		</resource>
-	</entry>
 	<entry>
-		<fullUrl value="urn:uuid:c719555e-f7e0-4ac6-b633-016450072cc5"/>
+		<fullUrl value="urn:uuid:fb372c95-9d76-4db1-939c-c0b0c564f795"/>
 		<resource>
-			<Binary>
-				<id value="c719555e-f7e0-4ac6-b633-016450072cc5"/>
+			<Bundle>
+				<id value="fb372c95-9d76-4db1-939c-c0b0c564f795"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-binary-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-document-bundle-1"/>
 				</meta>
-				<contentType value="application/pdf"/>
-				<content value="JVBERi0xLjUNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMiAwIFIvTGFu
+				<type value="document"/>
+				<entry>
+					<fullUrl value="urn:uuid:01392d7c-4c29-4608-9f87-10829ad4af34"/>
+					<resource>
+						<DocumentReference>
+							<id value="01392d7c-4c29-4608-9f87-10829ad4af34"/>
+							<meta>
+								<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-documentreference-1"/>
+							</meta>
+							<!-- Information Recipient 1 -->
+							<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-information-recipient-1">
+								<!--Discharge Co-ordinator recipient-->
+								<valueReference>
+									<reference value="urn:uuid:16cf239a-a654-436c-a14d-72ef1fe6ea2c"/>
+								</valueReference>
+							</extension>
+							<subject>
+								<reference value="urn:uuid:a94a119f-c6ce-4566-882c-4dd21bc600ef"/>
+							</subject>
+							<!--Document type-->
+							<type>
+								<coding>
+									<system value="http://snomed.info/sct"/>
+									<code value="823751000000102"/>
+									<display value="Letter (record artifact)"/>
+								</coding>
+							</type>
+							<!--Social Worker author-->
+							<author>
+								<reference value="urn:uuid:49823cfd-bb1d-4a71-9d87-3a6817e02818"/>
+							</author>
+							<!--Local authority custodian-->
+							<custodian>
+								<reference value="urn:uuid:7b8732d6-7e31-4212-9bb4-b140323c2711"/>
+							</custodian>
+							<indexed value="2017-05-17T10:00:00+00:00"/>
+							<status value="current"/>
+							<docStatus>
+								<coding>
+									<system value="http://hl7.org/fhir/composition-status"/>
+									<code value="final"/>
+								</coding>
+							</docStatus>
+							<content>
+								<attachment>
+									<url value="urn:uuid:c719555e-f7e0-4ac6-b633-016450072cc5"/>
+								</attachment>
+							</content>
+						</DocumentReference>
+					</resource>
+				</entry>
+				<!--Discharge co-ordinator as the document recipient-->
+				<entry>
+					<fullUrl value="urn:uuid:16cf239a-a654-436c-a14d-72ef1fe6ea2c"/>
+					<resource>
+						<Practitioner>
+							<id value="16cf239a-a654-436c-a14d-72ef1fe6ea2c"/>
+							<meta>
+								<!--Identifies the profile being used-->
+								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+							</meta>
+							<name>
+								<family value="Gulliver"/>
+								<given value="Leticia"/>
+							</name>
+							<telecom>
+								<system value="email"/>
+								<value value="leticia.gulliver@nhs.net"/>
+							</telecom>
+							<telecom>
+								<system value="phone"/>
+								<value value="01911223344"/>
+							</telecom>
+							<practitionerRole>
+								<managingOrganization>
+									<reference value="urn:uuid:4b708a70-ef5c-414f-bad3-9f02f19a9241"/>
+								</managingOrganization>
+								<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
+								<role>
+									<text value="Discharge co-ordinator"/>
+								</role>
+							</practitionerRole>
+						</Practitioner>
+					</resource>
+				</entry>
+				<!--Patient as subject of the document-->
+				<entry>
+					<fullUrl value="urn:uuid:a94a119f-c6ce-4566-882c-4dd21bc600ef"/>
+					<resource>
+						<Patient>
+							<id value="a94a119f-c6ce-4566-882c-4dd21bc600ef"/>
+							<!--Identifies the profile being used-->
+							<meta>
+								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Patient-1"/>
+							</meta>
+							<!--Primary patient identifier i.e. NHS number and code to indicate it's been verified-->
+							<identifier>
+								<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+									<valueCodeableConcept>
+										<coding>
+											<system value="https://fhir.hl7.org.uk/CareConnect-NHSNumberVerificationStatus-1"/>
+											<code value="01"/>
+											<display value="Number present and verified"/>
+										</coding>
+									</valueCodeableConcept>
+								</extension>
+								<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+								<value value="9413946000"/>
+							</identifier>
+							<identifier>
+								<system value="https://fhir.nhs.uk/Id/local-patient-identifier"/>
+								<value value="A1234521"/>
+							</identifier>
+							<name>
+								<use value="usual"/>
+								<family value="Jones"/>
+								<given value="Barry"/>
+							</name>
+							<gender value="male"/>
+							<birthDate value="1941-11-01"/>
+							<address>
+								<!-- Structured address-->
+								<line value="The Old Lodge"/>
+								<line value="1 Little Street"/>
+								<line value="Chapeltown"/>
+								<city value="Leeds"/>
+								<district value="West Yorkshire"/>
+								<postalCode value="LS6 1UR"/>
+							</address>
+						</Patient>
+					</resource>
+				</entry>
+				<!--Local Authority Social worker as the author of the document.-->
+				<entry>
+					<fullUrl value="urn:uuid:49823cfd-bb1d-4a71-9d87-3a6817e02818"/>
+					<resource>
+						<Practitioner>
+							<id value="49823cfd-bb1d-4a71-9d87-3a6817e02818"/>
+							<meta>
+								<!--Identifies the profile being used-->
+								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+							</meta>
+							<name>
+								<family value="Jones"/>
+								<given value="Lee"/>
+							</name>
+							<telecom>
+								<system value="email"/>
+								<value value="lee.jones@nhs.net"/>
+							</telecom>
+							<telecom>
+								<system value="phone"/>
+								<value value="0191223888"/>
+							</telecom>
+							<practitionerRole>
+								<!-- Indicates the practitioner's role(s)-->
+								<role>
+									<text value="Approved Social Worker"/>
+								</role>
+							</practitionerRole>
+						</Practitioner>
+					</resource>
+				</entry>
+				<!--Local authority as the custodian of the document.-->
+				<entry>
+					<fullUrl value="urn:uuid:7b8732d6-7e31-4212-9bb4-b140323c2711"/>
+					<resource>
+						<Organization>
+							<id value="7b8732d6-7e31-4212-9bb4-b140323c2711"/>
+							<meta>
+								<!--Identifies the profile being used-->
+								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+							</meta>
+							<!--Organisation identifier - this example has a locally defined organisation code.-->
+							<identifier>
+								<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+								<value value="V396BB"/>
+							</identifier>
+							<!-- Type of organisation. -->
+							<type>
+								<coding>
+									<system value="http://hl7.org/fhir/organization-type"/>
+									<code value="govt"/>
+									<display value="Government"/>
+								</coding>
+							</type>
+							<name value="Hebburn Council"/>
+						</Organization>
+					</resource>
+				</entry>
+				<entry>
+					<fullUrl value="urn:uuid:c719555e-f7e0-4ac6-b633-016450072cc5"/>
+					<resource>
+						<Binary>
+							<id value="c719555e-f7e0-4ac6-b633-016450072cc5"/>
+							<meta>
+								<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-binary-1"/>
+							</meta>
+							<contentType value="application/pdf"/>
+							<content value="JVBERi0xLjUNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMiAwIFIvTGFu
 Zyhlbi1HQikgL1N0cnVjdFRyZWVSb290IDkgMCBSL01hcmtJbmZvPDwvTWFya2VkIHRydWU+Pj4+
 DQplbmRvYmoNCjIgMCBvYmoNCjw8L1R5cGUvUGFnZXMvQ291bnQgMS9LaWRzWyAzIDAgUl0gPj4N
 CmVuZG9iag0KMyAwIG9iag0KPDwvVHlwZS9QYWdlL1BhcmVudCAyIDAgUi9SZXNvdXJjZXM8PC9G
@@ -469,7 +617,10 @@ NjIxPl0gPj4NCnN0YXJ0eHJlZg0KMzk0NA0KJSVFT0YNCnhyZWYNCjAgMA0KdHJhaWxlcg0KPDwv
 U2l6ZSAzOS9Sb290IDEgMCBSL0luZm8gOCAwIFIvSURbPDBFRjhCNzBGMUY4QTM3NDI5MTg3NkZC
 RThCQjlBNjIxPjwwRUY4QjcwRjFGOEEzNzQyOTE4NzZGQkU4QkI5QTYyMT5dIC9QcmV2IDM5NDQv
 WFJlZlN0bSAzNjM2Pj4NCnN0YXJ0eHJlZg0KNDg3OQ0KJSVFT0Y="/>
-				</Binary>
+						</Binary>
+					</resource>
+				</entry>
+			</Bundle>
 		</resource>
 	</entry>
 </Bundle>
