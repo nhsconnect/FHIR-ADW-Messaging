@@ -421,8 +421,8 @@
 								<valueCodeableConcept>
 									<coding>
 										<system value="http://snomed.info/sct"/>
-										<code value="893061000000109"/>
-										<display value="Cardiology service (qualifier value)"/>
+										<code value="408458006"/>
+										<display value="Specialist multidisciplinary team (qualifier value)"/>
 									</coding>
 								</valueCodeableConcept>
 							</extension>
