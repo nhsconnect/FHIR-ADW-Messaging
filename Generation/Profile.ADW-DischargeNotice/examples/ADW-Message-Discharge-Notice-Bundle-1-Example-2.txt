@@ -421,11 +421,12 @@
 								<valueCodeableConcept>
 									<coding>
 										<system value="http://snomed.info/sct"/>
-										<code value="893061000000109"/>
-										<display value="Cardiology service (qualifier value)"/>
+										<code value="408458006"/>
+										<display value="Specialist multidisciplinary team (qualifier value)"/>
 									</coding>
 								</valueCodeableConcept>
 							</extension>
+							<!--Patient subject-->
 							<subject>
 								<reference value="urn:uuid:ce6d1ce3-7b26-4610-9e4a-43a0f5491a18"/>
 							</subject>
@@ -433,17 +434,17 @@
 							<type>
 								<coding>
 									<system value="http://snomed.info/sct"/>
-									<code value="820021000000104"/>
-									<display value="Single shared assessment record (record artifact)"/>
+									<code value="820101000000109"/>
+									<display value="Social services assessment record (record artifact)"/>
 								</coding>
 							</type>
 							<!--Discharge Co-ordinator author-->
 							<author>
 								<reference value="urn:uuid:c6269f37-f98b-40e8-893e-a149a94473ba"/>
 							</author>
-							<!--Hospital-->
+							<!--Hospital custodian-->
 							<custodian>
-								<reference value="urn:uuid:c7bf094c-6581-4771-bafc-88c58e7d8fcd"/>
+								<reference value="urn:uuid:4b708a70-ef5c-414f-bad3-9f02f19a9241"/>
 							</custodian>
 							<indexed value="2017-04-17T10:00:00+00:00"/>
 							<status value="current"/>
@@ -553,10 +554,7 @@
 								<value value="01911223344"/>
 							</telecom>
 							<practitionerRole>
-								<managingOrganization>
-									<reference value="urn:uuid:4b708a70-ef5c-414f-bad3-9f02f19a9241"/>
-								</managingOrganization>
-								<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
+							<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 								<role>
 									<text value="Discharge co-ordinator"/>
 								</role>

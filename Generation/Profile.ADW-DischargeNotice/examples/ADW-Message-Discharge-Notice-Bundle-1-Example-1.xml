@@ -426,6 +426,7 @@
 									</coding>
 								</valueCodeableConcept>
 							</extension>
+							<!--Patient subject-->
 							<subject>
 								<reference value="urn:uuid:ce6d1ce3-7b26-4610-9e4a-43a0f5491a18"/>
 							</subject>
@@ -441,7 +442,7 @@
 							<author>
 								<reference value="urn:uuid:c6269f37-f98b-40e8-893e-a149a94473ba"/>
 							</author>
-							<!--Hospital-->
+							<!--Hospital custodian-->
 							<custodian>
 								<reference value="urn:uuid:4b708a70-ef5c-414f-bad3-9f02f19a9241"/>
 							</custodian>
@@ -553,7 +554,7 @@
 								<value value="01911223344"/>
 							</telecom>
 							<practitionerRole>
-								<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
+							<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 								<role>
 									<text value="Discharge co-ordinator"/>
 								</role>

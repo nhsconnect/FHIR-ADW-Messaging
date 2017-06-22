@@ -345,7 +345,7 @@
 									<reference value="urn:uuid:16cf239a-a654-436c-a14d-72ef1fe6ea2c"/>
 								</valueReference>
 							</extension>
-							<!--Care setting from which the document originated from-->
+							<!--Care setting from which the document originated.-->
 							<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-care-setting-type-1">
 								<valueCodeableConcept>
 									<coding>
@@ -355,6 +355,7 @@
 									</coding>
 								</valueCodeableConcept>
 							</extension>
+							<!--Patient subject of the document-->
 							<subject>
 								<reference value="urn:uuid:a94a119f-c6ce-4566-882c-4dd21bc600ef"/>
 							</subject>
@@ -413,9 +414,6 @@
 								<value value="01911223344"/>
 							</telecom>
 							<practitionerRole>
-								<managingOrganization>
-									<reference value="urn:uuid:4b708a70-ef5c-414f-bad3-9f02f19a9241"/>
-								</managingOrganization>
 								<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 								<role>
 									<text value="Discharge co-ordinator"/>
@@ -494,7 +492,7 @@
 								<value value="0191223888"/>
 							</telecom>
 							<practitionerRole>
-								<!-- Indicates the practitioner's role(s)-->
+							<!-- Indicates the practitioner's role(s)-->
 								<role>
 									<text value="Approved Social Worker"/>
 								</role>
