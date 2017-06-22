@@ -21,7 +21,12 @@
  - Changed cardinality of all MessageHeader.source.name and MessageHeader.destination.name to 0..1.
  - Removed fixed values from all source.name and destination.name elements in MessageHeader-based profiles and made corresponding changes to xml bundle examples. 
  - Removed practitionerRole.role.text element from CareConnect-ADW-Practitioner section of all xml bundle examples.
- - Removed type.text element from CareConnect-Organization section of all xml bundle examples.  
+ - Removed type.text element from CareConnect-Organization section of all xml bundle examples.
+ - Added further information to MessageHeader.reason element of xml bundle examples to maintain a consistent user story.
+ - Added a sample Social Services letter as a document attachment to Discharge Notice Accept Response xml bundle example.
+ - Added a document to the Assessment Notice xml bundle example.
+ - Amended cardinality of ADW-Referral-Request-1.reason element to 0..1 to allow a referral reason to be carried.
+ - Added an additional question to the QuestionnaireResponse profile called Safeguarding Issues Details. 
 
 ### Version 1.0.0-beta.1 ###
 
