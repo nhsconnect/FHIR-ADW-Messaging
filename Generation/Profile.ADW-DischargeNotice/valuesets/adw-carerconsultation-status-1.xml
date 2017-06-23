@@ -19,7 +19,7 @@
 	</contact>
 	<description value="A vocabulary that describes whether the patient's carer has been consulted about information carried in a  ADW notice."/>
 	<requirements value="There is a requirement within the Social Care ADW message to indicate whether the patient's carer has been consulted about information carried in an ADW notice."/>
-	<copyright value="Copyright © 2016 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<copyright value="Copyright © 2017 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
 	<codeSystem>
 		<system value="https://fhir.nhs.uk/adw-carerconsultation-status-1"/>
 		<concept>
