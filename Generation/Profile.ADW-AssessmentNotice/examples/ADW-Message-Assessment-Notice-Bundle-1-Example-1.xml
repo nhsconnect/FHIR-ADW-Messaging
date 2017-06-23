@@ -71,10 +71,63 @@
 				<encounter>
 					<reference value="urn:uuid:fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
 				</encounter>
+				<reason>
+					<coding>
+						<system value="https://fhir.nhs.uk/adw-referral-reason-1"/>
+						<code value="OFT"/>
+						<display value="Other - Free Text"/>
+					</coding>
+					<text value="Patient admitted as inpatient with chest pain."/>
+				</reason>
 				<supportingInformation>
 					<reference value="urn:uuid:9c7eb664-d257-4250-aee2-20ad202919e8"/>
 				</supportingInformation>
 			</ReferralRequest>
+		</resource>
+	</entry>
+		<entry>
+		<fullUrl value="urn:uuid:fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
+		<resource>
+			<Encounter>
+				<id value="fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
+				<meta>
+					<!--Identifies the profile being used-->
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/encounter-id"/>
+					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
+				</identifier>
+				<status value="in-progress"/>
+				<class value="inpatient"/>
+				<priority>
+					<coding>
+						<system value="https://fhir.nhs.uk/adw-admission-type-1"/>
+						<code value="E"/>
+						<display value="Emergency"/>
+					</coding>
+				</priority>
+				<patient>
+					<reference value="urn:uuid:bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
+				</patient>
+				<period>
+					<start value="2017-04-24"/>
+					<end value="2017-05-12"/>
+				</period>
+				<hospitalization>
+					<admittingDiagnosis>
+						<reference value="urn:uuid:af7ba23c-8ad3-11e6-ae22-56b6b6499611"/>
+					</admittingDiagnosis>
+				</hospitalization>
+				<location>
+					<location>
+						<reference value="urn:uuid:ce114cdd-cfeb-4533-b3c4-3c0dd450b25c"/>
+					</location>
+				</location>
+				<serviceProvider>
+					<reference value="urn:uuid:1ebc76fd-9612-4c72-81dd-de294a0e7287"/>
+				</serviceProvider>
+			</Encounter>
 		</resource>
 	</entry>
 	<entry>
@@ -368,7 +421,7 @@
 						</answer>
 					</question>
 					<question>
-						<text value="Are there any safeguarding issues associated with the patient?"/>
+						<text value="Are there any Safeguarding Concerns associated with the patient?"/>
 						<answer>
 							<valueCoding>
 								<system value="https://fhir.nhs.uk/adw-consultation-status-1"/>
@@ -470,6 +523,7 @@
 									</coding>
 								</valueCodeableConcept>
 							</extension>
+							<!--Business Identifier for this document-->
 							<identifier>
 								<value id="8f0c6526-6369-4b38-a9a8-2034d357d380"/>
 							</identifier>
@@ -535,10 +589,6 @@
 										<display value="Sorted by User"/>
 									</coding>
 								</orderedBy>
-								<!--Reference to patient as source profile for this section.-->
-								<entry>
-									<reference value="urn:uuid:ac3d0407-60a1-40e8-91a7-f96de2bbb04e"/>
-								</entry>
 							</section>
 							<section>
 								<title value="Document and Document Author details"/>
@@ -575,14 +625,6 @@
 										<display value="Sorted by User"/>
 									</coding>
 								</orderedBy>
-								<!--Reference to hospital as source profile for document owner in this section.-->
-								<entry>
-									<reference value="urn:uuid:a96437da-a7f7-4797-ac4b-52ba8e010a42"/>
-								</entry>
-								<!--Reference to Discharge Co-ordinator as source profile for author in this section.-->
-								<entry>
-									<reference value="urn:uuid:c6269f37-f98b-40e8-893e-a149a94473ba"/>
-								</entry>
 							</section>
 							<section>
 								<title value="Assessment Notice"/>
@@ -615,14 +657,6 @@
 										<display value="Sorted by User"/>
 									</coding>
 								</orderedBy>
-								<!--Reference to hospital as source profile for Care Setting Organisation.-->
-								<entry>
-									<reference value="urn:uuid:a96437da-a7f7-4797-ac4b-52ba8e010a42"/>
-								</entry>
-								<!--Reference to hospital ward as source Location profile for Care Setting Location.-->
-								<entry>
-									<reference value="urn:uuid:95c30362-5695-47e1-9081-58c19e88cea6"/>
-								</entry>
 							</section>
 							<section>
 								<title value="Key Dates"/>
@@ -676,7 +710,7 @@
 													<td>Yes</td>
 												</tr>
 												<tr>
-													<th>Are there any safeguarding issues associated with the patient?</th>
+													<th>Are there any Safeguarding Concerns associated with the patient?</th>
 													<td>No</td>
 												</tr>
 												<tr>
@@ -699,10 +733,6 @@
 										<display value="Sorted by User"/>
 									</coding>
 								</orderedBy>
-								<!--Reference to ADW-Questionnaire Response as the source of the information in this section.-->
-								<entry>
-									<reference value="urn:uuid:d0585f1b-94a3-4ec1-b69d-aae57db90b8f"/>
-								</entry>
 							</section>
 							<section>
 								<title value="Document Primary Recipient"/>
@@ -757,7 +787,6 @@
 				<entry>
 					<fullUrl value="urn:uuid:ac3d0407-60a1-40e8-91a7-f96de2bbb04e"/>
 					<resource>
-						<!--The patient as the subject of the document.-->
 						<Patient>
 							<id value="ac3d0407-60a1-40e8-91a7-f96de2bbb04e"/>
 							<!--Identifies the profile being used-->
@@ -858,109 +887,6 @@
 							</type>
 							<name value="Hebburn Hospital"/>
 						</Organization>
-					</resource>
-				</entry>
-				<entry>
-					<fullUrl value="urn:uuid:95c30362-5695-47e1-9081-58c19e88cea6"/>
-					<resource>
-						<Location>
-							<id value="95c30362-5695-47e1-9081-58c19e88cea6"/>
-							<meta>
-								<!--Identifies the profile being used-->
-								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Location-1"/>
-							</meta>
-							<name value="Collier Ward"/>
-							<managingOrganization>
-								<reference value="urn:uuid:a96437da-a7f7-4797-ac4b-52ba8e010a42"/>
-							</managingOrganization>
-						</Location>
-					</resource>
-				</entry>
-				<entry>
-					<fullUrl value="urn:uuid:d0585f1b-94a3-4ec1-b69d-aae57db90b8f"/>
-					<resource>
-						<QuestionnaireResponse>
-							<id value="d0585f1b-94a3-4ec1-b69d-aae57db90b8f"/>
-							<meta>
-								<!--Identifies the profile being used-->
-								<profile value="https://fhir.nhs.uk/StructureDefinition/adw-questionnaire-response-1"/>
-							</meta>
-							<identifier>
-								<value value="9a88efb5-33e6-4159-bcf3-64750060191e"/>
-							</identifier>
-							<status value="completed"/>
-							<author>
-								<reference value="urn:uuid:c6269f37-f98b-40e8-893e-a149a94473ba"/>
-							</author>
-							<group>
-								<question>
-									<text value="Has the patient been consulted regarding this Assessment Notice?"/>
-									<answer>
-										<valueCoding>
-											<system value="https://fhir.nhs.uk/adw-consultation-status-1"/>
-											<code value="Y"/>
-											<display value="Yes"/>
-										</valueCoding>
-									</answer>
-								</question>
-								<question>
-									<text value="Has the patient's carer (if applicable) been consulted regarding the Assessment Notice?"/>
-									<answer>
-										<valueCoding>
-											<system value="https://fhir.nhs.uk/adw-carerconsultation-status-1"/>
-											<code value="Y"/>
-											<display value="Yes"/>
-										</valueCoding>
-									</answer>
-								</question>
-								<question>
-									<text value="Are there any safeguarding issues associated with the patient?"/>
-									<answer>
-										<valueCoding>
-											<system value="https://fhir.nhs.uk/adw-consultation-status-1"/>
-											<code value="N"/>
-											<display value="No"/>
-										</valueCoding>
-									</answer>
-								</question>
-								<question>
-									<text value="Has the patient consented to this Assessment Notice?"/>
-									<answer>
-										<valueCoding>
-											<system value="https://fhir.nhs.uk/adw-patient-consent-status-1"/>
-											<code value="Y"/>
-											<display value="Yes"/>
-										</valueCoding>
-									</answer>
-								</question>
-								<question>
-									<text value="What is the source of the third party consent for this assessment notice?"/>
-									<answer>
-										<valueCoding>
-											<system value="https://fhir.nhs.uk/adw-third-party-consent-source-1"/>
-											<code value="N/A"/>
-											<display value="Not Applicable"/>
-										</valueCoding>
-									</answer>
-								</question>
-								<question>
-									<text value="Has the provision of NHS Continuing Health Care been considered?"/>
-									<answer>
-										<valueCoding>
-											<system value="https://fhir.nhs.uk/adw-consultation-status-1"/>
-											<code value="Y"/>
-											<display value="Yes"/>
-										</valueCoding>
-									</answer>
-								</question>
-								<question>
-									<text value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?"/>
-									<answer>
-										<valueString value="Ongoing care/support requires timely assessment by NHS and Social Services. The patient is eligible for CHC funding."/>
-									</answer>
-								</question>
-							</group>
-						</QuestionnaireResponse>
 					</resource>
 				</entry>
 			</Bundle>
