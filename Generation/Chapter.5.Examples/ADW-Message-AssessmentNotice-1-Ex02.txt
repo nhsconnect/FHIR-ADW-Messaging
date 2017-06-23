@@ -358,7 +358,7 @@
 						</answer>
 					</question>
 					<question>
-						<text value="Are there any safeguarding issues associated with the patient?"/>
+						<text value="Are there any Safeguarding Concerns associated with the patient?"/>
 						<answer>
 							<valueCoding>
 								<system value="https://fhir.nhs.uk/ValueSet/adw-consultation-status-1"/>
