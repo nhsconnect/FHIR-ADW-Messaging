@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Withdrawal notice reject response-->
-<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
+<Bundle xmlns="http://hl7.org/fhir" >
 	<id value="8f856d0d-7836-4d46-b138-a370ea244b85"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1"/>
@@ -89,15 +89,22 @@
 			<Encounter>
 				<id value="f91294c9-4d3a-4a84-a48f-f8af335ce08e"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/encounter-id"/>
 					<!--Same encounter ID for all encounters across all messages-->
 					<value value="2562b8b6-c0db-424a-8c6b-0fa43b0d6c2f"/>
 				</identifier>
-				<status value="in-progress"/>
+				<status value="finished"/>
 				<class value="inpatient"/>
+				<priority>
+					<coding>
+						<system value="https://fhir.nhs.uk/adw-admission-type-1"/>
+						<code value="E"/>
+						<display value="Emergency"/>
+					</coding>
+				</priority>
 				<patient>
 					<reference value="urn:uuid:f613b047-a68a-4f9a-bfd2-83054f2c8bd8"/>
 				</patient>
@@ -160,7 +167,7 @@
 				<id value="caedf8f7-f605-497b-922e-732b492fee3d"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Gulliver"/>
@@ -197,7 +204,7 @@
 				<id value="b36b91cc-e7b4-4148-bd4f-51e404d595c4"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Jones"/>
