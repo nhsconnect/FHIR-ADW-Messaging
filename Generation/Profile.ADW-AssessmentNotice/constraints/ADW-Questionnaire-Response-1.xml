@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ADW-Questionnaire-Response-1" />
   <meta>
-    <lastUpdated value="2017-06-16T14:15:59.921+01:00" />
+    <lastUpdated value="2017-06-23T10:11:38.028+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="10" />
@@ -1995,7 +1995,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -4069,8 +4069,8 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="Safeguarding Issues" />
-      <short value="Safeguarding Issues" />
+      <name value="Safeguarding Concerns" />
+      <short value="Safeguarding Concerns" />
       <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
@@ -4247,7 +4247,7 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
-      <name value="Safeguarding Issues" />
+      <name value="Safeguarding Concerns" />
       <short value="Text of the question as it is shown to the user" />
       <definition value="The actual question as shown to the user to prompt them for an answer." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
@@ -4262,7 +4262,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Are there any safeguarding issues associated with the patient?" />
+      <fixedString value="Are there any Safeguarding Concerns associated with the patient?" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4285,7 +4285,7 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
-      <name value="Safeguarding Issues" />
+      <name value="Safeguarding Concerns" />
       <short value="The response(s) to the question" />
       <definition value="The respondent's answer(s) to the question." />
       <comments value="The value is nested because we cannot have a repeating structure that has variable type." />
@@ -4425,7 +4425,7 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding" />
-      <name value="Safeguarding Issues" />
+      <name value="Safeguarding Concerns" />
       <short value="Single-valued answer to the question" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
       <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
@@ -4490,13 +4490,13 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="Safeguarding Issues Details" />
+      <name value="Safeguarding Concerns Details" />
       <short value="Questions in this group" />
       <definition value="Set of questions within this group. The order of questions within the group is relevant." />
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="QuestionnaireResponse.group.question" />
@@ -4681,7 +4681,7 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="If Safeguarding issues have been identified, please provide further relevant details of these." />
+      <fixedString value="If Safeguarding Concerns have been identified, please provide further relevant details of these." />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4841,7 +4841,7 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueString" />
-      <name value="Safeguarding Issues Details" />
+      <name value="Safeguarding Concerns Details" />
       <short value="Answer to the question expressed as text" />
       <definition value="The answer (or one of the answers) provided by the respondent to the question." />
       <comments value="More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions." />
@@ -4866,7 +4866,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-       <mapping>
+          <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
@@ -6168,7 +6168,7 @@
       <requirements value="Must register answers to questions." />
       <alias value="Responses" />
       <alias value="Contents" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="QuestionnaireResponse.group.question" />
@@ -6658,7 +6658,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -6850,8 +6850,8 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="Safeguarding Issues" />
-      <short value="Safeguarding Issues" />
+      <name value="Safeguarding Concerns" />
+      <short value="Safeguarding Concerns" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
@@ -6862,21 +6862,21 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
-      <name value="Safeguarding Issues" />
+      <name value="Safeguarding Concerns" />
       <min value="1" />
-      <fixedString value="Are there any safeguarding issues associated with the patient?" />
+      <fixedString value="Are there any Safeguarding Concerns associated with the patient?" />
       <mustSupport value="true" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
-      <name value="Safeguarding Issues" />
+      <name value="Safeguarding Concerns" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueCoding" />
-      <name value="Safeguarding Issues" />
+      <name value="Safeguarding Concerns" />
       <min value="1" />
       <type>
         <code value="Coding" />
@@ -6898,8 +6898,7 @@
         <valueString value="Question" />
       </extension>
       <path value="QuestionnaireResponse.group.question" />
-      <name value="Safeguarding Issues Details" />
-      <min value="1" />
+      <name value="Safeguarding Concerns Details" />
       <max value="1" />
     </element>
     <element>
@@ -6909,7 +6908,7 @@
     <element>
       <path value="QuestionnaireResponse.group.question.text" />
       <min value="1" />
-      <fixedString value="If Safeguarding issues have been identified, please provide further relevant details of these." />
+      <fixedString value="If Safeguarding Concerns have been identified, please provide further relevant details of these." />
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer" />
@@ -6918,7 +6917,8 @@
     </element>
     <element>
       <path value="QuestionnaireResponse.group.question.answer.valueString" />
-      <name value="Safeguarding Issues Details" />
+      <name value="Safeguarding Concerns Details" />
+      <short value="Answer to the question expressed as text" />
       <min value="1" />
       <type>
         <code value="string" />
@@ -7078,7 +7078,6 @@
       </extension>
       <path value="QuestionnaireResponse.group.question" />
       <name value="NHS CHC Considered Result" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element>
