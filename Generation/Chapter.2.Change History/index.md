@@ -4,9 +4,9 @@
 
  - Amended all non-CareConnect valuesets to reflect FHIR standard.
  - Removed superfluous valuesets from the specification.
- - Amended system values for event.system to http://snomed.info/sct in all bundle xml examples and all MessageHeader-based profiles.
+ - Amended system values for MessageHeader.event.system to http://snomed.info/sct in all bundle xml examples and all MessageHeader-based profiles.
  - Removed responseType extension from all MessageHeader-based Notice profiles, from all Notice xml bundle examples and from the specification.
- - Standardised MessageHeader.reason element for Notice receipt profiles by amending the cardinality of reason.coding.system to 0..0 for all Notice receipts.
+ - Standardised MessageHeader.reason element for Notice receipt profiles by amending the cardinality of reason.coding.system to 1..1 for all Notice receipts.
  - Renamed all MessageHeader.reason valuesets for Notice receipts to a standard for acceptance and a standard for rejection. Amended MessageHeader Notice receipt profiles to reflect changes.
  - Tightened valueset binding strength of reason element to Required in all MessageHeader-based profiles.
  - Fixed broken links to profiles on adw-message-bundle-1.html pages.
@@ -25,8 +25,13 @@
  - Added further information to MessageHeader.reason element of xml bundle examples to maintain a consistent user story.
  - Added a sample Social Services letter as a document attachment to Discharge Notice Accept Response xml bundle example.
  - Added a document to the Assessment Notice xml bundle example.
- - Amended cardinality of ADW-Referral-Request-1.reason element to 0..1 to allow a referral reason to be carried.
- - Added an additional question to the QuestionnaireResponse profile called Safeguarding Issues Details. 
+ - Added a link to attached document bundles in ReferralRequest.supportingInformation for all xml bundles containing a document.
+ - Added Assessment Notice optional ADW-Referral-Request-1.reason element to 0..1 to allow a referral reason to be carried.
+ - Added https://fhir.nhs.uk/ValueSet/adw-referral-reason-1 valueset with Required binding to the Assessment Notice ADW-Referral-Request-1.reason element.
+ - Fixed Assessment Notice ADW-Referral-Request-1.reason.coding.system to 'https://fhir.nhs.uk/adw-referral-reason-1', ADW-Referral-Request-1.reason.coding.code to 'OFT' and ADW-Referral-Request-1.reason.coding.display to 'Other - Free Text'.
+ - Added optional ReferralReason.description element to all ReferralRequest-based profiles to carry any additional relevant information.
+ - Renamed ADW-Questionnaire-Response-1.group.question (Safeguarding Issues) to (Safeguarding Concerns).
+ - Added an additional question to the ADW-Questionnaire-Response-1 profile called Safeguarding Concerns Details.  
 
 ### Version 1.0.0-beta.1 ###
 
@@ -101,7 +106,7 @@
 
  - Made Patient.address optional across all messages and added in text to its description to outline that it should be mandatory in all Notices, but optional in all Responses.
  - Made Patient.type (NHS Number Status Indicator) optional across all messages to reflect requirements.
- - Amended the MessageHeader.receiver element in the Assessment notice minimum dataset bundle xml example to contain the Social Services' community team to reflect requirements.
+ - Amended the MessageHeader.receiver element in the Assessment Notice minimum dataset bundle xml example to contain the Social Services' community team to reflect requirements.
  - Amended the ReferralRequest.recipient element in the Discharge and Withdrawal notice minimum dataset bundle xml examples to contain the Social Services' community team rather than the Local Authority to maintain consistency across notice bundles.
  - The incorrect reference to the Local Authority Contact in ADW-Message-AssessmentNotice-1-0-Ex01 xml example has been removed.
  - Amended label for MessageHeader.responsible element across all messages to show Lead Clinician for Notices and Local Authority Organisation for all Responses.
