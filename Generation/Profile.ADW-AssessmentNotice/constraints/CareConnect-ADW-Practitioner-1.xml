@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-14T10:39:03.412+01:00" />
+    <lastUpdated value="2017-06-26T10:15:33.038+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="7" />
@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3" />
   </extension>
-  <url value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
   <version value="1.0.0" />
   <name value="CareConnect-ADW-Practitioner-1" />
   <status value="active" />
@@ -5418,8 +5418,8 @@
       <comments value="If only initials are recorded, they may be used in place of the full name.  Not called &quot;first name&quot; since given names do not always come first." />
       <alias value="first name" />
       <alias value="middle name" />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="HumanName.given" />
         <min value="0" />
@@ -16245,6 +16245,11 @@
     </element>
     <element>
       <path value="Practitioner.name.family" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="Practitioner.name.given" />
       <min value="1" />
       <max value="1" />
     </element>
