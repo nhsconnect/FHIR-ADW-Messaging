@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-15T14:42:07.477+01:00" />
+    <lastUpdated value="2017-06-25T23:31:22.349+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -2455,7 +2455,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2651,9 +2651,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
-        <aggregation value="bundled" />
-        <aggregation value="referenced" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2851,8 +2849,6 @@
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
-        <aggregation value="referenced" />
-        <aggregation value="bundled" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2912,7 +2908,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3783,7 +3779,7 @@
       <max value="0" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
       </type>
     </element>
     <element>
@@ -3795,9 +3791,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
-        <aggregation value="bundled" />
-        <aggregation value="referenced" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -3822,8 +3816,6 @@
       <type>
         <code value="Reference" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1" />
-        <aggregation value="referenced" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -3833,7 +3825,7 @@
       <short value="Final responsibility for event." />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
