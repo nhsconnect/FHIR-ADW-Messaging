@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-14T10:00:41.449+01:00" />
+    <lastUpdated value="2017-06-26T11:27:46.657+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -3364,7 +3364,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3482,7 +3482,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -4766,13 +4766,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Resource" />
       </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-questionnaire-response-1" />
-        <aggregation value="referenced" />
-        <aggregation value="bundled" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4897,7 +4895,6 @@
         <human value="All FHIR elements must have a @value or children" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -4914,7 +4911,7 @@
       <definition value="Plain text narrative that identifies the resource in addition to the resource reference." />
       <comments value="This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Reference.display" />
         <min value="0" />
@@ -5276,7 +5273,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -5307,7 +5304,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -5348,24 +5345,17 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Resource" />
       </type>
       <type>
         <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-questionnaire-response-1" />
-        <aggregation value="referenced" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
     <element>
       <path value="ReferralRequest.supportingInformation.reference" />
       <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element>
-      <path value="ReferralRequest.supportingInformation.display" />
-      <max value="0" />
     </element>
     <element>
       <path value="ReferralRequest.fulfillmentTime" />
