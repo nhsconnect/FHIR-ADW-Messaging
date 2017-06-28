@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Withdrawal notice accept response-->
-<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
+<Bundle xmlns="http://hl7.org/fhir">
 	<id value="6130a4ff-39d9-41b6-9b4f-424b4d7122cc"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1"/>
@@ -83,13 +83,13 @@
 			</ReferralRequest>
 		</resource>
 	</entry>
-		<entry>
+	<entry>
 		<fullUrl value="urn:uuid:29069f89-9ff7-4b3f-b5d3-2d99fa908c5c"/>
 		<resource>
 			<Encounter>
 				<id value="29069f89-9ff7-4b3f-b5d3-2d99fa908c5c"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/encounter-id"/>
@@ -98,6 +98,13 @@
 				</identifier>
 				<status value="in-progress"/>
 				<class value="inpatient"/>
+				<priority>
+					<coding>
+						<system value="https://fhir.nhs.uk/adw-admission-type-1"/>
+						<code value="E"/>
+						<display value="Emergency"/>
+					</coding>
+				</priority>
 				<patient>
 					<reference value="urn:uuid:67cdb5be-f770-4858-afe8-ecbd3c3d081e"/>
 				</patient>
@@ -160,7 +167,7 @@
 				<id value="f439f6fe-a1b2-45b6-9180-4d183adfc848"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Gulliver"/>
@@ -197,7 +204,7 @@
 				<id value="4d40bf5b-03f6-4450-9cd3-96bba64f96f1"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Jones"/>
@@ -264,7 +271,7 @@
 				</meta>
 				<!--Organisation identifier-->
 				<identifier>
-				<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
 					<value value="V396BB"/>
 				</identifier>
 				<!-- Type of organisation. -->
