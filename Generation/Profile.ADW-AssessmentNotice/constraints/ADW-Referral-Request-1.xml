@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-22T10:33:13.515+01:00" />
+    <lastUpdated value="2017-06-26T11:27:29.889+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -3364,7 +3364,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3479,7 +3479,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -3728,8 +3728,11 @@
       <isModifier value="false" />
       <isSummary value="true" />
       <binding>
-        <strength value="example" />
+        <strength value="required" />
         <description value="Codes indicating why the referral is being requested." />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/adw-referral-reason-1" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3960,6 +3963,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/adw-referral-reason-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -3994,7 +3998,7 @@
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
       <comments value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.version" />
         <min value="0" />
@@ -4047,6 +4051,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="OFT" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4091,6 +4096,7 @@
       <type>
         <code value="string" />
       </type>
+      <fixedString value="Other - Free Text" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4126,7 +4132,7 @@
       <comments value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
       <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Coding.userSelected" />
         <min value="0" />
@@ -4213,7 +4219,7 @@
       <definition value="The reason element gives a short description of why the referral is being made, the description expands on this to support a more complete clinical summary." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="ReferralRequest.description" />
         <min value="0" />
@@ -4763,9 +4769,11 @@
       </base>
       <type>
         <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+      <type>
+        <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/adw-questionnaire-response-1" />
-        <aggregation value="bundled" />
-        <aggregation value="referenced" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5269,7 +5277,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -5298,7 +5306,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -5322,6 +5330,12 @@
       <name value="Reason for referral" />
       <short value="The reason for the Referral Request notice" />
       <definition value="Description of clinical condition indicating why referral is requested.  For example:  Behavioral Management." />
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="https://fhir.nhs.uk/ValueSet/adw-referral-reason-1" />
+        </valueSetReference>
+      </binding>
     </element>
     <element>
       <path value="ReferralRequest.reason.coding" />
@@ -5330,14 +5344,25 @@
     <element>
       <path value="ReferralRequest.reason.coding.system" />
       <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/adw-referral-reason-1" />
+    </element>
+    <element>
+      <path value="ReferralRequest.reason.coding.version" />
+      <max value="0" />
     </element>
     <element>
       <path value="ReferralRequest.reason.coding.code" />
       <min value="1" />
+      <fixedCode value="OFT" />
     </element>
     <element>
       <path value="ReferralRequest.reason.coding.display" />
       <min value="1" />
+      <fixedString value="Other - Free Text" />
+    </element>
+    <element>
+      <path value="ReferralRequest.reason.coding.userSelected" />
+      <max value="0" />
     </element>
     <element>
       <path value="ReferralRequest.reason.text" />
@@ -5345,7 +5370,6 @@
     </element>
     <element>
       <path value="ReferralRequest.description" />
-      <max value="0" />
       <mustSupport value="false" />
     </element>
     <element>
@@ -5360,9 +5384,11 @@
       <min value="1" />
       <type>
         <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+      <type>
+        <code value="Reference" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/adw-questionnaire-response-1" />
-        <aggregation value="bundled" />
-        <aggregation value="referenced" />
       </type>
       <mustSupport value="true" />
     </element>
