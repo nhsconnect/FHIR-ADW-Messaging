@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Discharge notice disagreement-->
-<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
+<Bundle xmlns="http://hl7.org/fhir">
 	<id value="152af7c4-5af8-11e6-8b77-86f30ca893d3"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1"/>
@@ -94,7 +94,7 @@
 			<Encounter>
 				<id value="977b5213-6597-4e0c-8c8e-2ba6140db8f6"/>
 				<meta>
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Encounter-1"/>
 				</meta>
 				<identifier>
 					<system value="https://fhir.nhs.uk/encounter-id"/>
@@ -103,6 +103,13 @@
 				</identifier>
 				<status value="in-progress"/>
 				<class value="inpatient"/>
+				<priority>
+					<coding>
+						<system value="https://fhir.nhs.uk/adw-admission-type-1"/>
+						<code value="E"/>
+						<display value="Emergency"/>
+					</coding>
+				</priority>
 				<patient>
 					<reference value="urn:uuid:a1e2525a-08ee-4ece-8a76-426c245a119a"/>
 				</patient>
@@ -165,7 +172,7 @@
 				<id value="06321ef3-3ca9-44ec-b985-7eada342dac5"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Gulliver"/>
@@ -202,7 +209,7 @@
 				<id value="94e5730d-b8b9-4f78-a6c4-35137c88e6e5"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Jones"/>
