@@ -19,6 +19,7 @@
 	</contact>
 	<description value="A vocabulary that identifies the reason why the notice has been withdrawn."/>
 	<requirements value="There is a requirement within the Social Care ADW message to indicate the reason for withdrawal to the receiver of the withdrawal notice."/>
+		<copyright value="Copyright © 2017 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
 	<codeSystem>
 		<system value="https://fhir.nhs.uk/adw-withdrawal-reason-1"/>
 		<concept>

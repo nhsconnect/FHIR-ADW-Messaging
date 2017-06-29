@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="6319b80d-f1b8-4881-88d5-743237492851"/>
+	<id value="dd82d6f9-72a7-4972-b3bb-6687c4f945ad"/>
 	<meta>
 		<lastUpdated value="2017-06-05T16:45:00+00:00"/>
 	</meta>
@@ -8,6 +8,7 @@
 		<valueUri value="urn:oid:2.16.840.1.113883.2.1.3.2.4.17.124"/>
 </extension>
 	<url value="https://fhir.nhs.uk/ValueSet/job-role-name-1"/>
+	<version value="1.0.0"/>
 	<name value="Job Role Name"/>
 	<status value="active"/>
 	<publisher value="NHS Digital"/>
