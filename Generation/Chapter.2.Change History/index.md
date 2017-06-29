@@ -231,19 +231,19 @@
 This release accommodates the changes following review by the NHS Digital business and the technical modelling teams. It includes the following changes:
 
  - Renamed the specification from Social Care Integration to Social Care.
- - Added more detailed XML examples.  
-- Added complete message (bundle) examples.  
-- Added diagram to illustrate the referencing for a typical Assessment Notice message.  
-- Added table for FHIR message element to ADW dataset mapping.
-- 
+ - Added more detailed XML examples.
+ - Added complete message (bundle) examples.
+ - Added diagram to illustrate the referencing for a typical Assessment Notice message.
+ - Added table for FHIR message element to ADW dataset mapping.
+
 ### Version: 1.0: Status: Draft C ###
 
 - Updated ADW-WithdrawalNotice-Message-Header-1-0 to include reason for withdrawal.
-- 
+
 ### Version: 1.0: Status: Draft B ###
 
 - Second draft of the SCI Message Specification was created to resolve the broken links in the previous release.
-- 
+
 ### Version: 1.0: Status: Draft A ###
 
 - First draft of the Social Care Integration Domain (SCI) Message Specification.

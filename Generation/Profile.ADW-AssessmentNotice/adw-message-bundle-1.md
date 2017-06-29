@@ -1,5 +1,5 @@
 
-The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles listed below:- 
+The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW profiles listed below:- 
 
 - ADW-AssessmentNotice-Message-Header-1 [ADW-AssessmentNotice-Message-Header-1] 
 - ADW-Referral-Request-1 [ADW-Referral-Request-1]
@@ -14,9 +14,11 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 
 ----------
 
-The following example has been saved as a .txt file only to allow correct viewing within a web browser; xml copies are available in the examples folder within this specification.
+The following example has been saved as a .txt file only to allow correct viewing within a web browser; an xml copy is available in the examples folder within this specification.
  
 Example of the Assessment Notice Bundle for viewing in a web browser [ADW-Message-Assessment-Notice-Bundle-1-Example-2.txt] 
+
+This xml example includes an example attached supporting document structured in an example FHIR Composition resource.
 
  
 
@@ -174,7 +176,7 @@ The diagram shows the referencing for a typical Assessment Notice message. It is
 
 For more information about message profiles visit the [Profiling FHIR] and for resource Metadata visit [Base Resource Definitions].
 
-The various downloads (including Schema files) and reference implementations are available on [FHIR website].
+The various downloads (including Schema files) and reference implementations are available on the [FHIR website].
 
 [Profiling FHIR]: http://hl7.org/fhir/DSTU2/profiling.html
 [FHIR website]: http://hl7.org/fhir/DSTU2/index.html

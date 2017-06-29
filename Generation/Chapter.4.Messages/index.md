@@ -39,6 +39,7 @@ For more information on FHIR documents and their implementation, please consult 
 [FHIR Composition resource]: http://hl7.org/fhir/DSTU2/composition.html
 [FHIR DocumentReference resource]: http://hl7.org/fhir/DSTU2/documentreference.html
 [Discharge Notice Accept Response bundle xml example]: ../Examples/Profile.ADW-DischargeNoticeAcceptResponse/ADW-Message-Discharge-Notice-Accept-Response-Bundle-1-Example-1.xml
+[Discharge Notice bundle xml example]: ../Examples/Profile.ADW-DischargeNotice/ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml
 
 
 **Further Information**
