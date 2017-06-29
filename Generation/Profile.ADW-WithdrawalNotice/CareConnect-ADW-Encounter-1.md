@@ -1,1 +1,1 @@
-The encounter resource represents an encounter between a care professional and the patient (or patient's record).
+The encounter profile represents an encounter between a care professional and the patient (or patient's record).
