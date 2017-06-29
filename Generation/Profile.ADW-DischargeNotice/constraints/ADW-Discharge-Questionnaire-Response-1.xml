@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2017-06-28T17:00:27.508+01:00" />
@@ -679,10 +679,7 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="example" />
-        <description value="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;" />
-      </binding>
+      
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1871,10 +1868,6 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="example" />
-        <description value="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />

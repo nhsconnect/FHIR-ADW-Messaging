@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ADW-Questionnaire-Response-1" />
   <meta>
@@ -680,10 +680,6 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="example" />
-        <description value="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1872,11 +1868,7 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="example" />
-        <description value="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;" />
-      </binding>
-      <mapping>
+         <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
