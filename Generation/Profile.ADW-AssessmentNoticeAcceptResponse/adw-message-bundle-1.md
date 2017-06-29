@@ -1,5 +1,5 @@
 
-The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles listed below:- 
+The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW profiles listed below:- 
 
 - ADW-AssessmentNoticeAcceptResponse-Message-Header-1 [ADW-AssessmentNoticeAcceptResponse-Message-Header-1]
 - ADW-ReferralRequest-Accepted-1 [ADW-ReferralRequest-Accepted-1]
@@ -8,6 +8,7 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 - CareConnect-ADW-Practitioner-1 [CareConnect-ADW-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
 - CareConnect-Location-1 [CareConnect-Location-1]
+- ADW-Condition-1 [ADW-Condition-1]
 
 
 ----------
@@ -66,6 +67,7 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [ADW-Composition-1]: adw-composition-1.html
 [CareConnect-Location-1]: careconnect-location-1.html
+[ADW-Condition-1]: adw-condition-1.html
 
 
 
@@ -112,7 +114,7 @@ The diagram shows the referencing for a typical Assessment Notice Accept Respons
 
 For more information about message profiles visit the [Profiling FHIR] and for resource Metadata visit [Base Resource Definitions].
 
-The various downloads (including Schema files) and reference implementations are available on [FHIR website].
+The various downloads (including Schema files) and reference implementations are available on the [FHIR website].
 
 [Profiling FHIR]: http://hl7.org/fhir/DSTU2/profiling.html
 [FHIR website]: http://hl7.org/fhir/DSTU2/index.html
