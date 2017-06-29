@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-07T13:57:45.515+01:00" />
+    <lastUpdated value="2017-06-28T15:21:17.865+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <version value="1.0" />
@@ -12,9 +12,9 @@
     <valueInteger value="0" />
   </extension>
   <url value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
-  <version value="1.0" />
+  <version value="1.0.0" />
   <name value="ADW-Condition-1" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="NHS Digital" />
   <contact>
     <name value="Interoperability Team" />
@@ -24,8 +24,8 @@
       <use value="work" />
     </telecom>
   </contact>
-  <date value="2016-10-04T00:00:00+01:00" />
-  <description value="The Condition profile is a constrained version of the Condition resource used to carry the reason for a patient's hospital admission within the context of an ADW message." />
+  <date value="2017-06-28" />
+  <description value="The ADW-Condition constraint is a constrained version of the FHIR DSTU2 (Oct 2015) Condition resource used to carry the reason for a patient's hospital admission within the context of an ADW Assessment Notice message. It could also be used to record detailed information about conditions, problems or diagnoses recognised by a clinician in other messages across the specification." />
   <useContext>
     <coding>
       <system value="urn:iso:std:iso:3166" />
@@ -34,8 +34,8 @@
       <display value="United Kingdom and Great Britain and Northern Ireland" />
     </coding>
   </useContext>
-  <requirements value="This profile is to allow the reason for admission to be carried in the Social Care doamin of delayed discharge." />
-  <copyright value="Copyright © 2016 Health and Social Care Information Centre.&#xD;&#xA;NHS Digital is the trading name of the Health and Social Care Information Centre.&#xD;&#xA;" />
+  <requirements value="This constraint allows the reason for admission to be carried in the Social Care ADW domain of delayed discharge. It could also be used to record detailed information about conditions, problems or diagnoses recognised by a clinician in other messages across the specification." />
+  <copyright value="Copyright © 2017 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.&#xD;&#xA;" />
   <fhirVersion value="1.0.1" />
   <kind value="resource" />
   <constrainedType value="Condition" />
