@@ -1,5 +1,5 @@
 
-The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles listed below:- 
+The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW profiles listed below:- 
 
 - ADW-DischargeNoticeAcceptResponse-Message-Header-1 [ADW-DischargeNoticeAcceptResponse-Message-Header-1]
 - ADW-ReferralRequest-Accepted-1 [ADW-ReferralRequest-Accepted-1]
@@ -8,9 +8,13 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 - CareConnect-ADW-Practitioner-1 [CareConnect-ADW-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
 - CareConnect-Location-1 [CareConnect-Location-1]
+- ADW-Condition-1 [ADW-Condition-1]
 
 ----------
 
+An instance of a DocumentReference and a Binary resource have been added to the end of the [Discharge Accept Response xml bundle example] to illustrate how a supporting document, in this case a pdf, could be attached to the message.
+
+[Discharge Accept Response xml bundle example]: ../Examples/Profile.ADW-DischargeNoticeAcceptResponse/ADW-Message-Discharge-Notice-Accept-Response-Bundle-1-Example-1.xml
 
 [ADW-Message-DischargeNoticeAcceptResponse-1-Ex01]: ../Examples/Profile.ADW-DischargeNoticeAcceptResponse/ADW-Message-DischargeNoticeAcceptResponse-1-Ex01.xml
 
@@ -72,6 +76,7 @@ Note that for sliced elements and extensions within CareConnect profiles, it is 
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [CareConnect-Organization-1]: careconnect-organization-1.html
 [CareConnect-Location-1]: careconnect-location-1.html
+[ADW-Condition-1]: adw-condition-1.html
 
 
 [MessageHeader.timestamp (ADW Accept Response Message Sent Time)]: adw-discharge-notice-accept-response-message-header-1-dict.html#MessageHeader.ADW%20Accept%20Response%20Message%20Sent%20Time
@@ -118,7 +123,7 @@ The diagram shows the referencing for a typical Discharge Notice Accept Response
 
 For more information about message profiles visit the [Profiling FHIR] and for resource Metadata visit [Base Resource Definitions].
 
-The various downloads (including Schema files) and reference implementations are available on [FHIR website].
+The various downloads (including Schema files) and reference implementations are available on the [FHIR website].
 
 [Profiling FHIR]: http://hl7.org/fhir/DSTU2/profiling.html
 [FHIR website]: http://hl7.org/fhir/DSTU2/index.html
