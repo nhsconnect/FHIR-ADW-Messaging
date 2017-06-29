@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-28T17:11:31.513+01:00" />
+    <lastUpdated value="2017-06-29T16:14:45.324+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <version value="1.0" />
@@ -25,7 +25,7 @@
     </telecom>
   </contact>
   <date value="2017-06-28" />
-  <description value="The ADW-Condition constraint is a constrained version of the FHIR DSTU2 (Oct 2015) Condition resource used to carry the reason for a patient's hospital admission within the context of an ADW Assessment Notice message. It could also be used to record detailed information about conditions, problems or diagnoses recognised by a clinician in other messages across the specification." />
+  <description value="The ADW Condition constraint is a constrained version of the Condition resource used to carry the reason for a patient's hospital admission within the context of an ADW Assessment Notice message. It could also be used to record detailed information about conditions, problems or diagnoses recognised by a clinician in other messages across the specification." />
   <useContext>
     <coding>
       <system value="urn:iso:std:iso:3166" />
@@ -691,7 +691,7 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-       <mapping>
+      <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
@@ -1879,7 +1879,7 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <isSummary value="true" />
-      <mapping>
+        <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
@@ -4449,7 +4449,7 @@
     </element>
     <element>
       <path value="Condition.code.text" />
-      <short value="Plain text representation of the concept" />
+      <short value="Textual description of the condition, problem or diagnosis which was the reason for admission." />
       <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." />
       <comments value="The reason for admission in text." />
       <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." />
@@ -7892,6 +7892,7 @@
     </element>
     <element>
       <path value="Condition.code.text" />
+      <short value="Textual description of the condition, problem or diagnosis which was the reason for admission." />
       <comments value="The reason for admission in text." />
       <min value="1" />
       <maxLength value="500" />

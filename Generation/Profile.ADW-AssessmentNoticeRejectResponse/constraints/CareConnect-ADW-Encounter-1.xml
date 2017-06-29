@@ -21,7 +21,7 @@
     </telecom>
   </contact>
   <date value="2017-06-28" />
-  <description value="A FHIR DSTU2 (Oct 2015) constrained encounter resource which represents an encounter between a care professional and the patient (or patient's record)." />
+  <description value="The constrained CareConnect ADW encounter resource which represents an encounter between a care professional and the patient." />
   <requirements value="There is a requirement to show an encounter between a patient and a health care professional in the ADW message." />
   <copyright value="Copyright © 2017 Health and Social Care Information Centre.&#xD;&#xA;NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.2" />

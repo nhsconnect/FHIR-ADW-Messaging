@@ -24,7 +24,7 @@
     </telecom>
   </contact>
   <date value="2017-06-28" />
-  <description value="The ADW Referral Request constraint is a constrained version of the FHIR DSTU2 (Oct 2015) ReferralRequest resource. It is used to share information to support  a referral or transfer of care between practitioners and/or providers." />
+  <description value="The ADW Referral Request constraint is a constrained version of the ReferralRequest resource. It is used to share information to support  a referral or transfer of care between practitioners and/or providers." />
   <requirements value="This is required to support the exchange of information between practitioners and/or organisations in an ADW context." />
   <copyright value="Copyright © 2017 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.1" />
@@ -3355,7 +3355,7 @@
     <element>
       <path value="ReferralRequest.requester" />
       <name value="Hospital Liaison" />
-      <short value="Requester of the referral notice" />
+      <short value="Hospital Liaison as the requester of the referral notice" />
       <definition value="The healthcare provider or provider organization who/which initiated the Referral Request." />
       <min value="1" />
       <max value="1" />
@@ -3412,7 +3412,7 @@
     <element>
       <path value="ReferralRequest.recipient" />
       <name value="Local Authority organisation" />
-      <short value="Receiver of the Referral Request" />
+      <short value="Local Authority Organisation as the receiver of the Referral Request." />
       <definition value="The provider organization(s) who/which is to receive the Referral Request." />
       <comments value="None" />
       <min value="1" />
@@ -4211,7 +4211,7 @@
     </element>
     <element>
       <path value="ReferralRequest.description" />
-      <short value="A textual description of the referral" />
+      <short value="Additional supporting information relevant to this Referral Request expressed as text." />
       <definition value="The reason element gives a short description of why the referral is being made, the description expands on this to support a more complete clinical summary." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
@@ -4754,8 +4754,8 @@
     <element>
       <path value="ReferralRequest.supportingInformation" />
       <name value="Further Information " />
-      <short value="Additional information to support the Referral Request notice" />
-      <definition value="Additional information to support the Referral Request notice." />
+      <short value="Reference to additional information to support the Referral Request notice" />
+      <definition value="Reference to additional information to support the Referral Request notice." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -5264,7 +5264,7 @@
     <element>
       <path value="ReferralRequest.requester" />
       <name value="Hospital Liaison" />
-      <short value="Requester of the referral notice" />
+      <short value="Hospital Liaison as the requester of the referral notice" />
       <definition value="The healthcare provider or provider organization who/which initiated the Referral Request." />
       <min value="1" />
       <type>
@@ -5278,7 +5278,7 @@
     <element>
       <path value="ReferralRequest.recipient" />
       <name value="Local Authority organisation" />
-      <short value="Receiver of the Referral Request" />
+      <short value="Local Authority Organisation as the receiver of the Referral Request." />
       <definition value="The provider organization(s) who/which is to receive the Referral Request." />
       <comments value="None" />
       <min value="1" />
@@ -5335,8 +5335,8 @@
     <element>
       <path value="ReferralRequest.supportingInformation" />
       <name value="Further Information " />
-      <short value="Additional information to support the Referral Request notice" />
-      <definition value="Additional information to support the Referral Request notice." />
+      <short value="Reference to additional information to support the Referral Request notice" />
+      <definition value="Reference to additional information to support the Referral Request notice." />
       <mustSupport value="false" />
     </element>
     <element>
