@@ -1,1 +1,1 @@
-This Organization resource represents the organisation that employs the healthcare practitioner.
+This Organization profile represents the organisation that employs the healthcare practitioner.
