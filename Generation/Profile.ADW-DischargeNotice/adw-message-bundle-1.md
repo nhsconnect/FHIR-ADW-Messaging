@@ -1,5 +1,5 @@
 
-The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces as a container to collect the ADW profiles listed below:- 
+The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW profiles listed below:- 
 
 - ADW-DischargeNotice-Message-Header-1 [ADW-DischargeNotice-Message-Header-1]
 - ADW-DischargeReferralRequest-1 [ADW-DischargeReferralRequest-1]
@@ -9,12 +9,13 @@ The ADW-Message-Bundle-1 bundle resource profile is used in the ADW interfaces a
 - CareConnect-Organization-1 [CareConnect-Organization-1]
 - CareConnect-Location-1 [CareConnect-Location-1]
 - ADW-DischargeQuestionnaireResponse-1 [ADW-DischargeQuestionnaireResponse-1]
-
-Instances of a Composition, DocumentReference and a Binary resource have been added to the end of this Discharge bundle to illustrate how a supporting document, in this case a pdf, could be attached to the message.
+- ADW-Condition-1 [ADW-Condition-1]
 
 ----------
 
 The following example has been saved as a .txt file only to allow correct viewing within a web browser; xml copies are available in the examples folder within this specification.
+
+An instance of a DocumentReference and a Binary resource have been added to the end of this Discharge bundle to illustrate how a supporting document, in this case a pdf, could be attached to the message.
 
 Example of the Discharge Notice Bundle for viewing in a web browser [ADW-Message-Discharge-Notice-Bundle-1-Example-2.txt] 
 
@@ -105,6 +106,7 @@ The diagram shows the referencing for a typical Discharge Notice message. It is 
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [CareConnect-Organization-1]: careconnect-organization-1.html
 [CareConnect-Location-1]: careconnect-location-1.html
+[ADW-Condition-1]: adw-condition-1.html
 
 
 
@@ -148,7 +150,7 @@ The diagram shows the referencing for a typical Discharge Notice message. It is 
 
 For more information about message profiles visit the [Profiling FHIR] and for resource Metadata visit [Base Resource Definitions].
 
-The various downloads (including Schema files) and reference implementations are available on [FHIR website].
+The various downloads (including Schema files) and reference implementations are available on the [FHIR website].
 
 [Profiling FHIR]: http://hl7.org/fhir/DSTU2/profiling.html
 [FHIR website]: http://hl7.org/fhir/DSTU2/index.html
