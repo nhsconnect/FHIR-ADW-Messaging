@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-15T14:43:33.049+01:00" />
+    <lastUpdated value="2017-06-28T13:13:34.714+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="2" />
@@ -11,11 +11,22 @@
     <valueInteger value="2" />
   </extension>
   <url value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-notice-message-header-1" />
+  <version value="1.0.0" />
   <name value="ADW-Discharge-Notice-Message-Header-1" />
-  <status value="draft" />
-  <date value="2016-07-11T00:00:00+01:00" />
-  <description value="The Discharge Notice Profile is a constrained version of the MessageHeader resource and carries the Discharge Notice MessageHeader information." />
-  <requirements value="This header is required with a messaging based infrastructure." />
+  <status value="active" />
+  <publisher value="NHS Digital " />
+  <contact>
+    <name value="Interoperability Team" />
+    <telecom>
+      <system value="email" />
+      <value value="interoperabilityteam@nhs.net" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <date value="2017-06-28" />
+  <description value="The Discharge Notice Notice constraint is a constrained version of the FHIR DSTU2 (Oct 2015) MessageHeader resource. It is the header for the message exchange which is requesting an action. " />
+  <requirements value="This header is required with a messaging based infrastructure. It is the first resource in each message bundle." />
+  <copyright value="Copyright © 2017 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre." />
   <fhirVersion value="1.0.1" />
   <mapping>
     <identity value="rim" />
