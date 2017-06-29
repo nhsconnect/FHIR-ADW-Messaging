@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Bundle xml example-->
-<Bundle xmlns="http://hl7.org/fhir">
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/SVN/Projects/FHIR/HSCI/Generation/Schemas/bundle.xsd">
 	<id value="79aec4c6-e7d3-44ef-96ed-bda1b94f9d00"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1"/>
@@ -554,6 +554,9 @@
 							<custodian>
 								<reference value="urn:uuid:a96437da-a7f7-4797-ac4b-52ba8e010a42"/>
 							</custodian>
+							<encounter>
+								<reference value="urn:uuid:4b473064-a2e6-4fb0-88f8-fe40cfe514de"/>
+							</encounter>
 							<section>
 								<title value="Patient Demographic details"/>
 								<text>
@@ -831,6 +834,10 @@
 								<district value="West Yorkshire"/>
 								<postalCode value="LS6 1UR"/>
 							</address>
+							<!--Patient's GP Practice-->
+							<careProvider>
+								<reference value="urn:uuid:9f1db8a1-50d8-47c8-aa26-87560aa6370e"/>
+							</careProvider>
 						</Patient>
 					</resource>
 				</entry>
@@ -896,6 +903,67 @@
 							</type>
 							<name value="Hebburn Hospital"/>
 						</Organization>
+					</resource>
+				</entry>
+				<entry>
+					<fullUrl value="urn:uuid:9f1db8a1-50d8-47c8-aa26-87560aa6370e"/>
+					<resource>
+						<!--This example shows the patient's GP Practice-->
+						<Organization>
+							<id value="9f1db8a1-50d8-47c8-aa26-87560aa6370e"/>
+							<meta>
+								<!--Identifies the profile being used-->
+								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+							</meta>
+							<!--Organisation identifier -->
+							<identifier>
+								<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+								<value value="HFXX9"/>
+							</identifier>
+							<!-- Type of organisation. -->
+							<type>
+								<coding>
+									<system value="http://hl7.org/fhir/organization-type"/>
+									<code value="prov"/>
+									<display value="Healthcare Provider"/>
+								</coding>
+							</type>
+							<name value="Leeds Central GP Practice"/>
+						</Organization>
+					</resource>
+				</entry>
+				<entry>
+					<fullUrl value="urn:uuid:4b473064-a2e6-4fb0-88f8-fe40cfe514de"/>
+					<resource>
+						<Encounter>
+							<id value="4b473064-a2e6-4fb0-88f8-fe40cfe514de"/>
+							<meta>
+								<!--Identifies the profile being used-->
+								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Encounter-1"/>
+							</meta>
+							<identifier>
+								<system value="https://fhir.nhs.uk/encounter-id"/>
+								<value value="fa1298b6-7fb8-45d3-a431-0a504dee733d"/>
+							</identifier>
+							<status value="in-progress"/>
+							<class value="inpatient"/>
+							<patient>
+								<reference value="urn:uuid:ac3d0407-60a1-40e8-91a7-f96de2bbb04e"/>
+							</patient>
+							<period>
+								<start value="2017-04-24"/>
+								<end value="2017-05-12"/>
+							</period>
+							<hospitalization>
+								<dischargeDisposition>
+									<coding>
+										<system value="http://hl7.org/fhir/encounter-discharge-disposition"/>
+										<code value="home"/>
+										<display value="Home"/>
+									</coding>
+								</dischargeDisposition>
+							</hospitalization>
+						</Encounter>
 					</resource>
 				</entry>
 			</Bundle>
