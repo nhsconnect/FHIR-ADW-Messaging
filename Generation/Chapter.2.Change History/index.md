@@ -26,10 +26,8 @@
  - Added a sample Social Services letter as a document attachment to Discharge Notice Accept Response xml bundle example.
  - Added a document to the Assessment Notice xml bundle example.
  - Added a link to attached document bundles in ReferralRequest.supportingInformation for all xml bundles containing a document.
- - Added Assessment Notice optional ADW-Referral-Request-1.reason element to 0..1 to allow a referral reason to be carried.
- - Added https://fhir.nhs.uk/ValueSet/adw-referral-reason-1 valueset with Required binding to the Assessment Notice ADW-Referral-Request-1.reason element.
- - Fixed Assessment Notice ADW-Referral-Request-1.reason.coding.system to 'https://fhir.nhs.uk/adw-referral-reason-1', ADW-Referral-Request-1.reason.coding.code to 'OFT' and ADW-Referral-Request-1.reason.coding.display to 'Other - Free Text'.
- - Added optional ReferralReason.description element to all ReferralRequest-based profiles to carry any additional relevant information.
+ - Added Assessment Notice optional ADW-Referral-Request-1.reason element to allow a referral reason to be carried.
+ - Added Assessment Notice optional ADW-Referral-Request-1.description element to carry any additional relevant information relating to the referral..
  - Renamed ADW-Questionnaire-Response-1.group.question (Safeguarding Issues) to (Safeguarding Concerns).
  - Added an additional question to the ADW-Questionnaire-Response-1 profile called Safeguarding Concerns Details.  
 
