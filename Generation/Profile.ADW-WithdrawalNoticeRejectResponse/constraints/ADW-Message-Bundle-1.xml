@@ -9,7 +9,7 @@
     <tag>
       <system value="urn:hscic:examples" />
       <code value="ADW-Message-Withdrawal-Notice-Reject-Response-Bundle-1-Example-1" />
-      <display value="Example of ADW Withdrawl Notice Reject Response Bundle" />
+      <display value="Example of ADW Withdrawal Notice Reject Response Bundle" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
