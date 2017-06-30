@@ -72,11 +72,6 @@
 					<reference value="urn:uuid:fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
 				</encounter>
 				<reason>
-					<coding>
-						<system value="https://fhir.nhs.uk/adw-referral-reason-1"/>
-						<code value="OFT"/>
-						<display value="Other - Free Text"/>
-					</coding>
 					<text value="Patient admitted as inpatient with chest pain."/>
 				</reason>
 				<description value="The patient has a history of minor strokes. His partner is concerned about his mobility in the home and his ability to look after himself while she is at work."/>
