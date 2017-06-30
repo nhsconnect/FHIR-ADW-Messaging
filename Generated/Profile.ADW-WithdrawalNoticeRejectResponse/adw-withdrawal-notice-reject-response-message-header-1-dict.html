@@ -100,16 +100,16 @@
 												<a href='../Chapter.5.Examples/examples.html'>Examples</a>
 											</li>
 											<li>
-												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
+												<a href='../Chapter.6.Valuesets/valuesets.html'>Valuesets</a>
 											</li>
 											<li>
-												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+												<a href='../Chapter.7.Glossary/index.html'>Glossary</a>
 											</li>
 
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">1.0.0-beta.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">2.0.0-beta.1</span>
                             </p>
 
                         </div>
@@ -400,21 +400,21 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="MessageHeader.responseType"></a>
-            <b>MessageHeader.extension(responseType)</b>
+            <a name="MessageHeader.extension"></a>
+            <b>MessageHeader.extension</b>
           </td>
         </tr>
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>A vocabulary that describes the Response type of the Notice Receipt.</p>
+            <p>May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
           </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..1</td>
+          <td>0..* ?</td>
         </tr>
         <tr>
           <td>
@@ -425,14 +425,14 @@
           </td>
         </tr>
         <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#mustSupport">Must Support</a>
-          </td>
-          <td>True</td>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -641,7 +641,7 @@
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>https://fhir.nhs.uk/adw-message-event-1</td>
+          <td>http://snomed.info/sct</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -1015,7 +1015,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
@@ -1026,10 +1026,6 @@
         <tr>
           <td width="150px">Comments</td>
           <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>Local Authority Sending System</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -1207,7 +1203,7 @@
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>1..*</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
@@ -1218,10 +1214,6 @@
         <tr>
           <td width="150px">Comments</td>
           <td></td>
-        </tr>
-        <tr>
-          <td>Fixed Value</td>
-          <td>Hospital Receiving System</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -1272,7 +1264,7 @@
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="careconnect-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1</a>
+            <a href="careconnect-adw-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1</a>
           </td>
         </tr>
         <tr>
@@ -1363,9 +1355,7 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>A reference to the author information within the message bundle.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
@@ -1374,15 +1364,39 @@
           <td>1..*</td>
         </tr>
         <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#mustSupport">Must Support</a>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="MessageHeader.author.display"></a>
+            <b>MessageHeader.author.display</b>
           </td>
-          <td>True</td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
           <td>
-            <p>A reference to the author information within the message bundle.</p>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
           </td>
         </tr>
         <tr>
@@ -1406,7 +1420,7 @@
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="careconnect-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1</a>
+            <a href="careconnect-adw-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1</a>
           </td>
         </tr>
         <tr>
@@ -1418,6 +1432,126 @@
         <tr>
           <td width="150px">Comments</td>
           <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="MessageHeader.receiver.id"></a>
+            <b>MessageHeader.receiver.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="MessageHeader.receiver.extension"></a>
+            <b>MessageHeader.receiver.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="MessageHeader.receiver.reference"></a>
+            <b>MessageHeader.receiver.reference</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="MessageHeader.receiver.display"></a>
+            <b>MessageHeader.receiver.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -1455,6 +1589,126 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
+            <a name="MessageHeader.responsible.id"></a>
+            <b>MessageHeader.responsible.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="MessageHeader.responsible.extension"></a>
+            <b>MessageHeader.responsible.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="MessageHeader.responsible.reference"></a>
+            <b>MessageHeader.responsible.reference</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="MessageHeader.responsible.display"></a>
+            <b>MessageHeader.responsible.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
             <a name="MessageHeader.reason"></a>
             <b>MessageHeader.reason</b>
           </td>
@@ -1475,7 +1729,8 @@
           </td>
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>For example codes, see <a href="adw-withdrawal-notice-reject-reason-1.html">https://fhir.nhs.uk/ValueSet/adw-withdrawal-notice-reject-reason-1</a></p>; other codes may be used where these codes are not suitable</div>
+              <p>The codes SHALL be taken from <a href="adw-notice-reject-reason-1.html">https://fhir.nhs.uk/ValueSet/adw-notice-reject-reason-1</a></p>
+            </div>
           </td>
         </tr>
         <tr>
@@ -1672,7 +1927,7 @@
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>https://fhir.nhs.uk/adw-withdrawal-notice-reject-reason-1</td>
+          <td>https://fhir.nhs.uk/adw-notice-reject-reason-1</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -1757,44 +2012,6 @@
         <tr>
           <td width="150px">Comments</td>
           <td></td>
-        </tr>
-        <tr>
-          <td colspan="2" class="structure">
-            <a name="MessageHeader.reason.coding.userSelected"></a>
-            <b>MessageHeader.reason.coding.userSelected</b>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Definition</td>
-          <td>
-            <p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
-          </td>
-          <td>0..1 ?</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#boolean" xmlns="http://www.w3.org/1999/xhtml">Boolean</a>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Requirements</td>
-          <td>
-            <p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-          </td>
-        </tr>
-        <tr>
-          <td width="150px">Comments</td>
-          <td>
-            <p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -1941,14 +2158,40 @@
           <td>1..*</td>
         </tr>
         <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#mustSupport">Must Support</a>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="MessageHeader.data.display"></a>
+            <b>MessageHeader.data.display</b>
           </td>
-          <td>True</td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
+          </td>
         </tr>
       </table>
     </div>

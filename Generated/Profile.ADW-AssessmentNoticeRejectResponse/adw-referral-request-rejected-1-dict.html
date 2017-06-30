@@ -100,16 +100,16 @@
 												<a href='../Chapter.5.Examples/examples.html'>Examples</a>
 											</li>
 											<li>
-												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
+												<a href='../Chapter.6.Valuesets/valuesets.html'>Valuesets</a>
 											</li>
 											<li>
-												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+												<a href='../Chapter.7.Glossary/index.html'>Glossary</a>
 											</li>
 
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">1.0.0-beta.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">2.0.0-beta.1</span>
                             </p>
 
                         </div>
@@ -488,7 +488,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The workflow status of the referral request notice.</p>
+            <p>The workflow status of the Referral Request notice.</p>
           </td>
         </tr>
         <tr>
@@ -646,7 +646,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The patient who is the subject of a referral request notice.</p>
+            <p>The patient who is the subject of a Referral Request notice.</p>
           </td>
         </tr>
         <tr>
@@ -749,9 +749,7 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>A reference to the patient information within the patient profile.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
@@ -760,15 +758,39 @@
           <td>1..*</td>
         </tr>
         <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#mustSupport">Must Support</a>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="ReferralRequest.patient.display"></a>
+            <b>ReferralRequest.patient.display</b>
           </td>
-          <td>True</td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
           <td>
-            <p>None</p>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
           </td>
         </tr>
         <tr>
@@ -780,7 +802,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The healthcare provider or provider organization who/which initiated the referral request.</p>
+            <p>The healthcare provider or provider organization who/which initiated the Referral Request.</p>
           </td>
         </tr>
         <tr>
@@ -794,7 +816,7 @@
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="careconnect-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1</a>
+            <a href="careconnect-adw-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1</a>
           </td>
         </tr>
         <tr>
@@ -809,6 +831,126 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
+            <a name="ReferralRequest.requester.id"></a>
+            <b>ReferralRequest.requester.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="ReferralRequest.requester.extension"></a>
+            <b>ReferralRequest.requester.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="ReferralRequest.requester.reference"></a>
+            <b>ReferralRequest.requester.reference</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="ReferralRequest.requester.display"></a>
+            <b>ReferralRequest.requester.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
             <a name="ReferralRequest.Local Authority organisation"></a>
             <b>ReferralRequest.recipient(Local Authority organisation)</b>
           </td>
@@ -816,7 +958,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The provider organization(s) who/which is to receive the referral request.</p>
+            <p>The provider organization(s) who/which is to receive the Referral Request.</p>
           </td>
         </tr>
         <tr>
@@ -843,6 +985,126 @@
           <td width="150px">Comments</td>
           <td>
             <p>None</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="ReferralRequest.recipient.id"></a>
+            <b>ReferralRequest.recipient.id</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>unique id for the element within a resource (for internal references).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#id" xmlns="http://www.w3.org/1999/xhtml">Id</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>RFC 4122</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="ReferralRequest.recipient.extension"></a>
+            <b>ReferralRequest.recipient.extension</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..* ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#extension" xmlns="http://www.w3.org/1999/xhtml">Extension</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aliases</td>
+          <td>extensions, user content</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="ReferralRequest.recipient.reference"></a>
+            <b>ReferralRequest.recipient.reference</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="ReferralRequest.recipient.display"></a>
+            <b>ReferralRequest.recipient.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
           </td>
         </tr>
         <tr>
@@ -966,16 +1228,8 @@
           <td>1..*</td>
         </tr>
         <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#mustSupport">Must Support</a>
-          </td>
-          <td>True</td>
-        </tr>
-        <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>None.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -1018,7 +1272,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>Additional information to support the referral request notice.</p>
+            <p>Reference to additional information to support the Referral Request notice.</p>
           </td>
         </tr>
         <tr>
@@ -1026,14 +1280,6 @@
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
           <td>0..*</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/documentreference.html" xmlns="http://www.w3.org/1999/xhtml">DocumentReference</a>
-          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>

@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-			<title>Social Care - FHIR Implementation Guide</title>
+			<title>Social Care Assessment, Discharge and Withdrawal - FHIR Implementation Guide</title>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
@@ -54,7 +54,7 @@
                 </a>
                 <div id="specificationName">
          
-                        <b>Social Care</b>
+                        <b>Social Care Assessment, Discharge and Withdrawal</b>
                   
                 </div>
 
@@ -100,16 +100,16 @@
 												<a href='../Chapter.5.Examples/examples.html'>Examples</a>
 											</li>
 											<li>
-												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
+												<a href='../Chapter.6.Valuesets/valuesets.html'>Valuesets</a>
 											</li>
 											<li>
-												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+												<a href='../Chapter.7.Glossary/index.html'>Glossary</a>
 											</li>
 
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">1.0.0-beta.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">2.0.0-beta.1</span>
                             </p>
 
                         </div>
@@ -163,7 +163,11 @@
             </tr>
             <tr>
               <td>Definition:</td>
-              <td>A vocabulary that identifies the assessment, discharge and withdrawal notice type.</td>
+              <td>A subset of codes from the SNOMED Clinical Terminology UK coding system that describes the type of Notice under Schedule 3 of the Care Act 2014. All included codes have a SNOMED refset ID of 75691000000106 for which the fully specified name is 'Notices under Schedule 3 of the Care Act 2014 (record artifact)'. SNOMED defined synonyms have been used for the display element.</td>
+            </tr>
+            <tr>
+              <td>Copyright:</td>
+              <td>This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</td>
             </tr>
             <tr>
               <td>Status:</td>
@@ -171,7 +175,7 @@
             </tr>
             <tr>
               <td>Last Updated:</td>
-              <td>03/07/2016 09:00:00 +00:00</td>
+              <td>05/06/2017 12:50:00 +00:00</td>
             </tr>
             <tr>
               <td>Source Resource:</td>
@@ -185,12 +189,9 @@
         </table>
         <p>This vocabulary contains values to be selected to set the notice type for a patient's referral.</p>
       </div>
-      <div class="in-line-valueset" xmlns="">
-        <div xmlns="http://www.w3.org/1999/xhtml">
-          <br />
-          <p>This valueset includes all the codes for ADW Message Event ( https://fhir.nhs.uk/adw-message-event-1 ) <br /></p>
-        </div>
-        <div class="codeSystem-table" xmlns="http://www.w3.org/1999/xhtml">
+      <div class="logical-definition">
+        <p>Include these codes as defined in http://snomed.info/sct :<br /></p>
+        <div class="codeSystem-table">
           <table>
             <tr class="table-header">
               <th title="Code that identifies concept" class="col-code">Code</th>
@@ -200,8 +201,8 @@
               <tr>
                 <td>975701000000106</td>
                 <td>
-                  <p>Assessment Notice under the Care Act 2014 schedule 3</p>
-                  <a name="Assessment Notice under the Care Act 2014 schedule 3" />
+                  <p>Assessment Notice under the Care Act 2014 Schedule 3</p>
+                  <a name="Assessment Notice under the Care Act 2014 Schedule 3" />
                 </td>
               </tr>
               <tr>

@@ -100,16 +100,16 @@
 												<a href='../Chapter.5.Examples/examples.html'>Examples</a>
 											</li>
 											<li>
-												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
+												<a href='../Chapter.6.Valuesets/valuesets.html'>Valuesets</a>
 											</li>
 											<li>
-												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+												<a href='../Chapter.7.Glossary/index.html'>Glossary</a>
 											</li>
 
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">1.0.0-beta.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">2.0.0-beta.1</span>
                             </p>
 
                         </div>
@@ -488,7 +488,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The workflow status of the referral request notice.</p>
+            <p>The workflow status of the Referral Request notice.</p>
           </td>
         </tr>
         <tr>
@@ -646,7 +646,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The patient who is the subject of a referral request notice.</p>
+            <p>The patient who is the subject of a Referral Request notice.</p>
           </td>
         </tr>
         <tr>
@@ -780,7 +780,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The healthcare provider or provider organization who/which initiated the referral request.</p>
+            <p>The healthcare provider or provider organization who/which initiated the Referral Request.</p>
           </td>
         </tr>
         <tr>
@@ -794,7 +794,7 @@
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="careconnect-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1</a>
+            <a href="careconnect-adw-practitioner-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1</a>
           </td>
         </tr>
         <tr>
@@ -816,7 +816,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The provider organization(s) who/which is to receive the referral request.</p>
+            <p>The provider organization(s) who/which is to receive the Referral Request.</p>
           </td>
         </tr>
         <tr>
@@ -1018,7 +1018,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>Additional information to support the referral request notice.</p>
+            <p>Reference to additional information to support the Referral Request notice.</p>
           </td>
         </tr>
         <tr>
@@ -1026,14 +1026,6 @@
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
           <td>0..*</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
-          </td>
-          <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/documentreference.html" xmlns="http://www.w3.org/1999/xhtml">DocumentReference</a>
-          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
@@ -1126,6 +1118,38 @@
         <tr>
           <td width="150px">Comments</td>
           <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="structure">
+            <a name="ReferralRequest.supportingInformation.display"></a>
+            <b>ReferralRequest.supportingInformation.display</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Definition</td>
+          <td>
+            <p>Plain text narrative that identifies the resource in addition to the resource reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
+          </td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#string" xmlns="http://www.w3.org/1999/xhtml">String</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Comments</td>
+          <td>
+            <p>This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</p>
+          </td>
         </tr>
       </table>
     </div>
