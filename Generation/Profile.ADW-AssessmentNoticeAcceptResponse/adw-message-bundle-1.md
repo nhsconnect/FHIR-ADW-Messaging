@@ -17,9 +17,6 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 
 ----------
 
-Note that for some sliced elements and extensions within CareConnect profiles, it is not possible to link to the exact sliced element in this mapping table.
-
-
 | REQUIRED DATA FIELD                      | FHIR PROFILE ELEMENT                              |
 |------------------------------------------|---------------------------------------------------|
 | **Assessment Notice Accept Response**    |                                                   |
@@ -28,17 +25,17 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 | Response Type                            | [MessageHeader.event.code]                                     |
 | Response Details                         | [MessageHeader.reason.text (Accept Reason)]                                       |
 | **Patient Identifiers**                  |                                                  |
-| Patient NHS Number                       | [Patient.identifier.value (NHS Number)]                          |
-| Hospital Patient Identifier              | [Patient.identifier (Local Identifier)]            |
+| Patient NHS Number                       | [Patient.nhsNumber]                          |
+| Hospital Patient Identifier              | [Patient.localIdentifier]            |
 | **Patient Name**                         |                                                  |
 | Family Name                              | [Patient.name.family]                                     |
 | First Given Name                         | [Patient.name.given]                                       |
 | **Patient Birth Date**                   |                                                  |
 | Patient Birth Date                       | [Patient.birthDate]                                      |
-| **Person Stated Gender**                 |                                                  |
+| **Patient Stated Gender**                 |                                                  |
 | Patient Stated Gender                    | [Patient.gender]                                         |
 | **Hospital**                             |                                                  |
-| Organization Site Code                   | [Organization.identifier.value (ODS Site Code)]             |
+| Organisation Site Code                   | [Organization.identifier (Organisation Site Code)]             |
 | Hospital Name                            | [Organization.name]                                |
 | Ward Name                                | [Location.name]                                     |
 | **Hospital Liaison Name**                |                                                  |
@@ -48,7 +45,7 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 | Hospital Liaison Email Address           | [Practitioner.telecom.value]               |
 | Hospital Liaison Telephone Number        | [Practitioner.telecom.value]                            |
 | **Local Authority**                      |                                                  |
-| Organisation ODS Code                    | [Organization.identifier.value (ODS Organisation Code)]               |
+| Organisation ODS Code                    | [Organization.identifier (ODS Organisation Code)]               |
 | Local Authority Name                     | [Organization.name]                         |
 | Social Services Team                     | [Organization.name] 
 | **Local Authority Contact Name**         |                                                   |
@@ -76,22 +73,21 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [MessageHeader.event.code]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.event.Accept%20Response%20Type
 [MessageHeader.reason.coding.code]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.reason.coding.code
 [MessageHeader.reason.text (Accept Reason)]: adw-assessment-notice-accept-response-message-header-1-dict.html#MessageHeader.reason.Accept%20Reason
-[Patient.identifier.value (NHS Number)]: careconnect-patient-1-dict.html#Patient.identifier.value
-[Patient.identifier (Local Identifier)]: careconnect-patient-1-dict.html#Patient.identifier.value
+[Patient.nhsNumber]: careconnect-patient-1-dict.html#Patient.nhsNumber
+[Patient.localIdentifier]: careconnect-patient-1-dict.html#Patient.localIdentifier
 [Patient.name.family]: careconnect-patient-1-dict.html#Patient.name.family
 [Patient.name.given]: careconnect-patient-1-dict.html#Patient.name.given
 [Patient.birthDate]: careconnect-patient-1-dict.html#Patient.birthDate
 [Patient.gender]: careconnect-patient-1-dict.html#Patient.gender
-[Organization.identifier.value (ODS Site Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
+[Organization.identifier (Organisation Site Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Site%20Code
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Location.name]: careconnect-location-1-dict.html#Location.name
-[Organization.identifier.value (ODS Site Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
+[Organization.identifier (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Organisation%20Code
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family
 [Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
 [Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
 [Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
-[Organization.identifier.value (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family

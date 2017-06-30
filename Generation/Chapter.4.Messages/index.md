@@ -41,6 +41,9 @@ For more information on FHIR documents and their implementation, please consult 
 [Discharge Notice Accept Response bundle xml example]: ../Examples/Profile.ADW-DischargeNoticeAcceptResponse/ADW-Message-Discharge-Notice-Accept-Response-Bundle-1-Example-1.xml
 [Discharge Notice bundle xml example]: ../Examples/Profile.ADW-DischargeNotice/ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml
 
+**Further Information - Contained Element**
+
+Please note that the contained element in the profiles in this specification should not be implemented. 
 
 **Further Information**
 

@@ -20,17 +20,14 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 
 ----------
 
-Note that for some sliced elements and extensions within CareConnect profiles, it is not possible to link to the exact sliced element in this mapping table.
-
-
 | REQUIRED DATA FIELD                  | FHIR PROFILE ELEMENT                             |
 |--------------------------------------|--------------------------------------------------|
 | **Withdrawal Notice**                |                                                  |
 | Withdrawal Notice Issued Date        | [MessageHeader.timestamp (ADW Message Sent Time)]              |
 | **Patient Identifiers**              |                                                  |
-| Patient NHS Number                   | [Patient.identifier.value (NHS Number)]                          |
+| Patient NHS Number                   | [Patient.nhsNumber]                          |
 | NHS Number Status Indicator          | [Patient.identifier.nhsNumberVerificationStatus]                            |
-| Hospital Patient Identifier          | [Patient.identifier (Local Identifier)]            |
+| Hospital Patient Identifier          | [Patient.localIdentifier]            |
 | **Patient Name**                     |                                                  |
 | Family Name                          | [Patient.name.family]                                     |
 | First Given Name                     | [Patient.name.given]                                       |
@@ -46,7 +43,7 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 | Address Line 5                       | [Patient.address.district]                                   |
 | Postcode                             | [Patient.address.postalCode]                             |
 | **Hospital**                         |                                                  |
-| Organization Site Code               | [Organization.identifier.value (ODS Site Code)]             |
+| Organization Site Code               | [Organization.identifier (Organisation Site Code)]             |
 | Hospital Name                        | [Organization.name]                                |
 | Ward Name                            | [Location.name]                                     |
 | **Withdrawal Type**                  |                                                  |
@@ -65,7 +62,7 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 | Hospital Liaison Email Address       | [Practitioner.telecom.value]               |
 | Hospital Liaison Telephone Number    | [Practitioner.telecom.value]                                  |
 | **Local Authority**                  |                                                  |
-| Organization Site Code               | [Organization.identifier.value (ODS Organisation Code)]               |
+| Organization Site Code               | [Organization.identifier (ODS Organisation Code)]               |
 | Local Authority Name                 | [Organization.name]                         |
 | Social Services Team                 | [Organization.name] 
 
@@ -83,9 +80,9 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 
 
 [MessageHeader.timestamp (ADW Message Sent Time)]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.ADW%20Message%20Sent%20Time
-[Patient.identifier.value (NHS Number)]: careconnect-patient-1-dict.html#Patient.identifier.value
+[Patient.nhsNumber]: careconnect-patient-1-dict.html#Patient.nhsNumber
+[Patient.localIdentifier]: careconnect-patient-1-dict.html#Patient.localIdentifier
 [Patient.identifier.nhsNumberVerificationStatus]: extension-careconnect-nhsnumberverificationstatus-1-dict.html#Extension.valueCodeableConcept
-[Patient.identifier (Local Identifier)]: careconnect-patient-1-dict.html#Patient.identifier.value
 [Patient.name.family]: careconnect-patient-1-dict.html#Patient.name.family
 [Patient.name.given]: careconnect-patient-1-dict.html#Patient.name.given
 [Patient.birthDate]: careconnect-patient-1-dict.html#Patient.birthDate
@@ -94,7 +91,7 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [Patient.address.city]: careconnect-patient-1-dict.html#Patient.address.city
 [Patient.address.district]: careconnect-patient-1-dict.html#Patient.address.district
 [Patient.address.postalCode]: careconnect-patient-1-dict.html#Patient.address.postalCode
-[Organization.identifier.value (ODS Site Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
+[Organization.identifier (Organisation Site Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Site%20Code
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Location.name]: careconnect-location-1-dict.html#Location.name
 [MessageHeader.event.code(Withdrawal Notice Type)]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.event.Withdrawal%20Notice%20Type
@@ -106,7 +103,7 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
 [Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
 [Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
-[Organization.identifier.value (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
+[Organization.identifier (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Organisation%20Code
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 

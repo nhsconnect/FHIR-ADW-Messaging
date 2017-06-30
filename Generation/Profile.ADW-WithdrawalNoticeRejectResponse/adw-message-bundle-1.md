@@ -34,8 +34,8 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 | Response Type                            | [MessageHeader.event.code]                                    |
 | Response Details                         | [MessageHeader.reason.text (Reject Reason)]                                        |
 | **Patient Identifiers**                  |                                                   |
-| Patient NHS Number                       | [Patient.identifier.value (NHS Number)]                          |
-| Hospital Patient Identifier              | [Patient.identifier (Local Identifier)]            |
+| Patient NHS Number                       | [Patient.nhsNumber]                          |
+| Hospital Patient Identifier              | [Patient.localIdentifier]            |
 | **Patient Name**                         |                                                  |
 | Family Name                              | [Patient.name.family]                                     |
 | First Given Name                         | [Patient.name.given]                                       |
@@ -44,7 +44,7 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 | **Person Stated Gender**                 |                                                  |
 | Patient Stated Gender                    | [Patient.gender]                                         |
 | **Hospital**                             |                                                  |
-| Organisation Site Code                   | [Organization.identifier.value (ODS Site Code)]             |
+| Organisation Site Code                   | [Organization.identifier (Organisation Site Code)]             |
 | Hospital Name                            | [Organization.name]                                |
 | Ward Name                                | [Location.name]                                     |
 | **Hospital Liaison Name**                |                                                  |
@@ -54,7 +54,7 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 | Hospital Liaison Email Address           | [Practitioner.telecom.value]               |
 | Hospital Liaison Telephone Number        | [Practitioner.telecom.value]                            |
 | **Local Authority**                      |                                                  |
-| Organisation ODS Code                    | [Organization.identifier.value (ODS Organisation Code)]               |
+| Organisation ODS Code                    | [Organization.identifier (ODS Organisation Code)]               |
 | Local Authority Name                     | [Organization.name]                         |
 | Social Services Team                     | [Organization.name] 
 | **Local Authority Contact Name**         |                                                   |
@@ -81,22 +81,21 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 [MessageHeader.event.code (Reject Response Type)]: adw-withdrawal-notice-reject-response-message-header-1-dict.html#MessageHeader.event.Reject%20Response%20Type
 [MessageHeader.event.code]: adw-withdrawal-notice-reject-response-message-header-1-dict.html#MessageHeader.event.Reject%20Response%20Type
 [MessageHeader.reason.text (Reject Reason)]: adw-withdrawal-notice-reject-response-message-header-1-dict.html#MessageHeader.reason.Reject%20Reason%20Details
-[Patient.identifier.value (NHS Number)]: careconnect-patient-1-dict.html#Patient.identifier.value
-[Patient.identifier (Local Identifier)]: careconnect-patient-1-dict.html#Patient.identifier.value 
+[Patient.nhsNumber]: careconnect-patient-1-dict.html#Patient.nhsNumber
+[Patient.localIdentifier]: careconnect-patient-1-dict.html#Patient.localIdentifier 
 [Patient.name.family]: careconnect-patient-1-dict.html#Patient.name.family
 [Patient.name.given]: careconnect-patient-1-dict.html#Patient.name.given
 [Patient.birthDate]: careconnect-patient-1-dict.html#Patient.birthDate
 [Patient.gender]: careconnect-patient-1-dict.html#Patient.gender
-[Organization.identifier.value (ODS Site Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
+[Organization.identifier (Organisation Site Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Site%20Code
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Location.name]: careconnect-location-1-dict.html#Location.name
-[Organization.identifier.value (ODS Site Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family
 [Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
 [Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
 [Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
-[Organization.identifier.value (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
+[Organization.identifier (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Organisation%20Code
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family

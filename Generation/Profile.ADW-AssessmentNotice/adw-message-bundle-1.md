@@ -32,17 +32,14 @@ This xml example includes an example attached supporting document structured in 
 
 ----------
 
-Note that for some sliced elements and extensions within CareConnect profiles, it is not possible to link to the exact element in this mapping table.
-
-
 | REQUIRED DATA FIELD                              | FHIR PROFILE ELEMENT                                                |
 |--------------------------------------------------|---------------------------------------------------------------------|
 | **Assessment Notice**                            |                                                                     |
 | Assessment Notice Issued Date                    | [MessageHeader.timestamp (ADW Message Sent Time)]                   |
 | ****Patient Identifiers****                      |                                                                     |
-| Patient NHS Number                               | [Patient.identifier.value (NHS Number)]                                   |
+| Patient NHS Number                               | [Patient.nhsNumber]                                   |
 | NHS Number Status Indicator                      | [Patient.identifier.nhsNumberVerificationStatus]   |
-| Hospital Patient Identifier                      | [Patient.identifier.value (Local Identifier)]                                       |
+| Hospital Patient Identifier                      | [Patient.localIdentifier]
 | ****Patient Name****                             |                                                                     |
 | Family Name                                      | [Patient.name.family]                                        |
 | First Given Name                                 | [Patient.name.given]                                   |
@@ -61,13 +58,16 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 | Patient Email Address                            | [Patient.telecom.value]                           |
 | Patient Telephone Number                         | [Patient.telecom.value]                           |
 | **Patient Language Details**                     |                                                                     |
-| Patient Language                                 | [Patient.nhsCommunication.extension (language)]                                    |
+| Patient Language                                 | [Patient.nhsCommunication.extension (language)]										|
 | Patient Preferred Language                       | [Patient.nhsCommunication.extension (preferred)]              |
-| Interpreter Required Indicator                   | [Patient.nhsCommunication.extension (interpreterRequired)]          |
+| Interpreter Required Indicator                   | [Patient.nhsCommunication.extension (interpreterRequired)]                             |
 | **Hospital**                                     |                                                                     |
-| Organisation Site Code                           | [Organization.identifier.value (Organisation Site Code)]                                        |
+| Organisation Site Code                           | [Organization.identifier (Organisation Site Code)]                                        |
 | Hospital Name                                    | [Organization.name]                                        |
 | Ward Name                                        | [Location.name]                                              |
+| **Referral Details**                        |                                                                     |
+| Reason for Referral                              | [ReferralRequest.reason]                                 |
+| Supporting Information                           | [ReferralRequest.description]                               |
 | **Admission Date**                               |                                                                     |
 | Admission Date                                   | [Encounter.period.start]                    |
 | **Reason for Admission**                         |                                                                     |
@@ -101,9 +101,10 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 | NHS CHC Assessment Considered Indicator          | [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Assessment Considered Indicator)] |
 | CHC Assessment Considered Result                 | [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Considered Result)]            |
 | **Safeguarding Indicator**                       |                                                                     |
-| Safeguarding Indicator                           | [QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Issues)]                 |
+| Safeguarding Indicator                           | [QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Concerns)]                 |
+| Safeguarding Indicator Details                           | [QuestionnaireResponse.group.question.answer.valueString (Safeguarding Concerns Details)]                 |
 | **Local Authority**                              |                                                                     |
-| Organisation ODS Code                           | [Organization.identifier.value (ODS Organisation Code)]                                        |
+| Organisation ODS Code                           | [Organization.identifier (ODS Organisation Code)]                                        |
 | Local Authority Name                             | [Organization.name]                                        |
 | Social Services Team                             | [Organization.name]                                             |
 
@@ -121,9 +122,9 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 
 
 [MessageHeader.timestamp (ADW Message Sent Time)]: adw-assessment-notice-message-header-1-dict.html#MessageHeader.ADW%20Message%20Sent%20Time
-[Patient.identifier.value (NHS Number)]: careconnect-patient-1-dict.html#Patient.identifier.value
-[Patient.identifier.nhsNumberVerificationStatus]: extension-careconnect-nhsnumberverificationstatus-1-dict.html#Extension.valueCodeableConcept  
-[Patient.identifier.value (Local Identifier)]: careconnect-patient-1-dict.html#Patient.identifier.value 
+[Patient.nhsNumber]: careconnect-patient-1-dict.html#Patient.nhsNumber
+[Patient.identifier.nhsNumberVerificationStatus]: careconnect-patient-1-dict.html#Patient.identifier.nhsNumberVerificationStatus
+[Patient.localIdentifier]: careconnect-patient-1-dict.html#Patient.localIdentifier 
 [Patient.name.family]: careconnect-patient-1-dict.html#Patient.name.family
 [Patient.name.given]: careconnect-patient-1-dict.html#Patient.name.given
 [Patient.birthDate]: careconnect-patient-1-dict.html#Patient.birthDate
@@ -136,7 +137,7 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [Patient.nhsCommunication.extension (language)]: extension-careconnect-nhscommunication-1-dict.html#Extension.extension.valueCodeableConcept
 [Patient.nhsCommunication.extension (preferred)]: extension-careconnect-nhscommunication-1-dict.html#Extension.extension.valueBoolean
 [Patient.nhscommunication.extension (interpreterRequired)]: extension-careconnect-nhscommunication-1-dict.html#Extension.interpreterRequired
-[Organization.identifier.value (Organisation Site Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
+[Organization.identifier (Organisation Site Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Site%20Code
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Location.name]: careconnect-location-1-dict.html#Location.name
 [Encounter.period.start]: CareConnect-ADW-Encounter-1-dict.html#Encounter.period.start
@@ -152,12 +153,14 @@ Note that for some sliced elements and extensions within CareConnect profiles, i
 [QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Source)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Third%20Party%20Consent%20Source
 [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Assessment Considered Indicator)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Assessment%20Considered%20Indicator
 [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Considered Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Considered%20Result
-[QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Issues)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Safeguarding%20Issues
-[Organization.identifier.value (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.identifier.value
+[QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Concerns)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Safeguarding%20Concerns
+[QuestionnaireResponse.group.question.answer.valueString (Safeguarding Concerns Details)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Safeguarding%20Concerns%20Details
+[Organization.identifier (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Organisation%20Code
 [Patient.contact.name.family]: careconnect-patient-1-dict.html#Patient.contact.name.family
 [Patient.contact.name.given]: careconnect-patient-1-dict.html#Patient.contact.name.given
 [Patient.contact.telecom.value]: careconnect-patient-1-dict.html#Patient.contact.telecom.value
-
+[ReferralRequest.reason]: adw-referral-request-1-dict.html#ReferralRequest.Reason%20for%20referral
+[ReferralRequest.description]: adw-referral-request-1-dict.html#ReferralRequest.description 
 ----------
 
 
