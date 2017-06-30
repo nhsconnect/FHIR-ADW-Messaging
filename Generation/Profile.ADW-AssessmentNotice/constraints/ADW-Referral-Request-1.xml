@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-29T12:50:54.341+01:00" />
+    <lastUpdated value="2017-06-30T12:14:10.78+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -3967,7 +3967,7 @@
     <element>
       <path value="ReferralRequest.reason" />
       <name value="Reason for referral" />
-      <short value="The reason for the Referral Request notice" />
+      <short value="The reason for the Referral Request notice. A textual string should be used to express this in the reason.text element." /> 
       <definition value="Description of clinical condition indicating why referral is requested.  For example:  Behavioral Management." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
@@ -3992,14 +3992,7 @@
       </constraint>
       <isModifier value="false" />
       <isSummary value="true" />
-      <binding>
-        <strength value="required" />
-        <description value="Codes indicating why the referral is being requested." />
-        <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/adw-referral-reason-1" />
-        </valueSetReference>
-      </binding>
-      <mapping>
+       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
@@ -4218,7 +4211,7 @@
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
       <comments value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.system" />
@@ -4228,7 +4221,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/adw-referral-reason-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4263,7 +4255,7 @@
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
       <comments value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Coding.version" />
         <min value="0" />
@@ -4306,7 +4298,7 @@
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.code" />
@@ -4316,7 +4308,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="OFT" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4351,7 +4342,7 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.display" />
@@ -4361,7 +4352,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Other - Free Text" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4397,7 +4387,7 @@
       <comments value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
       <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Coding.userSelected" />
         <min value="0" />
@@ -4480,7 +4470,7 @@
     </element>
     <element>
       <path value="ReferralRequest.description" />
-      <short value="Additional supporting information relevant to this Referral Request expressed as text." />
+      <short value="A textual description of the referral" />
       <definition value="The reason element gives a short description of why the referral is being made, the description expands on this to support a more complete clinical summary." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
@@ -5581,41 +5571,12 @@
     <element>
       <path value="ReferralRequest.reason" />
       <name value="Reason for referral" />
-      <short value="The reason for the Referral Request notice" />
+      <short value="The reason for the Referral Request notice. A textual string should be used to express this in the reason.text element." /> 
       <definition value="Description of clinical condition indicating why referral is requested.  For example:  Behavioral Management." />
-      <binding>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/adw-referral-reason-1" />
-        </valueSetReference>
-      </binding>
     </element>
     <element>
       <path value="ReferralRequest.reason.coding" />
       <max value="1" />
-    </element>
-    <element>
-      <path value="ReferralRequest.reason.coding.system" />
-      <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/adw-referral-reason-1" />
-    </element>
-    <element>
-      <path value="ReferralRequest.reason.coding.version" />
-      <max value="0" />
-    </element>
-    <element>
-      <path value="ReferralRequest.reason.coding.code" />
-      <min value="1" />
-      <fixedCode value="OFT" />
-    </element>
-    <element>
-      <path value="ReferralRequest.reason.coding.display" />
-      <min value="1" />
-      <fixedString value="Other - Free Text" />
-    </element>
-    <element>
-      <path value="ReferralRequest.reason.coding.userSelected" />
-      <max value="0" />
     </element>
     <element>
       <path value="ReferralRequest.reason.text" />

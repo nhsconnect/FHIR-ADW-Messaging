@@ -3967,7 +3967,7 @@
     <element>
       <path value="ReferralRequest.reason" />
       <name value="Reason for referral" />
-      <short value="The reason for the Referral Request notice" />
+      <short value="The reason for the Referral Request notice. A textual string should be used to express this in the reason.text element." /> 
       <definition value="Description of clinical condition indicating why referral is requested.  For example:  Behavioral Management." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
@@ -5571,7 +5571,7 @@
     <element>
       <path value="ReferralRequest.reason" />
       <name value="Reason for referral" />
-      <short value="The reason for the Referral Request notice" />
+      <short value="The reason for the Referral Request notice. A textual string should be used to express this in the reason.text element." /> 
       <definition value="Description of clinical condition indicating why referral is requested.  For example:  Behavioral Management." />
       <max value="0" />
     </element>
