@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-			<title>Social Care - FHIR Implementation Guide</title>
+			<title>Social Care Assessment, Discharge and Withdrawal - FHIR Implementation Guide</title>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
@@ -54,7 +54,7 @@
                 </a>
                 <div id="specificationName">
          
-                        <b>Social Care</b>
+                        <b>Social Care Assessment, Discharge and Withdrawal</b>
                   
                 </div>
 
@@ -100,16 +100,16 @@
 												<a href='../Chapter.5.Examples/examples.html'>Examples</a>
 											</li>
 											<li>
-												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
+												<a href='../Chapter.6.Valuesets/valuesets.html'>Valuesets</a>
 											</li>
 											<li>
-												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+												<a href='../Chapter.7.Glossary/index.html'>Glossary</a>
 											</li>
 
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">1.0.0-beta.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">2.0.0-beta.1</span>
                             </p>
 
                         </div>
@@ -141,13 +141,13 @@
 							
 									<div class="panel panel - default">
 											<h1>About</h1>
-<h2>Overview: Social Care Domain Message Specification</h2>
-<p>The Social Care Domain Message Specification (DMS) defines a number of messages to support the exchange of structured information between healthcare and social care organisations.</p>
-<p>The DMS currently covers the following information flow:</p>
+<h2>Overview: Social Care Message Specification</h2>
+<p>The Social Care Message Specification defines a number of messages to support the exchange of structured information between healthcare and social care organisations.</p>
+<p>The specification currently covers the following information flow:</p>
 <ul>
-<li>Transfers of care from hospital to social services for patients with care and support needs</li>
+<li>Transfers of care from hospital to social services for patients with care and support needs.</li>
 </ul>
-<p>The requirements for this information flow are defined in the regulations under the Care Act 2014. The Act describes a series of notices that must be sent from hospitals to adult social services to support the discharge of hospital patients who have care and support needs. The notices are defined as follows:</p>
+<p>The requirements for this information flow are defined in the regulations under the Care Act 2014. The Act describes a series of notices that must be sent from hospitals to adult social services to support the discharge of hospital patients who have care and support needs. The notices are defined as follows:-</p>
 <ul>
 <li>Assessment Notice</li>
 </ul>
@@ -160,7 +160,7 @@
 <li>Withdrawal Notice</li>
 </ul>
 <p>This is used to withdraw a previously issued Assessment Notice and/or Discharge Notice. A Withdrawal Notice may be required to be issued for a number of reasons, for example because the patient's medical condition has changed or the patient is eligible for NHS Continuing Health Care.</p>
-<p>NHS Digital has developed an Information Standard <a href="http://content.digital.nhs.uk/isce/publication/scci2075">SCCI2075</a> that defines the minimum data sets that must be used for Assessment, Discharge and Withdrawal Notices, based on the regulations under the Care Act 2014. The Information Standard also defines a generic Notice Receipt data set that must be used to send an acknowledgement of a received notice from social services to the originating hospital. The data sets in the Information Standard have been used as the basis for the messages defined in this DMS.</p>
+<p>NHS Digital has developed an Information Standard <a href="http://content.digital.nhs.uk/isce/publication/scci2075">SCCI2075</a> that defines the minimum data sets that must be used for Assessment, Discharge and Withdrawal Notices, based on the regulations under the Care Act 2014. The Information Standard also defines a generic Notice Receipt data set that must be used to send an acknowledgement of a received notice from social services to the originating hospital. The data sets in the Information Standard have been used as the basis for the messages defined in this message specification.</p>
 <p><strong>The FHIR resources are bundled together to construct:</strong></p>
 <ul>
 <li>Assessment Notice</li>

@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-			<title>Social Care - FHIR Implementation Guide</title>
+			<title>Social Care Assessment, Discharge and Withdrawal - FHIR Implementation Guide</title>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
@@ -54,7 +54,7 @@
                 </a>
                 <div id="specificationName">
          
-                        <b>Social Care</b>
+                        <b>Social Care Assessment, Discharge and Withdrawal</b>
                   
                 </div>
 
@@ -100,16 +100,16 @@
 												<a href='../Chapter.5.Examples/examples.html'>Examples</a>
 											</li>
 											<li>
-												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
+												<a href='../Chapter.6.Valuesets/valuesets.html'>Valuesets</a>
 											</li>
 											<li>
-												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+												<a href='../Chapter.7.Glossary/index.html'>Glossary</a>
 											</li>
 
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">1.0.0-beta.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">2.0.0-beta.1</span>
                             </p>
 
                         </div>
@@ -141,11 +141,42 @@
 							
 									<div class="panel panel - default">
 											<h1>Change History</h1>
+<h3>Version 2.0.0-beta.1</h3>
+<ul>
+<li>Amended all non-CareConnect valuesets to reflect FHIR standard.</li>
+<li>Removed superfluous valuesets from the specification.</li>
+<li>Amended system values for MessageHeader.event.system to http://snomed.info/sct in all bundle xml examples and all MessageHeader-based profiles.</li>
+<li>Removed responseType extension from all MessageHeader-based Notice profiles, from all Notice xml bundle examples and from the specification.</li>
+<li>Standardised MessageHeader.reason element for Notice receipt profiles by amending the cardinality of reason.coding.system to 1..1 for all Notice receipts.</li>
+<li>Renamed all MessageHeader.reason valuesets for Notice receipts to a standard for acceptance and a standard for rejection. Amended MessageHeader Notice receipt profiles to reflect changes.</li>
+<li>Tightened valueset binding strength of reason element to Required in all MessageHeader-based profiles.</li>
+<li>Fixed broken links to profiles on adw-message-bundle-1.html pages.</li>
+<li>Updated all CareConnect profiles, extensions and valuesets to latest versions available.</li>
+<li>Removed Composition profile from the specification.</li>
+<li>Updated Messages page to include links to and explanatory text about COFE Composition and DocumentReference.</li>
+<li>Removed all xml examples based on individual profiles.</li>
+<li>Re-ordered profiles within bundle xml examples to reflect profile ordering.</li>
+<li>Constrained CareConnect-Practitioner-1 to become CareConnect-ADW-Practitioner-1 due to adding a slice to practitionerRole.</li>
+<li>Inserted a corresponding slice for Practitioner.practitionerRole to replace the Practitioner.specialty element in all bundle xml examples.</li>
+<li>Standardised cardinality of ReferralRequest.encounter.reference to 1..1 and encounter.reference.display to 0..1.</li>
+<li>Changed cardinality of all MessageHeader.source.name and MessageHeader.destination.name to 0..1.</li>
+<li>Removed fixed values from all source.name and destination.name elements in MessageHeader-based profiles and made corresponding changes to xml bundle examples. </li>
+<li>Removed practitionerRole.role.text element from CareConnect-ADW-Practitioner section of all xml bundle examples.</li>
+<li>Removed type.text element from CareConnect-Organization section of all xml bundle examples.</li>
+<li>Added further information to MessageHeader.reason element of xml bundle examples to maintain a consistent user story.</li>
+<li>Added a sample Social Services letter as a document attachment to Discharge Notice Accept Response xml bundle example.</li>
+<li>Added a document to the Assessment Notice xml bundle example.</li>
+<li>Added a link to attached document bundles in ReferralRequest.supportingInformation for all xml bundles containing a document.</li>
+<li>Added Assessment Notice optional ADW-Referral-Request-1.reason element to allow a referral reason to be carried.</li>
+<li>Added Assessment Notice optional ADW-Referral-Request-1.description element to carry any additional relevant information relating to the referral..</li>
+<li>Renamed ADW-Questionnaire-Response-1.group.question (Safeguarding Issues) to (Safeguarding Concerns).</li>
+<li>Added an additional question to the ADW-Questionnaire-Response-1 profile called Safeguarding Concerns Details.  </li>
+</ul>
 <h3>Version 1.0.0-beta.1</h3>
 <ul>
 <li>Changed values in valueset adw-discharge-notice-reject-reason-1 to reflect Information Standard.</li>
 <li>Amended cardinality of supportingInformation element in all ReferralRequest-based profiles across the specification to allow the addition of a reference to a DocumentReference profile, if required.</li>
-<li>Amended all Notice Receipt MessageHeaders to include a responseType extension to reflect the Information Standard requirement to show the Notice Receipt response type. Amended associated bundles to reflect this.</li>
+<li>Amended all Notice Receipt MessageHeaders to include a responseType extension to reflect the Information Standard requirement to show the Notice Receipt response type. Amended associated bundle xml examples to reflect this.</li>
 <li>Amended ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml supportingInformation element to include a reference to an example DocumentReference profile.</li>
 <li>Corrected broken links to CareConnect profile elements on all Dataset Mapping pages.</li>
 <li>Corrected xml bundle examples to include Organisation (ODS) Site code rather than Organisation (ODS) Code for a Hospital organisation. </li>
@@ -170,8 +201,8 @@
 </ul>
 <h3>Version: 1.0: Status: RC4</h3>
 <ul>
-<li>Changed values in adw-person-stated-gender-1 name and description elements to reflect those in the FHIR valueset at http://hl7.org/fhir/valueset-administrative-gender.html (AdministrativeGender).</li>
-<li>Changed valueset reference in ADW-Message-AssessmentNotice-1-Ex01.xml group.question (Patient Consent) from http://fhir.nhs.net/ValueSet/adw-consultation-status-1 to 	http://fhir.nhs.net/ValueSet/careconnect-patient-consent-status-1.</li>
+<li>Changed values in adw-person-stated-gender-1-0 name and description elements to reflect those in the FHIR valueset at http://hl7.org/fhir/valueset-administrative-gender.html (AdministrativeGender).</li>
+<li>Changed valueset reference in ADW-Message-AssessmentNotice-1-0-Ex01.xml group.question (Patient Consent) from http://fhir.nhs.net/ValueSet/adw-consultation-status-1-0 to 	http://fhir.nhs.net/ValueSet/adw-patient-consent-status-1-0.</li>
 <li>Removed red warning text from About page.</li>
 <li>Amended About page to show October 2015 (latest) version of FHIR.</li>
 <li>Amended all profile referencing diagrams to reflect design changes from Draft G onwards. </li>
@@ -183,7 +214,7 @@
 <li>Added labels to Patient.telecom (Patient Contact Details) and Patient.contact.telecom (Carer Contact Details) to reflect Information Standard naming.</li>
 <li>Replaced profile 'None given' example values with more illustrative and relevant values.</li>
 <li>Corrected binding strength in Organization.type (including Social Services organization) to read Required.</li>
-<li>Amended code NA to N/A in valueset at http://fhir.nhs.net/ValueSet/adw-third-party-consent-source-1 to reflect Information Standard revision.</li>
+<li>Amended code NA to N/A in valueset at http://fhir.nhs.net/ValueSet/adw-third-party-consent-source-1-0 to reflect Information Standard revision.</li>
 </ul>
 <p><strong>Known Issues</strong></p>
 <ul>
@@ -193,14 +224,14 @@
 </ul>
 <h3>Version: 1.0: Status: RC3</h3>
 <ul>
-<li>Changed url of ADW-Discharge-Notice-Accept-Response-Message-Header-1 to http://fhir.nhs.net/StructureDefinition/adw-discharge-notice-accept-response-message-header-1 from http://fhir.nhs.net/StructureDefinition/adw-discharge-notice-agreement-response-message-header-1 to make all Accept Notice urls consistent.</li>
+<li>Changed url of ADW-Discharge-Notice-Accept-Response-Message-Header-1-0 to http://fhir.nhs.net/StructureDefinition/adw-discharge-notice-accept-response-message-header-1-0 from http://fhir.nhs.net/StructureDefinition/adw-discharge-notice-agreement-response-message-header-1-0 to make all Accept Notice urls consistent.</li>
 <li>Amended Profile names for all MessageHeaders, ReferralRequests and QuestionnaireResponses to reflect their url naming.</li>
 <li>Amended profile textual descriptions to reflect more clearly the nature of profiles in the message.</li>
 <li>Added 'Where the sender is able to look up the Organisation Site Code, Hospital Name should be derived.' into the description for Organization.name element in Organization profiles to reflect requirements.</li>
 <li>Amended Patient.identifier across all Patient profiles to make it an optional element rather than mandatory to reflect a revised requirement.</li>
-<li>Amended ADW-WithdrawalNoticeAcceptResponse/adw-message-bundle-1.html to correct three broken links.</li>
+<li>Amended ADW-WithdrawalNoticeAcceptResponse/adw-message-bundle-1-0.html to correct three broken links.</li>
 <li>Added additional value NKC: No Known Carer to ADW Carer Consultation Status valueset.</li>
-<li>Corrected ADW-Message-AssessmentNotice-1-Ex01.xml to show reference to http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1 valueset for patient's carer consultation in QuestionnaireResponse entry.</li>
+<li>Corrected ADW-Message-AssessmentNotice-1-0-Ex01.xml to show reference to http://fhir.nhs.net/ValueSet/adw-carerconsultation-status-1-0 valueset for patient's carer consultation in QuestionnaireResponse entry.</li>
 <li>Amended Admission Date and Proposed Discharge Date values to show date, not dateTime, in Assessment and Discharge notice bundle examples to reflect requirements.</li>
 </ul>
 <p><strong>Known Issues</strong></p>
@@ -214,20 +245,20 @@
 <ul>
 <li>Made Patient.address optional across all messages and added in text to its description to outline that it should be mandatory in all Notices, but optional in all Responses.</li>
 <li>Made Patient.type (NHS Number Status Indicator) optional across all messages to reflect requirements.</li>
-<li>Amended the MessageHeader.receiver element in the Assessment notice minimum dataset bundle xml example to contain the Social Services' community team to reflect requirements.</li>
+<li>Amended the MessageHeader.receiver element in the Assessment Notice minimum dataset bundle xml example to contain the Social Services' community team to reflect requirements.</li>
 <li>Amended the ReferralRequest.recipient element in the Discharge and Withdrawal notice minimum dataset bundle xml examples to contain the Social Services' community team rather than the Local Authority to maintain consistency across notice bundles.</li>
-<li>The incorrect reference to the Local Authority Contact in ADW-Message-AssessmentNotice-1-Ex01 xml example has been removed.</li>
+<li>The incorrect reference to the Local Authority Contact in ADW-Message-AssessmentNotice-1-0-Ex01 xml example has been removed.</li>
 <li>Amended label for MessageHeader.responsible element across all messages to show Lead Clinician for Notices and Local Authority Organisation for all Responses.</li>
 <li>Reinstated MessageHeader.responsible element for all Response minimum dataset bundle xml examples to ensure data about the responsible Local Authority organisation can be sent.</li>
-<li>Corrected profile uri for CareConnect-Organization-1 from profile value=&quot;http://fhir.nhs.net/StructureDefinition/adw-organisation-1&quot; to profile value=&quot;http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1&quot;. </li>
-<li>Corrected profile uri for CareConnect-Organization-Social-Services-Organization-1 from profile value=&quot;http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organisation-1&quot; to profile value=&quot;http://fhir.nhs.net/StructureDefinition/CareConnect-Organization-1&quot;.</li>
-<li>Made CareConnect-Organization-Social-Services-Organization-1.partOf element mandatory in order to carry the Local Authority organisation.</li>
-<li>Amended ReferralRequest.recipient element to reference CareConnect-Organization-Social-Services-Organization-1 across all messages.</li>
-<li>Amended MessageHeader.receiver element to reference only CareConnect-Organization-Social-Services-Organization-1 for all Notice profiles.</li>
-<li>Amended MessageHeader.receiver element to reference only careconnect-practitioner-1 for all Response profiles.</li>
+<li>Corrected profile uri for ADW-Organization-1-0 from profile value=&quot;http://fhir.nhs.net/StructureDefinition/adw-organisation-1-0&quot; to profile value=&quot;http://fhir.nhs.net/StructureDefinition/adw-organization-1-0&quot;. </li>
+<li>Corrected profile uri for ADW-Organization-Social-Services-Organization-1-0 from profile value=&quot;http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organisation-1-0&quot; to profile value=&quot;http://fhir.nhs.net/StructureDefinition/adw-social-services-team-organization-1-0&quot;.</li>
+<li>Made ADW-Organization-Social-Services-Organization-1-0.partOf element mandatory in order to carry the Local Authority organisation.</li>
+<li>Amended ReferralRequest.recipient element to reference ADW-Organization-Social-Services-Organization-1-0 across all messages.</li>
+<li>Amended MessageHeader.receiver element to reference only ADW-Organization-Social-Services-Organization-1-0 for all Notice profiles.</li>
+<li>Amended MessageHeader.receiver element to reference only ADW-Practitioner-1-0 for all Response profiles.</li>
 <li>Reinstated Encounter.serviceProvider element in all minimum dataset xml bundles to reflect that it is mandatory in profiles. </li>
-<li>Amended reference to incorrect GUID in ADW-Message-DischargeNoticeRejectResponse-1-Ex01 bundle xml example at Encounter.serviceProvider to reference the correct GUID for an organisation within the bundle.</li>
-<li>Removed a duplicate email address for the Local Authority Contact within the ADW-Message-DischargeNoticeRejectResponse-1-Ex01 minimum dataset bundle xml example at Practitioner.telecom.</li>
+<li>Amended reference to incorrect GUID in ADW-Message-DischargeNoticeRejectResponse-1-0-Ex01 bundle xml example at Encounter.serviceProvider to reference the correct GUID for an organisation within the bundle.</li>
+<li>Removed a duplicate email address for the Local Authority Contact within the ADW-Message-DischargeNoticeRejectResponse-1-0-Ex01 minimum dataset bundle xml example at Practitioner.telecom.</li>
 <li>Removed all display elements from all references within all minimum dataset bundle xml examples.</li>
 <li>Removed reference end tag in minimum dataset xml bundle examples in MessageHeader.requester element and corrected format of this reference element.</li>
 <li>Corrected cardinality of QuestionnaireResponse.group.question element to 1..* for all messages.</li>
@@ -236,7 +267,7 @@
 <li>Corrected value in Patient.identifier.system (Hospital Patient identifier) to http://fhir.nhs.net/Id/hospital-patient-identifier for all response profiles and minimum dataset bundle xml examples.</li>
 <li>Removed Patient.identifier.use element from Withdrawal and Discharge notice minimum dataset bundle xml examples.</li>
 <li>Removed FixedCode value=&quot;official&quot; from Patient profiles' Patient.name associated child element.</li>
-<li>Status wrongly coded in Discharge questionnaire response.status element in ADW-Message-DischargeNotice-1-Ex01.xml. Removed incorrect extension to this element.  </li>
+<li>Status wrongly coded in Discharge questionnaire response.status element in ADW-Message-DischargeNotice-1-0-Ex01.xml. Removed incorrect extension to this element.  </li>
 </ul>
 <p><strong>Known Issues</strong></p>
 <ul>
@@ -248,32 +279,32 @@
 <h3>Version: 1.0: Status: RC1</h3>
 <ul>
 <li>The Reason for Admission element has been removed from Assessment message ADW Questionnaire Response profile and is now in a new ADW Condition profile. This is an important change, which was required to maintain compliancy with the FHIR standard.</li>
-<li>Amended Assessment Notice careconnect-patient-1.communication.preferred and communication.interpreterRequired to be mandatory in line with Information Standard requirements.</li>
+<li>Amended Assessment Notice ADW-Patient-1-0.communication.preferred and communication.interpreterRequired to be mandatory in line with Information Standard requirements.</li>
 <li>Produced revised xml example bundles suffixed Ex01.xml to show only the minimum dataset elements from the Information Standard requirements.</li>
-<li>Added mustSupport attribute to careconnect-practitioner-1.practitionerRole and its child role element.</li>
-<li>Made careconnect-patient-1 generic; the same profile for all messages.</li>
+<li>Added mustSupport attribute to ADW-Practitioner-1-0.practitionerRole and its child role element.</li>
+<li>Made ADW-Patient-1-0 generic; the same profile for all messages.</li>
 <li>Added labels to elements in Patient, Practitioner and Organisation profiles in line with Dataset naming. </li>
 <li>Added cardinality for top level slice in Short description for all Patient, Practitioner, Organisation based profile slices.</li>
-<li>Amended name of Assessment Notice ADW-QuestionnaireResponse-1.CHC Assessment Considered Indicator and Result to NHS CHC Assessment Considered Indicator and Result in line with Dataset requirements.</li>
+<li>Amended name of Assessment Notice ADW-QuestionnaireResponse-1-0.CHC Assessment Considered Indicator and Result to NHS CHC Assessment Considered Indicator and Result in line with Dataset requirements.</li>
 <li>Amended name of Practitioner.telecom.value sliced element to email address string and telephone number string respectively for the two different slices.</li>
 <li>Amended name of Patient.telecom.value sliced element to email address string and telephone number string respectively for the two different slices.</li>
 <li>Amended name of Patient.contact.telecom.value sliced element to email address string and telephone number string respectively for the two different slices.</li>
-<li>Verified Dataset mappings on adw-message-bundle-1 pages against Dataset requirements.</li>
+<li>Verified Dataset mappings on adw-message-bundle-1-0 pages against Dataset requirements.</li>
 <li>Produced minimum dataset-based bundles for all messages to show only those elements which are required to meet requirements. </li>
-<li>Added mustSupport attribute to careconnect-location-1.name element to support requirements. </li>
+<li>Added mustSupport attribute to ADW-Location-1-0.name element to support requirements. </li>
 <li>Added mustSupport attribute to all MessageHeaders for all elements with mandatory cardinality and for the responsible element.</li>
 <li>Reinstated responsible element to Response MessageHeaders to provide optional link to either a responsible organisation or practitioner.</li>
-<li>Amended CareConnect-Organization-1-Ex02 to show a Local Authority rather than a Local Authority Social Services department to reflect requirements.</li>
+<li>Amended ADW-Organization-1-0-Ex02 to show a Local Authority rather than a Local Authority Social Services department to reflect requirements.</li>
 <li>Removed all unnecessary spaces from questions in all QuestionnaireResponse profiles.</li>
 <li>Amended MessageHeader.receiver element to reference Local Authority Social Services community team instead of Social Worker practitioner in all Notice bundles.</li>
 <li>Removed Local Authority Social Worker (Practitioner) from all Notice bundle examples.</li>
 <li>Removed ServiceProvider element from all Encounter profiles in the minimum dataset bundle examples.</li>
 <li>Amended Local Authority Social Services department organisation in bundle xml examples to show a Local Authority rather than a Local Authority Social Services' department to reflect Information Standard requirements more accurately.</li>
-<li>Amended typo in all MessageHeaders.destination elements to adjust the label to (Local Authority Receiving System) rather than (Local Authority Receiving System).</li>
+<li>Amended typo in all MessageHeaders.destination elements to adjust the label to (Local Authority Receiving System) rather than (Local Authority Receving System).</li>
 <li>Amended slices for telecom elements in Patient and Practitioner-based profiles to Closed to reflect specification.</li>
-<li>Amended ADW-Lead-Clinician-Practitioner-1.identifier (SDS Identifier) cardinality to 0..1.</li>
-<li>Amended cardinality of careconnect-patient-1.identifier to 1..2 to reflect specification.</li>
-<li>ADW-WithdrawalNotice-Message-Header-1.event.code now contains an example value rather than a fixed value to reflect specification for a choice of two possible values.</li>
+<li>Amended ADW-Lead-Clinician-Practitioner-1-0.identifier (SDS Identifier) cardinality to 0..1.</li>
+<li>Amended cardinality of ADW-Patient-1-0.identifier to 1..2 to reflect specification.</li>
+<li>ADW-WithdrawalNotice-Message-Header-1-0.event.code now contains an example value rather than a fixed value to reflect specification for a choice of two possible values.</li>
 <li>Re-ordered profiles in the messages and ordered profiles in bundle xml examples to match order in each message.</li>
 </ul>
 <p><strong>Known Issues</strong></p>
@@ -282,10 +313,11 @@
 <li>There are inconsistencies in some of the descriptions in the dictionary/definition pages for profiles. Where this is the case, the profile tree view page takes precedence. The cause of this is currently under investigation.</li>
 <li>The Profile Referencing Diagrams do not reflect changes from Draft G onwards and will be updated for the future RC2.</li>
 <li>Xml examples for individual profiles and maximal bundle xml examples (suffixed Ex02) have not been updated and will be revised in RC2.</li>
+<li></li>
 </ul>
 <h3>Version: 1.0: Status: Draft H</h3>
 <ul>
-<li>Added new value of &quot;X&quot; (Other) to adw-admission-type-1 valueset.</li>
+<li>Added new value of &quot;X&quot; (Other) to adw-admission-type-1-0 valueset.</li>
 <li>Amended cardinality of responsible element to 0..1 for all notice MessageHeader profiles to reflect requirements.</li>
 <li>Removed responsible element from Response MessageHeader profiles to reflect specification. This will be reviewed in next draft.</li>
 <li>Amended author, receiver and responsible elements for all notice and response MessageHeaders to reference practitioner and organisation or practitioner only.</li>
@@ -294,36 +326,39 @@
 <li>Discharge notice as above to reflect specification.</li>
 <li>Removed Patient.telecom, Patient.communication and all Patient.contact details from Patient profile in Withdrawal message to reflect specification.</li>
 <li>Removed Patient.telecom, Patient.address, Patient.communication, Patient.managingOrganization and all Patient.contact details from all Responses to reflect specification.</li>
-<li>Created new ADW-Lead-Clinician-Practitioner-1 profile to reflect requirements for a Lead Clinician.</li>
-<li>Created new CareConnect-Organization-1 profile to reflect requirements for a Social Services team.</li>
-<li>Amended careconnect-practitioner-1 profile to reflect requirements for email and telephone contact details. </li>
+<li>Created new ADW-Lead-Clinician-Practitioner-1-0 profile to reflect requirements for a Lead Clinician.</li>
+<li>Created new ADW-Social-Services-Team-Organization-1-0 profile to reflect requirements for a Social Services team.</li>
+<li>Amended ADW-Practitioner-1-0 profile to reflect requirements for email and telephone contact details. </li>
 <li>Amended Encounter.location cardinality to 0..* for all Encounter-based profiles.</li>
-<li>Amended values and renamed administrative gender valueset for Patient.gender to person-stated-gender-1 to reflect specification.</li>
+<li>Amended values and renamed administrative gender valueset for Patient.gender to person-stated-gender-1-0 to reflect specification.</li>
 <li>Added mandatory reason element to Withdrawal and Response MessageHeaders.</li>
 <li>Removed reference to Composition profile in Assessment Notice and Discharge Notice Encounter profiles supportingInformation elements.</li>
 <li>Amended all xml examples and bundles to reflect above changes.</li>
+<li></li>
 </ul>
 <h3>Version: 1.0: Status: Draft G</h3>
 <ul>
 <li>Changed Ward from an Organisation to a Location resource. Added in to all messages.</li>
 <li>Created revised corresponding Ward xml example and deleted existing Ward xml example.</li>
 <li>Added revised Ward xml example to all bundles and removed previous Ward xml example.</li>
-<li>Added CareConnect-ADW-Encounter-1 to all responses to link Ward into all messages.</li>
+<li>Added ADW-Response-Encounter-1-0 to all responses to link Ward into all messages.</li>
 <li>Created Response encounter xml examples for all responses.</li>
 <li>Added location element to all Encounter profiles to reference a Hospital Ward.</li>
 <li>Amended identifier.value in all Encounter xml examples to make it the same for all.</li>
 <li>Updated Referral in Withdrawal and all Response messages to reference newly created Encounter profiles.</li>
 <li>Updated all bundles with xml example changes.</li>
-<li>Added &quot;Not Applicable&quot; as extra value to adw-third-party-consent-source-1 valueset.</li>
-<li>Changed values in adw-admission-type-1 valueset to &quot;P&quot; (Elective) and &quot;E&quot; (Emergency).</li>
-<li>Amended careconnect-adw-encounter-1-Ex01 and ADW-Message-AssessmentNotice-1-Ex01 xml examples to reflect changed adw-admission-type-1 values.</li>
+<li>Added &quot;Not Applicable&quot; as extra value to adw-third-party-consent-source-1-0 valueset.</li>
+<li>Changed values in adw-admission-type-1-0 valueset to &quot;P&quot; (Elective) and &quot;E&quot; (Emergency).</li>
+<li>Amended ADW-Encounter-1-0-Ex01 and ADW-Message-AssessmentNotice-1-0-Ex01 xml examples to reflect changed adw-admission-type-1-0 values.</li>
 <li>Amended example identifier.value in all Referral profiles to make it the same for all.</li>
+<li></li>
 </ul>
 <h3>Version: 1.0: Status: Draft F</h3>
 <ul>
 <li>Updated all xml examples and added unique UUIDs for all.</li>
 <li>Amended ADW-Discharge-Composition xml example to reflect its profile.</li>
 <li>Updated all profile referencing diagrams to reflect revised UUID allocation.</li>
+<li></li>
 </ul>
 <h3>Version: 1.0: Status: Draft E</h3>
 <ul>
@@ -331,21 +366,22 @@
 <li>Added ADW Data set Mapping tables to ADW-Message-Bundle.html for every message.</li>
 <li>Added  Profile Referencing diagrams to ADW-Message-Bundle.html for every message.</li>
 <li>Added Social Worker Practitioner xml example.</li>
-<li>Added ADW-ReferralRequest-Cancelled-1 to Withdrawal Notice Accept Response and Withdrawal Notice Reject response.</li>
+<li>Added ADW-ReferralRequest-Cancelled-1-0 to Withdrawal Notice Accept Response and Withdrawal Notice Reject response.</li>
 <li>Removed organisation link from the author element in all Message Headers. </li>
+<li></li>
 </ul>
 <h3>Version: 1.0: Status: Draft D</h3>
 <p>This release accommodates the changes following review by the NHS Digital business and the technical modelling teams. It includes the following changes:</p>
 <ul>
 <li>Renamed the specification from Social Care Integration to Social Care.</li>
-<li>Added more detailed XML examples.  </li>
-<li>Added complete message (bundle) examples.  </li>
-<li>Added diagram to illustrate the referencing for a typical Assessment Notice message.  </li>
+<li>Added more detailed XML examples.</li>
+<li>Added complete message (bundle) examples.</li>
+<li>Added diagram to illustrate the referencing for a typical Assessment Notice message.</li>
 <li>Added table for FHIR message element to ADW dataset mapping.</li>
 </ul>
 <h3>Version: 1.0: Status: Draft C</h3>
 <ul>
-<li>Updated ADW-WithdrawalNotice-Message-Header-1 to include reason for withdrawal.</li>
+<li>Updated ADW-WithdrawalNotice-Message-Header-1-0 to include reason for withdrawal.</li>
 </ul>
 <h3>Version: 1.0: Status: Draft B</h3>
 <ul>
