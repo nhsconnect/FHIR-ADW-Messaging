@@ -82,7 +82,7 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 [MessageHeader.timestamp (ADW Message Sent Time)]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.ADW%20Message%20Sent%20Time
 [Patient.nhsNumber]: careconnect-patient-1-dict.html#Patient.nhsNumber
 [Patient.localIdentifier]: careconnect-patient-1-dict.html#Patient.localIdentifier
-[Patient.identifier.nhsNumberVerificationStatus]: extension-careconnect-nhsnumberverificationstatus-1-dict.html#Extension.valueCodeableConcept
+[Patient.identifier.nhsNumberVerificationStatus]: careconnect-patient-1-dict.html#Patient.identifier.nhsNumberVerificationStatus
 [Patient.name.family]: careconnect-patient-1-dict.html#Patient.name.family
 [Patient.name.given]: careconnect-patient-1-dict.html#Patient.name.given
 [Patient.birthDate]: careconnect-patient-1-dict.html#Patient.birthDate
