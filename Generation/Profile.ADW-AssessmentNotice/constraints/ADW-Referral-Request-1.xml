@@ -4470,7 +4470,7 @@
     </element>
     <element>
       <path value="ReferralRequest.description" />
-      <short value="A textual description of the referral" />
+      <short value="Additional supporting information relevant to this referral." />
       <definition value="The reason element gives a short description of why the referral is being made, the description expands on this to support a more complete clinical summary." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
@@ -5012,7 +5012,7 @@
     </element>
     <element>
       <path value="ReferralRequest.supportingInformation" />
-      <name value="Further Information " />
+      <name value="Further Information" />
       <short value="Reference to additional information to support the Referral Request notice" />
       <definition value="Reference to additional information to support the Referral Request notice." />
       <min value="1" />
@@ -5592,7 +5592,7 @@
     </element>
     <element>
       <path value="ReferralRequest.supportingInformation" />
-      <name value="Further Information " />
+      <name value="Further Information" />
       <short value="Reference to additional information to support the Referral Request notice" />
       <definition value="Reference to additional information to support the Referral Request notice." />
       <min value="1" />

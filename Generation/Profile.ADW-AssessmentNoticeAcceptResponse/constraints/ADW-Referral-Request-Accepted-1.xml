@@ -5016,7 +5016,7 @@
     </element>
     <element>
       <path value="ReferralRequest.supportingInformation" />
-      <name value="Further Information " />
+      <name value="Further Information" />
       <short value="Reference to additional information to support the Referral Request notice. " />
       <definition value="Reference to additional information to support the Referral Request notice." />
       <min value="0" />
@@ -5586,7 +5586,7 @@
     </element>
     <element>
       <path value="ReferralRequest.supportingInformation" />
-      <name value="Further Information " />
+      <name value="Further Information" />
       <short value="Reference to additional information to support the Referral Request notice. " />
       <definition value="Reference to additional information to support the Referral Request notice." />
       <mustSupport value="false" />
