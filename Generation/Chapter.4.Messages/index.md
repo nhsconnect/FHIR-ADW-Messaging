@@ -16,13 +16,13 @@ The FHIR resource profiles within this DMS have been created to support the Asse
 
 During interactions between a Hospital and a Local Authority Social Services' team in connection with transfers of care of patients, it may be necessary for either party to send a document embedded within the message. Examples could be letters, assessments or any other relevant supporting information. There are two FHIR document formats used to enable this and the specification has included example implementations of both document formats as outlined below. Where FHIR documents are included, they are contained in separate FHIR bundles within the appropriate Notice or Response bundle.
 
-### FHIR Document - further information ###
+### Implementation of a FHIR Document ###
 
 An implementer is optionally allowed to include a Composition to send additional or supporting information. The Composition defines the structure, but the full content of the document is contained in the Bundle, of which the Composition is the first resource.
 If this functionality is required, NHS Digital's [Document Header] specification should be consulted as it gives a common approach for such documents for NHS Digital message flows.   [COFE-Composition-1] within that specification shows NHS Digital's constraint of the [FHIR Composition resource]. 
 An example of a Social Services Assessment Record is bundled within an Assessment Notice message bundle in the [Assessment Notice bundle xml example]. The instance of the [COFE-Composition-1] shown there defines the structure of the document. 
 
-### FHIR Document Reference - further information ###
+### Implementation of a FHIR Document Reference ###
 
 This specification allows the inclusion of documents which are non-FHIR based within the message bundle. A pertinent example could be a pdf document requesting further information about a patient or containing other types of supporting information. 
 Should this functionality be required, NHS Digital's [Document Reference] specification should be consulted. [COFE-DocumentReference-1] within that specification shows the constraint of the [FHIR DocumentReference resource]. [COFE-DocumentReference-1] details the document and binary attachment structure and provides a common approach for these documents for NHS Digital message flows.
