@@ -9,7 +9,7 @@
     <tag>
       <system value="urn:hscic:examples" />
       <code value="ADW-Message-Assessment-Notice-Bundle-1-Example-1" />
-      <display value="Example of an ADW Assessment Notice Bundle with an attached document" />
+      <display value="Example of an ADW Assessment Notice Bundle with an attached document (not rendered)" />
     </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
