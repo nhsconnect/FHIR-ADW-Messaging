@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Bundle xml example-->
-<Bundle xmlns="http://hl7.org/fhir">
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/SVN/Projects/FHIR/HSCI/Generation/Schemas/bundle.xsd">
 	<id value="79aec4c6-e7d3-44ef-96ed-bda1b94f9d00"/>
 	<meta>
 		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1"/>
