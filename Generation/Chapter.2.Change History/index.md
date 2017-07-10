@@ -29,7 +29,8 @@
  - Added Assessment Notice optional ADW-Referral-Request-1.reason element to allow a referral reason to be carried.
  - Added Assessment Notice optional ADW-Referral-Request-1.description element to carry any additional relevant information relating to the referral..
  - Renamed ADW-Questionnaire-Response-1.group.question (Safeguarding Issues) to (Safeguarding Concerns).
- - Added an additional question to the ADW-Questionnaire-Response-1 profile called Safeguarding Concerns Details.  
+ - Added an additional question to the ADW-Questionnaire-Response-1 profile called Safeguarding Concerns Details.
+ - Constrained out the indication element from CareConnect-ADW-Encounter.  
 
 ### Version 1.0.0-beta.1 ###
 
