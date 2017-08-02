@@ -109,7 +109,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">2.0.0-beta.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">3.0.0-beta.1</span>
                             </p>
 
                         </div>
@@ -141,6 +141,15 @@
 							
 									<div class="panel panel - default">
 											<h1>Change History</h1>
+<h3>Version 3.0.0-beta.1</h3>
+<ul>
+<li>Amended all Notice bundles to reference the Local Authority instance as the recipient/receiver for MessageHeader and for ReferralRequest.</li>
+<li>Renamed profiles and ValueSets to conform to NHS Digital FHIR artefact naming guidance.</li>
+<li>Updated Document bundles in line with revisions to NHS Digital ITK-DocumentReference message specification.</li>
+<li>Replaced CareConnect-ADW-Practitioner-1 with CareConnect-Practitioner-1.</li>
+<li>Fixed values for QuestionnaireResponse.group.question.answer.valueCoding.system to reflect the Required valuesets.</li>
+<li>Amended Profile Referencing diagrams. </li>
+</ul>
 <h3>Version 2.0.0-beta.1</h3>
 <ul>
 <li>Amended all non-CareConnect valuesets to reflect FHIR standard.</li>
@@ -167,8 +176,8 @@
 <li>Added a sample Social Services letter as a document attachment to Discharge Notice Accept Response xml bundle example.</li>
 <li>Added a document to the Assessment Notice xml bundle example.</li>
 <li>Added a link to attached document bundles in ReferralRequest.supportingInformation for all xml bundles containing a document.</li>
-<li>Added Assessment Notice optional ADW-Referral-Request-1.reason element to allow a referral reason to be carried.</li>
-<li>Added Assessment Notice optional ADW-Referral-Request-1.description element to carry any additional relevant information relating to the referral..</li>
+<li>Added Assessment Notice optional ADW-ReferralRequest-1.reason element to allow a referral reason to be carried.</li>
+<li>Added Assessment Notice optional ADW-ReferralRequest-1.description element to carry any additional relevant information relating to the referral..</li>
 <li>Renamed ADW-Questionnaire-Response-1.group.question (Safeguarding Issues) to (Safeguarding Concerns).</li>
 <li>Added an additional question to the ADW-Questionnaire-Response-1 profile called Safeguarding Concerns Details.</li>
 <li>Constrained out the indication element from CareConnect-ADW-Encounter.  </li>
@@ -367,7 +376,7 @@
 <li>Added ADW Data set Mapping tables to ADW-Message-Bundle.html for every message.</li>
 <li>Added  Profile Referencing diagrams to ADW-Message-Bundle.html for every message.</li>
 <li>Added Social Worker Practitioner xml example.</li>
-<li>Added ADW-ReferralRequest-Cancelled-1-0 to Withdrawal Notice Accept Response and Withdrawal Notice Reject response.</li>
+<li>Added ADW-Cancel-ReferralRequest-1-0 to Withdrawal Notice Accept Response and Withdrawal Notice Reject response.</li>
 <li>Removed organisation link from the author element in all Message Headers. </li>
 <li></li>
 </ul>
