@@ -460,6 +460,7 @@
 								<coding>
 									<system value="http://hl7.org/fhir/composition-status"/>
 									<code value="final"/>
+									<display value="Final"/>
 								</coding>
 							</docStatus>
 							<content>

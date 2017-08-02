@@ -24,7 +24,7 @@
     <name value="InteroperabilityTeam" />
     <telecom>
       <system value="email" />
-      <value value="interoperability@nhs.net" />
+      <value value="interoperabilityteam@nhs.net" />
       <use value="work" />
     </telecom>
   </contact>

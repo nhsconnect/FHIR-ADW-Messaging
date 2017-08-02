@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2017-06-30T12:14:10.78+01:00" />
+    <lastUpdated value="2017-07-31T10:18:05.473+01:00" />
     <tag>
       <system value="urn:hscic:publishOrder" />
       <code value="3" />
@@ -3967,7 +3967,7 @@
     <element>
       <path value="ReferralRequest.reason" />
       <name value="Reason for referral" />
-      <short value="The reason for the Referral Request notice. A textual string should be used to express this in the reason.text element." /> 
+      <short value="The reason for the Referral Request notice. A textual string should be used to express this in the reason.text element." />
       <definition value="Description of clinical condition indicating why referral is requested.  For example:  Behavioral Management." />
       <comments value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
@@ -3992,7 +3992,11 @@
       </constraint>
       <isModifier value="false" />
       <isSummary value="true" />
-       <mapping>
+      <binding>
+        <strength value="example" />
+        <description value="Codes indicating why the referral is being requested." />
+      </binding>
+      <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
@@ -4470,7 +4474,7 @@
     </element>
     <element>
       <path value="ReferralRequest.description" />
-      <short value="Additional supporting information relevant to this referral." />
+      <short value="A textual description of the referral" />
       <definition value="The reason element gives a short description of why the referral is being made, the description expands on this to support a more complete clinical summary." />
       <comments value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
@@ -5571,7 +5575,7 @@
     <element>
       <path value="ReferralRequest.reason" />
       <name value="Reason for referral" />
-      <short value="The reason for the Referral Request notice. A textual string should be used to express this in the reason.text element." /> 
+      <short value="The reason for the Referral Request notice. A textual string should be used to express this in the reason.text element." />
       <definition value="Description of clinical condition indicating why referral is requested.  For example:  Behavioral Management." />
     </element>
     <element>
