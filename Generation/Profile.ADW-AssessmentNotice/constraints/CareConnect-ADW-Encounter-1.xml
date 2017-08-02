@@ -2985,7 +2985,7 @@
         <strength value="required" />
         <description value="Indicates the urgency of the encounter." />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/adw-admission-type-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/ADW-AdmissionType-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3221,7 +3221,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://fhir.nhs.uk/adw-admission-type-1" />
+      <fixedUri value="https://fhir.nhs.uk/ADW-AdmissionType-1" />
       <condition value="ele-1" />
       <constraint>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
@@ -4901,7 +4901,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6604,7 +6604,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8656,7 +8656,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11959,7 +11959,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Condition-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13178,7 +13178,7 @@
       <binding>
         <strength value="required" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/ValueSet/adw-admission-type-1" />
+          <reference value="https://fhir.nhs.uk/ValueSet/ADW-AdmissionType-1" />
         </valueSetReference>
       </binding>
     </element>
@@ -13190,7 +13190,7 @@
     <element>
       <path value="Encounter.priority.coding.system" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/adw-admission-type-1" />
+      <fixedUri value="https://fhir.nhs.uk/ADW-AdmissionType-1" />
     </element>
     <element>
       <path value="Encounter.priority.coding.code" />
@@ -13224,7 +13224,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1" />
       </type>
     </element>
     <element>
@@ -13278,7 +13278,7 @@
       <max value="0" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Condition-1" />
       </type>
     </element>
     <element>
@@ -13307,7 +13307,7 @@
       <path value="Encounter.hospitalization.admittingDiagnosis" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Condition-1" />
       </type>
     </element>
     <element>
@@ -13377,7 +13377,7 @@
       <path value="Encounter.hospitalization.dischargeDiagnosis" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/adw-condition-1" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Condition-1" />
       </type>
     </element>
     <element>
