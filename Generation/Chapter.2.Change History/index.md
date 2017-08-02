@@ -1,5 +1,14 @@
 # Change History #
 
+### Version 3.0.0-beta.1 ###
+
+ - Amended all Notice bundles to reference the Local Authority instance as the recipient/receiver for MessageHeader and for ReferralRequest.
+ - Renamed profiles and ValueSets to conform to NHS Digital FHIR artefact naming guidance.
+ - Updated Document bundles in line with revisions to NHS Digital ITK-DocumentReference message specification.
+ - Replaced CareConnect-ADW-Practitioner-1 with CareConnect-Practitioner-1.
+ - Fixed values for QuestionnaireResponse.group.question.answer.valueCoding.system to reflect the Required valuesets.
+ - Amended Profile Referencing diagrams. 
+
 ### Version 2.0.0-beta.1 ###
 
  - Amended all non-CareConnect valuesets to reflect FHIR standard.
@@ -26,8 +35,8 @@
  - Added a sample Social Services letter as a document attachment to Discharge Notice Accept Response xml bundle example.
  - Added a document to the Assessment Notice xml bundle example.
  - Added a link to attached document bundles in ReferralRequest.supportingInformation for all xml bundles containing a document.
- - Added Assessment Notice optional ADW-Referral-Request-1.reason element to allow a referral reason to be carried.
- - Added Assessment Notice optional ADW-Referral-Request-1.description element to carry any additional relevant information relating to the referral..
+ - Added Assessment Notice optional ADW-ReferralRequest-1.reason element to allow a referral reason to be carried.
+ - Added Assessment Notice optional ADW-ReferralRequest-1.description element to carry any additional relevant information relating to the referral..
  - Renamed ADW-Questionnaire-Response-1.group.question (Safeguarding Issues) to (Safeguarding Concerns).
  - Added an additional question to the ADW-Questionnaire-Response-1 profile called Safeguarding Concerns Details.
  - Constrained out the indication element from CareConnect-ADW-Encounter.  
@@ -222,7 +231,7 @@
  - Added ADW Data set Mapping tables to ADW-Message-Bundle.html for every message.
  - Added  Profile Referencing diagrams to ADW-Message-Bundle.html for every message.
  - Added Social Worker Practitioner xml example.
- - Added ADW-ReferralRequest-Cancelled-1-0 to Withdrawal Notice Accept Response and Withdrawal Notice Reject response.
+ - Added ADW-Cancel-ReferralRequest-1-0 to Withdrawal Notice Accept Response and Withdrawal Notice Reject response.
  - Removed organisation link from the author element in all Message Headers. 
  - 
 ### Version: 1.0: Status: Draft D ###
