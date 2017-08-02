@@ -1,0 +1,1 @@
+A CareConnect profile which carries information about the healthcare professional.
