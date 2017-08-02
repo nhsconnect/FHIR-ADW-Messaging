@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
 	<id value="a63ec43d-887f-477d-b461-80dbbb139fc6"/>
 	<meta>
-		<profile value="https://fhir.nhs.uk/StructureDefinition/adw-message-bundle-1"/>
+		<profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Message-Bundle-1"/>
 	</meta>
 	<type value="message"/>
 	<entry>
@@ -12,7 +12,7 @@
 			<MessageHeader>
 				<id value="19db5f65-1bad-4ce1-be05-92ff79ab1c8f"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-notice-message-header-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/ADW-DischargeNotice-MessageHeader-1"/>
 				</meta>
 				<timestamp value="2017-05-04T15:11:42+00:00"/>
 				<event>
@@ -30,9 +30,9 @@
 					<reference value="urn:uuid:51742f1b-c5ee-435e-8dc7-9bc5a578cd1d">
 					</reference>
 				</author>
-				<!-- Local Authority Social Services' community team -->
+				<!-- Local Authority recipient -->
 				<receiver>
-					<reference value="urn:uuid:5d4c7a93-73f1-460e-93d3-da616b569228"/>
+					<reference value="urn:uuid:37f35527-5169-4467-b6ad-ab147928714c"/>
 				</receiver>
 				<!-- Lead Clinician -->
 				<responsible>
@@ -50,8 +50,7 @@
 			<ReferralRequest>
 				<id value="8a31c448-223d-42b7-9a17-3898f0c1c143"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-referral-request-1"/>
-					<!--This is taken from the url value of https://fhir.nhs.uk/StructureDefinition/adw-referral-request-1 found in the profile-->
+					<profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Discharge-ReferralRequest-1"/>
 				</meta>
 				<status value="requested"/>
 				<identifier>
@@ -66,9 +65,9 @@
 					<reference value="urn:uuid:51742f1b-c5ee-435e-8dc7-9bc5a578cd1d">
 					</reference>
 				</requester>
-				<!-- Local Authority Social Services team-->
+				<!-- Local Authority-->
 				<recipient>
-					<reference value="urn:uuid:5d4c7a93-73f1-460e-93d3-da616b569228"/>
+					<reference value="urn:uuid:37f35527-5169-4467-b6ad-ab147928714c"/>
 				</recipient>
 				<encounter>
 					<reference value="urn:uuid:9abe04e9-c508-492c-94fc-349d34b85bd5"/>
@@ -99,7 +98,7 @@
 				<class value="inpatient"/>
 				<priority>
 					<coding>
-						<system value="https://fhir.nhs.uk/adw-admission-type-1"/>
+						<system value="https://fhir.nhs.uk/ADW-AdmissionType-1"/>
 						<code value="E"/>
 						<display value="Emergency"/>
 					</coding>
@@ -180,7 +179,7 @@
 						</coding>
 					</relationship>
 					<name>
-					<use value="usual"/>
+						<use value="usual"/>
 						<family value="Bloom"/>
 						<given value="Sandra"/>
 					</name>
@@ -204,7 +203,7 @@
 				<id value="51742f1b-c5ee-435e-8dc7-9bc5a578cd1d"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Gulliver"/>
@@ -225,10 +224,11 @@
 					<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 					<role>
 						<coding>
-							<system value="https://fhir.nhs.uk/job-role-name-1"/>
-							<code value="NR2060"/>
-							<display value="Discharge coordinator"/>
+							<system value="https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>
+							<code value="R8003"/>
+							<display value="Health Professional Access Role"/>
 						</coding>
+						<text value="Discharge co-ordinator"/>
 					</role>
 				</practitionerRole>
 			</Practitioner>
@@ -241,7 +241,7 @@
 				<id value="62f20483-3d47-4e57-80e1-6c0e20fe272f"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-ADW-Practitioner-1"/>
+					<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
 				</meta>
 				<name>
 					<family value="Stibbs"/>
@@ -254,8 +254,8 @@
 					<!-- Indicates the practitioners role(s)-->
 					<role>
 						<coding>
-							<system value="https://fhir.nhs.uk/job-role-name-1"/>
-							<code value="NR0050"/>
+							<system value="https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>
+							<code value="R0050"/>
 							<display value="Consultant"/>
 						</coding>
 					</role>
@@ -365,7 +365,7 @@
 				<id value="59d6a0e5-5ca1-4ab1-ac65-3790a3bee8e5"/>
 				<meta>
 					<!--Identifies the profile being used-->
-					<profile value="https://fhir.nhs.uk/StructureDefinition/adw-discharge-questionnaire-response-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Discharge-QuestionnaireResponse-1"/>
 				</meta>
 				<identifier>
 					<value value="fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
@@ -375,12 +375,15 @@
 					<reference value="urn:uuid:51742f1b-c5ee-435e-8dc7-9bc5a578cd1d">
 					</reference>
 				</author>
+				<encounter>
+					<reference value="urn:uuid:9abe04e9-c508-492c-94fc-349d34b85bd5"/>
+				</encounter>
 				<group>
 					<question>
 						<text value="Has the patient been consulted regarding the proposed discharge date?"/>
 						<answer>
 							<valueCoding>
-								<system value="https://fhir.nhs.uk/adw-consultation-status-1"/>
+								<system value="https://fhir.nhs.uk/ADW-ConsultationStatus-1"/>
 								<code value="Y"/>
 								<display value="Yes"/>
 							</valueCoding>
@@ -390,7 +393,7 @@
 						<text value="Has the patient's carer (if applicable) been consulted regarding the proposed discharge date?"/>
 						<answer>
 							<valueCoding>
-								<system value="https://fhir.nhs.uk/adw-carerconsultation-status-1"/>
+								<system value="https://fhir.nhs.uk/ADW-CarerConsultationStatus-1"/>
 								<code value="Y"/>
 								<display value="Yes"/>
 							</valueCoding>
@@ -406,7 +409,7 @@
 			<Bundle>
 				<id value="83ef1145-a95a-4bc3-a0bd-0ac2a09d1c1a"/>
 				<meta>
-					<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-document-bundle-1"/>
+					<profile value="https://fhir.nhs.uk/StructureDefinition/ITK-Document-Bundle-1"/>
 				</meta>
 				<type value="document"/>
 				<entry>
@@ -415,17 +418,17 @@
 						<DocumentReference>
 							<id value="286919ac-12ba-4469-b9fd-676ef9cdb623"/>
 							<meta>
-								<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-documentreference-1"/>
+								<profile value="https://fhir.nhs.uk/StructureDefinition/ITK-DocumentReference-1"/>
 							</meta>
 							<!-- Information Recipient 1 -->
-							<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-information-recipient-1">
+							<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-ITK-InformationRecipient-1">
 								<!--Social Services team recipient-->
 								<valueReference>
 									<reference value="urn:uuid:f7ae2cda-28fe-4a65-af46-b2ef1c5593cc"/>
 								</valueReference>
 							</extension>
 							<!--Care setting from which the document originated from-->
-							<extension url="https://fhir.nhs.uk/StructureDefinition/extension-cofe-care-setting-type-1">
+							<extension url="https://fhir.nhs.uk/StructureDefinition/Extension-ITK-CareSettingType-1">
 								<valueCodeableConcept>
 									<coding>
 										<system value="http://snomed.info/sct"/>
@@ -460,6 +463,7 @@
 								<coding>
 									<system value="http://hl7.org/fhir/composition-status"/>
 									<code value="final"/>
+									<display value="Final"/>
 								</coding>
 							</docStatus>
 							<content>
@@ -473,22 +477,26 @@
 				<entry>
 					<fullUrl value="urn:uuid:f7ae2cda-28fe-4a65-af46-b2ef1c5593cc"/>
 					<resource>
-						<!--This shows a sample Local Authority Social Services team as a recipient of the document.-->
+						<!--This shows a sample Local Authority as a recipient of the document.-->
 						<Organization>
 							<id value="f7ae2cda-28fe-4a65-af46-b2ef1c5593cc"/>
 							<meta>
 								<!--Identifies the profile being used-->
 								<profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
 							</meta>
+							<identifier>
+								<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+								<value value="V396BB"/>
+							</identifier>
 							<!-- Type of organisation. -->
 							<type>
 								<coding>
 									<system value="http://hl7.org/fhir/organization-type"/>
-									<code value="team"/>
-									<display value="Organizational team"/>
+									<code value="govt"/>
+									<display value="Government"/>
 								</coding>
 							</type>
-							<name value="Hebburn Social Services' Community Team"/>
+							<name value="Hebburn Council"/>
 						</Organization>
 					</resource>
 				</entry>
@@ -562,9 +570,9 @@
 								<value value="01911223344"/>
 							</telecom>
 							<practitionerRole>
-							<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
+								<!-- Indicates the practitioner's role(s) i.e. Discharge co-ordinator-->
 								<role>
-								<coding>
+									<coding>
 										<system value="https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>
 										<code value="R8003"/>
 										<display value="Health Professional Access Role"/>
@@ -608,7 +616,7 @@
 						<Binary>
 							<id value="11507dfa-a3a2-4c6f-9ef7-9bc77955daae"/>
 							<meta>
-								<profile value="https://fhir.nhs.uk/StructureDefinition/cofe-binary-1"/>
+								<profile value="https://fhir.nhs.uk/StructureDefinition/ITK-Binary-1"/>
 							</meta>
 							<contentType value="application/pdf"/>
 							<content value="JVBERi0xLjUNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMiAwIFIvTGFu
