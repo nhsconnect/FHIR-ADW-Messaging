@@ -100,16 +100,16 @@
 												<a href='../Chapter.5.Examples/examples.html'>Examples</a>
 											</li>
 											<li>
-												<a href='../Chapter.6.Glossary/index.html'>Glossary</a>
+												<a href='../Chapter.6.Valuesets/valuesets.html'>Valuesets</a>
 											</li>
 											<li>
-												<a href='../Chapter.7.Valuesets/valuesets.html'>Valuesets</a>
+												<a href='../Chapter.7.Glossary/index.html'>Glossary</a>
 											</li>
 
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">1.0.0-beta.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">3.0.0-beta.1</span>
                             </p>
 
                         </div>
@@ -1849,17 +1849,35 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>Time period when address was/is in use.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..*</td>
+          <td>0..1 ?</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#period" xmlns="http://www.w3.org/1999/xhtml">Period</a>
+          </td>
+        </tr>
+        <tr>
+          <td width="150px">Requirements</td>
+          <td>
+            <p>Allows addresses to be placed in historical context.</p>
+          </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. "the patient was an inpatient of the hospital for this time range") or one value from the range applies (e.g. "give to the patient between these two times"). If duration is required, specify the type as Interval|Duration.</p>
+          </td>
         </tr>
         <tr>
           <td>Example</td>
@@ -3095,13 +3113,15 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td></td>
+          <td>
+            <p>Specific specialty of the practitioner.</p>
+          </td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..*</td>
+          <td>0..* ?</td>
         </tr>
         <tr>
           <td>
@@ -3109,12 +3129,23 @@
           </td>
           <td>
             <div class="binding-description" xmlns="http://www.w3.org/1999/xhtml">
-              <p>For example codes, see <a href="job-role-name-1.html">https://fhir.nhs.uk/ValueSet/job-role-name-1</a></p>; other codes may be used where these codes are not suitable</div>
+              <p>Specific specialty associated with the agency</p>
+              <p>For example codes, see <a href="http://hl7.org/fhir/DSTU2/valueset-practitioner-specialty.html">http://hl7.org/fhir/DSTU2/valueset-practitioner-specialty.html</a></p>; other codes may be used where these codes are not suitable</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
+          </td>
+          <td>
+            <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html#codeableconcept" xmlns="http://www.w3.org/1999/xhtml">CodeableConcept</a>
           </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td></td>
+          <td>
+            <p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+          </td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -4998,29 +5029,25 @@
         </tr>
         <tr>
           <td width="150px">Definition</td>
-          <td>
-            <p>Organization that issued/manages the identifier.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/conformance-rules.html#conformance">Control</a>
           </td>
-          <td>0..1 ?</td>
+          <td>0..*</td>
         </tr>
         <tr>
           <td>
             <a href="http://www.hl7.org/fhir/DSTU2/datatypes.html">Type</a>
           </td>
           <td>
-            <a href="http://www.hl7.org/fhir/DSTU2/organization.html" xmlns="http://www.w3.org/1999/xhtml">Organization</a>
+            <a href="careconnect-organization-1.html" xmlns="http://www.w3.org/1999/xhtml">https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1</a>
           </td>
         </tr>
         <tr>
           <td width="150px">Comments</td>
-          <td>
-            <p>The reference may be just a text description of the assigner.</p>
-          </td>
+          <td></td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
