@@ -1,11 +1,11 @@
 
 The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW profiles listed below:- 
 
-- ADW-AssessmentNotice-Message-Header-1 [ADW-AssessmentNotice-Message-Header-1] 
-- ADW-Referral-Request-1 [ADW-Referral-Request-1]
+- ADW-AssessmentNotice-MessageHeader-1 [ADW-AssessmentNotice-MessageHeader-1] 
+- ADW-ReferralRequest-1 [ADW-ReferralRequest-1]
 - CareConnect-ADW-Encounter-1 [CareConnect-ADW-Encounter-1]
 - CareConnect-Patient-1 [CareConnect-Patient-1]
-- CareConnect-ADW-Practitioner-1 [CareConnect-ADW-Practitioner-1]
+- CareConnect-Practitioner-1 [CareConnect-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
 - CareConnect-Location-1 [CareConnect-Location-1]
 - ADW-QuestionnaireResponse-1 [ADW-QuestionnaireResponse-1]
@@ -92,36 +92,36 @@ This xml example includes an example attached supporting document structured in 
 | Carer Email Address                              | [Patient.contact.telecom.value]                                  |
 | Carer Telephone Number                           | [Patient.contact.telecom.value]                                              |
 | **Assessment Notice Consultation Status**        |                                                                     |
-| Assessment Notice Patient Consultation Indicator | [QuestionnaireResponse.group.question.answer.valueCoding (Patient Consultation)]                |
-| Assessment Notice Carer Consultation Indicator   | [QuestionnaireResponse.group.question.answer.valueCoding (Carer Consultation)]                  |
+| Assessment Notice Patient Consultation Indicator | [QuestionnaireResponse.group.Patient Consultation]                |
+| Assessment Notice Carer Consultation Indicator   | [QuestionnaireResponse.group.Carer Consultation]                  |
 | **Assessment Notice Consent Status**             |                                                                     |
-| Assessment Notice Patient Consent Indicator      | [QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent)]              |
-| Assessment Notice Third Party Consent Source   | [QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Source)]          |
+| Assessment Notice Patient Consent Indicator      | [QuestionnaireResponse.group.Patient Consent]              |
+| Assessment Notice Third Party Consent Source   | [QuestionnaireResponse.group.Third Party Consent Source]          |
 | **NHS CHC Assessment**                           |                                                                     |
-| NHS CHC Assessment Considered Indicator          | [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Assessment Considered Indicator)] |
-| CHC Assessment Considered Result                 | [QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Considered Result)]            |
+| NHS CHC Assessment Considered Indicator          | [QuestionnaireResponse.group.NHS CHC Assessment Considered Indicator] |
+| CHC Assessment Considered Result                 | [QuestionnaireResponse.group.NHS CHC Considered Result]            |
 | **Safeguarding Indicator**                       |                                                                     |
-| Safeguarding Indicator                           | [QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Concerns)]                 |
-| Safeguarding Indicator Details                           | [QuestionnaireResponse.group.question.answer.valueString (Safeguarding Concerns Details)]                 |
+| Safeguarding Indicator                           | [QuestionnaireResponse.group.Safeguarding Concerns]                 |
+| Safeguarding Indicator Details                           | [QuestionnaireResponse.group.Safeguarding Concerns Details]                 |
 | **Local Authority**                              |                                                                     |
 | Organisation ODS Code                           | [Organization.identifier (ODS Organisation Code)]                                        |
 | Local Authority Name                             | [Organization.name]                                        |
 | Social Services Team                             | [Organization.name]                                             |
 
 
-[ADW-AssessmentNotice-Message-Header-1]: adw-assessment-notice-message-header-1.html
-[ADW-Referral-Request-1]: adw-referral-request-1.html
+[ADW-AssessmentNotice-MessageHeader-1]: adw-assessmentnotice-messageheader-1.html
+[ADW-ReferralRequest-1]: adw-referralrequest-1.html
 [CareConnect-Patient-1]: careconnect-patient-1.html
-[CareConnect-ADW-Practitioner-1]: careconnect-adw-practitioner-1.html
+[CareConnect-Practitioner-1]: careconnect-practitioner-1.html
 [CareConnect-Organization-1]: careconnect-organization-1.html
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
-[ADW-QuestionnaireResponse-1]: adw-questionnaire-response-1.html
+[ADW-QuestionnaireResponse-1]: adw-questionnaireresponse-1.html
 [CareConnect-Location-1]: careconnect-location-1.html
 [ADW-Condition-1]: adw-condition-1.html
 
 
 
-[MessageHeader.timestamp (ADW Message Sent Time)]: adw-assessment-notice-message-header-1-dict.html#MessageHeader.ADW%20Message%20Sent%20Time
+[MessageHeader.timestamp (ADW Message Sent Time)]: adw-assessmentnotice-messageheader-1-dict.html#MessageHeader.ADW%20Message%20Sent%20Time
 [Patient.nhsNumber]: careconnect-patient-1-dict.html#Patient.nhsNumber
 [Patient.identifier.nhsNumberVerificationStatus]: careconnect-patient-1-dict.html#Patient.identifier.nhsNumberVerificationStatus
 [Patient.localIdentifier]: careconnect-patient-1-dict.html#Patient.localIdentifier 
@@ -144,23 +144,23 @@ This xml example includes an example attached supporting document structured in 
 [Encounter.period.end]: CareConnect-ADW-Encounter-1-dict.html#Encounter.period.end
 [Condition.code.text]: adw-condition-1-dict.html#Condition.code.text
 [Encounter.priority.coding.display]: CareConnect-ADW-Encounter-1-dict.html#Encounter.priority.coding.display
-[Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family 
-[Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
-[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
-[QuestionnaireResponse.group.question.answer.valueCoding (Carer Consultation)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Carer%20Consultation
-[QuestionnaireResponse.group.question.answer.valueCoding (Patient Consultation)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consultation
-[QuestionnaireResponse.group.question.answer.valueCoding (Patient Consent)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Patient%20Consent
-[QuestionnaireResponse.group.question.answer.valueCoding (Third Party Consent Source)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Third%20Party%20Consent%20Source
-[QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Assessment Considered Indicator)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Assessment%20Considered%20Indicator
-[QuestionnaireResponse.group.question.answer.valueCoding (NHS CHC Considered Result)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.NHS%20CHC%20Considered%20Result
-[QuestionnaireResponse.group.question.answer.valueCoding (Safeguarding Concerns)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Safeguarding%20Concerns
-[QuestionnaireResponse.group.question.answer.valueString (Safeguarding Concerns Details)]: adw-questionnaire-response-1-dict.html#QuestionnaireResponse.group.question.answer.Safeguarding%20Concerns%20Details
+[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family 
+[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
+[QuestionnaireResponse.group.Carer Consultation]: adw-questionnaireresponse-1-dict.html#QuestionnaireResponse.group.Carer%20Consultation
+[QuestionnaireResponse.group.Patient Consultation]: adw-questionnaireresponse-1-dict.html#QuestionnaireResponse.group.Patient%20Consultation
+[QuestionnaireResponse.group.Patient Consent]: adw-questionnaireresponse-1-dict.html#QuestionnaireResponse.group.Patient%20Consent
+[QuestionnaireResponse.group.Third Party Consent Source]: adw-questionnaireresponse-1-dict.html#QuestionnaireResponse.group.Third%20Party%20Consent%20Source
+[QuestionnaireResponse.group.NHS CHC Assessment Considered Indicator]: adw-questionnaireresponse-1-dict.html#QuestionnaireResponse.group.NHS%20CHC%20Assessment%20Considered%20Indicator
+[QuestionnaireResponse.group.NHS CHC Considered Result]: adw-questionnaireresponse-1-dict.html#QuestionnaireResponse.group.NHS%20CHC%20Considered%20Result
+[QuestionnaireResponse.group.Safeguarding Concerns]: adw-questionnaireresponse-1-dict.html#QuestionnaireResponse.group.Safeguarding%20Concerns
+[QuestionnaireResponse.group.Safeguarding Concerns Details]: adw-questionnaireresponse-1-dict.html#QuestionnaireResponse.group.Safeguarding%20Concerns%20Details
 [Organization.identifier (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Organisation%20Code
 [Patient.contact.name.family]: careconnect-patient-1-dict.html#Patient.contact.name.family
 [Patient.contact.name.given]: careconnect-patient-1-dict.html#Patient.contact.name.given
 [Patient.contact.telecom.value]: careconnect-patient-1-dict.html#Patient.contact.telecom.value
-[ReferralRequest.reason]: adw-referral-request-1-dict.html#ReferralRequest.Reason%20for%20referral
-[ReferralRequest.description]: adw-referral-request-1-dict.html#ReferralRequest.description 
+[ReferralRequest.reason]: adw-referralrequest-1-dict.html#ReferralRequest.Reason%20for%20referral
+[ReferralRequest.description]: adw-referralrequest-1-dict.html#ReferralRequest.description 
 ----------
 
 

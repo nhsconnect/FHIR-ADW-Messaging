@@ -1,11 +1,11 @@
 
 The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW profiles listed below:- 
 
-- ADW-WithdrawalNotice-Message-Header-1 [ADW-WithdrawalNotice-Message-Header-1]
-- ADW-ReferralRequest-Cancelled-1 [ADW-ReferralRequest-Cancelled-1]
+- ADW-WithdrawalNotice-MessageHeader-1 [ADW-WithdrawalNotice-MessageHeader-1]
+- ADW-Cancel-ReferralRequest-1 [ADW-Cancel-ReferralRequest-1]
 - CareConnect-ADW-Encounter-1 [CareConnect-ADW-Encounter-1]
 - CareConnect-Patient-1 [CareConnect-Patient-1]
-- CareConnect-ADW-Practitioner-1 [CareConnect-ADW-Practitioner-1]
+- CareConnect-Practitioner-1 [CareConnect-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
 - CareConnect-Location-1 [CareConnect-Location-1]
 - ADW-Condition-1 [ADW-Condition-1]
@@ -67,11 +67,11 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 | Social Services Team                 | [Organization.name] 
 
 
-[ADW-WithdrawalNotice-Message-Header-1]: adw-withdrawal-notice-message-header-1.html
-[ADW-ReferralRequest-Cancelled-1]: adw-referral-request-cancelled-1.html
+[ADW-WithdrawalNotice-MessageHeader-1]: adw-withdrawalnotice-messageheader-1.html
+[ADW-Cancel-ReferralRequest-1]: adw-cancel-referralrequest-1.html
 [CareConnect-Patient-1]: careconnect-patient-1.html
-[CareConnect-ADW-Practitioner-1]: careconnect-adw-practitioner-1.html
-[ADW-Lead-Clinician-Practitioner-1]: careconnect-adw-practitioner-1.html
+[CareConnect-Practitioner-1]: careconnect-practitioner-1.html
+[ADW-Lead-Clinician-Practitioner-1]: careconnect-practitioner-1.html
 [CareConnect-Organization-1]: careconnect-organization-1.html
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
 [CareConnect-Organization-1]: careconnect-organization-1.html
@@ -79,7 +79,7 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 [ADW-Condition-1]: adw-condition-1.html
 
 
-[MessageHeader.timestamp (ADW Message Sent Time)]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.ADW%20Message%20Sent%20Time
+[MessageHeader.timestamp (ADW Message Sent Time)]: adw-withdrawalnotice-messageheader-1-dict.html#MessageHeader.ADW%20Message%20Sent%20Time
 [Patient.nhsNumber]: careconnect-patient-1-dict.html#Patient.nhsNumber
 [Patient.localIdentifier]: careconnect-patient-1-dict.html#Patient.localIdentifier
 [Patient.identifier.nhsNumberVerificationStatus]: careconnect-patient-1-dict.html#Patient.identifier.nhsNumberVerificationStatus
@@ -94,15 +94,15 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 [Organization.identifier (Organisation Site Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Site%20Code
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Location.name]: careconnect-location-1-dict.html#Location.name
-[MessageHeader.event.code(Withdrawal Notice Type)]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.event.Withdrawal%20Notice%20Type
-[MessageHeader.reason.coding.display]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.reason.coding.display
-[MessageHeader.reason.text (Other Reason for Withdrawal)]: adw-withdrawal-notice-message-header-1-dict.html#MessageHeader.reason.Other%20Reason%20for%20Withdrawal
-[Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family 
-[Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
-[Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family
-[Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
-[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
-[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
+[MessageHeader.event.code(Withdrawal Notice Type)]: adw-withdrawalnotice-messageheader-1-dict.html#MessageHeader.event.Withdrawal%20Notice%20Type
+[MessageHeader.reason.coding.display]: adw-withdrawalnotice-messageheader-1-dict.html#MessageHeader.reason.coding.display
+[MessageHeader.reason.text (Other Reason for Withdrawal)]: adw-withdrawalnotice-messageheader-1-dict.html#MessageHeader.reason.Other%20Reason%20for%20Withdrawal
+[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family 
+[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family
+[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
 [Organization.identifier (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Organisation%20Code
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name

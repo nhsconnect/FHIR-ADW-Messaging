@@ -1,11 +1,11 @@
 
 The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW profiles listed below:- 
 
-- ADW-WithdrawalNoticeAcceptResponse-Message-Header-1 [ADW-WithdrawalNoticeAcceptResponse-Message-Header-1]
-- ADW-ReferralRequest-Cancelled-1 [ADW-ReferralRequest-Cancelled-1]
+- ADW-WithdrawalNoticeAcceptResponse-MessageHeader-1 [ADW-WithdrawalNoticeAcceptResponse-MessageHeader-1]
+- ADW-Cancel-ReferralRequest-1 [ADW-Cancel-ReferralRequest-1]
 - CareConnect-ADW-Encounter-1 [CareConnect-ADW-Encounter-1]
 - CareConnect-Patient-1 [CareConnect-Patient-1]
-- CareConnect-ADW-Practitioner-1 [CareConnect-ADW-Practitioner-1]
+- CareConnect-Practitioner-1 [CareConnect-Practitioner-1]
 - CareConnect-Organization-1 [CareConnect-Organization-1]
 - CareConnect-Location-1 [CareConnect-Location-1]
 - ADW-Condition-1 [ADW-Condition-1]
@@ -61,10 +61,10 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 | Local Authority Contact Telephone Number | [Practitioner.telecom.value]                    |
 
 
-[ADW-WithdrawalNoticeAcceptResponse-Message-Header-1]: adw-withdrawal-notice-accept-response-message-header-1.html
-[ADW-ReferralRequest-Cancelled-1]: adw-referral-request-cancelled-1.html
+[ADW-WithdrawalNoticeAcceptResponse-MessageHeader-1]: adw-withdrawalnoticeacceptresponse-messageheader-1.html
+[ADW-Cancel-ReferralRequest-1]: adw-cancel-referralrequest-1.html
 [CareConnect-Patient-1]: careconnect-patient-1.html
-[CareConnect-ADW-Practitioner-1]: careconnect-adw-practitioner-1.html
+[CareConnect-Practitioner-1]: careconnect-practitioner-1.html
 [CareConnect-Organization-1]: careconnect-organization-1.html
 [CareConnect-Organization-1]: careconnect-organization-1.html
 [CareConnect-ADW-Encounter-1]: careconnect-adw-encounter-1.html
@@ -73,10 +73,10 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 
 
 
-[MessageHeader.timestamp (ADW Accept Response Message Sent Time)]: adw-withdrawal-notice-accept-response-message-header-1-dict.html#MessageHeader.ADW%20Accept%20Response%20Message%20Sent%20Time
-[MessageHeader.event.code (Accept Response Type)]: adw-withdrawal-notice-accept-response-message-header-1-dict.html#MessageHeader.event.Accept%20Response%20Type
-[MessageHeader.event.code]: adw-withdrawal-notice-accept-response-message-header-1-dict.html#MessageHeader.event.Accept%20Response%20Type
-[MessageHeader.reason.text (Accept Reason)]: adw-withdrawal-notice-accept-response-message-header-1-dict.html#MessageHeader.reason.Accept%20Reason
+[MessageHeader.timestamp (ADW Accept Response Message Sent Time)]: adw-withdrawalnoticeacceptresponse-messageheader-1-dict.html#MessageHeader.ADW%20Accept%20Response%20Message%20Sent%20Time
+[MessageHeader.event.code (Accept Response Type)]: adw-withdrawalnoticeacceptresponse-messageheader-1-dict.html#MessageHeader.event.Accept%20Response%20Type
+[MessageHeader.event.code]: adw-withdrawalnoticeacceptresponse-messageheader-1-dict.html#MessageHeader.event.Accept%20Response%20Type
+[MessageHeader.reason.text (Accept Reason)]: adw-withdrawalnoticeacceptresponse-messageheader-1-dict.html#MessageHeader.reason.Accept%20Reason
 [Patient.nhsNumber]: careconnect-patient-1-dict.html#Patient.nhsNumber
 [Patient.localIdentifier]: careconnect-patient-1-dict.html#Patient.localIdentifier 
 [Patient.name.family]: careconnect-patient-1-dict.html#Patient.name.family
@@ -87,17 +87,17 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Location.name]: careconnect-location-1-dict.html#Location.name
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
-[Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family
-[Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
-[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
-[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
+[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family
+[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
 [Organization.identifier (ODS Organisation Code)]: careconnect-organization-1-dict.html#Organization.ODS%20Organisation%20Code
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
 [Organization.name]: careconnect-organization-1-dict.html#Organization.name
-[Practitioner.name.family]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.family
-[Practitioner.name.given]: careconnect-adw-practitioner-1-dict.html#Practitioner.name.given
-[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
-[Practitioner.telecom.value]: careconnect-adw-practitioner-1-dict.html#Practitioner.telecom.value
+[Practitioner.name.family]: careconnect-practitioner-1-dict.html#Practitioner.name.family
+[Practitioner.name.given]: careconnect-practitioner-1-dict.html#Practitioner.name.given
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
+[Practitioner.telecom.value]: careconnect-practitioner-1-dict.html#Practitioner.telecom.value
 
 
 ----------
