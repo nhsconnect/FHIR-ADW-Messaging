@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+<id value="e69db682-1f77-4773-8c78-48381617e905"/>
+	<meta>
+		<lastUpdated value="2017-06-22T12:40:00+00:00"/>
+	</meta>
+	<url value="https://fhir.nhs.uk/ValueSet/ADW-ReferralReason-1"/>
+	<version value="1.0.0"/>
+	<name value="ADW Referral Reason"/>
+	<status value="active"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+	<name value="Interoperability Team"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A vocabulary that identifies the reason for an ADW referral."/>
+	<requirements value="There is a requirement within the Social Care ADW message to identify the reason for the referral within the Assessment Notice."/>
+	<copyright value="Copyright © 2017 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
+	<codeSystem>
+		<system value="https://fhir.nhs.uk/ADW-ReferralReason-1"/>
+				<concept>
+			<code value="OFT"/>
+			<display value="Other - Free Text"/>
+		</concept>
+	</codeSystem>
+</ValueSet>
