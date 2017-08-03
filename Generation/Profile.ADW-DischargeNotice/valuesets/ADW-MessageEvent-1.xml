@@ -23,7 +23,7 @@
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
-			<version value="1.36.1"/>
+			
 			<concept>
 				<code value="975701000000106"/>
 				<display value="Assessment Notice under the Care Act 2014 Schedule 3"/>
