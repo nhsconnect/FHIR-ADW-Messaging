@@ -89,7 +89,7 @@ This means only one instance is required for each instance of the profile.
 
 The diagram shows the referencing for a typical Discharge Notice message. It is intended for illustrative purposes only. The diagram can be viewed here:
 
-[Profile Referencing Diagram for a Discharge Notice](../Profile.ADW-DischargeNotice/MessageReferencing4.png)
+[Profile Referencing Diagram for a Discharge Notice](../Profile.ADW-DischargeNotice/DiagramDNRefs.pdf)
 
 
 
