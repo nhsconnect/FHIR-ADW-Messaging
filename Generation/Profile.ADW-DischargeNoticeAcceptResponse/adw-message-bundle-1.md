@@ -113,7 +113,7 @@ Note that for sliced elements and extensions within CareConnect profiles, it is 
 
 The diagram shows the referencing for a typical Discharge Notice Accept Response message. It is intended for illustrative purposes only. The diagram can be viewed here:
 
-[Profile Referencing Diagram for an Discharge Notice Accept Response](../Profile.ADW-DischargeNoticeAcceptResponse/MessageReferencing4.png)
+[Profile Referencing Diagram for an Discharge Notice Accept Response](../Profile.ADW-DischargeNoticeAcceptResponse/DiagramDNARRefs.pdf)
 
 ----------
 
