@@ -172,7 +172,7 @@ This means only one instance is required for each instance of the profile.
 
 The diagram shows the referencing for a typical Assessment Notice message. It is intended for illustrative purposes only. The diagram can be viewed here:
 
-[Profile Referencing Diagram for an Assessment Notice](../Profile.ADW-AssessmentNotice/MessageReferencing4.png)
+[Profile Referencing Diagram for an Assessment Notice](../Profile.ADW-AssessmentNotice/DiagramANRefs.pdf)
 
 
 **Further Information**
