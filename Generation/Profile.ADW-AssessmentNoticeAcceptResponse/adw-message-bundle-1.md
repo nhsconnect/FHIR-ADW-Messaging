@@ -103,7 +103,7 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 
 The diagram shows the referencing for a typical Assessment Notice Accept Response message. It is intended for illustrative purposes only. The diagram can be viewed here:
 
-[Profile Referencing Diagram for an Assessment Notice Accept Response](../Profile.ADW-AssessmentNoticeAcceptResponse/MessageReferencing4.png)
+[Profile Referencing Diagram for an Assessment Notice Accept Response](../Profile.ADW-AssessmentNoticeAcceptResponse/DiagramANARRefs.pdf)
 
 
 **Further Information**
