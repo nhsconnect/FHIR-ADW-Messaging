@@ -21,7 +21,7 @@
   <status value="active" />
   <publisher value="NHS Digital" />
   <contact>
-    <name value="InteroperabilityTeam" />
+    <name value="Interoperability Team" />
     <telecom>
       <system value="email" />
       <value value="interoperabilityteam@nhs.net" />
