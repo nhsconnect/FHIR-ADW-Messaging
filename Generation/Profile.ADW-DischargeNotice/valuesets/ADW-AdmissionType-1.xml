@@ -5,6 +5,7 @@
 		<lastUpdated value="2017-06-05T12:50:00+00:00"/>
 	</meta>
 	<url value="https://fhir.nhs.uk/ValueSet/ADW-AdmissionType-1"/>
+		<version value="1.0.0"/>
 	<name value="ADW Admission Type"/>
 	<status value="active"/>
 	<publisher value="NHS Digital"/>
