@@ -118,7 +118,7 @@ The ADW-Message-Bundle-1 bundle is used in ADW as a container to collect the ADW
 
 The diagram shows the referencing for a typical Withdrawal Notice message. It is intended for illustrative purposes only. The diagram can be viewed here:
 
-[Profile Referencing Diagram for an Withdrawal Notice](../Profile.ADW-WithdrawalNotice/DiagramWNRefs.pdf)
+[Profile Referencing Diagram for a Withdrawal Notice](../Profile.ADW-WithdrawalNotice/DiagramWNRefs.pdf)
 
 ----------
 
