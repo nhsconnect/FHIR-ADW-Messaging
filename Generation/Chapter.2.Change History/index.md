@@ -1,5 +1,11 @@
 # Change History #
 
+### Version 4.0.0-beta.1 ###
+
+ - Amended cardinality of CareConnect-ADW-Encounter-1.priority to become 0..1.
+ - Removed Encounter.priority from all xml bundle examples apart from Assessment Notice to reflect the Information Standard.
+ - Removed Patient.address from Document bundle within the Discharge Notice Accept Response xml bundle example.
+
 ### Version 3.0.0-beta.1 ###
 
  - Amended all Notice bundles to reference the Local Authority instance as the recipient/receiver for MessageHeader and for ReferralRequest.
