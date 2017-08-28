@@ -104,13 +104,6 @@
 				</identifier>
 				<status value="in-progress"/>
 				<class value="inpatient"/>
-				<priority>
-					<coding>
-						<system value="https://fhir.nhs.uk/ADW-AdmissionType-1"/>
-						<code value="E"/>
-						<display value="Emergency"/>
-					</coding>
-				</priority>
 				<patient>
 					<reference value="urn:uuid:08fc7a07-394a-4948-a7b0-e0a87c77b231"/>
 				</patient>
@@ -474,15 +467,6 @@
 							</name>
 							<gender value="male"/>
 							<birthDate value="1941-11-01"/>
-							<address>
-								<!-- Structured address-->
-								<line value="The Old Lodge"/>
-								<line value="1 Little Street"/>
-								<line value="Chapeltown"/>
-								<city value="Leeds"/>
-								<district value="West Yorkshire"/>
-								<postalCode value="LS6 1UR"/>
-							</address>
 						</Patient>
 					</resource>
 				</entry>

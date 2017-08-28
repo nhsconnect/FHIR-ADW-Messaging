@@ -98,13 +98,6 @@
 				</identifier>
 				<status value="finished"/>
 				<class value="inpatient"/>
-				<priority>
-					<coding>
-						<system value="https://fhir.nhs.uk/ADW-AdmissionType-1"/>
-						<code value="E"/>
-						<display value="Emergency"/>
-					</coding>
-				</priority>
 				<patient>
 					<reference value="urn:uuid:f613b047-a68a-4f9a-bfd2-83054f2c8bd8"/>
 				</patient>
