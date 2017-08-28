@@ -10,6 +10,6 @@
   "OPERATIONS_XML"   : "TRUE",
   "OPERATIONS_JSON" : "FALSE",
   "DMS_TITLE"		:   "Social Care Assessment, Discharge and Withdrawal",
-  "DMS_VERSION"		:	"3.0.0-beta.1",
+  "DMS_VERSION"		:	"4.0.0-beta.1",
   "SCHEMAS"         :   "TRUE"
 }
