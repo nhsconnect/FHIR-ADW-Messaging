@@ -1,5 +1,10 @@
 # Change History #
 
+### Version 5.0.0-beta.1 ###
+
+ - Added code 1078011000000107 with display 'Withdraw Assessment Notice Only under the Care Act 2014 Schedule 3' to ADW-MessageEvent-1 valueset.
+ - Added SCP ADW Additional Messaging Guidance document to the specification to provide additional guidance for implementers.
+
 ### Version 4.0.0-beta.1 ###
 
  - Amended cardinality of CareConnect-ADW-Encounter-1.priority to become 0..1.
