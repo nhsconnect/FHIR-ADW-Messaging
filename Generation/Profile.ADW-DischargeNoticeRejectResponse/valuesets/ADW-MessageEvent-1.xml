@@ -53,6 +53,10 @@
 				<display value="Withdraw All Notices under the Care Act 2014 Schedule 3"/>
 			</concept>
 			<concept>
+			<code value="1078011000000107"/>
+			<display value="Withdraw Assessment Notice Only under the Care Act 2014 Schedule 3"/>
+			</concept>
+			<concept>
 				<code value="975851000000104"/>
 				<display value="Withdraw Discharge Notice Only under the Care Act 2014 Schedule 3"/>
 			</concept>
