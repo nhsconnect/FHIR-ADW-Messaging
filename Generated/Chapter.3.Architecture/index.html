@@ -164,6 +164,17 @@
 <p><strong>OR</strong></p>
 <p><em>Assessment Notice Reject Response</em> - <a href="#RSP-ADW-AssessmentNoticeRejectResponse-1">RSP-ADW-AssessmentNoticeRejectResponse-1</a></p>
 <hr />
+<hr />
+<p><strong>NOT-ADW-AdmissionNotice-1 Interaction</strong> </p>
+<p>The sending hospital system will construct an Admission Notice and send it to the receiving local authority system.</p>
+<ul>
+<li><em>Sender:</em> Hospital sending system</li>
+<li><em>Receiver:</em> Local authority receiving system</li>
+<li><em>Message: Wire Format:</em> <a href="../Profile.ADW-AssessmentNotice/Profile.ADW-AdmissionNotice.html">ADW-Admission-1</a></li>
+</ul>
+<p><strong>Acknowledgements</strong></p>
+<p>Standard MESH acknowledgements are utilised.</p>
+<hr />
 <p><strong><a name="RSP-ADW-AssessmentNoticeAcceptResponse-1"></a> RSP-ADW-AssessmentNoticeAcceptResponse-1 Interaction</strong> </p>
 <p>If accepting the Assessment Notice the local authority system will construct an Assessment Notice Accept Response and send it to the hospital system.</p>
 <ul>
@@ -258,7 +269,8 @@
 </br></p>
 <p>The diagram shows the Assessment, Discharge and Withdrawal Interactions:</p>
 <p></br></p>
-<div style="display: block;"><img  src="ADWInteractions.png" alt="ADWInteractions"></div>  
+<div style="display: block;">
+<img src="ADWInteractions.png" width="100%" height="auto" alt="ADWInteractions"></div>  
 <p><br></p>
 <p><strong>FHIR Messaging</strong></p>
 <p>The FHIR messages are made up of the resources which are bundled within an FHIR Bundle wrapper to create the FHIR structure.</p>
