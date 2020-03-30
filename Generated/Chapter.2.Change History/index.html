@@ -144,6 +144,12 @@
 							
 									<div class="panel panel - default">
 											<h1>Change History</h1>
+<h3>Version 5.1.0-beta.1</h3>
+<ul>
+<li>New Admission Notice message.</li>
+<li>New Admission Notice Accept Response message.</li>
+<li>New Admission Notice Reject Response message.</li>
+</ul>
 <h3>Version 5.0.0-beta.1</h3>
 <ul>
 <li>Added code 1078011000000107 with display 'Withdraw Assessment Notice Only under the Care Act 2014 Schedule 3' to ADW-MessageEvent-1 valueset.</li>
@@ -194,7 +200,8 @@
 <li>Added Assessment Notice optional ADW-ReferralRequest-1.description element to carry any additional relevant information relating to the referral..</li>
 <li>Renamed ADW-Questionnaire-Response-1.group.question (Safeguarding Issues) to (Safeguarding Concerns).</li>
 <li>Added an additional question to the ADW-Questionnaire-Response-1 profile called Safeguarding Concerns Details.</li>
-<li>Constrained out the indication element from CareConnect-ADW-Encounter.  </li>
+<li>Constrained out the indication element from CareConnect-ADW-Encounter.  
+</li>
 </ul>
 <h3>Version 1.0.0-beta.1</h3>
 <ul>
@@ -216,12 +223,14 @@
 <li>ADW-Message-Bundles updated in line with above profile changes. Bundle.entry uses a generic standard used within NHS Digital bundles.</li>
 <li>Bundle examples modified to reflect changes identified in alpha-1 release.</li>
 <li>Removed individual profile xml examples as these are represented within the standard bundles.</li>
-<li>Inserted xml in bundle ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml to represent a DocumentReference resource and a binary resource suitable for use, if a .pdf attachment is sent in a message communication.  </li>
+<li>Inserted xml in bundle ADW-Message-Discharge-Notice-Bundle-1-Example-1.xml to represent a DocumentReference resource and a binary resource suitable for use, if a .pdf attachment is sent in a message communication.  
+</li>
 <li>Re-ordered profiles.</li>
 <li>All profile urls containing the string http://fhir.nhs.net have this string replaced by https://fhir.nhs.uk or http://fhir.hl7.org.uk for standard CareConnect profiles. </li>
 <li>ValueSet string removed for all system urls for valuesets when the url appears as data in their respective coding.system element.</li>
 <li>Changed versioning for all profiles and valuesets from 1-0 to 1. </li>
-<li>Adopted semantic versioning for the specification from http://semver.org/.   </li>
+<li>Adopted semantic versioning for the specification from http://semver.org/.   
+</li>
 </ul>
 <h3>Version: 1.0: Status: RC4</h3>
 <ul>
@@ -291,7 +300,8 @@
 <li>Corrected value in Patient.identifier.system (Hospital Patient identifier) to http://fhir.nhs.net/Id/hospital-patient-identifier for all response profiles and minimum dataset bundle xml examples.</li>
 <li>Removed Patient.identifier.use element from Withdrawal and Discharge notice minimum dataset bundle xml examples.</li>
 <li>Removed FixedCode value=&quot;official&quot; from Patient profiles' Patient.name associated child element.</li>
-<li>Status wrongly coded in Discharge questionnaire response.status element in ADW-Message-DischargeNotice-1-0-Ex01.xml. Removed incorrect extension to this element.  </li>
+<li>Status wrongly coded in Discharge questionnaire response.status element in ADW-Message-DischargeNotice-1-0-Ex01.xml. Removed incorrect extension to this element.  
+</li>
 </ul>
 <p><strong>Known Issues</strong></p>
 <ul>
