@@ -147,6 +147,7 @@
 <h3>Version 5.1.0-beta.1</h3>
 <ul>
 <li>Added an Admission Notice message.</li>
+<li>Changed the cardinality of the MessageHeader.data element from 1..1 to 1..* in the profile ADW-DischargeNotice-MessageHeader-1 to allow for the inclusion of the CareConnect-MedicationStatement-1. This technical workaround is perceived to be the least disruptive for current implementers, in the absence of a suitable CareConnect profile to do the linkage more explicitly.</li>
 </ul>
 <h3>Version 5.0.0-beta.1</h3>
 <ul>
