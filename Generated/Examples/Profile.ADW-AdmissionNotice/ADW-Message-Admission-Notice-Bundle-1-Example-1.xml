@@ -1,4 +1,4 @@
-<Bundle xmlns="http://hl7.org/fhir">
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../ADW/Schemas/bundle.xsd">
  <id value="79aec4c6-e7d3-44ef-96ed-bda1b94f9d00"/>
  <meta>
   <profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Message-Bundle-1"/>
@@ -15,7 +15,7 @@
     <timestamp value="2017-05-01T15:02:11+00:00"/>
     <event>
      <system value="http://snomed.info/sct"/>
-     <code value="975701000000106"/>
+     <code value="895571000000108"/>
     </event>
     <source>
      <endpoint value="urn:nhs-uk:addressing:ods:RFM8C2"/>
@@ -33,43 +33,9 @@
      <reference value="urn:uuid:88563c7f-b040-486a-9018-296bf9b94f32"/>
     </responsible>
     <data>
-     <reference value="urn:uuid:37c1099d-638c-4970-bcc6-539403f6ca8e"/>
+     <reference value="urn:uuid:fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
     </data>
    </MessageHeader>
-  </resource>
- </entry>
- <entry>
-  <fullUrl value="urn:uuid:37c1099d-638c-4970-bcc6-539403f6ca8e"/>
-  <resource>
-   <ReferralRequest>
-    <id value="37c1099d-638c-4970-bcc6-539403f6ca8e"/>
-    <meta>
-     <profile value="https://fhir.nhs.uk/StructureDefinition/ADW-ReferralRequest-1"/>
-    </meta>
-    <status value="requested"/>
-    <identifier>
-     <value value="311fcae7-32a7-4a8e-a15c-eebae3a246b9"/>
-    </identifier>
-    <patient>
-     <reference value="urn:uuid:bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
-    </patient>
-    <requester>
-     <reference value="urn:uuid:5b5d3bab-c1bb-434a-ab0d-82c4860bb098"/>
-    </requester>
-    <recipient>
-     <reference value="urn:uuid:dab4b872-e000-42ec-bd4e-0d804fc3b92e"/>
-    </recipient>
-    <encounter>
-     <reference value="urn:uuid:fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
-    </encounter>
-    <reason>
-     <text value="Patient admitted as inpatient with chest pain."/>
-    </reason>
-    <description value="The patient has a history of minor strokes. His partner is concerned about his mobility in the home and his ability to look after himself while she is at work."/>
-    <supportingInformation>
-     <reference value="urn:uuid:9c7eb664-d257-4250-aee2-20ad202919e8"/>
-    </supportingInformation>
-   </ReferralRequest>
   </resource>
  </entry>
  <entry>
@@ -353,95 +319,6 @@
      <reference value="urn:uuid:1ebc76fd-9612-4c72-81dd-de294a0e7287"/>
     </managingOrganization>
    </Location>
-  </resource>
- </entry>
- <entry>
-  <fullUrl value="urn:uuid:9c7eb664-d257-4250-aee2-20ad202919e8"/>
-  <resource>
-   <QuestionnaireResponse>
-    <id value="9c7eb664-d257-4250-aee2-20ad202919e8"/>
-    <meta>
-     <profile value="https://fhir.nhs.uk/StructureDefinition/ADW-QuestionnaireResponse-1"/>
-    </meta>
-    <identifier>
-     <value value="fd60ffd5-3e41-4b68-aa62-37f5407d8c04"/>
-    </identifier>
-    <status value="completed"/>
-    <author>
-     <reference value="urn:uuid:5b5d3bab-c1bb-434a-ab0d-82c4860bb098"/>
-    </author>
-    <encounter>
-     <reference value="urn:uuid:fd60ffd5-3e41-4b68-aa62-37f5407d8c03"/>
-    </encounter>
-    <group>
-     <question>
-      <text value="Has the patient been consulted regarding this Admission Notice?"/>
-      <answer>
-       <valueCoding>
-        <system value="https://fhir.nhs.uk/ADW-ConsultationStatus-1"/>
-        <code value="Y"/>
-        <display value="Yes"/>
-       </valueCoding>
-      </answer>
-     </question>
-     <question>
-      <text value="Has the patient's carer (if applicable) been consulted regarding the Admission Notice?"/>
-      <answer>
-       <valueCoding>
-        <system value="https://fhir.nhs.uk/ADW-CarerConsultationStatus-1"/>
-        <code value="Y"/>
-        <display value="Yes"/>
-       </valueCoding>
-      </answer>
-     </question>
-     <question>
-      <text value="Are there any Safeguarding Concerns associated with the patient?"/>
-      <answer>
-       <valueCoding>
-        <system value="https://fhir.nhs.uk/ADW-ConsultationStatus-1"/>
-        <code value="N"/>
-        <display value="No"/>
-       </valueCoding>
-      </answer>
-     </question>
-     <question>
-      <text value="Has the patient consented to this Admission Notice?"/>
-      <answer>
-       <valueCoding>
-        <system value="https://fhir.nhs.uk/ADW-PatientConsentStatus-1"/>
-        <code value="Y"/>
-        <display value="Yes"/>
-       </valueCoding>
-      </answer>
-     </question>
-     <question>
-      <text value="What is the source of the third party consent for this admission notice?"/>
-      <answer>
-       <valueCoding>
-        <system value="https://fhir.nhs.uk/ADW-ThirdPartyConsentSource-1"/>
-        <code value="N/A"/>
-        <display value="Not Applicable"/>
-       </valueCoding>
-      </answer>
-     </question>
-     <question>
-      <text value="Has the provision of NHS Continuing Health Care been considered?"/>
-      <answer>
-       <valueCoding>
-        <system value="https://fhir.nhs.uk/ADW-ConsultationStatus-1"/>
-        <code value="Y"/>
-        <display value="Yes"/>
-       </valueCoding>
-      </answer>
-     </question>
-     <question>
-      <text value="If the provision of NHS Continuing Health Care has been considered, what was the result of that consideration?"/>
-      <answer>
-       <valueString value="Ongoing care/support requires timely admission by NHS and Social Services. The patient is eligible for CHC funding."/>
-      </answer>
-     </question>
-    </group>
-   </QuestionnaireResponse>
   </resource>
  </entry>
  <entry>
