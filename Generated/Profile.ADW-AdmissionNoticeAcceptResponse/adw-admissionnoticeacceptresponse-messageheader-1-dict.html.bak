@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-			<title>ADW-AssessmentNoticeAcceptResponse - FHIR Implementation Guide</title>
+			<title>ADW-AdmissionNoticeAcceptResponse - FHIR Implementation Guide</title>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
@@ -54,7 +54,7 @@
                 </a>
                 <div id="specificationName">
          
-                        <b>ADW-AssessmentNoticeAcceptResponse</b>
+                        <b>ADW-AdmissionNoticeAcceptResponse</b>
                   
                 </div>
 
@@ -112,7 +112,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">5.0.0-beta.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">5.1.0-beta.1</span>
                             </p>
 
                         </div>
@@ -142,12 +142,12 @@
 							
 <div class="panel panel - default" xmlns="http://www.w3.org/1999/xhtml">
   <div class="panel-heading">
-    <h3 class="panel-title">ADW-AssessmentNoticeAcceptResponse-MessageHeader-1</h3>
+    <h3 class="panel-title">ADW-AdmissionNoticeAcceptResponse-MessageHeader-1</h3>
   </div>
   <div class="panel-body">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <p>
-        <b>ADW-AssessmentNoticeAcceptResponse-MessageHeader-1</b>
+        <b>ADW-AdmissionNoticeAcceptResponse-MessageHeader-1</b>
       </p>
       <table class="dict">
         <tr>
@@ -488,7 +488,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The date and time on which the Assessment Notice Accept Response was issued.</p>
+            <p>The date and time on which the Admission Notice Accept Response was issued.</p>
           </td>
         </tr>
         <tr>
@@ -678,8 +678,8 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="MessageHeader.Assessment Notice"></a>
-            <b>MessageHeader.response(Assessment Notice)</b>
+            <a name="MessageHeader.Admission Notice"></a>
+            <b>MessageHeader.response(Admission Notice)</b>
           </td>
         </tr>
         <tr>
@@ -814,8 +814,8 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="MessageHeader.response.Assessment Notice Identifier"></a>
-            <b>MessageHeader.response.identifier(Assessment Notice Identifier)</b>
+            <a name="MessageHeader.response.Admission Notice Identifier"></a>
+            <b>MessageHeader.response.identifier(Admission Notice Identifier)</b>
           </td>
         </tr>
         <tr>

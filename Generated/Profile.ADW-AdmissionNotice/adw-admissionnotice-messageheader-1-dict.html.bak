@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-			<title>ADW-AssessmentNotice - FHIR Implementation Guide</title>
+			<title>ADW-AdmissionNotice - FHIR Implementation Guide</title>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
@@ -54,7 +54,7 @@
                 </a>
                 <div id="specificationName">
          
-                        <b>ADW-AssessmentNotice</b>
+                        <b>ADW-AdmissionNotice</b>
                   
                 </div>
 
@@ -112,7 +112,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">5.0.0-beta.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">5.1.0-beta.1</span>
                             </p>
 
                         </div>
@@ -142,12 +142,12 @@
 							
 <div class="panel panel - default" xmlns="http://www.w3.org/1999/xhtml">
   <div class="panel-heading">
-    <h3 class="panel-title">ADW-AssessmentNotice-MessageHeader-1</h3>
+    <h3 class="panel-title">ADW-AdmissionNotice-MessageHeader-1</h3>
   </div>
   <div class="panel-body">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <p>
-        <b>ADW-AssessmentNotice-MessageHeader-1</b>
+        <b>ADW-AdmissionNotice-MessageHeader-1</b>
       </p>
       <table class="dict">
         <tr>
@@ -488,7 +488,7 @@
         <tr>
           <td width="150px">Definition</td>
           <td>
-            <p>The date and time on which the Assessment Notice was issued.</p>
+            <p>The date and time on which the Admission Notice was issued.</p>
           </td>
         </tr>
         <tr>
@@ -509,8 +509,8 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="MessageHeader.Assessment Notice"></a>
-            <b>MessageHeader.event(Assessment Notice)</b>
+            <a name="MessageHeader.Admission Notice"></a>
+            <b>MessageHeader.event(Admission Notice)</b>
           </td>
         </tr>
         <tr>
@@ -616,8 +616,8 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="MessageHeader.event.Assessment Notice system"></a>
-            <b>MessageHeader.event.system(Assessment Notice system)</b>
+            <a name="MessageHeader.event.Admission Notice system"></a>
+            <b>MessageHeader.event.system(Admission Notice system)</b>
           </td>
         </tr>
         <tr>
@@ -648,8 +648,8 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="MessageHeader.event.Assessment Notice Type"></a>
-            <b>MessageHeader.event.code(Assessment Notice Type)</b>
+            <a name="MessageHeader.event.Admission Notice Type"></a>
+            <b>MessageHeader.event.code(Admission Notice Type)</b>
           </td>
         </tr>
         <tr>
@@ -674,7 +674,7 @@
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>975701000000106</td>
+          <td>895571000000108</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">

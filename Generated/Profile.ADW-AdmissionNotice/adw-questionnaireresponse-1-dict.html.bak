@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-			<title>ADW-AssessmentNotice - FHIR Implementation Guide</title>
+			<title>ADW-AdmissionNotice - FHIR Implementation Guide</title>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
@@ -54,7 +54,7 @@
                 </a>
                 <div id="specificationName">
          
-                        <b>ADW-AssessmentNotice</b>
+                        <b>ADW-AdmissionNotice</b>
                   
                 </div>
 
@@ -112,7 +112,7 @@
                             </ul>
 							
                             <p class="navbar-text pull-right" style="padding-right: 10px;padding-top: 3px;">
-                                <span class="label label-default"  style="font-size: 95%;">5.0.0-beta.1</span>
+                                <span class="label label-default"  style="font-size: 95%;">5.1.0-beta.1</span>
                             </p>
 
                         </div>
@@ -1229,7 +1229,7 @@
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>Has the patient been consulted regarding this Assessment Notice?</td>
+          <td>Has the patient been consulted regarding this Admission Notice?</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -1783,7 +1783,7 @@
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>Has the patient been consulted regarding this Assessment Notice?</td>
+          <td>Has the patient been consulted regarding this Admission Notice?</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -2337,7 +2337,7 @@
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>Has the patient been consulted regarding this Assessment Notice?</td>
+          <td>Has the patient been consulted regarding this Admission Notice?</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -2891,7 +2891,7 @@
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>Has the patient been consulted regarding this Assessment Notice?</td>
+          <td>Has the patient been consulted regarding this Admission Notice?</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -3227,7 +3227,7 @@
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>Has the patient been consulted regarding this Assessment Notice?</td>
+          <td>Has the patient been consulted regarding this Admission Notice?</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -3781,7 +3781,7 @@
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>Has the patient been consulted regarding this Assessment Notice?</td>
+          <td>Has the patient been consulted regarding this Admission Notice?</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -4173,8 +4173,8 @@
         </tr>
         <tr>
           <td colspan="2" class="structure">
-            <a name="QuestionnaireResponse.group.NHS CHC Assessment Considered Indicator"></a>
-            <b>QuestionnaireResponse.group.question(NHS CHC Assessment Considered Indicator)</b>
+            <a name="QuestionnaireResponse.group.NHS CHC Admission Considered Indicator"></a>
+            <b>QuestionnaireResponse.group.question(NHS CHC Admission Considered Indicator)</b>
           </td>
         </tr>
         <tr>
@@ -4335,7 +4335,7 @@
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>Has the patient been consulted regarding this Assessment Notice?</td>
+          <td>Has the patient been consulted regarding this Admission Notice?</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
@@ -4889,7 +4889,7 @@
         </tr>
         <tr>
           <td>Fixed Value</td>
-          <td>Has the patient been consulted regarding this Assessment Notice?</td>
+          <td>Has the patient been consulted regarding this Admission Notice?</td>
         </tr>
         <tr>
           <td colspan="2" class="structure">
