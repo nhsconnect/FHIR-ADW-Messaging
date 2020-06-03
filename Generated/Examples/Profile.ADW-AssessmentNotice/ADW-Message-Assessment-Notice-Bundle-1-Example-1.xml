@@ -1,4 +1,4 @@
-<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
+<Bundle xmlns="http://hl7.org/fhir">
  <id value="79aec4c6-e7d3-44ef-96ed-bda1b94f9d00"/>
  <meta>
   <profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Message-Bundle-1"/>
