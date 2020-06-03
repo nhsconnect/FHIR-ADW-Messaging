@@ -1,4 +1,4 @@
-<Bundle xmlns="http://hl7.org/fhir">
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../Schemas/bundle.xsd">
  <id value="79aec4c6-e7d3-44ef-96ed-bda1b94f9d00"/>
  <meta>
   <profile value="https://fhir.nhs.uk/StructureDefinition/ADW-Message-Bundle-1"/>
@@ -96,6 +96,18 @@
     <patient>
      <reference value="urn:uuid:bc3027a7-924c-44b5-8f1b-bfd5266c6905"/>
     </patient>
+    <!--Other Professional Involvement, secondary performer, e.g. nurse-->
+    <participant>
+     <type>
+      <coding>
+       <system value="SPRF"/>
+       <display value="secondary performer"/>
+      </coding>
+     </type>
+     <individual>
+      <reference value="urn:uuid:a9d4cb00-2a9c-4cbf-9111-5b3c7d3dd31f"/>
+     </individual>
+    </participant>
     <period>
      <start value="2017-04-24"/>
      <end value="2017-05-12"/>
@@ -187,7 +199,7 @@
     <contact>
      <relationship>
       <coding>
-       <system value="https://fhir.hl7.org.uk/CareConnect-PersonRelationshipType-1"/>
+       <system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-PersonRelationshipType-1"/>
        <code value="20"/>
        <display value="Carer"/>
       </coding>
@@ -206,6 +218,40 @@
       <value value="0113237656"/>
      </telecom>
     </contact>
+    <!--Next of kin, who is the father-->
+    <contact>
+     <relationship>
+      <coding>
+       <system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-PersonRelationshipType-1"/>
+       <code value="04"/>
+       <display value="Next of kin"/>
+      </coding>
+     </relationship>
+     <relationship>
+      <coding>
+       <system value="https://fhir.hl7.org.uk/ValueSet/CareConnect-PersonRelationshipType-1"/>
+       <code value="13"/>
+       <display value="Father"/>
+      </coding>
+     </relationship>
+     <name>
+      <use value="usual"/>
+      <family value="Jones"/>
+      <given value="Thomas"/>
+     </name>
+     <telecom>
+      <system value="email"/>
+      <value value="tjones@gmail.com"/>
+     </telecom>
+     <telecom>
+      <system value="phone"/>
+      <value value="01131245656"/>
+     </telecom>
+    </contact>
+    <!--A reference to GP Practitioner-->
+    <careProvider>
+     <reference value="urn:uuid:8c128042-9d36-44e2-8f9e-46f601dd5218"/>
+    </careProvider>
    </Patient>
   </resource>
  </entry>
@@ -245,6 +291,43 @@
    </Practitioner>
   </resource>
  </entry>
+ <!--GP details: GP Name/Surgery + Telephone-->
+ <entry>
+  <fullUrl value="urn:uuid:8c128042-9d36-44e2-8f9e-46f601dd5218"/>
+  <resource>
+   <Practitioner>
+    <id value="8c128042-9d36-44e2-8f9e-46f601dd5218"/>
+    <meta>
+     <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+    </meta>
+    <name>
+     <family value="Killdare"/>
+     <given value="Richard"/>
+    </name>
+    <telecom>
+     <system value="email"/>
+     <value value="killdare@nhs.net"/>
+    </telecom>
+    <telecom>
+     <system value="phone"/>
+     <value value="01917773344"/>
+    </telecom>
+    <practitionerRole>
+     <managingOrganization>
+      <reference value="urn:uuid:7f94e055-6a46-42cd-a2f5-47476d506406"/>
+     </managingOrganization>
+     <role>
+      <coding>
+       <system value="https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>
+       <code value="R0270"/>
+       <display value="Salaried General Practitioner"/>
+      </coding>
+      <text value="GP"/>
+     </role>
+    </practitionerRole>
+   </Practitioner>
+  </resource>
+ </entry>
  <entry>
   <fullUrl value="urn:uuid:88563c7f-b040-486a-9018-296bf9b94f32"/>
   <resource>
@@ -267,6 +350,43 @@
        <code value="R0050"/>
        <display value="Consultant"/>
       </coding>
+     </role>
+    </practitionerRole>
+   </Practitioner>
+  </resource>
+ </entry>
+ <!--Nurse, secondary performer-->
+ <entry>
+  <fullUrl value="urn:uuid:a9d4cb00-2a9c-4cbf-9111-5b3c7d3dd31f"/>
+  <resource>
+   <Practitioner>
+    <id value="a9d4cb00-2a9c-4cbf-9111-5b3c7d3dd31f"/>
+    <meta>
+     <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Practitioner-1"/>
+    </meta>
+    <name>
+     <family value="Thompson"/>
+     <given value="Lilly"/>
+    </name>
+    <telecom>
+     <system value="email"/>
+     <value value="lilly.thompson@nhs.net"/>
+    </telecom>
+    <telecom>
+     <system value="phone"/>
+     <value value="01911523639"/>
+    </telecom>
+    <practitionerRole>
+     <managingOrganization>
+      <reference value="urn:uuid:1ebc76fd-9612-4c72-81dd-de294a0e7287"/>
+     </managingOrganization>
+     <role>
+      <coding>
+       <system value="https://fhir.hl7.org.uk/CareConnect-SDSJobRoleName-1"/>
+       <code value="R0630"/>
+       <display value="Enrolled Nurse"/>
+      </coding>
+      <text value="Nurse"/>
      </role>
     </practitionerRole>
    </Practitioner>
@@ -353,6 +473,38 @@
      <reference value="urn:uuid:1ebc76fd-9612-4c72-81dd-de294a0e7287"/>
     </managingOrganization>
    </Location>
+  </resource>
+ </entry>
+ <!--GP Organization Details-->
+ <entry>
+  <fullUrl value="urn:uuid:7f94e055-6a46-42cd-a2f5-47476d506406"/>
+  <resource>
+   <Organization>
+    <id value="7f94e055-6a46-42cd-a2f5-47476d506406"/>
+    <meta>
+     <profile value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Organization-1"/>
+    </meta>
+    <identifier>
+     <system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+     <value value="L83043"/>
+    </identifier>
+    <type>
+     <coding>
+      <system value="http://hl7.org/fhir/organization-type"/>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+     </coding>
+    </type>
+    <name value="Hebburn General Practice"/>
+    <address>
+     <line value="Hebburn Medical Center"/>
+     <line value="1 Old Vicarage Lane"/>
+     <line value="Hebburn"/>
+     <city value="Leeds"/>
+     <district value="West Yorkshire"/>
+     <postalCode value="LS5 5UR"/>
+    </address>
+   </Organization>
   </resource>
  </entry>
  <entry>
